@@ -27,7 +27,7 @@ from sklearn.linear_model import LogisticRegression
 from .build_snapshots import FEATURES, HAS_FLAGS
 from .lib.config import PROCESSED, RESULTS, as_of_date, cfg, get_logger, guard_years, seed
 from .lib.meta import write_meta
-from .lib.metrics import ci, cluster_bootstrap, mean_precision_at_k, pooled_auc, rank_order
+from .lib.metrics import ci, cluster_bootstrap, mean_precision_at_k, mean_recall_at_k, pooled_auc, rank_order
 
 log = get_logger("backtest")
 
@@ -114,7 +114,10 @@ def score_year(y: int, snaps: pd.DataFrame, refs: pd.DataFrame, features=FEATURE
     out, coefs = [], []
 
     def add(name, scores):
-        t = test[["entity_id", "as_of", "label", "weight", "europe", "has_github", "funding_date"]].copy()
+        cols = ["entity_id", "as_of", "label", "weight", "europe", "has_github", "funding_date"]
+        t = test[cols + (["dach"] if "dach" in test else [])].copy()
+        if "dach" not in t:
+            t["dach"] = False
         t["method"] = name
         t["score"] = scores
         out.append(t)
@@ -155,7 +158,9 @@ def lead_times(pred: pd.DataFrame, k: int, s: int) -> pd.Series:
 
 def evaluate(pred: pd.DataFrame, reps: int, s: int, min_pos_ci: int = 15) -> pd.DataFrame:
     rows = []
-    subsets = {"all": pred, "europe": pred[pred["europe"]], "with_github": pred[pred["has_github"]],
+    dach = pred["dach"] if "dach" in pred else pd.Series(False, index=pred.index)
+    subsets = {"all": pred, "europe": pred[pred["europe"]], "dach": pred[dach.astype(bool)],
+               "rest_not_dach": pred[~dach.astype(bool)], "with_github": pred[pred["has_github"]],
                "without_github": pred[~pred["has_github"]]}
     for sub, d in subsets.items():
         for method, g in d.groupby("method"):
@@ -163,12 +168,18 @@ def evaluate(pred: pd.DataFrame, reps: int, s: int, min_pos_ci: int = 15) -> pd.
             r = {"subset": sub, "method": method, "n_rows": len(g), "n_pos_rows": int(g.label.sum()),
                  "n_pos_entities": npos, "base_rate": float(g.label.mean()),
                  "auc": pooled_auc(g), "p_at_50": mean_precision_at_k(g, 50, s),
+                 "p_at_20": mean_precision_at_k(g, 20, s), "recall_at_50": mean_recall_at_k(g, 50, s),
                  "p_at_50_random": float(g.groupby("as_of")["label"].mean().mean())}
             if npos >= min_pos_ci and reps > 0:
                 b = cluster_bootstrap(g, pooled_auc, reps, s)
                 r["auc_lo"], r["auc_hi"] = ci(b)
-                b2 = cluster_bootstrap(g, lambda x: mean_precision_at_k(x, 50, s), max(200, reps // 5), s + 1)
+                nb = min(reps, max(200, reps // 5))
+                b2 = cluster_bootstrap(g, lambda x: mean_precision_at_k(x, 50, s), nb, s + 1)
                 r["p_at_50_lo"], r["p_at_50_hi"] = ci(b2)
+                b3 = cluster_bootstrap(g, lambda x: mean_precision_at_k(x, 20, s), nb, s + 2)
+                r["p_at_20_lo"], r["p_at_20_hi"] = ci(b3)
+                b4 = cluster_bootstrap(g, lambda x: mean_recall_at_k(x, 50, s), nb, s + 3)
+                r["recall_at_50_lo"], r["recall_at_50_hi"] = ci(b4)
             r["exploratory"] = npos < cfg()["min_positives"]["exploratory_below"]
             rows.append(r)
     m = pd.DataFrame(rows)

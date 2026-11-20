@@ -66,22 +66,32 @@ def mean_precision_at_k(df: pd.DataFrame, k: int, seed: int, score: str = "score
     return float(np.nanmean(vals)) if vals else float("nan")
 
 
+def mean_recall_at_k(df: pd.DataFrame, k: int, seed: int, score: str = "score") -> float:
+    """recall@k per as_of cohort (share of that year's positives in its top-k), averaged over cohorts with positives."""
+    vals = [recall_at_k(g["label"].values, g[score].values, k, seed + i) for i, (_, g) in enumerate(df.groupby("as_of"))]
+    vals = [v for v in vals if not np.isnan(v)]
+    return float(np.mean(vals)) if vals else float("nan")
+
+
 def cluster_bootstrap(df: pd.DataFrame, stat, reps: int, seed: int, cluster: str = "entity_id",
                       strata: str = "ever_positive") -> np.ndarray:
-    """Resample clusters (entities) with replacement within strata (ever positive / never); returns stat per rep."""
+    """Resample clusters (entities) with replacement within strata (ever positive / never); returns stat per rep.
+
+    Index-based (no per-rep DataFrame concatenation of groups): same draws as resampling group frames.
+    """
     rng = np.random.default_rng(seed)
-    df = df.copy()
+    df = df.reset_index(drop=True)
     if strata not in df:
-        df[strata] = df.groupby(cluster)["label"].transform("max")
-    groups = {k: g for k, g in df.groupby(cluster)}
+        df = df.assign(**{strata: df.groupby(cluster)["label"].transform("max")})
+    idx_by = df.groupby(cluster).indices                       # cluster -> row positions (sorted keys)
     keys_by_stratum = {s: np.array(sorted(df.loc[df[strata] == s, cluster].unique())) for s in df[strata].unique()}
     out = np.empty(reps)
     for r in range(reps):
-        parts = []
+        rows = []
         for s, keys in keys_by_stratum.items():
             pick = rng.choice(keys, size=len(keys), replace=True)
-            parts.extend(groups[k] for k in pick)
-        out[r] = stat(pd.concat(parts, ignore_index=True))
+            rows.extend(idx_by[k] for k in pick)
+        out[r] = stat(df.iloc[np.concatenate(rows)] if rows else df.iloc[0:0])
     return out
 
 

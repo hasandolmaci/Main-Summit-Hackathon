@@ -26,6 +26,7 @@ import pandas as pd
 
 from .lib.cohort import case_cohort, label_at, label_window_complete, visible_at
 from .lib.config import LABELS, PROCESSED, as_of_date, cfg, data_cutoff, get_logger, guard_years
+from .lib.domains import country_from_domain
 from .lib.meta import write_meta
 from .lib.scaling import log_ratio_sigmoid, log_robust_z_sigmoid, percentile_rank
 
@@ -117,6 +118,8 @@ def snapshot(year: int, ent: pd.DataFrame, fd: pd.Series, events: pd.DataFrame) 
     snap = cc[["entity_id", "in_B", "inclusion_prob", "weight", "label"]].merge(feat, on="entity_id", how="left")
     e = ent.set_index("entity_id")
     snap["europe"] = snap["entity_id"].map(e["europe"]).fillna(False).astype(bool)
+    country = snap["entity_id"].map(e["country"]) if "country" in e else snap["entity_id"].map(country_from_domain)
+    snap["dach"] = country.isin(["DE", "AT", "CH"])
     snap["channels"] = snap["entity_id"].map(e["channels"])
     snap["funding_date"] = snap["entity_id"].map(pd.to_datetime(fd, utc=True).set_axis(ent["entity_id"]))
     snap.insert(1, "as_of", a)

@@ -23,17 +23,18 @@ def main(argv=None):
     a = ap.parse_args(argv)
     years = [str(y) for y in range(2012, cfg()["years"]["selection"][1] + 1)]
     reps = ["--reps", str(a.reps)]
+    sens = ["--reps", str(min(a.reps, 200))]          # sensitivity runs: AUC comparisons only, fewer resamples
     if "snapshots" not in a.skip:
         build_snapshots.main(["--years", *years])
     backtest.main([*reps, "--tag", "main"])
     if "R3" not in a.skip:
-        backtest.main([*reps, "--R", "3", "--tag", "R3"])
+        backtest.main([*sens, "--R", "3", "--tag", "R3"])
     if "batchstart" not in a.skip:
         build_snapshots.main(["--years", *years, "--funding-file", "companies_batchstart.csv", "--suffix", "_batchstart"])
-        backtest.main([*reps, "--suffix", "_batchstart", "--tag", "batchstart"])
+        backtest.main([*sens, "--suffix", "_batchstart", "--tag", "batchstart"])
     if "scaling_pct" not in a.skip:
         build_snapshots.main(["--years", *years, "--engagement-scaling", "percentile", "--suffix", "_pct"])
-        backtest.main([*reps, "--suffix", "_pct", "--tag", "scaling_pct"])
+        backtest.main([*sens, "--suffix", "_pct", "--tag", "scaling_pct"])
         build_snapshots.ENGAGEMENT_SCALING = "robust_z"
     report.build("main")
     log.info("results/report.md written")

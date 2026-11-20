@@ -200,22 +200,48 @@ def build(tag: str = "main") -> str:
           "Pooled AUC compares positives and controls only within the same as_of cohort; 95% CIs from an "
           "entity-clustered, label-stratified bootstrap. precision@50 is computed per year and averaged; "
           "'random' = the cohort base rate.", ""]
-    for sub in ["all", "europe", "with_github", "without_github"]:
+    def col(m, c):
+        return m[c] if c in m else pd.Series([np.nan] * len(m), index=m.index)
+
+    for sub in ["all", "europe", "dach", "rest_not_dach", "with_github", "without_github"]:
         m = met[met["subset"] == sub]
-        if m.empty:
+        if m.empty or m["n_pos_entities"].max() == 0:
+            L += [f"**Subset: {sub}** — no funded companies in this subset.", ""]
             continue
         t = pd.DataFrame({
             "method": m["method"], "n_pos": m["n_pos_entities"],
-            "AUC [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(m["auc"], m.get("auc_lo"), m.get("auc_hi"))],
-            "P@50 [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(m["p_at_50"], m.get("p_at_50_lo"), m.get("p_at_50_hi"))],
-            "random P@50": m["p_at_50_random"].round(3),
+            "AUC [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(m["auc"], col(m, "auc_lo"), col(m, "auc_hi"))],
+            "P@20 [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(col(m, "p_at_20"), col(m, "p_at_20_lo"), col(m, "p_at_20_hi"))],
+            "P@50 [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(m["p_at_50"], col(m, "p_at_50_lo"), col(m, "p_at_50_hi"))],
+            "R@50 [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(col(m, "recall_at_50"), col(m, "recall_at_50_lo"), col(m, "recall_at_50_hi"))],
+            "base rate": m["p_at_50_random"].round(3),
             "median lead (months)": m["median_lead_months"].round(1),
             "exploratory": m["exploratory"]})
         L += [f"**Subset: {sub}**", "", t.to_markdown(index=False), ""]
+    L += ["*Without GitHub* is empty by design: v1 candidates come from GitHub organisations only (the CORDIS pool "
+          "channel was dropped). *By sector* is not reported: sector is known only for labelled companies, not for "
+          "the controls, so a per-sector AUC would be meaningless. Gradient boosting was skipped: the spec allows it "
+          "only with several hundred positives per training fold, which v1 does not have.", ""]
     FIGURES.mkdir(parents=True, exist_ok=True)
     if len(met[met["subset"] == "all"]):
         dot_plot(met[met["subset"] == "all"], FIGURES / "auc_by_method.png", "Ranking quality by method (all companies)")
         L += ["![AUC by method](figures/auc_by_method.png)", ""]
+
+    # ---------- cosine failure demo
+    if len(snap):
+        X = snap[FEATURES].dropna()
+        if len(X) > 5:
+            weak = X.loc[X.sum(axis=1).idxmin()].to_numpy(float)
+            strong = X.loc[X.sum(axis=1).idxmax()].to_numpy(float)
+            mu = X.mean().to_numpy(float)
+            cos = lambda a, b: float(a @ b / (np.linalg.norm(a) * np.linalg.norm(b))) if np.linalg.norm(a) * np.linalg.norm(b) else float("nan")
+            L += ["## Why the distance method uses Euclidean distance, not raw cosine", "",
+                  f"On 0–1 metric vectors, uncentred cosine similarity ignores magnitude. The weakest complete profile "
+                  f"in the cohorts {np.round(weak, 2).tolist()} and the strongest {np.round(strong, 2).tolist()} have "
+                  f"uncentred cosine **{cos(weak, strong):.2f}** (near-identical direction), centred cosine "
+                  f"**{cos(weak - mu, strong - mu):.2f}**, Euclidean distance **{np.linalg.norm(weak - strong):.2f}**. "
+                  "Raw cosine would call a dormant company 'similar' to a strong one; we therefore use Euclidean "
+                  "distance (and would only use cosine on centred vectors).", ""]
 
     # ---------- LR coefficients
     if len(coefs):

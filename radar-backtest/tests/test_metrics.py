@@ -59,3 +59,9 @@ def test_auc_nan_scores_rank_last():
     assert m.auc([1, 0, 0], [np.nan, 0.2, 0.1]) == 0.0
     assert m.auc([1, 0], [np.nan, np.nan]) == 0.5
     assert m.auc([1, 0, 0], [0.9, np.nan, 0.1]) == 1.0
+
+
+def test_mean_recall_at_k():
+    df = pd.DataFrame({"as_of": [1, 1, 1, 2, 2], "label": [1, 1, 0, 1, 0], "score": [3, 1, 2, 5, 4]})
+    # year 1: top-1 = score 3 (pos) -> recall 1/2; year 2: top-1 = pos -> 1/1  => mean 0.75
+    assert m.mean_recall_at_k(df, 1, seed=0) == pytest.approx(0.75)

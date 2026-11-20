@@ -1,0 +1,33 @@
+{
+ "s_legal_form": [
+  "AG",
+  "GbR",
+  "GmbH",
+  "UG (haftungsbeschränkt)",
+  "e. V.",
+  "e.V."
+ ],
+ "f_legal_entity": [
+  "AG",
+  "GmbH",
+  "Inc",
+  "Ltd",
+  "UG",
+  "UG (haftungsbeschränkt)",
+  "e. V.",
+  "e.V."
+ ],
+ "s_ab_testing_tool": [
+  "0",
+  "Google Optimize"
+ ],
+ "s_analytics_tools (split tokens)": [
+  "Google Analytics/gtag",
+  "Google Tag Manager",
+  "Hotjar",
+  "HubSpot",
+  "Matomo",
+  "Plausible",
+  "Segment"
+ ]
+}

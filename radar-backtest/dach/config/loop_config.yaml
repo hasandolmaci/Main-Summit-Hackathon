@@ -24,6 +24,9 @@ cv:
   repeats: 20                      # group-to-fold assignment reshuffled per repeat (seeded)
 
 comparison:
+  auc: within_fold_pooled          # AUC per test fold (one model -> one intercept), pooled by pos-neg pairs.
+                                   # Set before the first real run: pooling raw OOF predictions across folds biased weak
+                                   # models below 0.5 and made pure noise look like an improvement (synthetic test).
   paired: true                     # candidate vs current set on identical folds
   bootstrap_reps: 1000             # on out-of-fold predictions (averaged over repeats), rows resampled
   ci: 0.90

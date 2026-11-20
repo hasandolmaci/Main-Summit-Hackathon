@@ -1,0 +1,25 @@
+{
+  "version": "v1",
+  "column": ["s_legal_form", "f_legal_entity"],
+  "proposed_by": "LLM (distinct values only)",
+  "status": "proposed — awaiting human review",
+  "levels": [
+    {"level": 0, "label": "none/GbR", "values": ["GbR"]},
+    {"level": 1, "label": "UG", "values": ["UG (haftungsbeschränkt)", "UG", "Ltd"]},
+    {"level": 2, "label": "GmbH", "values": ["GmbH", "Inc"]},
+    {"level": 3, "label": "AG", "values": ["AG"]}
+  ],
+  "null_values": ["e. V.", "e.V."],
+  "unmapped_policy": "null",
+  "rationale": {
+    "GbR": "Partnership without limited liability or share capital; lowest rung, grouped with 'none' per the user's fixed scale.",
+    "UG (haftungsbeschränkt)": "Full spelling of the mini-GmbH (Unternehmergesellschaft); level 1 per the user's scale.",
+    "UG": "Abbreviated spelling of UG (haftungsbeschränkt); normalised to the same level 1.",
+    "Ltd": "UK private limited company with nominal (GBP 1) minimum capital; historically used by German founders as the low-capital alternative to a GmbH before the UG existed, so it fills the UG niche (level 1). Flag for review: a few could be UK-incorporated scale-ups.",
+    "GmbH": "Standard limited company with EUR 25k share capital; level 2 per the user's scale.",
+    "Inc": "US (typically Delaware) C-corp, the usual structure for a VC 'flip'; it is a limited-liability corporation like a GmbH but carries no extra public-company or size meaning, so it goes to level 2 rather than AG. Flag for review.",
+    "AG": "Stock corporation with EUR 50k share capital; top rung (level 3) per the user's scale.",
+    "e. V.": "Registered non-profit association; e.V. rows are removed upstream as not-a-startup, so map to null.",
+    "e.V.": "Spelling variant of e. V. (no space); map to null for the same reason."
+  }
+}

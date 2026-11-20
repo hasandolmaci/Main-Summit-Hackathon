@@ -1,0 +1,21 @@
+{
+  "version": "v1",
+  "column": ["s_analytics_tools"],
+  "proposed_by": "LLM (distinct values only)",
+  "status": "proposed — awaiting human review",
+  "token_split": "split on ',' and strip whitespace; match each token exactly",
+  "categories": {
+    "growth_tooling": ["Hotjar", "HubSpot", "Segment"],
+    "basic_analytics": ["Google Analytics/gtag", "Google Tag Manager", "Matomo", "Plausible"]
+  },
+  "unmapped_policy": "null",
+  "rationale": {
+    "Hotjar": "Heatmaps, session recordings and on-site surveys used for conversion-rate optimisation, so growth tooling.",
+    "HubSpot": "Marketing automation, CRM and lead-funnel tracking, so growth tooling.",
+    "Segment": "Customer data platform that sends events to product-analytics and marketing tools; it signals a deliberate product and growth data stack, so growth tooling.",
+    "Google Analytics/gtag": "Default free traffic analytics present on most sites, so basic analytics.",
+    "Google Tag Manager": "Generic tag container that is usually just a loader for GA and pixels, not experimentation in itself, so basic analytics.",
+    "Matomo": "Privacy-focused GA replacement for traffic reporting, so basic analytics.",
+    "Plausible": "Lightweight privacy-friendly pageview analytics, so basic analytics."
+  }
+}

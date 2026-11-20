@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "column": ["s_ab_testing_tool"],
+  "proposed_by": "LLM (distinct values only)",
+  "status": "proposed — awaiting human review",
+  "levels": [
+    {"level": 0, "label": "no_ab_testing", "values": ["0"]},
+    {"level": 1, "label": "ab_testing", "values": ["Google Optimize"]}
+  ],
+  "unmapped_policy": "null",
+  "rationale": {
+    "0": "Sentinel meaning the scraper found no A/B testing tool, so 0.",
+    "Google Optimize": "Dedicated A/B and experimentation tool, so 1. Note: Google sunset Optimize in Sept 2023, so detections after that date are leftover snippets."
+  }
+}

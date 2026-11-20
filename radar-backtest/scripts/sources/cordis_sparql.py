@@ -109,15 +109,16 @@ def _last_segment(var: str, alias: str) -> str:
 
 DATASETS: dict[str, Dataset] = {
     "roles": Dataset(
-        "roles", ("role_id", "org_id", "project_uuid", "role_label", "order", "amount", "currency"),
+        "roles", ("role_id", "org_id", "project_id", "role_label", "order", "amount", "currency"),
         " ".join([_last_segment("role", "role_id"), _last_segment("org", "org_id"),
-                  _last_segment("project", "project_uuid"), "?role_label ?order ?amount ?currency"]),
+                  "?project_id ?role_label ?order ?amount ?currency"]),
         """?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .
+  OPTIONAL { ?project eurio:identifier ?project_id }
   OPTIONAL { ?role eurio:roleLabel ?role_label }
   OPTIONAL { ?role eurio:order ?order }
   OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .
              OPTIONAL { ?amt eurio:currency ?currency } }""",
-        "?role ?org ?project ?role_label ?order ?amount ?currency"),
+        "?role ?org ?project_id ?role_label ?order ?amount ?currency"),
     "organisations": Dataset(
         "organisations", ("org_id", "pic", "name", "short_name", "url", "country"),
         " ".join([_last_segment("org", "org_id"), "?pic ?name ?short_name (STR(?url0) AS ?url) ?country"]),
@@ -134,16 +135,15 @@ DATASETS: dict[str, Dataset] = {
         "?org a eurio:Organisation ; a ?t . FILTER(?t != eurio:Organisation)",
         "?org ?t"),
     "projects": Dataset(
-        "projects", ("project_uuid", "project_id", "acronym", "start_date", "signature_date", "grant_uuid"),
-        " ".join([_last_segment("project", "project_uuid"), "?project_id ?acronym (STR(?sd) AS ?start_date)",
-                  "(STR(?sig) AS ?signature_date)", _last_segment("grant", "grant_uuid")]),
-        """?project a eurio:Project .
-  OPTIONAL { ?project eurio:identifier ?project_id }
+        "projects", ("project_id", "acronym", "start_date", "signature_date", "grant_uuid"),
+        " ".join(["?project_id ?acronym (STR(?sd) AS ?start_date)", "(STR(?sig) AS ?signature_date)",
+                  _last_segment("grant", "grant_uuid")]),
+        """?project a eurio:Project ; eurio:identifier ?project_id .
   OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }
   OPTIONAL { ?project eurio:startDate ?sd }
   OPTIONAL { ?project eurio:signatureDate ?sig }
   OPTIONAL { ?project eurio:isFundedBy ?grant }""",
-        "?project ?project_id ?acronym ?sd ?sig ?grant"),
+        "?project_id ?acronym ?sd ?sig ?grant"),
 }
 # Funding-scheme evidence per grant: one dataset per kind (a UNION with constant kinds overflows Virtuoso temp columns).
 SCHEME_KINDS = {"topic": ("hasFundingSchemeTopic", "identifier"), "call": ("hasFundingSchemeCall", "identifier"),

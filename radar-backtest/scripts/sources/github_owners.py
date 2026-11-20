@@ -95,7 +95,7 @@ from scripts.lib.domains import company_domain, login_rule
 from scripts.lib.http import Client
 from scripts.lib.meta import write_meta
 from scripts.sources import gharchive as gha
-from scripts.sources.github import _names_tuple, _prep_entities, tier_candidates
+from scripts.sources.github import _prep_entities, tier_candidates
 
 log = get_logger("github_owners")
 SCRIPT = "scripts/sources/github_owners.py"

@@ -22776,3 +22776,12 @@
 2026-11-20 22:26:21,554 INFO pool_sample: entry scan: buckets < 2 done; years still below target: [2014]
 2026-11-20 22:26:21,559 INFO pool_sample: entry scan: buckets < 4 done; years still below target: []
 2026-11-20 22:26:21,598 INFO resolve_entities: decontamination: 1 controls share a name with a labelled company -> removed as ambiguous
+2026-11-20 22:26:39,150 INFO pipeline: === step resolve_build
+2026-11-20 22:26:39,509 INFO resolve_entities: org_like_pit: dropping 55 of 1174 GitHub links (not org-like in their first year)
+2026-11-20 22:26:39,588 INFO resolve_entities: dropping 7 platform-domain entities
+2026-11-20 22:26:39,708 INFO resolve_entities: decontamination: 4 controls share a name with a labelled company -> removed as ambiguous
+2026-11-20 22:26:41,344 INFO resolve_entities: entities: 6989 (labelled 6600, in_B 389, with github 1099, with cordis 6)
+2026-11-20 22:26:50,209 INFO resolve_entities: events: 572788 rows {('cordis', 'grant_signed'): 20, ('gharchive', 'ext_engagement_month'): 357229, ('gharchive', 'org_activity'): 203402, ('gharchive', 'org_first_event'): 674, ('gharchive', 'team_first_push'): 11463}
+2026-11-20 22:26:50,212 INFO pipeline: === step resolve_build done in 11s
+2026-11-20 22:26:50,212 INFO pipeline: === step validate
+2026-11-20 22:26:50,887 ERROR validate: validation failed: ['118 duplicate events']

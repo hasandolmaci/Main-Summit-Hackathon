@@ -1,13 +1,13 @@
 {
-  "created_at": "2026-11-20T22:00:56.690681+00:00",
+  "created_at": "2026-11-20T22:26:41.352805+00:00",
   "file": "data/processed/match_sample_github.csv",
-  "git_sha": "51272f3bd2c4e177722dd612ddb8f27282b766cd",
+  "git_sha": "963ae7614878eda573fd37c8248d223a72447c79",
   "inputs": [],
   "notes": "Random accepted entity -> GitHub org links for the human precision check.",
   "params": {},
   "python": "3.13.18",
   "rows": 30,
   "script": "scripts/resolve_entities.py build",
-  "sha256": "d109c9787da0bcf1f6ec1ad2372ac29692441fa1e98849d81197013ae1ab1ce1",
+  "sha256": "48d15b24cd488304e4d3598aa039d16fc4bccd835fb0690f7cca3e6f3364eb6c",
   "sources": []
 }

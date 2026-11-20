@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-20T22:00:56.661094+00:00",
+  "created_at": "2026-11-20T22:26:41.318669+00:00",
   "file": "data/processed/entities.csv",
-  "git_sha": "51272f3bd2c4e177722dd612ddb8f27282b766cd",
+  "git_sha": "963ae7614878eda573fd37c8248d223a72447c79",
   "inputs": [
     {
       "path": "data/processed/universe.parquet",
@@ -35,8 +35,8 @@
   "notes": "One row per domain. Only high-confidence links. Country from ccTLD else CORDIS (symmetric).",
   "params": {},
   "python": "3.13.18",
-  "rows": 6996,
+  "rows": 6989,
   "script": "scripts/resolve_entities.py build",
-  "sha256": "0e39bfc9ecf8e91c76fbeb76b6d79b53cdc84948ad8da9f841e83091a1da731d",
+  "sha256": "6f3f5ef4932083887887bc56a988c4b5c847f96729e00f49aa8b4c40a708ab60",
   "sources": []
 }

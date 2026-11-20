@@ -13727,3 +13727,33 @@
 2026-11-20 20:32:31,302 INFO pipeline: === step org_search_labelled
 2026-11-20 20:32:31,347 INFO run_org_search: org search: input /home/user/Main-Summit-Hackathon/radar-backtest/data/processed/org_search_labelled.csv, max tier 1
 2026-11-20 20:32:32,401 INFO github_owners: owner_activity: 6757 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:42,579 INFO http: POST https://play.clickhouse.com/?user=play params=None status=200 bytes=206861
+2026-11-20 20:32:42,637 INFO gharchive: query owner_activity_09125985 rows=3825 10.18s cache=False
+2026-11-20 20:32:43,060 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/20n params=None status=200 bytes=674
+2026-11-20 20:32:43,621 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/3dot params=None status=200 bytes=680
+2026-11-20 20:32:44,391 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/42floors params=None status=200 bytes=748
+2026-11-20 20:32:45,136 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/42technologies params=None status=200 bytes=802
+2026-11-20 20:32:45,880 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/500friends params=None status=200 bytes=708
+2026-11-20 20:32:46,641 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/7cups params=None status=200 bytes=694
+2026-11-20 20:32:47,373 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/7education params=None status=200 bytes=717
+2026-11-20 20:32:48,190 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/7learnings params=None status=200 bytes=819
+2026-11-20 20:32:48,919 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/80000hours params=None status=404 bytes=21
+2026-11-20 20:32:49,623 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/99minutos params=None status=200 bytes=802
+2026-11-20 20:32:50,388 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/9gag params=None status=200 bytes=701
+2026-11-20 20:32:51,145 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/9mothers params=None status=200 bytes=824
+2026-11-20 20:32:51,875 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/abacus params=None status=200 bytes=721
+2026-11-20 20:32:51,959 WARNING http: retry 1 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=2.9s 
+2026-11-20 20:32:52,621 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/abatable params=None status=200 bytes=802
+2026-11-20 20:32:53,394 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/ablehealth params=None status=200 bytes=823
+2026-11-20 20:32:54,116 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/accessowl params=None status=200 bytes=807
+2026-11-20 20:32:54,868 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/acciojob params=None status=200 bytes=714
+2026-11-20 20:32:55,045 WARNING http: retry 2 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=4.1s 
+2026-11-20 20:32:55,643 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/actiondesk params=None status=404 bytes=21
+2026-11-20 20:32:56,395 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/activeloop params=None status=404 bytes=21
+2026-11-20 20:32:57,122 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/activepieces params=None status=200 bytes=854
+2026-11-20 20:32:57,883 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/adaptyvbio params=None status=200 bytes=736
+2026-11-20 20:32:58,616 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/adikteev params=None status=200 bytes=713
+2026-11-20 20:32:59,315 WARNING http: retry 3 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=8.0s 
+2026-11-20 20:32:59,514 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/adlatusrobotics params=None status=200 bytes=764
+2026-11-20 20:33:00,204 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/adtriba params=None status=404 bytes=21
+2026-11-20 20:33:00,878 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/advanova params=None status=200 bytes=725

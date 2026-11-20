@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: setup test labels cordis orgs gharchive gate validate snapshots backtest report all
+.PHONY: setup test labels cordis idmap pipeline orgs gharchive gate validate snapshots backtest report all
 
 setup:
 	python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
@@ -11,14 +11,20 @@ test:
 labels:          ## YC directory + HTGF portfolio -> data/labels/companies.csv
 	$(PY) -m scripts.collect_labels
 
-cordis:          ## CORDIS bulk CSVs (FP7, H2020, Horizon Europe) -> raw + processed
-	$(PY) -m scripts.sources.cordis
+cordis:          ## CORDIS bulk zips (download by hand in a browser: robots.txt) -> processed tables
+	$(PY) -m scripts.sources.cordis --skip-download
 
-orgs:            ## GitHub org sample (pool a) + org lookups for labelled companies
-	$(PY) -m scripts.sources.github
+idmap:           ## GitHub account-id -> creation-date map (recycled-login guard), streamed from GH Archive
+	$(PY) -m scripts.sources.gh_id_dates
 
-gharchive:       ## GH Archive events for pool + positives (ClickHouse mirror by default)
-	$(PY) -m scripts.sources.gharchive
+pipeline:        ## steps 1-4 in order: org search, pool sample, controls, GH Archive features, CORDIS links, gate
+	$(PY) -m scripts.pipeline
+
+orgs:            ## (part of pipeline) stem-only org search for labelled companies
+	$(PY) -m scripts.run_org_search --labelled-only
+
+gharchive:       ## (part of pipeline) GH Archive features for all matched orgs (ClickHouse mirror, quota-aware)
+	$(PY) -m scripts.sources.gh_features
 
 gate:            ## covered positives per year + metric coverage, before full collection
 	$(PY) -m scripts.gate
@@ -35,4 +41,4 @@ backtest:
 report:
 	$(PY) -m scripts.report
 
-all: labels cordis orgs gharchive validate snapshots backtest report
+all: labels cordis idmap pipeline snapshots backtest report

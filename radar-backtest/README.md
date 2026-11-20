@@ -7,20 +7,22 @@ reads any data.
 ## Quick start
 ```bash
 make setup        # venv + pinned requirements
-make test         # unit + leakage tests (must be green before any result is reported)
+make test         # unit, leakage and end-to-end tests (must be green before any result is reported)
 make labels       # YC directory + HTGF portfolio -> data/labels/companies.csv
-make cordis       # CORDIS bulk (FP7, H2020, Horizon Europe)
-make orgs         # GitHub org sample (pool) + org lookups for labelled companies
-make gate         # count covered positives per year + metric coverage (stop and review here)
-make gharchive    # GH Archive events (free ClickHouse public mirror by default)
-make validate snapshots backtest report
+make cordis       # CORDIS tables from the bulk zips in data/raw/cordis (download them by hand: robots.txt)
+make idmap        # GitHub account-id -> date map (recycled-login guard)
+make pipeline     # org search, outcome-blind pool sample, GH Archive features, CORDIS links, validation, gate
+make snapshots backtest report
 ```
-Secrets come only from environment variables (`GITHUB_TOKEN`; later `COMPANIES_HOUSE_API_KEY`, `PRODUCTHUNT_TOKEN`).
-Nothing secret is written to disk. Collection is cached in `data/cache/` (gitignored), so every step is resumable.
+No API keys are needed. Sources: yc-oss (YC directory mirror), htgf.de (deterministic parser), CORDIS bulk zips,
+GH Archive via the free ClickHouse playground (quota ≈ 300e9 rows read per hour; the pipeline waits it out),
+ecosyste.ms owner metadata (5,000 requests/hour anonymous). Everything is cached in `data/cache/` (gitignored), so
+every step is resumable. See `HANDOFF.md` for decisions and status.
 
 ## Design in one paragraph
-Candidates come from an outcome-blind pool: (a) GitHub organisations whose website is a company domain, and (b) private
-companies in EU CORDIS grant data. A seeded background sample **B** of the pool is drawn *before* any label lookup;
+Candidates come from an outcome-blind pool of GitHub organisations: org-like GH Archive owners, hash-sampled per
+first-activity year, whose website is a company domain, whose login is the domain stem, and that showed team activity
+in their first 12 months (≥ 2 pushers, ≥ 10 Push/PR/Issues/Release events). Funded companies must meet the same rule. A seeded background sample **B** of the pool is drawn *before* any label lookup;
 B minus funded companies are the controls, and B is also the scaling reference. Positives are YC / HTGF companies that
 meet the same pool criteria. For each as_of date (1 January), only events with `ts < as_of` are used; label = first
 funding in `[as_of, as_of + 24 months)`; already-funded companies are excluded. Models are trained only on as_of years
@@ -45,7 +47,7 @@ fills 0 and adds `has_<source>`.
 (later) improvement-loop log.
 
 ## Status
-- [x] scaffold + shared library + tests
-- [ ] labels, CORDIS, GitHub orgs, GH Archive collectors
-- [ ] gate check
-- [ ] snapshots, backtest, report
+- [x] scaffold, shared library, tests (≈300), verified papers
+- [x] labels (6,607), CORDIS (469k participations), keyless GitHub org discovery, GH Archive backend
+- [ ] pipeline run (org search → pool → features → gate)
+- [ ] snapshots, backtest, leakage review, report

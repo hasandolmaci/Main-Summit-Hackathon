@@ -28,6 +28,13 @@ Read this first if you are a new session continuing the work. The approved plan 
 9. CORDIS zips were downloaded by the user in a browser (robots.txt blocks `/data/` for scripts) and imported with
    `--zip-dir`; they live on branch `cordis-raw-zips` (not in the working branch). Finding: CORDIS has a website URL only
    for FP7-era companies (H2020/Horizon newcomers: 0.1% / 0.0% have one).
+11. Pool v2 (2026-11-20): pool = org-like GH Archive owners hash-sampled per first-activity year that meet the
+    **entry rule** (first 12 months: ≥ 2 distinct pushers and ≥ 10 Push/PR/Issues/Release events) and are findable
+    by the **stem-only tier-1 search** (login = domain stem, website = domain); same rule for positives. Recycled
+    logins (GitHub id created > 90 days after the first GH event) are dropped for everyone.
+12. CORDIS grants matched by domain OR unique normalised legal name + same country (ccTLD); SPARQL confirmed 0.0%
+    websites for post-FP7 companies. Keys never use label names.
+13. ClickHouse playground quota (~25 full scans/hour): `scripts/pipeline.py` waits for the reset and resumes.
 10. CORDIS **pool channel dropped** (`config.yaml pool.channels: [github]`): candidates come from GitHub orgs only; CORDIS
     stays the `has_public_rd_grant` feature. Grant **matching rule pending**: user waits for the SPARQL check; the
     recommended extension is exact normalised legal name + same country (country from ccTLD/registry), unique match only.

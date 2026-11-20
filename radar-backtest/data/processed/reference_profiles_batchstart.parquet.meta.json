@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-20T22:42:39.517998+00:00",
+  "file": "data/processed/reference_profiles_batchstart.parquet",
+  "git_sha": "39335caffdfcc585291ffc53fd3f14a3f3ec502b",
+  "inputs": [],
+  "notes": null,
+  "params": {
+    "offset_days": 90
+  },
+  "python": "3.13.18",
+  "rows": 33,
+  "script": "scripts/build_snapshots.py",
+  "sha256": "bf20f9a77f8265901515668eacc6ea051eb65b7ab8eb0517a343cbfce2baf180",
+  "sources": []
+}

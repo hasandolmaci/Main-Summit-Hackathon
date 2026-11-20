@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-11-20T22:42:37.120278+00:00",
+  "file": "data/processed/snapshots_2015_batchstart.parquet",
+  "git_sha": "39335caffdfcc585291ffc53fd3f14a3f3ec502b",
+  "inputs": [
+    {
+      "path": "data/processed/entities.csv",
+      "sha256": "6f3f5ef4932083887887bc56a988c4b5c847f96729e00f49aa8b4c40a708ab60"
+    },
+    {
+      "path": "data/processed/events.parquet",
+      "sha256": "1a44ef8fc9ca1ed80f472825406c0db233f8adf629ed4d4ab2863d0721d990fa"
+    },
+    {
+      "path": "data/labels/companies_batchstart.csv",
+      "sha256": "0b10c28abd00f5817897a0df645d3838dd3b8ff2681da90b1425d99074ff1340"
+    }
+  ],
+  "notes": null,
+  "params": {
+    "as_of": "2015-01-01 00:00:00+00:00",
+    "engagement_scaling": "robust_z",
+    "windows": {
+      "accel_clip": 3.0,
+      "engagement_months": 12,
+      "w0_days": 90,
+      "w1_days": 90
+    }
+  },
+  "python": "3.13.18",
+  "rows": 186,
+  "script": "scripts/build_snapshots.py",
+  "sha256": "34792439b0ce12cb78f1d548b0ca9e97482e9e6fcc91f072a500c2fd26c9f2d2",
+  "sources": []
+}

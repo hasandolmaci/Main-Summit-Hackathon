@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-11-20T22:42:35.106159+00:00",
+  "file": "results/predictions_R3.parquet",
+  "git_sha": "39335caffdfcc585291ffc53fd3f14a3f3ec502b",
+  "inputs": [],
+  "notes": null,
+  "params": {
+    "R": 3,
+    "reps": 200,
+    "seed": 20251120,
+    "suffix": "",
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/backtest.py",
+  "sha256": "e3d9a1651dde15005372acda297e8bf80da10590045fce6c01db617584b6581d",
+  "sources": []
+}

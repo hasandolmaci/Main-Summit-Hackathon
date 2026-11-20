@@ -89,3 +89,10 @@ def test_universe_never_reads_labels_and_combines_probs():
     assert set(u["entity_id"]) == {"acme.com", "beta.de"}
     u0 = build_universe(sample, companies, fraction=0.0, salt=1)
     assert u0.set_index("entity_id").loc["acme.com", "inclusion_prob"] == pytest.approx(0.2)
+
+
+def test_visibility_requires_pool_entry_by_as_of():
+    ent = _ent()
+    ent["gh_pool_entry_ts"] = ["2014-01-01", None, "2016-06-01", None, None]   # c enters only after as_of
+    v = cohort.visible_at(ent, A, channels=["github"])
+    assert v["visible"].tolist() == [True, False, False, False, False]

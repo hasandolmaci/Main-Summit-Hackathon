@@ -168,6 +168,26 @@ class EcosystemsUnavailable(OwnersError):
     """ecosyste.ms kept failing; everything answered so far is persisted, rerun later."""
 
 
+class OutputConflict(OwnersError):
+    """An existing output file has other columns (scripts/sources/github.py writes the same paths)."""
+
+
+def _check_output(path: Path | None, columns: list[str]):
+    """Fail fast, BEFORE any request, when an existing output at `path` has other columns than this module writes
+    (scripts/sources/github.py uses the same three paths with different columns). Never overwritten silently."""
+    if path is None or not Path(path).exists():
+        return
+    if str(path).endswith(".csv"):
+        cols = list(pd.read_csv(path, nrows=0).columns)
+    else:
+        import pyarrow.parquet as pq
+        cols = list(pq.read_schema(path).names)
+        cols = [c for c in cols if c != "__index_level_0__"]
+    if cols != list(columns):
+        raise OutputConflict(f"{path} has columns {cols} (written by another collector, e.g. scripts/sources/github.py?)"
+                             f"; expected {list(columns)}. Move it away or pass another --out.")
+
+
 @dataclass
 class RunStats:
     eco_requests: int = 0
@@ -414,6 +434,11 @@ def frame_sample_list(raw: pd.DataFrame) -> pd.DataFrame:
         raise OwnersError("sample listing contains owners that are not org_like")
     if df["login"].duplicated().any():
         raise OwnersError("duplicate owners in sample listing")
+    bad = ~df["login"].map(lambda s: bool(gha.LOGIN_RE.match(s)))
+    if bad.any():
+        # lookup_owners would drop them, leaving the year 'pending' forever; fail loudly instead (0 of 3.5M owners in
+        # buckets < 400, 2011-2026, were invalid when checked on 2026-11-20)
+        raise OwnersError(f"sample listing contains {int(bad.sum())} owner(s) that are not [a-z0-9-]{{1,39}}")
     return df.sort_values(["first_year", "hash_bucket", "login"]).reset_index(drop=True)
 
 
@@ -503,8 +528,11 @@ def parse_owner(query_login: str, status: int, text: str, fetched_at) -> tuple[d
         return row, scrub_owner(payload)
     if kind == "organization":
         url = _clean_str(payload.get("website"))
-        row.update(login=payload["login"].strip(), uuid=_uuid(payload.get("uuid")), website_url=url,
-                   website_domain=company_domain(url), display_name=_clean_str(payload.get("name")))
+        login, name = payload["login"].strip(), _clean_str(payload.get("name"))
+        # company_domain with the owner's names, as in scripts/sources/github.py and login_rule: a platform domain is
+        # kept only when the owner IS that platform (org 'gitlab' + gitlab.com); hosted pages stay excluded.
+        row.update(login=login, uuid=_uuid(payload.get("uuid")), website_url=url,
+                   website_domain=company_domain(url, tuple(x for x in (login, name) if x)), display_name=name)
     return row, scrub_owner(payload)
 
 
@@ -556,12 +584,20 @@ def _merge_owners(new: pd.DataFrame, path: Path):
 
 
 class RawJsonl:
-    """data/raw/ecosystems/owners_<sha8>.jsonl.gz (sha8 of the requested logins); gzip mtime 0; .meta.json on close."""
+    """data/raw/ecosystems/owners_<sha8>.jsonl.gz (sha8 of the requested logins); gzip mtime 0; .meta.json on close.
+
+    ecosyste.ms responses are not HTTP-cached, so a second request of the same login list (refresh, or a rerun after a
+    failed run) yields NEW responses: they go to owners_<sha8>_r<k>.jsonl.gz and earlier raw files are never
+    overwritten (they remain the provenance of rows kept in github_owners.parquet)."""
 
     def __init__(self, directory: Path, logins: list[str], params: dict | None = None):
         self.dir = Path(directory)
         sha8 = hashlib.sha256("\n".join(logins).encode()).hexdigest()[:8]
         self.path = self.dir / f"owners_{sha8}.jsonl.gz"
+        k = 2
+        while self.path.exists():
+            self.path = self.dir / f"owners_{sha8}_r{k}.jsonl.gz"
+            k += 1
         self.tmp = Path(str(self.path) + ".part")
         self.params = params or {}
         self.lines = 0
@@ -706,7 +742,7 @@ def plan_find(entities, chunk_size: int = ACT_CHUNK) -> dict:
     n_company = 0
     pairs = {1: 0, 2: 0, 3: 0}
     for eid, names in ents:
-        dom = company_domain(eid)
+        dom = company_domain(eid, names)
         if dom is None:
             continue
         n_company += 1
@@ -731,6 +767,9 @@ def find_org(entities, ch: gha.ClickHouse | None = None, client=None,
     """Staged org search for entities (entity_id = registrable domain, optional names). Returns matched rows only."""
     ents = _prep_entities(entities)
     budget = budget or Budget()
+    if persist:
+        _check_output(out_path, ENTITY_ORG_COLUMNS)
+        _check_output(search_log_path, SEARCH_LOG_COLUMNS)
     if activity is None:
         def activity(ls):  # noqa: E306
             return owner_activity(ls, ch=ch)
@@ -740,7 +779,7 @@ def find_org(entities, ch: gha.ClickHouse | None = None, client=None,
     info: dict[str, dict] = {}
     unresolved: dict[str, tuple[str, tuple, dict]] = {}
     for eid, names in ents:
-        dom = company_domain(eid)
+        dom = company_domain(eid, names)        # same as scripts/sources/github.py (platform owners kept by name)
         rec = {"entity_id": eid, "entity_domain": dom, "names": "|".join(names), "n_cand_tier1": 0,
                "n_cand_tier2": 0, "n_cand_tier3": 0, "n_exists_searched": 0, "n_org_like_searched": 0,
                "tiers_searched": 0, "resolved": False, "n_lookup_errors": 0, "note": None}
@@ -853,9 +892,8 @@ def search_frame(rows) -> pd.DataFrame:
 def _merge_write(new: pd.DataFrame, path: Path, replaced: set, columns: list, norm, notes: str):
     """Keep rows of other entities from earlier runs; rows of the entities searched now are replaced."""
     if path.exists():
+        _check_output(path, columns)
         old = pd.read_parquet(path)
-        if list(old.columns) != columns:
-            raise OwnersError(f"{path} has columns {list(old.columns)} (another collector?); expected {columns}")
         old = old[~old["entity_id"].isin(replaced)]
         df = pd.concat([norm(old), new], ignore_index=True) if len(old) else new
     else:
@@ -928,6 +966,8 @@ def sample_pool(years: Iterable[int] | None = None, per_year: int | None = None,
     years = _year_list(years)
     target = int(cfg()["pool"]["owner_lookups_per_year"] if per_year is None else per_year)
     budget = budget or Budget()
+    _check_output(out_path, SAMPLE_COLUMNS)
+    _check_output(years_path, YEAR_COLUMNS)
     ch = _ch(ch)
     if lookup is None:
         def lookup(ls):  # noqa: E306
@@ -1034,9 +1074,8 @@ def sample_frame(rows) -> pd.DataFrame:
 
 def _write_sample(df: pd.DataFrame, path: Path, years: list[int], target: int, pilot_m: int):
     if path.exists():
+        _check_output(path, SAMPLE_COLUMNS)
         old = pd.read_parquet(path)
-        if list(old.columns) != SAMPLE_COLUMNS:
-            raise OwnersError(f"{path} has columns {list(old.columns)} (another collector?); expected SAMPLE_COLUMNS")
         old = old[~old["first_event_year"].isin(years)]
         full = sample_frame(pd.concat([sample_frame(old), df], ignore_index=True)) if len(old) else sample_frame(df)
     else:
@@ -1065,6 +1104,7 @@ def _write_sample(df: pd.DataFrame, path: Path, years: list[int], target: int, p
 
 def _write_years(ystats: pd.DataFrame, path: Path):
     if path.exists():
+        _check_output(path, YEAR_COLUMNS)
         old = pd.read_csv(path)
         old = old[~old["year"].isin(set(ystats["year"]))]
         ystats = pd.concat([old, ystats], ignore_index=True) if len(old) else ystats
@@ -1271,6 +1311,9 @@ def main(argv=None) -> int:
             ch = gha.backend()
             res = calibrate(a.hours, a.per_class, ch=ch, out_path=a.out)
             print(res.to_string(index=False))
+    except OutputConflict as e:
+        print(f"error: {e}", file=sys.stderr)
+        return 2
     except (gha.ClickHouseError, gha.GHArchiveError, EcosystemsUnavailable) as e:
         log.error("%s", e)
         print(f"ERROR: {e}", file=sys.stderr)

@@ -1,8 +1,8 @@
 """Entity resolution: one company = one registrable domain.
 
 Steps
-  targets : write data/processed/org_search_input.csv (entity_id, names) for universe ∪ labelled companies,
-            to be fed to `python -m scripts.sources.github find` (same staged search for everyone).
+  targets : write data/processed/org_search_input.csv (entity_id, names='') for universe ∪ labelled companies,
+            to be fed to `python -m scripts.sources.github_owners find` (same stem-only staged search for everyone).
   build   : link GitHub org (website == domain AND login rule; high confidence only) and CORDIS (domain equality,
             high confidence), derive country symmetrically (ccTLD, else CORDIS country), and write
             data/processed/entities.csv + data/processed/events.parquet.
@@ -50,7 +50,9 @@ def targets() -> pd.DataFrame:
         rows.setdefault(r.entity_id, set()).update(_names(r.names))
     for r in lab.itertuples():
         rows.setdefault(r.domain, set()).update([r.company] if isinstance(r.company, str) else [])
-    df = pd.DataFrame({"entity_id": list(rows), "names": ["|".join(sorted(v)) for v in rows.values()]})
+    # Stem-only search for EVERY entity: label names (YC/HTGF) would give positives extra login guesses that
+    # controls do not get, so names are deliberately left empty (symmetric findability).
+    df = pd.DataFrame({"entity_id": list(rows), "names": ""})
     df = df.sort_values("entity_id").reset_index(drop=True)
     out = PROCESSED / "org_search_input.csv"
     df.to_csv(out, index=False)
@@ -62,6 +64,69 @@ def targets() -> pd.DataFrame:
 
 
 CORDIS_TO_ISO = {"EL": "GR", "UK": "GB"}
+
+
+def pool_entry_ts(first_event_ts, daily: pd.DataFrame, team_first_push: pd.Series, min_act: int, min_pushers: int):
+    """Day the pool entry rule is first met within [first_event, first_event + 365d); returns end of that day (UTC).
+
+    daily: rows (day, total) of non-bot Push/PR/Issues/Release events on the org's repos;
+    team_first_push: each non-bot pusher's first push time. NaT if the rule is never met in the first year.
+    """
+    if pd.isna(first_event_ts) or daily is None or len(daily) == 0:
+        return pd.NaT
+    f = pd.Timestamp(first_event_ts)
+    end = f + pd.Timedelta(days=365)
+    d = daily.copy()
+    d["day"] = pd.to_datetime(d["day"], utc=True)
+    d = d[(d["day"] >= f.floor("D")) & (d["day"] < end)].sort_values("day")
+    if d.empty:
+        return pd.NaT
+    cum = d["total"].cumsum().to_numpy()
+    tp = pd.to_datetime(pd.Series(team_first_push), utc=True).dropna()
+    pushes = np.sort(tp.dt.tz_convert(None).to_numpy(dtype="datetime64[ns]"))     # naive UTC for searchsorted
+    for day, c in zip(d["day"], cum):
+        day_end = day + pd.Timedelta(days=1)
+        n_p = int(np.searchsorted(pushes, day_end.tz_convert(None).to_datetime64(), side="left"))
+        if c >= min_act and n_p >= min_pushers:
+            return day_end
+    return pd.NaT
+
+
+def add_pool_entry(ent: pd.DataFrame) -> pd.DataFrame:
+    """gh_pool_entry_ts per entity (same rule as scripts/sources/pool_sample.py), and drop recycled logins."""
+    pc = cfg()["pool"]
+    ent["gh_pool_entry_ts"] = pd.NaT
+    ent["gh_login_recycled"] = False
+    dp, tp = PROCESSED / "gh_org_activity_daily.parquet", PROCESSED / "gh_team.parquet"
+    if not (dp.exists() and tp.exists()) or ent["github_org"].isna().all():
+        return ent
+    daily = pd.read_parquet(dp)
+    daily["owner"] = daily["owner"].str.lower()
+    daily["total"] = daily[["push", "pr", "issues", "release"]].sum(axis=1)
+    team = pd.read_parquet(tp)
+    team["owner"] = team["owner"].str.lower()
+    dg = {k: g for k, g in daily.groupby("owner")}
+    tg = {k: g["first_push_ts"] for k, g in team.groupby("owner")}
+    vals = []
+    for r in ent.itertuples():
+        org = r.github_org.lower() if isinstance(r.github_org, str) else None
+        vals.append(pool_entry_ts(r.gh_first_event_ts, dg.get(org), tg.get(org, pd.Series(dtype="datetime64[ns, UTC]")),
+                                  int(pc.get("min_activity_12m", 10)), int(pc.get("min_pushers_12m", 2)))
+                    if org else pd.NaT)
+    ent["gh_pool_entry_ts"] = pd.to_datetime(pd.Series(vals, index=ent.index), utc=True)
+    idp = PROCESSED / "gh_id_date_map.csv"
+    if idp.exists() and "github_org_uuid" in ent:
+        from .sources.gh_id_dates import creation_bounds
+        b = creation_bounds(ent["github_org_uuid"].tolist(), pd.read_csv(idp))
+        slack = pd.Timedelta(days=int(pc.get("recycled_login_slack_days", 90)))
+        rec = b["created_after"].notna().values & (b["created_after"].values >
+                                                   (pd.to_datetime(ent["gh_first_event_ts"], utc=True) + slack).values)
+        ent["gh_login_recycled"] = rec
+        for c in ["github_org", "github_org_created_at", "github_match_method", "github_match_confidence",
+                  "github_tier", "gh_pool_entry_ts"]:
+            if c in ent:
+                ent.loc[rec, c] = None if ent[c].dtype == object else pd.NaT
+    return ent
 
 
 def cordis_entity_summary(links: pd.DataFrame, part: pd.DataFrame) -> pd.DataFrame:
@@ -95,7 +160,11 @@ def build_entities(universe: pd.DataFrame, labels: pd.DataFrame, gh_links: pd.Da
                                      "match_method": "github_match_method",
                                      "match_confidence": "github_match_confidence", "tier": "github_tier"})
         g = g[g["github_match_confidence"] == "high"]
-        ent = ent.merge(g[["entity_id", "github_org", "github_org_created_at", "github_match_method",
+        if "org_uuid" in g:
+            g = g.rename(columns={"org_uuid": "github_org_uuid"})
+        else:
+            g["github_org_uuid"] = None
+        ent = ent.merge(g[["entity_id", "github_org", "github_org_uuid", "github_org_created_at", "github_match_method",
                            "github_match_confidence", "github_tier"]], on="entity_id", how="left")
     else:
         for c in ["github_org", "github_org_created_at", "github_match_method", "github_match_confidence", "github_tier"]:
@@ -134,6 +203,7 @@ def build_entities(universe: pd.DataFrame, labels: pd.DataFrame, gh_links: pd.Da
     ent["horizon_eligible"] = ent["country"].isin(he) | ent["entity_id"].str.endswith(".eu")
     for col in ["github_org_created_at", "gh_first_event_ts", "cordis_first_public_ts"]:
         ent[col] = pd.to_datetime(ent[col], utc=True)
+    ent = add_pool_entry(ent)
     return ent.sort_values("entity_id").reset_index(drop=True)
 
 

@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-11-20T20:15:15.405136+00:00",
+  "file": "data/raw/cordis_sparql/grant_programme/grant_programme_a9938d1c_count.csv.gz",
+  "git_sha": "1d224e999a57798c2e1422ffa26ceac575c12ecc",
+  "inputs": [],
+  "notes": "Raw CORDIS SPARQL text/csv response for 'query' (never edited); CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
+  "params": {
+    "count": 22987,
+    "endpoint": "https://cordis.europa.eu/datalab/sparql",
+    "fetched_at": "2026-11-20T19:57:07.028650+00:00",
+    "format": "text/csv",
+    "kind": "count",
+    "query": "# radar-backtest cordis_sparql dataset=grant_programme count\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n)\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeProgramme ?s . ?s eurio:code ?value .\n}"
+  },
+  "python": "3.13.18",
+  "rows": 1,
+  "script": "scripts/sources/cordis_sparql.py",
+  "sha256": "eff4af0465c885d5b987be395f81347be12fcc58c505ef28f86e9e0701fface2",
+  "sources": [
+    "https://cordis.europa.eu/datalab/sparql"
+  ]
+}

@@ -34,7 +34,14 @@ pool:
   org_max_age_years: 5        # org's first GH Archive event in [as_of - 5y, as_of)
   org_sample_pages_per_year: 40   # (GitHub-API route only) REST /organizations pages per creation year
   org_sample_years: [2010, 2023]
-  owner_lookups_per_year: 300     # ecosyste.ms lookups for the GH Archive owner hash sample, per first-activity year
+  owner_lookups_per_year: 300     # target owners meeting the entry rule (=> ecosyste.ms lookups) per first-activity year
+  pilot_m: 300                    # hash buckets (of 10,000) listed per year before choosing m_Y
+  # Pool entry rule (same for every entity): within the org's first 12 months of GH Archive activity,
+  # >= min_pushers_12m distinct non-bot pushers AND >= min_activity_12m Push/PR/Issues/Release events.
+  min_activity_12m: 10
+  min_pushers_12m: 2
+  max_search_tier: 1              # stem-only staged org search depth, identical for every entity (1 = exact stem)
+  recycled_login_slack_days: 90   # GitHub id creation lower bound > first GH event + slack -> login recycled
   cordis_sample_fraction: 0.15
   controls_per_positive: 10
 

@@ -20,7 +20,8 @@ def visible_at(ent: pd.DataFrame, as_of: datetime, channels=None) -> pd.DataFram
     """Pool criteria at as_of (no labels). Returns boolean columns gh_cov, cordis_cov, visible.
 
     GitHub channel: matched org whose FIRST GH Archive event lies in [as_of - max_age, as_of) (org age proxy that is
-    observable at as_of; GitHub's own org creation date is not available from the keyless sources).
+    observable at as_of; GitHub's own org creation date is not available from the keyless sources) AND, when the
+    column exists, whose pool entry rule (gh_pool_entry_ts: first-12-month team activity) was met by as_of.
     CORDIS channel: first grant signature (public) < as_of — counts towards visibility only if 'cordis' is an
     enabled pool channel (config pool.channels).
     """
@@ -31,6 +32,9 @@ def visible_at(ent: pd.DataFrame, as_of: datetime, channels=None) -> pd.DataFram
     cordis = pd.to_datetime(ent["cordis_first_public_ts"], utc=True)
     has_org = ent["github_org"].notna() if "github_org" in ent else first_ev.notna()
     gh = has_org & first_ev.notna() & (first_ev >= lo) & (first_ev < a)
+    if "gh_pool_entry_ts" in ent:            # pool entry rule (first-12-month team activity) must be met by as_of
+        entry = pd.to_datetime(ent["gh_pool_entry_ts"], utc=True)
+        gh = gh & entry.notna() & (entry <= a)
     co = cordis.notna() & (cordis < a)
     vis = (gh if "github" in channels else False) | (co if "cordis" in channels else False)
     return pd.DataFrame({"gh_cov": gh.values, "cordis_cov": co.values, "visible": vis.values}, index=ent.index)

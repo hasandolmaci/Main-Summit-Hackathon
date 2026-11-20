@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-11-20T20:14:43.847607+00:00",
+  "file": "data/raw/cordis_sparql/projects/projects_9319c458_count.csv.gz",
+  "git_sha": "1d224e999a57798c2e1422ffa26ceac575c12ecc",
+  "inputs": [],
+  "notes": "Raw CORDIS SPARQL text/csv response for 'query' (never edited); CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
+  "params": {
+    "count": 80348,
+    "endpoint": "https://cordis.europa.eu/datalab/sparql",
+    "fetched_at": "2026-11-20T20:14:43.845670+00:00",
+    "format": "text/csv",
+    "kind": "count",
+    "query": "# radar-backtest cordis_sparql dataset=projects count\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n)\nWHERE {\n  ?project a eurio:Project ; eurio:identifier ?project_id .\n  OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }\n  OPTIONAL { ?project eurio:startDate ?sd }\n  OPTIONAL { ?project eurio:signatureDate ?sig }\n  OPTIONAL { ?project eurio:isFundedBy ?grant }\n}"
+  },
+  "python": "3.13.18",
+  "rows": 1,
+  "script": "scripts/sources/cordis_sparql.py",
+  "sha256": "9c7e51d2fdc53e987f23ab6b6ccad90db2348ee032fc158e1d13e73a1413028b",
+  "sources": [
+    "https://cordis.europa.eu/datalab/sparql"
+  ]
+}

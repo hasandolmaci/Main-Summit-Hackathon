@@ -9307,3 +9307,1546 @@
 2026-11-20 20:12:24,449 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
 2026-11-20 20:12:24,472 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
 2026-11-20 20:12:24,495 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 20:12:24,519 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 20:12:24,538 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 20:12:24,609 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 20:12:24,683 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 20:12:24,818 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 20:12:24,840 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:12:24,855 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:12:25,021 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 20:12:25,044 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:12:25,062 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:12:25,119 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 20:12:25,124 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows (or could not be read for) automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Retry later if it was unreachable; otherwise download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 20:12:25,130 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-71/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (155 bytes)
+2026-11-20 20:12:25,130 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-71/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 20:12:25,134 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-71/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-71/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 20:12:25,135 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 20:12:25,138 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 20:12:25,254 WARNING gharchive: rejected 2 invalid login value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:12:25,270 WARNING gharchive: t: splitting chunk of 5 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:12:25,276 INFO gharchive: query t_725ab108 rows=2 0.00s cache=False
+2026-11-20 20:12:25,276 WARNING gharchive: t: splitting chunk of 3 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:12:25,282 INFO gharchive: query t_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:12:25,288 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:12:25,293 INFO gharchive: query t_044d23a2 rows=2 0.00s cache=False
+2026-11-20 20:12:25,299 INFO gharchive: query t2_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:12:25,299 WARNING gharchive: t2: splitting chunk of 2 (t2: 2 rows > 1)
+2026-11-20 20:12:25,304 INFO gharchive: query t2_9b383db9 rows=1 0.00s cache=False
+2026-11-20 20:12:25,309 INFO gharchive: query t2_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:12:25,346 INFO gharchive: query span_1dca1109 rows=2 0.00s cache=False
+2026-11-20 20:12:25,352 INFO gharchive: wrote /tmp/pytest-of-root/pytest-71/test_end_to_end_processed_outp0/span.parquet rows=2
+2026-11-20 20:12:25,358 INFO gharchive: query team_1ba97f53 rows=3 0.00s cache=False
+2026-11-20 20:12:25,366 INFO gharchive: wrote /tmp/pytest-of-root/pytest-71/test_end_to_end_processed_outp0/team.parquet rows=3
+2026-11-20 20:12:25,372 INFO gharchive: query daily_6c90f737 rows=3 0.00s cache=False
+2026-11-20 20:12:25,380 INFO gharchive: wrote /tmp/pytest-of-root/pytest-71/test_end_to_end_processed_outp0/daily.parquet rows=3
+2026-11-20 20:12:25,395 INFO gharchive: query ext_291805af rows=5 0.00s cache=False
+2026-11-20 20:12:25,410 INFO gharchive: wrote /tmp/pytest-of-root/pytest-71/test_end_to_end_processed_outp0/ext.parquet rows=5
+2026-11-20 20:12:25,436 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:12:25,445 INFO gharchive: wrote /tmp/pytest-of-root/pytest-71/test_external_refuses_unresolv0/team.parquet rows=3
+2026-11-20 20:12:25,984 INFO gharchive: query t_460f1c7d rows=4 0.00s cache=False
+2026-11-20 20:12:25,985 WARNING gharchive: t: splitting chunk of 4 (t: 4 rows > 2)
+2026-11-20 20:12:25,990 INFO gharchive: query t_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:12:25,995 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:12:26,003 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:12:26,012 INFO gharchive: wrote /tmp/pytest-of-root/pytest-71/test_external_refuses_team_wit0/team.parquet rows=3
+2026-11-20 20:12:26,025 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:12:26,030 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:12:26,035 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:12:26,048 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:12:26,053 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:12:26,058 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:12:26,200 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,200 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,200 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,200 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,202 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,202 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,202 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,202 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,203 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,203 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,203 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,203 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,203 ERROR github: lookup failed for bad
+2026-11-20 20:12:26,210 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:12:26,253 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:12:26,318 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,318 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,318 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,319 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,320 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,320 ERROR github: lookup failed for x0
+2026-11-20 20:12:26,321 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,321 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,321 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,321 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,321 ERROR github: lookup failed for x1
+2026-11-20 20:12:26,322 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,322 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,322 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,322 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,322 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,322 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,322 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,322 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,322 ERROR github: lookup failed for x10
+2026-11-20 20:12:26,323 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,323 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,323 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,323 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,323 ERROR github: lookup failed for x11
+2026-11-20 20:12:26,323 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,324 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,324 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,324 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,324 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,324 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,324 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,324 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,324 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,324 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,324 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,324 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,324 ERROR github: lookup failed for x12
+2026-11-20 20:12:26,325 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,325 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,325 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,325 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,325 ERROR github: lookup failed for x13
+2026-11-20 20:12:26,326 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,326 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,326 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,326 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,326 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,326 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,326 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,326 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,326 ERROR github: lookup failed for x14
+2026-11-20 20:12:26,327 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,327 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,327 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,327 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,327 ERROR github: lookup failed for x15
+2026-11-20 20:12:26,327 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,328 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,328 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,328 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,328 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:12:26,328 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:12:26,328 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:12:26,328 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:12:26,341 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:12:26,379 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:12:26,456 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:12:26,518 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:12:26,540 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:12:26,568 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:12:26,613 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:12:26,660 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:12:26,662 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:12:26,690 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:12:26,729 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:12:26,770 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:12:26,773 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:12:26,805 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:12:26,846 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:12:26,889 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:12:26,897 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:12:26,922 INFO github: find_org tier 2: 1 unresolved entities, 17 logins
+2026-11-20 20:12:26,951 INFO github: find_org tier 3: 1 unresolved entities, 25 logins
+2026-11-20 20:12:26,985 INFO github: find_org: 1 entities, 1 matched ({3: 1})
+2026-11-20 20:12:27,001 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:12:27,006 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:12:27,006 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:12:27,007 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:12:27,007 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:12:27,007 ERROR github: lookup failed for acme
+2026-11-20 20:12:27,015 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:12:27,028 INFO github: find_org: 1 entities, 0 matched ({})
+2026-11-20 20:12:27,028 WARNING github: find_org: 1 entities held back because a candidate lookup failed (note lookup_error_tier<N> in the search log); rerun find for them
+2026-11-20 20:12:27,044 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:12:27,101 INFO github: find_org: 1 entities, 1 matched ({1: 1})
+2026-11-20 20:12:27,135 INFO github: id bound 2008: first_id=9994 (2008-01-01 00:44:25+00:00) after 28 calls
+2026-11-20 20:12:27,140 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 35 calls
+2026-11-20 20:12:27,147 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:12:27,224 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:12:27,230 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:12:27,237 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:12:27,244 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:12:27,880 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:12:27,899 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:12:27,906 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:12:27,914 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:12:27,921 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:12:28,533 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:12:28,554 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:12:28,560 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:12:28,567 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:12:28,576 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:12:29,211 INFO github: sample: 560 orgs (186 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:12:29,250 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:12:29,250 INFO github_owners: owner_activity: 25 logins in 3 ClickHouse queries (~45 s if uncached)
+2026-11-20 20:12:29,258 INFO gharchive: query owner_activity_fd7bbd32 rows=5 0.00s cache=False
+2026-11-20 20:12:29,265 INFO gharchive: query owner_activity_befe13dd rows=5 0.00s cache=False
+2026-11-20 20:12:29,272 INFO gharchive: query owner_activity_3c0b07d4 rows=3 0.00s cache=False
+2026-11-20 20:12:29,284 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:12:29,358 WARNING github_owners: ecosyste.ms lookup failed for aa: HTTP_503
+2026-11-20 20:12:29,358 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:12:29,358 INFO github_owners: ecosyste.ms retry 1 for aa
+2026-11-20 20:12:29,359 INFO github_owners: ecosyste.ms retry 1 for bb
+2026-11-20 20:12:29,359 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:12:29,516 WARNING github_owners: ecosyste.ms lookup failed for x0: HTTP_503
+2026-11-20 20:12:29,516 WARNING github_owners: ecosyste.ms lookup failed for x1: HTTP_503
+2026-11-20 20:12:29,516 WARNING github_owners: ecosyste.ms lookup failed for x2: HTTP_503
+2026-11-20 20:12:29,527 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:29,534 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:12:29,583 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:29,590 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:12:29,647 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:29,654 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:12:29,719 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:12:29,753 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:29,760 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:12:29,830 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:29,838 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:12:29,909 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:29,917 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:12:30,005 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:12:30,024 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,031 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:12:30,087 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,095 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:12:30,163 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,170 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:12:30,242 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:12:30,260 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,267 INFO gharchive: query owner_activity_a0d16862 rows=1 0.00s cache=False
+2026-11-20 20:12:30,291 INFO github_owners: owner_activity: 17 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,297 INFO gharchive: query owner_activity_c9e2f8d8 rows=1 0.00s cache=False
+2026-11-20 20:12:30,327 INFO github_owners: owner_activity: 25 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,333 INFO gharchive: query owner_activity_c63dd396 rows=1 0.00s cache=False
+2026-11-20 20:12:30,367 INFO github_owners: find_org: 1 entities, 1 matched ({3: 1}), 0 held
+2026-11-20 20:12:30,402 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,409 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:12:30,423 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:12:30,423 INFO github_owners: ecosyste.ms retry 1 for acme
+2026-11-20 20:12:30,423 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:12:30,450 INFO github_owners: find_org: 1 entities, 0 matched ({}), 1 held
+2026-11-20 20:12:30,451 WARNING github_owners: find_org: 1 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:12:30,469 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,474 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:12:30,535 INFO github_owners: find_org: 1 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:12:30,563 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,569 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:12:30,626 INFO github_owners: owner_activity: 51 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,632 INFO gharchive: query owner_activity_64406a03 rows=1 0.00s cache=False
+2026-11-20 20:12:30,662 INFO github_owners: owner_activity: 50 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,668 INFO gharchive: query owner_activity_57f4a449 rows=1 0.00s cache=False
+2026-11-20 20:12:30,701 INFO github_owners: find_org: 8 entities, 1 matched ({1: 1}), 5 held
+2026-11-20 20:12:30,702 WARNING github_owners: find_org: 5 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:12:30,728 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,734 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:12:30,797 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,804 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:12:30,870 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,877 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:12:30,939 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:12:30,981 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:30,989 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:12:31,049 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:31,056 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:12:31,125 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:12:31,132 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:12:31,199 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:12:31,258 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:12:31,273 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:12:31,392 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:12:31,408 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:12:31,436 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=roles page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?role), "^.*/", "") AS ?role_id) (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?project_id ?role_label ?order ?amount ?currency\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?project eurio:identifier ?project_id }\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .\n             OPTIONAL { ?amt eurio:currency ?currency } }\n}\nORDER BY ?role ?org ?project_id ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 310000', 'format': 'text/csv'} status=200 bytes=1171114
+2026-11-20 20:12:31,517 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:12:31,533 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:12:31,590 INFO cordis_sparql: roles@310000 rows=10000 13.42s cache=False
+2026-11-20 20:12:31,592 WARNING github_owners: sample: years [2014, 2015] have pending lookups (request cap / errors) and are NOT written; rerun
+2026-11-20 20:12:31,642 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:12:31,661 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:12:31,875 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 20:12:31,875 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 20:12:34,830 INFO cordis_sparql: roles@0 rows=4 0.01s cache=False
+2026-11-20 20:12:34,834 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 20:12:34,837 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 20:12:34,841 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:12:34,845 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 20:12:34,848 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:12:34,849 INFO cordis_sparql: roles: 22 rows, 6 pages (0 from cache) 0.0s
+2026-11-20 20:12:34,857 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:12:34,861 INFO cordis_sparql: organisations@4 rows=4 0.00s cache=False
+2026-11-20 20:12:34,864 INFO cordis_sparql: organisations@8 rows=4 0.00s cache=False
+2026-11-20 20:12:34,865 INFO cordis_sparql: organisations: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:12:34,872 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 20:12:34,875 INFO cordis_sparql: organisation_types@4 rows=4 0.00s cache=False
+2026-11-20 20:12:34,878 INFO cordis_sparql: organisation_types@8 rows=4 0.00s cache=False
+2026-11-20 20:12:34,879 INFO cordis_sparql: organisation_types: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:12:34,886 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:12:34,890 INFO cordis_sparql: projects@4 rows=4 0.00s cache=False
+2026-11-20 20:12:34,894 INFO cordis_sparql: projects@8 rows=3 0.00s cache=False
+2026-11-20 20:12:34,894 INFO cordis_sparql: projects: 11 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:12:34,903 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:12:34,906 INFO cordis_sparql: grant_topic@4 rows=3 0.00s cache=False
+2026-11-20 20:12:34,907 INFO cordis_sparql: grant_topic: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:12:34,914 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:12:34,914 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:34,921 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:12:34,924 INFO cordis_sparql: grant_type@4 rows=2 0.00s cache=False
+2026-11-20 20:12:34,924 INFO cordis_sparql: grant_type: 6 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:12:34,931 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:12:34,931 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,252 INFO cordis_sparql: roles@0 rows=10 0.00s cache=False
+2026-11-20 20:12:35,256 INFO cordis_sparql: roles@10 rows=10 0.00s cache=False
+2026-11-20 20:12:35,259 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:12:35,259 INFO cordis_sparql: roles: 22 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,267 INFO cordis_sparql: organisations@0 rows=10 0.00s cache=False
+2026-11-20 20:12:35,270 INFO cordis_sparql: organisations@10 rows=2 0.00s cache=False
+2026-11-20 20:12:35,271 INFO cordis_sparql: organisations: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,277 INFO cordis_sparql: organisation_types@0 rows=10 0.00s cache=False
+2026-11-20 20:12:35,280 INFO cordis_sparql: organisation_types@10 rows=2 0.00s cache=False
+2026-11-20 20:12:35,281 INFO cordis_sparql: organisation_types: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,287 INFO cordis_sparql: projects@0 rows=10 0.00s cache=False
+2026-11-20 20:12:35,291 INFO cordis_sparql: projects@10 rows=1 0.00s cache=False
+2026-11-20 20:12:35,291 INFO cordis_sparql: projects: 11 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,297 INFO cordis_sparql: grant_topic@0 rows=7 0.00s cache=False
+2026-11-20 20:12:35,298 INFO cordis_sparql: grant_topic: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,304 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:12:35,305 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,311 INFO cordis_sparql: grant_type@0 rows=6 0.00s cache=False
+2026-11-20 20:12:35,311 INFO cordis_sparql: grant_type: 6 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,318 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:12:35,318 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,475 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:12:35,475 INFO cordis_sparql: roles: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,483 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:12:35,483 INFO cordis_sparql: organisations: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,490 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 20:12:35,490 INFO cordis_sparql: organisation_types: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,498 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:12:35,498 INFO cordis_sparql: projects: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,505 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:12:35,505 INFO cordis_sparql: grant_topic: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,512 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:12:35,512 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,519 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:12:35,519 INFO cordis_sparql: grant_type: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,526 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:12:35,526 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:12:35,715 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 1/2
+2026-11-20 20:12:35,715 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 2/2
+2026-11-20 20:12:35,721 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:12:35,721 WARNING cordis_sparql: roles@4: HTTP 500 (Virtuoso 22023 Error SR014: Function ri_name_id needs a string); pausing 0s before retry 1/2
+2026-11-20 20:12:35,725 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 20:12:35,728 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 20:12:35,732 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:12:35,735 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 20:12:35,739 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:12:45,158 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=roles page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?role), "^.*/", "") AS ?role_id) (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?project_id ?role_label ?order ?amount ?currency\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?project eurio:identifier ?project_id }\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .\n             OPTIONAL { ?amt eurio:currency ?currency } }\n}\nORDER BY ?role ?org ?project_id ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 320000', 'format': 'text/csv'} status=200 bytes=1170112
+2026-11-20 20:12:45,341 INFO cordis_sparql: roles@320000 rows=10000 13.75s cache=False
+2026-11-20 20:12:58,953 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=roles page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?role), "^.*/", "") AS ?role_id) (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?project_id ?role_label ?order ?amount ?currency\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?project eurio:identifier ?project_id }\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .\n             OPTIONAL { ?amt eurio:currency ?currency } }\n}\nORDER BY ?role ?org ?project_id ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 330000', 'format': 'text/csv'} status=200 bytes=1170616
+2026-11-20 20:12:59,103 INFO cordis_sparql: roles@330000 rows=10000 13.76s cache=False
+2026-11-20 20:13:12,434 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=roles page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?role), "^.*/", "") AS ?role_id) (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?project_id ?role_label ?order ?amount ?currency\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?project eurio:identifier ?project_id }\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .\n             OPTIONAL { ?amt eurio:currency ?currency } }\n}\nORDER BY ?role ?org ?project_id ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 340000', 'format': 'text/csv'} status=200 bytes=1170392
+2026-11-20 20:13:12,584 INFO cordis_sparql: roles@340000 rows=10000 13.48s cache=False
+2026-11-20 20:13:26,365 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=roles page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?role), "^.*/", "") AS ?role_id) (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?project_id ?role_label ?order ?amount ?currency\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?project eurio:identifier ?project_id }\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .\n             OPTIONAL { ?amt eurio:currency ?currency } }\n}\nORDER BY ?role ?org ?project_id ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 350000', 'format': 'text/csv'} status=200 bytes=1170809
+2026-11-20 20:13:26,514 INFO cordis_sparql: roles@350000 rows=10000 13.93s cache=False
+2026-11-20 20:13:40,383 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=roles page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?role), "^.*/", "") AS ?role_id) (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?project_id ?role_label ?order ?amount ?currency\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?project eurio:identifier ?project_id }\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .\n             OPTIONAL { ?amt eurio:currency ?currency } }\n}\nORDER BY ?role ?org ?project_id ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 360000', 'format': 'text/csv'} status=200 bytes=1170388
+2026-11-20 20:13:40,530 INFO cordis_sparql: roles@360000 rows=10000 14.02s cache=False
+2026-11-20 20:13:54,111 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=roles page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?role), "^.*/", "") AS ?role_id) (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?project_id ?role_label ?order ?amount ?currency\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?project eurio:identifier ?project_id }\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .\n             OPTIONAL { ?amt eurio:currency ?currency } }\n}\nORDER BY ?role ?org ?project_id ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 370000', 'format': 'text/csv'} status=200 bytes=1170257
+2026-11-20 20:13:54,279 INFO cordis_sparql: roles@370000 rows=10000 13.75s cache=False
+2026-11-20 20:14:08,250 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=roles page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?role), "^.*/", "") AS ?role_id) (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?project_id ?role_label ?order ?amount ?currency\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?project eurio:identifier ?project_id }\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .\n             OPTIONAL { ?amt eurio:currency ?currency } }\n}\nORDER BY ?role ?org ?project_id ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 380000', 'format': 'text/csv'} status=200 bytes=1170428
+2026-11-20 20:14:08,430 INFO cordis_sparql: roles@380000 rows=10000 14.15s cache=False
+2026-11-20 20:14:22,235 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=roles page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?role), "^.*/", "") AS ?role_id) (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?project_id ?role_label ?order ?amount ?currency\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?project eurio:identifier ?project_id }\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .\n             OPTIONAL { ?amt eurio:currency ?currency } }\n}\nORDER BY ?role ?org ?project_id ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 390000', 'format': 'text/csv'} status=200 bytes=1062218
+2026-11-20 20:14:22,369 INFO cordis_sparql: roles@390000 rows=9071 13.94s cache=False
+2026-11-20 20:14:22,410 INFO cordis_sparql: roles: 399071 rows, 40 pages (0 from cache) 369.6s
+2026-11-20 20:14:22,561 INFO cordis_sparql: organisations@0 rows=10000 0.15s cache=True
+2026-11-20 20:14:24,210 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisations page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?pic ?name ?short_name (STR(?url0) AS ?url) ?country\nWHERE {\n  ?org a eurio:Organisation .\n  OPTIONAL { ?org eurio:identifier ?pic }\n  OPTIONAL { ?org eurio:legalName ?name }\n  OPTIONAL { ?org eurio:hasAcronym ?acr . ?acr eurio:shortForm ?short_name }\n  OPTIONAL { ?org eurio:url ?url0 . FILTER(!REGEX(STR(?url0), "[^\\\\s@:/]+@[^\\\\s@/]+\\\\.[^\\\\s@/]+")) }\n  OPTIONAL { ?org eurio:hasSite ?site . ?site eurio:hasAddress ?adr . ?adr eurio:addressCountry ?country }\n}\nORDER BY ?org ?pic ?name ?short_name ?url0 ?country\nLIMIT 10000 OFFSET 10000', 'format': 'text/csv'} status=200 bytes=1082257
+2026-11-20 20:14:24,384 INFO cordis_sparql: organisations@10000 rows=10000 1.82s cache=False
+2026-11-20 20:14:25,640 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisations page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?pic ?name ?short_name (STR(?url0) AS ?url) ?country\nWHERE {\n  ?org a eurio:Organisation .\n  OPTIONAL { ?org eurio:identifier ?pic }\n  OPTIONAL { ?org eurio:legalName ?name }\n  OPTIONAL { ?org eurio:hasAcronym ?acr . ?acr eurio:shortForm ?short_name }\n  OPTIONAL { ?org eurio:url ?url0 . FILTER(!REGEX(STR(?url0), "[^\\\\s@:/]+@[^\\\\s@/]+\\\\.[^\\\\s@/]+")) }\n  OPTIONAL { ?org eurio:hasSite ?site . ?site eurio:hasAddress ?adr . ?adr eurio:addressCountry ?country }\n}\nORDER BY ?org ?pic ?name ?short_name ?url0 ?country\nLIMIT 10000 OFFSET 20000', 'format': 'text/csv'} status=200 bytes=1076716
+2026-11-20 20:14:25,796 INFO cordis_sparql: organisations@20000 rows=10000 1.41s cache=False
+2026-11-20 20:14:27,120 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisations page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?pic ?name ?short_name (STR(?url0) AS ?url) ?country\nWHERE {\n  ?org a eurio:Organisation .\n  OPTIONAL { ?org eurio:identifier ?pic }\n  OPTIONAL { ?org eurio:legalName ?name }\n  OPTIONAL { ?org eurio:hasAcronym ?acr . ?acr eurio:shortForm ?short_name }\n  OPTIONAL { ?org eurio:url ?url0 . FILTER(!REGEX(STR(?url0), "[^\\\\s@:/]+@[^\\\\s@/]+\\\\.[^\\\\s@/]+")) }\n  OPTIONAL { ?org eurio:hasSite ?site . ?site eurio:hasAddress ?adr . ?adr eurio:addressCountry ?country }\n}\nORDER BY ?org ?pic ?name ?short_name ?url0 ?country\nLIMIT 10000 OFFSET 30000', 'format': 'text/csv'} status=200 bytes=1084823
+2026-11-20 20:14:27,264 INFO cordis_sparql: organisations@30000 rows=10000 1.47s cache=False
+2026-11-20 20:14:28,564 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisations page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?pic ?name ?short_name (STR(?url0) AS ?url) ?country\nWHERE {\n  ?org a eurio:Organisation .\n  OPTIONAL { ?org eurio:identifier ?pic }\n  OPTIONAL { ?org eurio:legalName ?name }\n  OPTIONAL { ?org eurio:hasAcronym ?acr . ?acr eurio:shortForm ?short_name }\n  OPTIONAL { ?org eurio:url ?url0 . FILTER(!REGEX(STR(?url0), "[^\\\\s@:/]+@[^\\\\s@/]+\\\\.[^\\\\s@/]+")) }\n  OPTIONAL { ?org eurio:hasSite ?site . ?site eurio:hasAddress ?adr . ?adr eurio:addressCountry ?country }\n}\nORDER BY ?org ?pic ?name ?short_name ?url0 ?country\nLIMIT 10000 OFFSET 40000', 'format': 'text/csv'} status=200 bytes=1078172
+2026-11-20 20:14:28,710 INFO cordis_sparql: organisations@40000 rows=10000 1.44s cache=False
+2026-11-20 20:14:30,110 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisations page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?pic ?name ?short_name (STR(?url0) AS ?url) ?country\nWHERE {\n  ?org a eurio:Organisation .\n  OPTIONAL { ?org eurio:identifier ?pic }\n  OPTIONAL { ?org eurio:legalName ?name }\n  OPTIONAL { ?org eurio:hasAcronym ?acr . ?acr eurio:shortForm ?short_name }\n  OPTIONAL { ?org eurio:url ?url0 . FILTER(!REGEX(STR(?url0), "[^\\\\s@:/]+@[^\\\\s@/]+\\\\.[^\\\\s@/]+")) }\n  OPTIONAL { ?org eurio:hasSite ?site . ?site eurio:hasAddress ?adr . ?adr eurio:addressCountry ?country }\n}\nORDER BY ?org ?pic ?name ?short_name ?url0 ?country\nLIMIT 10000 OFFSET 50000', 'format': 'text/csv'} status=200 bytes=1082228
+2026-11-20 20:14:30,256 INFO cordis_sparql: organisations@50000 rows=10000 1.55s cache=False
+2026-11-20 20:14:31,873 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisations page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?pic ?name ?short_name (STR(?url0) AS ?url) ?country\nWHERE {\n  ?org a eurio:Organisation .\n  OPTIONAL { ?org eurio:identifier ?pic }\n  OPTIONAL { ?org eurio:legalName ?name }\n  OPTIONAL { ?org eurio:hasAcronym ?acr . ?acr eurio:shortForm ?short_name }\n  OPTIONAL { ?org eurio:url ?url0 . FILTER(!REGEX(STR(?url0), "[^\\\\s@:/]+@[^\\\\s@/]+\\\\.[^\\\\s@/]+")) }\n  OPTIONAL { ?org eurio:hasSite ?site . ?site eurio:hasAddress ?adr . ?adr eurio:addressCountry ?country }\n}\nORDER BY ?org ?pic ?name ?short_name ?url0 ?country\nLIMIT 10000 OFFSET 60000', 'format': 'text/csv'} status=200 bytes=1082748
+2026-11-20 20:14:32,030 INFO cordis_sparql: organisations@60000 rows=10000 1.77s cache=False
+2026-11-20 20:14:33,245 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisations page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) ?pic ?name ?short_name (STR(?url0) AS ?url) ?country\nWHERE {\n  ?org a eurio:Organisation .\n  OPTIONAL { ?org eurio:identifier ?pic }\n  OPTIONAL { ?org eurio:legalName ?name }\n  OPTIONAL { ?org eurio:hasAcronym ?acr . ?acr eurio:shortForm ?short_name }\n  OPTIONAL { ?org eurio:url ?url0 . FILTER(!REGEX(STR(?url0), "[^\\\\s@:/]+@[^\\\\s@/]+\\\\.[^\\\\s@/]+")) }\n  OPTIONAL { ?org eurio:hasSite ?site . ?site eurio:hasAddress ?adr . ?adr eurio:addressCountry ?country }\n}\nORDER BY ?org ?pic ?name ?short_name ?url0 ?country\nLIMIT 10000 OFFSET 70000', 'format': 'text/csv'} status=200 bytes=479205
+2026-11-20 20:14:33,318 INFO cordis_sparql: organisations@70000 rows=4421 1.29s cache=False
+2026-11-20 20:14:33,354 INFO cordis_sparql: organisations: 74421 rows, 8 pages (2 from cache) 10.9s
+2026-11-20 20:14:33,408 INFO cordis_sparql: organisation_types@0 rows=10000 0.05s cache=True
+2026-11-20 20:14:34,289 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisation_types page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) (REPLACE(STR(?t), "^.*[#/]", "") AS ?type)\nWHERE {\n  ?org a eurio:Organisation ; a ?t . FILTER(?t != eurio:Organisation)\n}\nORDER BY ?org ?t\nLIMIT 10000 OFFSET 10000', 'format': 'text/csv'} status=200 bytes=577256
+2026-11-20 20:14:34,342 INFO cordis_sparql: organisation_types@10000 rows=10000 0.93s cache=False
+2026-11-20 20:14:35,338 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisation_types page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) (REPLACE(STR(?t), "^.*[#/]", "") AS ?type)\nWHERE {\n  ?org a eurio:Organisation ; a ?t . FILTER(?t != eurio:Organisation)\n}\nORDER BY ?org ?t\nLIMIT 10000 OFFSET 20000', 'format': 'text/csv'} status=200 bytes=577670
+2026-11-20 20:14:35,392 INFO cordis_sparql: organisation_types@20000 rows=10000 1.05s cache=False
+2026-11-20 20:14:36,563 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisation_types page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) (REPLACE(STR(?t), "^.*[#/]", "") AS ?type)\nWHERE {\n  ?org a eurio:Organisation ; a ?t . FILTER(?t != eurio:Organisation)\n}\nORDER BY ?org ?t\nLIMIT 10000 OFFSET 30000', 'format': 'text/csv'} status=200 bytes=577135
+2026-11-20 20:14:36,613 INFO cordis_sparql: organisation_types@30000 rows=10000 1.22s cache=False
+2026-11-20 20:14:37,802 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisation_types page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) (REPLACE(STR(?t), "^.*[#/]", "") AS ?type)\nWHERE {\n  ?org a eurio:Organisation ; a ?t . FILTER(?t != eurio:Organisation)\n}\nORDER BY ?org ?t\nLIMIT 10000 OFFSET 40000', 'format': 'text/csv'} status=200 bytes=579124
+2026-11-20 20:14:37,865 INFO cordis_sparql: organisation_types@40000 rows=10000 1.25s cache=False
+2026-11-20 20:14:39,324 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisation_types page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) (REPLACE(STR(?t), "^.*[#/]", "") AS ?type)\nWHERE {\n  ?org a eurio:Organisation ; a ?t . FILTER(?t != eurio:Organisation)\n}\nORDER BY ?org ?t\nLIMIT 10000 OFFSET 50000', 'format': 'text/csv'} status=200 bytes=578502
+2026-11-20 20:14:39,376 INFO cordis_sparql: organisation_types@50000 rows=10000 1.51s cache=False
+2026-11-20 20:14:40,797 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisation_types page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) (REPLACE(STR(?t), "^.*[#/]", "") AS ?type)\nWHERE {\n  ?org a eurio:Organisation ; a ?t . FILTER(?t != eurio:Organisation)\n}\nORDER BY ?org ?t\nLIMIT 10000 OFFSET 60000', 'format': 'text/csv'} status=200 bytes=577529
+2026-11-20 20:14:40,847 INFO cordis_sparql: organisation_types@60000 rows=10000 1.47s cache=False
+2026-11-20 20:14:42,264 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisation_types page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) (REPLACE(STR(?t), "^.*[#/]", "") AS ?type)\nWHERE {\n  ?org a eurio:Organisation ; a ?t . FILTER(?t != eurio:Organisation)\n}\nORDER BY ?org ?t\nLIMIT 10000 OFFSET 70000', 'format': 'text/csv'} status=200 bytes=577852
+2026-11-20 20:14:42,325 INFO cordis_sparql: organisation_types@70000 rows=10000 1.48s cache=False
+2026-11-20 20:14:43,659 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=organisation_types page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), "^.*/", "") AS ?org_id) (REPLACE(STR(?t), "^.*[#/]", "") AS ?type)\nWHERE {\n  ?org a eurio:Organisation ; a ?t . FILTER(?t != eurio:Organisation)\n}\nORDER BY ?org ?t\nLIMIT 10000 OFFSET 80000', 'format': 'text/csv'} status=200 bytes=300064
+2026-11-20 20:14:43,687 INFO cordis_sparql: organisation_types@80000 rows=5199 1.36s cache=False
+2026-11-20 20:14:43,695 INFO cordis_sparql: organisation_types: 85199 rows, 9 pages (2 from cache) 10.3s
+2026-11-20 20:14:43,845 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=projects count\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n)\nWHERE {\n  ?project a eurio:Project ; eurio:identifier ?project_id .\n  OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }\n  OPTIONAL { ?project eurio:startDate ?sd }\n  OPTIONAL { ?project eurio:signatureDate ?sig }\n  OPTIONAL { ?project eurio:isFundedBy ?grant }\n}', 'format': 'text/csv'} status=200 bytes=10
+2026-11-20 20:14:46,053 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=projects page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?project_id ?acronym (STR(?sd) AS ?start_date) (STR(?sig) AS ?signature_date) (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid)\nWHERE {\n  ?project a eurio:Project ; eurio:identifier ?project_id .\n  OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }\n  OPTIONAL { ?project eurio:startDate ?sd }\n  OPTIONAL { ?project eurio:signatureDate ?sig }\n  OPTIONAL { ?project eurio:isFundedBy ?grant }\n}\nORDER BY ?project_id ?acronym ?sd ?sig ?grant\nLIMIT 10000 OFFSET 0', 'format': 'text/csv'} status=200 bytes=884319
+2026-11-20 20:14:46,227 INFO cordis_sparql: projects@0 rows=10000 2.38s cache=False
+2026-11-20 20:14:47,496 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=projects page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?project_id ?acronym (STR(?sd) AS ?start_date) (STR(?sig) AS ?signature_date) (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid)\nWHERE {\n  ?project a eurio:Project ; eurio:identifier ?project_id .\n  OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }\n  OPTIONAL { ?project eurio:startDate ?sd }\n  OPTIONAL { ?project eurio:signatureDate ?sig }\n  OPTIONAL { ?project eurio:isFundedBy ?grant }\n}\nORDER BY ?project_id ?acronym ?sd ?sig ?grant\nLIMIT 10000 OFFSET 10000', 'format': 'text/csv'} status=200 bytes=868148
+2026-11-20 20:14:47,675 INFO cordis_sparql: projects@10000 rows=10000 1.45s cache=False
+2026-11-20 20:14:48,860 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=projects page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?project_id ?acronym (STR(?sd) AS ?start_date) (STR(?sig) AS ?signature_date) (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid)\nWHERE {\n  ?project a eurio:Project ; eurio:identifier ?project_id .\n  OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }\n  OPTIONAL { ?project eurio:startDate ?sd }\n  OPTIONAL { ?project eurio:signatureDate ?sig }\n  OPTIONAL { ?project eurio:isFundedBy ?grant }\n}\nORDER BY ?project_id ?acronym ?sd ?sig ?grant\nLIMIT 10000 OFFSET 20000', 'format': 'text/csv'} status=200 bytes=773839
+2026-11-20 20:14:49,018 INFO cordis_sparql: projects@20000 rows=10000 1.34s cache=False
+2026-11-20 20:14:50,616 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=projects page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?project_id ?acronym (STR(?sd) AS ?start_date) (STR(?sig) AS ?signature_date) (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid)\nWHERE {\n  ?project a eurio:Project ; eurio:identifier ?project_id .\n  OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }\n  OPTIONAL { ?project eurio:startDate ?sd }\n  OPTIONAL { ?project eurio:signatureDate ?sig }\n  OPTIONAL { ?project eurio:isFundedBy ?grant }\n}\nORDER BY ?project_id ?acronym ?sd ?sig ?grant\nLIMIT 10000 OFFSET 30000', 'format': 'text/csv'} status=200 bytes=739070
+2026-11-20 20:14:50,747 INFO cordis_sparql: projects@30000 rows=10000 1.73s cache=False
+2026-11-20 20:14:52,111 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=projects page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?project_id ?acronym (STR(?sd) AS ?start_date) (STR(?sig) AS ?signature_date) (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid)\nWHERE {\n  ?project a eurio:Project ; eurio:identifier ?project_id .\n  OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }\n  OPTIONAL { ?project eurio:startDate ?sd }\n  OPTIONAL { ?project eurio:signatureDate ?sig }\n  OPTIONAL { ?project eurio:isFundedBy ?grant }\n}\nORDER BY ?project_id ?acronym ?sd ?sig ?grant\nLIMIT 10000 OFFSET 40000', 'format': 'text/csv'} status=200 bytes=757187
+2026-11-20 20:14:52,287 INFO cordis_sparql: projects@40000 rows=10000 1.54s cache=False
+2026-11-20 20:14:53,156 INFO gh_id_dates: id map 2015-01-01T04:00:00+00:00 max_id=10362136 n=5869
+2026-11-20 20:14:53,664 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=projects page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?project_id ?acronym (STR(?sd) AS ?start_date) (STR(?sig) AS ?signature_date) (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid)\nWHERE {\n  ?project a eurio:Project ; eurio:identifier ?project_id .\n  OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }\n  OPTIONAL { ?project eurio:startDate ?sd }\n  OPTIONAL { ?project eurio:signatureDate ?sig }\n  OPTIONAL { ?project eurio:isFundedBy ?grant }\n}\nORDER BY ?project_id ?acronym ?sd ?sig ?grant\nLIMIT 10000 OFFSET 50000', 'format': 'text/csv'} status=200 bytes=855861
+2026-11-20 20:14:53,833 INFO cordis_sparql: projects@50000 rows=10000 1.55s cache=False
+2026-11-20 20:14:54,947 INFO gh_id_dates: id map 2015-02-01T04:00:00+00:00 max_id=10793411 n=11840
+2026-11-20 20:14:55,239 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=projects page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?project_id ?acronym (STR(?sd) AS ?start_date) (STR(?sig) AS ?signature_date) (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid)\nWHERE {\n  ?project a eurio:Project ; eurio:identifier ?project_id .\n  OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }\n  OPTIONAL { ?project eurio:startDate ?sd }\n  OPTIONAL { ?project eurio:signatureDate ?sig }\n  OPTIONAL { ?project eurio:isFundedBy ?grant }\n}\nORDER BY ?project_id ?acronym ?sd ?sig ?grant\nLIMIT 10000 OFFSET 60000', 'format': 'text/csv'} status=200 bytes=853651
+2026-11-20 20:14:55,408 INFO cordis_sparql: projects@60000 rows=10000 1.58s cache=False
+2026-11-20 20:14:56,816 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=projects page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?project_id ?acronym (STR(?sd) AS ?start_date) (STR(?sig) AS ?signature_date) (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid)\nWHERE {\n  ?project a eurio:Project ; eurio:identifier ?project_id .\n  OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }\n  OPTIONAL { ?project eurio:startDate ?sd }\n  OPTIONAL { ?project eurio:signatureDate ?sig }\n  OPTIONAL { ?project eurio:isFundedBy ?grant }\n}\nORDER BY ?project_id ?acronym ?sd ?sig ?grant\nLIMIT 10000 OFFSET 70000', 'format': 'text/csv'} status=200 bytes=852761
+2026-11-20 20:14:56,990 INFO cordis_sparql: projects@70000 rows=10000 1.58s cache=False
+2026-11-20 20:14:57,948 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=projects page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?project_id ?acronym (STR(?sd) AS ?start_date) (STR(?sig) AS ?signature_date) (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid)\nWHERE {\n  ?project a eurio:Project ; eurio:identifier ?project_id .\n  OPTIONAL { ?project eurio:hasAcronym ?acr . ?acr eurio:shortForm ?acronym }\n  OPTIONAL { ?project eurio:startDate ?sd }\n  OPTIONAL { ?project eurio:signatureDate ?sig }\n  OPTIONAL { ?project eurio:isFundedBy ?grant }\n}\nORDER BY ?project_id ?acronym ?sd ?sig ?grant\nLIMIT 10000 OFFSET 80000', 'format': 'text/csv'} status=200 bytes=29705
+2026-11-20 20:14:57,957 INFO cordis_sparql: projects@80000 rows=348 0.97s cache=False
+2026-11-20 20:14:57,963 INFO cordis_sparql: projects: 80348 rows, 9 pages (0 from cache) 14.3s
+2026-11-20 20:14:58,053 INFO cordis_sparql: grant_topic@0 rows=10000 0.09s cache=True
+2026-11-20 20:14:59,100 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_topic page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeTopic ?s . ?s eurio:identifier ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 10000', 'format': 'text/csv'} status=200 bytes=651947
+2026-11-20 20:14:59,188 INFO cordis_sparql: grant_topic@10000 rows=10000 1.13s cache=False
+2026-11-20 20:15:00,008 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_topic page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeTopic ?s . ?s eurio:identifier ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 20000', 'format': 'text/csv'} status=200 bytes=649351
+2026-11-20 20:15:00,094 INFO cordis_sparql: grant_topic@20000 rows=10000 0.91s cache=False
+2026-11-20 20:15:01,077 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_topic page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeTopic ?s . ?s eurio:identifier ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 30000', 'format': 'text/csv'} status=200 bytes=650187
+2026-11-20 20:15:01,175 INFO cordis_sparql: grant_topic@30000 rows=10000 1.08s cache=False
+2026-11-20 20:15:02,096 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_topic page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeTopic ?s . ?s eurio:identifier ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 40000', 'format': 'text/csv'} status=200 bytes=651316
+2026-11-20 20:15:02,187 INFO cordis_sparql: grant_topic@40000 rows=10000 1.01s cache=False
+2026-11-20 20:15:03,210 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_topic page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeTopic ?s . ?s eurio:identifier ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 50000', 'format': 'text/csv'} status=200 bytes=649948
+2026-11-20 20:15:03,299 INFO cordis_sparql: grant_topic@50000 rows=10000 1.11s cache=False
+2026-11-20 20:15:04,204 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_topic page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeTopic ?s . ?s eurio:identifier ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 60000', 'format': 'text/csv'} status=200 bytes=556849
+2026-11-20 20:15:04,279 INFO cordis_sparql: grant_topic@60000 rows=8538 0.98s cache=False
+2026-11-20 20:15:04,285 INFO cordis_sparql: grant_topic: 68538 rows, 7 pages (2 from cache) 6.3s
+2026-11-20 20:15:04,374 INFO cordis_sparql: grant_call@0 rows=10000 0.08s cache=True
+2026-11-20 20:15:05,121 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_call page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeCall ?s . ?s eurio:identifier ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 10000', 'format': 'text/csv'} status=200 bytes=628429
+2026-11-20 20:15:05,199 INFO cordis_sparql: grant_call@10000 rows=10000 0.82s cache=False
+2026-11-20 20:15:06,136 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_call page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeCall ?s . ?s eurio:identifier ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 20000', 'format': 'text/csv'} status=200 bytes=627821
+2026-11-20 20:15:06,215 INFO cordis_sparql: grant_call@20000 rows=10000 1.02s cache=False
+2026-11-20 20:15:07,133 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_call page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeCall ?s . ?s eurio:identifier ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 30000', 'format': 'text/csv'} status=200 bytes=627804
+2026-11-20 20:15:07,224 INFO cordis_sparql: grant_call@30000 rows=10000 1.01s cache=False
+2026-11-20 20:15:07,981 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_call page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeCall ?s . ?s eurio:identifier ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 40000', 'format': 'text/csv'} status=200 bytes=437920
+2026-11-20 20:15:08,037 INFO cordis_sparql: grant_call@40000 rows=6961 0.81s cache=False
+2026-11-20 20:15:08,041 INFO cordis_sparql: grant_call: 46961 rows, 5 pages (2 from cache) 3.8s
+2026-11-20 20:15:08,126 INFO cordis_sparql: grant_type@0 rows=10000 0.08s cache=True
+2026-11-20 20:15:08,748 INFO gh_id_dates: id map 2015-04-01T04:00:00+00:00 max_id=11748453 n=17275
+2026-11-20 20:15:09,125 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_type page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeType ?s . ?s eurio:code ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 10000', 'format': 'text/csv'} status=200 bytes=502842
+2026-11-20 20:15:09,195 INFO cordis_sparql: grant_type@10000 rows=10000 1.07s cache=False
+2026-11-20 20:15:10,203 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_type page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeType ?s . ?s eurio:code ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 20000', 'format': 'text/csv'} status=200 bytes=502222
+2026-11-20 20:15:10,270 INFO cordis_sparql: grant_type@20000 rows=10000 1.08s cache=False
+2026-11-20 20:15:10,588 INFO gh_id_dates: id map 2015-07-01T04:00:00+00:00 max_id=13129465 n=16655
+2026-11-20 20:15:11,350 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_type page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeType ?s . ?s eurio:code ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 30000', 'format': 'text/csv'} status=200 bytes=502605
+2026-11-20 20:15:11,435 INFO cordis_sparql: grant_type@30000 rows=10000 1.16s cache=False
+2026-11-20 20:15:12,355 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_type page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeType ?s . ?s eurio:code ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 40000', 'format': 'text/csv'} status=200 bytes=502581
+2026-11-20 20:15:12,442 INFO cordis_sparql: grant_type@40000 rows=10000 1.01s cache=False
+2026-11-20 20:15:12,546 INFO gh_id_dates: id map 2015-10-01T04:00:00+00:00 max_id=14919044 n=18871
+2026-11-20 20:15:13,409 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_type page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeType ?s . ?s eurio:code ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 50000', 'format': 'text/csv'} status=200 bytes=502297
+2026-11-20 20:15:13,477 INFO cordis_sparql: grant_type@50000 rows=10000 1.04s cache=False
+2026-11-20 20:15:14,270 INFO gh_id_dates: id map 2016-01-01T04:00:00+00:00 max_id=16506420 n=11036
+2026-11-20 20:15:14,405 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_type page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeType ?s . ?s eurio:code ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 60000', 'format': 'text/csv'} status=200 bytes=502140
+2026-11-20 20:15:14,473 INFO cordis_sparql: grant_type@60000 rows=10000 1.00s cache=False
+2026-11-20 20:15:15,333 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_type page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeType ?s . ?s eurio:code ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 70000', 'format': 'text/csv'} status=200 bytes=438313
+2026-11-20 20:15:15,400 INFO cordis_sparql: grant_type@70000 rows=8725 0.93s cache=False
+2026-11-20 20:15:15,403 INFO cordis_sparql: grant_type: 78725 rows, 8 pages (2 from cache) 7.4s
+2026-11-20 20:15:15,466 INFO cordis_sparql: grant_programme@0 rows=10000 0.06s cache=True
+2026-11-20 20:15:15,939 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_programme page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeProgramme ?s . ?s eurio:code ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 10000', 'format': 'text/csv'} status=200 bytes=534239
+2026-11-20 20:15:15,999 INFO cordis_sparql: grant_programme@10000 rows=10000 0.53s cache=False
+2026-11-20 20:15:16,460 INFO gh_id_dates: id map 2016-04-01T04:00:00+00:00 max_id=18205095 n=26158
+2026-11-20 20:15:16,744 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest cordis_sparql dataset=grant_programme page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeProgramme ?s . ?s eurio:code ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 20000', 'format': 'text/csv'} status=200 bytes=159551
+2026-11-20 20:15:16,764 INFO cordis_sparql: grant_programme@20000 rows=2987 0.76s cache=False
+2026-11-20 20:15:16,767 INFO cordis_sparql: grant_programme: 22987 rows, 3 pages (2 from cache) 1.4s
+2026-11-20 20:15:18,922 INFO gh_id_dates: id map 2016-07-01T04:00:00+00:00 max_id=20236603 n=27502
+2026-11-20 20:15:20,856 INFO gh_id_dates: id map 2016-10-01T04:00:00+00:00 max_id=22555670 n=21513
+2026-11-20 20:15:22,522 INFO gh_id_dates: id map 2017-01-01T04:00:00+00:00 max_id=24859612 n=13354
+2026-11-20 20:15:24,979 INFO gh_id_dates: id map 2017-04-01T04:00:00+00:00 max_id=26831177 n=27908
+2026-11-20 20:15:26,973 INFO gh_id_dates: id map 2017-07-01T04:00:00+00:00 max_id=29809691 n=23520
+2026-11-20 20:15:29,168 INFO gh_id_dates: id map 2017-10-01T04:00:00+00:00 max_id=32427023 n=25580
+2026-11-20 20:15:30,773 INFO gh_id_dates: id map 2018-01-01T04:00:00+00:00 max_id=34994764 n=19906
+2026-11-20 20:15:32,937 INFO gh_id_dates: id map 2018-04-01T04:00:00+00:00 max_id=37970912 n=31911
+2026-11-20 20:15:34,974 INFO gh_id_dates: id map 2018-07-01T04:00:00+00:00 max_id=40729333 n=27203
+2026-11-20 20:15:37,721 INFO gh_id_dates: id map 2018-10-01T04:00:00+00:00 max_id=43738138 n=37439
+2026-11-20 20:15:39,666 INFO gh_id_dates: id map 2019-01-01T04:00:00+00:00 max_id=46291199 n=21039
+2026-11-20 20:15:42,928 INFO gh_id_dates: id map 2019-04-01T04:00:00+00:00 max_id=49139768 n=53369
+2026-11-20 20:15:46,274 INFO gh_id_dates: id map 2019-07-01T04:00:00+00:00 max_id=52395257 n=50003
+2026-11-20 20:15:50,352 INFO gh_id_dates: id map 2019-10-01T04:00:00+00:00 max_id=56013953 n=62129
+2026-11-20 20:15:52,663 INFO gh_id_dates: id map 2020-01-01T04:00:00+00:00 max_id=59405342 n=32269
+2026-11-20 20:15:57,420 INFO gh_id_dates: id map 2020-04-01T04:00:00+00:00 max_id=62979497 n=77009
+2026-11-20 20:16:02,565 INFO gh_id_dates: id map 2020-07-01T04:00:00+00:00 max_id=67674512 n=74210
+2026-11-20 20:16:05,536 INFO http: GET https://api.github.com/repos/stripe/stripe-python params=None status=403 bytes=378
+2026-11-20 20:16:08,249 INFO gh_id_dates: id map 2020-10-01T04:00:00+00:00 max_id=72183472 n=108082
+2026-11-20 20:16:11,627 INFO gh_id_dates: id map 2021-01-01T04:00:00+00:00 max_id=76831147 n=54981
+2026-11-20 20:16:26,894 INFO gh_id_dates: id map 2021-04-01T04:00:00+00:00 max_id=81733268 n=177980
+2026-11-20 20:16:35,770 INFO gh_id_dates: id map 2021-07-01T04:00:00+00:00 max_id=86761621 n=117923
+2026-11-20 20:16:41,787 INFO gh_id_dates: id map 2021-10-01T04:00:00+00:00 max_id=91715561 n=108246
+2026-11-20 20:16:46,348 INFO gh_id_dates: id map 2022-01-01T04:00:00+00:00 max_id=96933129 n=79936
+2026-11-20 20:16:54,468 INFO gh_id_dates: id map 2022-04-01T04:00:00+00:00 max_id=102782992 n=127860
+2026-11-20 20:16:55,637 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:16:55,640 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 20:16:55,646 INFO cordis_sparql: roles@8 rows=4 0.01s cache=False
+2026-11-20 20:16:55,649 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:16:55,652 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 20:16:55,655 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:16:55,655 INFO cordis_sparql: roles: 22 rows, 6 pages (0 from cache) 0.0s
+2026-11-20 20:16:55,661 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:16:55,664 INFO cordis_sparql: organisations@4 rows=4 0.00s cache=False
+2026-11-20 20:16:55,667 INFO cordis_sparql: organisations@8 rows=4 0.00s cache=False
+2026-11-20 20:16:55,667 INFO cordis_sparql: organisations: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:16:55,673 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 20:16:55,676 INFO cordis_sparql: organisation_types@4 rows=4 0.00s cache=False
+2026-11-20 20:16:55,678 INFO cordis_sparql: organisation_types@8 rows=4 0.00s cache=False
+2026-11-20 20:16:55,679 INFO cordis_sparql: organisation_types: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:16:55,684 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:16:55,687 INFO cordis_sparql: projects@4 rows=4 0.00s cache=False
+2026-11-20 20:16:55,691 INFO cordis_sparql: projects@8 rows=4 0.00s cache=False
+2026-11-20 20:16:55,691 INFO cordis_sparql: projects: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:16:55,696 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:16:55,700 INFO cordis_sparql: grant_topic@4 rows=3 0.00s cache=False
+2026-11-20 20:16:55,700 INFO cordis_sparql: grant_topic: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:16:55,707 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:16:55,707 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:55,714 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:16:55,717 INFO cordis_sparql: grant_type@4 rows=3 0.00s cache=False
+2026-11-20 20:16:55,717 INFO cordis_sparql: grant_type: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:16:55,723 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:16:55,723 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,088 INFO cordis_sparql: roles@0 rows=10 0.00s cache=False
+2026-11-20 20:16:56,091 INFO cordis_sparql: roles@10 rows=10 0.00s cache=False
+2026-11-20 20:16:56,094 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:16:56,095 INFO cordis_sparql: roles: 22 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,101 INFO cordis_sparql: organisations@0 rows=10 0.00s cache=False
+2026-11-20 20:16:56,103 INFO cordis_sparql: organisations@10 rows=2 0.00s cache=False
+2026-11-20 20:16:56,104 INFO cordis_sparql: organisations: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,109 INFO cordis_sparql: organisation_types@0 rows=10 0.00s cache=False
+2026-11-20 20:16:56,112 INFO cordis_sparql: organisation_types@10 rows=2 0.00s cache=False
+2026-11-20 20:16:56,113 INFO cordis_sparql: organisation_types: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,118 INFO cordis_sparql: projects@0 rows=10 0.00s cache=False
+2026-11-20 20:16:56,121 INFO cordis_sparql: projects@10 rows=2 0.00s cache=False
+2026-11-20 20:16:56,121 INFO cordis_sparql: projects: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,127 INFO cordis_sparql: grant_topic@0 rows=7 0.00s cache=False
+2026-11-20 20:16:56,127 INFO cordis_sparql: grant_topic: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,133 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:16:56,133 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,139 INFO cordis_sparql: grant_type@0 rows=7 0.00s cache=False
+2026-11-20 20:16:56,139 INFO cordis_sparql: grant_type: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,145 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:16:56,145 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,303 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:16:56,304 INFO cordis_sparql: roles: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,311 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:16:56,312 INFO cordis_sparql: organisations: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,318 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 20:16:56,318 INFO cordis_sparql: organisation_types: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,324 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:16:56,324 INFO cordis_sparql: projects: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,330 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:16:56,330 INFO cordis_sparql: grant_topic: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,335 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:16:56,335 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,341 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:16:56,341 INFO cordis_sparql: grant_type: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,347 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:16:56,347 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:16:56,552 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 1/2
+2026-11-20 20:16:56,552 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 2/2
+2026-11-20 20:16:56,557 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:16:56,557 WARNING cordis_sparql: roles@4: HTTP 500 (Virtuoso 22023 Error SR014: Function ri_name_id needs a string); pausing 0s before retry 1/2
+2026-11-20 20:16:56,561 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 20:16:56,564 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 20:16:56,566 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:16:56,569 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 20:16:56,572 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:17:01,014 INFO gh_id_dates: id map 2022-07-01T04:00:00+00:00 max_id=108508566 n=116419
+2026-11-20 20:17:04,282 INFO cordis_sparql: roles@0 rows=10000 0.15s cache=True
+2026-11-20 20:17:04,437 INFO cordis_sparql: roles@10000 rows=10000 0.16s cache=True
+2026-11-20 20:17:04,584 INFO cordis_sparql: roles@20000 rows=10000 0.15s cache=True
+2026-11-20 20:17:04,730 INFO cordis_sparql: roles@30000 rows=10000 0.15s cache=True
+2026-11-20 20:17:04,874 INFO cordis_sparql: roles@40000 rows=10000 0.14s cache=True
+2026-11-20 20:17:05,020 INFO cordis_sparql: roles@50000 rows=10000 0.15s cache=True
+2026-11-20 20:17:05,166 INFO cordis_sparql: roles@60000 rows=10000 0.15s cache=True
+2026-11-20 20:17:05,309 INFO cordis_sparql: roles@70000 rows=10000 0.14s cache=True
+2026-11-20 20:17:05,453 INFO cordis_sparql: roles@80000 rows=10000 0.14s cache=True
+2026-11-20 20:17:05,598 INFO cordis_sparql: roles@90000 rows=10000 0.14s cache=True
+2026-11-20 20:17:05,741 INFO cordis_sparql: roles@100000 rows=10000 0.14s cache=True
+2026-11-20 20:17:05,884 INFO cordis_sparql: roles@110000 rows=10000 0.14s cache=True
+2026-11-20 20:17:06,028 INFO cordis_sparql: roles@120000 rows=10000 0.14s cache=True
+2026-11-20 20:17:06,178 INFO cordis_sparql: roles@130000 rows=10000 0.15s cache=True
+2026-11-20 20:17:06,332 INFO cordis_sparql: roles@140000 rows=10000 0.15s cache=True
+2026-11-20 20:17:06,476 INFO cordis_sparql: roles@150000 rows=10000 0.14s cache=True
+2026-11-20 20:17:06,621 INFO cordis_sparql: roles@160000 rows=10000 0.14s cache=True
+2026-11-20 20:17:06,764 INFO cordis_sparql: roles@170000 rows=10000 0.14s cache=True
+2026-11-20 20:17:06,915 INFO cordis_sparql: roles@180000 rows=10000 0.15s cache=True
+2026-11-20 20:17:07,063 INFO cordis_sparql: roles@190000 rows=10000 0.15s cache=True
+2026-11-20 20:17:07,207 INFO cordis_sparql: roles@200000 rows=10000 0.14s cache=True
+2026-11-20 20:17:07,348 INFO cordis_sparql: roles@210000 rows=10000 0.14s cache=True
+2026-11-20 20:17:07,495 INFO cordis_sparql: roles@220000 rows=10000 0.15s cache=True
+2026-11-20 20:17:07,638 INFO cordis_sparql: roles@230000 rows=10000 0.14s cache=True
+2026-11-20 20:17:07,782 INFO cordis_sparql: roles@240000 rows=10000 0.14s cache=True
+2026-11-20 20:17:07,927 INFO cordis_sparql: roles@250000 rows=10000 0.14s cache=True
+2026-11-20 20:17:08,076 INFO cordis_sparql: roles@260000 rows=10000 0.15s cache=True
+2026-11-20 20:17:08,219 INFO cordis_sparql: roles@270000 rows=10000 0.14s cache=True
+2026-11-20 20:17:08,361 INFO cordis_sparql: roles@280000 rows=10000 0.14s cache=True
+2026-11-20 20:17:08,504 INFO cordis_sparql: roles@290000 rows=10000 0.14s cache=True
+2026-11-20 20:17:08,653 INFO cordis_sparql: roles@300000 rows=10000 0.15s cache=True
+2026-11-20 20:17:08,761 INFO gh_id_dates: id map 2022-10-01T04:00:00+00:00 max_id=114794167 n=120314
+2026-11-20 20:17:08,803 INFO cordis_sparql: roles@310000 rows=10000 0.15s cache=True
+2026-11-20 20:17:08,946 INFO cordis_sparql: roles@320000 rows=10000 0.14s cache=True
+2026-11-20 20:17:09,096 INFO cordis_sparql: roles@330000 rows=10000 0.15s cache=True
+2026-11-20 20:17:09,241 INFO cordis_sparql: roles@340000 rows=10000 0.14s cache=True
+2026-11-20 20:17:09,389 INFO cordis_sparql: roles@350000 rows=10000 0.15s cache=True
+2026-11-20 20:17:09,535 INFO cordis_sparql: roles@360000 rows=10000 0.15s cache=True
+2026-11-20 20:17:09,682 INFO cordis_sparql: roles@370000 rows=10000 0.15s cache=True
+2026-11-20 20:17:09,829 INFO cordis_sparql: roles@380000 rows=10000 0.15s cache=True
+2026-11-20 20:17:09,962 INFO cordis_sparql: roles@390000 rows=9071 0.13s cache=True
+2026-11-20 20:17:09,995 INFO cordis_sparql: roles: 399071 rows, 40 pages (41 from cache) 5.9s
+2026-11-20 20:17:10,143 INFO cordis_sparql: organisations@0 rows=10000 0.15s cache=True
+2026-11-20 20:17:10,285 INFO cordis_sparql: organisations@10000 rows=10000 0.14s cache=True
+2026-11-20 20:17:10,428 INFO cordis_sparql: organisations@20000 rows=10000 0.14s cache=True
+2026-11-20 20:17:10,578 INFO cordis_sparql: organisations@30000 rows=10000 0.15s cache=True
+2026-11-20 20:17:10,741 INFO cordis_sparql: organisations@40000 rows=10000 0.16s cache=True
+2026-11-20 20:17:10,897 INFO cordis_sparql: organisations@50000 rows=10000 0.16s cache=True
+2026-11-20 20:17:11,052 INFO cordis_sparql: organisations@60000 rows=10000 0.16s cache=True
+2026-11-20 20:17:11,115 INFO cordis_sparql: organisations@70000 rows=4421 0.06s cache=True
+2026-11-20 20:17:11,144 INFO cordis_sparql: organisations: 74421 rows, 8 pages (9 from cache) 1.1s
+2026-11-20 20:17:11,195 INFO cordis_sparql: organisation_types@0 rows=10000 0.05s cache=True
+2026-11-20 20:17:11,249 INFO cordis_sparql: organisation_types@10000 rows=10000 0.05s cache=True
+2026-11-20 20:17:11,301 INFO cordis_sparql: organisation_types@20000 rows=10000 0.05s cache=True
+2026-11-20 20:17:11,349 INFO cordis_sparql: organisation_types@30000 rows=10000 0.05s cache=True
+2026-11-20 20:17:11,399 INFO cordis_sparql: organisation_types@40000 rows=10000 0.05s cache=True
+2026-11-20 20:17:11,448 INFO cordis_sparql: organisation_types@50000 rows=10000 0.05s cache=True
+2026-11-20 20:17:11,496 INFO cordis_sparql: organisation_types@60000 rows=10000 0.05s cache=True
+2026-11-20 20:17:11,548 INFO cordis_sparql: organisation_types@70000 rows=10000 0.05s cache=True
+2026-11-20 20:17:11,574 INFO cordis_sparql: organisation_types@80000 rows=5199 0.03s cache=True
+2026-11-20 20:17:11,581 INFO cordis_sparql: organisation_types: 85199 rows, 9 pages (10 from cache) 0.4s
+2026-11-20 20:17:11,757 INFO cordis_sparql: projects@0 rows=10000 0.17s cache=True
+2026-11-20 20:17:11,924 INFO cordis_sparql: projects@10000 rows=10000 0.17s cache=True
+2026-11-20 20:17:12,066 INFO cordis_sparql: projects@20000 rows=10000 0.14s cache=True
+2026-11-20 20:17:12,205 INFO cordis_sparql: projects@30000 rows=10000 0.14s cache=True
+2026-11-20 20:17:12,351 INFO cordis_sparql: projects@40000 rows=10000 0.15s cache=True
+2026-11-20 20:17:12,531 INFO cordis_sparql: projects@50000 rows=10000 0.18s cache=True
+2026-11-20 20:17:12,742 INFO cordis_sparql: projects@60000 rows=10000 0.21s cache=True
+2026-11-20 20:17:12,917 INFO cordis_sparql: projects@70000 rows=10000 0.18s cache=True
+2026-11-20 20:17:12,921 INFO cordis_sparql: projects@80000 rows=348 0.00s cache=True
+2026-11-20 20:17:12,927 INFO cordis_sparql: projects: 80348 rows, 9 pages (10 from cache) 1.3s
+2026-11-20 20:17:13,010 INFO cordis_sparql: grant_topic@0 rows=10000 0.08s cache=True
+2026-11-20 20:17:13,090 INFO cordis_sparql: grant_topic@10000 rows=10000 0.08s cache=True
+2026-11-20 20:17:13,172 INFO cordis_sparql: grant_topic@20000 rows=10000 0.08s cache=True
+2026-11-20 20:17:13,253 INFO cordis_sparql: grant_topic@30000 rows=10000 0.08s cache=True
+2026-11-20 20:17:13,336 INFO cordis_sparql: grant_topic@40000 rows=10000 0.08s cache=True
+2026-11-20 20:17:13,431 INFO cordis_sparql: grant_topic@50000 rows=10000 0.09s cache=True
+2026-11-20 20:17:13,515 INFO cordis_sparql: grant_topic@60000 rows=8538 0.08s cache=True
+2026-11-20 20:17:13,521 INFO cordis_sparql: grant_topic: 68538 rows, 7 pages (8 from cache) 0.6s
+2026-11-20 20:17:13,608 INFO cordis_sparql: grant_call@0 rows=10000 0.09s cache=True
+2026-11-20 20:17:13,682 INFO cordis_sparql: grant_call@10000 rows=10000 0.07s cache=True
+2026-11-20 20:17:13,763 INFO cordis_sparql: grant_call@20000 rows=10000 0.08s cache=True
+2026-11-20 20:17:13,839 INFO cordis_sparql: grant_call@30000 rows=10000 0.08s cache=True
+2026-11-20 20:17:13,891 INFO cordis_sparql: grant_call@40000 rows=6961 0.05s cache=True
+2026-11-20 20:17:13,894 INFO cordis_sparql: grant_call: 46961 rows, 5 pages (6 from cache) 0.4s
+2026-11-20 20:17:13,964 INFO cordis_sparql: grant_type@0 rows=10000 0.07s cache=True
+2026-11-20 20:17:14,035 INFO cordis_sparql: grant_type@10000 rows=10000 0.07s cache=True
+2026-11-20 20:17:14,107 INFO cordis_sparql: grant_type@20000 rows=10000 0.07s cache=True
+2026-11-20 20:17:14,175 INFO cordis_sparql: grant_type@30000 rows=10000 0.07s cache=True
+2026-11-20 20:17:14,238 INFO cordis_sparql: grant_type@40000 rows=10000 0.06s cache=True
+2026-11-20 20:17:14,302 INFO cordis_sparql: grant_type@50000 rows=10000 0.06s cache=True
+2026-11-20 20:17:14,366 INFO cordis_sparql: grant_type@60000 rows=10000 0.06s cache=True
+2026-11-20 20:17:14,424 INFO cordis_sparql: grant_type@70000 rows=8725 0.06s cache=True
+2026-11-20 20:17:14,427 INFO cordis_sparql: grant_type: 78725 rows, 8 pages (9 from cache) 0.5s
+2026-11-20 20:17:14,486 INFO cordis_sparql: grant_programme@0 rows=10000 0.06s cache=True
+2026-11-20 20:17:14,542 INFO cordis_sparql: grant_programme@10000 rows=10000 0.06s cache=True
+2026-11-20 20:17:14,560 INFO cordis_sparql: grant_programme@20000 rows=2987 0.02s cache=True
+2026-11-20 20:17:14,562 INFO cordis_sparql: grant_programme: 22987 rows, 3 pages (4 from cache) 0.1s
+2026-11-20 20:17:16,741 INFO gh_id_dates: id map 2023-01-01T04:00:00+00:00 max_id=121742473 n=92570
+2026-11-20 20:17:22,033 INFO gh_id_dates: id map 2023-04-01T04:00:00+00:00 max_id=129574992 n=112175
+2026-11-20 20:17:27,663 INFO gh_id_dates: id map 2023-07-01T04:00:00+00:00 max_id=138276057 n=99214
+2026-11-20 20:17:33,333 INFO gh_id_dates: id map 2023-10-01T04:00:00+00:00 max_id=146611502 n=109172
+2026-11-20 20:17:41,201 INFO gh_id_dates: id map 2024-01-01T04:00:00+00:00 max_id=155343689 n=135528
+2026-11-20 20:17:49,801 INFO gh_id_dates: id map 2024-04-01T04:00:00+00:00 max_id=165630506 n=199670
+2026-11-20 20:17:58,618 INFO gh_id_dates: id map 2024-07-01T04:00:00+00:00 max_id=174297914 n=163284
+2026-11-20 20:18:06,057 INFO gh_id_dates: id map 2024-10-01T04:00:00+00:00 max_id=183459578 n=169607
+2026-11-20 20:18:10,157 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 20:18:10,278 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 20:18:10,364 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 20:18:10,445 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 20:18:10,524 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 20:18:10,692 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 20:18:10,742 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 20:18:10,783 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 20:18:10,819 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 20:18:10,864 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 20:18:10,935 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 20:18:11,168 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 20:18:11,243 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 20:18:11,354 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 20:18:11,378 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:18:11,394 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:18:11,566 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 20:18:11,588 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:18:11,604 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:18:11,655 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 20:18:11,660 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows (or could not be read for) automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Retry later if it was unreachable; otherwise download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 20:18:11,667 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-74/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (155 bytes)
+2026-11-20 20:18:11,667 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-74/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 20:18:11,671 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-74/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-74/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 20:18:11,672 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 20:18:11,675 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 20:18:11,872 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:18:11,876 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 20:18:11,879 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 20:18:11,882 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:18:11,885 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 20:18:11,888 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:18:11,888 INFO cordis_sparql: roles: 22 rows, 6 pages (0 from cache) 0.0s
+2026-11-20 20:18:11,894 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:18:11,897 INFO cordis_sparql: organisations@4 rows=4 0.00s cache=False
+2026-11-20 20:18:11,900 INFO cordis_sparql: organisations@8 rows=4 0.00s cache=False
+2026-11-20 20:18:11,901 INFO cordis_sparql: organisations: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:18:11,907 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 20:18:11,910 INFO cordis_sparql: organisation_types@4 rows=4 0.00s cache=False
+2026-11-20 20:18:11,913 INFO cordis_sparql: organisation_types@8 rows=4 0.00s cache=False
+2026-11-20 20:18:11,913 INFO cordis_sparql: organisation_types: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:18:11,920 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:18:11,923 INFO cordis_sparql: projects@4 rows=4 0.00s cache=False
+2026-11-20 20:18:11,926 INFO cordis_sparql: projects@8 rows=4 0.00s cache=False
+2026-11-20 20:18:11,927 INFO cordis_sparql: projects: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:18:11,933 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:18:11,936 INFO cordis_sparql: grant_topic@4 rows=3 0.00s cache=False
+2026-11-20 20:18:11,937 INFO cordis_sparql: grant_topic: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:18:11,943 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:18:11,943 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:11,949 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:18:11,952 INFO cordis_sparql: grant_type@4 rows=3 0.00s cache=False
+2026-11-20 20:18:11,953 INFO cordis_sparql: grant_type: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:18:11,961 INFO cordis_sparql: grant_programme@0 rows=1 0.01s cache=False
+2026-11-20 20:18:11,961 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,310 INFO cordis_sparql: roles@0 rows=10 0.00s cache=False
+2026-11-20 20:18:12,314 INFO cordis_sparql: roles@10 rows=10 0.00s cache=False
+2026-11-20 20:18:12,320 INFO cordis_sparql: roles@20 rows=2 0.01s cache=False
+2026-11-20 20:18:12,321 INFO cordis_sparql: roles: 22 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,332 INFO cordis_sparql: organisations@0 rows=10 0.01s cache=False
+2026-11-20 20:18:12,338 INFO cordis_sparql: organisations@10 rows=2 0.01s cache=False
+2026-11-20 20:18:12,339 INFO cordis_sparql: organisations: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,342 INFO gh_id_dates: id map 2025-01-01T04:00:00+00:00 max_id=193377473 n=141011
+2026-11-20 20:18:12,348 INFO cordis_sparql: organisation_types@0 rows=10 0.00s cache=False
+2026-11-20 20:18:12,354 INFO cordis_sparql: organisation_types@10 rows=2 0.01s cache=False
+2026-11-20 20:18:12,355 INFO cordis_sparql: organisation_types: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,364 INFO cordis_sparql: projects@0 rows=10 0.00s cache=False
+2026-11-20 20:18:12,368 INFO cordis_sparql: projects@10 rows=2 0.00s cache=False
+2026-11-20 20:18:12,368 INFO cordis_sparql: projects: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,376 INFO cordis_sparql: grant_topic@0 rows=7 0.00s cache=False
+2026-11-20 20:18:12,376 INFO cordis_sparql: grant_topic: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,388 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:18:12,388 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,400 INFO cordis_sparql: grant_type@0 rows=7 0.01s cache=False
+2026-11-20 20:18:12,401 INFO cordis_sparql: grant_type: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,412 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:18:12,412 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,621 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:18:12,622 INFO cordis_sparql: roles: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,628 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:18:12,629 INFO cordis_sparql: organisations: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,635 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 20:18:12,635 INFO cordis_sparql: organisation_types: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,641 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:18:12,641 INFO cordis_sparql: projects: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,648 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:18:12,648 INFO cordis_sparql: grant_topic: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,654 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:18:12,655 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,661 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:18:12,661 INFO cordis_sparql: grant_type: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,667 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:18:12,667 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:12,864 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 1/2
+2026-11-20 20:18:12,864 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 2/2
+2026-11-20 20:18:12,869 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:18:12,869 WARNING cordis_sparql: roles@4: HTTP 500 (Virtuoso 22023 Error SR014: Function ri_name_id needs a string); pausing 0s before retry 1/2
+2026-11-20 20:18:12,873 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 20:18:12,876 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 20:18:12,879 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:18:12,882 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 20:18:12,885 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:18:12,896 WARNING gharchive: rejected 2 invalid login value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:18:12,912 WARNING gharchive: t: splitting chunk of 5 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:18:12,917 INFO gharchive: query t_725ab108 rows=2 0.00s cache=False
+2026-11-20 20:18:12,917 WARNING gharchive: t: splitting chunk of 3 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:18:12,923 INFO gharchive: query t_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:18:12,928 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:18:12,933 INFO gharchive: query t_044d23a2 rows=2 0.00s cache=False
+2026-11-20 20:18:12,939 INFO gharchive: query t2_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:18:12,939 WARNING gharchive: t2: splitting chunk of 2 (t2: 2 rows > 1)
+2026-11-20 20:18:12,944 INFO gharchive: query t2_9b383db9 rows=1 0.00s cache=False
+2026-11-20 20:18:12,949 INFO gharchive: query t2_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:18:12,985 INFO gharchive: query span_1dca1109 rows=2 0.00s cache=False
+2026-11-20 20:18:12,991 INFO gharchive: wrote /tmp/pytest-of-root/pytest-74/test_end_to_end_processed_outp0/span.parquet rows=2
+2026-11-20 20:18:12,997 INFO gharchive: query team_1ba97f53 rows=3 0.00s cache=False
+2026-11-20 20:18:13,004 INFO gharchive: wrote /tmp/pytest-of-root/pytest-74/test_end_to_end_processed_outp0/team.parquet rows=3
+2026-11-20 20:18:13,009 INFO gharchive: query daily_6c90f737 rows=3 0.00s cache=False
+2026-11-20 20:18:13,016 INFO gharchive: wrote /tmp/pytest-of-root/pytest-74/test_end_to_end_processed_outp0/daily.parquet rows=3
+2026-11-20 20:18:13,029 INFO gharchive: query ext_291805af rows=5 0.00s cache=False
+2026-11-20 20:18:13,040 INFO gharchive: wrote /tmp/pytest-of-root/pytest-74/test_end_to_end_processed_outp0/ext.parquet rows=5
+2026-11-20 20:18:13,060 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:18:13,068 INFO gharchive: wrote /tmp/pytest-of-root/pytest-74/test_external_refuses_unresolv0/team.parquet rows=3
+2026-11-20 20:18:13,579 INFO gharchive: query t_460f1c7d rows=4 0.00s cache=False
+2026-11-20 20:18:13,579 WARNING gharchive: t: splitting chunk of 4 (t: 4 rows > 2)
+2026-11-20 20:18:13,584 INFO gharchive: query t_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:18:13,589 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:18:13,596 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:18:13,604 INFO gharchive: wrote /tmp/pytest-of-root/pytest-74/test_external_refuses_team_wit0/team.parquet rows=3
+2026-11-20 20:18:13,616 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:18:13,622 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:18:13,627 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:18:13,641 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:18:13,646 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:18:13,651 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:18:13,806 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,806 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,807 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,807 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,808 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,809 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,809 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,809 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,809 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,809 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,809 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,809 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,809 ERROR github: lookup failed for bad
+2026-11-20 20:18:13,818 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:18:13,866 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:18:13,937 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,937 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,937 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,937 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,938 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,939 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,939 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,939 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,939 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,939 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,939 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,939 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,939 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,939 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,939 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,939 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,939 ERROR github: lookup failed for x0
+2026-11-20 20:18:13,940 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,940 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,940 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,940 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,940 ERROR github: lookup failed for x1
+2026-11-20 20:18:13,941 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,941 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,941 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,942 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,942 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,942 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,942 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,942 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,942 ERROR github: lookup failed for x10
+2026-11-20 20:18:13,943 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,943 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,943 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,943 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,943 ERROR github: lookup failed for x11
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,944 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,944 ERROR github: lookup failed for x12
+2026-11-20 20:18:13,945 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,945 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,945 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,945 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,945 ERROR github: lookup failed for x13
+2026-11-20 20:18:13,946 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,946 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,946 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,946 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,947 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,947 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,947 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,947 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,947 ERROR github: lookup failed for x14
+2026-11-20 20:18:13,948 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,948 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,948 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,948 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,948 ERROR github: lookup failed for x15
+2026-11-20 20:18:13,948 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,948 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,949 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,949 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,949 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:18:13,949 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:18:13,949 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:18:13,949 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:18:13,963 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:18:14,005 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:18:14,066 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:18:14,139 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:18:14,160 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:18:14,188 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:18:14,226 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:18:14,270 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:18:14,272 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:18:14,305 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:18:14,344 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:18:14,386 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:18:14,389 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:18:14,417 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:18:14,455 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:18:14,495 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:18:14,502 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:18:14,524 INFO github: find_org tier 2: 1 unresolved entities, 17 logins
+2026-11-20 20:18:14,550 INFO github: find_org tier 3: 1 unresolved entities, 25 logins
+2026-11-20 20:18:14,582 INFO github: find_org: 1 entities, 1 matched ({3: 1})
+2026-11-20 20:18:14,598 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:18:14,603 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:14,603 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:14,603 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:14,603 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:14,603 ERROR github: lookup failed for acme
+2026-11-20 20:18:14,612 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:18:14,625 INFO github: find_org: 1 entities, 0 matched ({})
+2026-11-20 20:18:14,625 WARNING github: find_org: 1 entities held back because a candidate lookup failed (note lookup_error_tier<N> in the search log); rerun find for them
+2026-11-20 20:18:14,638 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:18:14,677 INFO github: find_org: 1 entities, 1 matched ({1: 1})
+2026-11-20 20:18:14,710 INFO github: id bound 2008: first_id=9994 (2008-01-01 00:44:25+00:00) after 28 calls
+2026-11-20 20:18:14,716 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 35 calls
+2026-11-20 20:18:14,722 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:18:14,801 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:18:14,807 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:18:14,814 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:18:14,821 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:18:15,367 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:18:15,385 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:18:15,392 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:18:15,398 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:18:15,405 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:18:15,973 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:18:15,992 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:18:15,998 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:18:16,004 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:18:16,011 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:18:16,524 INFO github: sample: 560 orgs (186 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:18:16,561 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:18:16,562 INFO github_owners: owner_activity: 25 logins in 3 ClickHouse queries (~45 s if uncached)
+2026-11-20 20:18:16,567 INFO gharchive: query owner_activity_fd7bbd32 rows=5 0.00s cache=False
+2026-11-20 20:18:16,572 INFO gharchive: query owner_activity_befe13dd rows=5 0.00s cache=False
+2026-11-20 20:18:16,577 INFO gharchive: query owner_activity_3c0b07d4 rows=3 0.00s cache=False
+2026-11-20 20:18:16,589 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:18:16,657 WARNING github_owners: ecosyste.ms lookup failed for aa: HTTP_503
+2026-11-20 20:18:16,657 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:18:16,657 INFO github_owners: ecosyste.ms retry 1 for aa
+2026-11-20 20:18:16,658 INFO github_owners: ecosyste.ms retry 1 for bb
+2026-11-20 20:18:16,658 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:18:16,788 WARNING github_owners: ecosyste.ms lookup failed for x0: HTTP_503
+2026-11-20 20:18:16,788 WARNING github_owners: ecosyste.ms lookup failed for x1: HTTP_503
+2026-11-20 20:18:16,789 WARNING github_owners: ecosyste.ms lookup failed for x2: HTTP_503
+2026-11-20 20:18:16,802 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:16,808 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:16,867 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:16,872 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:18:16,927 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:16,932 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:18:16,997 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:18:17,022 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,027 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:17,076 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,081 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:18:17,140 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,145 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:18:17,214 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:18:17,232 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,237 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:17,299 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,304 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:18:17,359 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,364 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:18:17,427 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:18:17,443 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,448 INFO gharchive: query owner_activity_a0d16862 rows=1 0.00s cache=False
+2026-11-20 20:18:17,473 INFO github_owners: owner_activity: 17 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,478 INFO gharchive: query owner_activity_c9e2f8d8 rows=1 0.00s cache=False
+2026-11-20 20:18:17,503 INFO github_owners: owner_activity: 25 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,508 INFO gharchive: query owner_activity_c63dd396 rows=1 0.00s cache=False
+2026-11-20 20:18:17,545 INFO github_owners: find_org: 1 entities, 1 matched ({3: 1}), 0 held
+2026-11-20 20:18:17,580 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,585 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:18:17,598 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:18:17,598 INFO github_owners: ecosyste.ms retry 1 for acme
+2026-11-20 20:18:17,598 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:18:17,624 INFO github_owners: find_org: 1 entities, 0 matched ({}), 1 held
+2026-11-20 20:18:17,625 WARNING github_owners: find_org: 1 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:18:17,642 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,648 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:18:17,710 INFO github_owners: find_org: 1 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:18:17,737 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,743 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:17,802 INFO github_owners: owner_activity: 51 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,808 INFO gharchive: query owner_activity_64406a03 rows=1 0.00s cache=False
+2026-11-20 20:18:17,838 INFO github_owners: owner_activity: 50 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,843 INFO gharchive: query owner_activity_57f4a449 rows=1 0.00s cache=False
+2026-11-20 20:18:17,878 INFO github_owners: find_org: 8 entities, 1 matched ({1: 1}), 5 held
+2026-11-20 20:18:17,878 WARNING github_owners: find_org: 5 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:18:17,897 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,902 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:17,956 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:17,962 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:18:18,030 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:18,036 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:18:18,114 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:18:18,139 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:18,144 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:18,209 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:18,217 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:18:18,273 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:18,278 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:18:18,344 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:18:18,399 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:18:18,414 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:18:18,525 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:18:18,539 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:18:18,641 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:18:18,655 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:18:18,715 WARNING github_owners: sample: years [2014, 2015] have pending lookups (request cap / errors) and are NOT written; rerun
+2026-11-20 20:18:18,766 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:18:18,781 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:18:18,977 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 20:18:18,977 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 20:18:19,696 INFO http: POST https://play.clickhouse.com/?user=play params=None status=200 bytes=254
+2026-11-20 20:18:19,708 INFO gharchive: query review_invalid_owners_fa16b4d6 rows=16 7.08s cache=False
+2026-11-20 20:18:22,062 INFO gh_id_dates: id map 2025-04-01T04:00:00+00:00 max_id=205724630 n=203568
+2026-11-20 20:18:29,567 INFO gh_id_dates: id map 2025-07-01T04:00:00+00:00 max_id=218716585 n=144210
+2026-11-20 20:18:30,022 INFO cordis_sparql: roles@0 rows=10000 0.16s cache=True
+2026-11-20 20:18:30,184 INFO cordis_sparql: roles@10000 rows=10000 0.16s cache=True
+2026-11-20 20:18:30,344 INFO cordis_sparql: roles@20000 rows=10000 0.16s cache=True
+2026-11-20 20:18:30,494 INFO cordis_sparql: roles@30000 rows=10000 0.15s cache=True
+2026-11-20 20:18:30,646 INFO cordis_sparql: roles@40000 rows=10000 0.15s cache=True
+2026-11-20 20:18:30,803 INFO cordis_sparql: roles@50000 rows=10000 0.16s cache=True
+2026-11-20 20:18:30,954 INFO cordis_sparql: roles@60000 rows=10000 0.15s cache=True
+2026-11-20 20:18:31,097 INFO cordis_sparql: roles@70000 rows=10000 0.14s cache=True
+2026-11-20 20:18:31,241 INFO cordis_sparql: roles@80000 rows=10000 0.14s cache=True
+2026-11-20 20:18:31,387 INFO cordis_sparql: roles@90000 rows=10000 0.15s cache=True
+2026-11-20 20:18:31,536 INFO cordis_sparql: roles@100000 rows=10000 0.15s cache=True
+2026-11-20 20:18:31,701 INFO cordis_sparql: roles@110000 rows=10000 0.16s cache=True
+2026-11-20 20:18:31,847 INFO cordis_sparql: roles@120000 rows=10000 0.15s cache=True
+2026-11-20 20:18:31,997 INFO cordis_sparql: roles@130000 rows=10000 0.15s cache=True
+2026-11-20 20:18:32,171 INFO cordis_sparql: roles@140000 rows=10000 0.17s cache=True
+2026-11-20 20:18:32,317 INFO cordis_sparql: roles@150000 rows=10000 0.15s cache=True
+2026-11-20 20:18:32,469 INFO cordis_sparql: roles@160000 rows=10000 0.15s cache=True
+2026-11-20 20:18:32,623 INFO cordis_sparql: roles@170000 rows=10000 0.15s cache=True
+2026-11-20 20:18:32,773 INFO cordis_sparql: roles@180000 rows=10000 0.15s cache=True
+2026-11-20 20:18:32,921 INFO cordis_sparql: roles@190000 rows=10000 0.15s cache=True
+2026-11-20 20:18:33,069 INFO cordis_sparql: roles@200000 rows=10000 0.15s cache=True
+2026-11-20 20:18:33,211 INFO cordis_sparql: roles@210000 rows=10000 0.14s cache=True
+2026-11-20 20:18:33,360 INFO cordis_sparql: roles@220000 rows=10000 0.15s cache=True
+2026-11-20 20:18:33,509 INFO cordis_sparql: roles@230000 rows=10000 0.15s cache=True
+2026-11-20 20:18:33,668 INFO cordis_sparql: roles@240000 rows=10000 0.16s cache=True
+2026-11-20 20:18:33,816 INFO cordis_sparql: roles@250000 rows=10000 0.15s cache=True
+2026-11-20 20:18:33,969 INFO cordis_sparql: roles@260000 rows=10000 0.15s cache=True
+2026-11-20 20:18:34,121 INFO cordis_sparql: roles@270000 rows=10000 0.15s cache=True
+2026-11-20 20:18:34,270 INFO cordis_sparql: roles@280000 rows=10000 0.15s cache=True
+2026-11-20 20:18:34,426 INFO cordis_sparql: roles@290000 rows=10000 0.16s cache=True
+2026-11-20 20:18:34,573 INFO cordis_sparql: roles@300000 rows=10000 0.15s cache=True
+2026-11-20 20:18:34,719 INFO cordis_sparql: roles@310000 rows=10000 0.15s cache=True
+2026-11-20 20:18:34,866 INFO cordis_sparql: roles@320000 rows=10000 0.15s cache=True
+2026-11-20 20:18:35,023 INFO cordis_sparql: roles@330000 rows=10000 0.16s cache=True
+2026-11-20 20:18:35,175 INFO cordis_sparql: roles@340000 rows=10000 0.15s cache=True
+2026-11-20 20:18:35,322 INFO cordis_sparql: roles@350000 rows=10000 0.15s cache=True
+2026-11-20 20:18:35,473 INFO cordis_sparql: roles@360000 rows=10000 0.15s cache=True
+2026-11-20 20:18:35,608 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 20:18:35,622 INFO cordis_sparql: roles@370000 rows=10000 0.15s cache=True
+2026-11-20 20:18:35,779 INFO cordis_sparql: roles@380000 rows=10000 0.16s cache=True
+2026-11-20 20:18:35,791 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 20:18:35,917 INFO cordis_sparql: roles@390000 rows=9071 0.14s cache=True
+2026-11-20 20:18:35,953 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 20:18:35,953 INFO cordis_sparql: roles: 399071 rows, 40 pages (41 from cache) 6.1s
+2026-11-20 20:18:36,099 INFO cordis_sparql: organisations@0 rows=10000 0.14s cache=True
+2026-11-20 20:18:36,119 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 20:18:36,248 INFO cordis_sparql: organisations@10000 rows=10000 0.15s cache=True
+2026-11-20 20:18:36,274 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 20:18:36,402 INFO cordis_sparql: organisations@20000 rows=10000 0.15s cache=True
+2026-11-20 20:18:36,492 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 20:18:36,543 INFO cordis_sparql: organisations@30000 rows=10000 0.14s cache=True
+2026-11-20 20:18:36,621 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 20:18:36,690 INFO cordis_sparql: organisations@40000 rows=10000 0.15s cache=True
+2026-11-20 20:18:36,708 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 20:18:36,709 INFO gh_id_dates: id map 2025-10-01T04:00:00+00:00 max_id=235436743 n=165122
+2026-11-20 20:18:36,763 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 20:18:36,827 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 20:18:36,845 INFO cordis_sparql: organisations@50000 rows=10000 0.16s cache=True
+2026-11-20 20:18:36,902 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 20:18:36,998 INFO cordis_sparql: organisations@60000 rows=10000 0.15s cache=True
+2026-11-20 20:18:37,019 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 20:18:37,063 INFO cordis_sparql: organisations@70000 rows=4421 0.07s cache=True
+2026-11-20 20:18:37,096 INFO cordis_sparql: organisations: 74421 rows, 8 pages (9 from cache) 1.1s
+2026-11-20 20:18:37,100 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 20:18:37,143 INFO cordis_sparql: organisation_types@0 rows=10000 0.05s cache=True
+2026-11-20 20:18:37,202 INFO cordis_sparql: organisation_types@10000 rows=10000 0.06s cache=True
+2026-11-20 20:18:37,208 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 20:18:37,230 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:18:37,246 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:18:37,264 INFO cordis_sparql: organisation_types@20000 rows=10000 0.06s cache=True
+2026-11-20 20:18:37,326 INFO cordis_sparql: organisation_types@30000 rows=10000 0.06s cache=True
+2026-11-20 20:18:37,407 INFO cordis_sparql: organisation_types@40000 rows=10000 0.08s cache=True
+2026-11-20 20:18:37,419 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 20:18:37,447 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:18:37,461 INFO cordis_sparql: organisation_types@50000 rows=10000 0.05s cache=True
+2026-11-20 20:18:37,463 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:18:37,511 INFO cordis_sparql: organisation_types@60000 rows=10000 0.05s cache=True
+2026-11-20 20:18:37,519 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 20:18:37,524 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows (or could not be read for) automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Retry later if it was unreachable; otherwise download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 20:18:37,531 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-75/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (155 bytes)
+2026-11-20 20:18:37,532 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-75/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 20:18:37,537 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-75/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-75/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 20:18:37,538 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 20:18:37,540 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 20:18:37,567 INFO cordis_sparql: organisation_types@70000 rows=10000 0.06s cache=True
+2026-11-20 20:18:37,592 INFO cordis_sparql: organisation_types@80000 rows=5199 0.02s cache=True
+2026-11-20 20:18:37,599 INFO cordis_sparql: organisation_types: 85199 rows, 9 pages (10 from cache) 0.5s
+2026-11-20 20:18:37,749 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:18:37,753 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 20:18:37,756 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 20:18:37,759 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:18:37,762 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 20:18:37,765 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:18:37,766 INFO cordis_sparql: roles: 22 rows, 6 pages (0 from cache) 0.0s
+2026-11-20 20:18:37,773 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:18:37,777 INFO cordis_sparql: organisations@4 rows=4 0.00s cache=False
+2026-11-20 20:18:37,780 INFO cordis_sparql: organisations@8 rows=4 0.00s cache=False
+2026-11-20 20:18:37,780 INFO cordis_sparql: organisations: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:18:37,785 INFO cordis_sparql: projects@0 rows=10000 0.18s cache=True
+2026-11-20 20:18:37,786 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 20:18:37,789 INFO cordis_sparql: organisation_types@4 rows=4 0.00s cache=False
+2026-11-20 20:18:37,792 INFO cordis_sparql: organisation_types@8 rows=4 0.00s cache=False
+2026-11-20 20:18:37,793 INFO cordis_sparql: organisation_types: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:18:37,799 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:18:37,803 INFO cordis_sparql: projects@4 rows=4 0.00s cache=False
+2026-11-20 20:18:37,806 INFO cordis_sparql: projects@8 rows=4 0.00s cache=False
+2026-11-20 20:18:37,807 INFO cordis_sparql: projects: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:18:37,813 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:18:37,816 INFO cordis_sparql: grant_topic@4 rows=3 0.00s cache=False
+2026-11-20 20:18:37,816 INFO cordis_sparql: grant_topic: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:18:37,823 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:18:37,824 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:37,830 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:18:37,833 INFO cordis_sparql: grant_type@4 rows=3 0.00s cache=False
+2026-11-20 20:18:37,833 INFO cordis_sparql: grant_type: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:18:37,839 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:18:37,839 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:37,957 INFO cordis_sparql: projects@10000 rows=10000 0.17s cache=True
+2026-11-20 20:18:38,109 INFO cordis_sparql: projects@20000 rows=10000 0.15s cache=True
+2026-11-20 20:18:38,132 INFO cordis_sparql: roles@0 rows=10 0.00s cache=False
+2026-11-20 20:18:38,136 INFO cordis_sparql: roles@10 rows=10 0.00s cache=False
+2026-11-20 20:18:38,139 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:18:38,139 INFO cordis_sparql: roles: 22 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,145 INFO cordis_sparql: organisations@0 rows=10 0.00s cache=False
+2026-11-20 20:18:38,152 INFO cordis_sparql: organisations@10 rows=2 0.01s cache=False
+2026-11-20 20:18:38,153 INFO cordis_sparql: organisations: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,159 INFO cordis_sparql: organisation_types@0 rows=10 0.00s cache=False
+2026-11-20 20:18:38,163 INFO cordis_sparql: organisation_types@10 rows=2 0.00s cache=False
+2026-11-20 20:18:38,163 INFO cordis_sparql: organisation_types: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,169 INFO cordis_sparql: projects@0 rows=10 0.00s cache=False
+2026-11-20 20:18:38,173 INFO cordis_sparql: projects@10 rows=2 0.00s cache=False
+2026-11-20 20:18:38,173 INFO cordis_sparql: projects: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,180 INFO cordis_sparql: grant_topic@0 rows=7 0.00s cache=False
+2026-11-20 20:18:38,181 INFO cordis_sparql: grant_topic: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,187 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:18:38,187 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,194 INFO cordis_sparql: grant_type@0 rows=7 0.00s cache=False
+2026-11-20 20:18:38,194 INFO cordis_sparql: grant_type: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,201 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:18:38,201 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,258 INFO cordis_sparql: projects@30000 rows=10000 0.15s cache=True
+2026-11-20 20:18:38,375 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:18:38,375 INFO cordis_sparql: roles: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,382 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:18:38,382 INFO cordis_sparql: organisations: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,390 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 20:18:38,390 INFO cordis_sparql: organisation_types: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,398 INFO cordis_sparql: projects@40000 rows=10000 0.14s cache=True
+2026-11-20 20:18:38,399 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:18:38,399 INFO cordis_sparql: projects: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,406 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:18:38,407 INFO cordis_sparql: grant_topic: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,413 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:18:38,413 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,420 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:18:38,421 INFO cordis_sparql: grant_type: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,427 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:18:38,428 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:18:38,585 INFO cordis_sparql: projects@50000 rows=10000 0.19s cache=True
+2026-11-20 20:18:38,678 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 1/2
+2026-11-20 20:18:38,678 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 2/2
+2026-11-20 20:18:38,685 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:18:38,685 WARNING cordis_sparql: roles@4: HTTP 500 (Virtuoso 22023 Error SR014: Function ri_name_id needs a string); pausing 0s before retry 1/2
+2026-11-20 20:18:38,691 INFO cordis_sparql: roles@4 rows=4 0.01s cache=False
+2026-11-20 20:18:38,694 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 20:18:38,697 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:18:38,704 INFO cordis_sparql: roles@16 rows=4 0.01s cache=False
+2026-11-20 20:18:38,707 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:18:38,722 WARNING gharchive: rejected 2 invalid login value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:18:38,742 WARNING gharchive: t: splitting chunk of 5 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:18:38,747 INFO gharchive: query t_725ab108 rows=2 0.00s cache=False
+2026-11-20 20:18:38,748 WARNING gharchive: t: splitting chunk of 3 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:18:38,753 INFO gharchive: query t_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:18:38,758 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:18:38,762 INFO cordis_sparql: projects@60000 rows=10000 0.18s cache=True
+2026-11-20 20:18:38,763 INFO gharchive: query t_044d23a2 rows=2 0.00s cache=False
+2026-11-20 20:18:38,769 INFO gharchive: query t2_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:18:38,769 WARNING gharchive: t2: splitting chunk of 2 (t2: 2 rows > 1)
+2026-11-20 20:18:38,775 INFO gharchive: query t2_9b383db9 rows=1 0.00s cache=False
+2026-11-20 20:18:38,780 INFO gharchive: query t2_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:18:38,826 INFO gharchive: query span_1dca1109 rows=2 0.00s cache=False
+2026-11-20 20:18:38,832 INFO gharchive: wrote /tmp/pytest-of-root/pytest-75/test_end_to_end_processed_outp0/span.parquet rows=2
+2026-11-20 20:18:38,839 INFO gharchive: query team_1ba97f53 rows=3 0.00s cache=False
+2026-11-20 20:18:38,847 INFO gharchive: wrote /tmp/pytest-of-root/pytest-75/test_end_to_end_processed_outp0/team.parquet rows=3
+2026-11-20 20:18:38,853 INFO gharchive: query daily_6c90f737 rows=3 0.00s cache=False
+2026-11-20 20:18:38,861 INFO gharchive: wrote /tmp/pytest-of-root/pytest-75/test_end_to_end_processed_outp0/daily.parquet rows=3
+2026-11-20 20:18:38,874 INFO gharchive: query ext_291805af rows=5 0.00s cache=False
+2026-11-20 20:18:38,884 INFO gharchive: wrote /tmp/pytest-of-root/pytest-75/test_end_to_end_processed_outp0/ext.parquet rows=5
+2026-11-20 20:18:38,906 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:18:38,914 INFO gharchive: wrote /tmp/pytest-of-root/pytest-75/test_external_refuses_unresolv0/team.parquet rows=3
+2026-11-20 20:18:38,942 INFO cordis_sparql: projects@70000 rows=10000 0.18s cache=True
+2026-11-20 20:18:38,947 INFO cordis_sparql: projects@80000 rows=348 0.00s cache=True
+2026-11-20 20:18:38,956 INFO cordis_sparql: projects: 80348 rows, 9 pages (10 from cache) 1.4s
+2026-11-20 20:18:39,040 INFO cordis_sparql: grant_topic@0 rows=10000 0.08s cache=True
+2026-11-20 20:18:39,125 INFO cordis_sparql: grant_topic@10000 rows=10000 0.08s cache=True
+2026-11-20 20:18:39,208 INFO cordis_sparql: grant_topic@20000 rows=10000 0.08s cache=True
+2026-11-20 20:18:39,291 INFO cordis_sparql: grant_topic@30000 rows=10000 0.08s cache=True
+2026-11-20 20:18:39,374 INFO cordis_sparql: grant_topic@40000 rows=10000 0.08s cache=True
+2026-11-20 20:18:39,457 INFO cordis_sparql: grant_topic@50000 rows=10000 0.08s cache=True
+2026-11-20 20:18:39,528 INFO gharchive: query t_460f1c7d rows=4 0.00s cache=False
+2026-11-20 20:18:39,528 WARNING gharchive: t: splitting chunk of 4 (t: 4 rows > 2)
+2026-11-20 20:18:39,528 INFO cordis_sparql: grant_topic@60000 rows=8538 0.07s cache=True
+2026-11-20 20:18:39,533 INFO gharchive: query t_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:18:39,534 INFO cordis_sparql: grant_topic: 68538 rows, 7 pages (8 from cache) 0.6s
+2026-11-20 20:18:39,537 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:18:39,545 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:18:39,555 INFO gharchive: wrote /tmp/pytest-of-root/pytest-75/test_external_refuses_team_wit0/team.parquet rows=3
+2026-11-20 20:18:39,568 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:18:39,574 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:18:39,579 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:18:39,592 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:18:39,597 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:18:39,606 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:18:39,611 INFO cordis_sparql: grant_call@0 rows=10000 0.08s cache=True
+2026-11-20 20:18:39,688 INFO cordis_sparql: grant_call@10000 rows=10000 0.08s cache=True
+2026-11-20 20:18:39,747 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,748 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,748 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,748 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,750 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,750 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,750 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,750 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,750 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,750 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,750 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,750 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,750 ERROR github: lookup failed for bad
+2026-11-20 20:18:39,758 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:18:39,764 INFO cordis_sparql: grant_call@20000 rows=10000 0.08s cache=True
+2026-11-20 20:18:39,795 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:18:39,837 INFO cordis_sparql: grant_call@30000 rows=10000 0.07s cache=True
+2026-11-20 20:18:39,855 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,855 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,855 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,856 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,857 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,857 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,857 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,857 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,857 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,857 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,857 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,857 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,857 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,857 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,857 ERROR github: lookup failed for x0
+2026-11-20 20:18:39,858 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,858 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,858 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,858 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,858 ERROR github: lookup failed for x1
+2026-11-20 20:18:39,858 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,859 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,859 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,859 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,859 ERROR github: lookup failed for x10
+2026-11-20 20:18:39,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,860 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,860 ERROR github: lookup failed for x11
+2026-11-20 20:18:39,860 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,860 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,860 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,860 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,860 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,860 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,860 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,860 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,861 ERROR github: lookup failed for x12
+2026-11-20 20:18:39,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,861 ERROR github: lookup failed for x13
+2026-11-20 20:18:39,862 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,862 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,862 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,862 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,862 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,862 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,862 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,862 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,862 ERROR github: lookup failed for x14
+2026-11-20 20:18:39,863 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,863 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,863 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,863 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,863 ERROR github: lookup failed for x15
+2026-11-20 20:18:39,864 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,864 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,864 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,864 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,864 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:18:39,864 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:18:39,864 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:18:39,864 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:18:39,875 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:18:39,889 INFO cordis_sparql: grant_call@40000 rows=6961 0.05s cache=True
+2026-11-20 20:18:39,892 INFO cordis_sparql: grant_call: 46961 rows, 5 pages (6 from cache) 0.4s
+2026-11-20 20:18:39,914 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:18:39,958 INFO cordis_sparql: grant_type@0 rows=10000 0.07s cache=True
+2026-11-20 20:18:39,976 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:18:40,037 INFO cordis_sparql: grant_type@10000 rows=10000 0.08s cache=True
+2026-11-20 20:18:40,039 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:18:40,061 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:18:40,092 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:18:40,105 INFO cordis_sparql: grant_type@20000 rows=10000 0.07s cache=True
+2026-11-20 20:18:40,132 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:18:40,168 INFO cordis_sparql: grant_type@30000 rows=10000 0.06s cache=True
+2026-11-20 20:18:40,175 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:18:40,177 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:18:40,207 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:18:40,232 INFO cordis_sparql: grant_type@40000 rows=10000 0.06s cache=True
+2026-11-20 20:18:40,249 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:18:40,293 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:18:40,296 INFO cordis_sparql: grant_type@50000 rows=10000 0.06s cache=True
+2026-11-20 20:18:40,296 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:18:40,325 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:18:40,359 INFO cordis_sparql: grant_type@60000 rows=10000 0.06s cache=True
+2026-11-20 20:18:40,365 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:18:40,408 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:18:40,416 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:18:40,416 INFO cordis_sparql: grant_type@70000 rows=8725 0.06s cache=True
+2026-11-20 20:18:40,419 INFO cordis_sparql: grant_type: 78725 rows, 8 pages (9 from cache) 0.5s
+2026-11-20 20:18:40,440 INFO github: find_org tier 2: 1 unresolved entities, 17 logins
+2026-11-20 20:18:40,457 INFO gh_id_dates: id map 2026-01-01T04:00:00+00:00 max_id=252407986 n=137626
+2026-11-20 20:18:40,471 INFO github: find_org tier 3: 1 unresolved entities, 25 logins
+2026-11-20 20:18:40,476 INFO cordis_sparql: grant_programme@0 rows=10000 0.06s cache=True
+2026-11-20 20:18:40,506 INFO github: find_org: 1 entities, 1 matched ({3: 1})
+2026-11-20 20:18:40,522 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:18:40,526 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:18:40,526 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:18:40,526 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:18:40,526 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:18:40,526 ERROR github: lookup failed for acme
+2026-11-20 20:18:40,532 INFO cordis_sparql: grant_programme@10000 rows=10000 0.06s cache=True
+2026-11-20 20:18:40,533 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:18:40,548 INFO github: find_org: 1 entities, 0 matched ({})
+2026-11-20 20:18:40,548 WARNING github: find_org: 1 entities held back because a candidate lookup failed (note lookup_error_tier<N> in the search log); rerun find for them
+2026-11-20 20:18:40,549 INFO cordis_sparql: grant_programme@20000 rows=2987 0.02s cache=True
+2026-11-20 20:18:40,551 INFO cordis_sparql: grant_programme: 22987 rows, 3 pages (4 from cache) 0.1s
+2026-11-20 20:18:40,562 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:18:40,600 INFO github: find_org: 1 entities, 1 matched ({1: 1})
+2026-11-20 20:18:40,636 INFO github: id bound 2008: first_id=9994 (2008-01-01 00:44:25+00:00) after 28 calls
+2026-11-20 20:18:40,642 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 35 calls
+2026-11-20 20:18:40,648 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:18:40,734 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:18:40,742 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:18:40,748 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:18:40,757 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:18:41,322 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:18:41,341 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:18:41,348 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:18:41,354 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:18:41,361 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:18:41,919 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:18:41,937 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:18:41,944 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:18:41,950 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:18:41,958 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:18:42,559 INFO github: sample: 560 orgs (186 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:18:42,610 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:18:42,610 INFO github_owners: owner_activity: 25 logins in 3 ClickHouse queries (~45 s if uncached)
+2026-11-20 20:18:42,617 INFO gharchive: query owner_activity_fd7bbd32 rows=5 0.00s cache=False
+2026-11-20 20:18:42,624 INFO gharchive: query owner_activity_befe13dd rows=5 0.00s cache=False
+2026-11-20 20:18:42,630 INFO gharchive: query owner_activity_3c0b07d4 rows=3 0.00s cache=False
+2026-11-20 20:18:42,645 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:18:42,729 WARNING github_owners: ecosyste.ms lookup failed for aa: HTTP_503
+2026-11-20 20:18:42,729 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:18:42,730 INFO github_owners: ecosyste.ms retry 1 for aa
+2026-11-20 20:18:42,730 INFO github_owners: ecosyste.ms retry 1 for bb
+2026-11-20 20:18:42,730 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:18:42,888 WARNING github_owners: ecosyste.ms lookup failed for x0: HTTP_503
+2026-11-20 20:18:42,888 WARNING github_owners: ecosyste.ms lookup failed for x1: HTTP_503
+2026-11-20 20:18:42,888 WARNING github_owners: ecosyste.ms lookup failed for x2: HTTP_503
+2026-11-20 20:18:42,901 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:42,908 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:42,978 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:42,985 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:18:43,067 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,076 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:18:43,158 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:18:43,193 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,199 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:43,253 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,259 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:18:43,315 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,321 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:18:43,402 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:18:43,420 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,426 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:43,478 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,483 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:18:43,541 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,546 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:18:43,609 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:18:43,624 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,629 INFO gharchive: query owner_activity_a0d16862 rows=1 0.00s cache=False
+2026-11-20 20:18:43,654 INFO github_owners: owner_activity: 17 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,659 INFO gharchive: query owner_activity_c9e2f8d8 rows=1 0.00s cache=False
+2026-11-20 20:18:43,684 INFO github_owners: owner_activity: 25 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,689 INFO gharchive: query owner_activity_c63dd396 rows=1 0.00s cache=False
+2026-11-20 20:18:43,719 INFO github_owners: find_org: 1 entities, 1 matched ({3: 1}), 0 held
+2026-11-20 20:18:43,751 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,774 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:18:43,803 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:18:43,804 INFO github_owners: ecosyste.ms retry 1 for acme
+2026-11-20 20:18:43,804 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:18:43,853 INFO github_owners: find_org: 1 entities, 0 matched ({}), 1 held
+2026-11-20 20:18:43,853 WARNING github_owners: find_org: 1 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:18:43,872 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,878 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:18:43,930 INFO github_owners: find_org: 1 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:18:43,972 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:43,980 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:44,034 INFO github_owners: owner_activity: 51 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:44,040 INFO gharchive: query owner_activity_64406a03 rows=1 0.00s cache=False
+2026-11-20 20:18:44,071 INFO github_owners: owner_activity: 50 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:44,077 INFO gharchive: query owner_activity_57f4a449 rows=1 0.00s cache=False
+2026-11-20 20:18:44,117 INFO github_owners: find_org: 8 entities, 1 matched ({1: 1}), 5 held
+2026-11-20 20:18:44,117 WARNING github_owners: find_org: 5 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:18:44,151 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:44,158 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:44,249 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:44,255 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:18:44,332 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:44,339 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:18:44,402 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:18:44,423 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:44,428 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:18:44,474 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:44,479 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:18:44,531 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:18:44,536 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:18:44,597 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:18:44,664 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:18:44,681 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:18:44,793 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:18:44,808 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:18:44,868 INFO gh_id_dates: id map 2026-04-01T04:00:00+00:00 max_id=272710597 n=156068
+2026-11-20 20:18:44,916 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:18:44,931 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:18:44,988 WARNING github_owners: sample: years [2014, 2015] have pending lookups (request cap / errors) and are NOT written; rerun
+2026-11-20 20:18:45,037 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:18:45,051 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:18:45,242 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 20:18:45,242 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 20:18:47,597 INFO gh_id_dates: id map 2026-07-01T04:00:00+00:00 max_id=298557155 n=162953

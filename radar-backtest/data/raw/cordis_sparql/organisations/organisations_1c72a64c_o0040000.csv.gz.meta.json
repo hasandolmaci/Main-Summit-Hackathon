@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-11-20T20:14:28.707043+00:00",
+  "file": "data/raw/cordis_sparql/organisations/organisations_1c72a64c_o0040000.csv.gz",
+  "git_sha": "1d224e999a57798c2e1422ffa26ceac575c12ecc",
+  "inputs": [],
+  "notes": "Raw CORDIS SPARQL text/csv response for 'query' (never edited); CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
+  "params": {
+    "endpoint": "https://cordis.europa.eu/datalab/sparql",
+    "fetched_at": "2026-11-20T20:14:28.562714+00:00",
+    "format": "text/csv",
+    "kind": "page",
+    "limit": 10000,
+    "offset": 40000,
+    "query": "# radar-backtest cordis_sparql dataset=organisations page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), \"^.*/\", \"\") AS ?org_id) ?pic ?name ?short_name (STR(?url0) AS ?url) ?country\nWHERE {\n  ?org a eurio:Organisation .\n  OPTIONAL { ?org eurio:identifier ?pic }\n  OPTIONAL { ?org eurio:legalName ?name }\n  OPTIONAL { ?org eurio:hasAcronym ?acr . ?acr eurio:shortForm ?short_name }\n  OPTIONAL { ?org eurio:url ?url0 . FILTER(!REGEX(STR(?url0), \"[^\\\\s@:/]+@[^\\\\s@/]+\\\\.[^\\\\s@/]+\")) }\n  OPTIONAL { ?org eurio:hasSite ?site . ?site eurio:hasAddress ?adr . ?adr eurio:addressCountry ?country }\n}\nORDER BY ?org ?pic ?name ?short_name ?url0 ?country\nLIMIT 10000 OFFSET 40000"
+  },
+  "python": "3.13.18",
+  "rows": 10000,
+  "script": "scripts/sources/cordis_sparql.py",
+  "sha256": "84494568029d5d3d7dded491ce8349b31f46588537c2e43d9752f14e8c29bc9f",
+  "sources": [
+    "https://cordis.europa.eu/datalab/sparql"
+  ]
+}

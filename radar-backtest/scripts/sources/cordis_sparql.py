@@ -538,13 +538,20 @@ def programme_of(value: str | None) -> str | None:
     return m.group(1).upper() if m else None
 
 
+def type_family(code: str | None) -> str | None:
+    """'MC-CIG' -> 'MC', 'HORIZON-TMA-MSCA-PF-EF' -> 'HORIZON', 'RIA' -> 'RIA' (upper case)."""
+    s = str(code or "").strip().upper()
+    return s.split("-", 1)[0] or None
+
+
 def derive_programmes(projects: pd.DataFrame, schemes: dict[str, pd.DataFrame]) -> tuple[pd.DataFrame, dict]:
     """Framework programme per project (FP7 / H2020 / HORIZON), deterministic cascade over its grant(s):
 
     1. topic identifier prefix ('H2020_...', 'FP7-...', 'HORIZON-...'), 2. call identifier prefix, 3. programme code
        prefix; the first step with evidence decides, two programmes at that step = 'conflict' (None).
     4. funding-scheme type code, mapped through the codes whose step-1..3 projects all have one programme
-       ('MC-IEF' -> FP7, 'RIA' -> H2020; 'CSA' is used by FP7 and H2020 and so maps to nothing).
+       ('MC-IEF' -> FP7, 'RIA' -> H2020; 'CSA' is used by FP7 and H2020 and so maps to nothing); then 4b. the same
+       rule on the code family before the first '-' ('MC-CIG' -> 'MC' -> FP7; 'CSA' / 'ERC' families stay ambiguous).
     5. numeric project id inside exactly one programme's [min, max] id range of step-1..3 projects.
     Otherwise None ('unresolved'); such projects are excluded from the outputs (FP5/FP6 leftovers in the graph).
 
@@ -580,6 +587,16 @@ def derive_programmes(projects: pd.DataFrame, schemes: dict[str, pd.DataFrame]) 
     for u, ps in tt.groupby("project_id")["p"].agg(lambda s: sorted(set(s))).items():
         if len(ps) == 1:
             prog[u], step[u] = ps[0], "type_code"
+    # 4b. code family (text before the first '-': 'MC-CIG' -> 'MC'), same unanimity rule; codes never seen on a
+    #     step-1..3 project (FP7 'MC-CIG', 'MC-IRSES') are resolved through their family ('MC' = FP7 only)
+    t = t.assign(f=t["value"].map(type_family))
+    fam_sets = t.groupby("f")["p"].agg(lambda s: sorted(set(s)))
+    fam_map = {f: ps[0] for f, ps in fam_sets.items() if len(ps) == 1}
+    tt = ev["type"][ev["type"]["project_id"].isin(ids[(step == "unresolved").values])]
+    tt = tt.assign(p=tt["value"].map(type_family).map(fam_map)).dropna(subset=["p"])
+    for u, ps in tt.groupby("project_id")["p"].agg(lambda s: sorted(set(s))).items():
+        if len(ps) == 1:
+            prog[u], step[u] = ps[0], "type_family"
 
     num = pd.Series(pd.to_numeric([v if re.fullmatch(r"\d+", v) else None for v in ids], errors="coerce"), index=ids)
     ranges = {p: (int(num[direct & (prog == p)].min()), int(num[direct & (prog == p)].max()))
@@ -597,6 +614,8 @@ def derive_programmes(projects: pd.DataFrame, schemes: dict[str, pd.DataFrame]) 
     st = {"by_step": {k: int(v) for k, v in step.value_counts().sort_index().items()},
           "by_programme": {k: int(v) for k, v in prog.value_counts().sort_index().items()},
           "type_code_map_size": len(code_map),
+          "type_families_mapped": {f: p for f, p in sorted(fam_map.items())},
+          "type_families_ambiguous": sorted(f for f, ps in fam_sets.items() if len(ps) > 1),
           "type_codes_ambiguous": sorted(c for c, ps in code_sets.items() if len(ps) > 1),
           "id_ranges": {p: list(r) for p, r in ranges.items()}}
     return out, st
@@ -734,7 +753,7 @@ def run(sp: Sparql, out_dir: Path, page_size: int = MAX_PAGE_SIZE, max_pages: in
         write_meta(p_out, rows=len(part), params={**params, "parse_stats": st["participations"]},
                    notes=("PARTIAL (smoke) " if partial else "") +
                    "one row per (programme, project_id, organisation_id) from the CORDIS SPARQL endpoint; programme "
-                   "derived per project (topic/call/programme-code prefix, type code, id range); activity_type and sme "
+                   "derived per project (topic/call/programme-code prefix, type code, type family, id range); activity_type and sme "
                    "are organisation-level classes; public_ts = signatureDate else startDate (00:00 UTC); no contact "
                    "field selected; e-mail-like url values filtered server-side; country UK->GB, EL->GR; " + LICENSE,
                    **common)

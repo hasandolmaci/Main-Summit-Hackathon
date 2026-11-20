@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-11-20T20:14:42.322913+00:00",
+  "file": "data/raw/cordis_sparql/organisation_types/organisation_types_f5845851_o0070000.csv.gz",
+  "git_sha": "1d224e999a57798c2e1422ffa26ceac575c12ecc",
+  "inputs": [],
+  "notes": "Raw CORDIS SPARQL text/csv response for 'query' (never edited); CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
+  "params": {
+    "endpoint": "https://cordis.europa.eu/datalab/sparql",
+    "fetched_at": "2026-11-20T20:14:42.264419+00:00",
+    "format": "text/csv",
+    "kind": "page",
+    "limit": 10000,
+    "offset": 70000,
+    "query": "# radar-backtest cordis_sparql dataset=organisation_types page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?org), \"^.*/\", \"\") AS ?org_id) (REPLACE(STR(?t), \"^.*[#/]\", \"\") AS ?type)\nWHERE {\n  ?org a eurio:Organisation ; a ?t . FILTER(?t != eurio:Organisation)\n}\nORDER BY ?org ?t\nLIMIT 10000 OFFSET 70000"
+  },
+  "python": "3.13.18",
+  "rows": 10000,
+  "script": "scripts/sources/cordis_sparql.py",
+  "sha256": "9483525a2c9c3db6e2d1374380806e3f876b8cb8fe277fe71c0d2c7264cdbd54",
+  "sources": [
+    "https://cordis.europa.eu/datalab/sparql"
+  ]
+}

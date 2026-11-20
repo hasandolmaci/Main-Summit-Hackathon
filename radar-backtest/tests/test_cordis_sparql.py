@@ -262,6 +262,11 @@ def test_check_robots(tmp_path):
 
 
 # --------------------------------------------------------------------------------------------------------- programme
+def test_type_family():
+    assert cs.type_family("MC-CIG") == "MC" and cs.type_family("HORIZON-TMA-MSCA-PF-EF") == "HORIZON"
+    assert cs.type_family("RIA") == "RIA" and cs.type_family(None) is None and cs.type_family("") is None
+
+
 def test_programme_of():
     assert cs.programme_of("H2020_ICT-01-2015") == "H2020"
     assert cs.programme_of("FP7-PEOPLE-2009-IEF") == "FP7"
@@ -284,8 +289,11 @@ def test_derive_programmes_cascade():
         "IST-2001-32072": (None, "unresolved"),  # FP5 id, no evidence
         "700010": (None, "conflict"),            # topics of two programmes
         "700011": (None, "unresolved"),          # 'CSA' is used by FP7 and H2020; id outside every range
+        "260001": ("FP7", "type_family"),        # 'MC-CIG' never on a tagged project; family 'MC' is FP7 only
     }
     assert st["type_codes_ambiguous"] == ["CSA"]
+    assert st["type_families_mapped"] == {"HORIZON": "HORIZON", "MC": "FP7"}
+    assert st["type_families_ambiguous"] == ["CSA"]
     assert st["id_ranges"] == {"FP7": [200001, 250002], "H2020": [700001, 700002], "HORIZON": [101000001, 101300000]}
 
 

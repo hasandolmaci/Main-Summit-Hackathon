@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-11-20T20:15:04.276642+00:00",
+  "file": "data/raw/cordis_sparql/grant_topic/grant_topic_3af67702_o0060000.csv.gz",
+  "git_sha": "1d224e999a57798c2e1422ffa26ceac575c12ecc",
+  "inputs": [],
+  "notes": "Raw CORDIS SPARQL text/csv response for 'query' (never edited); CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
+  "params": {
+    "endpoint": "https://cordis.europa.eu/datalab/sparql",
+    "fetched_at": "2026-11-20T20:15:04.204640+00:00",
+    "format": "text/csv",
+    "kind": "page",
+    "limit": 10000,
+    "offset": 60000,
+    "query": "# radar-backtest cordis_sparql dataset=grant_topic page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?grant), \"^.*/\", \"\") AS ?grant_uuid) ?value\nWHERE {\n  ?grant a eurio:Grant ; eurio:hasFundingSchemeTopic ?s . ?s eurio:identifier ?value .\n}\nORDER BY ?grant ?value\nLIMIT 10000 OFFSET 60000"
+  },
+  "python": "3.13.18",
+  "rows": 8538,
+  "script": "scripts/sources/cordis_sparql.py",
+  "sha256": "f90ddca4fccddfb0b676ca3f09aa71326027f9dc50f7d71b6b343ad2ecafbfc5",
+  "sources": [
+    "https://cordis.europa.eu/datalab/sparql"
+  ]
+}

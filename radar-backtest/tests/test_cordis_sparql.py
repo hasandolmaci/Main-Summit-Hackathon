@@ -585,3 +585,21 @@ def test_robots_response_stored_with_decision(tmp_path):
         cs.check_robots(fake, ["https://cordis.europa.eu/data/x.zip"], raw_dir=tmp_path / "raw2")
     (stored,) = (tmp_path / "raw2" / "robots").glob("robots_*.txt.gz")
     assert json.loads(stored.with_name(stored.name + ".meta.json").read_text())["params"]["allowed"] is False
+
+
+def test_january_first_signature_is_a_placeholder():
+    """signatureDate 1 January (graph placeholder, e.g. 2014-01-01 on projects signed in 2017/18): both dates of the
+    project are dropped, its participations get no public_ts instead of a years-early one; other projects unchanged."""
+    tables = {n: pd.DataFrame(_load(n)[1], columns=_load(n)[0], dtype=object) for n in cs.DATASETS}
+    pr = tables["projects"]
+    pr.loc[pr.project_id == "700002", "signature_date"] = "2014-01-01"
+    part, st = cs.build_participations_sparql(tables)
+    r = _row(part, "H2020", "700002", "999000001")
+    assert pd.isna(r["public_ts"]) and pd.isna(r["ec_signature_date"]) and pd.isna(r["start_date"])
+    assert _row(part, "H2020", "700001", "999000001")["public_ts"] == TS("2015-11-20")
+    assert st["projects"]["placeholder_signature_projects"] == 1
+    assert st["projects"]["placeholder_signature_project_ids"] == ["700002"]
+    proj, pst = cs.build_project_table(pd.DataFrame(
+        {"project_id": ["1", "2"], "acronym": ["A", "B"], "start_date": ["2016-01-01", "2014-01-03"],
+         "signature_date": ["2015-12-01", "2014-01-01"], "grant_uuid": ["g1", "g2"]}, dtype=object))
+    assert proj.loc["1", "start_date"] == "2016-01-01" and proj.loc["2"].isna()[["start_date", "signature_date"]].all()

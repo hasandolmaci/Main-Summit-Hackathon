@@ -131,7 +131,8 @@ def add_pool_entry(ent: pd.DataFrame) -> pd.DataFrame:
 
 def cordis_entity_summary(links: pd.DataFrame, part: pd.DataFrame) -> pd.DataFrame:
     """Per entity: first public grant time, CORDIS country, match method — from entity_cordis links (R1/R2)."""
-    p = part[(part["activity_type"] == "PRC") & part["public_ts"].notna()]
+    # only participations with EU money count as a grant (associated / international partners get EUR 0)
+    p = part[(part["activity_type"] == "PRC") & part["public_ts"].notna() & (part["ec_contribution"].fillna(0) > 0)]
     m = links.merge(p[["organisation_id", "public_ts", "country"]], on="organisation_id", how="inner")
     if m.empty:
         return pd.DataFrame(columns=["entity_id", "cordis_first_public_ts", "cordis_country", "cordis_match_method",
@@ -258,7 +259,7 @@ def build_events(ent: pd.DataFrame) -> pd.DataFrame:
     lp = PROCESSED / "entity_cordis.parquet"
     if p.exists():
         cp = pd.read_parquet(p)
-        cp = cp[(cp["activity_type"] == "PRC") & cp["public_ts"].notna()]
+        cp = cp[(cp["activity_type"] == "PRC") & cp["public_ts"].notna() & (cp["ec_contribution"].fillna(0) > 0)]
         if lp.exists():
             links = pd.read_parquet(lp)
             links = links[links["entity_id"].isin(set(ent["entity_id"]))]

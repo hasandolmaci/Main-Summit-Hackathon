@@ -31,6 +31,8 @@ query of the same pattern runs first; pagination stops at the first short page (
 total must equal COUNT. Every response is stored verbatim (gz) in data/raw/cordis_sparql/<dataset>/ with a .meta.json.
 
 Point in time: public_ts = signatureDate if present, else startDate (00:00 UTC). Nothing observed later is used.
+A signatureDate on 1 January is a placeholder (9 H2020 projects: 2014-01-01, bulk CSV 2017-2018): both dates of such a
+project are dropped, so it gets no public_ts rather than a 4-year-early one.
 FP7 participations get sme = NA, as in the bulk FP7 CSV: the graph's organisation-level SME class comes from later
 H2020 / Horizon Europe declarations (17% of FP7 organisations that took part later carry it, 0.4% of FP7-only ones).
 All responses of one run must come from one snapshot of the graph: pages fetched more than --max-fetch-span-hours
@@ -583,6 +585,15 @@ def build_project_table(projects: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     st: dict = {"project_ids": len(idx), "rows": int(len(projects))}
     for col in ("acronym", "start_date", "signature_date"):
         out[col], st[f"multi_{col}"] = _first_sorted(projects, "project_id", col, idx)
+    # A signature on 1 January (a holiday of the EU institutions) is a placeholder: 9 H2020 projects (807081-807097,
+    # grant numbers allocated in 2017) carry signatureDate 2014-01-01 and startDate 2014-01-01..09, while the bulk CSV
+    # has Dec 2017 - Apr 2018 for six of them. Neither date of such a project can be used: both become None, so its
+    # participations get no public_ts (no grant timestamp, never a 4-year-early one). Counted.
+    sig = pd.to_datetime(out["signature_date"], format="%Y-%m-%d", errors="coerce")
+    placeholder = sig.dt.month.eq(1) & sig.dt.day.eq(1)
+    out.loc[placeholder, ["signature_date", "start_date"]] = None
+    st["placeholder_signature_projects"] = int(placeholder.sum())
+    st["placeholder_signature_project_ids"] = sorted(out.index[placeholder])[:50]
     g = projects[["project_id", "grant_uuid"]].dropna().drop_duplicates()
     st["multi_grant"] = int(g.groupby("project_id").size().gt(1).sum())
     st["no_grant"] = int((~idx.isin(g["project_id"])).sum())
@@ -852,8 +863,8 @@ def run(sp: Sparql, out_dir: Path, page_size: int = MAX_PAGE_SIZE, max_pages: in
                    "one row per (programme, project_id, organisation_id) from the CORDIS SPARQL endpoint; programme "
                    "derived per project (topic/call/programme-code prefix, type code, type family, id range); "
                    "activity_type and sme are organisation-level classes (current state), sme NA for FP7 (no FP7-era "
-                   "SME status, as in the bulk FP7 CSV); public_ts = signatureDate else startDate (00:00 UTC); no "
-                   "contact field selected; e-mail-like url values filtered server-side; country UK->GB, EL->GR; the "
+                   "SME status, as in the bulk FP7 CSV); public_ts = signatureDate else startDate (00:00 UTC), None "
+                   "for projects with a 1-January placeholder signatureDate; no contact field selected; e-mail-like url values filtered server-side; country UK->GB, EL->GR; the "
                    "graph lacks ~5% of H2020 and ~40% of Horizon Europe participations of the bulk CSVs; " + LICENSE,
                    **common)
         write_meta(c_out, rows=len(comp), params={"programmes": programmes or PROGRAMMES, "partial": partial,

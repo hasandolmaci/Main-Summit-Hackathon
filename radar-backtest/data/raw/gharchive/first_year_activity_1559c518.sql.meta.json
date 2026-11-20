@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-20T20:58:25.555935+00:00",
+  "file": "data/raw/gharchive/first_year_activity_1559c518.sql",
+  "git_sha": "e145b0fc0fb2b22174b94939313cf0efc43ae52b",
+  "inputs": [],
+  "notes": null,
+  "params": {
+    "backend": "clickhouse"
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/sources/gharchive.py",
+  "sha256": "69b32cb6acc678de98864330f0694dc57a9ffbad888a28094569f5cca1127ae3",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

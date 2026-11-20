@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-20T20:46:44.888617+00:00",
+  "created_at": "2026-11-20T20:55:27.687133+00:00",
   "file": "data/processed/cordis_participations.parquet",
-  "git_sha": "281a5c70ce3a9b112a1e05c0dae564ffec24254a",
+  "git_sha": "e145b0fc0fb2b22174b94939313cf0efc43ae52b",
   "inputs": [
     {
       "path": "data/raw/cordis_sparql/grant_call/grant_call_795da925_count.csv.gz",
@@ -392,11 +392,11 @@
       "sha256": "1c68a8353a6512ea4fe97751f5483ef09a0ecc6133cbb47020fd1554ae386d27"
     },
     {
-      "path": "data/raw/cordis_sparql/robots/robots_20261120204602_cabf301b.txt.gz",
+      "path": "data/raw/cordis_sparql/robots/robots_20261120205448_cabf301b.txt.gz",
       "sha256": "24a167531f94d582281ea1c8d61735e9a22f44c9c2b7cf9bd02b740c03dad45f"
     }
   ],
-  "notes": "one row per (programme, project_id, organisation_id) from the CORDIS SPARQL endpoint; programme derived per project (topic/call/programme-code prefix, type code, type family, id range); activity_type and sme are organisation-level classes (current state), sme NA for FP7 (no FP7-era SME status, as in the bulk FP7 CSV); public_ts = signatureDate else startDate (00:00 UTC); no contact field selected; e-mail-like url values filtered server-side; country UK->GB, EL->GR; the graph lacks ~5% of H2020 and ~40% of Horizon Europe participations of the bulk CSVs; CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
+  "notes": "one row per (programme, project_id, organisation_id) from the CORDIS SPARQL endpoint; programme derived per project (topic/call/programme-code prefix, type code, type family, id range); activity_type and sme are organisation-level classes (current state), sme NA for FP7 (no FP7-era SME status, as in the bulk FP7 CSV); public_ts = signatureDate else startDate (00:00 UTC), None for projects with a 1-January placeholder signatureDate; no contact field selected; e-mail-like url values filtered server-side; country UK->GB, EL->GR; the graph lacks ~5% of H2020 and ~40% of Horizon Europe participations of the bulk CSVs; CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
   "params": {
     "datasets": {
       "grant_call": {
@@ -604,8 +604,8 @@
     ],
     "robots": {
       "allowed": true,
-      "fetched_at": "2026-11-20T20:46:02.215999+00:00",
-      "raw_path": "/home/user/Main-Summit-Hackathon/radar-backtest/data/raw/cordis_sparql/robots/robots_20261120204602_cabf301b.txt.gz",
+      "fetched_at": "2026-11-20T20:54:48.110021+00:00",
+      "raw_path": "data/raw/cordis_sparql/robots/robots_20261120205448_cabf301b.txt.gz",
       "robots_url": "https://cordis.europa.eu/robots.txt",
       "rules": [
         "no matching rule (allowed)"
@@ -646,7 +646,7 @@
   "python": "3.13.18",
   "rows": 398206,
   "script": "scripts/sources/cordis_sparql.py",
-  "sha256": "1f12287c6522b66935a8fd48a630b41886717cae3f484a346dde475061006fc6",
+  "sha256": "90a353e25cd94d818ff9e263af7c2c2bc5b0539a0e198b3fbd58e27dfefa0bd6",
   "sources": [
     "https://cordis.europa.eu/datalab/sparql"
   ]

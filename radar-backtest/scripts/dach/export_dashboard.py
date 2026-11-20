@@ -24,9 +24,10 @@ def export() -> dict:
     real = s.get("real") or {}
     attempts = [a for a in s.get("attempts", []) if a.get("run") == "real"]
     shuffled = s.get("shuffled", [])
-    cur_auc = real.get("oof_auc") if real else (attempts[-1]["auc_before"] if attempts else (s.get("start") or {}).get("auc"))
-    if attempts and not real:
-        last = attempts[-1]
+    tested = [a for a in attempts if a.get("auc_before") is not None]
+    cur_auc = real.get("oof_auc") if real else (s.get("start") or {}).get("auc")
+    if tested and not real:
+        last = tested[-1]
         cur_auc = last["auc_after"] if last.get("decision") == "keep" else last["auc_before"]
     phase = ("done" if stage == "done" else "shuffled-label control" if stage.startswith("shuffled")
              else "backward pass" if "backward" in stage else "forward pass" if "forward" in stage else "starting")

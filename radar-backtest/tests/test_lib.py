@@ -111,3 +111,11 @@ def test_locked_year_guard(monkeypatch):
         config.guard_years([locked[0]])                     # env alone is not enough
     assert config.guard_years([locked[0]], allow_locked=True) == [locked[0]]
     assert config.guard_years(config.selection_years()) == config.selection_years()
+
+
+def test_config_country_codes_are_strings():
+    # YAML 1.1 parses an unquoted NO (Norway) as boolean false
+    c = config.cfg()
+    for key in ("europe_iso2", "horizon_eligible_iso2"):
+        assert all(isinstance(x, str) for x in c[key]), key
+    assert "NO" in c["europe_iso2"] and "NO" in c["horizon_eligible_iso2"]

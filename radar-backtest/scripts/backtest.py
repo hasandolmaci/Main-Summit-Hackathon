@@ -127,17 +127,20 @@ def score_year(y: int, snaps: pd.DataFrame, refs: pd.DataFrame, features=FEATURE
     for f in features:
         add(f"baseline_{f}", test[f].values)
     lr = train_logreg(train, features)
+    nan = np.full(len(test), np.nan)                 # every method gets a row for every year (NaN ranks last)
     if lr is not None:
         add("logreg", lr.predict_proba(design(test, features))[:, 1])
         names = list(features) + HAS_FLAGS
         coefs.append({"as_of": y, "n_train": len(train), "n_train_pos": int(train["label"].sum()),
                       "intercept": float(lr.intercept_[0]), **dict(zip(names, lr.coef_[0].astype(float)))})
+    else:
+        add("logreg", nan)
     rs = reference_set(refs, a, R) if len(refs) else refs
     w_lr = np.clip(lr.coef_[0][: len(features)], 0, None) if lr is not None else None
     for k in cfg()["knn"]["ks"]:
         add(f"knn_k{k}", knn_scores(test, rs, k, None, features))
-        if w_lr is not None and w_lr.sum() > 0:
-            add(f"lr_knn_k{k}", knn_scores(test, rs, k, w_lr, features))
+        ok = w_lr is not None and w_lr.sum() > 0
+        add(f"lr_knn_k{k}", knn_scores(test, rs, k, w_lr, features) if ok else nan)
     log.info("as_of %d: test %d (pos %d), train %d (pos %d), refs %d", y, len(test), int(test.label.sum()),
              len(train), int(train.label.sum()) if len(train) else 0, len(rs))
     return pd.concat(out, ignore_index=True), coefs

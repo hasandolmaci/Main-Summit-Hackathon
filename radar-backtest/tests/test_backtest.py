@@ -91,3 +91,11 @@ def test_deterministic():
     a = bt.score_year(2017, snaps, pd.DataFrame())[0]
     b = bt.score_year(2017, snaps, pd.DataFrame())[0]
     pd.testing.assert_frame_equal(a, b)
+
+
+def test_every_method_has_every_year():
+    snaps = _synthetic_snaps(years=range(2012, 2020))
+    pred = pd.concat([bt.score_year(y, snaps, pd.DataFrame())[0] for y in range(2013, 2020)])  # 2013: no training data yet
+    per = pred.groupby("method")["as_of"].nunique()
+    assert per.nunique() == 1 and per.iloc[0] == 7
+    assert pred[(pred.method == "logreg") & (pred.as_of == as_of_date(2013))]["score"].isna().all()

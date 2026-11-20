@@ -66,9 +66,9 @@ min_positives:
   target: 100
   exploratory_below: 30
 
-europe_iso2: [AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT, RO, SK, SI, ES, SE, GB, CH, NO]
+europe_iso2: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "GB", "CH", "NO"]
 # EU27 + Horizon associated countries (H2020 / Horizon Europe), used for CORDIS coverage.
-horizon_eligible_iso2: [AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT, RO, SK, SI, ES, SE, GB, CH, NO, IS, LI, IL, TR, RS, UA, MD, ME, MK, AL, BA, FO, GE, AM, TN, XK]
+horizon_eligible_iso2: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "GB", "CH", "NO", "IS", "LI", "IL", "TR", "RS", "UA", "MD", "ME", "MK", "AL", "BA", "FO", "GE", "AM", "TN", "XK"]
 
 http:
   user_agent: "radar-backtest/0.1 (research backtest; contact via repository owner)"

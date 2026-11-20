@@ -11,7 +11,7 @@ from __future__ import annotations
 import argparse
 
 from . import backtest, build_snapshots, report
-from .lib.config import cfg, get_logger
+from .lib.config import PROCESSED, RESULTS, cfg, get_logger
 
 log = get_logger("run_backtests")
 
@@ -22,6 +22,14 @@ def main(argv=None):
     ap.add_argument("--skip", nargs="*", default=[], help="any of: snapshots R3 batchstart scaling_pct")
     a = ap.parse_args(argv)
     years = [str(y) for y in range(2012, cfg()["years"]["selection"][1] + 1)]
+    # remove stale artefacts so nothing from an earlier run can be read by mistake
+    for pat in ["snapshots_*.parquet", "snapshots_*.parquet.meta.json", "reference_profiles*.parquet",
+                "reference_profiles*.parquet.meta.json"]:
+        for f in PROCESSED.glob(pat):
+            f.unlink()
+    for pat in ["metrics_*.csv*", "predictions_*.parquet*", "coefficients_*.csv", "coef_bootstrap_*.csv", "flagged_*.csv"]:
+        for f in RESULTS.glob(pat):
+            f.unlink()
     reps = ["--reps", str(a.reps)]
     sens = ["--reps", str(min(a.reps, 200))]          # sensitivity runs: AUC comparisons only, fewer resamples
     if "snapshots" not in a.skip:

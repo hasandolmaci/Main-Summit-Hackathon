@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-11-20T18:49:30.043247+00:00",
+  "file": "data/raw/cordis/portal_cordish2020projects.json.gz",
+  "git_sha": "772f8e46c4a23a1f4b17c59fe9e0bf2903bb1bab",
+  "inputs": [],
+  "notes": "EU Open Data Portal DCAT metadata (verbatim), used to resolve the CSV package URL",
+  "params": {
+    "fetched_at": "2026-11-20T18:49:30.029602+00:00",
+    "url": "https://data.europa.eu/api/hub/search/datasets/cordish2020projects"
+  },
+  "python": "3.13.18",
+  "rows": 1,
+  "script": "scripts/sources/cordis.py",
+  "sha256": "1478baa2982199afb4caa11b32945e934dc6f5b8b17ab95acb30d4e5f597cc99",
+  "sources": [
+    "https://data.europa.eu/api/hub/search/datasets/cordish2020projects"
+  ]
+}

@@ -158,3 +158,518 @@
 2026-11-20 18:47:22,116 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/coinpanion/ params=None status=200 bytes=154614
 2026-11-20 18:47:24,148 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/colipi/ params=None status=200 bytes=156072
 2026-11-20 18:47:26,131 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/collimatehealth/ params=None status=200 bytes=154599
+2026-11-20 18:47:28,105 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/collinor-software-2/ params=None status=200 bytes=145939
+2026-11-20 18:47:29,138 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:47:29,167 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:47:29,183 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:47:29,441 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:47:29,476 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:47:29,498 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:47:29,559 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:47:29,565 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:47:29,576 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-0/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (7 bytes)
+2026-11-20 18:47:29,576 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-0/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 18:47:29,583 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-0/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-0/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:47:30,060 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/commercetools-4/ params=None status=200 bytes=121632
+2026-11-20 18:47:32,421 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/commsolid-2/ params=None status=200 bytes=126886
+2026-11-20 18:47:34,092 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/comnovo/ params=None status=200 bytes=125083
+2026-11-20 18:47:36,133 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/comodule/ params=None status=200 bytes=157291
+2026-11-20 18:47:36,449 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:47:36,474 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:47:36,497 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:47:36,659 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:47:36,682 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:47:36,698 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:47:36,741 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:47:36,745 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:47:36,751 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-1/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (7 bytes)
+2026-11-20 18:47:36,752 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-1/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 18:47:36,757 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-1/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-1/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:47:38,084 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/compositence-2/ params=None status=200 bytes=157242
+2026-11-20 18:47:40,111 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/computomics/ params=None status=200 bytes=164306
+2026-11-20 18:47:42,131 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/comydo/ params=None status=200 bytes=153903
+2026-11-20 18:47:44,080 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/confovis-2/ params=None status=200 bytes=122229
+2026-11-20 18:47:46,056 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/contros-2/ params=None status=200 bytes=124133
+2026-11-20 18:47:46,534 INFO cordis: FP7: imported /tmp/claude-0/-home-user-Main-Summit-Hackathon/549552a1-9fac-5ae8-8a8d-1dfddf55f1dd/scratchpad/cordis_work/smoke/zips/cordis-fp7projects-csv.zip -> /tmp/claude-0/-home-user-Main-Summit-Hackathon/549552a1-9fac-5ae8-8a8d-1dfddf55f1dd/scratchpad/cordis_work/smoke/raw/cordis-fp7projects-csv.zip
+2026-11-20 18:47:46,537 INFO cordis: H2020: imported /tmp/claude-0/-home-user-Main-Summit-Hackathon/549552a1-9fac-5ae8-8a8d-1dfddf55f1dd/scratchpad/cordis_work/smoke/zips/cordis-h2020projects-csv.zip -> /tmp/claude-0/-home-user-Main-Summit-Hackathon/549552a1-9fac-5ae8-8a8d-1dfddf55f1dd/scratchpad/cordis_work/smoke/raw/cordis-h2020projects-csv.zip
+2026-11-20 18:47:46,540 INFO cordis: HORIZON: imported /tmp/claude-0/-home-user-Main-Summit-Hackathon/549552a1-9fac-5ae8-8a8d-1dfddf55f1dd/scratchpad/cordis_work/smoke/zips/cordis-HORIZONprojects-csv.zip -> /tmp/claude-0/-home-user-Main-Summit-Hackathon/549552a1-9fac-5ae8-8a8d-1dfddf55f1dd/scratchpad/cordis_work/smoke/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:47:46,607 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:47:46,634 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:47:46,652 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:47:47,803 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/conweaver/ params=None status=200 bytes=157838
+2026-11-20 18:47:50,153 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/coolsem-technologies/ params=None status=200 bytes=156964
+2026-11-20 18:47:52,123 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/coramaze-2/ params=None status=200 bytes=159196
+2026-11-20 18:47:54,147 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/coredinate-2/ params=None status=200 bytes=158379
+2026-11-20 18:47:56,153 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/corimmun-2/ params=None status=200 bytes=157061
+2026-11-20 18:47:58,136 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cortec/ params=None status=200 bytes=167058
+2026-11-20 18:48:00,126 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/covalo/ params=None status=200 bytes=160197
+2026-11-20 18:48:02,147 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/crealytics-2/ params=None status=200 bytes=169157
+2026-11-20 18:48:04,138 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/crocus-labs/ params=None status=200 bytes=160398
+2026-11-20 18:48:06,123 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/crossvertise-2/ params=None status=200 bytes=151809
+2026-11-20 18:48:08,142 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cryotherapeutics/ params=None status=200 bytes=163673
+2026-11-20 18:48:10,164 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ctrls/ params=None status=200 bytes=155707
+2026-11-20 18:48:12,133 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cubical-2/ params=None status=200 bytes=149728
+2026-11-20 18:48:14,098 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cuciniale/ params=None status=200 bytes=121015
+2026-11-20 18:48:16,104 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cumulocity-2/ params=None status=200 bytes=126020
+2026-11-20 18:48:18,122 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cunesoft-2/ params=None status=200 bytes=164319
+2026-11-20 18:48:20,134 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/customsurg/ params=None status=200 bytes=150399
+2026-11-20 18:48:22,570 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cutanos/ params=None status=200 bytes=154656
+2026-11-20 18:48:24,149 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cycle/ params=None status=200 bytes=152407
+2026-11-20 18:48:26,201 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cyclize/ params=None status=200 bytes=166515
+2026-11-20 18:48:28,156 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cytena/ params=None status=200 bytes=153515
+2026-11-20 18:48:30,141 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/data-virtuality/ params=None status=200 bytes=158565
+2026-11-20 18:48:32,176 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/datarade/ params=None status=200 bytes=153736
+2026-11-20 18:48:33,809 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/dcubed/ params=None status=200 bytes=163023
+2026-11-20 18:48:36,145 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/dearemployee/ params=None status=200 bytes=161077
+2026-11-20 18:48:38,137 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/deepscenario/ params=None status=200 bytes=158205
+2026-11-20 18:48:40,146 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/deepskill/ params=None status=200 bytes=162717
+2026-11-20 18:48:42,128 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/delft-circuits/ params=None status=200 bytes=158684
+2026-11-20 18:48:44,126 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/demosquare/ params=None status=200 bytes=154657
+2026-11-20 18:48:46,090 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/depotcharge/ params=None status=200 bytes=132532
+2026-11-20 18:48:48,130 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/desk-ly/ params=None status=200 bytes=157615
+2026-11-20 18:48:50,137 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/devicetrust/ params=None status=200 bytes=159845
+2026-11-20 18:48:52,121 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/dimate/ params=None status=200 bytes=156461
+2026-11-20 18:48:54,127 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/dimericon/ params=None status=200 bytes=150029
+2026-11-20 18:48:56,132 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/dimpora/ params=None status=200 bytes=157540
+2026-11-20 18:48:58,106 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/dntox/ params=None status=200 bytes=155775
+2026-11-20 18:49:00,114 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/doctorflix/ params=None status=200 bytes=153968
+2026-11-20 18:49:01,810 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/doinstruct/ params=None status=200 bytes=170286
+2026-11-20 18:49:04,696 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/dotega/ params=None status=200 bytes=154297
+2026-11-20 18:49:06,170 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/dracoon-en/ params=None status=200 bytes=164500
+2026-11-20 18:49:07,177 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:49:07,199 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:07,214 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:07,364 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:49:07,385 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:07,400 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:07,461 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:49:07,466 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:49:07,472 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-2/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (7 bytes)
+2026-11-20 18:49:07,472 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-2/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 18:49:07,477 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-2/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-2/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:49:08,118 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/draupnir-bio/ params=None status=200 bytes=142287
+2026-11-20 18:49:10,131 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/dresden-silicon-2/ params=None status=200 bytes=141124
+2026-11-20 18:49:12,132 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/dxi/ params=None status=200 bytes=157678
+2026-11-20 18:49:14,150 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ebenbuild/ params=None status=200 bytes=154747
+2026-11-20 18:49:16,167 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ecointense-2/ params=None status=200 bytes=163237
+2026-11-20 18:49:18,127 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ecopals/ params=None status=200 bytes=156397
+2026-11-20 18:49:20,160 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/eddyson/ params=None status=200 bytes=156369
+2026-11-20 18:49:20,596 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:49:20,625 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:20,646 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:20,863 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:49:20,887 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:20,907 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:20,973 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:49:20,979 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:49:20,986 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-3/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (7 bytes)
+2026-11-20 18:49:20,986 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-3/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 18:49:20,991 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-3/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-3/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:49:22,139 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/eeden/ params=None status=200 bytes=160141
+2026-11-20 18:49:23,815 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/egym/ params=None status=200 bytes=164854
+2026-11-20 18:49:26,171 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/emax-digital/ params=None status=200 bytes=156861
+2026-11-20 18:49:27,545 INFO http: GET https://data.europa.eu/robots.txt params=None status=200 bytes=2501
+2026-11-20 18:49:28,149 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/emerge/ params=None status=200 bytes=153708
+2026-11-20 18:49:28,336 INFO http: GET https://data.europa.eu/api/hub/search/datasets/cordisfp7projects params=None status=200 bytes=236164
+2026-11-20 18:49:29,369 INFO http: GET https://cordis.europa.eu/robots.txt params=None status=200 bytes=365
+2026-11-20 18:49:29,370 ERROR cordis: FP7: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-fp7projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-fp7projects-csv.zip>`.
+2026-11-20 18:49:30,029 INFO http: GET https://data.europa.eu/api/hub/search/datasets/cordish2020projects params=None status=200 bytes=182827
+2026-11-20 18:49:30,049 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:49:30,157 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/emergence-therapeutics-3/ params=None status=200 bytes=158303
+2026-11-20 18:49:30,664 INFO http: GET https://data.europa.eu/api/hub/search/datasets/cordis-eu-research-projects-under-horizon-europe-2021-2027 params=None status=200 bytes=75042
+2026-11-20 18:49:30,673 ERROR cordis: HORIZON: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-HORIZONprojects-csv.zip>`.
+2026-11-20 18:49:32,134 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/emproof/ params=None status=200 bytes=160489
+2026-11-20 18:49:34,139 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/emteria/ params=None status=200 bytes=154674
+2026-11-20 18:49:36,174 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/enercast/ params=None status=200 bytes=159913
+2026-11-20 18:49:37,427 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 18:49:37,466 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:49:37,487 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:49:37,508 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:49:37,532 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:49:37,554 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:49:37,593 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:49:37,612 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:49:37,633 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:49:37,653 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:49:37,678 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:49:37,767 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:49:37,796 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:49:37,919 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:49:37,945 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:37,962 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:38,123 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/enexion/ params=None status=200 bytes=158388
+2026-11-20 18:49:38,166 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:49:38,195 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:38,213 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:38,295 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:49:38,302 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:49:38,309 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-4/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (7 bytes)
+2026-11-20 18:49:38,310 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-4/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 18:49:38,316 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-4/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-4/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:49:40,145 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/enscape-2/ params=None status=200 bytes=157033
+2026-11-20 18:49:42,066 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/enshape/ params=None status=200 bytes=121726
+2026-11-20 18:49:44,143 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/entelios-3/ params=None status=200 bytes=154129
+2026-11-20 18:49:45,968 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 18:49:46,005 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:49:46,027 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:49:46,048 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:49:46,069 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:49:46,091 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:49:46,131 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:49:46,144 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/envelio-gmbh-2/ params=None status=200 bytes=157347
+2026-11-20 18:49:46,160 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:49:46,181 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:49:46,205 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:49:46,230 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:49:46,328 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:49:46,361 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:49:46,484 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:49:46,513 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:46,532 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:46,773 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:49:46,795 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:46,812 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:46,869 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:49:46,874 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:49:46,882 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-5/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (7 bytes)
+2026-11-20 18:49:46,882 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-5/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 18:49:46,886 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-5/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-5/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:49:48,120 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/epix-sports/ params=None status=200 bytes=150177
+2026-11-20 18:49:49,845 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:49:49,867 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:49,884 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:50,110 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:49:50,141 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:50,162 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/erium/ params=None status=200 bytes=154640
+2026-11-20 18:49:50,167 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:49:50,259 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:49:50,266 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:49:50,276 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-6/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (7 bytes)
+2026-11-20 18:49:50,277 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-6/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 18:49:50,282 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-6/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-6/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:49:52,131 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/esg-score/ params=None status=200 bytes=151098
+2026-11-20 18:49:54,084 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/esy-labs/ params=None status=200 bytes=129078
+2026-11-20 18:49:56,124 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/etvas/ params=None status=200 bytes=156688
+2026-11-20 18:49:58,136 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/everreal/ params=None status=200 bytes=154410
+2026-11-20 18:50:00,131 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/everyone-energy/ params=None status=200 bytes=159417
+2026-11-20 18:50:01,145 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 18:50:01,185 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:50:01,207 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:50:01,232 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:50:01,259 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:50:01,289 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:50:01,349 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:50:01,377 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:50:01,405 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:50:01,433 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:50:01,456 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:50:01,564 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:50:01,591 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:50:01,737 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:50:01,770 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:50:01,792 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:50:02,055 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:50:02,087 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:50:02,113 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:50:02,190 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:50:02,196 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:50:02,205 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-7/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (7 bytes)
+2026-11-20 18:50:02,205 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-7/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 18:50:02,213 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-7/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-7/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:50:02,414 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/evlabio/ params=None status=200 bytes=150139
+2026-11-20 18:50:04,176 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/evocatal-2/ params=None status=200 bytes=135856
+2026-11-20 18:50:05,458 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:50:05,486 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:50:05,508 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:50:05,726 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:50:05,747 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:50:05,762 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:50:05,827 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:50:05,833 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:50:05,840 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-8/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (7 bytes)
+2026-11-20 18:50:05,841 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-8/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 18:50:05,846 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-8/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-8/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:50:06,259 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ewings-com-2/ params=None status=200 bytes=152849
+2026-11-20 18:50:08,170 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/exelonix/ params=None status=200 bytes=130185
+2026-11-20 18:50:10,195 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/extoll/ params=None status=200 bytes=152419
+2026-11-20 18:50:12,231 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/eyefactive-2/ params=None status=200 bytes=163019
+2026-11-20 18:50:14,936 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/eyeo-imaging/ params=None status=200 bytes=164277
+2026-11-20 18:50:16,236 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/facellitate/ params=None status=200 bytes=154017
+2026-11-20 18:50:18,172 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/factor2-energy/ params=None status=200 bytes=157492
+2026-11-20 18:50:20,154 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/fairfleet/ params=None status=200 bytes=157921
+2026-11-20 18:50:22,161 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/famplus-2/ params=None status=200 bytes=152646
+2026-11-20 18:50:24,249 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/fazua-2/ params=None status=200 bytes=160641
+2026-11-20 18:50:26,187 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/fiagon-2/ params=None status=200 bytes=157778
+2026-11-20 18:50:28,131 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/fidlock-2/ params=None status=200 bytes=148370
+2026-11-20 18:50:30,153 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/filestage/ params=None status=200 bytes=159896
+2026-11-20 18:50:32,110 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/finches/ params=None status=200 bytes=128600
+2026-11-20 18:50:34,168 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/findiq/ params=None status=200 bytes=165228
+2026-11-20 18:50:36,136 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/fine-legal/ params=None status=200 bytes=152978
+2026-11-20 18:50:38,142 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/finleap-2/ params=None status=200 bytes=155378
+2026-11-20 18:50:40,144 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/finmarie/ params=None status=200 bytes=166560
+2026-11-20 18:50:41,829 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/fion-energy/ params=None status=200 bytes=157073
+2026-11-20 18:50:44,177 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/flowtify/ params=None status=200 bytes=156035
+2026-11-20 18:50:46,186 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/flynex/ params=None status=200 bytes=160167
+2026-11-20 18:50:48,154 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/fmc-ferroelectric-memory-company/ params=None status=200 bytes=162750
+2026-11-20 18:50:50,152 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/fodjan-2/ params=None status=200 bytes=151784
+2026-11-20 18:50:52,084 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/fos4x-2/ params=None status=200 bytes=140401
+2026-11-20 18:50:54,147 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ftapi-software-2/ params=None status=200 bytes=156886
+2026-11-20 18:50:56,133 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/fundamental-pharma/ params=None status=200 bytes=154436
+2026-11-20 18:50:58,092 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/futalis-2/ params=None status=200 bytes=124669
+2026-11-20 18:51:00,135 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/genow/ params=None status=200 bytes=156048
+2026-11-20 18:51:02,281 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/geospin-gmbh/ params=None status=200 bytes=151731
+2026-11-20 18:51:04,080 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/gestigon-2/ params=None status=200 bytes=134620
+2026-11-20 18:51:06,151 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/gilupi-2/ params=None status=200 bytes=154811
+2026-11-20 18:51:07,831 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/gilytics/ params=None status=200 bytes=154929
+2026-11-20 18:51:10,181 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/glassdollar/ params=None status=200 bytes=161739
+2026-11-20 18:51:12,115 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/glassflow/ params=None status=200 bytes=134408
+2026-11-20 18:51:14,158 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/gme-2/ params=None status=200 bytes=157130
+2026-11-20 18:51:16,156 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/gq-bio-therapeutics-2/ params=None status=200 bytes=164412
+2026-11-20 18:51:18,202 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/grandcentrix-2/ params=None status=200 bytes=162071
+2026-11-20 18:51:20,199 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/grandperspective/ params=None status=200 bytes=161041
+2026-11-20 18:51:22,153 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/graswald/ params=None status=200 bytes=166783
+2026-11-20 18:51:24,080 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/gravit/ params=None status=200 bytes=127892
+2026-11-20 18:51:26,162 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/graylog/ params=None status=200 bytes=166722
+2026-11-20 18:51:28,166 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/gridscale/ params=None status=200 bytes=157772
+2026-11-20 18:51:30,204 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/gs-bavaria/ params=None status=200 bytes=155758
+2026-11-20 18:51:32,099 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/h-c-carbon-2/ params=None status=200 bytes=124698
+2026-11-20 18:51:34,162 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hanko-io/ params=None status=200 bytes=150131
+2026-11-20 18:51:36,202 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hapila-2/ params=None status=200 bytes=154418
+2026-11-20 18:51:38,172 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hbox-therapies/ params=None status=200 bytes=155128
+2026-11-20 18:51:40,175 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/heartbeat-medical/ params=None status=200 bytes=158127
+2026-11-20 18:51:42,138 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/heidelberg-epignostix/ params=None status=200 bytes=155984
+2026-11-20 18:51:44,143 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hema-to/ params=None status=200 bytes=164084
+2026-11-20 18:51:46,181 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/heparegenix/ params=None status=200 bytes=168729
+2026-11-20 18:51:48,178 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/highline/ params=None status=200 bytes=155486
+2026-11-20 18:51:50,082 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hiperscan-2/ params=None status=200 bytes=130986
+2026-11-20 18:51:52,091 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hmc-2/ params=None status=200 bytes=121163
+2026-11-20 18:51:54,125 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hofmann-stirner-2/ params=None status=200 bytes=155485
+2026-11-20 18:51:56,163 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hornetsecurity-2/ params=None status=200 bytes=162335
+2026-11-20 18:51:58,155 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hprobe/ params=None status=200 bytes=161016
+2026-11-20 18:52:00,146 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hq-plus-2/ params=None status=200 bytes=149850
+2026-11-20 18:52:02,193 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hqs-quantum-simulations/ params=None status=200 bytes=156597
+2026-11-20 18:52:04,192 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/humedics-2/ params=None status=200 bytes=160491
+2026-11-20 18:52:06,236 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/hypros/ params=None status=200 bytes=167619
+2026-11-20 18:52:08,184 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/i3-membrane/ params=None status=200 bytes=165154
+2026-11-20 18:52:10,186 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ice-gateway-2/ params=None status=200 bytes=149924
+2026-11-20 18:52:12,222 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ico-lux/ params=None status=200 bytes=154936
+2026-11-20 18:52:14,191 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/iconiq-lab-holding-2/ params=None status=200 bytes=152786
+2026-11-20 18:52:16,130 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/immersight/ params=None status=200 bytes=126108
+2026-11-20 18:52:18,166 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/immunic-2/ params=None status=200 bytes=160838
+2026-11-20 18:52:20,256 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/implandata-ophthalmic-products-2/ params=None status=200 bytes=158370
+2026-11-20 18:52:22,184 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/implisense-2/ params=None status=200 bytes=155446
+2026-11-20 18:52:24,204 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/incapptic-connect-2/ params=None status=200 bytes=153512
+2026-11-20 18:52:26,157 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/incephalo/ params=None status=200 bytes=143256
+2026-11-20 18:52:28,166 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/incirt/ params=None status=200 bytes=153817
+2026-11-20 18:52:30,183 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/incontalert/ params=None status=200 bytes=160105
+2026-11-20 18:52:32,124 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/industrial-solar-2/ params=None status=200 bytes=120553
+2026-11-20 18:52:34,157 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/industrial-technology-and-witchcraft/ params=None status=200 bytes=153994
+2026-11-20 18:52:36,172 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ineratec/ params=None status=200 bytes=160260
+2026-11-20 18:52:38,162 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/inleap-photonics/ params=None status=200 bytes=162091
+2026-11-20 18:52:40,158 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/innerspace/ params=None status=200 bytes=160042
+2026-11-20 18:52:42,155 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/inovedis/ params=None status=200 bytes=158182
+2026-11-20 18:52:43,838 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/instagrid/ params=None status=200 bytes=174143
+2026-11-20 18:52:46,166 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/io-dynamics/ params=None status=200 bytes=155195
+2026-11-20 18:52:48,144 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ionkraft/ params=None status=200 bytes=154451
+2026-11-20 18:52:50,140 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/iplytics-2/ params=None status=200 bytes=156814
+2026-11-20 18:52:52,119 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/iq-evolution-2/ params=None status=200 bytes=141191
+2026-11-20 18:52:54,090 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/irubis/ params=None status=200 bytes=129283
+2026-11-20 18:52:56,187 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/isptech/ params=None status=200 bytes=159495
+2026-11-20 18:52:58,171 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/itembase-2/ params=None status=200 bytes=154902
+2026-11-20 18:53:00,508 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/jaipur-robotics/ params=None status=200 bytes=127825
+2026-11-20 18:53:02,142 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/jenacell-2/ params=None status=200 bytes=131871
+2026-11-20 18:53:04,191 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/jobleads/ params=None status=200 bytes=154730
+2026-11-20 18:53:06,192 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/juniqe-2/ params=None status=200 bytes=159461
+2026-11-20 18:53:08,221 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/jupus/ params=None status=200 bytes=166499
+2026-11-20 18:53:10,204 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/kausable/ params=None status=200 bytes=164431
+2026-11-20 18:53:12,138 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/kimeta-2/ params=None status=200 bytes=147625
+2026-11-20 18:53:14,172 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/kinaxo-2/ params=None status=200 bytes=152781
+2026-11-20 18:53:16,143 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/kinkaa-2/ params=None status=200 bytes=141662
+2026-11-20 18:53:18,250 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/kiutra/ params=None status=200 bytes=163075
+2026-11-20 18:53:20,183 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/kiwigrid-2/ params=None status=200 bytes=160942
+2026-11-20 18:53:22,140 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/kontem-2/ params=None status=200 bytes=152942
+2026-11-20 18:53:24,142 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/kontext/ params=None status=200 bytes=127786
+2026-11-20 18:53:26,174 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/kranus/ params=None status=200 bytes=165092
+2026-11-20 18:53:28,171 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ksk-diagnostics/ params=None status=200 bytes=149541
+2026-11-20 18:53:30,171 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/kumovis-gmbh/ params=None status=200 bytes=157457
+2026-11-20 18:53:32,105 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/kupando/ params=None status=200 bytes=132477
+2026-11-20 18:53:34,248 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/laclaree-vision/ params=None status=200 bytes=162218
+2026-11-20 18:53:36,113 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ledexchange-4/ params=None status=200 bytes=126360
+2026-11-20 18:53:38,144 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/lignopure/ params=None status=200 bytes=156082
+2026-11-20 18:53:40,150 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/limata/ params=None status=200 bytes=147445
+2026-11-20 18:53:42,154 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/lindis-blood-care/ params=None status=200 bytes=162782
+2026-11-20 18:53:44,150 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/lino-biotech/ params=None status=200 bytes=154412
+2026-11-20 18:53:46,127 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/lockbox/ params=None status=200 bytes=129286
+2026-11-20 18:53:47,322 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 18:53:47,322 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 18:53:48,153 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/locr/ params=None status=200 bytes=142567
+2026-11-20 18:53:50,135 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/loewi/ params=None status=200 bytes=154342
+2026-11-20 18:53:52,111 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/luphos-2/ params=None status=200 bytes=121142
+2026-11-20 18:53:54,196 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/lymphatica/ params=None status=200 bytes=163901
+2026-11-20 18:53:56,148 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/lytra/ params=None status=200 bytes=154987
+2026-11-20 18:53:58,161 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/m2p-lab/ params=None status=200 bytes=163379
+2026-11-20 18:54:00,147 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/magazino-2/ params=None status=200 bytes=153486
+2026-11-20 18:54:02,150 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/make-tv-2/ params=None status=200 bytes=120278
+2026-11-20 18:54:03,844 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/marble-imaging/ params=None status=200 bytes=157287
+2026-11-20 18:54:06,224 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/materials-nexus/ params=None status=200 bytes=156880
+2026-11-20 18:54:08,167 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mbiomics/ params=None status=200 bytes=159433
+2026-11-20 18:54:10,081 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mbmsystems-2/ params=None status=200 bytes=113804
+2026-11-20 18:54:12,203 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mdtb-cell-manufacturing/ params=None status=200 bytes=150740
+2026-11-20 18:54:14,239 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mediaire/ params=None status=200 bytes=164240
+2026-11-20 18:54:16,193 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/medical-decision-alliance/ params=None status=200 bytes=155073
+2026-11-20 18:54:18,104 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/medineering-2/ params=None status=200 bytes=126091
+2026-11-20 18:54:20,110 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/medovent-2/ params=None status=200 bytes=119816
+2026-11-20 18:54:22,218 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/meinprospekt-2/ params=None status=200 bytes=162119
+2026-11-20 18:54:24,224 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/memetis-gmbh/ params=None status=200 bytes=154342
+2026-11-20 18:54:26,215 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/messengerpeople-2/ params=None status=200 bytes=156208
+2026-11-20 18:54:28,197 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/metismotion/ params=None status=200 bytes=164201
+2026-11-20 18:54:30,181 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/metoda/ params=None status=200 bytes=155548
+2026-11-20 18:54:32,190 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mevaldi/ params=None status=200 bytes=161058
+2026-11-20 18:54:34,446 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/middle-peak-medical/ params=None status=200 bytes=121259
+2026-11-20 18:54:36,178 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/midel-photonics/ params=None status=200 bytes=155314
+2026-11-20 18:54:38,146 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mincell-2/ params=None status=200 bytes=149246
+2026-11-20 18:54:40,145 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mindance/ params=None status=200 bytes=147557
+2026-11-20 18:54:42,171 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/minubo-2/ params=None status=200 bytes=160989
+2026-11-20 18:54:44,179 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mirdetect/ params=None status=200 bytes=155836
+2026-11-20 18:54:46,217 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mister-spex-2/ params=None status=200 bytes=159288
+2026-11-20 18:54:48,174 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mitigant/ params=None status=200 bytes=155144
+2026-11-20 18:54:50,186 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/moberries-2/ params=None status=200 bytes=157598
+2026-11-20 18:54:51,847 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 18:54:51,847 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 18:54:52,173 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mobility-signage/ params=None status=200 bytes=155617
+2026-11-20 18:54:54,174 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mobilversichert-2/ params=None status=200 bytes=152554
+2026-11-20 18:54:56,161 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/more/ params=None status=200 bytes=158026
+2026-11-20 18:54:56,928 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 18:54:56,978 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:54:57,013 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:54:57,036 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:54:57,062 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:54:57,086 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:54:57,130 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:54:57,151 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:54:57,175 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:54:57,198 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:54:57,222 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:54:57,295 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:54:57,318 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:54:57,442 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:54:57,468 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:54:57,488 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:54:57,671 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:54:57,693 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:54:57,708 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:54:57,761 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:54:57,766 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:54:57,772 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-11/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (7 bytes)
+2026-11-20 18:54:57,773 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-11/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 18:54:57,777 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-11/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-11/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:54:57,863 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 18:54:57,863 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 18:54:58,150 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mosanna/ params=None status=200 bytes=155837
+2026-11-20 18:55:00,129 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/multibind-2/ params=None status=200 bytes=142943
+2026-11-20 18:55:02,303 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/multiphoton-optics/ params=None status=200 bytes=157099
+2026-11-20 18:55:03,851 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 18:55:03,903 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:55:03,932 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:55:03,963 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:55:03,995 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:55:04,033 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:55:04,103 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:55:04,127 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:55:04,157 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:55:04,194 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:55:04,228 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:55:04,245 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/mycoverse/ params=None status=200 bytes=143129
+2026-11-20 18:55:04,325 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:55:04,356 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:55:04,516 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:55:04,553 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:55:04,579 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:55:04,844 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 18:55:04,874 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:55:04,894 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 18:55:04,967 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:55:04,973 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 18:55:04,982 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-12/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (7 bytes)
+2026-11-20 18:55:04,982 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-12/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 18:55:04,987 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-12/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-12/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 18:55:05,073 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 18:55:05,073 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 18:55:06,367 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/myr-2/ params=None status=200 bytes=163883
+2026-11-20 18:55:08,170 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/nanda-technologies-2/ params=None status=200 bytes=147863
+2026-11-20 18:55:10,303 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/nanostruct/ params=None status=200 bytes=154430
+2026-11-20 18:55:12,267 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/natif-ai/ params=None status=200 bytes=163733
+2026-11-20 18:55:14,176 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/natural-dental-implants-2/ params=None status=200 bytes=126535
+2026-11-20 18:55:16,195 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/navan/ params=None status=200 bytes=153662
+2026-11-20 18:55:18,244 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/nebula-biocides/ params=None status=200 bytes=158069
+2026-11-20 18:55:20,198 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/neotiv/ params=None status=200 bytes=159688
+2026-11-20 18:55:22,202 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/neural-concept/ params=None status=200 bytes=179281
+2026-11-20 18:55:24,235 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/next-kraftwerke-3/ params=None status=200 bytes=166221
+2026-11-20 18:55:26,240 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/nfon-2/ params=None status=200 bytes=175077
+2026-11-20 18:55:28,241 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/nia-health/ params=None status=200 bytes=156175
+2026-11-20 18:55:30,217 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/node-energy/ params=None status=200 bytes=168695
+2026-11-20 18:55:32,207 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/nordantech-solutions-gmbh-2/ params=None status=200 bytes=156938
+2026-11-20 18:55:34,131 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/northworks-software-2/ params=None status=200 bytes=122659
+2026-11-20 18:55:36,118 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/notion-systems-2/ params=None status=200 bytes=125482
+2026-11-20 18:55:38,178 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/novum-engineering/ params=None status=200 bytes=155681
+2026-11-20 18:55:40,175 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/noxon/ params=None status=200 bytes=151184
+2026-11-20 18:55:42,185 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/numaferm/ params=None status=200 bytes=159792
+2026-11-20 18:55:44,220 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/nuuenergy/ params=None status=200 bytes=160453
+2026-11-20 18:55:46,184 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/nuuron/ params=None status=200 bytes=155069
+2026-11-20 18:55:48,155 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/nyris/ params=None status=200 bytes=140575
+2026-11-20 18:55:50,207 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/o11-biomedical/ params=None status=200 bytes=158809
+2026-11-20 18:55:52,246 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/oculai/ params=None status=200 bytes=158574
+2026-11-20 18:55:54,195 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/omeicos-2/ params=None status=200 bytes=157330
+2026-11-20 18:55:56,197 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ondeso-2/ params=None status=200 bytes=159698
+2026-11-20 18:55:58,218 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/outfittery/ params=None status=200 bytes=170358
+2026-11-20 18:56:00,191 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pactos/ params=None status=200 bytes=158405
+2026-11-20 18:56:02,237 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/paddy/ params=None status=200 bytes=159005
+2026-11-20 18:56:04,244 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pagent-ai/ params=None status=200 bytes=154152
+2026-11-20 18:56:06,245 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/palveera/ params=None status=200 bytes=154785
+2026-11-20 18:56:08,213 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pantherna-therapeutics/ params=None status=200 bytes=162418
+2026-11-20 18:56:10,173 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/payever-2/ params=None status=200 bytes=152359
+2026-11-20 18:56:12,235 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pepperprint-2/ params=None status=200 bytes=168452
+2026-11-20 18:56:14,211 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/performanat/ params=None status=200 bytes=152305
+2026-11-20 18:56:16,148 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/personal-medsystems/ params=None status=200 bytes=142540
+2026-11-20 18:56:18,150 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/phialogics/ params=None status=200 bytes=156116
+2026-11-20 18:56:20,217 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/photonics-healthcare-2/ params=None status=200 bytes=148028
+2026-11-20 18:56:22,233 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/phytonics/ params=None status=200 bytes=161295
+2026-11-20 18:56:24,208 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/picolas-2/ params=None status=200 bytes=149593
+2026-11-20 18:56:26,155 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pidoco-2/ params=None status=200 bytes=140714
+2026-11-20 18:56:28,172 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pixel-flo/ params=None status=200 bytes=155184
+2026-11-20 18:56:30,292 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pixel-photonics/ params=None status=200 bytes=160612
+2026-11-20 18:56:32,204 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/plancraft/ params=None status=200 bytes=163599
+2026-11-20 18:56:34,221 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/plasmion-2/ params=None status=200 bytes=161978
+2026-11-20 18:56:36,172 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/plastformance/ params=None status=200 bytes=156309
+2026-11-20 18:56:38,212 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/plista-2/ params=None status=200 bytes=151874
+2026-11-20 18:56:40,242 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/plixos-2/ params=None status=200 bytes=156816
+2026-11-20 18:56:42,193 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pospulse-2/ params=None status=200 bytes=161116
+2026-11-20 18:56:44,214 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/praxiseins/ params=None status=200 bytes=159373
+2026-11-20 18:56:46,159 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/precomb/ params=None status=200 bytes=156089
+2026-11-20 18:56:48,146 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/preomics/ params=None status=200 bytes=155066
+2026-11-20 18:56:50,395 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pressmatrix-2/ params=None status=200 bytes=124893
+2026-11-20 18:56:52,184 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/preventicus-2/ params=None status=200 bytes=153435
+2026-11-20 18:56:54,180 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/primogene/ params=None status=200 bytes=157165
+2026-11-20 18:56:56,149 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/product-value-systems-2/ params=None status=200 bytes=120570
+2026-11-20 18:56:58,174 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/propertybase-2/ params=None status=200 bytes=152689
+2026-11-20 18:57:00,175 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/protected-networks-2/ params=None status=200 bytes=162485
+2026-11-20 18:57:02,171 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/provecs-medical-2/ params=None status=200 bytes=139520
+2026-11-20 18:57:04,250 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/proxima-fusion/ params=None status=200 bytes=179740
+2026-11-20 18:57:06,313 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pulsar-photonics-2/ params=None status=200 bytes=158845
+2026-11-20 18:57:08,190 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/purenum-2/ params=None status=200 bytes=126366
+2026-11-20 18:57:10,212 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pxl-vision/ params=None status=200 bytes=155074
+2026-11-20 18:57:12,318 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/qnami/ params=None status=200 bytes=152771
+2026-11-20 18:57:14,189 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/qphox/ params=None status=200 bytes=159494
+2026-11-20 18:57:16,200 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/quobyte/ params=None status=200 bytes=157015
+2026-11-20 18:57:18,189 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/qurie/ params=None status=200 bytes=157134
+2026-11-20 18:57:20,529 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/r3dt-meet-your-reality/ params=None status=200 bytes=157907
+2026-11-20 18:57:22,252 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/rabot-energy/ params=None status=200 bytes=161723
+2026-11-20 18:57:24,157 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/radioopt-2/ params=None status=200 bytes=121139
+2026-11-20 18:57:26,223 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/raidboxes-2/ params=None status=200 bytes=129801
+2026-11-20 18:57:28,179 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/raumfeld-3/ params=None status=200 bytes=125242
+2026-11-20 18:57:30,208 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/raydiax/ params=None status=200 bytes=159513
+2026-11-20 18:57:32,232 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/rebelle-2/ params=None status=200 bytes=172631
+2026-11-20 18:57:34,182 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/recatalyst/ params=None status=200 bytes=162359
+2026-11-20 18:57:36,190 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/redmimicry/ params=None status=200 bytes=154518
+2026-11-20 18:57:38,178 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/reflex-aerospace/ params=None status=200 bytes=161969
+2026-11-20 18:57:40,177 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/refoxy/ params=None status=200 bytes=155604

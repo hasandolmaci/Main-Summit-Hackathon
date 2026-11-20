@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-20T18:53:58.506445+00:00",
+  "file": "data/raw/yc/companies_all.json.gz",
+  "git_sha": "772f8e46c4a23a1f4b17c59fe9e0bf2903bb1bab",
+  "inputs": [],
+  "notes": "Byte-identical yc-oss mirror response (public YC directory), gzip, mtime=0.",
+  "params": {
+    "fetched_at": "2026-11-20T18:40:14.030088+00:00",
+    "from_cache": true,
+    "url": "https://yc-oss.github.io/api/companies/all.json"
+  },
+  "python": "3.13.18",
+  "rows": 6406,
+  "script": "scripts/collect_labels.py",
+  "sha256": "5ea5355a8146169788d533be356d3ce3cbad9190be25dee8469f15571dbf55ee",
+  "sources": [
+    "https://yc-oss.github.io/api/companies/all.json"
+  ]
+}

@@ -1,0 +1,45 @@
+# Improvement-loop configuration for the DACH cohort backtest. Written BEFORE the first real run; never edited after.
+version: 1
+seed: 20251120
+
+labels:
+  column: y_label
+  use_values: ["0", "1"]          # FUNDED_BEFORE, EXCLUDE_*, blanks are never trained/evaluated
+
+baseline:                          # floor the model must beat; meta_* used ONLY here
+  features: [meta_cohort_source_onehot, cohort_year]
+
+model:
+  type: logistic_regression
+  penalty: l2
+  C: 1.0                           # fixed in advance, never tuned
+  class_weight: balanced
+  standardize: true                # z-score inside each training fold
+  missing: train_fold_median_plus_indicator   # NaN never becomes 0; <feature>_missing added when the feature has NaN
+
+cv:
+  scheme: grouped_kfold
+  groups: [meta_cohort_source, meta_cohort]  # one group = one cohort of one programme
+  n_splits: 5
+  repeats: 20                      # group-to-fold assignment reshuffled per repeat (seeded)
+
+comparison:
+  paired: true                     # candidate vs current set on identical folds
+  bootstrap_reps: 1000             # on out-of-fold predictions (averaged over repeats), rows resampled
+  ci: 0.90
+
+keep_rule:
+  min_delta_auc: 0.02
+  ci_lower_bound_gt: 0.0
+  min_share_repeats_improved: 0.60
+max_features: 5                    # non-baseline features in the final set (starting set included)
+passes: [forward_in_candidates_order, one_backward]
+
+tripwire:
+  univariate_auc_gt: 0.80          # max(AUC, 1-AUC) on labelled rows -> halt candidate, log suspected leak, exclude
+  timestamp_derived: exclude       # features computed from *_snapshot_ts / collection timestamps
+
+shuffled_control:
+  runs: 20
+  permute: y within cohort groups
+  final_set_counts_if: real OOF AUC >= 95th percentile of shuffled-run OOF AUCs

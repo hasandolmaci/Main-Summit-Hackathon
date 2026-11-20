@@ -1,0 +1,44 @@
+# Pre-registered candidate metrics for the DACH cohort improvement loop.
+# Order is the forward-pass order and is FIXED: committed before the first real run; no additions after results.
+# transform: binary | log_sigmoid (log1p -> robust z vs all cleaned rows -> sigmoid) | ordinal_map (mapping JSON)
+#            | ordinal_steps | count_capped (0/1/2+)
+# gate: which as-of check applies (see scripts/dach/features.py). status: candidate | excluded_pre_run (with reason)
+version: 1
+frozen_at: "2026-11-20 (before first real loop run)"
+
+starting_set:            # existing GitHub metrics, gated: NaN if m_gh_created > meta_asof_date
+  - {name: gh_public_repos,   source: m_gh_public_repos_before,   transform: log_sigmoid, gate: github}
+  - {name: gh_open_source,    source: m_gh_has_open_source,       transform: binary,      gate: github}
+  - {name: gh_external_contribs, source: m_gh_external_contribs_12m, transform: log_sigmoid, gate: github}
+
+candidates:
+  # ---- site ----
+  - {id: 1,  name: legal_form_level,  source: [s_legal_form, f_legal_entity], transform: ordinal_map, mapping: legal_form.json, gate: impressum_snapshot, status: candidate}
+  - {id: 2,  name: registered_hrb,    source: s_registered_court_hrb,     transform: binary_present, gate: impressum_snapshot, status: candidate}
+  - {id: 3,  name: corporate_spinoff, source: s_parent_company_mentioned, transform: binary_present, gate: homepage_snapshot, status: candidate}
+  - {id: 4,  name: pricing_page,      source: f_pricing_page,             transform: binary, gate: f_snapshot, status: candidate}
+  - {id: 5,  name: customer_logos,    source: f_customer_logos,           transform: binary, gate: f_snapshot, status: candidate}
+  - {id: 6,  name: waitlist,          source: f_waitlist,                 transform: binary, gate: f_snapshot, status: candidate}
+  - {id: 7,  name: product_live,      source: f_product_live,             transform: binary, gate: f_snapshot, status: candidate}
+  - {id: 8,  name: team_size,         source: s_team_size_on_page,        transform: log_sigmoid, gate: homepage_snapshot, status: candidate}
+  - {id: 9,  name: eng_roles,         source: s_careers_engineering_roles, transform: log_sigmoid, gate: homepage_snapshot, status: candidate}
+  - {id: 10, name: sales_roles,       source: s_careers_sales_roles,      transform: log_sigmoid, gate: homepage_snapshot, status: candidate}
+  - {id: 11, name: growth_tooling,    source: [s_analytics_tools, s_ab_testing_tool], transform: count_capped, mapping: analytics_tools.json, gate: homepage_snapshot, status: candidate}
+  - {id: 12, name: infra_activity,    source: f_certs_before,             transform: log_sigmoid, gate: none_before_filtered, status: candidate}
+  - {id: 13, name: domain_age,        source: f_first_capture,            transform: ordinal_steps, steps_months: [6, 12, 24, 48], gate: date_before_asof, status: candidate}
+  # ---- external ----
+  - {id: 14, name: exist_programme_grant, source: m_exist_or_programme_grant, transform: binary, gate: none_before_filtered, status: candidate}
+  - {id: 15, name: federal_rd_grant,  source: m_foekat_projects_before,   transform: binary_positive, gate: none_before_filtered, status: candidate}
+  - {id: 16, name: news_visibility,   source: e_news_mentions_before_12m, transform: log_sigmoid, gate: none_before_filtered, status: candidate}
+  - {id: 17, name: verified_patent,   source: m_patent_verified_before_asof, transform: binary, gate: none_before_filtered, status: candidate,
+     note: "raw m_patent_applications_before is NOT used (assignee collisions: Noxon S.P.A., Hodge Biomotion LLC, Falcon-Vision Zrt)"}
+  - {id: 18, name: serial_founder,    source: m_serial_score,             transform: ordinal_map, status: excluded_pre_run,
+     reason: "provenance cannot be shown to be as-of (founder history likely from present-day LinkedIn); rule: exclude"}
+  # ---- LLM text (step 4c; per-row extraction, masked, temperature 0, cached) ----
+  - {id: 19, name: product_stage,     source: f_description_text,  transform: llm_ordinal_0_4, gate: f_snapshot, status: candidate_if_4c}
+  - {id: 20, name: research_spinoff,  source: f_description_text,  transform: llm_binary, gate: f_snapshot, status: candidate_if_4c}
+  - {id: 21, name: ip_claim,          source: f_description_text,  transform: llm_binary, gate: f_snapshot, status: candidate_if_4c}
+  - {id: 22, name: academic_founders, source: s_managing_directors, transform: title_count_capped, gate: impressum_snapshot, status: candidate,
+     note: "deterministic regex count of Dr./Prof. titles; only the count is stored (PII)"}
+  - {id: 23, name: hardware,          source: f_description_text,  transform: llm_binary, gate: f_snapshot, status: candidate_if_4c}
+  - {id: 24, name: b2b,               source: f_description_text,  transform: llm_binary, gate: f_snapshot, status: candidate_if_4c}

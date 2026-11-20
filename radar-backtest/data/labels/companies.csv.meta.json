@@ -1,11 +1,11 @@
 {
-  "created_at": "2026-11-20T19:03:39.021058+00:00",
+  "created_at": "2026-11-20T19:30:03.648156+00:00",
   "file": "data/labels/companies.csv",
-  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "git_sha": "81dace3195eae3952effc7bd50c6831ad1c7528d",
   "inputs": [
     {
       "path": "data/raw/yc/companies_all.json.gz",
-      "sha256": "5ea5355a8146169788d533be356d3ce3cbad9190be25dee8469f15571dbf55ee"
+      "sha256": "bee40d02180e874f6b0bdd7be95ed344dd3753de4ce26cc030ced2c5dfbdab68"
     },
     {
       "path": "data/raw/htgf/robots.txt",

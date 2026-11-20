@@ -3459,3 +3459,446 @@
 2026-11-20 19:28:58,864 INFO gharchive: query ext_c02007d9 rows=31102 0.01s cache=True
 2026-11-20 19:28:59,199 INFO gharchive: query ext_3aa59da9 rows=29940 0.01s cache=True
 2026-11-20 19:28:59,587 INFO gharchive: query ext_c6f275e9 rows=31246 0.01s cache=True
+2026-11-20 19:28:59,935 INFO gharchive: query ext_0f88ad8f rows=29132 0.01s cache=True
+2026-11-20 19:29:00,153 INFO gharchive: query ext_93fcea67 rows=17003 0.00s cache=True
+2026-11-20 19:29:00,977 INFO gharchive: wrote /home/user/Main-Summit-Hackathon/radar-backtest/data/processed/gh_ext_monthly.parquet rows=168473
+2026-11-20 19:29:17,038 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 19:29:17,073 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 19:29:17,093 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 19:29:17,116 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 19:29:17,137 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 19:29:17,160 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 19:29:17,195 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 19:29:17,215 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 19:29:17,235 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 19:29:17,254 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 19:29:17,273 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 19:29:17,334 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 19:29:17,354 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 19:29:17,449 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 19:29:17,474 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:29:17,489 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:29:17,655 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 19:29:17,676 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:29:17,691 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:29:17,742 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 19:29:17,746 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows (or could not be read for) automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Retry later if it was unreachable; otherwise download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 19:29:17,753 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-45/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (155 bytes)
+2026-11-20 19:29:17,753 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-45/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 19:29:17,758 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-45/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-45/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 19:29:17,759 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 19:29:17,762 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 19:29:17,876 WARNING gharchive: rejected 2 invalid login value(s) (not [a-z0-9-]{1,39})
+2026-11-20 19:29:17,891 WARNING gharchive: t: splitting chunk of 5 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 19:29:17,897 INFO gharchive: query t_725ab108 rows=2 0.00s cache=False
+2026-11-20 19:29:17,897 WARNING gharchive: t: splitting chunk of 3 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 19:29:17,902 INFO gharchive: query t_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 19:29:17,907 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 19:29:17,912 INFO gharchive: query t_044d23a2 rows=2 0.00s cache=False
+2026-11-20 19:29:17,917 INFO gharchive: query t2_ca4710da rows=2 0.00s cache=False
+2026-11-20 19:29:17,917 WARNING gharchive: t2: splitting chunk of 2 (t2: 2 rows > 1)
+2026-11-20 19:29:17,922 INFO gharchive: query t2_9b383db9 rows=1 0.00s cache=False
+2026-11-20 19:29:17,927 INFO gharchive: query t2_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 19:29:17,961 INFO gharchive: query span_1dca1109 rows=2 0.00s cache=False
+2026-11-20 19:29:17,966 INFO gharchive: wrote /tmp/pytest-of-root/pytest-45/test_end_to_end_processed_outp0/span.parquet rows=2
+2026-11-20 19:29:17,971 INFO gharchive: query team_1ba97f53 rows=3 0.00s cache=False
+2026-11-20 19:29:17,979 INFO gharchive: wrote /tmp/pytest-of-root/pytest-45/test_end_to_end_processed_outp0/team.parquet rows=3
+2026-11-20 19:29:17,984 INFO gharchive: query daily_6c90f737 rows=3 0.00s cache=False
+2026-11-20 19:29:17,993 INFO gharchive: wrote /tmp/pytest-of-root/pytest-45/test_end_to_end_processed_outp0/daily.parquet rows=3
+2026-11-20 19:29:18,005 INFO gharchive: query ext_291805af rows=5 0.00s cache=False
+2026-11-20 19:29:18,016 INFO gharchive: wrote /tmp/pytest-of-root/pytest-45/test_end_to_end_processed_outp0/ext.parquet rows=5
+2026-11-20 19:29:18,035 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 19:29:18,043 INFO gharchive: wrote /tmp/pytest-of-root/pytest-45/test_external_refuses_unresolv0/team.parquet rows=3
+2026-11-20 19:29:18,634 INFO gharchive: query t_460f1c7d rows=4 0.00s cache=False
+2026-11-20 19:29:18,634 WARNING gharchive: t: splitting chunk of 4 (t: 4 rows > 2)
+2026-11-20 19:29:18,641 INFO gharchive: query t_ca4710da rows=2 0.00s cache=False
+2026-11-20 19:29:18,646 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 19:29:18,653 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 19:29:18,663 INFO gharchive: wrote /tmp/pytest-of-root/pytest-45/test_external_refuses_team_wit0/team.parquet rows=3
+2026-11-20 19:29:18,676 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 19:29:18,683 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 19:29:18,689 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 19:29:18,704 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 19:29:18,709 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 19:29:18,714 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 19:29:18,908 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:29:18,908 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:29:18,908 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:29:18,908 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:29:18,911 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:29:18,911 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:29:18,911 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:29:18,911 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:29:18,911 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:29:18,911 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:29:18,911 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:29:18,911 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:29:18,911 ERROR github: lookup failed for bad
+2026-11-20 19:29:18,922 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 19:29:18,973 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 19:29:19,055 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,055 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,056 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,057 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,057 ERROR github: lookup failed for x0
+2026-11-20 19:29:19,058 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,058 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,058 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,058 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,058 ERROR github: lookup failed for x1
+2026-11-20 19:29:19,059 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,059 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,059 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,059 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,059 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,059 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,059 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,059 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,059 ERROR github: lookup failed for x10
+2026-11-20 19:29:19,060 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,060 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,060 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,060 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,060 ERROR github: lookup failed for x11
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,061 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,061 ERROR github: lookup failed for x12
+2026-11-20 19:29:19,062 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,062 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,062 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,062 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,062 ERROR github: lookup failed for x13
+2026-11-20 19:29:19,063 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,063 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,063 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,063 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,063 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,063 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,063 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,063 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,063 ERROR github: lookup failed for x14
+2026-11-20 19:29:19,064 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,064 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,064 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,064 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,064 ERROR github: lookup failed for x15
+2026-11-20 19:29:19,065 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,065 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,065 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,065 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,065 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,065 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,065 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,065 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,079 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:29:19,137 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:29:19,201 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:29:19,273 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:29:19,300 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:29:19,337 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:29:19,396 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:29:19,458 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:29:19,461 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:29:19,497 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:29:19,548 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:29:19,600 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:29:19,603 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:29:19,638 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:29:19,678 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:29:19,720 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:29:19,727 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 19:29:19,751 INFO github: find_org tier 2: 1 unresolved entities, 17 logins
+2026-11-20 19:29:19,784 INFO github: find_org tier 3: 1 unresolved entities, 25 logins
+2026-11-20 19:29:19,818 INFO github: find_org: 1 entities, 1 matched ({3: 1})
+2026-11-20 19:29:19,835 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 19:29:19,839 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:29:19,839 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:29:19,839 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:29:19,839 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:29:19,839 ERROR github: lookup failed for acme
+2026-11-20 19:29:19,847 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 19:29:19,861 INFO github: find_org: 1 entities, 0 matched ({})
+2026-11-20 19:29:19,861 WARNING github: find_org: 1 entities held back because a candidate lookup failed (note lookup_error_tier<N> in the search log); rerun find for them
+2026-11-20 19:29:19,877 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 19:29:19,919 INFO github: find_org: 1 entities, 1 matched ({1: 1})
+2026-11-20 19:29:19,964 INFO github: id bound 2008: first_id=9994 (2008-01-01 00:44:25+00:00) after 28 calls
+2026-11-20 19:29:19,972 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 35 calls
+2026-11-20 19:29:19,982 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:29:20,126 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 19:29:20,134 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:29:20,140 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 19:29:20,148 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 19:29:20,720 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 19:29:20,737 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 19:29:20,745 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:29:20,752 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 19:29:20,759 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 19:29:21,464 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 19:29:21,491 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 19:29:21,503 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:29:21,516 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 19:29:21,524 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 19:29:22,075 INFO github: sample: 560 orgs (186 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 19:29:22,146 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 19:29:22,146 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 19:29:28,600 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 19:29:28,600 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 19:29:40,027 INFO htgf: htgf pages parsed: 100/544
+2026-11-20 19:29:40,738 INFO htgf: htgf pages parsed: 200/544
+2026-11-20 19:29:41,635 INFO htgf: htgf pages parsed: 300/544
+2026-11-20 19:29:42,500 INFO htgf: htgf pages parsed: 400/544
+2026-11-20 19:29:43,324 INFO htgf: htgf pages parsed: 500/544
+2026-11-20 19:29:43,889 INFO labels: duplicate domain iodynamics.de: 2 records ['htgf'], kept 2022-01-01 from htgf
+2026-11-20 19:29:59,777 INFO htgf: htgf pages parsed: 100/544
+2026-11-20 19:30:00,555 INFO htgf: htgf pages parsed: 200/544
+2026-11-20 19:30:01,376 INFO htgf: htgf pages parsed: 300/544
+2026-11-20 19:30:02,339 INFO htgf: htgf pages parsed: 400/544
+2026-11-20 19:30:03,071 INFO htgf: htgf pages parsed: 500/544
+2026-11-20 19:30:03,628 INFO labels: duplicate domain iodynamics.de: 2 records ['htgf'], kept 2022-01-01 from htgf
+2026-11-20 19:30:08,359 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 19:30:08,417 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 19:30:08,440 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 19:30:08,470 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 19:30:08,503 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 19:30:08,535 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 19:30:08,585 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 19:30:08,612 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 19:30:08,635 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 19:30:08,660 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 19:30:08,691 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 19:30:08,767 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 19:30:08,804 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 19:30:08,922 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 19:30:08,944 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:30:08,961 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:30:09,148 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 19:30:09,172 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:30:09,188 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:30:09,243 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 19:30:09,249 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows (or could not be read for) automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Retry later if it was unreachable; otherwise download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 19:30:09,256 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-47/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (155 bytes)
+2026-11-20 19:30:09,256 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-47/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 19:30:09,261 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-47/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-47/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 19:30:09,263 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 19:30:09,266 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 19:30:09,391 WARNING gharchive: rejected 2 invalid login value(s) (not [a-z0-9-]{1,39})
+2026-11-20 19:30:09,408 WARNING gharchive: t: splitting chunk of 5 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 19:30:09,415 INFO gharchive: query t_725ab108 rows=2 0.00s cache=False
+2026-11-20 19:30:09,415 WARNING gharchive: t: splitting chunk of 3 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 19:30:09,420 INFO gharchive: query t_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 19:30:09,427 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 19:30:09,433 INFO gharchive: query t_044d23a2 rows=2 0.00s cache=False
+2026-11-20 19:30:09,439 INFO gharchive: query t2_ca4710da rows=2 0.00s cache=False
+2026-11-20 19:30:09,439 WARNING gharchive: t2: splitting chunk of 2 (t2: 2 rows > 1)
+2026-11-20 19:30:09,444 INFO gharchive: query t2_9b383db9 rows=1 0.00s cache=False
+2026-11-20 19:30:09,450 INFO gharchive: query t2_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 19:30:09,493 INFO gharchive: query span_1dca1109 rows=2 0.00s cache=False
+2026-11-20 19:30:09,500 INFO gharchive: wrote /tmp/pytest-of-root/pytest-47/test_end_to_end_processed_outp0/span.parquet rows=2
+2026-11-20 19:30:09,505 INFO gharchive: query team_1ba97f53 rows=3 0.00s cache=False
+2026-11-20 19:30:09,513 INFO gharchive: wrote /tmp/pytest-of-root/pytest-47/test_end_to_end_processed_outp0/team.parquet rows=3
+2026-11-20 19:30:09,519 INFO gharchive: query daily_6c90f737 rows=3 0.00s cache=False
+2026-11-20 19:30:09,526 INFO gharchive: wrote /tmp/pytest-of-root/pytest-47/test_end_to_end_processed_outp0/daily.parquet rows=3
+2026-11-20 19:30:09,544 INFO gharchive: query ext_291805af rows=5 0.00s cache=False
+2026-11-20 19:30:09,556 INFO gharchive: wrote /tmp/pytest-of-root/pytest-47/test_end_to_end_processed_outp0/ext.parquet rows=5
+2026-11-20 19:30:09,579 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 19:30:09,588 INFO gharchive: wrote /tmp/pytest-of-root/pytest-47/test_external_refuses_unresolv0/team.parquet rows=3
+2026-11-20 19:30:10,196 INFO gharchive: query t_460f1c7d rows=4 0.00s cache=False
+2026-11-20 19:30:10,196 WARNING gharchive: t: splitting chunk of 4 (t: 4 rows > 2)
+2026-11-20 19:30:10,202 INFO gharchive: query t_ca4710da rows=2 0.00s cache=False
+2026-11-20 19:30:10,208 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 19:30:10,215 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 19:30:10,223 INFO gharchive: wrote /tmp/pytest-of-root/pytest-47/test_external_refuses_team_wit0/team.parquet rows=3
+2026-11-20 19:30:10,236 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 19:30:10,242 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 19:30:10,247 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 19:30:10,262 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 19:30:10,268 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 19:30:10,274 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 19:30:10,444 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,445 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,445 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,445 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,447 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,447 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,447 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,447 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,447 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,448 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,448 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,448 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,448 ERROR github: lookup failed for bad
+2026-11-20 19:30:10,457 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 19:30:10,502 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 19:30:10,573 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,573 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,573 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,573 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,573 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,573 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,573 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,573 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,574 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,575 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,575 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,575 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,575 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,575 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,575 ERROR github: lookup failed for x0
+2026-11-20 19:30:10,576 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,576 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,576 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,576 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,576 ERROR github: lookup failed for x1
+2026-11-20 19:30:10,577 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,577 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,577 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,577 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,577 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,577 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,577 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,577 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,577 ERROR github: lookup failed for x10
+2026-11-20 19:30:10,578 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,578 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,578 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,578 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,578 ERROR github: lookup failed for x11
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,579 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,580 ERROR github: lookup failed for x12
+2026-11-20 19:30:10,580 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,580 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,580 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,580 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,580 ERROR github: lookup failed for x13
+2026-11-20 19:30:10,581 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,581 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,581 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,581 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,581 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,581 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,581 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,581 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,581 ERROR github: lookup failed for x14
+2026-11-20 19:30:10,582 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,582 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,582 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,582 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,582 ERROR github: lookup failed for x15
+2026-11-20 19:30:10,583 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,583 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,583 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,583 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,583 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:30:10,583 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:30:10,583 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:30:10,583 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:30:10,597 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:30:10,641 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:30:10,705 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:30:10,785 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:30:10,809 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:30:10,840 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:30:10,896 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:30:10,949 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:30:10,953 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:30:10,992 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:30:11,035 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:30:11,082 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:30:11,085 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:30:11,117 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:30:11,161 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:30:11,208 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:30:11,216 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 19:30:11,239 INFO github: find_org tier 2: 1 unresolved entities, 17 logins
+2026-11-20 19:30:11,269 INFO github: find_org tier 3: 1 unresolved entities, 25 logins
+2026-11-20 19:30:11,305 INFO github: find_org: 1 entities, 1 matched ({3: 1})
+2026-11-20 19:30:11,322 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 19:30:11,327 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:30:11,327 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:30:11,327 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:30:11,327 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:30:11,327 ERROR github: lookup failed for acme
+2026-11-20 19:30:11,336 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 19:30:11,350 INFO github: find_org: 1 entities, 0 matched ({})
+2026-11-20 19:30:11,350 WARNING github: find_org: 1 entities held back because a candidate lookup failed (note lookup_error_tier<N> in the search log); rerun find for them
+2026-11-20 19:30:11,368 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 19:30:11,410 INFO github: find_org: 1 entities, 1 matched ({1: 1})
+2026-11-20 19:30:11,450 INFO github: id bound 2008: first_id=9994 (2008-01-01 00:44:25+00:00) after 28 calls
+2026-11-20 19:30:11,456 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 35 calls
+2026-11-20 19:30:11,463 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:30:11,555 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 19:30:11,563 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:30:11,572 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 19:30:11,580 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 19:30:12,319 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 19:30:12,342 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 19:30:12,349 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:30:12,356 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 19:30:12,364 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 19:30:13,064 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 19:30:13,085 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 19:30:13,095 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:30:13,105 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 19:30:13,115 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 19:30:13,807 INFO github: sample: 560 orgs (186 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 19:30:13,881 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 19:30:13,881 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf

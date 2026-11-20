@@ -1,18 +1,24 @@
 {
-  "created_at": "2026-11-20T19:03:34.006185+00:00",
+  "created_at": "2026-11-20T19:29:58.455123+00:00",
   "file": "data/raw/yc/companies_all.json.gz",
-  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "git_sha": "81dace3195eae3952effc7bd50c6831ad1c7528d",
   "inputs": [],
-  "notes": "Byte-identical yc-oss mirror response (public YC directory), gzip, mtime=0.",
+  "notes": "yc-oss mirror response (public YC directory) as parsed JSON, record order and values unchanged, minus the dropped_fields (free text that can carry personal e-mail addresses / phone numbers; not used for labels). response_sha256 identifies the full upstream response. gzip, mtime=0.",
   "params": {
+    "dropped_fields": [
+      "long_description"
+    ],
     "fetched_at": "2026-11-20T18:40:14.030088+00:00",
     "from_cache": true,
+    "label_field_contact_hits": 0,
+    "response_bytes": 10969715,
+    "response_sha256": "639e609ddc59ae00746078408bbdfe4af1600ac73be8ef6e105c1e6c6bb2d5f7",
     "url": "https://yc-oss.github.io/api/companies/all.json"
   },
   "python": "3.13.18",
   "rows": 6406,
   "script": "scripts/collect_labels.py",
-  "sha256": "5ea5355a8146169788d533be356d3ce3cbad9190be25dee8469f15571dbf55ee",
+  "sha256": "bee40d02180e874f6b0bdd7be95ed344dd3753de4ce26cc030ced2c5dfbdab68",
   "sources": [
     "https://yc-oss.github.io/api/companies/all.json"
   ]

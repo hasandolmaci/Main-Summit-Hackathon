@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-20T19:03:34.160786+00:00",
+  "created_at": "2026-11-20T19:29:58.616633+00:00",
   "file": "data/raw/htgf/sitemaps.jsonl.gz",
-  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "git_sha": "81dace3195eae3952effc7bd50c6831ad1c7528d",
   "inputs": [],
   "notes": "sitemap index + portfolio sitemaps, byte-identical text per line.",
   "params": {},

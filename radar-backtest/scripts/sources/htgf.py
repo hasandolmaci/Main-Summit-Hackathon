@@ -86,6 +86,7 @@ _MONTHS.update({m: i for i, m in enumerate(
 _MONTHS.update({"maerz": 3, "jan": 1, "feb": 2, "mar": 3, "apr": 4, "jun": 6, "jul": 7, "aug": 8, "sep": 9,
                 "sept": 9, "oct": 10, "okt": 10, "nov": 11, "dec": 12, "dez": 12})
 
+_COMPANY_PAGE_RE = re.compile(r"/portfolio/htgffamily/[^/?#]+/?$")
 _EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 _PHONE_RE = re.compile(r"\+?\d[\d ()/.-]{7,}\d")
 
@@ -562,6 +563,11 @@ def collect(client: Client | None = None, limit: int | None = None,
     counts["htgf_rest_posts"] = len(rest_rows)
     counts["htgf_sitemap_urls"] = len(sitemap_urls)
     counts["htgf_rest_links_in_sitemap"] = len(rest_links & sitemap_urls)
+    # truncation detector: company pages the sitemap lists but the REST listing lacks (the archive index is excluded)
+    missing = {u for u in sitemap_urls - rest_links if _COMPANY_PAGE_RE.search(u)}
+    counts["htgf_sitemap_company_urls_not_in_rest"] = len(missing)
+    if missing:
+        log.warning("htgf: %d sitemap company pages are missing from the REST listing", len(missing))
 
     groups = translation_groups(rest_rows)
     if limit is not None:
@@ -574,7 +580,8 @@ def collect(client: Client | None = None, limit: int | None = None,
             parsed_by_link[link] = None
             continue
         r = client.get(link)
-        if r.status != 200:
+        if r.status != 200:   # excluded as htgf_page_fetch_failed; only 200/404 are cached, so a rerun retries 5xx
+            log.warning("htgf: page fetch failed status=%s %s", r.status, link)
             parsed_by_link[link] = None
             page_raw.append({"url": link, "status": r.status, "fetched_at": r.fetched_at, "fragments": ""})
             continue

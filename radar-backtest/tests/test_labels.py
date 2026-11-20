@@ -139,6 +139,26 @@ def test_build_companies_is_order_independent():
     pd.testing.assert_frame_equal(a, b)
 
 
+def test_yc_storable_drops_contact_columns_keeps_label_fields():
+    recs = [{**_yc("Acme", "acme", "https://acme.io", "Winter 2015"),
+             "long_description": "Write to jane.doe" + "@" + "acme.io any time.", "one_liner": "Robots.",
+             "app_answers": None},
+            {**_yc("Beta", "beta", "https://beta.dev", "Summer 2016"),
+             "long_description": "No contact here.", "one_liner": "Call +49 30 1234 5678 today.",
+             "app_answers": None}]
+    stored, dropped, hits = cl.yc_storable(recs)
+    assert dropped == ["long_description", "one_liner"] and hits == 0
+    text = json.dumps(stored)
+    assert "@" not in text and "+49" not in text
+    assert all("app_answers" in s for s in stored)                       # columns without contact data stay
+    for s, r in zip(stored, recs):
+        assert {k: s[k] for k in cl.YC_LABEL_FIELDS} == {k: r[k] for k in cl.YC_LABEL_FIELDS}
+    assert cl.yc_records(stored) == cl.yc_records(recs)                   # labels can be rebuilt from raw
+    # integers such as launched_at / team_size are not phone numbers
+    _, dropped2, _ = cl.yc_storable([{**recs[1], "one_liner": "x", "launched_at": 1700000000}])
+    assert dropped2 == ["long_description"]
+
+
 def test_record_date_rejects_unknown_mode():
     with pytest.raises(ValueError):
         cl.record_date({"label_source": "yc", "acceptance_proxy": "2020-01-01"}, "whatever")
@@ -308,12 +328,41 @@ class FakeClient:
         return CachedResponse(url, status, text, "2026-11-20T00:00:00+00:00", True)
 
 
+def _rest_page(start, n):
+    return json.dumps([_rest(start + i, "en", f"https://www.htgf.de/en/portfolio/htgffamily/c{start + i}/",
+                             "2016-01-01", {"en": start + i}) for i in range(n)])
+
+
+def test_fetch_rest_paginates_and_stops():
+    url = htgf.REST_URL
+    # short last page ends the loop
+    fake = FakeClient({f"{url}?page=1": (200, _rest_page(0, htgf.PER_PAGE)), f"{url}?page=2": (200, _rest_page(100, 3))})
+    rows, raw = htgf.fetch_rest(fake)
+    assert len(rows) == htgf.PER_PAGE + 3 and len(raw) == 2 and fake.calls == [f"{url}?page=1", f"{url}?page=2"]
+    # total is a multiple of PER_PAGE: WordPress answers 400 on the next page
+    fake = FakeClient({f"{url}?page=1": (200, _rest_page(0, htgf.PER_PAGE)), f"{url}?page=2": (400, "{}")})
+    rows, raw = htgf.fetch_rest(fake)
+    assert len(rows) == htgf.PER_PAGE and len(raw) == 1
+
+
+def test_fetch_rest_refuses_truncated_listing():
+    url = htgf.REST_URL
+    fake = FakeClient({f"{url}?page=1": (200, _rest_page(0, htgf.PER_PAGE)), f"{url}?page=2": (503, "busy")})
+    with pytest.raises(RuntimeError, match="truncated"):
+        htgf.fetch_rest(fake)
+    with pytest.raises(RuntimeError):                                     # no REST API at all
+        htgf.fetch_rest(FakeClient({f"{url}?page=1": (400, "{}")}))
+    with pytest.raises(RuntimeError, match="expected a list"):
+        htgf.fetch_rest(FakeClient({f"{url}?page=1": (200, '{"code": "x"}')}))
+
+
 def test_end_to_end_offline(tmp_path, monkeypatch, capsys):
     en = "https://www.htgf.de/en/portfolio/htgffamily/examplo/"
     de = "https://www.htgf.de/portfolio/htgffamily/examplo/"
     rest = [_rest(10, "de", de, "2016-05-01", {"de": 10, "en": 11}),
             _rest(11, "en", en, "2016-05-02", {"de": 10, "en": 11})]
     yc = YC[:2] + [_yc("Examplo US", "examplo-us", "https://examplo-robotics.de", "Summer 2017")]
+    yc = [{**c, "long_description": "Mail founder" + "@" + "example.org"} for c in yc]
     responses = {
         cl.YC_URL: (200, json.dumps(yc)),
         htgf.ROBOTS_URL: (200, "User-agent: *\nContent-Signal: ai-input=no\nAllow: /\nDisallow: /xmlrpc.php\n"),
@@ -352,7 +401,11 @@ def test_end_to_end_offline(tmp_path, monkeypatch, capsys):
     for f in ["companies.csv", "companies_batchstart.csv", "label_provenance.csv", "label_sample_20.csv"]:
         assert (labels / (f + ".meta.json")).exists()
     raw_yc = tmp_path / "raw" / "yc" / "companies_all.json.gz"
-    assert json.loads(gzip.decompress(raw_yc.read_bytes())) == yc
+    stored = json.loads(gzip.decompress(raw_yc.read_bytes()))
+    assert stored == [{k: v for k, v in c.items() if k != "long_description"} for c in yc]   # no contact data
+    yc_meta = json.loads((tmp_path / "raw" / "yc" / "companies_all.json.gz.meta.json").read_text())
+    assert yc_meta["params"]["dropped_fields"] == ["long_description"]
+    assert yc_meta["params"]["response_sha256"] == cl.hashlib.sha256(json.dumps(yc).encode()).hexdigest()
     pages = htgf.read_gz_jsonl(tmp_path / "raw" / "htgf" / "portfolio_pages.jsonl.gz")
     assert len(pages) == 1 and "@" not in pages[0]["fragments"] and "mailto" not in pages[0]["fragments"]
     assert htgf.parse_page(pages[0]["fragments"])["invested_since"] == 2016   # parse is reproducible from raw

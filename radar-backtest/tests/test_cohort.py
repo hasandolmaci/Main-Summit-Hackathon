@@ -96,3 +96,11 @@ def test_visibility_requires_pool_entry_by_as_of():
     ent["gh_pool_entry_ts"] = ["2014-01-01", None, "2016-06-01", None, None]   # c enters only after as_of
     v = cohort.visible_at(ent, A, channels=["github"])
     assert v["visible"].tolist() == [True, False, False, False, False]
+
+
+def test_pipeline_quota_parser():
+    from scripts.pipeline import quota_reset_wait
+    assert quota_reset_wait("some other error") is None
+    w = quota_reset_wait("Code: 201. Quota for user `play` for 3600s has been exceeded: read_rows = 1/1. "
+                         "Interval will end at 2000-01-01 00:00:00.")
+    assert w == 30.0                                   # interval already over -> short wait

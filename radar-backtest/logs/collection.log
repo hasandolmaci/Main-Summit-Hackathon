@@ -13632,3 +13632,98 @@
 2026-11-20 20:31:20,465 INFO pool_sample: entry scan: buckets < 1 done; years still below target: [2014, 2015]
 2026-11-20 20:31:20,470 INFO pool_sample: entry scan: buckets < 2 done; years still below target: [2014]
 2026-11-20 20:31:20,476 INFO pool_sample: entry scan: buckets < 4 done; years still below target: []
+2026-11-20 20:31:35,171 WARNING http: retry 1 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=2.9s 
+2026-11-20 20:31:38,170 WARNING http: retry 2 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=4.9s 
+2026-11-20 20:31:43,249 WARNING http: retry 3 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=8.4s 
+2026-11-20 20:31:51,825 ERROR http: giving up GET https://cordis.europa.eu/datalab/sparql status=500
+2026-11-20 20:31:51,825 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?dm (COUNT(*) AS ?n) WHERE { ?r a eurio:OrganisationRole ; eurio:startDate ?rs ; eurio:isInvolvedIn ?p . ?p eurio:startDate ?ps . BIND(((YEAR(?rs) - YEAR(?ps)) * 12 + MONTH(?rs) - MONTH(?ps)) AS ?dm) } GROUP BY ?dm ORDER BY ?dm', 'format': 'text/csv'} status=500 bytes=447
+2026-11-20 20:31:51,826 WARNING cordis_sparql: role_start_minus_project_start_months: HTTP 500 (Virtuoso 22003 Error SR586: Incomplete RDF box as argument 0 for year().  SPARQL query: define sql:big-data-const 0 #out); pausing 60.0s before retry 2/2
+2026-11-20 20:32:28,007 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:32:28,007 INFO github_owners: owner_activity: 25 logins in 3 ClickHouse queries (~45 s if uncached)
+2026-11-20 20:32:28,013 INFO gharchive: query owner_activity_fd7bbd32 rows=5 0.00s cache=False
+2026-11-20 20:32:28,019 INFO gharchive: query owner_activity_befe13dd rows=5 0.00s cache=False
+2026-11-20 20:32:28,024 INFO gharchive: query owner_activity_3c0b07d4 rows=3 0.00s cache=False
+2026-11-20 20:32:28,062 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:32:28,149 WARNING github_owners: ecosyste.ms lookup failed for aa: HTTP_503
+2026-11-20 20:32:28,149 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:32:28,149 INFO github_owners: ecosyste.ms retry 1 for aa
+2026-11-20 20:32:28,149 INFO github_owners: ecosyste.ms retry 1 for bb
+2026-11-20 20:32:28,149 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:32:28,264 WARNING github_owners: ecosyste.ms lookup failed for x0: HTTP_503
+2026-11-20 20:32:28,264 WARNING github_owners: ecosyste.ms lookup failed for x1: HTTP_503
+2026-11-20 20:32:28,264 WARNING github_owners: ecosyste.ms lookup failed for x2: HTTP_503
+2026-11-20 20:32:28,275 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,280 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:32:28,328 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,333 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:32:28,385 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,390 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:32:28,452 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:32:28,476 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,481 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:32:28,531 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,536 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:32:28,592 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,597 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:32:28,660 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:32:28,676 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,681 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:32:28,730 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,737 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:32:28,795 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,801 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:32:28,863 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:32:28,879 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,885 INFO gharchive: query owner_activity_a0d16862 rows=1 0.00s cache=False
+2026-11-20 20:32:28,921 INFO github_owners: owner_activity: 17 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,927 INFO gharchive: query owner_activity_c9e2f8d8 rows=1 0.00s cache=False
+2026-11-20 20:32:28,959 INFO github_owners: owner_activity: 25 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:28,964 INFO gharchive: query owner_activity_c63dd396 rows=1 0.00s cache=False
+2026-11-20 20:32:29,007 INFO github_owners: find_org: 1 entities, 1 matched ({3: 1}), 0 held
+2026-11-20 20:32:29,041 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:29,048 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:32:29,060 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:32:29,060 INFO github_owners: ecosyste.ms retry 1 for acme
+2026-11-20 20:32:29,060 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:32:29,083 INFO github_owners: find_org: 1 entities, 0 matched ({}), 1 held
+2026-11-20 20:32:29,083 WARNING github_owners: find_org: 1 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:32:29,101 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:29,106 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:32:29,154 INFO github_owners: find_org: 1 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:32:29,179 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:29,185 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:32:29,231 INFO github_owners: owner_activity: 51 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:29,235 INFO gharchive: query owner_activity_64406a03 rows=1 0.00s cache=False
+2026-11-20 20:32:29,261 INFO github_owners: owner_activity: 50 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:29,266 INFO gharchive: query owner_activity_57f4a449 rows=1 0.00s cache=False
+2026-11-20 20:32:29,298 INFO github_owners: find_org: 8 entities, 1 matched ({1: 1}), 5 held
+2026-11-20 20:32:29,298 WARNING github_owners: find_org: 5 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:32:29,319 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:29,324 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:32:29,379 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:29,385 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:32:29,441 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:29,452 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:32:29,514 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:32:29,536 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:29,542 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:32:29,601 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:29,608 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:32:29,674 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:29,679 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:32:29,748 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:32:29,810 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:32:29,828 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:32:29,948 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:32:29,964 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:32:30,081 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:32:30,098 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:32:30,155 WARNING github_owners: sample: years [2014, 2015] have pending lookups (request cap / errors) and are NOT written; rerun
+2026-11-20 20:32:30,216 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:32:30,277 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.05s cache=False
+2026-11-20 20:32:30,418 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:32:30,423 INFO gharchive: query owner_activity_98d272c6 rows=1 0.00s cache=False
+2026-11-20 20:32:30,472 INFO github_owners: find_org: 2 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:32:31,302 INFO pipeline: === step org_search_labelled
+2026-11-20 20:32:31,347 INFO run_org_search: org search: input /home/user/Main-Summit-Hackathon/radar-backtest/data/processed/org_search_labelled.csv, max tier 1
+2026-11-20 20:32:32,401 INFO github_owners: owner_activity: 6757 logins in 1 ClickHouse query (~15 s if uncached)

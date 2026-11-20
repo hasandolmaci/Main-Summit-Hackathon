@@ -22811,3 +22811,8 @@
 2026-11-20 22:27:39,809 INFO backtest: as_of 2017: test 216 (pos 8), train 398 (pos 15), refs 13
 2026-11-20 22:27:39,851 INFO backtest: as_of 2018: test 197 (pos 6), train 617 (pos 22), refs 15
 2026-11-20 22:27:39,885 INFO backtest: as_of 2019: test 150 (pos 8), train 833 (pos 30), refs 20
+2026-11-20 22:37:59,678 INFO backtest: as_of 2015: test 185 (pos 8), train 89 (pos 1), refs 2
+2026-11-20 22:37:59,712 INFO backtest: as_of 2016: test 219 (pos 7), train 212 (pos 6), refs 6
+2026-11-20 22:37:59,747 INFO backtest: as_of 2017: test 216 (pos 8), train 398 (pos 15), refs 12
+2026-11-20 22:37:59,785 INFO backtest: as_of 2018: test 197 (pos 6), train 617 (pos 22), refs 12
+2026-11-20 22:37:59,838 INFO backtest: as_of 2019: test 150 (pos 8), train 833 (pos 30), refs 11

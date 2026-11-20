@@ -490,5 +490,98 @@ def test_cache_only_never_fetches(tmp_path):
 def test_cli_requires_out_dir_for_smoke():
     with pytest.raises(SystemExit):
         cs.main(["--max-pages", "1"])
+    with pytest.raises(SystemExit):                 # partial tables never go to data/processed, even if named
+        cs.main(["--max-pages", "1", "--out-dir", str(cs.PROCESSED)])
     with pytest.raises(SystemExit):
         cs.main(["--refresh", "--cache-only"])
+
+
+# ------------------------------------------------------------------------------------------- review fixes (2026-11-20)
+def test_server_side_email_filter_is_the_cordis_pattern():
+    """The REGEX sent to the endpoint (SPARQL literal, backslashes doubled) is exactly cordis.EMAIL_IN_URL_RE."""
+    q = cs.build_page_query(cs.DATASETS["organisations"], 10, 0)
+    m = re.search(r'OPTIONAL \{ \?org eurio:url \?url0 \. FILTER\(!REGEX\(STR\(\?url0\), "((?:[^"\\]|\\.)*)"\)\) \}', q)
+    assert m, "e-mail filter missing from the organisations query"
+    assert m.group(1).replace("\\\\", "\\") == cordis.EMAIL_IN_URL_RE.pattern
+    rx = re.compile(m.group(1).replace("\\\\", "\\"))
+    assert rx.search("mailto:jane.doe@example.org") and rx.search("info@acme.de")
+    assert not rx.search("https://medium.com/@acme") and not rx.search("http://www.acme.de/en")
+
+
+def test_role_with_two_organisations_prefers_an_existing_node():
+    roles = pd.DataFrame({"role_id": ["r1", "r1", "r2"], "org_id": ["a-dangling", "b-real", "c-real"],
+                          "project_id": ["1", "1", "2"], "role_label": ["participant"] * 3, "order": ["2", "2", "1"],
+                          "amount": ["10", "10", None], "currency": ["EUR", "EUR", None]}, dtype=object)
+    out, st = cs.build_role_table(roles, known_orgs={"b-real", "c-real"})
+    assert out.set_index("role_id")["org_id"].to_dict() == {"r1": "b-real", "r2": "c-real"}
+    assert st["multi_org_id"] == 1 and st["multi_org_id_dangling_avoided"] == 1
+    assert list(out.columns) == ["role_id", "project_id", "org_id", "role_label", "order", "ec_contribution"]
+    out, st = cs.build_role_table(roles)                    # without the node list: alphabetical
+    assert out.set_index("role_id")["org_id"].to_dict()["r1"] == "a-dangling" and "multi_org_id_dangling_avoided" not in st
+
+
+def test_fp7_sme_is_missing_not_a_later_class(e2e):
+    """The graph's SME class is organisation-level and comes from later H2020/Horizon declarations: FP7 rows get NA,
+    like the bulk FP7 CSV; H2020/Horizon rows keep the class."""
+    part, comp = e2e[0], e2e[1].set_index("domain")
+    assert part.loc[part.programme == "FP7", "sme"].isna().all()
+    assert part.loc[part.programme != "FP7", "sme"].notna().any()
+    assert pd.isna(comp.loc["mueller-technik.de", "sme_any"]) and pd.isna(comp.loc["theta.co.uk", "sme_any"])
+    assert bool(comp.loc["acme-robotics.de", "sme_any"]) is True
+
+
+def test_refuses_to_mix_graph_snapshots(tmp_path):
+    """A cached page fetched long before the others (resumed run after a graph update) stops the run before it is
+    written as raw, and the valid cached page is not evicted; max_fetch_span_hours=None disables the check."""
+    cols, rows = _load("roles")
+    old = CachedResponse("u", 200, _virtuoso_csv(cols, rows[4:8]), "2026-10-01T00:00:00+00:00", True)
+    fake = FakeEndpoint(tmp_path, overrides={("roles", 4): old})
+    sp = cs.Sparql(client=fake, raw_dir=tmp_path / "raw")
+    cached = sp._cache_file(cs.build_page_query(cs.DATASETS["roles"], 4, 4))
+    cached.parent.mkdir(parents=True)
+    cached.write_text("{}")
+    with pytest.raises(cs.PaginationError, match="--refresh"):
+        cs.collect(sp, page_size=4, datasets=["roles"])
+    assert cached.exists()
+    assert not list((tmp_path / "raw" / "roles").glob("*_o0000004.csv.gz"))
+    sp = cs.Sparql(client=FakeEndpoint(tmp_path, overrides={("roles", 4): old}), raw_dir=tmp_path / "raw2",
+                   max_fetch_span_hours=None)
+    _, st = cs.collect(sp, page_size=4, datasets=["roles"])
+    assert st["roles"]["rows"] == 22
+    sp = cs.Sparql(client=FakeEndpoint(tmp_path), raw_dir=tmp_path / "raw3")        # one snapshot: passes
+    assert cs.collect(sp, page_size=4, datasets=["roles"])[1]["roles"]["rows"] == 22
+
+
+def test_refuses_to_overwrite_tables_of_another_collector(tmp_path):
+    out = tmp_path / "processed"
+    out.mkdir()
+    (out / "cordis_participations.parquet").write_bytes(b"bulk")
+    (out / "cordis_participations.parquet.meta.json").write_text(json.dumps({"script": "scripts/sources/cordis.py"}))
+    fake = FakeEndpoint(tmp_path)
+    with pytest.raises(cs.OutputCollision, match="cordis.py"):
+        cs.run(cs.Sparql(client=fake, raw_dir=tmp_path / "raw"), out, page_size=10)
+    assert fake.calls == [] and (out / "cordis_participations.parquet").read_bytes() == b"bulk"
+    with pytest.raises(SystemExit):                          # CLI: refused before any request
+        cs.main(["--cache-only", "--out-dir", str(out)])
+    part, _, _ = cs.run(cs.Sparql(client=fake, raw_dir=tmp_path / "raw"), out, page_size=10, overwrite_other=True)
+    assert len(pd.read_parquet(out / "cordis_participations.parquet")) == len(part)
+    cs.run(cs.Sparql(client=FakeEndpoint(tmp_path), raw_dir=tmp_path / "raw"), out, page_size=10)  # own tables: ok
+
+
+def test_robots_response_stored_with_decision(tmp_path):
+    fake = FakeEndpoint(tmp_path)
+    sp = cs.Sparql(client=fake, raw_dir=tmp_path / "raw")
+    urls = [sp.request_url(cs.build_count_query(ds)) for ds in cs.DATASETS.values()]
+    rec = cs.check_robots(fake, urls, raw_dir=tmp_path / "raw")
+    p = Path(rec["raw_path"])
+    assert p.parent == (tmp_path / "raw" / "robots").resolve() and p.name.startswith("robots_20261120000000_")
+    assert gzip.decompress(p.read_bytes()).decode() == ROBOTS
+    meta = json.loads(p.with_name(p.name + ".meta.json").read_text())
+    assert meta["params"]["allowed"] is True and meta["params"]["sha256"] == rec["sha256"]
+    _, _, _ = cs.run(sp, tmp_path / "out", page_size=10, robots=rec)
+    inputs = json.loads((tmp_path / "out" / "cordis_participations.parquet.meta.json").read_text())["inputs"]
+    assert any(i["path"].endswith(p.name) for i in inputs)
+    with pytest.raises(cs.RobotsDisallowed):
+        cs.check_robots(fake, ["https://cordis.europa.eu/data/x.zip"], raw_dir=tmp_path / "raw2")
+    (stored,) = (tmp_path / "raw2" / "robots").glob("robots_*.txt.gz")
+    assert json.loads(stored.with_name(stored.name + ".meta.json").read_text())["params"]["allowed"] is False

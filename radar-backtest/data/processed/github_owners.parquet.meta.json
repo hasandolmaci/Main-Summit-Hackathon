@@ -1,22 +1,22 @@
 {
-  "created_at": "2026-11-20T20:36:27.283101+00:00",
+  "created_at": "2026-11-20T20:49:03.742374+00:00",
   "file": "data/processed/github_owners.parquet",
-  "git_sha": "d87a4154fd4964067cb1c8c3c483d56015ca40d3",
+  "git_sha": "281a5c70ce3a9b112a1e05c0dae564ffec24254a",
   "inputs": [],
   "notes": "Consolidated ecosyste.ms owner lookups (dedupe by owner_key = sha256(lower(login))[:16], newest wins). login / uuid / website / display_name only for kind == 'organization'; natural persons and unknown owners (exists = False, HTTP 404) keep owner_key + kind only. kind / website / name are current values observed at fetched_at. Raw responses: data/raw/ecosystems/owners_*.jsonl.gz. Licence: CC BY-SA 4.0 (ecosyste.ms open data; attribution: ecosyste.ms)",
   "params": {
     "kinds": {
-      "(not found)": 139,
-      "organization": 320,
-      "user": 7
+      "(not found)": 354,
+      "organization": 987,
+      "user": 25
     },
     "licence": "CC BY-SA 4.0 (ecosyste.ms open data; attribution: ecosyste.ms)",
-    "with_website_domain": 195
+    "with_website_domain": 651
   },
   "python": "3.13.18",
-  "rows": 466,
+  "rows": 1366,
   "script": "scripts/sources/github_owners.py",
-  "sha256": "977eb36be1de49a2a8b807603fef46b2104ef3b83abe4fc9ccfe45e39f4671c8",
+  "sha256": "d3d4c695141653d42e00ebdaed4eafa4d45f63489e7ef817b9b8746a0fb4cc82",
   "sources": [
     "https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/<login>"
   ]

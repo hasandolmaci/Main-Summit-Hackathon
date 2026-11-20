@@ -31,6 +31,15 @@ query of the same pattern runs first; pagination stops at the first short page (
 total must equal COUNT. Every response is stored verbatim (gz) in data/raw/cordis_sparql/<dataset>/ with a .meta.json.
 
 Point in time: public_ts = signatureDate if present, else startDate (00:00 UTC). Nothing observed later is used.
+FP7 participations get sme = NA, as in the bulk FP7 CSV: the graph's organisation-level SME class comes from later
+H2020 / Horizon Europe declarations (17% of FP7 organisations that took part later carry it, 0.4% of FP7-only ones).
+All responses of one run must come from one snapshot of the graph: pages fetched more than --max-fetch-span-hours
+apart (an aborted run resumed after a graph update) are refused; rerun with --refresh.
+
+Completeness (checked against the bulk CSVs of Nov 2026): the graph holds every OrganisationRole it has, but it lacks
+~5% of the H2020 and ~40% of the Horizon Europe participations of the bulk files, and 1,021 organisation IRIs have no
+triples at all. When the bulk zips are available, scripts/sources/cordis.py is the more complete source; this
+collector refuses to overwrite its tables unless --overwrite-bulk is given.
 
 CLI
     .venv/bin/python -m scripts.sources.cordis_sparql                      # robots check, fetch (cached), parse, write
@@ -51,13 +60,14 @@ import re
 import sys
 import time
 from dataclasses import dataclass, field
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 import pandas as pd
 import requests
 
-from scripts.lib.config import PROCESSED, RAW, get_logger
+from scripts.lib.config import PROCESSED, RAW, ROOT, get_logger
 from scripts.lib.http import CachedResponse, Client, _key
 from scripts.lib.meta import write_meta
 from scripts.sources import cordis
@@ -92,6 +102,10 @@ class PaginationError(SparqlError):
 
 
 class RobotsDisallowed(RuntimeError):
+    pass
+
+
+class OutputCollision(RuntimeError):
     pass
 
 
@@ -246,11 +260,24 @@ def robots_decision(text: str, user_agent: str, url: str) -> tuple[bool, str | N
     return verdict, why
 
 
-def check_robots(client: Client, urls: list[str]) -> dict:
+def _store_robots(raw_dir: Path, r: CachedResponse, rec: dict) -> Path:
+    """robots.txt as fetched (verbatim, gz) + .meta.json with the decision: the allow evidence of a networked run stays
+    on disk (a later --cache-only re-parse sends no request and can only point to it)."""
+    stamp = re.sub(r"\D", "", r.fetched_at)[:14]
+    path = raw_dir / "robots" / f"robots_{stamp}_{(rec.get('sha256') or 'none')[:8]}.txt.gz"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(_gz_bytes(r.text))
+    write_meta(path, script=SCRIPT, rows=None, sources=[rec["robots_url"]], params=rec,
+               notes="robots.txt response (verbatim) and the decision for every query URL of the run")
+    return path
+
+
+def check_robots(client: Client, urls: list[str], raw_dir: Path | None = None) -> dict:
     """Fetch robots.txt once, fresh (never from cache), and test every URL that will be requested.
 
     Unreachable (5xx / connection error) = disallow (RFC 9309); 4xx = no restrictions. Raises RobotsDisallowed if any
-    URL is disallowed. All URLs must be on one host.
+    URL is disallowed. All URLs must be on one host. With raw_dir, a 200 response is stored verbatim under
+    raw_dir/robots/ (+ meta with the decision), also when it disallows.
     """
     hosts = {urlparse(u).netloc for u in urls}
     if len(hosts) != 1:
@@ -264,13 +291,20 @@ def check_robots(client: Client, urls: list[str]) -> dict:
     if r.status != 200:
         return {**rec, "allowed": True, "rules": [f"no robots.txt (status {r.status})"]}
     ua = client.session.headers.get("User-Agent", "*")
-    rules = set()
+    rules, refused = set(), None
     for u in urls:
         allowed, rule = robots_decision(r.text, ua, u)
         if not allowed:
-            raise RobotsDisallowed(f"{p.netloc}/robots.txt disallows {u[:200]}... ({rule})")
+            refused = f"{p.netloc}/robots.txt disallows {u[:200]}... ({rule})"
+            break
         rules.add(rule or "no matching rule (allowed)")
-    return {**rec, "allowed": True, "rules": sorted(rules)}
+    rec = {**rec, "allowed": refused is None, "rules": sorted(rules), **({"refused": refused} if refused else {})}
+    if raw_dir is not None:
+        path = _store_robots(raw_dir, r, rec).resolve()
+        rec["raw_path"] = str(path.relative_to(ROOT)) if ROOT in path.parents else str(path)
+    if refused:
+        raise RobotsDisallowed(refused)
+    return rec
 
 
 # ======================================================================================================================
@@ -340,12 +374,32 @@ class Sparql:
     max_retries: int = 3           # Client backoff retries (2-8 s); Virtuoso answers query errors with 500 too
     outer_retries: int = 2         # further attempts after a pause when a page still fails with 5xx
     retry_pause_s: float = 60.0
+    max_fetch_span_hours: float | None = 24.0   # all responses of a run from one graph snapshot (None: no check)
     log: list = field(default_factory=list)
+    _window: tuple | None = field(default=None, init=False, repr=False)
 
     def __post_init__(self):
         if self.client is None:
             self.client = Client()
         self.client.max_retries = min(self.client.max_retries, self.max_retries)
+
+    def _check_snapshot(self, label: str, fetched_at: str):
+        """Refuse to combine responses fetched more than max_fetch_span_hours apart: the HTTP cache never expires, so
+        a run resumed after a graph update (or a --refresh run that died and was resumed without --refresh) would mix
+        pages of two releases; OFFSET pages of different releases can skip or repeat rows, and the per-dataset COUNT
+        check does not see a change that keeps the row count, nor tables of different releases joined together."""
+        if not self.max_fetch_span_hours or not fetched_at:
+            return
+        t = datetime.fromisoformat(fetched_at)
+        lo, hi = self._window or (t, t)
+        lo, hi = min(lo, t), max(hi, t)
+        self._window = (lo, hi)
+        span_h = (hi - lo).total_seconds() / 3600
+        if span_h > self.max_fetch_span_hours:
+            raise PaginationError(
+                f"{label}: this run combines responses fetched {span_h:.1f} h apart ({lo.isoformat()} .. "
+                f"{hi.isoformat()}), probably from different releases of the graph. Rerun with --refresh (or raise "
+                f"--max-fetch-span-hours if the graph is known not to have changed).")
 
     def _params(self, query: str) -> dict:
         return {"query": query, "format": FORMAT}
@@ -404,6 +458,7 @@ class Sparql:
         except SparqlError:
             self._evict(q)
             raise
+        self._check_snapshot(f"{ds.name}/count", r.fetched_at)
         path = self._write_raw(ds, f"{ds.name}_{query_sha8(ds)}_count", r, q, 1, {"kind": "count", "count": n})
         self.log.append(PageLog(ds.name, "count", None, n, round(time.monotonic() - t0, 3), r.from_cache,
                                 r.fetched_at, str(path)))
@@ -421,6 +476,7 @@ class Sparql:
         except SparqlError:
             self._evict(q)
             raise
+        self._check_snapshot(label, r.fetched_at)
         path = self._write_raw(ds, f"{ds.name}_{query_sha8(ds)}_o{offset:07d}", r, q, len(df),
                                {"kind": "page", "limit": limit, "offset": offset})
         self.log.append(PageLog(ds.name, "page", offset, len(df), round(time.monotonic() - t0, 3), r.from_cache,
@@ -621,9 +677,13 @@ def derive_programmes(projects: pd.DataFrame, schemes: dict[str, pd.DataFrame]) 
     return out, st
 
 
-def build_role_table(roles: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
+def build_role_table(roles: pd.DataFrame, known_orgs=None) -> tuple[pd.DataFrame, dict]:
     """One row per (OrganisationRole node, project_id). EC contribution = the largest EUR amount paid to the role (a
-    role with two payments / amounts cannot be told apart as ecContribution vs netEcContribution; counted)."""
+    role with two payments / amounts cannot be told apart as ecContribution vs netEcContribution; counted).
+
+    A role linked to several organisations (isRoleOf twice; 208 roles) keeps one: an organisation that has an
+    Organisation node (in known_orgs, the org_ids of the organisations dataset) before a bare IRI without any triple,
+    then the alphabetically first."""
     r = roles.dropna(subset=["role_id"]).copy()
     st: dict = {"rows": int(len(roles)), "roles": int(r["role_id"].nunique()),
                 "empty_role_id_rows": int(roles["role_id"].isna().sum())}
@@ -638,6 +698,13 @@ def build_role_table(roles: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     out = pd.DataFrame(index=idx)
     for col in ("role_id", "project_id", "org_id", "role_label", "order"):
         out[col], st[f"multi_{col}"] = _first_sorted(r, "_key", col, idx)
+    if known_orgs is not None:
+        o = r[["_key", "org_id"]].dropna().drop_duplicates()
+        o = o.assign(_dangling=~o["org_id"].isin(set(known_orgs)))
+        pick = o.sort_values(["_key", "_dangling", "org_id"], kind="mergesort").drop_duplicates("_key")
+        pick = pick.set_index("_key")["org_id"].reindex(idx)
+        st["multi_org_id_dangling_avoided"] = int((pick.notna() & (pick != out["org_id"])).sum())
+        out["org_id"] = pick
     n_amt = r.dropna(subset=["_amt"]).groupby("_key")["_amt"].nunique()
     st["roles_multi_amount"] = int(n_amt.gt(1).sum())
     best = r.dropna(subset=["_amt"]).sort_values(["_key", "_amt"], ascending=[True, False], kind="mergesort")
@@ -658,7 +725,7 @@ def build_participations_sparql(frames: dict[str, pd.DataFrame], programmes: lis
     proj, proj_st = build_project_table(frames["projects"])
     schemes = {k: frames.get(f"grant_{k}") for k in SCHEME_KINDS}
     progs, prog_st = derive_programmes(frames["projects"], schemes)
-    roles, role_st = build_role_table(frames["roles"])
+    roles, role_st = build_role_table(frames["roles"], known_orgs=orgs.index)
 
     proj = proj.join(progs.set_index("project_id"))
     df = roles.merge(orgs, left_on="org_id", right_index=True, how="left", indicator="_org")
@@ -685,6 +752,10 @@ def build_participations_sparql(frames: dict[str, pd.DataFrame], programmes: lis
                                   dtype=object).reset_index(drop=True)
         # left-merge gaps are NaN; cordis.build_participations expects str|None (str(nan) would read as a value)
         org_frame, proj_frame = (f.where(f.notna(), None) for f in (org_frame, proj_frame))
+        if p == "FP7":
+            # FP7 data report no SME status (the bulk FP7 CSV has none either); the graph's organisation-level SME
+            # class comes from later H2020 / Horizon Europe declarations, i.e. it is not known at FP7 time.
+            org_frame["sme"] = None
         part, st = cordis.build_participations(org_frame, proj_frame, p)
         parts.append(part)
         part_st[p] = st
@@ -727,10 +798,32 @@ def coverage(part: pd.DataFrame, comp: pd.DataFrame) -> dict:
     return out
 
 
+OUTPUT_NAMES = ("cordis_participations.parquet", "cordis_companies.parquet")
+
+
+def check_overwrite(out_dir: Path, allow_other: bool = False):
+    """Refuse to replace output tables that another script wrote (cordis.py from the bulk CSVs, which are more
+    complete than the graph: ~5% more H2020 and ~40% more Horizon Europe participations) unless allow_other."""
+    for name in OUTPUT_NAMES:
+        f = out_dir / name
+        if not f.exists() or allow_other:
+            continue
+        m = f.with_name(f.name + ".meta.json")
+        try:
+            script = json.loads(m.read_text()).get("script") if m.exists() else None
+        except (ValueError, OSError):
+            script = None
+        if script != SCRIPT:
+            raise OutputCollision(f"{f} was written by {script or 'an unknown script (no .meta.json)'}; refusing to "
+                                  f"replace it with the SPARQL tables (use --out-dir DIR, or --overwrite-bulk)")
+
+
 def run(sp: Sparql, out_dir: Path, page_size: int = MAX_PAGE_SIZE, max_pages: int | None = None,
-        programmes: list[str] | None = None, robots: dict | None = None, write: bool = True
-        ) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
+        programmes: list[str] | None = None, robots: dict | None = None, write: bool = True,
+        overwrite_other: bool = False) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     t0 = time.monotonic()
+    if write:
+        check_overwrite(out_dir, overwrite_other)
     frames, fetch_st = collect(sp, page_size, max_pages)
     part, st = build_participations_sparql(frames, programmes)
     comp = cordis.build_companies(part)
@@ -744,8 +837,12 @@ def run(sp: Sparql, out_dir: Path, page_size: int = MAX_PAGE_SIZE, max_pages: in
         comp.to_parquet(c_out, index=False)
         partial = any(s["partial"] for s in fetch_st.values())
         raw_inputs = sorted({Path(e.raw_path) for e in sp.log if Path(e.raw_path).exists()})
+        robots_raw = ROOT / robots["raw_path"] if robots and robots.get("raw_path") else None   # ROOT / abs = abs
+        if robots_raw is not None and robots_raw.exists():
+            raw_inputs.append(robots_raw)
         params = {"endpoint": sp.endpoint, "programmes": programmes or PROGRAMMES, "page_size": page_size,
                   "max_pages": max_pages, "partial": partial, "robots": robots,
+                  "max_fetch_span_hours": sp.max_fetch_span_hours,
                   "datasets": {k: {kk: v[kk] for kk in ("rows", "expected", "pages", "query_sha8", "fetched_at_min",
                                                           "fetched_at_max")} for k, v in fetch_st.items()},
                   "framework": st["framework"], "organisations": st["organisations"], "roles": st["roles"]}
@@ -753,9 +850,11 @@ def run(sp: Sparql, out_dir: Path, page_size: int = MAX_PAGE_SIZE, max_pages: in
         write_meta(p_out, rows=len(part), params={**params, "parse_stats": st["participations"]},
                    notes=("PARTIAL (smoke) " if partial else "") +
                    "one row per (programme, project_id, organisation_id) from the CORDIS SPARQL endpoint; programme "
-                   "derived per project (topic/call/programme-code prefix, type code, type family, id range); activity_type and sme "
-                   "are organisation-level classes; public_ts = signatureDate else startDate (00:00 UTC); no contact "
-                   "field selected; e-mail-like url values filtered server-side; country UK->GB, EL->GR; " + LICENSE,
+                   "derived per project (topic/call/programme-code prefix, type code, type family, id range); "
+                   "activity_type and sme are organisation-level classes (current state), sme NA for FP7 (no FP7-era "
+                   "SME status, as in the bulk FP7 CSV); public_ts = signatureDate else startDate (00:00 UTC); no "
+                   "contact field selected; e-mail-like url values filtered server-side; country UK->GB, EL->GR; the "
+                   "graph lacks ~5% of H2020 and ~40% of Horizon Europe participations of the bulk CSVs; " + LICENSE,
                    **common)
         write_meta(c_out, rows=len(comp), params={"programmes": programmes or PROGRAMMES, "partial": partial,
                                                   "filter": "activity_type == 'PRC' and domain"},
@@ -773,21 +872,37 @@ def main(argv=None) -> int:
     ap.add_argument("--refresh", action="store_true", help="evict cached responses and fetch every page again")
     ap.add_argument("--cache-only", action="store_true", help="no network: parse from the HTTP cache only")
     ap.add_argument("--out-dir", type=Path, help=f"default {PROCESSED}; required with --max-pages")
+    ap.add_argument("--overwrite-bulk", action="store_true",
+                    help="replace output tables written by another script (e.g. cordis.py from the more complete bulk "
+                         "CSVs); refused by default")
+    ap.add_argument("--max-fetch-span-hours", type=float, default=24.0,
+                    help="refuse to combine cached/new responses fetched further apart (different graph releases); "
+                         "0 disables (default 24)")
     ap.add_argument("--raw-dir", type=Path, default=RAW_DIR, help=argparse.SUPPRESS)
     args = ap.parse_args(argv)
-    if args.max_pages is not None and args.out_dir is None:
-        ap.error("--max-pages produces partial tables: pass --out-dir (they never overwrite data/processed)")
+    if args.max_pages is not None and (args.out_dir is None or args.out_dir.resolve() == PROCESSED.resolve()):
+        ap.error("--max-pages produces partial tables: pass an --out-dir other than data/processed")
     if args.refresh and args.cache_only:
         ap.error("--refresh and --cache-only exclude each other")
     out_dir = args.out_dir or PROCESSED
+    try:                      # before any request
+        check_overwrite(out_dir, args.overwrite_bulk)
+    except OutputCollision as e:
+        ap.error(str(e))
 
-    sp = Sparql(raw_dir=args.raw_dir, refresh=args.refresh, cache_only=args.cache_only)
-    robots = None
+    sp = Sparql(raw_dir=args.raw_dir, refresh=args.refresh, cache_only=args.cache_only,
+                max_fetch_span_hours=args.max_fetch_span_hours or None)
     if not args.cache_only:   # every query URL that can be sent (count + page URLs differ only in LIMIT/OFFSET digits)
         urls = [sp.request_url(q) for ds in DATASETS.values()
                 for q in (build_count_query(ds), build_page_query(ds, args.page_size, 0))]
-        robots = check_robots(sp.client, urls)
-    part, comp, stats = run(sp, out_dir, args.page_size, args.max_pages, args.programmes, robots)
+        robots = check_robots(sp.client, urls, raw_dir=args.raw_dir)
+    else:
+        stored = sorted(p.name for p in (args.raw_dir / "robots").glob("robots_*.txt.gz"))
+        robots = {"checked": False, "stored_checks": stored,
+                  "note": "--cache-only re-parse: no request sent; the robots.txt responses and decisions of the "
+                          f"networked runs are stored in {args.raw_dir / 'robots'}"}
+    part, comp, stats = run(sp, out_dir, args.page_size, args.max_pages, args.programmes, robots,
+                            overwrite_other=args.overwrite_bulk)
     print(json.dumps({k: stats[k] for k in ("robots", "fetch", "framework", "organisations", "projects", "roles",
                                              "email_or_phone_like_scrubbed")}, indent=1, default=str))
     print(json.dumps({p: {k: s[k] for k in ("org_rows", "project_rows", "join_rate", "unparsed_dates",

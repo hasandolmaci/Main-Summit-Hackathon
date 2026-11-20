@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-20T20:19:06.967464+00:00",
+  "created_at": "2026-11-20T20:46:44.888617+00:00",
   "file": "data/processed/cordis_participations.parquet",
-  "git_sha": "a4922aac27e81c6d4392a3ce3d04b851832302eb",
+  "git_sha": "281a5c70ce3a9b112a1e05c0dae564ffec24254a",
   "inputs": [
     {
       "path": "data/raw/cordis_sparql/grant_call/grant_call_795da925_count.csv.gz",
@@ -390,9 +390,13 @@
     {
       "path": "data/raw/cordis_sparql/roles/roles_5c7f108c_o0390000.csv.gz",
       "sha256": "1c68a8353a6512ea4fe97751f5483ef09a0ecc6133cbb47020fd1554ae386d27"
+    },
+    {
+      "path": "data/raw/cordis_sparql/robots/robots_20261120204602_cabf301b.txt.gz",
+      "sha256": "24a167531f94d582281ea1c8d61735e9a22f44c9c2b7cf9bd02b740c03dad45f"
     }
   ],
-  "notes": "one row per (programme, project_id, organisation_id) from the CORDIS SPARQL endpoint; programme derived per project (topic/call/programme-code prefix, type code, type family, id range); activity_type and sme are organisation-level classes; public_ts = signatureDate else startDate (00:00 UTC); no contact field selected; e-mail-like url values filtered server-side; country UK->GB, EL->GR; CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
+  "notes": "one row per (programme, project_id, organisation_id) from the CORDIS SPARQL endpoint; programme derived per project (topic/call/programme-code prefix, type code, type family, id range); activity_type and sme are organisation-level classes (current state), sme NA for FP7 (no FP7-era SME status, as in the bulk FP7 CSV); public_ts = signatureDate else startDate (00:00 UTC); no contact field selected; e-mail-like url values filtered server-side; country UK->GB, EL->GR; the graph lacks ~5% of H2020 and ~40% of Horizon Europe participations of the bulk CSVs; CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
   "params": {
     "datasets": {
       "grant_call": {
@@ -525,6 +529,7 @@
         "SME": "H2020"
       }
     },
+    "max_fetch_span_hours": 24.0,
     "max_pages": null,
     "organisations": {
       "activity_type_conflict": 4,
@@ -597,16 +602,28 @@
       "H2020",
       "HORIZON"
     ],
-    "robots": null,
+    "robots": {
+      "allowed": true,
+      "fetched_at": "2026-11-20T20:46:02.215999+00:00",
+      "raw_path": "/home/user/Main-Summit-Hackathon/radar-backtest/data/raw/cordis_sparql/robots/robots_20261120204602_cabf301b.txt.gz",
+      "robots_url": "https://cordis.europa.eu/robots.txt",
+      "rules": [
+        "no matching rule (allowed)"
+      ],
+      "sha256": "cabf301b2b0d9c5ef953113a96bbace3e2215936b098b3659e720a9d9ac25c9b",
+      "status": 200,
+      "urls_checked": 16
+    },
     "roles": {
       "empty_role_id_rows": 0,
       "multi_order": 196,
       "multi_org_id": 208,
+      "multi_org_id_dangling_avoided": 38,
       "multi_project_id": 0,
       "multi_role_id": 0,
       "multi_role_label": 0,
       "non_eur_amounts": 0,
-      "org_join_rate": 0.9597327559604302,
+      "org_join_rate": 0.9598280927375955,
       "project_join_rate": 0.9997691846447576,
       "roles": 398584,
       "roles_by_programme_step": {
@@ -629,7 +646,7 @@
   "python": "3.13.18",
   "rows": 398206,
   "script": "scripts/sources/cordis_sparql.py",
-  "sha256": "6c60e479a84c919ddb1aa6e1638c0139a15a7b0eee20af47a3bff523e8554c48",
+  "sha256": "1f12287c6522b66935a8fd48a630b41886717cae3f484a346dde475061006fc6",
   "sources": [
     "https://cordis.europa.eu/datalab/sparql"
   ]

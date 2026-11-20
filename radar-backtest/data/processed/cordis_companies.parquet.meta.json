@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-20T20:19:07.027282+00:00",
+  "created_at": "2026-11-20T20:46:44.962615+00:00",
   "file": "data/processed/cordis_companies.parquet",
-  "git_sha": "a4922aac27e81c6d4392a3ce3d04b851832302eb",
+  "git_sha": "281a5c70ce3a9b112a1e05c0dae564ffec24254a",
   "inputs": [
     {
       "path": "data/raw/cordis_sparql/grant_call/grant_call_795da925_count.csv.gz",
@@ -390,6 +390,10 @@
     {
       "path": "data/raw/cordis_sparql/roles/roles_5c7f108c_o0390000.csv.gz",
       "sha256": "1c68a8353a6512ea4fe97751f5483ef09a0ecc6133cbb47020fd1554ae386d27"
+    },
+    {
+      "path": "data/raw/cordis_sparql/robots/robots_20261120204602_cabf301b.txt.gz",
+      "sha256": "24a167531f94d582281ea1c8d61735e9a22f44c9c2b7cf9bd02b740c03dad45f"
     }
   ],
   "notes": "one row per company domain; country = mode over participations (ties alphabetical); multi_country flags domains seen with >1 country; CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
@@ -405,7 +409,7 @@
   "python": "3.13.18",
   "rows": 12392,
   "script": "scripts/sources/cordis_sparql.py",
-  "sha256": "e6002ecf66f3916bfd25f44cf1f7fc05ad373748831aa58b6b7538cb03a4cabe",
+  "sha256": "5f3f2a6887b814b0edf3fb57a8fb5e9fae0c0bcdbe1636f3db5e043b464ee724",
   "sources": [
     "https://cordis.europa.eu/datalab/sparql"
   ]

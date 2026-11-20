@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-20T20:17:40.801583+00:00",
+  "created_at": "2026-11-20T20:19:06.967464+00:00",
   "file": "data/processed/cordis_participations.parquet",
-  "git_sha": "1d224e999a57798c2e1422ffa26ceac575c12ecc",
+  "git_sha": "a4922aac27e81c6d4392a3ce3d04b851832302eb",
   "inputs": [
     {
       "path": "data/raw/cordis_sparql/grant_call/grant_call_795da925_count.csv.gz",
@@ -392,7 +392,7 @@
       "sha256": "1c68a8353a6512ea4fe97751f5483ef09a0ecc6133cbb47020fd1554ae386d27"
     }
   ],
-  "notes": "one row per (programme, project_id, organisation_id) from the CORDIS SPARQL endpoint; programme derived per project (topic/call/programme-code prefix, type code, id range); activity_type and sme are organisation-level classes; public_ts = signatureDate else startDate (00:00 UTC); no contact field selected; e-mail-like url values filtered server-side; country UK->GB, EL->GR; CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
+  "notes": "one row per (programme, project_id, organisation_id) from the CORDIS SPARQL endpoint; programme derived per project (topic/call/programme-code prefix, type code, type family, id range); activity_type and sme are organisation-level classes; public_ts = signatureDate else startDate (00:00 UTC); no contact field selected; e-mail-like url values filtered server-side; country UK->GB, EL->GR; CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
   "params": {
     "datasets": {
       "grant_call": {

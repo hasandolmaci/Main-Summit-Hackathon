@@ -638,3 +638,71 @@ def test_owner_kinds_and_calibration_metrics():
     assert res.loc[("org_like", "all"), "org_recall"] == 1.0
     assert res.loc[("org_like", "all"), "user_pass_rate"] == 0.0
     assert res.loc[("org_like", "1"), "n_user"] == 1
+
+
+# ---------------------------------------------------------------------------------------------------------------------
+# review fixes: platform owners, raw provenance, output conflicts, invalid listing logins
+# ---------------------------------------------------------------------------------------------------------------------
+def test_platform_owner_domain_kept_by_name_like_github_route(tmp_path):
+    # company_domain(url, names) as in scripts/sources/github.py: the platform itself keeps its domain ...
+    row, _ = go.parse_owner("gitlab", 200, json.dumps(org_payload("gitlab", "https://about.gitlab.com", "GitLab")),
+                            FETCHED)
+    assert row["website_domain"] == "gitlab.com"
+    assert go.pool_rule("organization", "gitlab", row["website_url"], row["website_domain"], row["display_name"])
+    # ... hosted pages on a platform stay excluded
+    row, _ = go.parse_owner("acme", 200, json.dumps(org_payload("acme", "https://acme.github.io", "Acme")), FETCHED)
+    assert row["website_domain"] is None
+    world = {"gitlab": act_rec(500, "2011-10-01 00:00:00", **ORG)}
+    eco = FakeEco({"gitlab": org_payload("gitlab", "https://about.gitlab.com", "GitLab", 99)})
+    ents = pd.DataFrame({"entity_id": ["gitlab.com", "foo.github.io"], "names": ["GitLab", "Foo"]})
+    d = tmp_path / "plat"
+    out = go.find_org(ents, ch=fake_ch(d, world=world), client=eco, out_path=d / "e.parquet",
+                      search_log_path=d / "s.parquet", owners_path=d / "o.parquet", raw_dir=d / "raw")
+    assert out["entity_id"].tolist() == ["gitlab.com"] and out["org_login"].tolist() == ["gitlab"]
+    s = pd.read_parquet(d / "s.parquet").set_index("entity_id")
+    assert s.loc["foo.github.io", "note"] == "not_a_company_domain"
+    assert go.plan_find(ents)["company_domains"] == 1
+    assert gh.company_domain("gitlab.com", ("GitLab",)) == "gitlab.com"          # the contract being mirrored
+
+
+def test_raw_files_are_never_overwritten(tmp_path):
+    owners = {"acme": org_payload("acme", "https://acme.com", "Acme", 1)}
+    kw = dict(owners_path=tmp_path / "o.parquet", raw_dir=tmp_path / "raw")
+    go.lookup_owners(["acme"], client=FakeEco(owners), **kw)
+    first = sorted((tmp_path / "raw").glob("owners_*.jsonl.gz"))
+    before = first[0].read_bytes()
+    go.lookup_owners(["acme"], client=FakeEco(owners), refresh=True, **kw)        # same list -> same sha8
+    raws = sorted((tmp_path / "raw").glob("owners_*.jsonl.gz"))
+    assert len(raws) == 2 and first[0].read_bytes() == before
+    assert re.fullmatch(r"owners_[0-9a-f]{8}_r2\.jsonl\.gz", raws[1].name)
+    assert (raws[1].parent / (raws[1].name + ".meta.json")).exists()
+
+
+def test_conflicting_outputs_fail_before_any_request(tmp_path, capsys, monkeypatch):
+    d = tmp_path / "conf"
+    d.mkdir()
+    pd.DataFrame(columns=gh.ENTITY_ORG_COLUMNS).to_parquet(d / "e.parquet", index=False)   # GitHub-API route output
+    ch, eco = fake_ch(d, world=WORLD), FakeEco(ECO)
+    with pytest.raises(go.OutputConflict):
+        go.find_org(_entities(), ch=ch, client=eco, out_path=d / "e.parquet", search_log_path=d / "s.parquet",
+                    owners_path=d / "o.parquet", raw_dir=d / "raw")
+    assert ch.client.sqls == [] and eco.gets == []
+    pd.DataFrame(columns=gh.SAMPLE_COLUMNS).to_parquet(d / "smp.parquet", index=False)
+    ch = fake_ch(d, population=population())
+    with pytest.raises(go.OutputConflict):
+        go.sample_pool(years=[2014], per_year=5, ch=ch, client=eco, out_path=d / "smp.parquet",
+                       years_path=d / "y.csv", owners_path=d / "o.parquet", raw_dir=d / "raw")
+    assert ch.client.sqls == [] and eco.gets == []
+    # CLI: exit code 2 with a message, no traceback
+    p = d / "in.csv"
+    p.write_text("entity_id,names\nacme.com,Acme\n")
+    monkeypatch.setattr(g, "backend", lambda: fake_ch(d, world=WORLD))
+    assert go.main(["find", "--input", str(p), "--out", str(d / "e.parquet")]) == 2
+    assert "columns" in capsys.readouterr().err
+
+
+def test_sample_listing_rejects_invalid_logins():
+    raw = pd.DataFrame([["ac.me", "3", "2015", "2015-02-01 00:00:00", "2015-02-01 00:00:00", "10", "0", "0"]],
+                       columns=go.SAMPLE_RAW_COLUMNS)
+    with pytest.raises(go.OwnersError, match="not"):
+        go.frame_sample_list(raw)

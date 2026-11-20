@@ -103,7 +103,7 @@ def build_map(start: str = "2015-01-01", end: str | None = None, hour: int = 4, 
 def creation_bounds(uuids, id_map: pd.DataFrame) -> pd.DataFrame:
     """For each GitHub id: created in (lower, upper]. lower=NaT if created before the first sampled hour."""
     m = id_map.sort_values("hour_ts")
-    ts = pd.to_datetime(m["hour_ts"], utc=True).to_numpy()
+    ts = pd.to_datetime(m["hour_ts"], utc=True).dt.tz_convert(None).to_numpy(dtype="datetime64[ns]")
     mx = m["max_id"].to_numpy()
     u = np.asarray(pd.to_numeric(pd.Series(uuids), errors="coerce"), dtype=float)
     idx = np.searchsorted(mx, u, side="left")          # first hour whose max_id >= uuid

@@ -1,18 +1,19 @@
 {
-  "created_at": "2026-11-20T20:14:55.952732+00:00",
+  "created_at": "2026-11-20T20:18:50.973722+00:00",
   "file": "data/processed/gh_id_date_map.csv",
-  "git_sha": "1d224e999a57798c2e1422ffa26ceac575c12ecc",
+  "git_sha": "a4922aac27e81c6d4392a3ce3d04b851832302eb",
   "inputs": [],
   "notes": "Max actor/org id seen in one hourly GH Archive file per month; streamed, nothing else stored.",
   "params": {
-    "end": "2015-02-01",
+    "end": "2026-11-01",
+    "freq": "QS",
     "hour_utc": 4,
     "start": "2015-01-01"
   },
   "python": "3.13.18",
-  "rows": 2,
+  "rows": 49,
   "script": "scripts/sources/gh_id_dates.py",
-  "sha256": "f893824bb53b4fc25f213fb38c5332c8a61303dd2fa6dd3c9db252827b4b1da0",
+  "sha256": "e68bafa4ea0a77e5016c0be72eea8a0ccacefe37c5950154ad812933b5711691",
   "sources": [
     "data.gharchive.org"
   ]

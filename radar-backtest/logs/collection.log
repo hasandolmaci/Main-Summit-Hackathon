@@ -4363,3 +4363,6 @@
 2026-11-20 19:38:57,694 WARNING http: retry 1 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=2.9s 
 2026-11-20 19:39:00,771 WARNING http: retry 2 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=4.9s 
 2026-11-20 19:39:05,886 WARNING http: retry 3 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=8.5s 
+2026-11-20 19:39:14,584 WARNING http: retry 4 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=16.5s 
+2026-11-20 19:39:31,242 WARNING http: retry 5 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=32.7s 
+2026-11-20 19:40:04,157 WARNING http: retry 6 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=64.1s 

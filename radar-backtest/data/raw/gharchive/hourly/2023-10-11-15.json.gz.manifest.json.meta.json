@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-11-20T19:57:15.942157+00:00",
+  "file": "data/raw/gharchive/hourly/2023-10-11-15.json.gz.manifest.json",
+  "git_sha": "413c1e2ccd0bc0776e15248b8846b36f2f9e514c",
+  "inputs": [],
+  "notes": "Manifest of a raw GH Archive hourly file. Raw GH Archive hours contain personal e-mail fields (actor_attributes.email in Timeline-era files, payload.commits[].author.email from 2015). They are only counted (event type + created_at + id) and deleted after counting unless --keep-hourly; re-download from url and verify sha256.",
+  "params": {
+    "hour": "2023-10-11-15",
+    "retained": false
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/sources/gharchive.py fidelity",
+  "sha256": "a4e20a961ab5e37589df4cae5dfef803a5301760c9def504c88d18f5b3da768c",
+  "sources": [
+    "https://data.gharchive.org/2023-10-11-15.json.gz"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "bytes": 99578391,
+  "fetched_at": "2026-11-20T19:57:14.646901+00:00",
+  "local_path": null,
+  "note": "untrusted raw GH Archive hour. Raw GH Archive hours contain personal e-mail fields (actor_attributes.email in Timeline-era files, payload.commits[].author.email from 2015). They are only counted (event type + created_at + id) and deleted after counting unless --keep-hourly; re-download from url and verify sha256.",
+  "retained": false,
+  "sha256": "a4a3752f8d694a91a64cd46981f8b14125aca0b6943dc9d4c0a51b081e3620cf",
+  "url": "https://data.gharchive.org/2023-10-11-15.json.gz"
+}

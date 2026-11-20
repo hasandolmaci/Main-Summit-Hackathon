@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-11-20T19:57:18.515068+00:00",
+  "file": "data/raw/cordis_sparql/roles/roles_be9ec021_count.csv.gz",
+  "git_sha": "413c1e2ccd0bc0776e15248b8846b36f2f9e514c",
+  "inputs": [],
+  "notes": "Raw CORDIS SPARQL text/csv response for 'query' (never edited); CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
+  "params": {
+    "count": 399071,
+    "endpoint": "https://cordis.europa.eu/datalab/sparql",
+    "fetched_at": "2026-11-20T19:56:48.691758+00:00",
+    "format": "text/csv",
+    "kind": "count",
+    "query": "# radar-backtest cordis_sparql dataset=roles count\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n)\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .\n             OPTIONAL { ?amt eurio:currency ?currency } }\n}"
+  },
+  "python": "3.13.18",
+  "rows": 1,
+  "script": "scripts/sources/cordis_sparql.py",
+  "sha256": "9409552444cb345c98b42ce260b5c71276af1f914e94b9d44e151b2d4556ef85",
+  "sources": [
+    "https://cordis.europa.eu/datalab/sparql"
+  ]
+}

@@ -308,7 +308,7 @@ def _org_row(query_login: str, node: dict | None, fetched_at, error: str | None 
         url = node.get("websiteUrl")
         return {"query_login": query_login, "login": node.get("login"), "exists": True,
                 "database_id": node.get("databaseId"), "created_at": _ts(node.get("createdAt")),
-                "website_url": url, "website_domain": company_domain(url), "display_name": node.get("name"),
+                "website_url": url, "website_domain": company_domain(url, (node.get("login") or "", node.get("name") or "")), "display_name": node.get("name"),
                 "fetched_at": _ts(fetched_at), "lookup_error": None}
     return {"query_login": query_login, "login": query_login, "exists": None if error else False,
             "database_id": None, "created_at": pd.NaT, "website_url": None, "website_domain": None,
@@ -542,7 +542,7 @@ def find_org(entities, client=None, lookup: Callable[[list[str]], pd.DataFrame] 
     info: dict[str, dict] = {}
     unresolved: dict[str, tuple[str, tuple, dict]] = {}
     for eid, names in ents:
-        dom = company_domain(eid)
+        dom = company_domain(eid, names)
         rec = {"entity_id": eid, "entity_domain": dom, "names": "|".join(names), "n_cand_tier1": 0,
                "n_cand_tier2": 0, "n_cand_tier3": 0, "tiers_searched": 0, "resolved": False,
                "n_lookup_errors": 0, "note": None}

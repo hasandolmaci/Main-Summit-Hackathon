@@ -459,7 +459,7 @@ def htgf_records(groups: list[dict], parsed_by_link: dict[str, dict | None], res
                          "sector": "", "country": "", "evidence": "", "excluded_reason": "htgf_page_fetch_failed"})
             continue
         ev = htgf_evidence(g, parsed, bulk, today)
-        dom = company_domain(parsed.get("website")) if parsed.get("website") else None
+        dom = company_domain(parsed.get("website"), (name or "",)) if parsed.get("website") else None
         country, crule = page_country(parsed)
         counts[f"htgf_country_{crule}"] += 1
         counts["htgf_has_invested_since"] += parsed.get("invested_since") is not None

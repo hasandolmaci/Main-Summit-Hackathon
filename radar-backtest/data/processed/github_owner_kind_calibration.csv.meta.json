@@ -1,0 +1,60 @@
+{
+  "created_at": "2026-11-20T19:57:42.438074+00:00",
+  "file": "data/processed/github_owner_kind_calibration.csv",
+  "git_sha": "413c1e2ccd0bc0776e15248b8846b36f2f9e514c",
+  "inputs": [
+    {
+      "path": "data/raw/gharchive/hourly/2016-05-11-15.json.gz.manifest.json",
+      "sha256": "1070ad6c6219f3f9d076ac46db161efaf8fd6a7d3fed0f6469e1e46bf166c3b6"
+    },
+    {
+      "path": "data/raw/gharchive/hourly/2019-03-13-15.json.gz.manifest.json",
+      "sha256": "3bfafe83e0d7b31adcb9fd2c52bc4d50ded04eba7ca567124585cd96956634f9"
+    },
+    {
+      "path": "data/raw/gharchive/hourly/2021-05-12-15.json.gz.manifest.json",
+      "sha256": "654d9ca48ad39bc3189107414b348ccbe594f78614a2f339598724c171a463f3"
+    },
+    {
+      "path": "data/raw/gharchive/hourly/2023-10-11-15.json.gz.manifest.json",
+      "sha256": "a4e20a961ab5e37589df4cae5dfef803a5301760c9def504c88d18f5b3da768c"
+    },
+    {
+      "path": "data/raw/gharchive/owner_activity_251a8dcf.tsv.gz",
+      "sha256": "80df87be1172c29cc7d27acb5db647bd83ed02e1a1e9e49bef8d117da2bc6689"
+    }
+  ],
+  "notes": "Ground truth: GH Archive 2015+ events carry `org` iff the repo belongs to an organisation (owner == org.login -> org; no org field -> user; owners seen both ways dropped). org_recall / user_pass_rate = share of labelled owners (with >= 1 non-bot owned event) kept by each rule, overall and per n_events bin. Only aggregates are stored.",
+  "params": {
+    "ambiguous": 39,
+    "hours": [
+      "2016-05-11-15",
+      "2019-03-13-15",
+      "2021-05-12-15",
+      "2023-10-11-15"
+    ],
+    "org_owners_seen": 28741,
+    "orgish_actor_types": [
+      "ForkEvent",
+      "PublicEvent",
+      "MemberEvent",
+      "TeamAddEvent",
+      "Event",
+      "SponsorshipEvent"
+    ],
+    "per_class": 5000,
+    "personal_ratio": 0.01,
+    "user_owners_seen": 134103
+  },
+  "python": "3.13.18",
+  "rows": 15,
+  "script": "scripts/sources/github_owners.py calibrate",
+  "sha256": "b1c9606377092c7d0ca6f94982c02754bc82f8e7ab5487507a06c94a4446bcb5",
+  "sources": [
+    "https://data.gharchive.org/2016-05-11-15.json.gz",
+    "https://data.gharchive.org/2019-03-13-15.json.gz",
+    "https://data.gharchive.org/2021-05-12-15.json.gz",
+    "https://data.gharchive.org/2023-10-11-15.json.gz",
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

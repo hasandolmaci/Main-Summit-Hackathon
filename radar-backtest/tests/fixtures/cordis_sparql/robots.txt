@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /*/rcn/*.xml
+Disallow: /*/id/*.pdf
+Disallow: *format=xml
+Disallow: *format=pdf
+Disallow: */result_*
+Disallow: /booklet/
+Disallow: /data/
+Disallow: /search
+Sitemap: https://cordis.europa.eu/sitemapindex.xml

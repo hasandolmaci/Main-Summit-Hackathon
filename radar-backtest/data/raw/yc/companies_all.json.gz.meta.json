@@ -1,15 +1,15 @@
 {
-  "created_at": "2026-11-20T19:29:58.455123+00:00",
+  "created_at": "2026-11-20T19:53:28.219782+00:00",
   "file": "data/raw/yc/companies_all.json.gz",
-  "git_sha": "81dace3195eae3952effc7bd50c6831ad1c7528d",
+  "git_sha": "413c1e2ccd0bc0776e15248b8846b36f2f9e514c",
   "inputs": [],
   "notes": "yc-oss mirror response (public YC directory) as parsed JSON, record order and values unchanged, minus the dropped_fields (free text that can carry personal e-mail addresses / phone numbers; not used for labels). response_sha256 identifies the full upstream response. gzip, mtime=0.",
   "params": {
     "dropped_fields": [
       "long_description"
     ],
-    "fetched_at": "2026-11-20T18:40:14.030088+00:00",
-    "from_cache": true,
+    "fetched_at": "2026-11-20T19:53:27.310861+00:00",
+    "from_cache": false,
     "label_field_contact_hits": 0,
     "response_bytes": 10969715,
     "response_sha256": "639e609ddc59ae00746078408bbdfe4af1600ac73be8ef6e105c1e6c6bb2d5f7",

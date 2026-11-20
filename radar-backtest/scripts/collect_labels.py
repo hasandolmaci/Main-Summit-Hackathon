@@ -253,7 +253,7 @@ def yc_records(companies: list[dict], counts: Counter | None = None) -> list[dic
     for c in companies:
         counts["yc_records"] += 1
         parsed = parse_batch(c.get("batch"))
-        dom = company_domain(c.get("website"))
+        dom = company_domain(c.get("website"), (c.get("name") or "",))
         iso, rule = yc_country(c.get("all_locations"), c.get("regions"))
         counts[f"yc_country_{rule}"] += 1
         bs = batch_start(*parsed, season_start) if parsed else None

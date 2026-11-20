@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-11-20T20:00:00.609504+00:00",
+  "file": "data/raw/ecosystems/owners_e3d3ad73.jsonl.gz",
+  "git_sha": "413c1e2ccd0bc0776e15248b8846b36f2f9e514c",
+  "inputs": [],
+  "notes": "ecosyste.ms owner responses, one line per HTTP request (incl. retries). Personal and contact fields (email, twitter, location, company, ...) were dropped before writing; e-mail-like strings blanked. created_at / updated_at are ecosyste.ms record times, NOT GitHub dates. Licence: CC BY-SA 4.0 (ecosyste.ms open data; attribution: ecosyste.ms)",
+  "params": {
+    "kept_fields_organization": [
+      "login",
+      "kind",
+      "uuid",
+      "name",
+      "website",
+      "html_url",
+      "repositories_count",
+      "total_stars",
+      "followers",
+      "created_at",
+      "updated_at",
+      "last_synced_at"
+    ],
+    "kept_fields_other_kinds": [
+      "login",
+      "kind"
+    ],
+    "licence": "CC BY-SA 4.0 (ecosyste.ms open data; attribution: ecosyste.ms)",
+    "n_logins": 120
+  },
+  "python": "3.13.18",
+  "rows": 120,
+  "script": "scripts/sources/github_owners.py",
+  "sha256": "dc065d17f10150abe64527d694da2d3ada134366b9ae1d803489e82fd284ed26",
+  "sources": [
+    "https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/<login>"
+  ]
+}

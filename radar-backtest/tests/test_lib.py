@@ -26,6 +26,15 @@ def test_platforms_blocked():
     assert domains.company_domain("https://acme.dev") == "acme.dev"
 
 
+def test_platform_owner_exception():
+    assert domains.company_domain("https://gitlab.com") is None
+    assert domains.company_domain("https://gitlab.com", ("GitLab",)) == "gitlab.com"
+    assert domains.company_domain("https://about.gitlab.com/", ("GitLab Inc.",)) == "gitlab.com"
+    assert domains.company_domain("https://acme.github.io", ("Acme",)) is None       # hosted page, not the platform
+    assert domains.company_domain("https://ec.europa.eu/x") is None
+    assert domains.login_rule("gitlabhq", "https://gitlab.com", "gitlab.com", display_name="GitLab")
+
+
 def test_country_from_domain():
     assert domains.country_from_domain("acme.de") == "DE"
     assert domains.country_from_domain("acme.co.uk") == "GB"

@@ -25,6 +25,7 @@ PLATFORM_DOMAINS = {
     "crunchbase.com", "angel.co", "wellfound.com", "producthunt.com", "ycombinator.com", "launchpad.net",
     "gitee.com", "codeberg.org", "huggingface.co", "kaggle.com", "itch.io", "patreon.com", "opencollective.com",
     "sites.google.com", "dev.to", "hashnode.dev", "hashnode.com", "mozilla.org", "apache.org", "eclipse.org",
+    "europa.eu",
 }
 # Generic TLDs carry no country information.
 _CC_OVERRIDES = {"uk": "GB", "eu": None, "io": None, "co": None, "ai": None, "me": None, "tv": None, "ly": None,
@@ -61,10 +62,24 @@ def is_platform(domain: str | None) -> bool:
     return domain is None or domain in PLATFORM_DOMAINS
 
 
-def company_domain(url_or_host: str | None) -> str | None:
-    """Registrable domain, or None when missing or a platform domain."""
+def company_domain(url_or_host: str | None, owner_names: tuple = ()) -> str | None:
+    """Registrable domain, or None when missing or a platform domain.
+
+    Exception (same rule for every entity): a platform domain is kept when the owner IS that platform, i.e. the
+    slug of one of `owner_names` (company name, org login, org display name) equals the domain stem
+    (company "GitLab" -> gitlab.com). Hosted pages such as foo.github.io or medium.com/@acme stay excluded.
+    """
     d = registrable_domain(url_or_host)
-    return None if is_platform(d) else d
+    if d is None:
+        return None
+    if not is_platform(d):
+        return d
+    stem = domain_stem(d)
+    for n in owner_names or ():
+        sl = name_slug(n)
+        if sl and (sl == stem or sl.replace("-", "") == stem):
+            return d
+    return None
 
 
 def domain_stem(domain: str) -> str:
@@ -132,7 +147,8 @@ def login_candidates(stem: str | None, name: str | None = None) -> list[str]:
 def login_rule(login: str, website_url: str | None, entity_domain: str, display_name: str | None = None,
                extra_names: tuple = ()) -> bool:
     """Accept an org for an entity iff websiteUrl domain == entity domain AND login is a candidate."""
-    if not login or company_domain(website_url) != entity_domain:
+    names = tuple(x for x in (login, display_name, *extra_names) if x)
+    if not login or company_domain(website_url, names) != entity_domain:
         return False
     stem = domain_stem(entity_domain)
     cands = set(login_candidates(stem, display_name))

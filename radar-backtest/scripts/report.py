@@ -18,7 +18,8 @@ from .lib.metrics import auc, rank_order, weighted_top_mask
 log = get_logger("report")
 PRIMARY = "logreg"
 TOP_K = 50
-TOP_SHARE = float(cfg().get("evaluation", {}).get("top_share", 0.10))
+TOP_SHARE = float(cfg().get("evaluation", {}).get("top_share", 0.05))
+TOP_SHARES = [float(x) for x in cfg().get("evaluation", {}).get("top_shares", [TOP_SHARE])]
 EXPECTED_SIGN = {"oss_external_engagement": "+ (Conti et al. 2025; association)",
                  "github_activity_acceleration": "+ (weak: no paper measures acceleration)",
                  "has_public_rd_grant": "+ (Howell 2017; Santoleri et al. 2024; causal)"}
@@ -258,6 +259,9 @@ def build(tag: str = "main") -> str:
             "sample base rate": m["p_at_50_random"].round(3),
             f"top {TOP_SHARE:.0%} recall [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(col(m, "top_recall"), col(m, "top_recall_lo"), col(m, "top_recall_hi"))],
             f"top {TOP_SHARE:.0%} lift [95% CI]": [fmt_ci(a, l, h, 1) for a, l, h in zip(col(m, "top_lift"), col(m, "top_lift_lo"), col(m, "top_lift_hi"))],
+            **{f"top {q:.0%} recall / lift": [f"{a:.2f} / {b:.1f}×" if pd.notna(a) and pd.notna(b) else "n/a"
+                                              for a, b in zip(col(m, f"top{int(round(q * 100))}_recall"), col(m, f"top{int(round(q * 100))}_lift"))]
+               for q in TOP_SHARES if abs(q - TOP_SHARE) > 1e-9},
             "median lead (months)": m["median_lead_months"].round(1),
             "exploratory": m["exploratory"]})
         L += [f"**Subset: {sub}**", "", t.to_markdown(index=False), ""]

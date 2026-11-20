@@ -159,7 +159,8 @@ def lead_times(pred: pd.DataFrame, share: float, s: int) -> pd.Series:
 
 
 def evaluate(pred: pd.DataFrame, reps: int, s: int, min_pos_ci: int = 15) -> pd.DataFrame:
-    share = float(cfg().get("evaluation", {}).get("top_share", 0.10))
+    share = float(cfg().get("evaluation", {}).get("top_share", 0.05))
+    shares = [float(x) for x in cfg().get("evaluation", {}).get("top_shares", [share])]
     rows = []
     dach = pred["dach"] if "dach" in pred else pd.Series(False, index=pred.index)
     subsets = {"all": pred, "europe": pred[pred["europe"]], "dach": pred[dach.astype(bool)],
@@ -177,6 +178,9 @@ def evaluate(pred: pd.DataFrame, reps: int, s: int, min_pos_ci: int = 15) -> pd.
             r.update({"top_share": share, "top_precision_w": ts["precision"], "top_recall": ts["recall"],
                       "top_lift": ts["lift"],
                       "base_rate_w": float((g["weight"] * g["label"]).sum() / g["weight"].sum())})
+            for q in shares:
+                tq = top_share_metrics(g, q, s)
+                r[f"top{int(round(q * 100))}_recall"], r[f"top{int(round(q * 100))}_lift"] = tq["recall"], tq["lift"]
             if npos >= min_pos_ci and reps > 0:
                 b = cluster_bootstrap(g, pooled_auc, reps, s)
                 r["auc_lo"], r["auc_hi"] = ci(b)

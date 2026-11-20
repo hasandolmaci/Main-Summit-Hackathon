@@ -21530,3 +21530,30 @@
 2026-11-20 21:57:17,159 INFO backtest: as_of 2017: test 243 (pos 28), train 596 (pos 86), refs 55
 2026-11-20 21:57:17,192 INFO backtest: as_of 2018: test 207 (pos 27), train 841 (pos 114), refs 68
 2026-11-20 21:57:17,224 INFO backtest: as_of 2019: test 161 (pos 25), train 1084 (pos 142), refs 68
+2026-11-20 21:59:00,503 INFO build_snapshots: as_of 2012: 69 rows, 13 positives, 56 B controls
+2026-11-20 21:59:00,551 INFO build_snapshots: as_of 2013: 139 rows, 24 positives, 115 B controls
+2026-11-20 21:59:00,601 INFO build_snapshots: as_of 2014: 176 rows, 23 positives, 153 B controls
+2026-11-20 21:59:00,645 INFO build_snapshots: as_of 2015: 212 rows, 26 positives, 186 B controls
+2026-11-20 21:59:00,689 INFO build_snapshots: as_of 2016: 245 rows, 28 positives, 217 B controls
+2026-11-20 21:59:00,733 INFO build_snapshots: as_of 2017: 243 rows, 28 positives, 215 B controls
+2026-11-20 21:59:00,779 INFO build_snapshots: as_of 2018: 207 rows, 27 positives, 180 B controls
+2026-11-20 21:59:00,825 INFO build_snapshots: as_of 2019: 161 rows, 25 positives, 136 B controls
+2026-11-20 21:59:02,891 INFO build_snapshots: reference profiles: 110
+2026-11-20 21:59:02,975 INFO backtest: as_of 2015: test 212 (pos 26), train 208 (pos 37), refs 28
+2026-11-20 21:59:03,011 INFO backtest: as_of 2016: test 245 (pos 28), train 384 (pos 60), refs 40
+2026-11-20 21:59:03,049 INFO backtest: as_of 2017: test 243 (pos 28), train 596 (pos 86), refs 55
+2026-11-20 21:59:03,083 INFO backtest: as_of 2018: test 207 (pos 27), train 841 (pos 114), refs 68
+2026-11-20 21:59:03,116 INFO backtest: as_of 2019: test 161 (pos 25), train 1084 (pos 142), refs 68
+2026-11-20 21:59:52,786 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 21:59:52,920 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 21:59:52,943 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 21:59:52,965 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 21:59:52,987 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 21:59:53,010 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 21:59:53,046 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 21:59:53,066 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 21:59:53,086 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 21:59:53,106 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 21:59:53,126 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 21:59:53,194 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 21:59:53,223 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0

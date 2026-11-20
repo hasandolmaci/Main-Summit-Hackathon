@@ -59,7 +59,8 @@ bootstrap:
 evaluation:
   # Pre-specified before any result: 'flagged' = in the pool-equivalent top share of a cohort, i.e. walking down the
   # score ranking until the case-cohort weights (1/inclusion_prob for controls, 1 for cases) reach this share.
-  top_share: 0.10
+  top_share: 0.05               # headline / lead time / HTGF table
+  top_shares: [0.01, 0.05, 0.10] # all reported in the method tables
 
 min_positives:
   target: 100

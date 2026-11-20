@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+data/cache/
+# large raw bulk files are not committed; their sha256 + URL live in *.manifest.json
+data/raw/**/*.zip
+data/raw/**/*.json.gz.part
+*.part

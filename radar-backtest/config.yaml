@@ -1,0 +1,73 @@
+# radar-backtest v1 configuration. All scripts read this file; nothing is hard-coded elsewhere.
+seed: 20251120
+
+# Date at which "the future" was observed (labels are complete up to here).
+data_cutoff: "2026-11-01"
+
+label:
+  horizon_months: 24          # label = first funding in [as_of, as_of + 24m)
+  yc_date_mode: acceptance    # acceptance (primary) | batch_start (sensitivity)
+  acceptance_offset_days: 76  # ~2.5 months before batch start
+  # batch start dates by season (month, day)
+  yc_season_start:
+    Winter: [1, 15]
+    Spring: [4, 1]
+    Summer: [6, 15]
+    Fall: [9, 15]
+
+years:
+  as_of_month_day: [1, 1]
+  # Set from the gate/coverage report; locked years are never scored without RADAR_UNLOCK_TEST=1.
+  selection: [2015, 2019]
+  locked_test: [2020, 2024]
+
+windows:
+  w1_days: 90
+  w0_days: 90
+  engagement_months: 12
+  accel_clip: 3.0
+
+pool:
+  org_max_age_years: 5        # GitHub org createdAt in [as_of - 5y, as_of)
+  org_sample_pages_per_year: 40   # REST /organizations pages (100 orgs each) per creation year
+  org_sample_years: [2008, 2023]
+  cordis_sample_fraction: 0.15
+  controls_per_positive: 10
+
+reference:
+  window_years: 5
+  profile_offset_days: 90
+
+knn:
+  ks: [1, 3, 5]
+
+bootstrap:
+  reps: 1000
+  ci: 0.95
+
+min_positives:
+  target: 100
+  exploratory_below: 30
+
+europe_iso2: [AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT, RO, SK, SI, ES, SE, GB, CH, NO]
+# EU27 + Horizon associated countries (H2020 / Horizon Europe), used for CORDIS coverage.
+horizon_eligible_iso2: [AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT, RO, SK, SI, ES, SE, GB, CH, NO, IS, LI, IL, TR, RS, UA, MD, ME, MK, AL, BA, FO, GE, AM, TN, XK]
+
+http:
+  user_agent: "radar-backtest/0.1 (research backtest; contact via repository owner)"
+  timeout_s: 60
+  max_retries: 6
+  min_interval_s:              # politeness per host
+    api.github.com: 0.25
+    play.clickhouse.com: 1.0
+    cordis.europa.eu: 1.0
+    yc-oss.github.io: 1.0
+    www.htgf.de: 2.0
+    data.gharchive.org: 1.0
+    default: 1.0
+
+gharchive:
+  backend: clickhouse         # clickhouse (free public mirror) | bigquery (needs GCP creds)
+  clickhouse_url: "https://play.clickhouse.com/?user=play"
+  bigquery_max_gb: 200        # refuse larger queries without explicit approval
+  bots_regex: "(\\[bot\\]$|-bot$|^dependabot|^renovate|^github-actions|^greenkeeper)"

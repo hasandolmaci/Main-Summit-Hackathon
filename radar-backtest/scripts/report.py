@@ -101,6 +101,31 @@ def reasons(snap_row: pd.Series, coef_row: pd.Series, cohort: pd.DataFrame) -> s
     return "; ".join(p for _, p in parts) or "no single strong signal (ranked by combination / missing-data flags)"
 
 
+def link_precision_proxy(labels: pd.DataFrame) -> dict | None:
+    """Share of labelled companies whose matched GitHub org's login/display name agrees with the company name.
+
+    Label names are used ONLY for this evaluation, never for matching. A proxy until the human check is done."""
+    import re
+    from .lib.domains import name_slug
+    lp, op = PROCESSED / "entity_github_org.parquet", PROCESSED / "github_owners.parquet"
+    if not (lp.exists() and op.exists()):
+        return None
+    links = pd.read_parquet(lp)
+    own = pd.read_parquet(op)
+    own = own.assign(login_l=own["login"].str.lower()).drop_duplicates("login_l").set_index("login_l")
+    lab = labels.set_index("domain")
+    key = lambda s: re.sub(r"[^a-z0-9]", "", name_slug(s if isinstance(s, str) else ""))  # noqa: E731
+    m = links[links["entity_id"].isin(lab.index)].copy()
+    if m.empty:
+        return None
+    kc = m["entity_id"].map(lab["company"]).map(key)
+    kd = m["org_login"].str.lower().map(own["display_name"]).map(key)
+    kl = m["org_login"].map(key)
+    exact = (kd == kc) | (kl == kc)
+    cont = [bool(c) and (c in (d or "") or (d or "") in c or c in l or l in c) for c, d, l in zip(kc, kd, kl)]
+    return {"n": len(m), "exact": float(exact.mean()), "contained": float((exact | pd.Series(cont, index=m.index)).mean())}
+
+
 def dot_plot(met: pd.DataFrame, path, title: str):
     import matplotlib
     matplotlib.use("Agg")
@@ -190,10 +215,14 @@ def build(tag: str = "main") -> str:
               cov.round(3).to_markdown(), ""]
     if cov_p.exists():
         L += [f"Per-source event coverage by year: `data/processed/coverage_by_source_year.csv`.", ""]
+    pp = link_precision_proxy(labels)
     L += ["Entity matching: GitHub org = website equals company domain AND login is the domain stem (stem-only, "
           "identical for every company); EU grants = website domain, else unique legal name + same country. "
-          "Hand-check samples for precision: `data/processed/match_sample_github.csv`, "
-          "`data/processed/match_sample_cordis.csv` (precision is **not yet verified by a human**).", ""]
+          + (f"Precision proxy for the {pp['n']} matched labelled companies: the org's login/display name equals the "
+             f"company name in **{pp['exact']:.1%}** of links ({pp['contained']:.1%} if one name contains the other). "
+             if pp else "")
+          + "Hand-check samples: `data/processed/match_sample_github.csv`, `data/processed/match_sample_cordis.csv` "
+          "(**not yet verified by a human**).", ""]
 
     # ---------- methods
     L += ["## 2. Methods vs baselines", "",

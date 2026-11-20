@@ -62,7 +62,7 @@ def coverage(ev: pd.DataFrame, ent: pd.DataFrame) -> pd.DataFrame:
 
 def main():
     lines, hard = ["# Data validation", ""], []
-    lab = pd.read_csv(LABELS / "companies.csv")
+    lab = pd.read_csv(LABELS / "companies.csv", dtype=str, keep_default_na=False)
     e, w = check_labels(lab)
     hard += e
     lines += [f"- labels: {len(lab)} rows; errors: {e or 'none'}; warnings: {w or 'none'}"]

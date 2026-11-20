@@ -43,7 +43,7 @@ def gate_table(ent: pd.DataFrame, labels: pd.DataFrame, years: list[int]) -> pd.
 
 def main():
     ent = pd.read_csv(PROCESSED / "entities.csv")
-    labels = pd.read_csv(LABELS / "companies.csv")
+    labels = pd.read_csv(LABELS / "companies.csv", dtype=str, keep_default_na=False)
     years = list(range(2012, 2026))
     t = gate_table(ent, labels, years)
     out = PROCESSED / "gate_counts.csv"

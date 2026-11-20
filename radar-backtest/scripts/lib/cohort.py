@@ -19,15 +19,16 @@ def _years_before(ts: datetime, years: int) -> pd.Timestamp:
 def visible_at(ent: pd.DataFrame, as_of: datetime) -> pd.DataFrame:
     """Pool criteria at as_of (no labels). Returns boolean columns gh_cov, cordis_cov, visible.
 
-    GitHub channel: matched org created in [as_of - max_age, as_of) AND first GH Archive event < as_of.
+    GitHub channel: matched org whose FIRST GH Archive event lies in [as_of - max_age, as_of) (org age proxy that is
+    observable at as_of; GitHub's own org creation date is not available from the keyless sources).
     CORDIS channel: first grant signature (public) < as_of.
     """
     a = pd.Timestamp(as_of)
     lo = _years_before(a, cfg()["pool"]["org_max_age_years"])
-    created = pd.to_datetime(ent["github_org_created_at"], utc=True)
     first_ev = pd.to_datetime(ent["gh_first_event_ts"], utc=True)
     cordis = pd.to_datetime(ent["cordis_first_public_ts"], utc=True)
-    gh = created.notna() & (created >= lo) & (created < a) & first_ev.notna() & (first_ev < a)
+    has_org = ent["github_org"].notna() if "github_org" in ent else first_ev.notna()
+    gh = has_org & first_ev.notna() & (first_ev >= lo) & (first_ev < a)
     co = cordis.notna() & (cordis < a)
     return pd.DataFrame({"gh_cov": gh.values, "cordis_cov": co.values, "visible": (gh | co).values}, index=ent.index)
 

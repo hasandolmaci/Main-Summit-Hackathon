@@ -15,7 +15,8 @@ def _ent(**over):
     base = dict(entity_id=["a.com", "b.com", "c.com", "d.de", "e.com"],
                 in_B=[True, True, False, True, False],
                 inclusion_prob=[0.1, 0.1, 0.0, 0.5, 0.0],
-                github_org_created_at=["2013-05-01", "2009-01-01", "2014-01-01", None, "2015-12-31"],
+                github_org=["a", "b", "c", None, "e"],
+                github_org_created_at=[None] * 5,
                 gh_first_event_ts=["2013-06-01", "2010-01-01", "2014-02-01", None, "2016-01-02"],
                 cordis_first_public_ts=[None, None, None, "2015-03-01", None])
     base.update(over)
@@ -74,8 +75,8 @@ def test_universe_never_reads_labels_and_combines_probs():
               and not n.value.lstrip().startswith("Build the outcome-blind")]
     assert "LABELS" not in names
     assert not any("companies.csv" in c or "data/labels" in c for c in consts)
-    sample = pd.DataFrame({"login": ["acme", "zz"], "database_id": [1, 2], "created_at": ["2014-01-01", "2015-01-01"],
-                           "created_year": [2014, 2015], "website_domain": ["acme.com", None],
+    sample = pd.DataFrame({"login": ["acme", "zz"], "uuid": [1, 2], "first_event_ts": ["2014-01-01", "2015-01-01"],
+                           "first_event_year": [2014, 2015], "website_domain": ["acme.com", None],
                            "display_name": ["Acme", None], "in_pool": [True, False], "inclusion_prob": [0.2, 0.2]})
     companies = pd.DataFrame({"domain": ["acme.com", "beta.de"], "names": [["ACME GmbH"], ["Beta"]],
                               "first_public_ts": ["2015-01-01", "2016-01-01"]})

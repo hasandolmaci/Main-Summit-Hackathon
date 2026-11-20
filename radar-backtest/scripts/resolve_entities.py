@@ -39,7 +39,7 @@ def _names(v) -> list[str]:
 
 def load_labels() -> pd.DataFrame:
     p = LABELS / "companies.csv"
-    return pd.read_csv(p) if p.exists() else pd.DataFrame(columns=["company", "domain"])
+    return pd.read_csv(p, dtype=str, keep_default_na=False) if p.exists() else pd.DataFrame(columns=["company", "domain"])
 
 
 def targets() -> pd.DataFrame:
@@ -69,7 +69,7 @@ def build_entities(universe: pd.DataFrame, labels: pd.DataFrame, gh_links: pd.Da
     ent["inclusion_prob"] = ent["inclusion_prob"].fillna(0.0)
     ent["is_labelled"] = ent["entity_id"].isin(set(labels["domain"]))
     if gh_links is not None and len(gh_links):
-        g = gh_links.rename(columns={"org_login": "github_org", "org_created_at": "github_org_created_at",
+        g = gh_links.rename(columns={"org_login": "github_org", "org_first_event_ts": "github_org_created_at",
                                      "match_method": "github_match_method",
                                      "match_confidence": "github_match_confidence", "tier": "github_tier"})
         g = g[g["github_match_confidence"] == "high"]
@@ -117,8 +117,6 @@ def build_events(ent: pd.DataFrame) -> pd.DataFrame:
     org2ent: dict[str, list[str]] = {}
     for r in ent[ent["github_org"].notna()].itertuples():
         org2ent.setdefault(r.github_org.lower(), []).append(r.entity_id)
-        recs.append({"entity_id": r.entity_id, "ts": r.github_org_created_at, "source": "github_api",
-                     "type": "org_created", "value": 1.0, "detail": {"org": r.github_org}})
     p = PROCESSED / "gh_org_span.parquet"
     if p.exists():
         for r in pd.read_parquet(p).itertuples():

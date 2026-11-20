@@ -1,7 +1,7 @@
 """Build the outcome-blind universe (pool P) and background sample B.
 
 THIS MODULE MUST NEVER READ LABELS. It only uses pool sources:
-  (a) data/processed/github_org_sample.parquet  (random pages of existing GitHub orgs, in_pool rule applied)
+  (a) data/processed/github_org_sample.parquet  (hash sample of GH Archive owners per first-activity year, in_pool rule applied)
   (b) data/processed/cordis_companies.parquet   (CORDIS private companies with a company domain)
 B membership is decided by sampling probabilities fixed here, before any label lookup.
 Controls = B minus labelled entities (done later, in resolve_entities / build_snapshots).
@@ -32,11 +32,11 @@ def hash_uniform(key: str, salt: int) -> float:
 def github_channel(sample: pd.DataFrame) -> pd.DataFrame:
     s = sample[sample["in_pool"] & sample["website_domain"].notna()].copy()
     # one entity per domain: keep earliest-created sampled org (deterministic)
-    s = s.sort_values(["website_domain", "created_at", "login"]).drop_duplicates("website_domain")
+    s = s.sort_values(["website_domain", "first_event_ts", "login"]).drop_duplicates("website_domain")
     return pd.DataFrame({
         "entity_id": s["website_domain"].values,
         "p_github": s["inclusion_prob"].astype(float).values,
-        "entry_ts_github_sample": pd.to_datetime(s["created_at"], utc=True).values,
+        "entry_ts_github_sample": pd.to_datetime(s["first_event_ts"], utc=True).values,
         "sampled_org_login": s["login"].values,
         "names_github": s["display_name"].fillna("").map(lambda x: (x,) if x else ()).values,
     })

@@ -96,7 +96,7 @@ def load_inputs(funding_file: str = "companies.csv"):
     ent = pd.read_csv(PROCESSED / "entities.csv")
     for c in ["github_org_created_at", "gh_first_event_ts", "cordis_first_public_ts"]:
         ent[c] = pd.to_datetime(ent[c], utc=True)
-    labels = pd.read_csv(LABELS / funding_file)
+    labels = pd.read_csv(LABELS / funding_file, dtype=str, keep_default_na=False)
     fd = ent["entity_id"].map(labels.set_index("domain")["first_funding_date"])
     return ent, fd
 

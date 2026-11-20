@@ -29,8 +29,9 @@ windows:
 
 pool:
   org_max_age_years: 5        # GitHub org createdAt in [as_of - 5y, as_of)
-  org_sample_pages_per_year: 40   # REST /organizations pages (100 orgs each) per creation year
-  org_sample_years: [2008, 2023]
+  org_sample_pages_per_year: 40   # (GitHub-API route only) REST /organizations pages per creation year
+  org_sample_years: [2010, 2023]
+  owner_lookups_per_year: 300     # ecosyste.ms lookups for the GH Archive owner hash sample, per first-activity year
   cordis_sample_fraction: 0.15
   controls_per_positive: 10
 
@@ -64,6 +65,7 @@ http:
     yc-oss.github.io: 1.0
     www.htgf.de: 2.0
     data.gharchive.org: 1.0
+    repos.ecosyste.ms: 0.75     # anonymous limit 5000/h
     default: 1.0
 
 gharchive:

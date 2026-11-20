@@ -22785,3 +22785,4 @@
 2026-11-20 22:26:50,212 INFO pipeline: === step resolve_build done in 11s
 2026-11-20 22:26:50,212 INFO pipeline: === step validate
 2026-11-20 22:26:50,887 ERROR validate: validation failed: ['118 duplicate events']
+2026-11-20 22:27:13,481 INFO resolve_entities: decontamination: 1 controls share a name with a labelled company -> removed as ambiguous

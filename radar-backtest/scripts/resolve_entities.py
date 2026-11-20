@@ -309,7 +309,8 @@ def build_events(ent: pd.DataFrame) -> pd.DataFrame:
                     for e in org2ent.get(org, []):
                         recs.append({"entity_id": e, "ts": pd.Timestamp(r.month, tz="UTC") if pd.Timestamp(r.month).tzinfo is None else r.month,
                                      "source": "gharchive", "type": "ext_engagement_month", "value": n,
-                                     "detail": {"org": org, "actor": r.actor_hash, "pr_opened": int(r.pr_opened),
+                                     "detail": {"org": org, "actor": r.actor_hash, "bucket": str(r.owner_bucket),
+                                                "pr_opened": int(r.pr_opened),
                                                 "issues_opened": int(r.issues_opened), "pushes": int(r.pushes)}})
     p = PROCESSED / "cordis_participations.parquet"
     lp = PROCESSED / "entity_cordis.parquet"

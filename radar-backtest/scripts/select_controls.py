@@ -31,6 +31,8 @@ def hash_uniform(key: str, salt: int) -> float:
 
 def github_channel(sample: pd.DataFrame) -> pd.DataFrame:
     s = sample[sample["in_pool"] & sample["website_domain"].notna()].copy()
+    if "first_event_ts" not in s:            # GitHub-API route (scripts/sources/github.py) has created_at instead
+        s["first_event_ts"] = s["created_at"]
     # one entity per domain: keep earliest-created sampled org (deterministic)
     s = s.sort_values(["website_domain", "first_event_ts", "login"]).drop_duplicates("website_domain")
     return pd.DataFrame({

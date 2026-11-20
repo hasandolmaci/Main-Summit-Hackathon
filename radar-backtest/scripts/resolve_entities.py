@@ -69,6 +69,8 @@ def build_entities(universe: pd.DataFrame, labels: pd.DataFrame, gh_links: pd.Da
     ent["inclusion_prob"] = ent["inclusion_prob"].fillna(0.0)
     ent["is_labelled"] = ent["entity_id"].isin(set(labels["domain"]))
     if gh_links is not None and len(gh_links):
+        if "org_first_event_ts" not in gh_links and "org_created_at" in gh_links:   # GitHub-API route
+            gh_links = gh_links.rename(columns={"org_created_at": "org_first_event_ts"})
         g = gh_links.rename(columns={"org_login": "github_org", "org_first_event_ts": "github_org_created_at",
                                      "match_method": "github_match_method",
                                      "match_confidence": "github_match_confidence", "tier": "github_tier"})

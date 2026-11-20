@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-11-20T21:51:34.996355+00:00",
+  "file": "data/processed/events.parquet",
+  "git_sha": "abee174bde8ed2e1552289505939aa8da629551a",
+  "inputs": [
+    {
+      "path": "data/processed/entities.csv",
+      "sha256": "2b41f6dda84c0c632aa285200d6c2a440464a3075e8ab632a9fbfc940c3aad3b"
+    }
+  ],
+  "notes": "Unified event schema: entity_id, ts (public time, UTC), source, type, value, detail.",
+  "params": {},
+  "python": "3.13.18",
+  "rows": 640892,
+  "script": "scripts/resolve_entities.py build",
+  "sha256": "2ea4fe083a37e6075a732a70d842490f088e8ccf9cc966538565dd886a170deb",
+  "sources": []
+}

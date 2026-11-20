@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-11-20T21:50:56.559749+00:00",
+  "file": "data/processed/match_sample_cordis.csv",
+  "git_sha": "abee174bde8ed2e1552289505939aa8da629551a",
+  "inputs": [],
+  "notes": "Human precision check of R2 links.",
+  "params": {},
+  "python": "3.13.18",
+  "rows": 4,
+  "script": "scripts/match_cordis.py",
+  "sha256": "5ab63787e4079cffcf69620017c4666874010b82fa11ab3b34323bced47b939c",
+  "sources": []
+}

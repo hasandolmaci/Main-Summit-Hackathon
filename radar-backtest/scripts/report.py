@@ -13,11 +13,12 @@ import pandas as pd
 
 from .build_snapshots import FEATURES, HAS_FLAGS
 from .lib.config import FIGURES, LABELS, PROCESSED, RESULTS, as_of_date, cfg, get_logger, seed, selection_years
-from .lib.metrics import auc, rank_order
+from .lib.metrics import auc, rank_order, weighted_top_mask
 
 log = get_logger("report")
 PRIMARY = "logreg"
 TOP_K = 50
+TOP_SHARE = float(cfg().get("evaluation", {}).get("top_share", 0.10))
 EXPECTED_SIGN = {"oss_external_engagement": "+ (Conti et al. 2025; association)",
                  "github_activity_acceleration": "+ (weak: no paper measures acceleration)",
                  "has_public_rd_grant": "+ (Howell 2017; Santoleri et al. 2024; causal)"}
@@ -47,20 +48,22 @@ def snapshots(years) -> pd.DataFrame:
     return pd.concat(parts, ignore_index=True) if parts else pd.DataFrame()
 
 
-def flagged_table(pred: pd.DataFrame, method: str, k: int = TOP_K) -> pd.DataFrame:
-    """Per funded entity: first as_of at which it was in the top-k of its cohort (before funding by construction)."""
+def flagged_table(pred: pd.DataFrame, method: str, share: float | None = None) -> pd.DataFrame:
+    """Per funded entity: first as_of at which it was in the POOL-EQUIVALENT top `share` of its cohort
+    (case-cohort weights; before funding by construction of the label window)."""
+    share = share if share is not None else TOP_SHARE
     p = pred[pred["method"] == method]
     rows = []
     for i, (a, g) in enumerate(p.groupby("as_of")):
         order = rank_order(g["score"].values, seed() + i)
         rank = np.empty(len(g), dtype=int)
         rank[order] = np.arange(1, len(g) + 1)
-        gg = g.assign(rank=rank, n=len(g))
+        top = weighted_top_mask(g["score"].to_numpy(float), g["weight"].to_numpy(float), share, seed() + i)
+        gg = g.assign(rank=rank, n=len(g), in_top=top)
         rows.append(gg[gg["label"] == 1])
     pos = pd.concat(rows, ignore_index=True) if rows else pd.DataFrame()
     if pos.empty:
         return pos
-    pos["in_top"] = pos["rank"] <= k
     out = []
     for e, g in pos.groupby("entity_id"):
         g = g.sort_values("as_of")
@@ -172,14 +175,20 @@ def build(tag: str = "main") -> str:
     if len(ft) and prim is not None:
         X, Y = int(ft["flagged"].sum()), len(ft)
         N = ft.loc[ft["flagged"], "lead_months"].median()
+        expl = bool(prim["exploratory"]) or Y < cfg()["min_positives"]["exploratory_below"]
         L += ["# Startup radar backtest — results (v1, selection years only)", "",
+              ("> **EXPLORATORY RESULT** — only %d funded companies are visible to the radar before their first round "
+               "(target ≥ %d; below %d the plan reports AUC as exploratory only). Treat every number below as "
+               "indicative, with wide confidence intervals." % (Y, cfg()["min_positives"]["target"],
+                                                                 cfg()["min_positives"]["exploratory_below"]))
+              if expl else "", "",
               f"**Headline:** we flagged **{X} of {Y}** funded startups in our candidate set a median of "
-              f"**{N:.0f} months** before their first round (top-{TOP_K} of each yearly cohort, method: L2 logistic "
-              f"regression, as_of years {years[0]}–{years[-1]}).", "",
+              f"**{N:.0f} months** before their first round (in the top {TOP_SHARE:.0%} of the estimated candidate "
+              f"pool on a 1 January before funding; method: L2 logistic regression, as_of years {years[0]}–{years[-1]}).", "",
               f"Ranking quality: pooled ROC AUC **{fmt_ci(prim['auc'], prim.get('auc_lo'), prim.get('auc_hi'))}** "
-              f"(0.5 = random); precision@{TOP_K} **{prim['p_at_50']:.3f}** vs base rate **{prim['p_at_50_random']:.3f}**"
-              f" ({prim['p_at_50'] / prim['p_at_50_random']:.1f}× random). "
-              f"{'**Exploratory only** (< %d positives).' % cfg()['min_positives']['exploratory_below'] if prim['exploratory'] else ''}", "",
+              f"(0.5 = random). In the top {TOP_SHARE:.0%} of the pool the funded share is estimated at "
+              f"**{prim.get('top_precision_w', float('nan')):.4f}** vs **{prim.get('base_rate_w', float('nan')):.4f}** "
+              f"overall (lift **{fmt_ci(prim.get('top_lift', float('nan')), prim.get('top_lift_lo'), prim.get('top_lift_hi'), 1)}×**).", "",
               "> Read this as: among companies visible to the radar on 1 January of each year, how well the score "
               "ranks the ones that raised a first round (YC / HTGF) in the next 24 months above the ones that did not. "
               "Controls are an outcome-blind random sample of GitHub organisations and are *assumed* unfunded.", ""]
@@ -226,9 +235,12 @@ def build(tag: str = "main") -> str:
 
     # ---------- methods
     L += ["## 2. Methods vs baselines", "",
-          "Pooled AUC compares positives and controls only within the same as_of cohort; 95% CIs from an "
-          "entity-clustered, label-stratified bootstrap. precision@50 is computed per year and averaged; "
-          "'random' = the cohort base rate.", ""]
+          "Pooled AUC compares positives and controls only within the same as_of cohort (case-cohort weights); 95% CIs "
+          "from an entity-clustered, label-stratified bootstrap. **P@20 / P@50 / R@50 are computed inside the "
+          "case-cohort sample** (all funded companies + a small random sample of controls), so they overstate real-world "
+          f"precision; the **top {TOP_SHARE:.0%} recall and lift are pool-weighted** (controls weighted by 1/inclusion "
+          "probability) and estimate what a radar user would see. Lead time = months from the first 1 January on which "
+          f"the company was in the pool's top {TOP_SHARE:.0%} to its first funding.", ""]
     def col(m, c):
         return m[c] if c in m else pd.Series([np.nan] * len(m), index=m.index)
 
@@ -243,7 +255,9 @@ def build(tag: str = "main") -> str:
             "P@20 [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(col(m, "p_at_20"), col(m, "p_at_20_lo"), col(m, "p_at_20_hi"))],
             "P@50 [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(m["p_at_50"], col(m, "p_at_50_lo"), col(m, "p_at_50_hi"))],
             "R@50 [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(col(m, "recall_at_50"), col(m, "recall_at_50_lo"), col(m, "recall_at_50_hi"))],
-            "base rate": m["p_at_50_random"].round(3),
+            "sample base rate": m["p_at_50_random"].round(3),
+            f"top {TOP_SHARE:.0%} recall [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(col(m, "top_recall"), col(m, "top_recall_lo"), col(m, "top_recall_hi"))],
+            f"top {TOP_SHARE:.0%} lift [95% CI]": [fmt_ci(a, l, h, 1) for a, l, h in zip(col(m, "top_lift"), col(m, "top_lift_lo"), col(m, "top_lift_hi"))],
             "median lead (months)": m["median_lead_months"].round(1),
             "exploratory": m["exploratory"]})
         L += [f"**Subset: {sub}**", "", t.to_markdown(index=False), ""]
@@ -325,7 +339,7 @@ def build(tag: str = "main") -> str:
         if len(h):
             h["htgf_invest_year"] = pd.to_datetime(h["funding_date"]).dt.year
             h["flagged_on"] = pd.to_datetime(h["first_flag_as_of"]).dt.date
-            L += [f"HTGF portfolio companies in the evaluated cohorts: **{len(h)}**; flagged in the top-{TOP_K} before "
+            L += [f"HTGF portfolio companies in the evaluated cohorts: **{len(h)}**; flagged in the pool's top {TOP_SHARE:.0%} before "
                   f"HTGF's investment year: **{int(h['flagged'].sum())}**. HTGF dates are year-precise "
                   f"('Invested since'), so lead time is reported in whole years.", "",
                   h[["entity_id", "htgf_invest_year", "flagged", "flagged_on", "best_rank", "cohort_size"]]

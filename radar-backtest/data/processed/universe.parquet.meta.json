@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-11-20T21:48:25.873715+00:00",
+  "file": "data/processed/universe.parquet",
+  "git_sha": "abee174bde8ed2e1552289505939aa8da629551a",
+  "inputs": [
+    {
+      "path": "data/processed/github_org_sample.parquet",
+      "sha256": "58ada10507a718a1ec3af70aea7bd3fb203cc095e54f41be0d01d3b6478adb98"
+    },
+    {
+      "path": "data/processed/cordis_companies.parquet",
+      "sha256": "f418aafe3326bf80d44e3d058abf818a218d97db75e7cd2f3d312754c9e591d1"
+    }
+  ],
+  "notes": "Outcome-blind pool sample B. Never reads labels.",
+  "params": {
+    "cordis_fraction": 0.15,
+    "seed": 20251120
+  },
+  "python": "3.13.18",
+  "rows": 393,
+  "script": "scripts/select_controls.py",
+  "sha256": "ced50cdb067e3d6e4b22acbfdad143433bd7d74b962984949be31bae0844d01e",
+  "sources": []
+}

@@ -65,3 +65,15 @@ def test_mean_recall_at_k():
     df = pd.DataFrame({"as_of": [1, 1, 1, 2, 2], "label": [1, 1, 0, 1, 0], "score": [3, 1, 2, 5, 4]})
     # year 1: top-1 = score 3 (pos) -> recall 1/2; year 2: top-1 = pos -> 1/1  => mean 0.75
     assert m.mean_recall_at_k(df, 1, seed=0) == pytest.approx(0.75)
+
+
+def test_weighted_top_share():
+    # 2 positives (weight 1) and 4 controls (weight 10 each): total weight 42; top 10% = 4.2 weight
+    scores = np.array([0.9, 0.8, 0.7, 0.6, 0.5, 0.4])
+    w = np.array([1, 1, 10, 10, 10, 10], float)
+    mask = m.weighted_top_mask(scores, w, 0.10, seed=0)
+    assert mask.tolist() == [True, True, False, False, False, False]
+    df = pd.DataFrame({"as_of": 1, "label": [1, 1, 0, 0, 0, 0], "score": scores, "weight": w})
+    r = m.top_share_metrics(df, 0.10, seed=0)
+    assert r["precision"] == 1.0 and r["recall"] == 1.0
+    assert r["lift"] == pytest.approx(1.0 / (2 / 42))

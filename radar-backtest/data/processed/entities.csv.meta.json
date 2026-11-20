@@ -1,0 +1,42 @@
+{
+  "created_at": "2026-11-20T21:51:25.468104+00:00",
+  "file": "data/processed/entities.csv",
+  "git_sha": "abee174bde8ed2e1552289505939aa8da629551a",
+  "inputs": [
+    {
+      "path": "data/processed/universe.parquet",
+      "sha256": "ced50cdb067e3d6e4b22acbfdad143433bd7d74b962984949be31bae0844d01e"
+    },
+    {
+      "path": "data/labels/companies.csv",
+      "sha256": "4cfb3b1321d35e791fa65f01961881a7430763e388b179ac1e58b7d9859fd324"
+    },
+    {
+      "path": "data/processed/entity_github_org.parquet",
+      "sha256": "cf27d5efcccce4d29d272160e045252b68a1bae2e8e8cc7ccb179fc8511c6cf6"
+    },
+    {
+      "path": "data/processed/cordis_companies.parquet",
+      "sha256": "37dabc2f89f90d9a0595814c5e667ad695b7b28ef4ac9db7c3bd0d761ad75ce4"
+    },
+    {
+      "path": "data/processed/gh_org_span.parquet",
+      "sha256": "d286fefaf885fb8a09a5a09cb8141112ea8b5152a05028a86750155872018653"
+    },
+    {
+      "path": "data/processed/entity_cordis.parquet",
+      "sha256": "e38cbed4445179528563983f3f17d949fe4e1f1113ca87a3249de620c0da03ca"
+    },
+    {
+      "path": "data/processed/cordis_participations.parquet",
+      "sha256": "6b9b70f3bd999ab2281bb315acce77ca9bd15ff3bb95e54701d2cd5a122a511a"
+    }
+  ],
+  "notes": "One row per domain. Only high-confidence links. Country from ccTLD else CORDIS (symmetric).",
+  "params": {},
+  "python": "3.13.18",
+  "rows": 6996,
+  "script": "scripts/resolve_entities.py build",
+  "sha256": "2b41f6dda84c0c632aa285200d6c2a440464a3075e8ab632a9fbfc940c3aad3b",
+  "sources": []
+}

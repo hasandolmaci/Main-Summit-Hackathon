@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-11-20T21:48:25.983182+00:00",
+  "file": "data/processed/org_search_input.csv",
+  "git_sha": "abee174bde8ed2e1552289505939aa8da629551a",
+  "inputs": [
+    {
+      "path": "data/processed/universe.parquet",
+      "sha256": "ced50cdb067e3d6e4b22acbfdad143433bd7d74b962984949be31bae0844d01e"
+    },
+    {
+      "path": "data/labels/companies.csv",
+      "sha256": "4cfb3b1321d35e791fa65f01961881a7430763e388b179ac1e58b7d9859fd324"
+    }
+  ],
+  "notes": "Search input for the staged GitHub org search; identical procedure for every entity.",
+  "params": {},
+  "python": "3.13.18",
+  "rows": 6996,
+  "script": "scripts/resolve_entities.py targets",
+  "sha256": "d690cd38dc861aea5cd416e74bf6992b10da2da23a2dc13db64ff35cabd7df5a",
+  "sources": []
+}

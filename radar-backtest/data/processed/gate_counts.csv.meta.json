@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-11-20T21:51:35.912123+00:00",
+  "file": "data/processed/gate_counts.csv",
+  "git_sha": "abee174bde8ed2e1552289505939aa8da629551a",
+  "inputs": [
+    {
+      "path": "data/processed/entities.csv",
+      "sha256": "2b41f6dda84c0c632aa285200d6c2a440464a3075e8ab632a9fbfc940c3aad3b"
+    },
+    {
+      "path": "data/labels/companies.csv",
+      "sha256": "4cfb3b1321d35e791fa65f01961881a7430763e388b179ac1e58b7d9859fd324"
+    }
+  ],
+  "notes": null,
+  "params": {},
+  "python": "3.13.18",
+  "rows": 28,
+  "script": "scripts/gate.py",
+  "sha256": "16e37f17b422f5a6b74e8cc0fdca0bd5caa231083584333dd7c43d4541ea3271",
+  "sources": []
+}

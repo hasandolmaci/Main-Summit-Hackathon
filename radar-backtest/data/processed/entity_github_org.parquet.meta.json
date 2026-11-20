@@ -1,16 +1,16 @@
 {
-  "created_at": "2026-11-20T20:57:52.504361+00:00",
+  "created_at": "2026-11-20T21:48:39.240920+00:00",
   "file": "data/processed/entity_github_org.parquet",
-  "git_sha": "e145b0fc0fb2b22174b94939313cf0efc43ae52b",
+  "git_sha": "abee174bde8ed2e1552289505939aa8da629551a",
   "inputs": [
     {
       "path": "data/processed/github_owners.parquet",
-      "sha256": "3cec3436d691a0dcfb9ac2e87f10e85ab86b2973aeee88109ed8bb7e82baf9d1"
+      "sha256": "cc569e013c84d65fc2a641e14a73f00514a36ba08d70b9f5f7db7042a1b2633d"
     }
   ],
   "notes": "Entity -> GitHub org via staged search (tier 1 exact, 2 affixes, 3 rest): GH Archive owner activity (org_like) -> ecosyste.ms kind == 'organization' -> login_rule. Unresolved and held entities are absent. org_first_event_ts = first non-bot GH Archive event on the org's repos (public time); the website used for matching is the current ecosyste.ms value.",
   "params": {
-    "entities_searched_this_run": 6607,
+    "entities_searched_this_run": 6996,
     "licence_ecosystems": "CC BY-SA 4.0 (ecosyste.ms open data; attribution: ecosyste.ms)",
     "org_like_personal_ratio": 0.01,
     "orgish_actor_types": [
@@ -23,9 +23,9 @@
     ]
   },
   "python": "3.13.18",
-  "rows": 785,
+  "rows": 1174,
   "script": "scripts/sources/github_owners.py",
-  "sha256": "2af20d992b312fc31f5f08b66585fca325a6ab4ba8d5c10811b6cf64dfef2c2b",
+  "sha256": "cf27d5efcccce4d29d272160e045252b68a1bae2e8e8cc7ccb179fc8511c6cf6",
   "sources": [
     "https://play.clickhouse.com/?user=play",
     "https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/<login>"

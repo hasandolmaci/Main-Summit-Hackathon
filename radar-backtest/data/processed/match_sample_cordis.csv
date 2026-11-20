@@ -1,0 +1,5 @@
+entity_id,organisation_id,match_method,match_key,match_confidence,name,country,github_org,github_display_name,"is_correct (y/n, human)"
+uninett.no,999772793,name_country,uninett,high,UNINETT AS,NO,Uninett,Uninett,
+sovity.de,884454343,name_country,sovity,high,SOVITY GMBH,DE,sovity,sovity,
+3dgi.nl,888939914,name_country,3dgi,high,3DGI,NL,3DGI,3DGI,
+pulsar-photonics.de,935117928,name_country,pulsarphotonics,high,PULSAR PHOTONICS GMBH,DE,Pulsar-Photonics,Pulsar Photonics,

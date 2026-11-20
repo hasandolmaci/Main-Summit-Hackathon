@@ -27,7 +27,8 @@ from sklearn.linear_model import LogisticRegression
 from .build_snapshots import FEATURES, HAS_FLAGS
 from .lib.config import PROCESSED, RESULTS, as_of_date, cfg, get_logger, guard_years, seed
 from .lib.meta import write_meta
-from .lib.metrics import ci, cluster_bootstrap, mean_precision_at_k, mean_recall_at_k, pooled_auc, rank_order
+from .lib.metrics import (ci, cluster_bootstrap, mean_precision_at_k, mean_recall_at_k, pooled_auc, rank_order,
+                          top_share_metrics, weighted_top_mask)
 
 log = get_logger("backtest")
 
@@ -142,11 +143,12 @@ def score_year(y: int, snaps: pd.DataFrame, refs: pd.DataFrame, features=FEATURE
     return pd.concat(out, ignore_index=True), coefs
 
 
-def lead_times(pred: pd.DataFrame, k: int, s: int) -> pd.Series:
-    """Months between the first as_of at which a funded entity is in the top-k and its funding date."""
+def lead_times(pred: pd.DataFrame, share: float, s: int) -> pd.Series:
+    """Months between the first as_of at which a funded entity is in the pool-equivalent top `share` and its funding."""
     first_top = {}
-    for (method, a), g in pred.groupby(["method", "as_of"]):
-        top = g.iloc[rank_order(g["score"].values, s)[:k]]
+    for i, ((method, a), g) in enumerate(pred.groupby(["method", "as_of"])):
+        m = weighted_top_mask(g["score"].to_numpy(float), g["weight"].to_numpy(float), share, s + i)
+        top = g[m]
         for r in top[top["label"] == 1].itertuples():
             key = (method, r.entity_id)
             if key not in first_top or a < first_top[key][0]:
@@ -157,6 +159,7 @@ def lead_times(pred: pd.DataFrame, k: int, s: int) -> pd.Series:
 
 
 def evaluate(pred: pd.DataFrame, reps: int, s: int, min_pos_ci: int = 15) -> pd.DataFrame:
+    share = float(cfg().get("evaluation", {}).get("top_share", 0.10))
     rows = []
     dach = pred["dach"] if "dach" in pred else pd.Series(False, index=pred.index)
     subsets = {"all": pred, "europe": pred[pred["europe"]], "dach": pred[dach.astype(bool)],
@@ -170,6 +173,10 @@ def evaluate(pred: pd.DataFrame, reps: int, s: int, min_pos_ci: int = 15) -> pd.
                  "auc": pooled_auc(g), "p_at_50": mean_precision_at_k(g, 50, s),
                  "p_at_20": mean_precision_at_k(g, 20, s), "recall_at_50": mean_recall_at_k(g, 50, s),
                  "p_at_50_random": float(g.groupby("as_of")["label"].mean().mean())}
+            ts = top_share_metrics(g, share, s)
+            r.update({"top_share": share, "top_precision_w": ts["precision"], "top_recall": ts["recall"],
+                      "top_lift": ts["lift"],
+                      "base_rate_w": float((g["weight"] * g["label"]).sum() / g["weight"].sum())})
             if npos >= min_pos_ci and reps > 0:
                 b = cluster_bootstrap(g, pooled_auc, reps, s)
                 r["auc_lo"], r["auc_hi"] = ci(b)
@@ -180,10 +187,14 @@ def evaluate(pred: pd.DataFrame, reps: int, s: int, min_pos_ci: int = 15) -> pd.
                 r["p_at_20_lo"], r["p_at_20_hi"] = ci(b3)
                 b4 = cluster_bootstrap(g, lambda x: mean_recall_at_k(x, 50, s), nb, s + 3)
                 r["recall_at_50_lo"], r["recall_at_50_hi"] = ci(b4)
+                b5 = cluster_bootstrap(g, lambda x: top_share_metrics(x, share, s)["recall"], nb, s + 4)
+                r["top_recall_lo"], r["top_recall_hi"] = ci(b5)
+                b6 = cluster_bootstrap(g, lambda x: top_share_metrics(x, share, s)["lift"], nb, s + 5)
+                r["top_lift_lo"], r["top_lift_hi"] = ci(b6)
             r["exploratory"] = npos < cfg()["min_positives"]["exploratory_below"]
             rows.append(r)
     m = pd.DataFrame(rows)
-    lt = lead_times(pred, 50, s)
+    lt = lead_times(pred, share, s)
     m["median_lead_months"] = m.apply(lambda r: lt.get(r["method"], np.nan) if r["subset"] == "all" else np.nan, axis=1)
     return m
 

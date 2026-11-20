@@ -56,6 +56,11 @@ bootstrap:
   reps: 1000
   ci: 0.95
 
+evaluation:
+  # Pre-specified before any result: 'flagged' = in the pool-equivalent top share of a cohort, i.e. walking down the
+  # score ranking until the case-cohort weights (1/inclusion_prob for controls, 1 for cases) reach this share.
+  top_share: 0.10
+
 min_positives:
   target: 100
   exploratory_below: 30

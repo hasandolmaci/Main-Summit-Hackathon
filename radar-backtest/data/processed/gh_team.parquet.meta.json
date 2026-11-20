@@ -1,26 +1,19 @@
 {
-  "created_at": "2026-11-20T19:28:58.066066+00:00",
+  "created_at": "2026-11-20T21:49:47.184946+00:00",
   "file": "data/processed/gh_team.parquet",
-  "git_sha": "6187ee2b7e20641426541626b61e6a8e8c7eb994",
-  "inputs": [
-    {
-      "path": "data/raw/gharchive/team_b54e894f.tsv.gz",
-      "sha256": "c842328274f214c4a7319d64e6984453e3b4dbb5e1bcfa2c9829285cd49cd5e8"
-    }
-  ],
-  "notes": "Team = actors with >= 1 PushEvent to an org-owned repo; first_push_ts = min(created_at). actor_hash = sha256(lower(login))[:16]; raw logins only in data/raw/gharchive/team_*.tsv.gz (inputs).",
+  "git_sha": "abee174bde8ed2e1552289505939aa8da629551a",
+  "inputs": [],
+  "notes": "first push per non-bot actor (hashed) per org",
   "params": {
-    "bots_regex": "(\\[bot\\]$|-bot$|^dependabot|^renovate|^github-actions|^greenkeeper)",
-    "chunk": 500,
-    "max_rows": 500000,
-    "n_orgs": 5,
-    "orgs_sha256": "8930d6d86d1a539f861d4a59b5789b8bfbcecc8fb4359230c5cb6e264db79375"
+    "org_chunk": 800,
+    "orgs": 1174,
+    "until": "2020-01-01"
   },
   "python": "3.13.18",
-  "rows": 2794,
-  "script": "scripts/sources/gharchive.py team",
-  "sha256": "41419b45bdcf24b6010c82fc6483c65d3e71c693ed911f96cc31b6fec9009150",
+  "rows": 12993,
+  "script": "scripts/sources/gh_features.py",
+  "sha256": "230c86ce530fb5626fa7ba9aab5eefd43e9acd9bbcf77646b1f3566120e7d071",
   "sources": [
-    "https://play.clickhouse.com/?user=play"
+    "play.clickhouse.com github_events (GH Archive mirror)"
   ]
 }

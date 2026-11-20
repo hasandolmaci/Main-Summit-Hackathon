@@ -1,0 +1,37 @@
+# Gate check
+
+Positives (label = first funding in [as_of, as_of+24m)) and outcome-blind controls (B) per as_of year. Labels complete up to as_of 2024.
+
+|   as_of | subset   | labels_complete   |   positives |   controls_B |   pos_via_github |   pos_via_cordis |   cov_github_pos |   cov_github_ctrl |   cov_grant_pos |   cov_grant_ctrl |   grant1_pos |   grant1_ctrl |   weighted_base_rate |
+|--------:|:---------|:------------------|------------:|-------------:|-----------------:|-----------------:|-----------------:|------------------:|----------------:|-----------------:|-------------:|--------------:|---------------------:|
+|    2012 | all      | True              |           1 |           32 |                1 |                0 |                1 |                 1 |           0     |            0.188 |            0 |         0.031 |                0.001 |
+|    2012 | europe   | True              |           0 |            6 |                0 |                0 |              nan |                 1 |         nan     |            1     |          nan |         0     |                0     |
+|    2013 | all      | True              |           2 |           73 |                2 |                0 |                1 |                 1 |           0     |            0.178 |            0 |         0.014 |                0.001 |
+|    2013 | europe   | True              |           0 |           13 |                0 |                0 |              nan |                 1 |         nan     |            1     |          nan |         0     |                0     |
+|    2014 | all      | True              |           6 |          133 |                6 |                0 |                1 |                 1 |           0     |            0.135 |            0 |         0.008 |                0.001 |
+|    2014 | europe   | True              |           0 |           18 |                0 |                0 |              nan |                 1 |         nan     |            1     |          nan |         0     |                0     |
+|    2015 | all      | True              |           9 |          194 |                9 |                0 |                1 |                 1 |           0     |            0.129 |            0 |         0.005 |                0.001 |
+|    2015 | europe   | True              |           0 |           25 |                0 |                0 |              nan |                 1 |         nan     |            1     |          nan |         0     |                0     |
+|    2016 | all      | True              |           7 |          231 |                7 |                0 |                1 |                 1 |           0     |            0.13  |            0 |         0.004 |                0     |
+|    2016 | europe   | True              |           0 |           30 |                0 |                0 |              nan |                 1 |         nan     |            1     |          nan |         0     |                0     |
+|    2017 | all      | True              |           8 |          221 |                8 |                0 |                1 |                 1 |           0     |            0.118 |            0 |         0     |                0     |
+|    2017 | europe   | True              |           0 |           26 |                0 |                0 |              nan |                 1 |         nan     |            1     |          nan |         0     |                0     |
+|    2018 | all      | True              |           6 |          200 |                6 |                0 |                1 |                 1 |           0     |            0.115 |            0 |         0     |                0     |
+|    2018 | europe   | True              |           0 |           23 |                0 |                0 |              nan |                 1 |         nan     |            1     |          nan |         0     |                0     |
+|    2019 | all      | True              |           8 |          149 |                8 |                0 |                1 |                 1 |           0.125 |            0.121 |            0 |         0.007 |                0     |
+|    2019 | europe   | True              |           1 |           18 |                1 |                0 |                1 |                 1 |           1     |            1     |            0 |         0.056 |                0     |
+|    2020 | all      | True              |          15 |          127 |               15 |                0 |                1 |                 1 |           0.067 |            0.126 |            0 |         0.008 |                0.001 |
+|    2020 | europe   | True              |           1 |           15 |                1 |                0 |                1 |                 1 |           1     |            1     |            0 |         0.067 |                0     |
+|    2021 | all      | True              |           6 |           92 |                6 |                0 |                1 |                 1 |           0.167 |            0.141 |            0 |         0.011 |                0     |
+|    2021 | europe   | True              |           1 |           12 |                1 |                0 |                1 |                 1 |           1     |            1     |            0 |         0.083 |                0     |
+|    2022 | all      | True              |           1 |           62 |                1 |                0 |                1 |                 1 |           0     |            0.145 |            0 |         0.016 |                0     |
+|    2022 | europe   | True              |           0 |            8 |                0 |                0 |              nan |                 1 |         nan     |            1     |          nan |         0.125 |                0     |
+|    2023 | all      | True              |           0 |           36 |                0 |                0 |              nan |                 1 |         nan     |            0.139 |          nan |         0.028 |                0     |
+|    2023 | europe   | True              |           0 |            4 |                0 |                0 |              nan |                 1 |         nan     |            1     |          nan |         0.25  |                0     |
+|    2024 | all      | True              |           0 |           19 |                0 |                0 |              nan |                 1 |         nan     |            0.211 |          nan |         0     |                0     |
+|    2024 | europe   | True              |           0 |            3 |                0 |                0 |              nan |                 1 |         nan     |            1     |          nan |         0     |                0     |
+|    2025 | all      | False             |           0 |            0 |                0 |                0 |              nan |               nan |         nan     |          nan     |          nan |       nan     |              nan     |
+|    2025 | europe   | False             |           0 |            0 |                0 |                0 |              nan |               nan |         nan     |          nan     |          nan |       nan     |              nan     |
+
+Pooled covered positives in configured selection years [2015, 2019]: 38
+Target ≥ 100; below 30 → exploratory only.

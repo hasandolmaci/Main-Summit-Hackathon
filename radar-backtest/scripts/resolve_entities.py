@@ -122,10 +122,17 @@ def add_pool_entry(ent: pd.DataFrame) -> pd.DataFrame:
         rec = b["created_after"].notna().values & (b["created_after"].values >
                                                    (pd.to_datetime(ent["gh_first_event_ts"], utc=True) + slack).values)
         ent["gh_login_recycled"] = rec
-        for c in ["github_org", "github_org_created_at", "github_match_method", "github_match_confidence",
-                  "github_tier", "gh_pool_entry_ts"]:
-            if c in ent:
-                ent.loc[rec, c] = None if ent[c].dtype == object else pd.NaT
+        for c in ["github_org", "github_org_uuid", "github_org_created_at", "github_match_method",
+                  "github_match_confidence", "github_tier", "gh_pool_entry_ts"]:
+            if c not in ent or not rec.any():
+                continue
+            if pd.api.types.is_datetime64_any_dtype(ent[c]):
+                ent.loc[rec, c] = pd.NaT
+            elif pd.api.types.is_numeric_dtype(ent[c]):
+                ent.loc[rec, c] = np.nan
+            else:
+                ent[c] = ent[c].astype(object)
+                ent.loc[rec, c] = None
     return ent
 
 

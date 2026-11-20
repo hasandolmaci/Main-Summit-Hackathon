@@ -44,6 +44,38 @@ def rank_order(scores, seed: int) -> np.ndarray:
     return np.lexsort((tie, -s))
 
 
+def weighted_top_mask(scores, w, share: float, seed: int) -> np.ndarray:
+    """Rows in the pool-equivalent top `share`: walk down the (seed-tie-broken) ranking until the cumulative
+    case-cohort weight reaches share * total weight. Always includes at least the first row."""
+    w = np.asarray(w, dtype=float)
+    order = rank_order(scores, seed)
+    cw = np.cumsum(w[order])
+    k = int(np.searchsorted(cw, share * w.sum(), side="right"))
+    k = min(max(k, 1), len(order))
+    mask = np.zeros(len(order), dtype=bool)
+    mask[order[:k]] = True
+    return mask
+
+
+def top_share_metrics(df: pd.DataFrame, share: float, seed: int, score: str = "score",
+                      weight: str = "weight") -> dict:
+    """Pool-weighted precision / recall / lift in the top `share`, per cohort, averaged over cohorts with positives."""
+    prec, rec, lift = [], [], []
+    for i, (_, g) in enumerate(df.groupby("as_of")):
+        y = g["label"].to_numpy()
+        if y.sum() == 0:
+            continue
+        w = g[weight].to_numpy(float)
+        m = weighted_top_mask(g[score].to_numpy(float), w, share, seed + i)
+        p = float((w[m] * y[m]).sum() / w[m].sum())
+        base = float((w * y).sum() / w.sum())
+        prec.append(p)
+        rec.append(float(y[m].sum() / y.sum()))
+        lift.append(p / base if base > 0 else np.nan)
+    f = lambda v: float(np.nanmean(v)) if v else float("nan")  # noqa: E731
+    return {"precision": f(prec), "recall": f(rec), "lift": f(lift)}
+
+
 def precision_at_k(y, scores, k: int, seed: int) -> float:
     y = np.asarray(y)
     if len(y) == 0:

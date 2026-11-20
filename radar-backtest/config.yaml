@@ -82,4 +82,7 @@ gharchive:
   backend: clickhouse         # clickhouse (free public mirror) | bigquery (needs GCP creds)
   clickhouse_url: "https://play.clickhouse.com/?user=play"
   bigquery_max_gb: 200        # refuse larger queries without explicit approval
+  until: "2020-01-01"         # event cut-off for feature queries (selection years + references);
+                              # locked test years need a later run, only when the user unlocks them
+  # The ClickHouse playground allows ~300e9 rows read per hour (~25 full scans): batch queries.
   bots_regex: "(\\[bot\\]$|-bot$|^dependabot|^renovate|^github-actions|^greenkeeper)"

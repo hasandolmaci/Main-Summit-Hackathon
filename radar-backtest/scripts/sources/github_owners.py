@@ -76,7 +76,8 @@ CLI
     .venv/bin/python -m scripts.sources.github_owners calibrate [--hours 2016-05-11-15 ...] [--per-class N]
   find input: CSV with entity_id[,names] ('|'-separated names or a JSON list; UTF-8 with or without BOM).
   --max-requests caps ecosyste.ms requests of the run; everything fetched is persisted, so rerunning continues.
-  Exit codes: 0 ok, 2 bad input, 3 a source is unavailable (rerun later; caches make reruns cheap).
+  Exit codes: 0 ok, 2 bad input or an existing output with other columns (scripts/sources/github.py writes the same
+  three paths; checked before any request), 3 a source is unavailable (rerun later; caches make reruns cheap).
 """
 from __future__ import annotations
 

@@ -74,19 +74,60 @@ FORMAT TSVWithNames"""
     return sql
 
 
-def first_year_activity(listing: pd.DataFrame, ch: gha.ClickHouse, chunk: int = 1200) -> pd.DataFrame:
-    rows = listing[["login", "first_event_ts"]].dropna().drop_duplicates("login").sort_values("login")
+def first_year_activity(listing: pd.DataFrame, ch: gha.ClickHouse, chunk: int = 2500) -> pd.DataFrame:
+    """Entry-rule statistics for the given owners (one full-table scan per chunk — mind the playground quota)."""
+    rows = listing[["login", "first_event_ts"]].dropna().drop_duplicates("login")
     out = []
     pairs = list(zip(rows["login"], pd.to_datetime(rows["first_event_ts"], utc=True)))
     for i in range(0, len(pairs), chunk):
         part = pairs[i:i + chunk]
-        df = ch.query("first_year_activity", sql_first_year_activity(part), CRIT_COLUMNS)
-        out.append(df)
+        out.append(ch.query("first_year_activity", sql_first_year_activity(part), CRIT_COLUMNS))
         log.info("first-year activity: %d/%d owners", min(i + chunk, len(pairs)), len(pairs))
     res = pd.concat(out, ignore_index=True) if out else pd.DataFrame(columns=CRIT_COLUMNS)
     for c in ("n_act_12m", "n_pushers_12m"):
         res[c] = pd.to_numeric(res[c]).astype("int64")
     return res
+
+
+def incremental_entry_scan(listing: pd.DataFrame, ch: gha.ClickHouse, target: int, pilot_m: int, min_act: int,
+                           min_pushers: int, chunk: int = 2500, fya=None) -> tuple[pd.DataFrame, dict]:
+    """Scan owners in hash-bucket order; a year stops as soon as buckets [0, m) hold >= target owners meeting the
+    entry rule. Returns (scanned owners with entry stats, {year: (m_Y, reached)}). Exact: for every year, ALL owners
+    with bucket < m_Y were scanned, so inclusion_prob = m_Y / 10000."""
+    fya = fya or first_year_activity
+    lst = listing.sort_values(["hash_bucket", "first_year", "login"]).reset_index(drop=True)
+    years = sorted(int(y) for y in lst["first_year"].unique())
+    active = set(years)
+    done_m = {y: (pilot_m, False) for y in years}
+    scanned = []
+    b = 0
+    while active and b < pilot_m:
+        batch, b_end = [], b
+        while b_end < pilot_m:                       # take whole buckets until the chunk is full
+            nxt = lst[(lst["hash_bucket"] == b_end) & lst["first_year"].isin(active)]
+            if batch and sum(len(x) for x in batch) + len(nxt) > chunk:
+                break
+            batch.append(nxt)
+            b_end += 1
+        part = pd.concat(batch, ignore_index=True) if batch else lst.iloc[0:0]
+        if len(part):
+            crit = fya(part, ch, chunk=max(chunk, len(part)))
+            part = part.merge(crit, on="login", how="left").fillna({"n_act_12m": 0, "n_pushers_12m": 0})
+            part["entry_ok"] = meets_entry_rule(part["n_act_12m"], part["n_pushers_12m"], min_act, min_pushers)
+            scanned.append(part)
+        b = b_end
+        allp = pd.concat(scanned, ignore_index=True) if scanned else lst.iloc[0:0].assign(entry_ok=False)
+        for y in sorted(active):
+            ok = allp[(allp["first_year"] == y) & allp["entry_ok"]]
+            m, reached = choose_m(ok["hash_bucket"].to_numpy(), target, b)   # only buckets < b are complete
+            if reached:
+                done_m[y] = (m, True)
+                active.discard(y)
+        log.info("entry scan: buckets < %d done; years still below target: %s", b, sorted(active))
+    for y in active:
+        done_m[y] = (b if b < pilot_m else pilot_m, False)
+    allp = pd.concat(scanned, ignore_index=True) if scanned else lst.iloc[0:0].assign(entry_ok=False)
+    return allp, done_m
 
 
 def meets_entry_rule(n_act, n_pushers, min_act: int, min_pushers: int) -> np.ndarray:
@@ -130,15 +171,13 @@ def run(years=None, per_year=None, max_requests=None) -> tuple[pd.DataFrame, pd.
     log.info("pool: listing org-like owners, buckets < %d, years %s", pc["pilot_m"], years)
     listing = gho.frame_sample_list(ch.query("owner_sample", gho.sql_owner_sample({y: pc["pilot_m"] for y in years}),
                                              gho.SAMPLE_RAW_COLUMNS))
-    crit = first_year_activity(listing, ch)
-    lst = listing.merge(crit, on="login", how="left").fillna({"n_act_12m": 0, "n_pushers_12m": 0})
-    lst["entry_ok"] = meets_entry_rule(lst["n_act_12m"], lst["n_pushers_12m"], pc["min_act"], pc["min_pushers"])
-    chosen, todo = {}, []
+    lst, chosen = incremental_entry_scan(listing, ch, target, pc["pilot_m"], pc["min_act"], pc["min_pushers"])
     for y in years:
-        sub = lst[(lst["first_year"] == y) & lst["entry_ok"]]
-        m, reached = choose_m(sub["hash_bucket"].to_numpy(), target, pc["pilot_m"])
-        chosen[y] = (m, reached)
-        todo += sub.loc[sub["hash_bucket"] < m, "login"].tolist()
+        chosen.setdefault(y, (pc["pilot_m"], False))
+    todo = []
+    for y in years:
+        m, _ = chosen[y]
+        todo += lst.loc[(lst["first_year"] == y) & lst["entry_ok"] & (lst["hash_bucket"] < m), "login"].tolist()
     log.info("pool: m per year %s; %d owners meet the entry rule -> ecosyste.ms lookups",
              {y: m for y, (m, _) in chosen.items()}, len(todo))
     budget = gho.Budget(max_requests) if max_requests else gho.Budget()

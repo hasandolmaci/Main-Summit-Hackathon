@@ -12475,3 +12475,1160 @@
 2026-11-20 20:26:17,444 INFO gharchive: query owner_activity_fd7bbd32 rows=5 0.00s cache=False
 2026-11-20 20:26:17,450 INFO gharchive: query owner_activity_befe13dd rows=5 0.00s cache=False
 2026-11-20 20:26:17,455 INFO gharchive: query owner_activity_3c0b07d4 rows=3 0.00s cache=False
+2026-11-20 20:26:17,494 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:26:17,573 WARNING github_owners: ecosyste.ms lookup failed for aa: HTTP_503
+2026-11-20 20:26:17,574 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:26:17,574 INFO github_owners: ecosyste.ms retry 1 for aa
+2026-11-20 20:26:17,574 INFO github_owners: ecosyste.ms retry 1 for bb
+2026-11-20 20:26:17,574 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:26:17,691 WARNING github_owners: ecosyste.ms lookup failed for x0: HTTP_503
+2026-11-20 20:26:17,691 WARNING github_owners: ecosyste.ms lookup failed for x1: HTTP_503
+2026-11-20 20:26:17,691 WARNING github_owners: ecosyste.ms lookup failed for x2: HTTP_503
+2026-11-20 20:26:17,702 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:17,707 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:17,758 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:17,763 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:17,819 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:17,824 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:17,888 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:17,913 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:17,918 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:17,965 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:17,970 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:18,022 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,027 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:18,087 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:18,102 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,108 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:18,155 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,159 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:18,212 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,217 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:18,279 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:18,295 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,300 INFO gharchive: query owner_activity_a0d16862 rows=1 0.00s cache=False
+2026-11-20 20:26:18,323 INFO github_owners: owner_activity: 17 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,328 INFO gharchive: query owner_activity_c9e2f8d8 rows=1 0.00s cache=False
+2026-11-20 20:26:18,353 INFO github_owners: owner_activity: 25 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,359 INFO gharchive: query owner_activity_c63dd396 rows=1 0.00s cache=False
+2026-11-20 20:26:18,389 INFO github_owners: find_org: 1 entities, 1 matched ({3: 1}), 0 held
+2026-11-20 20:26:18,421 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,427 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:26:18,438 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:26:18,438 INFO github_owners: ecosyste.ms retry 1 for acme
+2026-11-20 20:26:18,439 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:26:18,460 INFO github_owners: find_org: 1 entities, 0 matched ({}), 1 held
+2026-11-20 20:26:18,460 WARNING github_owners: find_org: 1 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:26:18,477 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,482 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:26:18,536 INFO github_owners: find_org: 1 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:26:18,564 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,570 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:18,618 INFO github_owners: owner_activity: 51 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,624 INFO gharchive: query owner_activity_64406a03 rows=1 0.00s cache=False
+2026-11-20 20:26:18,652 INFO github_owners: owner_activity: 50 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,659 INFO gharchive: query owner_activity_57f4a449 rows=1 0.00s cache=False
+2026-11-20 20:26:18,700 INFO github_owners: find_org: 8 entities, 1 matched ({1: 1}), 5 held
+2026-11-20 20:26:18,700 WARNING github_owners: find_org: 5 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:26:18,722 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,728 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:18,778 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,784 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:18,844 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,850 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:18,911 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:18,932 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,938 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:18,988 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:18,993 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:19,046 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:19,051 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:19,109 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:19,171 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:26:19,186 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:26:19,313 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:26:19,328 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:26:19,434 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:26:19,450 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:26:19,508 WARNING github_owners: sample: years [2014, 2015] have pending lookups (request cap / errors) and are NOT written; rerun
+2026-11-20 20:26:19,555 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:26:19,621 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.06s cache=False
+2026-11-20 20:26:19,764 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:19,769 INFO gharchive: query owner_activity_98d272c6 rows=1 0.00s cache=False
+2026-11-20 20:26:19,817 INFO github_owners: find_org: 2 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:26:27,432 INFO pool_sample: entry scan: buckets < 1 done; years still below target: [2014, 2015]
+2026-11-20 20:26:27,438 INFO pool_sample: entry scan: buckets < 2 done; years still below target: [2014]
+2026-11-20 20:26:27,444 INFO pool_sample: entry scan: buckets < 4 done; years still below target: []
+2026-11-20 20:26:39,701 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:26:39,701 INFO github_owners: owner_activity: 25 logins in 3 ClickHouse queries (~45 s if uncached)
+2026-11-20 20:26:39,708 INFO gharchive: query owner_activity_fd7bbd32 rows=5 0.00s cache=False
+2026-11-20 20:26:39,714 INFO gharchive: query owner_activity_befe13dd rows=5 0.00s cache=False
+2026-11-20 20:26:39,720 INFO gharchive: query owner_activity_3c0b07d4 rows=3 0.00s cache=False
+2026-11-20 20:26:39,761 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:26:39,859 WARNING github_owners: ecosyste.ms lookup failed for aa: HTTP_503
+2026-11-20 20:26:39,860 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:26:39,860 INFO github_owners: ecosyste.ms retry 1 for aa
+2026-11-20 20:26:39,860 INFO github_owners: ecosyste.ms retry 1 for bb
+2026-11-20 20:26:39,860 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:26:40,003 WARNING github_owners: ecosyste.ms lookup failed for x0: HTTP_503
+2026-11-20 20:26:40,003 WARNING github_owners: ecosyste.ms lookup failed for x1: HTTP_503
+2026-11-20 20:26:40,003 WARNING github_owners: ecosyste.ms lookup failed for x2: HTTP_503
+2026-11-20 20:26:40,019 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,026 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:40,077 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,085 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:40,164 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,173 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:40,245 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:40,273 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,279 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:40,341 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,347 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:40,411 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,417 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:40,485 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:40,503 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,509 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:40,562 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,569 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:40,623 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,629 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:40,693 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:40,711 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,717 INFO gharchive: query owner_activity_a0d16862 rows=1 0.00s cache=False
+2026-11-20 20:26:40,743 INFO github_owners: owner_activity: 17 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,749 INFO gharchive: query owner_activity_c9e2f8d8 rows=1 0.00s cache=False
+2026-11-20 20:26:40,778 INFO github_owners: owner_activity: 25 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,784 INFO gharchive: query owner_activity_c63dd396 rows=1 0.00s cache=False
+2026-11-20 20:26:40,834 INFO github_owners: find_org: 1 entities, 1 matched ({3: 1}), 0 held
+2026-11-20 20:26:40,880 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,888 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:26:40,908 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:26:40,908 INFO github_owners: ecosyste.ms retry 1 for acme
+2026-11-20 20:26:40,908 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:26:40,938 INFO github_owners: find_org: 1 entities, 0 matched ({}), 1 held
+2026-11-20 20:26:40,938 WARNING github_owners: find_org: 1 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:26:40,957 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:40,962 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:26:41,013 INFO github_owners: find_org: 1 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:26:41,041 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:41,047 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:41,096 INFO github_owners: owner_activity: 51 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:41,102 INFO gharchive: query owner_activity_64406a03 rows=1 0.00s cache=False
+2026-11-20 20:26:41,138 INFO github_owners: owner_activity: 50 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:41,145 INFO gharchive: query owner_activity_57f4a449 rows=1 0.00s cache=False
+2026-11-20 20:26:41,183 INFO github_owners: find_org: 8 entities, 1 matched ({1: 1}), 5 held
+2026-11-20 20:26:41,183 WARNING github_owners: find_org: 5 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:26:41,205 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:41,210 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:41,273 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:41,280 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:41,334 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:41,340 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:41,422 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:41,449 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:41,457 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:41,508 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:41,514 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:41,568 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:41,575 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:41,640 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:41,707 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:26:41,722 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:26:41,844 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:26:41,862 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:26:41,985 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:26:42,004 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:26:42,067 WARNING github_owners: sample: years [2014, 2015] have pending lookups (request cap / errors) and are NOT written; rerun
+2026-11-20 20:26:42,169 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:26:42,185 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:26:42,351 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:42,359 INFO gharchive: query owner_activity_98d272c6 rows=1 0.00s cache=False
+2026-11-20 20:26:42,439 INFO github_owners: find_org: 2 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:26:42,729 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,729 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,729 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,729 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,732 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,732 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,732 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,732 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,732 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,732 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,732 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,733 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,733 ERROR github: lookup failed for bad
+2026-11-20 20:26:42,742 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:26:42,788 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:26:42,855 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,855 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,855 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,855 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,855 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,855 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,856 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,857 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,857 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,857 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,857 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,857 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,857 ERROR github: lookup failed for x0
+2026-11-20 20:26:42,857 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,858 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,858 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,858 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,858 ERROR github: lookup failed for x1
+2026-11-20 20:26:42,858 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,858 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,858 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,858 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,859 ERROR github: lookup failed for x10
+2026-11-20 20:26:42,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,859 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,860 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,860 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,860 ERROR github: lookup failed for x11
+2026-11-20 20:26:42,860 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,860 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,860 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,860 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,860 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,860 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,860 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,861 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,861 ERROR github: lookup failed for x12
+2026-11-20 20:26:42,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,861 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,862 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,862 ERROR github: lookup failed for x13
+2026-11-20 20:26:42,862 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,862 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,862 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,862 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,862 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,862 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,862 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,862 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,862 ERROR github: lookup failed for x14
+2026-11-20 20:26:42,863 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,863 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,863 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,863 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,863 ERROR github: lookup failed for x15
+2026-11-20 20:26:42,864 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,864 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,864 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,864 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,864 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:26:42,864 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:26:42,864 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:26:42,864 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:26:42,878 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:26:42,920 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:26:42,999 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:26:43,070 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:26:43,093 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:26:43,119 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:26:43,159 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:26:43,204 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:26:43,205 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:26:43,234 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:26:43,276 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:26:43,318 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:26:43,321 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:26:43,350 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:26:43,390 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:26:43,436 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:26:43,443 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:26:43,466 INFO github: find_org tier 2: 1 unresolved entities, 17 logins
+2026-11-20 20:26:43,492 INFO github: find_org tier 3: 1 unresolved entities, 25 logins
+2026-11-20 20:26:43,526 INFO github: find_org: 1 entities, 1 matched ({3: 1})
+2026-11-20 20:26:43,546 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:26:43,551 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:43,551 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:43,551 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:43,551 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:43,551 ERROR github: lookup failed for acme
+2026-11-20 20:26:43,558 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:26:43,571 INFO github: find_org: 1 entities, 0 matched ({})
+2026-11-20 20:26:43,572 WARNING github: find_org: 1 entities held back because a candidate lookup failed (note lookup_error_tier<N> in the search log); rerun find for them
+2026-11-20 20:26:43,592 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:26:43,630 INFO github: find_org: 1 entities, 1 matched ({1: 1})
+2026-11-20 20:26:43,664 INFO github: id bound 2008: first_id=9994 (2008-01-01 00:44:25+00:00) after 28 calls
+2026-11-20 20:26:43,671 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 35 calls
+2026-11-20 20:26:43,677 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:26:43,757 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:26:43,764 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:26:43,770 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:26:43,777 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:26:44,300 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:26:44,320 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:26:44,326 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:26:44,333 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:26:44,341 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:26:44,872 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:26:44,898 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:26:44,909 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:26:44,918 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:26:44,927 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:26:45,535 INFO github: sample: 560 orgs (186 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:26:45,547 WARNING gharchive: rejected 2 invalid login value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:26:45,564 WARNING gharchive: t: splitting chunk of 5 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:26:45,570 INFO gharchive: query t_725ab108 rows=2 0.00s cache=False
+2026-11-20 20:26:45,571 WARNING gharchive: t: splitting chunk of 3 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:26:45,577 INFO gharchive: query t_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:26:45,582 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:26:45,588 INFO gharchive: query t_044d23a2 rows=2 0.00s cache=False
+2026-11-20 20:26:45,594 INFO gharchive: query t2_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:26:45,594 WARNING gharchive: t2: splitting chunk of 2 (t2: 2 rows > 1)
+2026-11-20 20:26:45,600 INFO gharchive: query t2_9b383db9 rows=1 0.00s cache=False
+2026-11-20 20:26:45,605 INFO gharchive: query t2_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:26:45,661 INFO gharchive: query span_1dca1109 rows=2 0.00s cache=False
+2026-11-20 20:26:45,670 INFO gharchive: wrote /tmp/pytest-of-root/pytest-86/test_end_to_end_processed_outp0/span.parquet rows=2
+2026-11-20 20:26:45,677 INFO gharchive: query team_1ba97f53 rows=3 0.00s cache=False
+2026-11-20 20:26:45,690 INFO gharchive: wrote /tmp/pytest-of-root/pytest-86/test_end_to_end_processed_outp0/team.parquet rows=3
+2026-11-20 20:26:45,700 INFO gharchive: query daily_6c90f737 rows=3 0.00s cache=False
+2026-11-20 20:26:45,709 INFO gharchive: wrote /tmp/pytest-of-root/pytest-86/test_end_to_end_processed_outp0/daily.parquet rows=3
+2026-11-20 20:26:45,726 INFO gharchive: query ext_291805af rows=5 0.00s cache=False
+2026-11-20 20:26:45,742 INFO gharchive: wrote /tmp/pytest-of-root/pytest-86/test_end_to_end_processed_outp0/ext.parquet rows=5
+2026-11-20 20:26:45,766 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:26:45,777 INFO gharchive: wrote /tmp/pytest-of-root/pytest-86/test_external_refuses_unresolv0/team.parquet rows=3
+2026-11-20 20:26:46,425 INFO gharchive: query t_460f1c7d rows=4 0.00s cache=False
+2026-11-20 20:26:46,426 WARNING gharchive: t: splitting chunk of 4 (t: 4 rows > 2)
+2026-11-20 20:26:46,433 INFO gharchive: query t_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:26:46,441 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:26:46,454 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:26:46,470 INFO gharchive: wrote /tmp/pytest-of-root/pytest-86/test_external_refuses_team_wit0/team.parquet rows=3
+2026-11-20 20:26:46,490 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:26:46,497 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:26:46,504 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:26:46,522 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:26:46,529 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:26:46,536 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:26:52,807 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 20:26:52,842 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 20:26:52,862 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 20:26:52,882 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 20:26:52,902 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 20:26:52,922 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 20:26:52,956 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 20:26:52,975 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 20:26:52,993 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 20:26:53,011 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 20:26:53,030 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 20:26:53,088 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 20:26:53,109 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 20:26:53,237 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 20:26:53,259 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:26:53,274 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:26:53,443 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 20:26:53,465 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:26:53,480 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:26:53,536 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 20:26:53,542 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows (or could not be read for) automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Retry later if it was unreachable; otherwise download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 20:26:53,553 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-87/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (155 bytes)
+2026-11-20 20:26:53,553 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-87/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 20:26:53,558 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-87/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-87/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 20:26:53,560 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 20:26:53,563 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 20:26:53,749 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:26:53,752 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 20:26:53,756 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 20:26:53,760 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:26:53,765 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 20:26:53,768 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:26:53,769 INFO cordis_sparql: roles: 22 rows, 6 pages (0 from cache) 0.0s
+2026-11-20 20:26:53,777 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:26:53,780 INFO cordis_sparql: organisations@4 rows=4 0.00s cache=False
+2026-11-20 20:26:53,784 INFO cordis_sparql: organisations@8 rows=4 0.00s cache=False
+2026-11-20 20:26:53,784 INFO cordis_sparql: organisations: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:26:53,794 INFO cordis_sparql: organisation_types@0 rows=4 0.01s cache=False
+2026-11-20 20:26:53,798 INFO cordis_sparql: organisation_types@4 rows=4 0.00s cache=False
+2026-11-20 20:26:53,802 INFO cordis_sparql: organisation_types@8 rows=4 0.00s cache=False
+2026-11-20 20:26:53,802 INFO cordis_sparql: organisation_types: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:26:53,810 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:26:53,813 INFO cordis_sparql: projects@4 rows=4 0.00s cache=False
+2026-11-20 20:26:53,817 INFO cordis_sparql: projects@8 rows=4 0.00s cache=False
+2026-11-20 20:26:53,817 INFO cordis_sparql: projects: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:26:53,824 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:26:53,828 INFO cordis_sparql: grant_topic@4 rows=3 0.00s cache=False
+2026-11-20 20:26:53,829 INFO cordis_sparql: grant_topic: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:26:53,839 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:26:53,839 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:53,846 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:26:53,850 INFO cordis_sparql: grant_type@4 rows=3 0.00s cache=False
+2026-11-20 20:26:53,850 INFO cordis_sparql: grant_type: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:26:53,857 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:26:53,857 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,130 INFO cordis_sparql: roles@0 rows=10 0.00s cache=False
+2026-11-20 20:26:54,134 INFO cordis_sparql: roles@10 rows=10 0.00s cache=False
+2026-11-20 20:26:54,137 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:26:54,138 INFO cordis_sparql: roles: 22 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,145 INFO cordis_sparql: organisations@0 rows=10 0.00s cache=False
+2026-11-20 20:26:54,150 INFO cordis_sparql: organisations@10 rows=2 0.00s cache=False
+2026-11-20 20:26:54,150 INFO cordis_sparql: organisations: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,157 INFO cordis_sparql: organisation_types@0 rows=10 0.00s cache=False
+2026-11-20 20:26:54,160 INFO cordis_sparql: organisation_types@10 rows=2 0.00s cache=False
+2026-11-20 20:26:54,161 INFO cordis_sparql: organisation_types: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,168 INFO cordis_sparql: projects@0 rows=10 0.00s cache=False
+2026-11-20 20:26:54,171 INFO cordis_sparql: projects@10 rows=2 0.00s cache=False
+2026-11-20 20:26:54,171 INFO cordis_sparql: projects: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,179 INFO cordis_sparql: grant_topic@0 rows=7 0.00s cache=False
+2026-11-20 20:26:54,179 INFO cordis_sparql: grant_topic: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,186 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:26:54,186 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,193 INFO cordis_sparql: grant_type@0 rows=7 0.00s cache=False
+2026-11-20 20:26:54,194 INFO cordis_sparql: grant_type: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,201 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:26:54,201 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,366 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:26:54,366 INFO cordis_sparql: roles: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,375 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:26:54,375 INFO cordis_sparql: organisations: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,383 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 20:26:54,383 INFO cordis_sparql: organisation_types: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,391 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:26:54,392 INFO cordis_sparql: projects: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,401 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:26:54,401 INFO cordis_sparql: grant_topic: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,410 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:26:54,410 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,419 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:26:54,419 INFO cordis_sparql: grant_type: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,427 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:26:54,428 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:26:54,641 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 1/2
+2026-11-20 20:26:54,641 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 2/2
+2026-11-20 20:26:54,648 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:26:54,648 WARNING cordis_sparql: roles@4: HTTP 500 (Virtuoso 22023 Error SR014: Function ri_name_id needs a string); pausing 0s before retry 1/2
+2026-11-20 20:26:54,652 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 20:26:54,656 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 20:26:54,660 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:26:54,665 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 20:26:54,670 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:26:54,681 WARNING gharchive: rejected 2 invalid login value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:26:54,698 WARNING gharchive: t: splitting chunk of 5 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:26:54,706 INFO gharchive: query t_725ab108 rows=2 0.00s cache=False
+2026-11-20 20:26:54,706 WARNING gharchive: t: splitting chunk of 3 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:26:54,713 INFO gharchive: query t_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:26:54,721 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:26:54,728 INFO gharchive: query t_044d23a2 rows=2 0.00s cache=False
+2026-11-20 20:26:54,734 INFO gharchive: query t2_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:26:54,734 WARNING gharchive: t2: splitting chunk of 2 (t2: 2 rows > 1)
+2026-11-20 20:26:54,740 INFO gharchive: query t2_9b383db9 rows=1 0.00s cache=False
+2026-11-20 20:26:54,747 INFO gharchive: query t2_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:26:54,787 INFO gharchive: query span_1dca1109 rows=2 0.00s cache=False
+2026-11-20 20:26:54,795 INFO gharchive: wrote /tmp/pytest-of-root/pytest-87/test_end_to_end_processed_outp0/span.parquet rows=2
+2026-11-20 20:26:54,802 INFO gharchive: query team_1ba97f53 rows=3 0.00s cache=False
+2026-11-20 20:26:54,810 INFO gharchive: wrote /tmp/pytest-of-root/pytest-87/test_end_to_end_processed_outp0/team.parquet rows=3
+2026-11-20 20:26:54,817 INFO gharchive: query daily_6c90f737 rows=3 0.00s cache=False
+2026-11-20 20:26:54,825 INFO gharchive: wrote /tmp/pytest-of-root/pytest-87/test_end_to_end_processed_outp0/daily.parquet rows=3
+2026-11-20 20:26:54,840 INFO gharchive: query ext_291805af rows=5 0.00s cache=False
+2026-11-20 20:26:54,852 INFO gharchive: wrote /tmp/pytest-of-root/pytest-87/test_end_to_end_processed_outp0/ext.parquet rows=5
+2026-11-20 20:26:54,877 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:26:54,888 INFO gharchive: wrote /tmp/pytest-of-root/pytest-87/test_external_refuses_unresolv0/team.parquet rows=3
+2026-11-20 20:26:55,453 INFO gharchive: query t_460f1c7d rows=4 0.00s cache=False
+2026-11-20 20:26:55,453 WARNING gharchive: t: splitting chunk of 4 (t: 4 rows > 2)
+2026-11-20 20:26:55,459 INFO gharchive: query t_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:26:55,465 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:26:55,473 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:26:55,483 INFO gharchive: wrote /tmp/pytest-of-root/pytest-87/test_external_refuses_team_wit0/team.parquet rows=3
+2026-11-20 20:26:55,499 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:26:55,507 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:26:55,515 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:26:55,531 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:26:55,537 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:26:55,542 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:26:55,732 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,732 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,732 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,732 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,734 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,734 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,735 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,735 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,735 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,735 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,735 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,735 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,735 ERROR github: lookup failed for bad
+2026-11-20 20:26:55,744 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:26:55,785 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:26:55,868 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,868 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,869 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,870 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,870 ERROR github: lookup failed for x0
+2026-11-20 20:26:55,871 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,871 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,871 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,871 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,871 ERROR github: lookup failed for x1
+2026-11-20 20:26:55,872 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,872 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,872 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,872 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,872 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,872 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,872 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,872 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,872 ERROR github: lookup failed for x10
+2026-11-20 20:26:55,873 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,873 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,873 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,873 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,873 ERROR github: lookup failed for x11
+2026-11-20 20:26:55,873 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,873 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,873 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,873 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,874 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,874 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,874 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,874 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,874 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,874 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,874 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,874 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,874 ERROR github: lookup failed for x12
+2026-11-20 20:26:55,875 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,875 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,875 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,875 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,875 ERROR github: lookup failed for x13
+2026-11-20 20:26:55,875 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,875 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,875 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,875 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,875 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,875 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,876 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,876 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,876 ERROR github: lookup failed for x14
+2026-11-20 20:26:55,876 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,876 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,876 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,876 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,876 ERROR github: lookup failed for x15
+2026-11-20 20:26:55,877 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,877 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,877 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,877 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,877 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:26:55,877 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:26:55,877 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:26:55,877 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:26:55,890 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:26:55,930 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:26:55,991 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:26:56,057 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:26:56,081 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:26:56,124 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:26:56,194 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:26:56,242 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:26:56,244 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:26:56,283 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:26:56,329 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:26:56,374 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:26:56,377 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:26:56,409 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:26:56,465 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:26:56,508 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:26:56,516 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:26:56,538 INFO github: find_org tier 2: 1 unresolved entities, 17 logins
+2026-11-20 20:26:56,565 INFO github: find_org tier 3: 1 unresolved entities, 25 logins
+2026-11-20 20:26:56,607 INFO github: find_org: 1 entities, 1 matched ({3: 1})
+2026-11-20 20:26:56,626 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:26:56,631 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:26:56,631 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:26:56,631 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:26:56,631 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:26:56,631 ERROR github: lookup failed for acme
+2026-11-20 20:26:56,639 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:26:56,651 INFO github: find_org: 1 entities, 0 matched ({})
+2026-11-20 20:26:56,651 WARNING github: find_org: 1 entities held back because a candidate lookup failed (note lookup_error_tier<N> in the search log); rerun find for them
+2026-11-20 20:26:56,667 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:26:56,715 INFO github: find_org: 1 entities, 1 matched ({1: 1})
+2026-11-20 20:26:56,758 INFO github: id bound 2008: first_id=9994 (2008-01-01 00:44:25+00:00) after 28 calls
+2026-11-20 20:26:56,765 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 35 calls
+2026-11-20 20:26:56,771 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:26:56,852 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:26:56,858 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:26:56,864 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:26:56,873 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:26:57,161 INFO http: GET https://cordis.europa.eu/robots.txt params=None status=200 bytes=365
+2026-11-20 20:26:57,466 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:26:57,486 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:26:57,494 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:26:57,498 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n) WHERE { ?role a eurio:OrganisationRole }', 'format': 'text/csv'} status=200 bytes=11
+2026-11-20 20:26:57,500 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:26:57,507 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:26:58,019 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:26:58,036 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:26:58,043 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:26:58,049 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:26:58,056 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:26:58,503 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n) WHERE { ?role a eurio:OrganisationRole . FILTER NOT EXISTS { ?role eurio:isRoleOf ?o } }', 'format': 'text/csv'} status=200 bytes=6
+2026-11-20 20:26:58,541 INFO github: sample: 560 orgs (186 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:26:58,579 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:26:58,579 INFO github_owners: owner_activity: 25 logins in 3 ClickHouse queries (~45 s if uncached)
+2026-11-20 20:26:58,586 INFO gharchive: query owner_activity_fd7bbd32 rows=5 0.00s cache=False
+2026-11-20 20:26:58,592 INFO gharchive: query owner_activity_befe13dd rows=5 0.00s cache=False
+2026-11-20 20:26:58,598 INFO gharchive: query owner_activity_3c0b07d4 rows=3 0.00s cache=False
+2026-11-20 20:26:58,610 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:26:58,682 WARNING github_owners: ecosyste.ms lookup failed for aa: HTTP_503
+2026-11-20 20:26:58,682 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:26:58,682 INFO github_owners: ecosyste.ms retry 1 for aa
+2026-11-20 20:26:58,683 INFO github_owners: ecosyste.ms retry 1 for bb
+2026-11-20 20:26:58,683 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:26:58,814 WARNING github_owners: ecosyste.ms lookup failed for x0: HTTP_503
+2026-11-20 20:26:58,814 WARNING github_owners: ecosyste.ms lookup failed for x1: HTTP_503
+2026-11-20 20:26:58,814 WARNING github_owners: ecosyste.ms lookup failed for x2: HTTP_503
+2026-11-20 20:26:58,825 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:58,831 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:58,880 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:58,886 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:58,939 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:58,945 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:59,007 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:59,034 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,040 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:59,089 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,096 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:59,151 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,157 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:59,219 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:59,237 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,242 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:59,290 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,296 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:26:59,351 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,356 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:26:59,418 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:26:59,434 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,440 INFO gharchive: query owner_activity_a0d16862 rows=1 0.00s cache=False
+2026-11-20 20:26:59,463 INFO github_owners: owner_activity: 17 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,468 INFO gharchive: query owner_activity_c9e2f8d8 rows=1 0.00s cache=False
+2026-11-20 20:26:59,493 INFO github_owners: owner_activity: 25 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,499 INFO gharchive: query owner_activity_c63dd396 rows=1 0.00s cache=False
+2026-11-20 20:26:59,506 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n) WHERE { ?role a eurio:OrganisationRole . FILTER NOT EXISTS { ?role eurio:isInvolvedIn ?p } }', 'format': 'text/csv'} status=200 bytes=6
+2026-11-20 20:26:59,529 INFO github_owners: find_org: 1 entities, 1 matched ({3: 1}), 0 held
+2026-11-20 20:26:59,562 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,568 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:26:59,580 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:26:59,580 INFO github_owners: ecosyste.ms retry 1 for acme
+2026-11-20 20:26:59,580 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:26:59,601 INFO github_owners: find_org: 1 entities, 0 matched ({}), 1 held
+2026-11-20 20:26:59,601 WARNING github_owners: find_org: 1 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:26:59,618 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,624 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:26:59,679 INFO github_owners: find_org: 1 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:26:59,705 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,710 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:59,757 INFO github_owners: owner_activity: 51 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,762 INFO gharchive: query owner_activity_64406a03 rows=1 0.00s cache=False
+2026-11-20 20:26:59,796 INFO github_owners: owner_activity: 50 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,803 INFO gharchive: query owner_activity_57f4a449 rows=1 0.00s cache=False
+2026-11-20 20:26:59,849 INFO github_owners: find_org: 8 entities, 1 matched ({1: 1}), 5 held
+2026-11-20 20:26:59,850 WARNING github_owners: find_org: 5 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:26:59,877 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,884 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:26:59,949 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:26:59,956 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:27:00,013 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:27:00,019 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:27:00,098 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:27:00,122 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:27:00,127 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:27:00,203 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:27:00,210 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:27:00,296 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:27:00,302 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:27:00,366 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:27:00,427 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:27:00,443 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:27:00,502 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?t (COUNT(*) AS ?n) WHERE { ?x eurio:isInvolvedIn ?p . OPTIONAL { ?x a ?t } } GROUP BY ?t', 'format': 'text/csv'} status=200 bytes=60
+2026-11-20 20:27:00,570 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:27:00,590 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:27:00,714 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:27:00,736 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:27:00,821 WARNING github_owners: sample: years [2014, 2015] have pending lookups (request cap / errors) and are NOT written; rerun
+2026-11-20 20:27:00,866 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:27:00,880 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:27:01,020 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:27:01,030 INFO gharchive: query owner_activity_98d272c6 rows=1 0.00s cache=False
+2026-11-20 20:27:01,084 INFO github_owners: find_org: 2 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:27:01,283 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 20:27:01,283 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 20:27:01,500 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?t (COUNT(*) AS ?n) WHERE { ?x eurio:isRoleOf ?o . OPTIONAL { ?x a ?t } } GROUP BY ?t', 'format': 'text/csv'} status=200 bytes=60
+2026-11-20 20:27:02,710 INFO build_snapshots: as_of 2012: 69 rows, 13 positives, 56 B controls
+2026-11-20 20:27:02,756 INFO build_snapshots: as_of 2013: 139 rows, 24 positives, 115 B controls
+2026-11-20 20:27:02,802 INFO build_snapshots: as_of 2014: 176 rows, 23 positives, 153 B controls
+2026-11-20 20:27:02,848 INFO build_snapshots: as_of 2015: 212 rows, 26 positives, 186 B controls
+2026-11-20 20:27:02,889 INFO build_snapshots: as_of 2016: 245 rows, 28 positives, 217 B controls
+2026-11-20 20:27:02,932 INFO build_snapshots: as_of 2017: 243 rows, 28 positives, 215 B controls
+2026-11-20 20:27:02,979 INFO build_snapshots: as_of 2018: 207 rows, 27 positives, 180 B controls
+2026-11-20 20:27:03,023 INFO build_snapshots: as_of 2019: 161 rows, 25 positives, 136 B controls
+2026-11-20 20:27:04,793 INFO build_snapshots: reference profiles: 110
+2026-11-20 20:27:04,879 INFO backtest: as_of 2015: test 212 (pos 26), train 208 (pos 37), refs 28
+2026-11-20 20:27:04,908 INFO backtest: as_of 2016: test 245 (pos 28), train 384 (pos 60), refs 40
+2026-11-20 20:27:04,938 INFO backtest: as_of 2017: test 243 (pos 28), train 596 (pos 86), refs 55
+2026-11-20 20:27:04,969 INFO backtest: as_of 2018: test 207 (pos 27), train 841 (pos 114), refs 68
+2026-11-20 20:27:05,000 INFO backtest: as_of 2019: test 161 (pos 25), train 1084 (pos 142), refs 68
+2026-11-20 20:28:38,541 INFO pool_sample: entry scan: buckets < 1 done; years still below target: [2014, 2015]
+2026-11-20 20:28:38,546 INFO pool_sample: entry scan: buckets < 2 done; years still below target: [2014]
+2026-11-20 20:28:38,551 INFO pool_sample: entry scan: buckets < 4 done; years still below target: []
+2026-11-20 20:29:15,718 INFO run_org_search: org search: input /home/user/Main-Summit-Hackathon/radar-backtest/data/processed/org_search_labelled.csv, max tier 1
+2026-11-20 20:29:25,673 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 20:29:25,708 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 20:29:25,729 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 20:29:25,752 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 20:29:25,773 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 20:29:25,794 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 20:29:25,831 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 20:29:25,852 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 20:29:25,872 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 20:29:25,893 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 20:29:25,912 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 20:29:25,975 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 20:29:25,997 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 20:29:26,112 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 20:29:26,140 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:29:26,158 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:29:26,364 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 20:29:26,387 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:29:26,406 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 20:29:26,464 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 20:29:26,470 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows (or could not be read for) automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Retry later if it was unreachable; otherwise download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 20:29:26,479 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-88/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (155 bytes)
+2026-11-20 20:29:26,479 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-88/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 20:29:26,484 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-88/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-88/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 20:29:26,486 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 20:29:26,489 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 20:29:26,681 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:29:26,684 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 20:29:26,688 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 20:29:26,691 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:29:26,695 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 20:29:26,697 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:29:26,698 INFO cordis_sparql: roles: 22 rows, 6 pages (0 from cache) 0.0s
+2026-11-20 20:29:26,704 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:29:26,708 INFO cordis_sparql: organisations@4 rows=4 0.00s cache=False
+2026-11-20 20:29:26,711 INFO cordis_sparql: organisations@8 rows=4 0.00s cache=False
+2026-11-20 20:29:26,711 INFO cordis_sparql: organisations: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:29:26,717 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 20:29:26,720 INFO cordis_sparql: organisation_types@4 rows=4 0.00s cache=False
+2026-11-20 20:29:26,723 INFO cordis_sparql: organisation_types@8 rows=4 0.00s cache=False
+2026-11-20 20:29:26,723 INFO cordis_sparql: organisation_types: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:29:26,730 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:29:26,733 INFO cordis_sparql: projects@4 rows=4 0.00s cache=False
+2026-11-20 20:29:26,736 INFO cordis_sparql: projects@8 rows=4 0.00s cache=False
+2026-11-20 20:29:26,736 INFO cordis_sparql: projects: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:29:26,743 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:29:26,747 INFO cordis_sparql: grant_topic@4 rows=3 0.00s cache=False
+2026-11-20 20:29:26,747 INFO cordis_sparql: grant_topic: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:29:26,753 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:29:26,753 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:26,760 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:29:26,762 INFO cordis_sparql: grant_type@4 rows=3 0.00s cache=False
+2026-11-20 20:29:26,763 INFO cordis_sparql: grant_type: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:29:26,769 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:29:26,769 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,057 INFO cordis_sparql: roles@0 rows=10 0.00s cache=False
+2026-11-20 20:29:27,061 INFO cordis_sparql: roles@10 rows=10 0.00s cache=False
+2026-11-20 20:29:27,064 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:29:27,065 INFO cordis_sparql: roles: 22 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,072 INFO cordis_sparql: organisations@0 rows=10 0.00s cache=False
+2026-11-20 20:29:27,075 INFO cordis_sparql: organisations@10 rows=2 0.00s cache=False
+2026-11-20 20:29:27,076 INFO cordis_sparql: organisations: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,082 INFO cordis_sparql: organisation_types@0 rows=10 0.00s cache=False
+2026-11-20 20:29:27,085 INFO cordis_sparql: organisation_types@10 rows=2 0.00s cache=False
+2026-11-20 20:29:27,085 INFO cordis_sparql: organisation_types: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,092 INFO cordis_sparql: projects@0 rows=10 0.00s cache=False
+2026-11-20 20:29:27,096 INFO cordis_sparql: projects@10 rows=2 0.00s cache=False
+2026-11-20 20:29:27,096 INFO cordis_sparql: projects: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,103 INFO cordis_sparql: grant_topic@0 rows=7 0.00s cache=False
+2026-11-20 20:29:27,104 INFO cordis_sparql: grant_topic: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,111 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:29:27,111 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,118 INFO cordis_sparql: grant_type@0 rows=7 0.00s cache=False
+2026-11-20 20:29:27,118 INFO cordis_sparql: grant_type: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,125 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:29:27,125 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,335 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:29:27,335 INFO cordis_sparql: roles: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,344 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 20:29:27,344 INFO cordis_sparql: organisations: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,353 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 20:29:27,353 INFO cordis_sparql: organisation_types: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,360 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 20:29:27,360 INFO cordis_sparql: projects: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,367 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 20:29:27,368 INFO cordis_sparql: grant_topic: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,374 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 20:29:27,374 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,380 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 20:29:27,380 INFO cordis_sparql: grant_type: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,387 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 20:29:27,387 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 20:29:27,598 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 1/2
+2026-11-20 20:29:27,598 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 2/2
+2026-11-20 20:29:27,604 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 20:29:27,604 WARNING cordis_sparql: roles@4: HTTP 500 (Virtuoso 22023 Error SR014: Function ri_name_id needs a string); pausing 0s before retry 1/2
+2026-11-20 20:29:27,608 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 20:29:27,612 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 20:29:27,615 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 20:29:27,618 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 20:29:27,622 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 20:29:27,661 WARNING gharchive: rejected 2 invalid login value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:29:27,677 WARNING gharchive: t: splitting chunk of 5 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:29:27,683 INFO gharchive: query t_725ab108 rows=2 0.00s cache=False
+2026-11-20 20:29:27,683 WARNING gharchive: t: splitting chunk of 3 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 20:29:27,689 INFO gharchive: query t_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:29:27,694 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:29:27,700 INFO gharchive: query t_044d23a2 rows=2 0.00s cache=False
+2026-11-20 20:29:27,705 INFO gharchive: query t2_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:29:27,705 WARNING gharchive: t2: splitting chunk of 2 (t2: 2 rows > 1)
+2026-11-20 20:29:27,710 INFO gharchive: query t2_9b383db9 rows=1 0.00s cache=False
+2026-11-20 20:29:27,715 INFO gharchive: query t2_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 20:29:27,753 INFO gharchive: query span_1dca1109 rows=2 0.00s cache=False
+2026-11-20 20:29:27,759 INFO gharchive: wrote /tmp/pytest-of-root/pytest-88/test_end_to_end_processed_outp0/span.parquet rows=2
+2026-11-20 20:29:27,764 INFO gharchive: query team_1ba97f53 rows=3 0.00s cache=False
+2026-11-20 20:29:27,773 INFO gharchive: wrote /tmp/pytest-of-root/pytest-88/test_end_to_end_processed_outp0/team.parquet rows=3
+2026-11-20 20:29:27,778 INFO gharchive: query daily_6c90f737 rows=3 0.00s cache=False
+2026-11-20 20:29:27,786 INFO gharchive: wrote /tmp/pytest-of-root/pytest-88/test_end_to_end_processed_outp0/daily.parquet rows=3
+2026-11-20 20:29:27,800 INFO gharchive: query ext_291805af rows=5 0.00s cache=False
+2026-11-20 20:29:27,812 INFO gharchive: wrote /tmp/pytest-of-root/pytest-88/test_end_to_end_processed_outp0/ext.parquet rows=5
+2026-11-20 20:29:27,837 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:29:27,848 INFO gharchive: wrote /tmp/pytest-of-root/pytest-88/test_external_refuses_unresolv0/team.parquet rows=3
+2026-11-20 20:29:28,440 INFO gharchive: query t_460f1c7d rows=4 0.00s cache=False
+2026-11-20 20:29:28,440 WARNING gharchive: t: splitting chunk of 4 (t: 4 rows > 2)
+2026-11-20 20:29:28,446 INFO gharchive: query t_ca4710da rows=2 0.00s cache=False
+2026-11-20 20:29:28,453 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 20:29:28,465 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 20:29:28,476 INFO gharchive: wrote /tmp/pytest-of-root/pytest-88/test_external_refuses_team_wit0/team.parquet rows=3
+2026-11-20 20:29:28,493 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:29:28,499 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:29:28,506 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:29:28,523 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 20:29:28,530 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 20:29:28,536 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 20:29:28,719 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,719 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,719 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,719 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,721 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,721 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,721 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,721 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,721 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,721 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,721 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,721 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,721 ERROR github: lookup failed for bad
+2026-11-20 20:29:28,730 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:29:28,772 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:29:28,838 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,839 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,839 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,839 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,839 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,839 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,839 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,839 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,839 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,839 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,840 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,841 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,841 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,841 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,841 ERROR github: lookup failed for x0
+2026-11-20 20:29:28,841 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,841 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,842 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,842 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,842 ERROR github: lookup failed for x1
+2026-11-20 20:29:28,843 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,843 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,843 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,843 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,843 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,843 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,843 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,843 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,843 ERROR github: lookup failed for x10
+2026-11-20 20:29:28,844 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,844 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,844 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,844 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,844 ERROR github: lookup failed for x11
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,845 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,845 ERROR github: lookup failed for x12
+2026-11-20 20:29:28,846 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,846 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,846 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,846 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,846 ERROR github: lookup failed for x13
+2026-11-20 20:29:28,847 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,847 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,847 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,847 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,847 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,847 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,847 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,847 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,847 ERROR github: lookup failed for x14
+2026-11-20 20:29:28,848 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,848 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,848 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,848 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,848 ERROR github: lookup failed for x15
+2026-11-20 20:29:28,849 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,849 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,849 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,849 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,849 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 20:29:28,849 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 20:29:28,849 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 20:29:28,849 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 20:29:28,863 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:29:28,904 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:29:28,995 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:29:29,065 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:29:29,091 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:29:29,123 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:29:29,168 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:29:29,212 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:29:29,214 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:29:29,242 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:29:29,282 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:29:29,324 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:29:29,327 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 20:29:29,359 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 20:29:29,400 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 20:29:29,448 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 20:29:29,456 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:29:29,482 INFO github: find_org tier 2: 1 unresolved entities, 17 logins
+2026-11-20 20:29:29,511 INFO github: find_org tier 3: 1 unresolved entities, 25 logins
+2026-11-20 20:29:29,551 INFO github: find_org: 1 entities, 1 matched ({3: 1})
+2026-11-20 20:29:29,568 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:29:29,574 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 20:29:29,574 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 20:29:29,574 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 20:29:29,574 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 20:29:29,574 ERROR github: lookup failed for acme
+2026-11-20 20:29:29,582 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 20:29:29,596 INFO github: find_org: 1 entities, 0 matched ({})
+2026-11-20 20:29:29,596 WARNING github: find_org: 1 entities held back because a candidate lookup failed (note lookup_error_tier<N> in the search log); rerun find for them
+2026-11-20 20:29:29,612 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 20:29:29,652 INFO github: find_org: 1 entities, 1 matched ({1: 1})
+2026-11-20 20:29:29,691 INFO github: id bound 2008: first_id=9994 (2008-01-01 00:44:25+00:00) after 28 calls
+2026-11-20 20:29:29,697 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 35 calls
+2026-11-20 20:29:29,703 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:29:29,780 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:29:29,787 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:29:29,794 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:29:29,800 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:29:30,430 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:29:30,453 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:29:30,460 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:29:30,468 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:29:30,476 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:29:31,014 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:29:31,032 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 20:29:31,041 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 20:29:31,048 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 20:29:31,058 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 20:29:31,368 INFO http: GET https://cordis.europa.eu/robots.txt params=None status=200 bytes=365
+2026-11-20 20:29:31,619 INFO github: sample: 560 orgs (186 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 20:29:31,658 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:29:31,658 INFO github_owners: owner_activity: 25 logins in 3 ClickHouse queries (~45 s if uncached)
+2026-11-20 20:29:31,665 INFO gharchive: query owner_activity_fd7bbd32 rows=5 0.00s cache=False
+2026-11-20 20:29:31,672 INFO gharchive: query owner_activity_befe13dd rows=5 0.00s cache=False
+2026-11-20 20:29:31,677 INFO gharchive: query owner_activity_3c0b07d4 rows=3 0.00s cache=False
+2026-11-20 20:29:31,691 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 20:29:31,767 WARNING github_owners: ecosyste.ms lookup failed for aa: HTTP_503
+2026-11-20 20:29:31,767 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:29:31,768 INFO github_owners: ecosyste.ms retry 1 for aa
+2026-11-20 20:29:31,768 INFO github_owners: ecosyste.ms retry 1 for bb
+2026-11-20 20:29:31,768 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 20:29:31,893 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?pred (COUNT(*) AS ?n) WHERE { ?p a eurio:Project ; ?pred ?o } GROUP BY ?pred', 'format': 'text/csv'} status=200 bytes=1022
+2026-11-20 20:29:31,948 WARNING github_owners: ecosyste.ms lookup failed for x0: HTTP_503
+2026-11-20 20:29:31,949 WARNING github_owners: ecosyste.ms lookup failed for x1: HTTP_503
+2026-11-20 20:29:31,949 WARNING github_owners: ecosyste.ms lookup failed for x2: HTTP_503
+2026-11-20 20:29:31,965 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:31,972 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:29:32,054 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:32,061 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:29:32,139 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:32,146 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:29:32,240 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:29:32,275 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:32,283 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:29:32,348 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:32,355 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:29:32,442 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:32,450 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:29:32,556 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:29:32,581 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:32,588 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:29:32,672 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:32,679 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:29:32,749 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:32,756 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:29:32,792 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?pred (COUNT(*) AS ?n) WHERE { ?x a eurio:OrganisationRole ; ?pred ?o } GROUP BY ?pred', 'format': 'text/csv'} status=200 bytes=534
+2026-11-20 20:29:32,843 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:29:32,860 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:32,867 INFO gharchive: query owner_activity_a0d16862 rows=1 0.00s cache=False
+2026-11-20 20:29:32,892 INFO github_owners: owner_activity: 17 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:32,898 INFO gharchive: query owner_activity_c9e2f8d8 rows=1 0.00s cache=False
+2026-11-20 20:29:32,937 INFO github_owners: owner_activity: 25 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:32,944 INFO gharchive: query owner_activity_c63dd396 rows=1 0.00s cache=False
+2026-11-20 20:29:32,991 INFO github_owners: find_org: 1 entities, 1 matched ({3: 1}), 0 held
+2026-11-20 20:29:33,041 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:33,047 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:29:33,064 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:29:33,065 INFO github_owners: ecosyste.ms retry 1 for acme
+2026-11-20 20:29:33,065 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 20:29:33,097 INFO github_owners: find_org: 1 entities, 0 matched ({}), 1 held
+2026-11-20 20:29:33,097 WARNING github_owners: find_org: 1 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:29:33,119 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:33,126 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 20:29:33,179 INFO github_owners: find_org: 1 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:29:33,209 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:33,217 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:29:33,277 INFO github_owners: owner_activity: 51 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:33,284 INFO gharchive: query owner_activity_64406a03 rows=1 0.00s cache=False
+2026-11-20 20:29:33,317 INFO github_owners: owner_activity: 50 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:33,324 INFO gharchive: query owner_activity_57f4a449 rows=1 0.00s cache=False
+2026-11-20 20:29:33,359 INFO github_owners: find_org: 8 entities, 1 matched ({1: 1}), 5 held
+2026-11-20 20:29:33,359 WARNING github_owners: find_org: 5 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 20:29:33,380 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:33,387 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:29:33,456 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:33,463 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:29:33,532 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:33,539 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:29:33,620 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:29:33,651 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:33,657 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 20:29:33,731 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:33,738 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 20:29:33,770 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?t (COUNT(DISTINCT ?org) AS ?n) WHERE { ?r a eurio:OrganisationRole ; eurio:isRoleOf ?org . FILTER NOT EXISTS { ?org a eurio:Organisation } OPTIONAL { ?org a ?t } } GROUP BY ?t', 'format': 'text/csv'} status=200 bytes=14
+2026-11-20 20:29:33,799 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:33,807 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 20:29:33,896 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 20:29:33,986 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:29:34,009 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:29:34,181 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:29:34,208 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:29:34,391 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:29:34,415 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:29:34,487 WARNING github_owners: sample: years [2014, 2015] have pending lookups (request cap / errors) and are NOT written; rerun
+2026-11-20 20:29:34,537 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 20:29:34,554 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 20:29:34,726 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 20:29:34,728 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?pred (COUNT(*) AS ?n) WHERE { ?r a eurio:OrganisationRole ; eurio:isRoleOf ?org . FILTER NOT EXISTS { ?org a eurio:Organisation } ?org ?pred ?o } GROUP BY ?pred', 'format': 'text/csv'} status=200 bytes=11
+2026-11-20 20:29:34,734 INFO gharchive: query owner_activity_98d272c6 rows=1 0.00s cache=False
+2026-11-20 20:29:34,800 INFO github_owners: find_org: 2 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 20:29:35,022 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 20:29:35,022 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 20:29:36,699 INFO build_snapshots: as_of 2012: 69 rows, 13 positives, 56 B controls
+2026-11-20 20:29:36,752 INFO build_snapshots: as_of 2013: 139 rows, 24 positives, 115 B controls
+2026-11-20 20:29:36,799 INFO build_snapshots: as_of 2014: 176 rows, 23 positives, 153 B controls
+2026-11-20 20:29:36,843 INFO build_snapshots: as_of 2015: 212 rows, 26 positives, 186 B controls
+2026-11-20 20:29:36,889 INFO build_snapshots: as_of 2016: 245 rows, 28 positives, 217 B controls
+2026-11-20 20:29:36,936 INFO build_snapshots: as_of 2017: 243 rows, 28 positives, 215 B controls
+2026-11-20 20:29:36,978 INFO build_snapshots: as_of 2018: 207 rows, 27 positives, 180 B controls
+2026-11-20 20:29:37,021 INFO build_snapshots: as_of 2019: 161 rows, 25 positives, 136 B controls
+2026-11-20 20:29:38,961 INFO build_snapshots: reference profiles: 110
+2026-11-20 20:29:39,040 INFO backtest: as_of 2015: test 212 (pos 26), train 208 (pos 37), refs 28
+2026-11-20 20:29:39,074 INFO backtest: as_of 2016: test 245 (pos 28), train 384 (pos 60), refs 40
+2026-11-20 20:29:39,108 INFO backtest: as_of 2017: test 243 (pos 28), train 596 (pos 86), refs 55
+2026-11-20 20:29:39,141 INFO backtest: as_of 2018: test 207 (pos 27), train 841 (pos 114), refs 68
+2026-11-20 20:29:39,174 INFO backtest: as_of 2019: test 161 (pos 25), train 1084 (pos 142), refs 68
+2026-11-20 20:30:11,711 INFO http: GET https://cordis.europa.eu/robots.txt params=None status=200 bytes=365
+2026-11-20 20:30:19,302 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (DATATYPE(?rs) AS ?dt) (DATATYPE(?ps) AS ?pdt) (COUNT(*) AS ?n) WHERE { ?r a eurio:OrganisationRole ; eurio:startDate ?rs ; eurio:isInvolvedIn ?p . OPTIONAL { ?p eurio:startDate ?ps } } GROUP BY (DATATYPE(?rs)) (DATATYPE(?ps))', 'format': 'text/csv'} status=200 bytes=230
+2026-11-20 20:30:19,438 WARNING http: retry 1 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=2.6s 
+2026-11-20 20:30:22,147 WARNING http: retry 2 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=4.0s 
+2026-11-20 20:30:26,310 WARNING http: retry 3 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=8.6s 
+2026-11-20 20:30:35,038 ERROR http: giving up GET https://cordis.europa.eu/datalab/sparql status=500
+2026-11-20 20:30:35,038 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest review probe\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT ?dm (COUNT(*) AS ?n) WHERE { ?r a eurio:OrganisationRole ; eurio:startDate ?rs ; eurio:isInvolvedIn ?p . ?p eurio:startDate ?ps . BIND(((YEAR(?rs) - YEAR(?ps)) * 12 + MONTH(?rs) - MONTH(?ps)) AS ?dm) } GROUP BY ?dm ORDER BY ?dm', 'format': 'text/csv'} status=500 bytes=447
+2026-11-20 20:30:35,039 WARNING cordis_sparql: role_start_minus_project_start_months: HTTP 500 (Virtuoso 22003 Error SR586: Incomplete RDF box as argument 0 for year().  SPARQL query: define sql:big-data-const 0 #out); pausing 60.0s before retry 1/2
+2026-11-20 20:31:20,465 INFO pool_sample: entry scan: buckets < 1 done; years still below target: [2014, 2015]
+2026-11-20 20:31:20,470 INFO pool_sample: entry scan: buckets < 2 done; years still below target: [2014]
+2026-11-20 20:31:20,476 INFO pool_sample: entry scan: buckets < 4 done; years still below target: []

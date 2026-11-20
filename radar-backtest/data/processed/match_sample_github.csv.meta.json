@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-20T22:26:41.352805+00:00",
+  "created_at": "2026-11-20T22:27:24.724846+00:00",
   "file": "data/processed/match_sample_github.csv",
-  "git_sha": "963ae7614878eda573fd37c8248d223a72447c79",
+  "git_sha": "4bf69c83de7a644f55bfe3c7f19654cd2d0e0bc9",
   "inputs": [],
   "notes": "Random accepted entity -> GitHub org links for the human precision check.",
   "params": {},

@@ -1,11 +1,11 @@
 {
-  "created_at": "2026-11-20T22:26:50.860208+00:00",
+  "created_at": "2026-11-20T22:27:33.836232+00:00",
   "file": "data/processed/coverage_by_source_year.csv",
-  "git_sha": "963ae7614878eda573fd37c8248d223a72447c79",
+  "git_sha": "4bf69c83de7a644f55bfe3c7f19654cd2d0e0bc9",
   "inputs": [
     {
       "path": "data/processed/events.parquet",
-      "sha256": "942a5e9bc52ca1360c3b279cc706c8cfcb38103d86126ac1eda53e95d615e7bb"
+      "sha256": "1a44ef8fc9ca1ed80f472825406c0db233f8adf629ed4d4ab2863d0721d990fa"
     },
     {
       "path": "data/processed/entities.csv",

@@ -22786,3 +22786,28 @@
 2026-11-20 22:26:50,212 INFO pipeline: === step validate
 2026-11-20 22:26:50,887 ERROR validate: validation failed: ['118 duplicate events']
 2026-11-20 22:27:13,481 INFO resolve_entities: decontamination: 1 controls share a name with a labelled company -> removed as ambiguous
+2026-11-20 22:27:22,401 INFO pipeline: === step resolve_build
+2026-11-20 22:27:22,771 INFO resolve_entities: org_like_pit: dropping 55 of 1174 GitHub links (not org-like in their first year)
+2026-11-20 22:27:22,893 INFO resolve_entities: dropping 7 platform-domain entities
+2026-11-20 22:27:23,048 INFO resolve_entities: decontamination: 4 controls share a name with a labelled company -> removed as ambiguous
+2026-11-20 22:27:24,719 INFO resolve_entities: entities: 6989 (labelled 6600, in_B 389, with github 1099, with cordis 6)
+2026-11-20 22:27:33,290 INFO resolve_entities: events: 572788 rows {('cordis', 'grant_signed'): 20, ('gharchive', 'ext_engagement_month'): 357229, ('gharchive', 'org_activity'): 203402, ('gharchive', 'org_first_event'): 674, ('gharchive', 'team_first_push'): 11463}
+2026-11-20 22:27:33,291 INFO pipeline: === step resolve_build done in 11s
+2026-11-20 22:27:33,291 INFO pipeline: === step validate
+2026-11-20 22:27:33,870 INFO pipeline: === step validate done in 1s
+2026-11-20 22:27:33,871 INFO pipeline: === step gate
+2026-11-20 22:27:34,147 INFO pipeline: === step gate done in 0s
+2026-11-20 22:27:37,012 INFO build_snapshots: as_of 2012: 27 rows, 1 positives, 26 B controls
+2026-11-20 22:27:37,117 INFO build_snapshots: as_of 2013: 63 rows, 1 positives, 62 B controls
+2026-11-20 22:27:37,232 INFO build_snapshots: as_of 2014: 124 rows, 6 positives, 118 B controls
+2026-11-20 22:27:37,357 INFO build_snapshots: as_of 2015: 185 rows, 8 positives, 177 B controls
+2026-11-20 22:27:37,503 INFO build_snapshots: as_of 2016: 219 rows, 7 positives, 212 B controls
+2026-11-20 22:27:37,667 INFO build_snapshots: as_of 2017: 216 rows, 8 positives, 208 B controls
+2026-11-20 22:27:37,793 INFO build_snapshots: as_of 2018: 197 rows, 6 positives, 191 B controls
+2026-11-20 22:27:37,958 INFO build_snapshots: as_of 2019: 150 rows, 8 positives, 142 B controls
+2026-11-20 22:27:39,638 INFO build_snapshots: reference profiles: 30
+2026-11-20 22:27:39,736 INFO backtest: as_of 2015: test 185 (pos 8), train 89 (pos 1), refs 2
+2026-11-20 22:27:39,764 INFO backtest: as_of 2016: test 219 (pos 7), train 212 (pos 6), refs 7
+2026-11-20 22:27:39,809 INFO backtest: as_of 2017: test 216 (pos 8), train 398 (pos 15), refs 13
+2026-11-20 22:27:39,851 INFO backtest: as_of 2018: test 197 (pos 6), train 617 (pos 22), refs 15
+2026-11-20 22:27:39,885 INFO backtest: as_of 2019: test 150 (pos 8), train 833 (pos 30), refs 20

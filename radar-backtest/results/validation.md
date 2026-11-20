@@ -2,7 +2,7 @@
 
 - labels: 6607 rows; errors: none; warnings: none
 - entities: 6989 rows (labelled 6600, B 389); errors: none
-- events: 572788 rows; errors: ['118 duplicate events']
+- events: 572788 rows; errors: none
 
 ## Entities with ≥1 event, per source/type and year
 

@@ -1,15 +1,15 @@
 {
-  "created_at": "2026-11-20T22:01:18.296958+00:00",
+  "created_at": "2026-11-20T22:27:37.104419+00:00",
   "file": "data/processed/snapshots_2013.parquet",
-  "git_sha": "51272f3bd2c4e177722dd612ddb8f27282b766cd",
+  "git_sha": "4bf69c83de7a644f55bfe3c7f19654cd2d0e0bc9",
   "inputs": [
     {
       "path": "data/processed/entities.csv",
-      "sha256": "0e39bfc9ecf8e91c76fbeb76b6d79b53cdc84948ad8da9f841e83091a1da731d"
+      "sha256": "6f3f5ef4932083887887bc56a988c4b5c847f96729e00f49aa8b4c40a708ab60"
     },
     {
       "path": "data/processed/events.parquet",
-      "sha256": "2ea4fe083a37e6075a732a70d842490f088e8ccf9cc966538565dd886a170deb"
+      "sha256": "1a44ef8fc9ca1ed80f472825406c0db233f8adf629ed4d4ab2863d0721d990fa"
     },
     {
       "path": "data/labels/companies.csv",
@@ -28,8 +28,8 @@
     }
   },
   "python": "3.13.18",
-  "rows": 75,
+  "rows": 63,
   "script": "scripts/build_snapshots.py",
-  "sha256": "11311e1cb23b1379150768f34419373c5acaf707638fd6259a96810354e79d74",
+  "sha256": "d02d93a8c8277f98b4de6441e3872fcf577b23fa81729846caa7638b267509c8",
   "sources": []
 }

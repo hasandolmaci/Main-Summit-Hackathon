@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-20T19:30:03.648156+00:00",
+  "created_at": "2026-11-20T20:12:05.436361+00:00",
   "file": "data/labels/companies.csv",
-  "git_sha": "81dace3195eae3952effc7bd50c6831ad1c7528d",
+  "git_sha": "0256814f1b4385cf75a3b064eb80ce4cb212282d",
   "inputs": [
     {
       "path": "data/raw/yc/companies_all.json.gz",
@@ -13,15 +13,15 @@
     },
     {
       "path": "data/raw/htgf/sitemaps.jsonl.gz",
-      "sha256": "12980bb7494d2ceb6c9bbce4cade21199530260f4f764c2e5c65aa69e6a924a8"
+      "sha256": "ecb859fbbcd982ef869943dd2e30e69509cd7fe42781f4c20d044451c60551a9"
     },
     {
       "path": "data/raw/htgf/portfolio_rest.jsonl.gz",
-      "sha256": "2df2a60db048f2953336d0a5dc3055e87a008d2ca060bc355bca3b7b8107f982"
+      "sha256": "db60f3128356ab5f6aae854f51ca947f5ca110c699553ef2fac8f1557abad9a9"
     },
     {
       "path": "data/raw/htgf/portfolio_pages.jsonl.gz",
-      "sha256": "cc60ee9d849441e0d8f9e0125f1e7832c163c208c5b1bf566be94258700c0024"
+      "sha256": "bb07e1d0cd105c09ae650f3b684958afbbc0257246a05a1be21d79dcea500bbf"
     }
   ],
   "notes": "first_funding_date = min over sources per domain; YC date mode = acceptance. 1 duplicate domains merged (see logs/collection.log).",
@@ -51,9 +51,9 @@
     }
   },
   "python": "3.13.18",
-  "rows": 6600,
+  "rows": 6607,
   "script": "scripts/collect_labels.py",
-  "sha256": "36f7a3a5253dbd25208bea0030eaf1acc2deb7e8d0612799e7706987f520c183",
+  "sha256": "4cfb3b1321d35e791fa65f01961881a7430763e388b179ac1e58b7d9859fd324",
   "sources": [
     "https://yc-oss.github.io/api/companies/all.json",
     "https://www.htgf.de"

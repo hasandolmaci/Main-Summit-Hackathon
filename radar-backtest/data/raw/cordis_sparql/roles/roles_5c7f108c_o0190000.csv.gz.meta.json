@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-11-20T20:10:12.877497+00:00",
+  "file": "data/raw/cordis_sparql/roles/roles_5c7f108c_o0190000.csv.gz",
+  "git_sha": "0256814f1b4385cf75a3b064eb80ce4cb212282d",
+  "inputs": [],
+  "notes": "Raw CORDIS SPARQL text/csv response for 'query' (never edited); CC BY 4.0 (CORDIS EURIO knowledge graph, European Union; reuse per Commission Decision 2011/833/EU; https://creativecommons.org/licenses/by/4.0/)",
+  "params": {
+    "endpoint": "https://cordis.europa.eu/datalab/sparql",
+    "fetched_at": "2026-11-20T20:10:12.735582+00:00",
+    "format": "text/csv",
+    "kind": "page",
+    "limit": 10000,
+    "offset": 190000,
+    "query": "# radar-backtest cordis_sparql dataset=roles page\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (REPLACE(STR(?role), \"^.*/\", \"\") AS ?role_id) (REPLACE(STR(?org), \"^.*/\", \"\") AS ?org_id) ?project_id ?role_label ?order ?amount ?currency\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?project eurio:identifier ?project_id }\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount .\n             OPTIONAL { ?amt eurio:currency ?currency } }\n}\nORDER BY ?role ?org ?project_id ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 190000"
+  },
+  "python": "3.13.18",
+  "rows": 10000,
+  "script": "scripts/sources/cordis_sparql.py",
+  "sha256": "aa3d3a6a102d372ad572645a2ba344036cfeb00381947dd75a0dd7c261b873bb",
+  "sources": [
+    "https://cordis.europa.eu/datalab/sparql"
+  ]
+}

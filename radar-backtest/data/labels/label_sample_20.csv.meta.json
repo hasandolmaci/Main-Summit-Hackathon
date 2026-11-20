@@ -1,11 +1,11 @@
 {
-  "created_at": "2026-11-20T19:30:03.727131+00:00",
+  "created_at": "2026-11-20T20:12:05.506369+00:00",
   "file": "data/labels/label_sample_20.csv",
-  "git_sha": "81dace3195eae3952effc7bd50c6831ad1c7528d",
+  "git_sha": "0256814f1b4385cf75a3b064eb80ce4cb212282d",
   "inputs": [
     {
       "path": "data/labels/companies.csv",
-      "sha256": "36f7a3a5253dbd25208bea0030eaf1acc2deb7e8d0612799e7706987f520c183"
+      "sha256": "4cfb3b1321d35e791fa65f01961881a7430763e388b179ac1e58b7d9859fd324"
     }
   ],
   "notes": "Seeded random sample for the human check.",
@@ -16,6 +16,6 @@
   "python": "3.13.18",
   "rows": 20,
   "script": "scripts/collect_labels.py",
-  "sha256": "be0f74112da828d6f2adff404f9257926c73f3c79c511735d1e30e3dbfe578cf",
+  "sha256": "8ad9100487493c11c306a764511ae73f2c51dabf476abbed4a33365ed0fcd18e",
   "sources": []
 }

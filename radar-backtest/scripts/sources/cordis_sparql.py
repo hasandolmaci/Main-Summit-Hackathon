@@ -18,6 +18,9 @@ EURIO structure used (found by inspecting classes / predicates / datatypes only,
     eurio:Grant             hasFundingSchemeTopic / Call (identifier 'H2020_...', 'FP7-...', 'HORIZON-...'),
                             hasFundingSchemeType (code 'RIA', 'MC-IEF', ...), hasFundingSchemeProgramme (code)
 The graph has no frameworkProgramme field; the programme is derived deterministically per project (derive_programmes).
+Projects are keyed by their identifier literal, never by node IRI: the endpoint persistently fails to sort or STR()
+some Project IRIs (Virtuoso SR477 / SR014), and the identifier is the bulk 'projectID' anyway. Intermittent 5xx on a
+page are retried a bounded number of times after a pause (Sparql.outer_retries / retry_pause_s).
 Activity type and SME are organisation-level classes in the graph (per participation in the bulk CSV).
 EURIO v2.5 removed person classes and contact details; no contact field is ever selected (guarded) and e-mail-like
 url values are filtered out server-side, so neither raw nor processed files hold e-mail addresses.

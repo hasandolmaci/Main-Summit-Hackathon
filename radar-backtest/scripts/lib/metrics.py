@@ -7,9 +7,16 @@ from sklearn.metrics import roc_auc_score
 
 
 def auc(y, s, w=None) -> float:
+    """ROC AUC; missing scores (NaN, e.g. kNN without references) rank last, as in rank_order."""
     y = np.asarray(y)
-    if y.min() == y.max():
+    if len(y) == 0 or y.min() == y.max():
         return float("nan")
+    s = np.asarray(s, dtype=float).copy()
+    bad = ~np.isfinite(s)
+    if bad.all():
+        return 0.5
+    if bad.any():
+        s[bad] = np.nanmin(s[~bad]) - 1.0
     return float(roc_auc_score(y, s, sample_weight=w))
 
 

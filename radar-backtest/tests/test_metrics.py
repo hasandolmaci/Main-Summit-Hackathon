@@ -53,3 +53,9 @@ def test_cluster_bootstrap_deterministic_and_ci():
     assert np.array_equal(a, b)
     lo, hi = m.ci(a)
     assert lo < m.pooled_auc(df) < hi
+
+
+def test_auc_nan_scores_rank_last():
+    assert m.auc([1, 0, 0], [np.nan, 0.2, 0.1]) == 0.0
+    assert m.auc([1, 0], [np.nan, np.nan]) == 0.5
+    assert m.auc([1, 0, 0], [0.9, np.nan, 0.1]) == 1.0

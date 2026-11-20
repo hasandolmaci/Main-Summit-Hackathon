@@ -22,6 +22,12 @@ Definitions (identical for every login)
   2016-2023, ~5,000 org + ~5,000 user owners): NOT is_actor keeps only ~13% of organisations; the org_like rule keeps
   ~98% of organisations and ~0.2% of users (data/processed/github_owner_kind_calibration.csv). Every org_like owner
   is then confirmed by ecosyste.ms kind == 'organization'; org_like only decides which owners are looked up.
+  Timeline era (review check 2026-11-20, ground truth = repository.organization of the 2013-05-08-15 hour, 954 orgs /
+  2,000 users): org recall is only ~91% (~69% for orgs with 11-100 owned events), user pass ~0.6%, because GH Archive
+  attributes 2011-2013 CreateEvents to the organisation as actor. Treating pre-2015 CreateEvents as org-ish raises
+  that recall to ~98% (~97%) but multiplies org_like owners of first-year cohorts 2011-2014 by 2.5-6.6x (small users
+  pass), i.e. many more ecosyste.ms lookups per organisation found; not adopted here (same rule for both groups, so
+  the loss is coverage, not bias).
 
 Functions
   owner_activity(logins)   one ClickHouse scan per chunk (<= ACT_CHUNK logins, <= MAX_LIST_BYTES of IN-list): the
@@ -595,7 +601,7 @@ class RawJsonl:
         sha8 = hashlib.sha256("\n".join(logins).encode()).hexdigest()[:8]
         self.path = self.dir / f"owners_{sha8}.jsonl.gz"
         k = 2
-        while self.path.exists():
+        while self.path.exists() or Path(str(self.path) + ".part").exists():   # .part = left by a hard crash
             self.path = self.dir / f"owners_{sha8}_r{k}.jsonl.gz"
             k += 1
         self.tmp = Path(str(self.path) + ".part")

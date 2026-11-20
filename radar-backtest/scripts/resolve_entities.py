@@ -21,7 +21,7 @@ import json
 import numpy as np
 import pandas as pd
 
-from .lib.config import LABELS, PROCESSED, cfg, get_logger
+from .lib.config import LABELS, PROCESSED, cfg, get_logger, seed
 from .lib.domains import country_from_domain
 from .lib.meta import write_meta
 from .lib.schema import make_events, validate_events
@@ -295,6 +295,15 @@ def build():
                notes="One row per domain. Only high-confidence links. Country from ccTLD else CORDIS (symmetric).")
     log.info("entities: %d (labelled %d, in_B %d, with github %d, with cordis %d)", len(ent), ent["is_labelled"].sum(),
              ent["in_B"].sum(), ent["github_org"].notna().sum(), ent["cordis_first_public_ts"].notna().sum())
+    gl = ent[ent["github_org"].notna()]
+    if len(gl):
+        samp = gl.sample(min(30, len(gl)), random_state=seed())[["entity_id", "github_org", "github_tier", "is_labelled"]]
+        samp["github_url"] = "https://github.com/" + samp["github_org"]
+        samp["is_correct (y/n, human)"] = ""
+        sp = PROCESSED / "match_sample_github.csv"
+        samp.to_csv(sp, index=False)
+        write_meta(sp, "scripts/resolve_entities.py build", rows=len(samp),
+                   notes="Random accepted entity -> GitHub org links for the human precision check.")
     ev = build_events(ent)
     evp = PROCESSED / "events.parquet"
     ev.to_parquet(evp, index=False)

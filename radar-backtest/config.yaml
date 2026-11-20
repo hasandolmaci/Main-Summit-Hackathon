@@ -35,7 +35,7 @@ pool:
   org_sample_pages_per_year: 40   # (GitHub-API route only) REST /organizations pages per creation year
   org_sample_years: [2010, 2023]
   owner_lookups_per_year: 300     # target owners meeting the entry rule (=> ecosyste.ms lookups) per first-activity year
-  pilot_m: 300                    # hash buckets (of 10,000) listed per year before choosing m_Y
+  pilot_m: 200                    # hash buckets (of 10,000) listed per year before choosing m_Y
   # Pool entry rule (same for every entity): within the org's first 12 months of GH Archive activity,
   # >= min_pushers_12m distinct non-bot pushers AND >= min_activity_12m Push/PR/Issues/Release events.
   min_activity_12m: 10

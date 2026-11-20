@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-20T20:22:28.731784+00:00",
+  "file": "data/raw/gharchive/first_year_activity_e99c1d52.tsv.gz",
+  "git_sha": "7b2014e011f5a66d43262cfeb0b6bbe842a3b120",
+  "inputs": [],
+  "notes": "Raw ClickHouse TSVWithNames response for the SQL in the .sql file (never edited).",
+  "params": {
+    "backend": "clickhouse",
+    "fetched_at": "2026-11-20T20:22:28.726567+00:00",
+    "sql_file": "first_year_activity_e99c1d52.sql",
+    "url": "https://play.clickhouse.com/?user=play"
+  },
+  "python": "3.13.18",
+  "rows": 1200,
+  "script": "scripts/sources/gharchive.py",
+  "sha256": "2d577f54893921bab880b95ff9c6b13ff48270bc5dd2d1318cfb0c9c60d52b22",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

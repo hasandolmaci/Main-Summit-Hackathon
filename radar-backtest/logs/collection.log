@@ -4328,3 +4328,11 @@
 2026-11-20 19:33:54,170 INFO github: sample: 560 orgs (186 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
 2026-11-20 19:33:54,248 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
 2026-11-20 19:33:54,248 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 19:35:08,740 INFO http: GET https://cordis.europa.eu/robots.txt params=None status=200 bytes=365
+2026-11-20 19:35:18,495 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'SELECT ?c (COUNT(*) AS ?n) WHERE { ?s a ?c } GROUP BY ?c ORDER BY DESC(?n) LIMIT 60'} status=200 bytes=11802
+2026-11-20 19:35:33,821 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#> SELECT ?p (COUNT(*) AS ?n) WHERE { ?s a eurio:Organisation ; ?p ?o } GROUP BY ?p ORDER BY DESC(?n)'} status=200 bytes=2195
+2026-11-20 19:35:34,956 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#> SELECT ?p (COUNT(*) AS ?n) WHERE { ?s a eurio:OrganisationRole ; ?p ?o } GROUP BY ?p ORDER BY DESC(?n)'} status=200 bytes=2223
+2026-11-20 19:35:36,069 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#> SELECT ?p (COUNT(*) AS ?n) WHERE { ?s a eurio:Project ; ?p ?o } GROUP BY ?p ORDER BY DESC(?n)'} status=200 bytes=4295
+2026-11-20 19:35:37,382 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#> SELECT ?p (COUNT(*) AS ?n) WHERE { ?s a eurio:Grant ; ?p ?o } GROUP BY ?p ORDER BY DESC(?n)'} status=200 bytes=2828
+2026-11-20 19:35:55,135 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#> SELECT ?p (COUNT(*) AS ?n) (SAMPLE(DATATYPE(?o)) AS ?dt) WHERE { ?s a eurio:Site ; ?p ?o } GROUP BY ?p ORDER BY DESC(?n)'} status=200 bytes=1898
+2026-11-20 19:36:01,773 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#> SELECT ?p (COUNT(*) AS ?n) (SAMPLE(DATATYPE(?o)) AS ?dt) WHERE { ?s a eurio:PostalAddress ; ?p ?o } GROUP BY ?p ORDER BY DESC(?n)'} status=200 bytes=2218

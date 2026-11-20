@@ -21593,3 +21593,9 @@
 2026-11-20 22:01:18,816 INFO build_snapshots: as_of 2017: 229 rows, 8 positives, 221 B controls
 2026-11-20 22:01:18,924 INFO build_snapshots: as_of 2018: 206 rows, 6 positives, 200 B controls
 2026-11-20 22:01:19,023 INFO build_snapshots: as_of 2019: 157 rows, 8 positives, 149 B controls
+2026-11-20 22:01:21,044 INFO build_snapshots: reference profiles: 42
+2026-11-20 22:01:21,116 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 5
+2026-11-20 22:01:21,146 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 12
+2026-11-20 22:01:21,173 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 16
+2026-11-20 22:01:21,202 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 18
+2026-11-20 22:01:21,241 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 22

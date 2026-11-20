@@ -334,7 +334,9 @@ class Sparql:
     write_raw: bool = True
     refresh: bool = False          # evict cached responses and fetch again
     cache_only: bool = False       # never touch the network; a missing cache entry is an error
-    max_retries: int = 3           # Virtuoso answers query errors with 500: do not retry those 6x
+    max_retries: int = 3           # Client backoff retries (2-8 s); Virtuoso answers query errors with 500 too
+    outer_retries: int = 2         # further attempts after a pause when a page still fails with 5xx
+    retry_pause_s: float = 60.0
     log: list = field(default_factory=list)
 
     def __post_init__(self):
@@ -361,11 +363,20 @@ class Sparql:
             raise SparqlError(f"{label}: not in the HTTP cache (--cache-only); run without it to fetch")
         if self.refresh:
             self._evict(query)
-        r = self.client.get(self.endpoint, params=self._params(query), headers={"Accept": FORMAT})
-        if r.status != 200:
+        for attempt in range(self.outer_retries + 1):
+            r = self.client.get(self.endpoint, params=self._params(query), headers={"Accept": FORMAT})
+            if r.status == 200:
+                return r
             self._evict(query)
-            raise SparqlError(f"{label}: HTTP {r.status}: {(r.text or '')[:500]}")
-        return r
+            # Virtuoso sometimes fails a query intermittently (SR477 / SR014 on a page that succeeds minutes later)
+            # after the Client's own short backoff: pause, then try again a bounded number of times.
+            if (r.status == -1 or r.status >= 500) and attempt < self.outer_retries:
+                log.warning("%s: HTTP %s (%s); pausing %ss before retry %d/%d", label, r.status,
+                            (r.text or "")[:120].replace("\n", " "), self.retry_pause_s, attempt + 1, self.outer_retries)
+                time.sleep(self.retry_pause_s)
+                continue
+            break
+        raise SparqlError(f"{label}: HTTP {r.status}: {(r.text or '')[:500]}")
 
     def _write_raw(self, ds: Dataset, name: str, r: CachedResponse, query: str, rows: int, extra: dict) -> Path:
         path = self.raw_dir / ds.name / f"{name}.csv.gz"
@@ -505,16 +516,17 @@ def build_org_table(orgs: pd.DataFrame, types: pd.DataFrame) -> tuple[pd.DataFra
 
 
 def build_project_table(projects: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
-    idx = pd.Index(sorted(set(projects["project_uuid"].dropna())), name="project_uuid")
+    """One row per project identifier (grant agreement id = bulk 'projectID'). Projects are keyed by the identifier
+    literal, not the node IRI: the endpoint fails to sort / STR() some Project IRIs (Virtuoso SR477 / SR014). Several
+    nodes with one identifier are merged (alphabetically first value per field; counted as multi_*)."""
+    idx = pd.Index(sorted(set(projects["project_id"].dropna())), name="project_id")
     out = pd.DataFrame(index=idx)
-    st: dict = {"nodes": len(idx)}
-    for col in ("project_id", "acronym", "start_date", "signature_date"):
-        out[col], st[f"multi_{col}"] = _first_sorted(projects, "project_uuid", col, idx)
-    g = projects[["project_uuid", "grant_uuid"]].dropna().drop_duplicates()
-    st["multi_grant"] = int(g.groupby("project_uuid").size().gt(1).sum())
-    st["no_grant"] = int((~idx.isin(g["project_uuid"])).sum())
-    st["missing_project_id"] = int(out["project_id"].isna().sum())
-    st["duplicate_project_id_nodes"] = int(out["project_id"].dropna().duplicated(keep=False).sum())
+    st: dict = {"project_ids": len(idx), "rows": int(len(projects))}
+    for col in ("acronym", "start_date", "signature_date"):
+        out[col], st[f"multi_{col}"] = _first_sorted(projects, "project_id", col, idx)
+    g = projects[["project_id", "grant_uuid"]].dropna().drop_duplicates()
+    st["multi_grant"] = int(g.groupby("project_id").size().gt(1).sum())
+    st["no_grant"] = int((~idx.isin(g["project_id"])).sum())
     return out, st
 
 
@@ -524,7 +536,7 @@ def programme_of(value: str | None) -> str | None:
 
 
 def derive_programmes(projects: pd.DataFrame, schemes: dict[str, pd.DataFrame]) -> tuple[pd.DataFrame, dict]:
-    """Framework programme per project node (FP7 / H2020 / HORIZON), deterministic cascade over its grant(s):
+    """Framework programme per project (FP7 / H2020 / HORIZON), deterministic cascade over its grant(s):
 
     1. topic identifier prefix ('H2020_...', 'FP7-...', 'HORIZON-...'), 2. call identifier prefix, 3. programme code
        prefix; the first step with evidence decides, two programmes at that step = 'conflict' (None).
@@ -533,46 +545,43 @@ def derive_programmes(projects: pd.DataFrame, schemes: dict[str, pd.DataFrame]) 
     5. numeric project id inside exactly one programme's [min, max] id range of step-1..3 projects.
     Otherwise None ('unresolved'); such projects are excluded from the outputs (FP5/FP6 leftovers in the graph).
 
-    projects: the raw 'projects' dataset (project_uuid, project_id, grant_uuid, ...); schemes: kind -> raw
-    grant_<kind> dataset (grant_uuid, value). Returns frame [project_uuid, programme, programme_step] and stats.
+    projects: the raw 'projects' dataset (project_id, grant_uuid, ...); schemes: kind -> raw grant_<kind> dataset
+    (grant_uuid, value). Returns frame [project_id, programme, programme_step] and stats.
     """
-    pg = projects[["project_uuid", "grant_uuid"]].dropna().drop_duplicates()
+    pg = projects[["project_id", "grant_uuid"]].dropna().drop_duplicates()
     ev = {}
     for kind in ("topic", "call", "programme", "type"):
         s = schemes.get(kind)
         if s is None or s.empty:
-            ev[kind] = pd.DataFrame(columns=["project_uuid", "value"])
+            ev[kind] = pd.DataFrame(columns=["project_id", "value"])
             continue
-        ev[kind] = pg.merge(s.dropna().drop_duplicates(), on="grant_uuid")[["project_uuid", "value"]]
-    ids = projects.dropna(subset=["project_uuid"]).drop_duplicates("project_uuid").set_index("project_uuid")["project_id"]
-    uuids = pd.Index(sorted(ids.index))
-    prog = pd.Series([None] * len(uuids), index=uuids, dtype=object)
-    step = pd.Series(["unresolved"] * len(uuids), index=uuids, dtype=object)
+        ev[kind] = pg.merge(s.dropna().drop_duplicates(), on="grant_uuid")[["project_id", "value"]]
+    ids = pd.Index(sorted(set(projects["project_id"].dropna())), name="project_id")
+    prog = pd.Series([None] * len(ids), index=ids, dtype=object)
+    step = pd.Series(["unresolved"] * len(ids), index=ids, dtype=object)
 
     for kind, label in (("topic", "topic"), ("call", "call"), ("programme", "programme_code")):
         e = ev[kind].assign(p=ev[kind]["value"].map(programme_of)).dropna(subset=["p"])
-        sets = e.groupby("project_uuid")["p"].agg(lambda s: sorted(set(s)))
-        todo = sets.index[sets.index.isin(uuids) & (step.reindex(sets.index) == "unresolved").values]
+        sets = e.groupby("project_id")["p"].agg(lambda s: sorted(set(s)))
+        todo = sets.index[sets.index.isin(ids) & (step.reindex(sets.index) == "unresolved").values]
         for u in todo:
             ps = sets[u]
             prog[u], step[u] = (ps[0], label) if len(ps) == 1 else (None, "conflict")
     direct = step.isin(["topic", "call", "programme_code"])
 
-    t = ev["type"].merge(prog[direct].rename("p"), left_on="project_uuid", right_index=True)
+    t = ev["type"].merge(prog[direct].rename("p"), left_on="project_id", right_index=True)
     code_sets = t.groupby("value")["p"].agg(lambda s: sorted(set(s)))
     code_map = {c: ps[0] for c, ps in code_sets.items() if len(ps) == 1}
-    open_ = step == "unresolved"
-    tt = ev["type"][ev["type"]["project_uuid"].isin(uuids[open_.values])]
+    tt = ev["type"][ev["type"]["project_id"].isin(ids[(step == "unresolved").values])]
     tt = tt.assign(p=tt["value"].map(code_map)).dropna(subset=["p"])
-    for u, ps in tt.groupby("project_uuid")["p"].agg(lambda s: sorted(set(s))).items():
+    for u, ps in tt.groupby("project_id")["p"].agg(lambda s: sorted(set(s))).items():
         if len(ps) == 1:
             prog[u], step[u] = ps[0], "type_code"
 
-    num = pd.to_numeric(ids.reindex(uuids).where(ids.reindex(uuids).astype(str).str.fullmatch(r"\d+"), None),
-                        errors="coerce")
+    num = pd.Series(pd.to_numeric([v if re.fullmatch(r"\d+", v) else None for v in ids], errors="coerce"), index=ids)
     ranges = {p: (int(num[direct & (prog == p)].min()), int(num[direct & (prog == p)].max()))
               for p in sorted(set(prog[direct].dropna())) if num[direct & (prog == p)].notna().any()}
-    for u in uuids[(step == "unresolved").values]:
+    for u in ids[(step == "unresolved").values]:
         v = num[u]
         if pd.isna(v):
             continue
@@ -580,7 +589,7 @@ def derive_programmes(projects: pd.DataFrame, schemes: dict[str, pd.DataFrame]) 
         if len(hits) == 1:
             prog[u], step[u] = hits[0], "id_range"
 
-    out = pd.DataFrame({"project_uuid": uuids, "programme": [p if isinstance(p, str) else None for p in prog],
+    out = pd.DataFrame({"project_id": ids, "programme": [p if isinstance(p, str) else None for p in prog],
                         "programme_step": step.values}, dtype=object)
     st = {"by_step": {k: int(v) for k, v in step.value_counts().sort_index().items()},
           "by_programme": {k: int(v) for k, v in prog.value_counts().sort_index().items()},
@@ -591,8 +600,8 @@ def derive_programmes(projects: pd.DataFrame, schemes: dict[str, pd.DataFrame]) 
 
 
 def build_role_table(roles: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
-    """One row per OrganisationRole node. EC contribution = the largest EUR amount paid to the role (a role with two
-    payments / amounts cannot be told apart as ecContribution vs netEcContribution; counted)."""
+    """One row per (OrganisationRole node, project_id). EC contribution = the largest EUR amount paid to the role (a
+    role with two payments / amounts cannot be told apart as ecContribution vs netEcContribution; counted)."""
     r = roles.dropna(subset=["role_id"]).copy()
     st: dict = {"rows": int(len(roles)), "roles": int(r["role_id"].nunique()),
                 "empty_role_id_rows": int(roles["role_id"].isna().sum())}
@@ -600,17 +609,22 @@ def build_role_table(roles: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
     non_eur = r["currency"].notna() & (r["currency"].str.upper() != "EUR")
     st["non_eur_amounts"] = int(non_eur.sum())
     r["_amt"] = amt.where(~non_eur)
-    idx = pd.Index(sorted(r["role_id"].unique()), name="role_id")
+    r["project_id"] = r["project_id"].where(r["project_id"].notna(), "")    # '' = role of a node without identifier
+    r["_key"] = r["role_id"] + "\t" + r["project_id"]
+    st["roles_multi_project"] = int(r.drop_duplicates("_key").groupby("role_id").size().gt(1).sum())
+    idx = pd.Index(sorted(r["_key"].unique()), name="_key")
     out = pd.DataFrame(index=idx)
-    for col in ("org_id", "project_uuid", "role_label", "order"):
-        out[col], st[f"multi_{col}"] = _first_sorted(r, "role_id", col, idx)
-    n_amt = r.dropna(subset=["_amt"]).groupby("role_id")["_amt"].nunique()
+    for col in ("role_id", "project_id", "org_id", "role_label", "order"):
+        out[col], st[f"multi_{col}"] = _first_sorted(r, "_key", col, idx)
+    n_amt = r.dropna(subset=["_amt"]).groupby("_key")["_amt"].nunique()
     st["roles_multi_amount"] = int(n_amt.gt(1).sum())
-    best = r.dropna(subset=["_amt"]).sort_values(["role_id", "_amt"], ascending=[True, False], kind="mergesort")
-    best = best.drop_duplicates("role_id").set_index("role_id")
+    best = r.dropna(subset=["_amt"]).sort_values(["_key", "_amt"], ascending=[True, False], kind="mergesort")
+    best = best.drop_duplicates("_key").set_index("_key")
     out["ec_contribution"] = best["amount"].reindex(idx)
     st["roles_without_amount"] = int(out["ec_contribution"].isna().sum())
-    return out.reset_index(), st
+    out["project_id"] = out["project_id"].replace("", None)
+    st["roles_without_project_id"] = int(out["project_id"].isna().sum())
+    return out.reset_index(drop=True), st
 
 
 def build_participations_sparql(frames: dict[str, pd.DataFrame], programmes: list[str] | None = None
@@ -624,9 +638,9 @@ def build_participations_sparql(frames: dict[str, pd.DataFrame], programmes: lis
     progs, prog_st = derive_programmes(frames["projects"], schemes)
     roles, role_st = build_role_table(frames["roles"])
 
-    proj = proj.join(progs.set_index("project_uuid"))
+    proj = proj.join(progs.set_index("project_id"))
     df = roles.merge(orgs, left_on="org_id", right_index=True, how="left", indicator="_org")
-    df = df.merge(proj, left_on="project_uuid", right_index=True, how="left", indicator="_proj")
+    df = df.merge(proj, left_on="project_id", right_index=True, how="left", indicator="_proj")
     role_st["org_join_rate"] = float((df["_org"] == "both").mean()) if len(df) else 0.0
     role_st["project_join_rate"] = float((df["_proj"] == "both").mean()) if len(df) else 0.0
     # role whose organisation node is missing: keep it, identified by the graph uuid
@@ -634,7 +648,6 @@ def build_participations_sparql(frames: dict[str, pd.DataFrame], programmes: lis
     role_st["roles_by_programme_step"] = {k: int(v) for k, v in df["programme_step"].fillna("no_project")
                                           .value_counts().sort_index().items()}
     role_st["roles_without_programme"] = int(df["programme"].isna().sum())
-    role_st["roles_without_project_id"] = int(df["project_id"].isna().sum())
 
     parts, part_st = [], {}
     for p in programmes:
@@ -644,16 +657,13 @@ def build_participations_sparql(frames: dict[str, pd.DataFrame], programmes: lis
             "short_name": d["short_name"], "sme": d["sme"], "activity_type": d["activity_type"],
             "country": d["country"], "organization_url": d["organization_url"], "role": d["role_label"],
             "ec_contribution": d["ec_contribution"], "order": d["order"]}, dtype=object).reset_index(drop=True)
-        pr = proj[proj["programme"] == p].dropna(subset=["project_id"])
-        pr = pr.reset_index().sort_values(["project_id", "start_date", "signature_date", "project_uuid"],
-                                          kind="mergesort", na_position="last")
+        pr = proj[proj["programme"] == p].reset_index()
         proj_frame = pd.DataFrame({"project_id": pr["project_id"], "start_date": pr["start_date"],
                                    "ec_signature_date": pr["signature_date"], "framework": p},
                                   dtype=object).reset_index(drop=True)
         # left-merge gaps are NaN; cordis.build_participations expects str|None (str(nan) would read as a value)
         org_frame, proj_frame = (f.where(f.notna(), None) for f in (org_frame, proj_frame))
         part, st = cordis.build_participations(org_frame, proj_frame, p)
-        st["duplicate_project_id_nodes"] = int(pr["project_id"].duplicated(keep=False).sum())
         parts.append(part)
         part_st[p] = st
     part = (pd.concat(parts, ignore_index=True) if parts else pd.DataFrame(columns=cordis.PART_COLUMNS))

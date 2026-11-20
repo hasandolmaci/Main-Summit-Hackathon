@@ -78,8 +78,11 @@ class FakeEndpoint:
             return CachedResponse(url, 200, f'"n"\n{len(rows)}\n', NOW, False)
         limit, offset = map(int, re.search(r"LIMIT (\d+) OFFSET (\d+)", q).groups())
         self.calls.append((name, offset))
-        if (name, offset) in self.overrides:
-            return self.overrides[(name, offset)]
+        o = self.overrides.get((name, offset))
+        if isinstance(o, list) and o:          # a sequence of responses, consumed one per request
+            return o.pop(0)
+        if isinstance(o, CachedResponse):
+            return o
         return CachedResponse(url, 200, _virtuoso_csv(cols, rows[offset:offset + min(limit, self.cap)]), NOW, False)
 
 
@@ -103,7 +106,8 @@ def test_page_query_builder():
     ds = cs.DATASETS["roles"]
     q = cs.build_page_query(ds, 10_000, 20_000)
     assert q.startswith("# radar-backtest cordis_sparql dataset=roles page\nPREFIX eurio: <http://data.europa.eu/s66#>")
-    assert q.rstrip().endswith("ORDER BY ?role ?org ?project ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 20000")
+    assert q.rstrip().endswith("ORDER BY ?role ?org ?project_id ?role_label ?order ?amount ?currency\nLIMIT 10000 OFFSET 20000")
+    assert "STR(?project)" not in q and "?project " not in q.split("ORDER BY")[1]   # project IRIs never sorted
     assert "DISTINCT" not in q            # DISTINCT over computed strings overflows Virtuoso temp columns
     with pytest.raises(ValueError):
         cs.build_page_query(ds, cs.MAX_PAGE_SIZE + 1, 0)
@@ -270,16 +274,16 @@ def test_programme_of():
 def test_derive_programmes_cascade():
     tables = {n: pd.DataFrame(_load(n)[1], columns=_load(n)[0], dtype=object) for n in cs.DATASETS}
     out, st = cs.derive_programmes(tables["projects"], {k: tables[f"grant_{k}"] for k in cs.SCHEME_KINDS})
-    got = out.set_index("project_uuid")[["programme", "programme_step"]].apply(tuple, axis=1).to_dict()
+    got = out.set_index("project_id")[["programme", "programme_step"]].apply(tuple, axis=1).to_dict()
     assert got == {
-        "p01": ("H2020", "topic"), "p02": ("H2020", "call"), "p03": ("FP7", "topic"),
-        "p04": ("FP7", "type_code"),          # MC-IEF is only used by FP7 projects
-        "p05": ("FP7", "topic"), "p06": ("HORIZON", "topic"),
-        "p07": ("HORIZON", "id_range"),       # no scheme evidence; id inside the HORIZON range only
-        "p08": ("HORIZON", "topic"),
-        "p09": (None, "unresolved"),          # FP5 id, no evidence
-        "p10": (None, "conflict"),            # topics of two programmes
-        "p11": (None, "unresolved"),          # 'CSA' is used by FP7 and H2020; id outside every range
+        "700001": ("H2020", "topic"), "700002": ("H2020", "call"), "200001": ("FP7", "topic"),
+        "250001": ("FP7", "type_code"),          # MC-IEF is only used by FP7 projects
+        "250002": ("FP7", "topic"), "101000001": ("HORIZON", "topic"),
+        "101200000": ("HORIZON", "id_range"),    # no scheme evidence; id inside the HORIZON range only
+        "101300000": ("HORIZON", "topic"),
+        "IST-2001-32072": (None, "unresolved"),  # FP5 id, no evidence
+        "700010": (None, "conflict"),            # topics of two programmes
+        "700011": (None, "unresolved"),          # 'CSA' is used by FP7 and H2020; id outside every range
     }
     assert st["type_codes_ambiguous"] == ["CSA"]
     assert st["id_ranges"] == {"FP7": [200001, 250002], "H2020": [700001, 700002], "HORIZON": [101000001, 101300000]}
@@ -289,7 +293,7 @@ def test_derive_programmes_cascade():
 def test_fetch_stats_and_requests(e2e):
     stats, fake = e2e[2], e2e[4]
     f = stats["fetch"]
-    assert f["roles"]["rows"] == f["roles"]["expected"] == 21 and f["roles"]["pages"] == 6          # 5 x 4 + 1
+    assert f["roles"]["rows"] == f["roles"]["expected"] == 22 and f["roles"]["pages"] == 6          # 5 x 4 + 2
     assert f["organisations"]["rows"] == 12 and f["organisations"]["pages"] == 3                   # exact multiple
     assert [c for c in fake.calls if c[0] == "organisations"] == [("organisations", "count"),
                                                                 ("organisations", 0), ("organisations", 4),
@@ -333,8 +337,10 @@ def test_rows_per_programme_and_exclusions(e2e):
     assert part.groupby("programme").size().to_dict() == {"FP7": 4, "H2020": 6, "HORIZON": 7}
     assert (part["framework"] == part["programme"]).all()
     assert not part["project_id"].isin(["IST-2001-32072", "700010", "700011"]).any()   # unresolved / conflict
-    assert stats["roles"]["roles_without_programme"] == 2
+    assert stats["roles"]["roles_without_programme"] == 3      # unresolved, conflict, no project identifier
+    assert stats["roles"]["roles_without_project_id"] == 1
     assert stats["roles"]["roles_by_programme_step"]["id_range"] == 1
+    assert stats["roles"]["roles_by_programme_step"]["no_project"] == 1
 
 
 def test_public_ts_signature_first_then_start_date(e2e):
@@ -442,12 +448,27 @@ def test_error_page_raises_and_is_evicted(tmp_path):
     assert not list((tmp_path / "raw").rglob("*.gz"))          # nothing written for an invalid page
 
 
-def test_http_error_raises(tmp_path):
-    err = CachedResponse("u", 500, "Virtuoso 22026 Error SR319: Max row length is exceeded", NOW, False)
-    sp = cs.Sparql(client=FakeEndpoint(tmp_path, overrides={("roles", 0): err}), raw_dir=tmp_path / "raw")
-    with pytest.raises(cs.SparqlError, match="HTTP 500.*SR319"):
+def test_http_error_raises_after_bounded_retries(tmp_path):
+    err = CachedResponse("u", 500, "Virtuoso 22026 Error SR477: Error serializing the value", NOW, False)
+    fake = FakeEndpoint(tmp_path, overrides={("roles", 0): err})
+    sp = cs.Sparql(client=fake, raw_dir=tmp_path / "raw", retry_pause_s=0)
+    with pytest.raises(cs.SparqlError, match="HTTP 500.*SR477"):
         sp.page(cs.DATASETS["roles"], 4, 0)
-    assert sp.client.max_retries == 3                          # query errors are not retried 6x
+    assert fake.calls == [("roles", 0)] * 3                    # 1 + outer_retries
+    assert sp.client.max_retries == 3                          # Client backoff capped (not 6x)
+    syntax = CachedResponse("u", 400, "Virtuoso 37000 Error SP030: SPARQL compiler", NOW, False)
+    fake = FakeEndpoint(tmp_path, overrides={("roles", 0): syntax})
+    with pytest.raises(cs.SparqlError, match="HTTP 400"):
+        cs.Sparql(client=fake, raw_dir=tmp_path / "raw", retry_pause_s=0).page(cs.DATASETS["roles"], 4, 0)
+    assert fake.calls == [("roles", 0)]                        # a 4xx is never retried
+
+
+def test_intermittent_5xx_recovers(tmp_path):
+    err = CachedResponse("u", 500, "Virtuoso 22023 Error SR014: Function ri_name_id needs a string", NOW, False)
+    fake = FakeEndpoint(tmp_path, overrides={("roles", 4): [err]})
+    sp = cs.Sparql(client=fake, raw_dir=tmp_path / "raw", retry_pause_s=0)
+    pages, st = cs.paginate(lambda off: sp.page(cs.DATASETS["roles"], 4, off), 4, expected=22)
+    assert st["rows"] == 22 and fake.calls.count(("roles", 4)) == 2
 
 
 def test_cache_only_never_fetches(tmp_path):

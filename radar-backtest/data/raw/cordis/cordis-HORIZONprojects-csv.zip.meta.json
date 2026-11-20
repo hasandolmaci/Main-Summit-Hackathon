@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-20T19:43:18.811458+00:00",
+  "file": "data/raw/cordis/cordis-HORIZONprojects-csv.zip",
+  "git_sha": "ce642d8b2b7c7a57ffd6ceaadfbd30424762e66c",
+  "inputs": [],
+  "notes": "CORDIS bulk CSV package (CC BY 4.0 (CORDIS, European Union; reuse per Commission Decision 2011/833/EU)); not edited; see .manifest.json",
+  "params": {
+    "programme": "HORIZON",
+    "provenance": "manual download imported via --zip-dir",
+    "url": "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip"
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/sources/cordis.py",
+  "sha256": "69dc223a80864d0e6a695b3d4344a74da226a93727da564a677edcd3ed5d3f33",
+  "sources": [
+    "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip"
+  ]
+}

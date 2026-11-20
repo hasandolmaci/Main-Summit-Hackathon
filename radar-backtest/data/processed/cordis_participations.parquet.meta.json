@@ -1,0 +1,248 @@
+{
+  "created_at": "2026-11-20T19:43:39.293137+00:00",
+  "file": "data/processed/cordis_participations.parquet",
+  "git_sha": "ce642d8b2b7c7a57ffd6ceaadfbd30424762e66c",
+  "inputs": [
+    {
+      "path": "data/raw/cordis/cordis-fp7projects-csv.zip",
+      "sha256": "886ee47973584971259db3ab3de76feb4d95c9b13fbe41241b85e5bfc97113a6"
+    },
+    {
+      "path": "data/raw/cordis/cordis-h2020projects-csv.zip",
+      "sha256": "8d4baffe558b7d0a74fc538f6ddf857147aab3895cf8032fb76ca4c5ce7df0fe"
+    },
+    {
+      "path": "data/raw/cordis/cordis-HORIZONprojects-csv.zip",
+      "sha256": "69dc223a80864d0e6a695b3d4344a74da226a93727da564a677edcd3ed5d3f33"
+    }
+  ],
+  "notes": "one row per (programme, project_id, organisation_id); public_ts = ecSignatureDate else startDate (00:00 UTC); contact columns never loaded; e-mail-like organizationURL values dropped; country UK->GB, EL->GR; CC BY 4.0 (CORDIS, European Union; reuse per Commission Decision 2011/833/EU)",
+  "params": {
+    "parse_stats": {
+      "FP7": {
+        "dropped_no_ids": 472,
+        "duplicate_key_rows": 10,
+        "join_rate": 0.9855636392194941,
+        "members": [
+          "euroSciVoc.csv",
+          "legalBasis.csv",
+          "organization.csv",
+          "project.csv",
+          "topics.csv",
+          "webItem.csv",
+          "webLink.csv"
+        ],
+        "org_rows": 140063,
+        "organization": {
+          "contact_columns_dropped": [
+            "contactForm"
+          ],
+          "encoding": "utf-8",
+          "lines_in_bad_rows": 1,
+          "lines_read": 140065,
+          "mapped": {
+            "activity_type": "activityType",
+            "country": "country",
+            "ec_contribution": "ecContribution",
+            "name": "name",
+            "order": "order",
+            "organisation_id": "organisationID",
+            "organization_url": "organizationURL",
+            "project_id": "projectID",
+            "role": "role",
+            "short_name": "shortName",
+            "sme": "SME"
+          },
+          "n_header_fields": 25,
+          "parse_rate": 0.9999928604066712,
+          "rows_bad": 1,
+          "rows_csv_error": 0,
+          "rows_ok": 140063,
+          "separator": ";"
+        },
+        "project": {
+          "contact_columns_dropped": [],
+          "encoding": "utf-8",
+          "lines_in_bad_rows": 434,
+          "lines_read": 25786,
+          "mapped": {
+            "ec_signature_date": "ecSignatureDate",
+            "framework": "frameworkProgramme",
+            "project_id": "id",
+            "start_date": "startDate"
+          },
+          "n_header_fields": 20,
+          "parse_rate": 0.983168508822959,
+          "rows_bad": 434,
+          "rows_csv_error": 0,
+          "rows_ok": 25351,
+          "separator": ";"
+        },
+        "project_rows": 25351,
+        "rows": 139586,
+        "unknown_activity_type": 0,
+        "unparsed_dates": {
+          "ec_signature_date": 1,
+          "start_date": 1
+        },
+        "url_email_like_dropped": 1,
+        "zip": "cordis-fp7projects-csv.zip"
+      },
+      "H2020": {
+        "dropped_no_ids": 0,
+        "duplicate_key_rows": 881,
+        "join_rate": 0.991282397815294,
+        "members": [
+          "documentation.zip",
+          "euroSciVoc.csv",
+          "legalBasis.csv",
+          "organization.csv",
+          "project.csv",
+          "topics.csv",
+          "webItem.csv",
+          "webLink.csv"
+        ],
+        "org_rows": 179063,
+        "organization": {
+          "contact_columns_dropped": [
+            "contactForm"
+          ],
+          "encoding": "utf-8",
+          "lines_in_bad_rows": 0,
+          "lines_read": 179064,
+          "mapped": {
+            "activity_type": "activityType",
+            "country": "country",
+            "ec_contribution": "ecContribution",
+            "name": "name",
+            "order": "order",
+            "organisation_id": "organisationID",
+            "organization_url": "organizationURL",
+            "project_id": "projectID",
+            "role": "role",
+            "short_name": "shortName",
+            "sme": "SME"
+          },
+          "n_header_fields": 25,
+          "parse_rate": 1.0,
+          "rows_bad": 0,
+          "rows_csv_error": 0,
+          "rows_ok": 179063,
+          "separator": ";"
+        },
+        "project": {
+          "contact_columns_dropped": [],
+          "encoding": "utf-8",
+          "lines_in_bad_rows": 286,
+          "lines_read": 35390,
+          "mapped": {
+            "ec_signature_date": "ecSignatureDate",
+            "framework": "frameworkProgramme",
+            "project_id": "id",
+            "start_date": "startDate"
+          },
+          "n_header_fields": 22,
+          "parse_rate": 0.991918392720902,
+          "rows_bad": 286,
+          "rows_csv_error": 0,
+          "rows_ok": 35103,
+          "separator": ";"
+        },
+        "project_rows": 35103,
+        "rows": 178614,
+        "unknown_activity_type": 0,
+        "unparsed_dates": {
+          "ec_signature_date": 0,
+          "start_date": 0
+        },
+        "url_email_like_dropped": 0,
+        "zip": "cordis-h2020projects-csv.zip"
+      },
+      "HORIZON": {
+        "dropped_no_ids": 0,
+        "duplicate_key_rows": 586,
+        "join_rate": 0.9913331836017493,
+        "members": [
+          "documentation.zip",
+          "euroSciVoc.csv",
+          "legalBasis.csv",
+          "organization.csv",
+          "policyPriorities.csv",
+          "project.csv",
+          "topics.csv",
+          "webItem.csv",
+          "webLink.csv"
+        ],
+        "org_rows": 151382,
+        "organization": {
+          "contact_columns_dropped": [
+            "contactForm"
+          ],
+          "encoding": "utf-8",
+          "lines_in_bad_rows": 0,
+          "lines_read": 151383,
+          "mapped": {
+            "activity_type": "activityType",
+            "country": "country",
+            "ec_contribution": "ecContribution",
+            "name": "name",
+            "order": "order",
+            "organisation_id": "organisationID",
+            "organization_url": "organizationURL",
+            "project_id": "projectID",
+            "role": "role",
+            "short_name": "shortName",
+            "sme": "SME"
+          },
+          "n_header_fields": 25,
+          "parse_rate": 1.0,
+          "rows_bad": 0,
+          "rows_csv_error": 0,
+          "rows_ok": 151382,
+          "separator": ";"
+        },
+        "project": {
+          "contact_columns_dropped": [],
+          "encoding": "utf-8",
+          "lines_in_bad_rows": 202,
+          "lines_read": 24420,
+          "mapped": {
+            "ec_signature_date": "ecSignatureDate",
+            "framework": "frameworkProgramme",
+            "project_id": "id",
+            "start_date": "startDate"
+          },
+          "n_header_fields": 22,
+          "parse_rate": 0.9917277529792374,
+          "rows_bad": 202,
+          "rows_csv_error": 0,
+          "rows_ok": 24217,
+          "separator": ";"
+        },
+        "project_rows": 24217,
+        "rows": 151089,
+        "unknown_activity_type": 0,
+        "unparsed_dates": {
+          "ec_signature_date": 0,
+          "start_date": 0
+        },
+        "url_email_like_dropped": 0,
+        "zip": "cordis-HORIZONprojects-csv.zip"
+      }
+    },
+    "programmes": [
+      "FP7",
+      "H2020",
+      "HORIZON"
+    ]
+  },
+  "python": "3.13.18",
+  "rows": 469289,
+  "script": "scripts/sources/cordis.py",
+  "sha256": "9cbfc8a8680f4fb32ca72b10785e5246a471d29b82eceac4f9a1e5a5e1fe1411",
+  "sources": [
+    "https://cordis.europa.eu/data/cordis-fp7projects-csv.zip",
+    "https://cordis.europa.eu/data/cordis-h2020projects-csv.zip",
+    "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip"
+  ]
+}

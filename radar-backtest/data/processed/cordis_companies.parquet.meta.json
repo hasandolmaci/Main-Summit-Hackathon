@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-11-20T19:43:39.447921+00:00",
+  "file": "data/processed/cordis_companies.parquet",
+  "git_sha": "ce642d8b2b7c7a57ffd6ceaadfbd30424762e66c",
+  "inputs": [
+    {
+      "path": "data/raw/cordis/cordis-fp7projects-csv.zip",
+      "sha256": "886ee47973584971259db3ab3de76feb4d95c9b13fbe41241b85e5bfc97113a6"
+    },
+    {
+      "path": "data/raw/cordis/cordis-h2020projects-csv.zip",
+      "sha256": "8d4baffe558b7d0a74fc538f6ddf857147aab3895cf8032fb76ca4c5ce7df0fe"
+    },
+    {
+      "path": "data/raw/cordis/cordis-HORIZONprojects-csv.zip",
+      "sha256": "69dc223a80864d0e6a695b3d4344a74da226a93727da564a677edcd3ed5d3f33"
+    }
+  ],
+  "notes": "one row per company domain; country = mode over participations (ties alphabetical); multi_country flags domains seen with >1 country; CC BY 4.0 (CORDIS, European Union; reuse per Commission Decision 2011/833/EU)",
+  "params": {
+    "filter": "activity_type == 'PRC' and domain",
+    "programmes": [
+      "FP7",
+      "H2020",
+      "HORIZON"
+    ]
+  },
+  "python": "3.13.18",
+  "rows": 12509,
+  "script": "scripts/sources/cordis.py",
+  "sha256": "37dabc2f89f90d9a0595814c5e667ad695b7b28ef4ac9db7c3bd0d761ad75ce4",
+  "sources": [
+    "https://cordis.europa.eu/data/cordis-fp7projects-csv.zip",
+    "https://cordis.europa.eu/data/cordis-h2020projects-csv.zip",
+    "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "bytes": 38336525,
+  "fetched_at": "2026-11-20T19:43:06.419119+00:00",
+  "imported_at": "2026-11-20T19:43:18.811097+00:00",
+  "license": "CC BY 4.0 (CORDIS, European Union; reuse per Commission Decision 2011/833/EU)",
+  "provenance": "manual download imported via --zip-dir",
+  "resolved_via": "manual",
+  "sha256": "69dc223a80864d0e6a695b3d4344a74da226a93727da564a677edcd3ed5d3f33",
+  "url": "https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip"
+}

@@ -1,0 +1,10 @@
+{
+  "bytes": 55260681,
+  "fetched_at": "2026-11-20T19:43:06.363119+00:00",
+  "imported_at": "2026-11-20T19:43:18.676619+00:00",
+  "license": "CC BY 4.0 (CORDIS, European Union; reuse per Commission Decision 2011/833/EU)",
+  "provenance": "manual download imported via --zip-dir",
+  "resolved_via": "manual",
+  "sha256": "8d4baffe558b7d0a74fc538f6ddf857147aab3895cf8032fb76ca4c5ce7df0fe",
+  "url": "https://cordis.europa.eu/data/cordis-h2020projects-csv.zip"
+}

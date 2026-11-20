@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-20T19:43:18.677120+00:00",
+  "file": "data/raw/cordis/cordis-h2020projects-csv.zip",
+  "git_sha": "ce642d8b2b7c7a57ffd6ceaadfbd30424762e66c",
+  "inputs": [],
+  "notes": "CORDIS bulk CSV package (CC BY 4.0 (CORDIS, European Union; reuse per Commission Decision 2011/833/EU)); not edited; see .manifest.json",
+  "params": {
+    "programme": "H2020",
+    "provenance": "manual download imported via --zip-dir",
+    "url": "https://cordis.europa.eu/data/cordis-h2020projects-csv.zip"
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/sources/cordis.py",
+  "sha256": "8d4baffe558b7d0a74fc538f6ddf857147aab3895cf8032fb76ca4c5ce7df0fe",
+  "sources": [
+    "https://cordis.europa.eu/data/cordis-h2020projects-csv.zip"
+  ]
+}

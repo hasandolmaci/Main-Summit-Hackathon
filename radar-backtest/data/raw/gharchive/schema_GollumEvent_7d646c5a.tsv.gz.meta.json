@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-20T19:11:45.591669+00:00",
+  "file": "data/raw/gharchive/schema_GollumEvent_7d646c5a.tsv.gz",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [],
+  "notes": "Raw ClickHouse TSVWithNames response for the SQL in the .sql file (never edited).",
+  "params": {
+    "backend": "clickhouse",
+    "fetched_at": "2026-11-20T19:11:45.589196+00:00",
+    "sql_file": "schema_GollumEvent_7d646c5a.sql",
+    "url": "https://play.clickhouse.com/?user=play"
+  },
+  "python": "3.13.18",
+  "rows": 16,
+  "script": "scripts/sources/gharchive.py",
+  "sha256": "8ef740491b73a53cb0aea905dcb7d851b64466eee6cd658634e895ff831f8fef",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

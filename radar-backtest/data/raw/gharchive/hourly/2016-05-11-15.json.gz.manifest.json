@@ -1,0 +1,8 @@
+{
+  "bytes": 23137175,
+  "fetched_at": "2026-11-20T19:12:26.875010+00:00",
+  "local_path": "data/cache/data.gharchive.org/hourly/2016-05-11-15.json.gz",
+  "note": "untrusted raw GH Archive hour; stored under data/cache (gitignored)",
+  "sha256": "a3627205734aa6fdd8a3a07b22d20dd8bd849213195d7f20fb89736624dd5af5",
+  "url": "https://data.gharchive.org/2016-05-11-15.json.gz"
+}

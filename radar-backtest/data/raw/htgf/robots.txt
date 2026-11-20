@@ -1,0 +1,7 @@
+Sitemap: https://www.htgf.de/sitemap_index.xml
+
+# global
+User-agent: *
+Content-Signal: ai-train=no, search=yes, ai-input=no
+Allow: /
+Disallow: /xmlrpc.php

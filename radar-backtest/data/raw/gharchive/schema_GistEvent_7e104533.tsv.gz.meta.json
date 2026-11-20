@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-20T19:11:58.747282+00:00",
+  "file": "data/raw/gharchive/schema_GistEvent_7e104533.tsv.gz",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [],
+  "notes": "Raw ClickHouse TSVWithNames response for the SQL in the .sql file (never edited).",
+  "params": {
+    "backend": "clickhouse",
+    "fetched_at": "2026-11-20T19:11:58.745467+00:00",
+    "sql_file": "schema_GistEvent_7e104533.sql",
+    "url": "https://play.clickhouse.com/?user=play"
+  },
+  "python": "3.13.18",
+  "rows": 4,
+  "script": "scripts/sources/gharchive.py",
+  "sha256": "12e50d5f7b71a300dc7368d42dd70d0f4d04f06a911cec1c657ae0f5e501a0d0",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

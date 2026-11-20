@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-20T19:11:55.892380+00:00",
+  "file": "data/raw/gharchive/schema_ReleaseEvent_231ec38a.tsv.gz",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [],
+  "notes": "Raw ClickHouse TSVWithNames response for the SQL in the .sql file (never edited).",
+  "params": {
+    "backend": "clickhouse",
+    "fetched_at": "2026-11-20T19:11:55.890475+00:00",
+    "sql_file": "schema_ReleaseEvent_231ec38a.sql",
+    "url": "https://play.clickhouse.com/?user=play"
+  },
+  "python": "3.13.18",
+  "rows": 14,
+  "script": "scripts/sources/gharchive.py",
+  "sha256": "3c6d30521b476114b2da76dc539babacd8badef74df4ca17f4d59dcfc0705895",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

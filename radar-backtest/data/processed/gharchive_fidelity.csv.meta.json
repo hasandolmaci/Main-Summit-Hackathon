@@ -1,0 +1,109 @@
+{
+  "created_at": "2026-11-20T19:19:12.296373+00:00",
+  "file": "data/processed/gharchive_fidelity.csv",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [
+    {
+      "path": "data/raw/gharchive/hourly/2013-05-08-15.json.gz.manifest.json",
+      "sha256": "99c23b2bab30767f976bce5ea6e490cb14bcf95bc5f49ff87278e9449866ae00"
+    },
+    {
+      "path": "data/raw/gharchive/hourly/2016-05-11-15.json.gz.manifest.json",
+      "sha256": "c84a5482ea68b436f60f6c4f6bef4d7000e8d2b894a118785e7c5c0b1a5bed8a"
+    },
+    {
+      "path": "data/raw/gharchive/hourly/2021-05-12-15.json.gz.manifest.json",
+      "sha256": "c5257e53056436e1b06ec0c418ceb002195d5b5826812c476178ec7a6ff8a6a2"
+    },
+    {
+      "path": "data/raw/gharchive/fidelity_created_same_file_2013-05-08-15_71d82462.tsv.gz",
+      "sha256": "c93937c044e979f6b09bb7a2e12faf0462e4da662c7bb055e575031444386cfc"
+    },
+    {
+      "path": "data/raw/gharchive/fidelity_file_time_2013-05-08-15_c3b832dd.tsv.gz",
+      "sha256": "78cba2d65ba88c828b8ef7928fe76828d64855b6d68b91698ef22d10ce2795e5"
+    },
+    {
+      "path": "data/raw/gharchive/fidelity_created_at_2013-05-08-15_012b1864.tsv.gz",
+      "sha256": "ac69f2fa2ce03db5fe4de0f55d38a02124b165a00405f2cfef76ed546c15b09d"
+    },
+    {
+      "path": "data/raw/gharchive/fidelity_created_same_file_2016-05-11-15_492f57ad.tsv.gz",
+      "sha256": "55ff1b7dde2628605ca299170c68063e36082739d0bb68b3a38bcae58dfb7a70"
+    },
+    {
+      "path": "data/raw/gharchive/fidelity_file_time_2016-05-11-15_dd3b245c.tsv.gz",
+      "sha256": "55ff1b7dde2628605ca299170c68063e36082739d0bb68b3a38bcae58dfb7a70"
+    },
+    {
+      "path": "data/raw/gharchive/fidelity_created_at_2016-05-11-15_60b3139e.tsv.gz",
+      "sha256": "55ff1b7dde2628605ca299170c68063e36082739d0bb68b3a38bcae58dfb7a70"
+    },
+    {
+      "path": "data/raw/gharchive/fidelity_created_same_file_2021-05-12-15_9beb9916.tsv.gz",
+      "sha256": "19802371e8756e38b1941f5882fc6e6fccd850dfd6ae8fdc80d77eee3248b61a"
+    },
+    {
+      "path": "data/raw/gharchive/fidelity_file_time_2021-05-12-15_182c4a65.tsv.gz",
+      "sha256": "19802371e8756e38b1941f5882fc6e6fccd850dfd6ae8fdc80d77eee3248b61a"
+    },
+    {
+      "path": "data/raw/gharchive/fidelity_created_at_2021-05-12-15_bb67a9e5.tsv.gz",
+      "sha256": "19802371e8756e38b1941f5882fc6e6fccd850dfd6ae8fdc80d77eee3248b61a"
+    }
+  ],
+  "notes": "utc_offset_h = modal (created_at UTC - file label) in hours: Timeline-era (pre-2015) files are labelled in US/Pacific local time, so their effective UTC window is label + 7/8 h. raw_file_events / raw_unique_ids = objects / distinct ids in the file; ch_file_time = ClickHouse rows with file_time = label; raw_created_in_window = file events with created_at in the effective UTC hour; ch_created_in_window_same_file = same on ClickHouse (tests created_at timezone handling); ch_created_in_window_all_files = ClickHouse created_at in the window from any file (informative). rel_diff_* = (ClickHouse - raw) / raw.",
+  "params": {
+    "hours": [
+      "2013-05-08-15",
+      "2016-05-11-15",
+      "2021-05-12-15"
+    ],
+    "raw_parse_stats": {
+      "2013-05-08-15": {
+        "no_id": 9202,
+        "no_type": 0,
+        "objects": 9202,
+        "offset_hist_h": {
+          "7": 8933,
+          "8": 269
+        },
+        "parse_errors": 0,
+        "ts_outside_window": 269,
+        "ts_unparsed": 0
+      },
+      "2016-05-11-15": {
+        "no_id": 0,
+        "no_type": 0,
+        "objects": 59185,
+        "offset_hist_h": {
+          "0": 59185
+        },
+        "parse_errors": 0,
+        "ts_outside_window": 0,
+        "ts_unparsed": 0
+      },
+      "2021-05-12-15": {
+        "no_id": 0,
+        "no_type": 0,
+        "objects": 164891,
+        "offset_hist_h": {
+          "0": 164891
+        },
+        "parse_errors": 0,
+        "ts_outside_window": 0,
+        "ts_unparsed": 0
+      }
+    }
+  },
+  "python": "3.13.18",
+  "rows": 48,
+  "script": "scripts/sources/gharchive.py fidelity",
+  "sha256": "6dc04de9783ac1a5de29860720874e09d6de035059186d93526c04275677c1d4",
+  "sources": [
+    "https://data.gharchive.org/2013-05-08-15.json.gz",
+    "https://data.gharchive.org/2016-05-11-15.json.gz",
+    "https://data.gharchive.org/2021-05-12-15.json.gz",
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

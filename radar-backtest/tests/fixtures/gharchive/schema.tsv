@@ -1,0 +1,5 @@
+year	event_type	n_events	n_action_set	n_action_opened	n_author_association_set	n_repo_slash	n_actor_empty	n_actor_nonstandard	n_bot
+2012	PullRequestEvent	1000	900	500	0	1000	0	0	3
+2016	PullRequestEvent	2000	2000	1000	0	2000	0	1	20
+2012	PushEvent	5000	0	0	0	4000	100	0	10
+2016	WatchEvent	10	10	0	0	10	0	0	0

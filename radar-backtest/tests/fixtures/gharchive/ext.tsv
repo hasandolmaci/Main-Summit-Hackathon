@@ -1,0 +1,6 @@
+actor	month	owner_bucket	pr_opened	issues_opened	pushes
+alice	2014-03-01	acme	0	0	3
+alice	2015-02-01	_ext	2	1	0
+alice	2016-01-01	globex	0	0	1
+bob-dev	2015-06-01	acme	0	0	5
+bob-dev	2015-07-01	_ext	1	0	4

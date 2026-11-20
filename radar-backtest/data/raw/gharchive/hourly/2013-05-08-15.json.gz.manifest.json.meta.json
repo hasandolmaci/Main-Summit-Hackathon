@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-20T19:19:00.930303+00:00",
+  "file": "data/raw/gharchive/hourly/2013-05-08-15.json.gz.manifest.json",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [],
+  "notes": "Manifest of a raw GH Archive hourly file (> 20 MB files are kept out of git under data/cache).",
+  "params": {
+    "hour": "2013-05-08-15"
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/sources/gharchive.py fidelity",
+  "sha256": "99c23b2bab30767f976bce5ea6e490cb14bcf95bc5f49ff87278e9449866ae00",
+  "sources": [
+    "https://data.gharchive.org/2013-05-08-15.json.gz"
+  ]
+}

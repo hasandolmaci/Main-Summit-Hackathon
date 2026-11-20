@@ -229,6 +229,8 @@ def test_htgf_evidence_earliest_wins_and_bulk_days_ignored():
     ev2 = htgf.htgf_evidence(group, p2, set(), today)
     assert (ev2["htgf_date"], ev2["date_precision"], ev2["source_url"]) == ("2015-12-10", "day",
                                                                             "https://www.htgf.de/en/n0/")
+    assert "conflict=earlier_than_invested_since" in ev2["evidence"]
+    assert "conflict=" not in ev["evidence"]
     # only the entry date: bulk-import days are not evidence
     p3 = {"invested_since": None, "news": []}
     ev3 = htgf.htgf_evidence(group, p3, set(), today)

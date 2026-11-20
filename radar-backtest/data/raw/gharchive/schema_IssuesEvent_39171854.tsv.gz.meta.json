@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-20T19:11:47.751682+00:00",
+  "file": "data/raw/gharchive/schema_IssuesEvent_39171854.tsv.gz",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [],
+  "notes": "Raw ClickHouse TSVWithNames response for the SQL in the .sql file (never edited).",
+  "params": {
+    "backend": "clickhouse",
+    "fetched_at": "2026-11-20T19:11:47.750226+00:00",
+    "sql_file": "schema_IssuesEvent_39171854.sql",
+    "url": "https://play.clickhouse.com/?user=play"
+  },
+  "python": "3.13.18",
+  "rows": 16,
+  "script": "scripts/sources/gharchive.py",
+  "sha256": "36030a470efedad58f21963ea2e5e7e4252d66defddad724cc68e69f7d4a5835",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

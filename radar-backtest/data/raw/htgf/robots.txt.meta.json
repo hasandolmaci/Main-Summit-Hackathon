@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-11-20T19:03:34.147894+00:00",
+  "file": "data/raw/htgf/robots.txt",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [],
+  "notes": "content signals {'ai-train': 'no', 'search': 'yes', 'ai-input': 'no'}: deterministic parsing only, no AI input.",
+  "params": {
+    "fetched_at": "2026-11-20T18:41:00.206007+00:00",
+    "url": "https://www.htgf.de/robots.txt"
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/sources/htgf.py",
+  "sha256": "f3090dd69ec895e4a9ac89775e3a775bb77e6dda8a231b72e154877e53722d9d",
+  "sources": [
+    "https://www.htgf.de/robots.txt"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-20T19:19:01.201660+00:00",
+  "file": "data/raw/gharchive/fidelity_file_time_2013-05-08-15_c3b832dd.tsv.gz",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [],
+  "notes": "Raw ClickHouse TSVWithNames response for the SQL in the .sql file (never edited).",
+  "params": {
+    "backend": "clickhouse",
+    "fetched_at": "2026-11-20T19:12:26.594458+00:00",
+    "sql_file": "fidelity_file_time_2013-05-08-15_c3b832dd.sql",
+    "url": "https://play.clickhouse.com/?user=play"
+  },
+  "python": "3.13.18",
+  "rows": 16,
+  "script": "scripts/sources/gharchive.py",
+  "sha256": "78cba2d65ba88c828b8ef7928fe76828d64855b6d68b91698ef22d10ce2795e5",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-20T19:19:12.287233+00:00",
+  "file": "data/raw/gharchive/fidelity_created_at_2021-05-12-15_bb67a9e5.sql",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [],
+  "notes": null,
+  "params": {
+    "backend": "clickhouse"
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/sources/gharchive.py",
+  "sha256": "300aa0357812f75cf18320b930dfc149b29cb36b4d41018fc790f5deb6091a4b",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

@@ -1,19 +1,35 @@
 {
-  "created_at": "2026-11-20T18:53:58.736695+00:00",
+  "created_at": "2026-11-20T19:03:39.021058+00:00",
   "file": "data/labels/companies.csv",
-  "git_sha": "772f8e46c4a23a1f4b17c59fe9e0bf2903bb1bab",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
   "inputs": [
     {
       "path": "data/raw/yc/companies_all.json.gz",
       "sha256": "5ea5355a8146169788d533be356d3ce3cbad9190be25dee8469f15571dbf55ee"
+    },
+    {
+      "path": "data/raw/htgf/robots.txt",
+      "sha256": "f3090dd69ec895e4a9ac89775e3a775bb77e6dda8a231b72e154877e53722d9d"
+    },
+    {
+      "path": "data/raw/htgf/sitemaps.jsonl.gz",
+      "sha256": "12980bb7494d2ceb6c9bbce4cade21199530260f4f764c2e5c65aa69e6a924a8"
+    },
+    {
+      "path": "data/raw/htgf/portfolio_rest.jsonl.gz",
+      "sha256": "2df2a60db048f2953336d0a5dc3055e87a008d2ca060bc355bca3b7b8107f982"
+    },
+    {
+      "path": "data/raw/htgf/portfolio_pages.jsonl.gz",
+      "sha256": "cc60ee9d849441e0d8f9e0125f1e7832c163c208c5b1bf566be94258700c0024"
     }
   ],
-  "notes": "first_funding_date = min over sources per domain; YC date mode = acceptance. 0 duplicate domains merged (see logs/collection.log).",
+  "notes": "first_funding_date = min over sources per domain; YC date mode = acceptance. 1 duplicate domains merged (see logs/collection.log).",
   "params": {
     "acceptance_offset_days": 76,
     "data_cutoff": "2026-11-01",
     "htgf_limit": null,
-    "skip_htgf": true,
+    "skip_htgf": false,
     "yc_date_mode": "acceptance",
     "yc_season_start": {
       "Fall": [
@@ -35,10 +51,11 @@
     }
   },
   "python": "3.13.18",
-  "rows": 6078,
+  "rows": 6600,
   "script": "scripts/collect_labels.py",
-  "sha256": "48977cbcf71a7962ccd90835bdc14cb55b9469ec5cc1df86ca8929b8cbf6a73c",
+  "sha256": "36f7a3a5253dbd25208bea0030eaf1acc2deb7e8d0612799e7706987f520c183",
   "sources": [
-    "https://yc-oss.github.io/api/companies/all.json"
+    "https://yc-oss.github.io/api/companies/all.json",
+    "https://www.htgf.de"
   ]
 }

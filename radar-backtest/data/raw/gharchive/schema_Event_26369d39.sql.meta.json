@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-20T19:12:03.757499+00:00",
+  "file": "data/raw/gharchive/schema_Event_26369d39.sql",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [],
+  "notes": null,
+  "params": {
+    "backend": "clickhouse"
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/sources/gharchive.py",
+  "sha256": "9113c72f407f4e2e6120cab88b3566e3a0568e311e1d63c4d22fc9bed6a80176",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

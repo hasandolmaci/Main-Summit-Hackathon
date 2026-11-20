@@ -1,0 +1,3 @@
+owner	first_event_ts	last_event_ts	n_events
+acme	2014-03-01 09:00:00	2016-02-01 00:00:00	120
+globex	2015-12-31 23:59:59	2016-01-02 00:00:00	7

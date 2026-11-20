@@ -90,6 +90,10 @@ REQUIRED_ORG = ["project_id", "organisation_id", "name", "activity_type", "count
 REQUIRED_PROJECT = ["project_id", "start_date"]
 # Any column whose header matches this is never loaded (contact data: contact forms, names, e-mails, phones).
 CONTACT_RE = re.compile(r"contact|e-?mail|phone|fax|telephone|mobile", re.I)
+# An e-mail address typed into the URL field ('info@x.de', 'mailto:jane.doe@gmail.com') is not a website and may be
+# personal: such values are dropped (URL and domain None) and counted, so no address is stored and no webmail domain
+# becomes a "company". '/@handle' paths (medium.com/@acme) do not match.
+EMAIL_IN_URL_RE = re.compile(r"[^\s@:/]+@[^\s@/]+\.[^\s@/]+")
 
 ACTIVITY_TYPES = {"PRC", "HES", "REC", "PUB", "OTH"}
 COUNTRY_FIX = {"UK": "GB", "EL": "GR"}  # EU institutional codes -> ISO 3166-1 alpha-2
@@ -108,9 +112,16 @@ class RobotsDisallowed(RuntimeError):
 # ======================================================================================================================
 # Obtain raw files
 def robots_allows(client: Client, url: str) -> bool | None:
-    """True/False from the host's robots.txt for our user agent; None if robots.txt is unavailable."""
+    """True/False from the host's robots.txt for our user agent; None if there is none (4xx: no restrictions).
+
+    robots.txt is always fetched fresh (never replayed from the HTTP cache, so a later change is honoured). Per RFC 9309
+    an unreachable robots.txt (5xx / connection error) means complete disallow.
+    """
     p = urlparse(url)
-    r = client.get(f"{p.scheme}://{p.netloc}/robots.txt")
+    r = client.get(f"{p.scheme}://{p.netloc}/robots.txt", use_cache=False)
+    if r.status == -1 or r.status >= 500:
+        log.warning("robots.txt of %s unreachable (status=%s): treating as disallow", p.netloc, r.status)
+        return False
     if r.status != 200:
         return None
     rp = urllib.robotparser.RobotFileParser()
@@ -170,15 +181,22 @@ def download(client: Client, programme: str, raw_dir: Path = RAW_DIR) -> Path:
     allowed = robots_allows(client, url)
     if allowed is False:
         raise RobotsDisallowed(
-            f"{urlparse(url).netloc}/robots.txt disallows automated access to {url}. Download it by hand and run "
+            f"{urlparse(url).netloc}/robots.txt disallows (or could not be read for) automated access to {url}. "
+            f"Retry later if it was unreachable; otherwise download it by hand and run "
             f"`python -m scripts.sources.cordis --zip-dir <folder with {dest.name}>`.")
     raw_dir.mkdir(parents=True, exist_ok=True)
     r = client.get(url, stream_to=dest)
     if r.status != 200 or not dest.exists():
         raise RuntimeError(f"download failed for {programme}: {url} status={r.status}")
+    if not zipfile.is_zipfile(dest):  # e.g. an HTML error / challenge page served with status 200
+        size = dest.stat().st_size
+        dest.unlink()
+        raise RuntimeError(f"download of {url} is not a zip archive ({size} bytes); deleted, not used")
+    # fetched_at "" = Client found the file already on disk (a run that died before the manifest): use its mtime.
+    fetched_at = r.fetched_at or datetime.fromtimestamp(dest.stat().st_mtime, tz=timezone.utc).isoformat()
     _write_manifest(dest, {"url": url, "resolved_via": how, "provenance": "downloaded", "sha256": sha256_file(dest),
                            "bytes": dest.stat().st_size, "license": LICENSE, "robots_txt_allows": allowed,
-                           "fetched_at": r.fetched_at or datetime.now(timezone.utc).isoformat()}, programme)
+                           "fetched_at": fetched_at}, programme)
     log.info("%s: downloaded %s (%d bytes)", programme, dest, dest.stat().st_size)
     return dest
 
@@ -186,6 +204,8 @@ def download(client: Client, programme: str, raw_dir: Path = RAW_DIR) -> Path:
 def import_zip(src: Path, programme: str, url: str, raw_dir: Path = RAW_DIR) -> Path:
     """Copy a hand-downloaded package into raw_dir (byte-identical) and write its manifest + meta."""
     dest = raw_dir / Path(urlparse(url).path).name
+    if not zipfile.is_zipfile(src):
+        raise SystemExit(f"{src} is not a zip archive (an HTML page saved instead of the file?); not imported")
     if src.resolve() != dest.resolve():
         raw_dir.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(src, dest)
@@ -204,11 +224,22 @@ def _norm_header(h: str) -> str:
 
 
 def decode_bytes(raw: bytes) -> tuple[str, str]:
-    """Explicit encoding handling: UTF-8 (BOM stripped) first; cp1252 as a recorded fallback."""
+    """Explicit encoding handling: UTF-8 (BOM stripped) first; cp1252 as a recorded fallback.
+
+    A UTF-8 file with a few stray invalid bytes is NOT re-read as cp1252 (that would garble every non-ASCII name and
+    turn the BOM into 'ï»¿', breaking the header): if it has a UTF-8 BOM, or at most 1% of its non-ASCII characters
+    are invalid, it is decoded as UTF-8 with U+FFFD replacements, recorded as 'utf-8+replace(<n>)'.
+    """
     try:
         return raw.decode("utf-8-sig"), "utf-8"
     except UnicodeDecodeError:
-        return raw.decode("cp1252", errors="replace"), "cp1252"
+        pass
+    text = raw.decode("utf-8-sig", errors="replace")
+    n_repl = text.count("�") - raw.count("�".encode("utf-8"))  # genuine U+FFFD in the source not counted
+    n_non_ascii = len(text) - len(text.encode("ascii", "ignore"))
+    if raw.startswith(b"\xef\xbb\xbf") or n_repl <= 0.01 * n_non_ascii:
+        return text, f"utf-8+replace({n_repl})"
+    return raw.decode("cp1252", errors="replace"), "cp1252"
 
 
 def sniff_separator(header_line: str) -> str:
@@ -238,8 +269,10 @@ def read_table(text: str, aliases: dict[str, list[str]], required: list[str], la
     """Parse one CORDIS CSV text with the csv module (explicit separator / '"' quoting with doubled quotes).
 
     Returns (frame of canonical str|None columns, stats). Rows whose field count differs from the header are counted
-    as bad and skipped (one trailing empty field is tolerated). Unmapped columns, incl. contact data, are discarded
-    while reading and never reach a DataFrame.
+    as bad and skipped (one trailing empty field is tolerated). A row the csv module rejects (e.g. an unbalanced quote
+    that runs past the field size limit) is counted as bad too and parsing resumes on the next line, so one broken
+    quote cannot abort the run; `lines_in_bad_rows` reports how many physical lines the bad rows swallowed.
+    Unmapped columns, incl. contact data, are discarded while reading and never reach a DataFrame.
     """
     first = text.split("\n", 1)[0]
     sep = sniff_separator(first)
@@ -251,14 +284,27 @@ def read_table(text: str, aliases: dict[str, list[str]], required: list[str], la
         raise ValueError(f"{label}: required columns {missing} not found in header {[_norm_header(h) for h in header]}")
     n_fields = len(header)
     data: dict[str, list] = {c: [] for c in cols}
-    n_ok = n_bad = 0
-    for row in reader:
+    n_ok = n_bad = n_csv_err = bad_lines = 0
+    while True:
+        prev_line = reader.line_num
+        try:
+            row = next(reader)
+        except StopIteration:
+            break
+        except csv.Error:
+            n_bad += 1
+            n_csv_err += 1
+            bad_lines += reader.line_num - prev_line
+            if reader.line_num == prev_line:  # no progress: stop instead of looping
+                break
+            continue
         if not row or (len(row) == 1 and not row[0].strip()):
             continue
         if len(row) == n_fields + 1 and row[-1] == "":
             row = row[:-1]
         if len(row) != n_fields:
             n_bad += 1
+            bad_lines += reader.line_num - prev_line
             continue
         n_ok += 1
         for c, i in cols.items():
@@ -270,6 +316,7 @@ def read_table(text: str, aliases: dict[str, list[str]], required: list[str], la
             df[c] = pd.Series([None] * len(df), dtype=object)
     used = set(cols.values())
     stats = {"separator": sep, "n_header_fields": n_fields, "rows_ok": n_ok, "rows_bad": n_bad,
+             "rows_csv_error": n_csv_err, "lines_in_bad_rows": bad_lines, "lines_read": reader.line_num,
              "parse_rate": n_ok / max(1, n_ok + n_bad), "mapped": {c: header[i] for c, i in cols.items()},
              "contact_columns_dropped": [h for i, h in enumerate(header) if i not in used and CONTACT_RE.search(h)]}
     return df[list(aliases)], stats
@@ -376,7 +423,8 @@ def build_participations(org: pd.DataFrame, proj: pd.DataFrame, programme: str) 
         "sme": pd.array(df["sme"].map(parse_bool).tolist(), dtype="boolean"),
         "activity_type": df["activity_type"].map(lambda v: str(v).strip().upper() if v else None),
         "country": df["country"].map(norm_country),
-        "organization_url": df["organization_url"],
+        "organization_url": df["organization_url"].map(
+            lambda v: None if v is None or EMAIL_IN_URL_RE.search(str(v)) else v),
         "role": df["role"].map(lambda v: str(v).strip().lower() if v else None),
         "ec_contribution": df["ec_contribution"].map(parse_amount).astype(float),
         "ec_signature_date": pd.to_datetime(df["ec_signature_date"].map(parse_date), utc=True),
@@ -384,6 +432,10 @@ def build_participations(org: pd.DataFrame, proj: pd.DataFrame, programme: str) 
         "framework": df["framework"].where(df["framework"].notna(), programme),
         "_order": pd.to_numeric(df["order"], errors="coerce"),
     })
+    # Non-empty date strings that match none of the explicit formats (or are impossible, e.g. month 13): a format
+    # change or month-first dates would show up here instead of silently shifting public_ts.
+    stats["unparsed_dates"] = {c: int((df[c].notna() & out[c].isna()).sum()) for c in ("ec_signature_date", "start_date")}
+    stats["url_email_like_dropped"] = int((df["organization_url"].notna() & out["organization_url"].isna()).sum())
     bad_type = out["activity_type"].notna() & ~out["activity_type"].isin(ACTIVITY_TYPES)
     stats["unknown_activity_type"] = int(bad_type.sum())
     out.loc[bad_type, "activity_type"] = None
@@ -555,7 +607,8 @@ def run(zips: dict[str, Path], out_dir: Path) -> tuple[pd.DataFrame, pd.DataFram
     common = dict(script=SCRIPT, inputs=list(zips.values()), sources=srcs)
     write_meta(p_out, rows=len(part), params={"programmes": list(zips), "parse_stats": all_stats},
                notes="one row per (programme, project_id, organisation_id); public_ts = ecSignatureDate else startDate "
-                     "(00:00 UTC); contact columns never loaded; country UK->GB, EL->GR; " + LICENSE, **common)
+                     "(00:00 UTC); contact columns never loaded; e-mail-like organizationURL values dropped; "
+                     "country UK->GB, EL->GR; " + LICENSE, **common)
     write_meta(c_out, rows=len(comp), params={"programmes": list(zips), "filter": "activity_type == 'PRC' and domain"},
                notes="one row per company domain; country = mode over participations (ties alphabetical); "
                      "multi_country flags domains seen with >1 country; " + LICENSE, **common)
@@ -576,8 +629,13 @@ def main(argv=None) -> int:
     print(json.dumps({p: {"separator": s["organization"]["separator"], "encoding": s["organization"]["encoding"],
                           "org_parse_rate": round(s["organization"]["parse_rate"], 5),
                           "org_rows_bad": s["organization"]["rows_bad"],
+                          "org_lines_in_bad_rows": s["organization"]["lines_in_bad_rows"],
+                          "project_encoding": s["project"]["encoding"],
                           "project_parse_rate": round(s["project"]["parse_rate"], 5),
                           "project_rows_bad": s["project"]["rows_bad"],
+                          "project_lines_in_bad_rows": s["project"]["lines_in_bad_rows"],
+                          "unparsed_dates": s["unparsed_dates"],
+                          "url_email_like_dropped": s["url_email_like_dropped"],
                           "join_rate": round(s["join_rate"], 5), "duplicate_key_rows": s["duplicate_key_rows"],
                           "unknown_activity_type": s["unknown_activity_type"],
                           "contact_columns_dropped": s["organization"]["contact_columns_dropped"]}

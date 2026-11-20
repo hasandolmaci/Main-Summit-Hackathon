@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-11-20T19:03:38.847234+00:00",
+  "file": "data/raw/htgf/portfolio_pages.jsonl.gz",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [],
+  "notes": "Per portfolio page only the sections the parser reads, re-serialised (tags with class/id/href, text); company-info keeps external links only. No manager contact block, no description, no mailto/tel, e-mails and phone numbers replaced by [removed].",
+  "params": {
+    "limit": null,
+    "sections": [
+      "key-facts",
+      "main-info-desktop",
+      "company-info",
+      "portfolio-connected-news"
+    ]
+  },
+  "python": "3.13.18",
+  "rows": 544,
+  "script": "scripts/sources/htgf.py",
+  "sha256": "cc60ee9d849441e0d8f9e0125f1e7832c163c208c5b1bf566be94258700c0024",
+  "sources": [
+    "https://www.htgf.de/en/portfolio/htgffamily/"
+  ]
+}

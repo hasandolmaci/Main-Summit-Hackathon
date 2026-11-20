@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-20T19:11:56.675798+00:00",
+  "file": "data/raw/gharchive/schema_SponsorshipEvent_7af316f2.tsv.gz",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [],
+  "notes": "Raw ClickHouse TSVWithNames response for the SQL in the .sql file (never edited).",
+  "params": {
+    "backend": "clickhouse",
+    "fetched_at": "2026-11-20T19:11:56.674043+00:00",
+    "sql_file": "schema_SponsorshipEvent_7af316f2.sql",
+    "url": "https://play.clickhouse.com/?user=play"
+  },
+  "python": "3.13.18",
+  "rows": 0,
+  "script": "scripts/sources/gharchive.py",
+  "sha256": "d09612c1ef33ca30b0d8b56162b803ef87c174146eef8d0598b14b62656c2af0",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

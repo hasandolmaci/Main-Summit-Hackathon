@@ -1,0 +1,13 @@
+{
+  "data": {
+    "o0": {"login": "Acme", "databaseId": 1001, "createdAt": "2014-03-02T10:00:00Z", "websiteUrl": "https://www.acme.com/", "name": "Acme Robotics"},
+    "o1": null,
+    "o2": {"login": "acme-hq", "databaseId": 1002, "createdAt": "2016-07-09T08:30:00Z", "websiteUrl": "acme.github.io", "name": null},
+    "o3": null,
+    "rateLimit": {"cost": 1}
+  },
+  "errors": [
+    {"type": "NOT_FOUND", "path": ["o1"], "locations": [{"line": 1, "column": 120}], "message": "Could not resolve to an Organization with the login of 'getacme'."},
+    {"type": "FORBIDDEN", "path": ["o3"], "locations": [{"line": 1, "column": 240}], "message": "Resource protected by organization IP allow list."}
+  ]
+}

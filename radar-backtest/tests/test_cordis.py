@@ -1,4 +1,5 @@
 """Offline tests for the CORDIS collector (synthetic fixtures under tests/fixtures/cordis/, no network)."""
+import io
 import json
 import zipfile
 from pathlib import Path
@@ -244,22 +245,35 @@ def test_summary_prints(parsed):
 
 
 # ------------------------------------------------------------------------------------------------- obtaining the files
+def _tiny_zip_bytes() -> bytes:
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as zf:
+        zf.writestr("organization.csv", "projectID;organisationID\n")
+    return buf.getvalue()
+
+
 class FakeClient:
     """Offline stand-in for scripts.lib.http.Client."""
 
-    def __init__(self, robots: dict[str, str], portal: dict):
+    def __init__(self, robots: dict[str, str], portal: dict, payload: bytes | None = None,
+                 robots_status: dict[str, int] | None = None):
         self.robots, self.portal, self.streamed = robots, portal, []
+        self.payload = _tiny_zip_bytes() if payload is None else payload
+        self.robots_status = robots_status or {}
+        self.robots_use_cache = []
         self.session = type("S", (), {"headers": {"User-Agent": "radar-backtest/0.1"}})()
 
-    def get(self, url, stream_to=None, **kw):
+    def get(self, url, stream_to=None, use_cache=True, **kw):
         if url.endswith("/robots.txt"):
             host = url.split("/")[2]
-            return CachedResponse(url, 200, self.robots.get(host, ""), "2026-01-01T00:00:00+00:00", False)
+            self.robots_use_cache.append(use_cache)
+            return CachedResponse(url, self.robots_status.get(host, 200), self.robots.get(host, ""),
+                                  "2026-01-01T00:00:00+00:00", False)
         if "data.europa.eu/api" in url:
             return CachedResponse(url, 200, json.dumps(self.portal), "2026-01-01T00:00:00+00:00", False)
         if stream_to is not None:
             self.streamed.append(url)
-            Path(stream_to).write_bytes(b"PK-fake")
+            Path(stream_to).write_bytes(self.payload)
             return CachedResponse(url, 200, "", "2026-01-01T00:00:00+00:00", False)
         return CachedResponse(url, 404, "", "", False)
 
@@ -295,7 +309,7 @@ def test_download_when_allowed_writes_manifest(tmp_path):
     z = cordis.download(c, "H2020", tmp_path)
     assert c.streamed == ["https://cordis.europa.eu/data/cordis-h2020projects-csv.zip"]
     man = json.loads((tmp_path / (z.name + ".manifest.json")).read_text())
-    assert set(man) >= {"url", "sha256", "bytes", "fetched_at"} and man["bytes"] == len(b"PK-fake")
+    assert set(man) >= {"url", "sha256", "bytes", "fetched_at"} and man["bytes"] == len(c.payload)
     assert (tmp_path / (z.name + ".meta.json")).exists()
     cordis.download(c, "H2020", tmp_path)                               # second call reuses the file
     assert len(c.streamed) == 1
@@ -310,3 +324,77 @@ def test_import_zip_dir(tmp_path):
     man = json.loads((raw / (dest.name + ".manifest.json")).read_text())
     assert man["url"] == cordis.PROGRAMMES["HORIZON"][1] and man["provenance"].startswith("manual")
     assert set(man) >= {"url", "sha256", "bytes", "fetched_at"}
+
+
+# ------------------------------------------------------------------------------------------------ robustness (review)
+def test_robots_fetched_fresh_and_unreachable_means_disallow(tmp_path):
+    c = FakeClient({}, PORTAL, robots_status={"cordis.europa.eu": 503})
+    assert cordis.robots_allows(c, "https://cordis.europa.eu/data/x.zip") is False
+    with pytest.raises(cordis.RobotsDisallowed):
+        cordis.download(c, "H2020", tmp_path)
+    assert c.streamed == [] and c.robots_use_cache and not any(c.robots_use_cache)   # never replayed from cache
+    c404 = FakeClient({}, PORTAL, robots_status={"cordis.europa.eu": 404})
+    assert cordis.robots_allows(c404, "https://cordis.europa.eu/data/x.zip") is None   # no robots.txt: allowed
+
+
+def test_download_rejects_non_zip_payload(tmp_path):
+    c = FakeClient({"cordis.europa.eu": "User-agent: *\nDisallow: /search\n"}, PORTAL, payload=b"<html>busy</html>")
+    with pytest.raises(RuntimeError, match="not a zip"):
+        cordis.download(c, "H2020", tmp_path)
+    assert not list(tmp_path.glob("cordis-*"))                          # nothing left in raw (no zip, manifest, meta)
+
+
+def test_import_rejects_non_zip(tmp_path):
+    src = tmp_path / "in" / Path(cordis.PROGRAMMES["H2020"][1]).name
+    src.parent.mkdir()
+    src.write_bytes(b"<!doctype html><html></html>")
+    with pytest.raises(SystemExit, match="not a zip"):
+        cordis.obtain_zips(["H2020"], src.parent, False, tmp_path / "raw")
+    assert not (tmp_path / "raw").exists() or not list((tmp_path / "raw").iterdir())
+
+
+def test_utf8_with_stray_byte_is_not_reread_as_cp1252():
+    hdr = '﻿"projectID";"organisationID";"name";"activityType";"country";"organizationURL"\r\n'
+    good = '"1";"2";"Société Ünïcode";"PRC";"FR";"www.a.fr"\r\n' * 20
+    raw = (hdr + good).encode("utf-8") + b'"1";"3";"bad \xff byte";"PRC";"FR";"www.b.fr"\r\n'
+    text, enc = cordis.decode_bytes(raw)
+    assert enc == "utf-8+replace(1)"
+    df, st = cordis.read_table(text, cordis.ORG_ALIASES, cordis.REQUIRED_ORG, "t")   # BOM did not break the header
+    assert st["rows_ok"] == 21 and df["name"].iloc[0] == "Société Ünïcode"
+    # a genuinely cp1252 file still falls back to cp1252
+    assert cordis.decode_bytes("x;y\nMüller;Café\n".encode("cp1252")) == ("x;y\nMüller;Café\n", "cp1252")
+
+
+def test_unbalanced_quote_does_not_abort_parsing():
+    hdr = "projectID;organisationID;name;activityType;country;organizationURL\n"
+    ok = "".join(f"1;{i};Org {i};PRC;DE;www.o{i}.de\n" for i in range(30000))
+    text = hdr + '1;9;"broken name;PRC;DE;www.b.de\n' + ok
+    df, st = cordis.read_table(text, cordis.ORG_ALIASES, cordis.REQUIRED_ORG, "t")
+    assert st["rows_csv_error"] == 1 and st["rows_bad"] >= 1
+    assert st["lines_in_bad_rows"] > 1000                               # the swallowed region is made visible
+    assert st["rows_ok"] + st["lines_in_bad_rows"] == 30001
+    assert df["organisation_id"].iloc[-1] == "29999"                   # parsing resumed after the broken quote
+
+
+def test_unparsed_dates_counted():
+    org = pd.DataFrame({c: [None] for c in cordis.ORG_ALIASES}, dtype=object)
+    org.loc[0, ["project_id", "organisation_id", "name", "activity_type", "country"]] = ["1", "2", "X", "PRC", "DE"]
+    proj = pd.DataFrame({"project_id": ["1"], "start_date": ["03/13/2015"], "ec_signature_date": ["2015-13-01"],
+                         "framework": [None]}, dtype=object)
+    part, st = cordis.build_participations(org, proj, "H2020")
+    assert st["unparsed_dates"] == {"ec_signature_date": 1, "start_date": 1}   # month 13 / month-first date
+    assert pd.isna(part.loc[0, "public_ts"])
+
+
+def test_email_in_url_field_is_dropped():
+    urls = ["mailto:jane.doe@gmail.com", "info@acme-x.de", "https://medium.com/@acme", "www.acme-y.de"]
+    org = pd.DataFrame({c: [None] * 4 for c in cordis.ORG_ALIASES}, dtype=object)
+    org["project_id"], org["organisation_id"] = "1", ["1", "2", "3", "4"]
+    org["activity_type"], org["organization_url"] = "PRC", urls
+    proj = pd.DataFrame({"project_id": ["1"], "start_date": ["2015-01-01"], "ec_signature_date": [None],
+                         "framework": [None]}, dtype=object)
+    part, st = cordis.build_participations(org, proj, "H2020")
+    assert part["organization_url"].iloc[:2].isna().all() and st["url_email_like_dropped"] == 2
+    assert part["domain"].iloc[:3].isna().all() and part["domain"].iloc[3] == "acme-y.de"  # no webmail "company"
+    assert part["organization_url"].iloc[2] == "https://medium.com/@acme"
+    assert not part.astype(str).apply(lambda s: s.str.contains("jane.doe")).any().any()

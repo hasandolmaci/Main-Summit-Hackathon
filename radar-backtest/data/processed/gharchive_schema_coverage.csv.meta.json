@@ -1,0 +1,134 @@
+{
+  "created_at": "2026-11-20T19:12:05.799216+00:00",
+  "file": "data/processed/gharchive_schema_coverage.csv",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [
+    {
+      "path": "data/raw/gharchive/schema_CommitCommentEvent_51910c73.tsv.gz",
+      "sha256": "e3af8103cc9166c57fe712144b79e33765fc1084949f8fe6e38787cba7eb61d6"
+    },
+    {
+      "path": "data/raw/gharchive/schema_CreateEvent_a76fcc29.tsv.gz",
+      "sha256": "5e7c9cb7a12345b3b8187df13b3aa852a938aeb7fbfd1e278c1b93056e665577"
+    },
+    {
+      "path": "data/raw/gharchive/schema_DeleteEvent_fbe50b54.tsv.gz",
+      "sha256": "be513da6008d330dde4990a8a7a3d507627077e1b25f041733f4f3952b6472e3"
+    },
+    {
+      "path": "data/raw/gharchive/schema_ForkEvent_8a208135.tsv.gz",
+      "sha256": "b1ee3a90af040fc525423b22b36e5cbb32bbd7fe386b4ddade8a71ca745cad54"
+    },
+    {
+      "path": "data/raw/gharchive/schema_GollumEvent_7d646c5a.tsv.gz",
+      "sha256": "8ef740491b73a53cb0aea905dcb7d851b64466eee6cd658634e895ff831f8fef"
+    },
+    {
+      "path": "data/raw/gharchive/schema_IssueCommentEvent_f3c8c0f2.tsv.gz",
+      "sha256": "63b6efdcc4cb3f575b7b7cb6adab69ef150cf12e53f2a8f81f28b2cd7f668b7e"
+    },
+    {
+      "path": "data/raw/gharchive/schema_IssuesEvent_39171854.tsv.gz",
+      "sha256": "36030a470efedad58f21963ea2e5e7e4252d66defddad724cc68e69f7d4a5835"
+    },
+    {
+      "path": "data/raw/gharchive/schema_MemberEvent_34201b04.tsv.gz",
+      "sha256": "8f22934d5dafed38de4aa7a3c66a3eb239651feab63568b5f00fd0607d5a7ea3"
+    },
+    {
+      "path": "data/raw/gharchive/schema_PublicEvent_c06b3edd.tsv.gz",
+      "sha256": "6134ea7c674cc5a2fe1acb8bb181d489de0c13b57ac04ea16cff3a45f59b5376"
+    },
+    {
+      "path": "data/raw/gharchive/schema_PullRequestEvent_a3082a05.tsv.gz",
+      "sha256": "627859ce16a794b5bb1f112c947a8b7d652c3113232de27bdc6ca15b6a6838ad"
+    },
+    {
+      "path": "data/raw/gharchive/schema_PullRequestReviewCommentEvent_f7b1450f.tsv.gz",
+      "sha256": "3a03aeeec973b92c25c4aaa8913cab5e74f634bebbed069a17932c5c46036482"
+    },
+    {
+      "path": "data/raw/gharchive/schema_PushEvent_af04e622.tsv.gz",
+      "sha256": "5df649dee0400b4ccfcee5e389d50406c3657941eed7be8fa022328c1df98fe0"
+    },
+    {
+      "path": "data/raw/gharchive/schema_ReleaseEvent_231ec38a.tsv.gz",
+      "sha256": "3c6d30521b476114b2da76dc539babacd8badef74df4ca17f4d59dcfc0705895"
+    },
+    {
+      "path": "data/raw/gharchive/schema_SponsorshipEvent_7af316f2.tsv.gz",
+      "sha256": "d09612c1ef33ca30b0d8b56162b803ef87c174146eef8d0598b14b62656c2af0"
+    },
+    {
+      "path": "data/raw/gharchive/schema_WatchEvent_1b5871a5.tsv.gz",
+      "sha256": "1cff08e301e0197bf00045d7da1403cd5f9adb5a0b291bc715cd0b92ae201bc7"
+    },
+    {
+      "path": "data/raw/gharchive/schema_GistEvent_7e104533.tsv.gz",
+      "sha256": "12e50d5f7b71a300dc7368d42dd70d0f4d04f06a911cec1c657ae0f5e501a0d0"
+    },
+    {
+      "path": "data/raw/gharchive/schema_FollowEvent_0338b4fc.tsv.gz",
+      "sha256": "48b52abe264daa22b65e49be9f9d84e409dba707e3c04195ca99f1ce1510c8a0"
+    },
+    {
+      "path": "data/raw/gharchive/schema_DownloadEvent_8ec70926.tsv.gz",
+      "sha256": "a63b31f012052a5c91decc2e2fb7df0d97a5632120497c83998ed4d9a4f2d92d"
+    },
+    {
+      "path": "data/raw/gharchive/schema_PullRequestReviewEvent_1683eea7.tsv.gz",
+      "sha256": "2124a1aff4327b378ca98ed24a2ec46e477c94c4d225911c9c42ad2f29c74d61"
+    },
+    {
+      "path": "data/raw/gharchive/schema_ForkApplyEvent_20011cd4.tsv.gz",
+      "sha256": "1c8d5ae101a4d3871b863b2135c623b344f9f9e545efb10f108f63ba9becc8b8"
+    },
+    {
+      "path": "data/raw/gharchive/schema_Event_26369d39.tsv.gz",
+      "sha256": "850d6ae22550ce8cae7a22a297725cd0525217a1c6b10b97d0efce6dc02d6673"
+    },
+    {
+      "path": "data/raw/gharchive/schema_TeamAddEvent_2e8ff483.tsv.gz",
+      "sha256": "1f60090f39de04d57adbf411f57233ef6369959131852edbe9bf65cb7018009a"
+    },
+    {
+      "path": "data/raw/gharchive/schema_DiscussionEvent_c1d07528.tsv.gz",
+      "sha256": "506851335a8fb8678e84458ae63ffc306552c45c5c3e2658df59dae7c27e8004"
+    }
+  ],
+  "notes": "Per year x event_type field coverage of github_events. flag marks years where a feature query would be affected (repo_name without owner, PR/Issues action unset, empty actor). author_association is not used by any feature query ('NONE' is both a value and the default).",
+  "params": {
+    "event_types": [
+      "CommitCommentEvent",
+      "CreateEvent",
+      "DeleteEvent",
+      "ForkEvent",
+      "GollumEvent",
+      "IssueCommentEvent",
+      "IssuesEvent",
+      "MemberEvent",
+      "PublicEvent",
+      "PullRequestEvent",
+      "PullRequestReviewCommentEvent",
+      "PushEvent",
+      "ReleaseEvent",
+      "SponsorshipEvent",
+      "WatchEvent",
+      "GistEvent",
+      "FollowEvent",
+      "DownloadEvent",
+      "PullRequestReviewEvent",
+      "ForkApplyEvent",
+      "Event",
+      "TeamAddEvent",
+      "DiscussionEvent"
+    ]
+  },
+  "python": "3.13.18",
+  "rows": 245,
+  "script": "scripts/sources/gharchive.py schema-check",
+  "sha256": "43fbfb35e768deee02c71e5d58f424deca740d81ff09735ff631f88fa09c557f",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-11-20T19:15:58.380207+00:00",
+  "file": "data/processed/gh_org_span.parquet",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [
+    {
+      "path": "data/raw/gharchive/span_a740d646.tsv.gz",
+      "sha256": "610af0821790ce978966f2dae1883823cdef0b21d7b24103c2f585c8eb28f11c"
+    }
+  ],
+  "notes": "All event types on repos owned by the org (owner = repo_name before '/', lower-case), bots excluded. Orgs without any event are absent. No repo/org id in github_events: renamed orgs lose history.",
+  "params": {
+    "bots_regex": "(\\[bot\\]$|-bot$|^dependabot|^renovate|^github-actions|^greenkeeper)",
+    "chunk": 500,
+    "max_rows": 500000,
+    "n_orgs": 5,
+    "orgs_sha256": "8930d6d86d1a539f861d4a59b5789b8bfbcecc8fb4359230c5cb6e264db79375"
+  },
+  "python": "3.13.18",
+  "rows": 5,
+  "script": "scripts/sources/gharchive.py span",
+  "sha256": "f0aafc860d99ba364391fa8f6cb20421a2ba4719e9e6f1bfd232325b85f08c35",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

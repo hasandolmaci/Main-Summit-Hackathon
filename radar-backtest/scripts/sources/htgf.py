@@ -434,6 +434,8 @@ def htgf_evidence(group: dict, parsed: dict, bulk: set, today: date) -> dict:
         return {"htgf_date": "", "date_precision": "", "source_url": page["link"], "evidence": ";".join(notes),
                 "kind": ""}
     d, _, prec, url, kind = min(cands)   # earliest; on a tie the day-precision evidence wins
+    if y is not None and kind != "invested_since" and d.year < y:
+        notes.append("conflict=earlier_than_invested_since")   # kept (earliest evidence), flagged + counted
     return {"htgf_date": d.isoformat(), "date_precision": prec, "source_url": url,
             "evidence": f"chosen={kind};" + ";".join(notes), "kind": kind}
 
@@ -464,6 +466,7 @@ def htgf_records(groups: list[dict], parsed_by_link: dict[str, dict | None], res
         counts["htgf_has_website"] += parsed.get("website") is not None
         if ev["kind"]:
             counts[f"htgf_chosen_{ev['kind']}"] += 1
+        counts["htgf_conflict_earlier_than_invested_since"] += "conflict=" in ev["evidence"]
         reason = ""
         if not ev["htgf_date"]:
             reason = "htgf_no_dated_evidence"

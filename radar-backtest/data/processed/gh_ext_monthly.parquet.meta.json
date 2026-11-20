@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-11-20T19:16:05.396700+00:00",
+  "file": "data/processed/gh_ext_monthly.parquet",
+  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "inputs": [
+    {
+      "path": "data/processed/gh_team.parquet",
+      "sha256": "41419b45bdcf24b6010c82fc6483c65d3e71c693ed911f96cc31b6fec9009150"
+    },
+    {
+      "path": "data/raw/gharchive/ext_0f88ad8f.tsv.gz",
+      "sha256": "357a993a69919ae3a61893b915de03944fe243d3473f9146292d221340345bab"
+    },
+    {
+      "path": "data/raw/gharchive/ext_3aa59da9.tsv.gz",
+      "sha256": "193cf523c505145ffa9aad6aeaa453f41d415dec99fda39d3b9f93f7911dcf5e"
+    },
+    {
+      "path": "data/raw/gharchive/ext_93fcea67.tsv.gz",
+      "sha256": "233d88fb2af9a6638908df40b56a4afbbcde7f9b3bd4f911650ffb5484bbdd86"
+    },
+    {
+      "path": "data/raw/gharchive/ext_c02007d9.tsv.gz",
+      "sha256": "b1d3a704007d0770289794edcb5d868eeda56caeb51d800b7ed522b96349239a"
+    },
+    {
+      "path": "data/raw/gharchive/ext_c6f275e9.tsv.gz",
+      "sha256": "f9bab524d1fdef3a81cb3c29346eefcb46f01f53e495ed86d02927da8209d106"
+    },
+    {
+      "path": "data/raw/gharchive/ext_fee1a4e3.tsv.gz",
+      "sha256": "78487bf4c4159ac2b9b55d2be44eac2bd2bacdf559674d6d5d49c1a17507f72b"
+    }
+  ],
+  "notes": "Per team actor x UTC month x owner_bucket: PullRequestEvent(opened), IssuesEvent(opened), PushEvent rows. owner_bucket = owner if owner is an org with a team in gh_team, else '_ext' (any other owner is external to every team actor). Downstream excludes the actor's own org. All months kept; windows are applied in snapshots (12 full calendar months ending at the month-start as_of).",
+  "params": {
+    "bots_regex": "(\\[bot\\]$|-bot$|^dependabot|^renovate|^github-actions|^greenkeeper)",
+    "chunk": 500,
+    "max_rows": 500000,
+    "n_actors": 2781,
+    "n_orgs": 5,
+    "orgs_sha256": "8930d6d86d1a539f861d4a59b5789b8bfbcecc8fb4359230c5cb6e264db79375"
+  },
+  "python": "3.13.18",
+  "rows": 168473,
+  "script": "scripts/sources/gharchive.py external",
+  "sha256": "47b95d8b0d8b6c8c9beea86b795b7b8fa40aa36f2d4739f774b835b006dd29d3",
+  "sources": [
+    "https://play.clickhouse.com/?user=play"
+  ]
+}

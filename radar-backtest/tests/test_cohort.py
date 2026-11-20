@@ -24,11 +24,14 @@ def _ent(**over):
 
 
 def test_visible_at_rules():
-    v = cohort.visible_at(_ent(), A)
+    v = cohort.visible_at(_ent(), A, channels=["github", "cordis"])
     # a: org age 2.7y, active before as_of -> visible; b: org older than 5y -> not; c: visible;
     # d: CORDIS grant before as_of -> visible; e: first event after as_of -> not visible
     assert v["visible"].tolist() == [True, False, True, True, False]
     assert "label" not in inspect.signature(cohort.visible_at).parameters
+    v_gh = cohort.visible_at(_ent(), A, channels=["github"])       # CORDIS no longer makes an entity visible
+    assert v_gh["visible"].tolist() == [True, False, True, False, False]
+    assert v_gh["cordis_cov"].tolist() == [False, False, False, True, False]
 
 
 def test_label_window_and_already_funded():
@@ -47,7 +50,7 @@ def test_case_cohort_composition_and_weights():
     ent = _ent()
     f = pd.Series([None, None, "2016-06-01", "2014-01-01", None])  # c funded in window (case, not in B); d already funded
     cc = cohort.case_cohort(ent, f, A)
-    assert set(cc["entity_id"]) == {"a.com", "c.com"}
+    assert set(cc["entity_id"]) == {"a.com", "c.com"}   # d.de already funded; e not yet visible
     w = dict(zip(cc["entity_id"], cc["weight"]))
     assert w["c.com"] == 1.0 and w["a.com"] == pytest.approx(10.0)
 

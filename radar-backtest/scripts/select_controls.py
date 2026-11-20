@@ -93,10 +93,11 @@ def main(argv=None):
     args = ap.parse_args(argv)
     sp = PROCESSED / "github_org_sample.parquet"
     cp = PROCESSED / "cordis_companies.parquet"
-    sample = pd.read_parquet(sp) if sp.exists() else None
-    companies = pd.read_parquet(cp) if cp.exists() else None
+    channels = set(cfg()["pool"].get("channels", ["github", "cordis"]))
+    sample = pd.read_parquet(sp) if sp.exists() and "github" in channels else None
+    companies = pd.read_parquet(cp) if cp.exists() and "cordis" in channels else None
     if sample is None and companies is None:
-        raise SystemExit("no pool sources found; run `make orgs` and `make cordis` first")
+        raise SystemExit(f"no pool sources found for channels {sorted(channels)}; run the collectors first")
     u = build_universe(sample, companies, args.cordis_fraction, seed())
     out = PROCESSED / "universe.parquet"
     u2 = u.copy()

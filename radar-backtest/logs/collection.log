@@ -4394,3 +4394,231 @@
 2026-11-20 19:44:05,478 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#> SELECT ?fp (COUNT(DISTINCT ?o) AS ?n) (COUNT(DISTINCT ?ou) AS ?with_url) WHERE { ?o a eurio:Organisation . OPTIONAL { ?o eurio:url ?u . BIND(?o AS ?ou) } BIND(EXISTS { ?o a eurio:ForProfitOrganisation } AS ?fp) } GROUP BY ?fp'} status=200 bytes=802
 2026-11-20 19:44:07,372 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': "PREFIX eurio: <http://data.europa.eu/s66#> SELECT ?pre (COUNT(DISTINCT ?pj) AS ?n) (COUNT(DISTINCT ?pjs) AS ?with_sig) (COUNT(DISTINCT ?pjd) AS ?with_start) WHERE { ?pj a eurio:Project ; eurio:isFundedBy ?g . OPTIONAL { ?g eurio:hasFundingSchemeTopic ?t . ?t eurio:identifier ?ti } BIND(IF(BOUND(?ti), REPLACE(STR(?ti), '^([A-Za-z]+[0-9]*).*$', '$1'), 'NONE') AS ?pre) OPTIONAL { ?pj eurio:signatureDate ?sg . BIND(?pj AS ?pjs) } OPTIONAL { ?pj eurio:startDate ?sd . BIND(?pj AS ?pjd) } } GROUP BY ?pre"} status=200 bytes=1729
 2026-11-20 19:44:10,429 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#> SELECT ?p ?dt (COUNT(*) AS ?n) WHERE { ?pj a eurio:Project ; ?p ?d . FILTER(?p IN (eurio:signatureDate, eurio:startDate, eurio:identifier)) BIND(DATATYPE(?d) AS ?dt) } GROUP BY ?p ?dt'} status=200 bytes=1449
+2026-11-20 19:45:06,996 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (STRAFTER(STR(?role), "/organisationroles/") AS ?role_id) (STRAFTER(STR(?org), "/organisations/") AS ?org_id)\n       (STRAFTER(STR(?project), "/projects/") AS ?project_id) ?role_label ?order ?amount\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount }\n}\nORDER BY ?role ?amount\nLIMIT 10000 OFFSET 0', 'format': 'text/csv'} status=200 bytes=1404201
+2026-11-20 19:45:24,204 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (STRAFTER(STR(?role), "/organisationroles/") AS ?role_id) (STRAFTER(STR(?org), "/organisations/") AS ?org_id)\n       (STRAFTER(STR(?project), "/projects/") AS ?project_id) ?role_label ?order ?amount\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount }\n}\nORDER BY ?role ?amount\nLIMIT 10000 OFFSET 390000', 'format': 'text/csv'} status=200 bytes=1273593
+2026-11-20 19:45:35,370 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (STRAFTER(STR(?role), "/organisationroles/") AS ?role_id) (STRAFTER(STR(?org), "/organisations/") AS ?org_id)\n       (STRAFTER(STR(?project), "/projects/") AS ?project_id) ?role_label ?order ?amount\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount }\n}\nORDER BY ?role ?amount\nLIMIT 10000 OFFSET 200000', 'format': 'application/sparql-results+json'} status=200 bytes=5545026
+2026-11-20 19:45:39,286 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (STRAFTER(STR(?role), "/organisationroles/") AS ?role_id) (STRAFTER(STR(?org), "/organisations/") AS ?org_id)\n       (STRAFTER(STR(?project), "/projects/") AS ?project_id) ?role_label ?order ?amount\nWHERE {\n  ?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\n  OPTIONAL { ?role eurio:roleLabel ?role_label }\n  OPTIONAL { ?role eurio:order ?order }\n  OPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount }\n}\nORDER BY ?role ?amount\nLIMIT 50000 OFFSET 0', 'format': 'text/csv'} status=200 bytes=1404201
+2026-11-20 19:48:06,603 WARNING http: retry 1 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=2.9s 
+2026-11-20 19:48:10,726 ERROR http: giving up GET https://cordis.europa.eu/datalab/sparql status=500
+2026-11-20 19:48:10,726 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest dataset=grant_schemes count\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n) WHERE { { SELECT DISTINCT ?grant_uuid ?kind ?value WHERE {\n?grant a eurio:Grant .\n{ ?grant eurio:hasFundingSchemeTopic ?s . ?s eurio:identifier ?value . BIND("topic" AS ?kind) }\nUNION { ?grant eurio:hasFundingSchemeCall ?s . ?s eurio:identifier ?value . BIND("call" AS ?kind) }\nUNION { ?grant eurio:hasFundingSchemeType ?s . ?s eurio:code ?value . BIND("type" AS ?kind) }\nUNION { ?grant eurio:hasFundingSchemeProgramme ?s . ?s eurio:code ?value . BIND("programme" AS ?kind) }\nBIND(REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) } } }'} status=500 bytes=802
+2026-11-20 19:48:12,624 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest dataset=organisations count\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n) (COUNT(DISTINCT ?org_id) AS ?norg) WHERE { { SELECT DISTINCT ?org_id ?pic ?name ?short_name ?url ?country WHERE {\n?org a eurio:Organisation .\nOPTIONAL { ?org eurio:identifier ?pic }\nOPTIONAL { ?org eurio:legalName ?name }\nOPTIONAL { ?org eurio:hasAcronym ?acr . ?acr eurio:shortForm ?short_name }\nOPTIONAL { ?org eurio:url ?url0 }\nOPTIONAL { ?org eurio:hasSite ?site . ?site eurio:hasAddress ?adr . ?adr eurio:addressCountry ?country }\nBIND(REPLACE(STR(?org), "^.*/", "") AS ?org_id) BIND(STR(?url0) AS ?url) } } }'} status=200 bytes=346
+2026-11-20 19:48:26,887 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n) (COUNT(DISTINCT ?grant_uuid) AS ?ng) WHERE { { SELECT DISTINCT ?grant_uuid ?value WHERE {\n?grant a eurio:Grant ; eurio:hasFundingSchemeTopic ?s . ?s eurio:identifier ?value .\nBIND(REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) } } }'} status=200 bytes=342
+2026-11-20 19:48:28,308 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n) (COUNT(DISTINCT ?grant_uuid) AS ?ng) WHERE { { SELECT DISTINCT ?grant_uuid ?value WHERE {\n?grant a eurio:Grant ; eurio:hasFundingSchemeCall ?s . ?s eurio:identifier ?value .\nBIND(REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) } } }'} status=200 bytes=342
+2026-11-20 19:48:29,805 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n) (COUNT(DISTINCT ?grant_uuid) AS ?ng) WHERE { { SELECT DISTINCT ?grant_uuid ?value WHERE {\n?grant a eurio:Grant ; eurio:hasFundingSchemeType ?s . ?s eurio:code ?value .\nBIND(REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) } } }'} status=200 bytes=342
+2026-11-20 19:48:31,203 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': 'PREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n) (COUNT(DISTINCT ?grant_uuid) AS ?ng) WHERE { { SELECT DISTINCT ?grant_uuid ?value WHERE {\n?grant a eurio:Grant ; eurio:hasFundingSchemeProgramme ?s . ?s eurio:code ?value .\nBIND(REPLACE(STR(?grant), "^.*/", "") AS ?grant_uuid) } } }'} status=200 bytes=342
+2026-11-20 19:48:43,810 WARNING http: retry 1 GET https://cordis.europa.eu/datalab/sparql status=500 sleep=2.9s 
+2026-11-20 19:48:58,104 ERROR http: giving up GET https://cordis.europa.eu/datalab/sparql status=500
+2026-11-20 19:48:58,104 INFO http: GET https://cordis.europa.eu/datalab/sparql params={'query': '# radar-backtest dataset=roles count\nPREFIX eurio: <http://data.europa.eu/s66#>\nSELECT (COUNT(*) AS ?n) (COUNT(DISTINCT ?role_id) AS ?nr) WHERE { { SELECT DISTINCT ?role_id ?org_id ?project_uuid ?role_label ?order ?amount ?currency WHERE {\n?role a eurio:OrganisationRole ; eurio:isRoleOf ?org ; eurio:isInvolvedIn ?project .\nOPTIONAL { ?role eurio:roleLabel ?role_label }\nOPTIONAL { ?role eurio:order ?order }\nOPTIONAL { ?role eurio:isRecipientOf ?pay . ?pay eurio:hasPaymentAmount ?amt . ?amt eurio:value ?amount . OPTIONAL { ?amt eurio:currency ?currency } }\nBIND(REPLACE(STR(?role), "^.*/", "") AS ?role_id) BIND(REPLACE(STR(?org), "^.*/", "") AS ?org_id) BIND(REPLACE(STR(?project), "^.*/", "") AS ?project_uuid) } } }'} status=500 bytes=878
+2026-11-20 19:49:12,113 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 19:49:12,156 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 19:49:12,186 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 19:49:12,220 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 19:49:12,249 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 19:49:12,281 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 19:49:12,323 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 19:49:12,344 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 19:49:12,363 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 19:49:12,385 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 19:49:12,410 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 19:49:12,480 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 19:49:12,502 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 19:49:12,620 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 19:49:12,648 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:49:12,673 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:49:12,929 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 19:49:12,965 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:49:12,991 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 19:49:13,066 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 19:49:13,071 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows (or could not be read for) automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Retry later if it was unreachable; otherwise download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 19:49:13,079 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-50/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (155 bytes)
+2026-11-20 19:49:13,079 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-50/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 19:49:13,084 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-50/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-50/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 19:49:13,086 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 19:49:13,089 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 19:49:13,220 WARNING gharchive: rejected 2 invalid login value(s) (not [a-z0-9-]{1,39})
+2026-11-20 19:49:13,240 WARNING gharchive: t: splitting chunk of 5 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 19:49:13,247 INFO gharchive: query t_725ab108 rows=2 0.00s cache=False
+2026-11-20 19:49:13,248 WARNING gharchive: t: splitting chunk of 3 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 19:49:13,253 INFO gharchive: query t_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 19:49:13,258 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 19:49:13,264 INFO gharchive: query t_044d23a2 rows=2 0.00s cache=False
+2026-11-20 19:49:13,269 INFO gharchive: query t2_ca4710da rows=2 0.00s cache=False
+2026-11-20 19:49:13,269 WARNING gharchive: t2: splitting chunk of 2 (t2: 2 rows > 1)
+2026-11-20 19:49:13,274 INFO gharchive: query t2_9b383db9 rows=1 0.00s cache=False
+2026-11-20 19:49:13,279 INFO gharchive: query t2_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 19:49:13,316 INFO gharchive: query span_1dca1109 rows=2 0.00s cache=False
+2026-11-20 19:49:13,323 INFO gharchive: wrote /tmp/pytest-of-root/pytest-50/test_end_to_end_processed_outp0/span.parquet rows=2
+2026-11-20 19:49:13,328 INFO gharchive: query team_1ba97f53 rows=3 0.00s cache=False
+2026-11-20 19:49:13,336 INFO gharchive: wrote /tmp/pytest-of-root/pytest-50/test_end_to_end_processed_outp0/team.parquet rows=3
+2026-11-20 19:49:13,341 INFO gharchive: query daily_6c90f737 rows=3 0.00s cache=False
+2026-11-20 19:49:13,349 INFO gharchive: wrote /tmp/pytest-of-root/pytest-50/test_end_to_end_processed_outp0/daily.parquet rows=3
+2026-11-20 19:49:13,361 INFO gharchive: query ext_291805af rows=5 0.00s cache=False
+2026-11-20 19:49:13,375 INFO gharchive: wrote /tmp/pytest-of-root/pytest-50/test_end_to_end_processed_outp0/ext.parquet rows=5
+2026-11-20 19:49:13,402 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 19:49:13,413 INFO gharchive: wrote /tmp/pytest-of-root/pytest-50/test_external_refuses_unresolv0/team.parquet rows=3
+2026-11-20 19:49:14,076 INFO gharchive: query t_460f1c7d rows=4 0.00s cache=False
+2026-11-20 19:49:14,076 WARNING gharchive: t: splitting chunk of 4 (t: 4 rows > 2)
+2026-11-20 19:49:14,081 INFO gharchive: query t_ca4710da rows=2 0.00s cache=False
+2026-11-20 19:49:14,086 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 19:49:14,092 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 19:49:14,100 INFO gharchive: wrote /tmp/pytest-of-root/pytest-50/test_external_refuses_team_wit0/team.parquet rows=3
+2026-11-20 19:49:14,113 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 19:49:14,118 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 19:49:14,123 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 19:49:14,139 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 19:49:14,145 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 19:49:14,152 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 19:49:14,316 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,316 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,316 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,316 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,318 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,318 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,318 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,318 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,318 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,318 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,318 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,318 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,318 ERROR github: lookup failed for bad
+2026-11-20 19:49:14,327 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 19:49:14,365 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 19:49:14,442 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,443 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,443 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,443 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,443 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,443 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,443 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,443 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,443 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,444 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,444 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,444 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,444 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,444 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,444 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,444 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,444 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,444 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,444 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,444 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,445 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,445 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,445 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,445 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,445 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,445 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,445 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,445 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,445 ERROR github: lookup failed for x0
+2026-11-20 19:49:14,446 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,446 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,447 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,447 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,447 ERROR github: lookup failed for x1
+2026-11-20 19:49:14,448 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,448 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,448 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,449 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,449 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,449 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,449 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,449 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,449 ERROR github: lookup failed for x10
+2026-11-20 19:49:14,450 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,450 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,450 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,450 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,450 ERROR github: lookup failed for x11
+2026-11-20 19:49:14,451 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,451 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,451 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,452 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,452 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,452 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,452 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,452 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,452 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,452 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,452 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,453 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,453 ERROR github: lookup failed for x12
+2026-11-20 19:49:14,453 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,454 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,454 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,454 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,454 ERROR github: lookup failed for x13
+2026-11-20 19:49:14,455 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,455 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,455 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,455 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,455 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,455 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,455 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,455 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,455 ERROR github: lookup failed for x14
+2026-11-20 19:49:14,457 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,457 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,457 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,457 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,457 ERROR github: lookup failed for x15
+2026-11-20 19:49:14,458 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,458 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,458 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,458 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,458 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 19:49:14,459 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 19:49:14,459 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 19:49:14,459 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 19:49:14,477 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:49:14,538 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:49:14,611 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:49:14,679 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:49:14,702 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:49:14,735 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:49:14,789 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:49:14,852 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:49:14,854 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:49:14,885 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:49:14,930 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:49:14,977 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:49:14,980 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 19:49:15,010 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 19:49:15,053 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 19:49:15,115 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 19:49:15,123 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 19:49:15,154 INFO github: find_org tier 2: 1 unresolved entities, 17 logins
+2026-11-20 19:49:15,194 INFO github: find_org tier 3: 1 unresolved entities, 25 logins
+2026-11-20 19:49:15,248 INFO github: find_org: 1 entities, 1 matched ({3: 1})
+2026-11-20 19:49:15,270 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 19:49:15,274 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 19:49:15,275 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 19:49:15,275 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 19:49:15,275 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 19:49:15,275 ERROR github: lookup failed for acme
+2026-11-20 19:49:15,283 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 19:49:15,297 INFO github: find_org: 1 entities, 0 matched ({})
+2026-11-20 19:49:15,297 WARNING github: find_org: 1 entities held back because a candidate lookup failed (note lookup_error_tier<N> in the search log); rerun find for them
+2026-11-20 19:49:15,311 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 19:49:15,350 INFO github: find_org: 1 entities, 1 matched ({1: 1})
+2026-11-20 19:49:15,384 INFO github: id bound 2008: first_id=9994 (2008-01-01 00:44:25+00:00) after 28 calls
+2026-11-20 19:49:15,389 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 35 calls
+2026-11-20 19:49:15,396 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:49:15,477 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 19:49:15,484 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:49:15,490 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 19:49:15,498 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 19:49:16,026 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 19:49:16,051 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 19:49:16,059 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:49:16,069 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 19:49:16,077 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 19:49:16,661 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 19:49:16,679 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 19:49:16,687 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 19:49:16,694 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 19:49:16,701 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 19:49:17,201 INFO github: sample: 560 orgs (186 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 19:49:17,268 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 19:49:17,269 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf

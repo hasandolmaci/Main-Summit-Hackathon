@@ -25,6 +25,12 @@ Read this first if you are a new session continuing the work. The approved plan 
 6. GH Archive via the free ClickHouse public mirror (BigQuery backend coded, needs GCP creds, 200 GB guard).
 7. Europe subset (EU/UK/CH/NO) is a headline result next to "all". Pooled AUC across selection years, no per-year headlines.
 8. LinkedIn: rejected (ToS + not backtestable: no history, survivorship). Founder signal = Companies House `serial_founder` later.
+9. CORDIS zips were downloaded by the user in a browser (robots.txt blocks `/data/` for scripts) and imported with
+   `--zip-dir`; they live on branch `cordis-raw-zips` (not in the working branch). Finding: CORDIS has a website URL only
+   for FP7-era companies (H2020/Horizon newcomers: 0.1% / 0.0% have one).
+10. CORDIS **pool channel dropped** (`config.yaml pool.channels: [github]`): candidates come from GitHub orgs only; CORDIS
+    stays the `has_public_rd_grant` feature. Grant **matching rule pending**: user waits for the SPARQL check; the
+    recommended extension is exact normalised legal name + same country (country from ccTLD/registry), unique match only.
 
 ## Status (see `git log`)
 | piece | status |
@@ -35,7 +41,7 @@ Read this first if you are a new session continuing the work. The approved plan 
 | GH Archive collector `scripts/sources/gharchive.py` (span/team/activity/external, schema-check, fidelity) | done, smoke-tested on 5 orgs |
 | GitHub org discovery, **GitHub-API route** `scripts/sources/github.py` | done + reviewed, but **blocked in cloud sessions** (proxy allows repo-scoped REST only). Works on a normal machine with `GITHUB_TOKEN` (public read-only). |
 | GitHub org discovery, **keyless route** `scripts/sources/github_owners.py` (GH Archive + ecosyste.ms, 5,000 req/h anonymous) | being built (may be missing/partial — check the file and its tests) |
-| CORDIS bulk `scripts/sources/cordis.py` | done, but cordis.europa.eu robots.txt disallows `/data/`: download the 3 zips **by hand in a browser** and run `--zip-dir <folder>` |
+| CORDIS bulk `scripts/sources/cordis.py` | done: 469k participations, 12.5k PRC company domains imported from the user's zips (`git show origin/cordis-raw-zips:cordis_zips/<file>` to get them) |
 | CORDIS SPARQL `scripts/sources/cordis_sparql.py` (allowed endpoint `/datalab/sparql`) | being built (may be missing/partial) |
 | pool/B `select_controls.py`, entities/events `resolve_entities.py`, `gate.py`, `validate_data.py` | done, tested on synthetic data |
 | snapshots `build_snapshots.py` (+ leakage mutation tests), `backtest.py` (+ embargo/reference/determinism tests) | done, tested on synthetic data |

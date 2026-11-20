@@ -28,7 +28,10 @@ windows:
   accel_clip: 3.0
 
 pool:
-  org_max_age_years: 5        # GitHub org createdAt in [as_of - 5y, as_of)
+  # Discovery channels. User decision 2026-11-20: CORDIS pool dropped (CORDIS has websites only for FP7-era
+  # companies, 0.1% of post-2014 newcomers) -> candidates come from GitHub orgs only; CORDIS stays a feature.
+  channels: [github]
+  org_max_age_years: 5        # org's first GH Archive event in [as_of - 5y, as_of)
   org_sample_pages_per_year: 40   # (GitHub-API route only) REST /organizations pages per creation year
   org_sample_years: [2010, 2023]
   owner_lookups_per_year: 300     # ecosyste.ms lookups for the GH Archive owner hash sample, per first-activity year

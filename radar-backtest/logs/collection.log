@@ -13824,3 +13824,398 @@
 2026-11-20 20:33:46,649 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/anybill params=None status=200 bytes=738
 2026-11-20 20:33:47,414 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/aon3d params=None status=200 bytes=742
 2026-11-20 20:33:48,142 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/aperohealth params=None status=404 bytes=21
+2026-11-20 20:33:49,017 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/apollo params=None status=404 bytes=21
+2026-11-20 20:33:49,595 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/apollographql params=None status=200 bytes=859
+2026-11-20 20:33:50,533 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/apolloshield params=None status=200 bytes=731
+2026-11-20 20:33:51,124 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/apozy params=None status=200 bytes=785
+2026-11-20 20:33:51,971 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/appcanary params=None status=200 bytes=724
+2026-11-20 20:33:52,636 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/applanga params=None status=200 bytes=918
+2026-11-20 20:33:53,403 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/appsidekit params=None status=200 bytes=729
+2026-11-20 20:33:54,154 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/apptimize params=None status=404 bytes=21
+2026-11-20 20:33:54,906 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/aptdeco params=None status=200 bytes=785
+2026-11-20 20:33:55,659 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/aptible params=None status=200 bytes=756
+2026-11-20 20:33:56,398 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/apurata params=None status=200 bytes=706
+2026-11-20 20:33:57,201 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/archbee params=None status=200 bytes=726
+2026-11-20 20:33:57,887 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/arcprize params=None status=200 bytes=805
+2026-11-20 20:33:58,683 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/arengu params=None status=200 bytes=748
+2026-11-20 20:33:59,424 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/argalabs params=None status=200 bytes=713
+2026-11-20 20:34:00,135 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/argo params=None status=200 bytes=697
+2026-11-20 20:34:00,972 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/ariglad params=None status=200 bytes=706
+2026-11-20 20:34:01,643 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/arintra params=None status=404 bytes=21
+2026-11-20 20:34:02,409 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/ark params=None status=200 bytes=677
+2026-11-20 20:34:03,134 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/armorerlabs params=None status=200 bytes=748
+2026-11-20 20:34:03,957 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/armory params=None status=200 bytes=761
+2026-11-20 20:34:04,653 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/arthena params=None status=404 bytes=21
+2026-11-20 20:34:05,408 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/artillery params=None status=200 bytes=773
+2026-11-20 20:34:06,142 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/artosai params=None status=200 bytes=699
+2026-11-20 20:34:06,915 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/arva params=None status=200 bytes=889
+2026-11-20 20:34:07,664 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/asanarebel params=None status=200 bytes=719
+2026-11-20 20:34:08,475 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/asha params=None status=200 bytes=694
+2026-11-20 20:34:09,234 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/ashbyhq params=None status=200 bytes=722
+2026-11-20 20:34:09,899 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/asimgroup params=None status=200 bytes=718
+2026-11-20 20:34:10,679 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/askclara params=None status=200 bytes=761
+2026-11-20 20:34:11,485 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/assemble params=None status=200 bytes=998
+2026-11-20 20:34:12,159 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/assemblyai params=None status=200 bytes=798
+2026-11-20 20:34:12,912 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/assistant-ui params=None status=200 bytes=873
+2026-11-20 20:34:13,421 INFO build_snapshots: as_of 2012: 69 rows, 13 positives, 56 B controls
+2026-11-20 20:34:13,460 INFO build_snapshots: as_of 2013: 139 rows, 24 positives, 115 B controls
+2026-11-20 20:34:13,499 INFO build_snapshots: as_of 2014: 176 rows, 23 positives, 153 B controls
+2026-11-20 20:34:13,540 INFO build_snapshots: as_of 2015: 212 rows, 26 positives, 186 B controls
+2026-11-20 20:34:13,581 INFO build_snapshots: as_of 2016: 245 rows, 28 positives, 217 B controls
+2026-11-20 20:34:13,622 INFO build_snapshots: as_of 2017: 243 rows, 28 positives, 215 B controls
+2026-11-20 20:34:13,650 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/assistantui params=None status=404 bytes=21
+2026-11-20 20:34:13,663 INFO build_snapshots: as_of 2018: 207 rows, 27 positives, 180 B controls
+2026-11-20 20:34:13,706 INFO build_snapshots: as_of 2019: 161 rows, 25 positives, 136 B controls
+2026-11-20 20:34:14,386 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/astranis params=None status=404 bytes=21
+2026-11-20 20:34:15,170 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/athenahq params=None status=404 bytes=21
+2026-11-20 20:34:15,633 INFO build_snapshots: reference profiles: 110
+2026-11-20 20:34:15,732 INFO backtest: as_of 2015: test 212 (pos 26), train 208 (pos 37), refs 28
+2026-11-20 20:34:15,780 INFO backtest: as_of 2016: test 245 (pos 28), train 384 (pos 60), refs 40
+2026-11-20 20:34:15,834 INFO backtest: as_of 2017: test 243 (pos 28), train 596 (pos 86), refs 55
+2026-11-20 20:34:15,882 INFO backtest: as_of 2018: test 207 (pos 27), train 841 (pos 114), refs 68
+2026-11-20 20:34:15,914 INFO backtest: as_of 2019: test 161 (pos 25), train 1084 (pos 142), refs 68
+2026-11-20 20:34:15,915 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/atla-ai params=None status=200 bytes=699
+2026-11-20 20:34:16,636 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/atomicvest params=None status=200 bytes=712
+2026-11-20 20:34:17,405 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/atomizedhq params=None status=404 bytes=21
+2026-11-20 20:34:18,209 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/atopile params=None status=200 bytes=756
+2026-11-20 20:34:18,915 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/attunehq params=None status=200 bytes=704
+2026-11-20 20:34:19,630 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/auditone params=None status=200 bytes=727
+2026-11-20 20:34:20,415 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/audm params=None status=200 bytes=719
+2026-11-20 20:34:21,228 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/audora params=None status=200 bytes=706
+2026-11-20 20:34:21,919 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/authy params=None status=200 bytes=742
+2026-11-20 20:34:22,644 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/authzed params=None status=200 bytes=817
+2026-11-20 20:34:23,419 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/autopallet params=None status=200 bytes=714
+2026-11-20 20:34:24,132 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/autoresearch params=None status=200 bytes=901
+2026-11-20 20:34:24,919 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/autosana params=None status=200 bytes=774
+2026-11-20 20:34:25,647 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/autostep params=None status=200 bytes=709
+2026-11-20 20:34:26,389 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/autotab params=None status=404 bytes=21
+2026-11-20 20:34:27,154 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/autumnlabs params=None status=404 bytes=21
+2026-11-20 20:34:27,919 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/avearobotics params=None status=200 bytes=745
+2026-11-20 20:34:28,710 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/aviator params=None status=200 bytes=696
+2026-11-20 20:34:29,399 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/avionschool params=None status=200 bytes=762
+2026-11-20 20:34:30,203 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/avoice params=None status=200 bytes=683
+2026-11-20 20:34:30,919 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/axdraft params=None status=200 bytes=801
+2026-11-20 20:34:31,640 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/axionorbital params=None status=200 bytes=739
+2026-11-20 20:34:32,406 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/axoni params=None status=404 bytes=21
+2026-11-20 20:34:33,169 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/azalearobotics params=None status=200 bytes=733
+2026-11-20 20:34:33,972 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/azure params=None status=200 bytes=838
+2026-11-20 20:34:34,638 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/b12labs params=None status=200 bytes=699
+2026-11-20 20:34:35,416 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/backerkit params=None status=200 bytes=742
+2026-11-20 20:34:36,160 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/banditml params=None status=200 bytes=758
+2026-11-20 20:34:36,894 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/banxware params=None status=200 bytes=842
+2026-11-20 20:34:37,661 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/basedash params=None status=200 bytes=797
+2026-11-20 20:34:38,411 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/baseframe params=None status=404 bytes=21
+2026-11-20 20:34:39,257 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/basement params=None status=200 bytes=784
+2026-11-20 20:34:40,029 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/baubap params=None status=200 bytes=739
+2026-11-20 20:34:40,654 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/baudlabs params=None status=404 bytes=21
+2026-11-20 20:34:41,421 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bayesimpact params=None status=200 bytes=833
+2026-11-20 20:34:42,173 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bayesline params=None status=404 bytes=21
+2026-11-20 20:34:42,896 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bearflagrobotics params=None status=200 bytes=792
+2026-11-20 20:34:43,664 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/beek params=None status=200 bytes=759
+2026-11-20 20:34:44,405 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/beeper params=None status=200 bytes=750
+2026-11-20 20:34:45,278 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bellabeat params=None status=404 bytes=21
+2026-11-20 20:34:46,140 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/belvedir params=None status=200 bytes=780
+2026-11-20 20:34:46,650 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/belvo params=None status=200 bytes=681
+2026-11-20 20:34:47,412 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/benchify params=None status=200 bytes=784
+2026-11-20 20:34:48,158 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/benchling params=None status=200 bytes=778
+2026-11-20 20:34:49,060 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/benepass params=None status=200 bytes=829
+2026-11-20 20:34:49,695 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bentocart params=None status=200 bytes=714
+2026-11-20 20:34:50,507 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/berryai params=None status=200 bytes=745
+2026-11-20 20:34:51,158 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/besimple params=None status=200 bytes=715
+2026-11-20 20:34:51,894 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/better-auth params=None status=200 bytes=878
+2026-11-20 20:34:52,662 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/beudelivery params=None status=404 bytes=21
+2026-11-20 20:34:53,398 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/beyond-aero params=None status=200 bytes=726
+2026-11-20 20:34:54,162 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bilanc params=None status=200 bytes=704
+2026-11-20 20:34:54,905 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bimaplan params=None status=200 bytes=860
+2026-11-20 20:34:55,686 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/biocogniv params=None status=404 bytes=21
+2026-11-20 20:34:56,405 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/biodock params=None status=200 bytes=706
+2026-11-20 20:34:57,152 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/biomes params=None status=404 bytes=21
+2026-11-20 20:34:57,904 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/biorender params=None status=404 bytes=21
+2026-11-20 20:34:58,655 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bitaccess params=None status=200 bytes=795
+2026-11-20 20:34:59,412 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bitmovin params=None status=200 bytes=744
+2026-11-20 20:35:00,142 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bitnami params=None status=200 bytes=858
+2026-11-20 20:35:00,928 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bitpatrol params=None status=200 bytes=805
+2026-11-20 20:35:01,670 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bitstackapp params=None status=200 bytes=797
+2026-11-20 20:35:02,412 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/blaze params=None status=200 bytes=690
+2026-11-20 20:35:03,083 INFO http: GET https://cordis.europa.eu/robots.txt params=None status=200 bytes=365
+2026-11-20 20:35:03,157 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/blinklastmile params=None status=200 bytes=736
+2026-11-20 20:35:03,919 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/blissway params=None status=200 bytes=715
+2026-11-20 20:35:04,664 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/blitzllama params=None status=200 bytes=719
+2026-11-20 20:35:05,414 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/blitznocode params=None status=404 bytes=21
+2026-11-20 20:35:06,160 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/blixo params=None status=404 bytes=21
+2026-11-20 20:35:06,912 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/blockscope params=None status=200 bytes=783
+2026-11-20 20:35:07,648 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/blockspring params=None status=200 bytes=776
+2026-11-20 20:35:08,434 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/blok params=None status=200 bytes=771
+2026-11-20 20:35:09,182 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bloom params=None status=200 bytes=827
+2026-11-20 20:35:09,908 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bloomthat params=None status=404 bytes=21
+2026-11-20 20:35:10,735 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bluecargo params=None status=200 bytes=728
+2026-11-20 20:35:11,404 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bluefroggaming params=None status=200 bytes=761
+2026-11-20 20:35:12,144 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/blueshoe params=None status=200 bytes=768
+2026-11-20 20:35:12,911 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/boardcave params=None status=404 bytes=21
+2026-11-20 20:35:13,226 INFO cordis_sparql: roles@0 rows=10000 0.16s cache=True
+2026-11-20 20:35:13,373 INFO cordis_sparql: roles@10000 rows=10000 0.15s cache=True
+2026-11-20 20:35:13,521 INFO cordis_sparql: roles@20000 rows=10000 0.15s cache=True
+2026-11-20 20:35:13,665 INFO cordis_sparql: roles@30000 rows=10000 0.14s cache=True
+2026-11-20 20:35:13,805 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/boat params=None status=404 bytes=21
+2026-11-20 20:35:13,809 INFO cordis_sparql: roles@40000 rows=10000 0.14s cache=True
+2026-11-20 20:35:13,955 INFO cordis_sparql: roles@50000 rows=10000 0.15s cache=True
+2026-11-20 20:35:14,104 INFO cordis_sparql: roles@60000 rows=10000 0.15s cache=True
+2026-11-20 20:35:14,252 INFO cordis_sparql: roles@70000 rows=10000 0.15s cache=True
+2026-11-20 20:35:14,398 INFO cordis_sparql: roles@80000 rows=10000 0.15s cache=True
+2026-11-20 20:35:14,408 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bodyport params=None status=200 bytes=738
+2026-11-20 20:35:14,545 INFO cordis_sparql: roles@90000 rows=10000 0.15s cache=True
+2026-11-20 20:35:14,693 INFO cordis_sparql: roles@100000 rows=10000 0.15s cache=True
+2026-11-20 20:35:14,845 INFO cordis_sparql: roles@110000 rows=10000 0.15s cache=True
+2026-11-20 20:35:15,000 INFO cordis_sparql: roles@120000 rows=10000 0.16s cache=True
+2026-11-20 20:35:15,148 INFO cordis_sparql: roles@130000 rows=10000 0.15s cache=True
+2026-11-20 20:35:15,296 INFO cordis_sparql: roles@140000 rows=10000 0.15s cache=True
+2026-11-20 20:35:15,447 INFO cordis_sparql: roles@150000 rows=10000 0.15s cache=True
+2026-11-20 20:35:15,463 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/boitas params=None status=404 bytes=21
+2026-11-20 20:35:15,595 INFO cordis_sparql: roles@160000 rows=10000 0.15s cache=True
+2026-11-20 20:35:15,743 INFO cordis_sparql: roles@170000 rows=10000 0.15s cache=True
+2026-11-20 20:35:15,893 INFO cordis_sparql: roles@180000 rows=10000 0.15s cache=True
+2026-11-20 20:35:16,045 INFO cordis_sparql: roles@190000 rows=10000 0.15s cache=True
+2026-11-20 20:35:16,202 INFO cordis_sparql: roles@200000 rows=10000 0.16s cache=True
+2026-11-20 20:35:16,358 INFO cordis_sparql: roles@210000 rows=10000 0.16s cache=True
+2026-11-20 20:35:16,363 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/boletomovil params=None status=404 bytes=21
+2026-11-20 20:35:16,506 INFO cordis_sparql: roles@220000 rows=10000 0.15s cache=True
+2026-11-20 20:35:16,655 INFO cordis_sparql: roles@230000 rows=10000 0.15s cache=True
+2026-11-20 20:35:16,717 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bolsterbuilt params=None status=200 bytes=745
+2026-11-20 20:35:16,803 INFO cordis_sparql: roles@240000 rows=10000 0.15s cache=True
+2026-11-20 20:35:16,947 INFO cordis_sparql: roles@250000 rows=10000 0.14s cache=True
+2026-11-20 20:35:17,100 INFO cordis_sparql: roles@260000 rows=10000 0.15s cache=True
+2026-11-20 20:35:17,247 INFO cordis_sparql: roles@270000 rows=10000 0.15s cache=True
+2026-11-20 20:35:17,390 INFO cordis_sparql: roles@280000 rows=10000 0.14s cache=True
+2026-11-20 20:35:17,545 INFO cordis_sparql: roles@290000 rows=10000 0.15s cache=True
+2026-11-20 20:35:17,552 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/booktrope params=None status=404 bytes=21
+2026-11-20 20:35:17,698 INFO cordis_sparql: roles@300000 rows=10000 0.15s cache=True
+2026-11-20 20:35:17,868 INFO cordis_sparql: roles@310000 rows=10000 0.17s cache=True
+2026-11-20 20:35:18,040 INFO cordis_sparql: roles@320000 rows=10000 0.17s cache=True
+2026-11-20 20:35:18,165 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/boostable params=None status=200 bytes=732
+2026-11-20 20:35:18,213 INFO cordis_sparql: roles@330000 rows=10000 0.17s cache=True
+2026-11-20 20:35:18,361 INFO cordis_sparql: roles@340000 rows=10000 0.15s cache=True
+2026-11-20 20:35:18,516 INFO cordis_sparql: roles@350000 rows=10000 0.15s cache=True
+2026-11-20 20:35:18,674 INFO cordis_sparql: roles@360000 rows=10000 0.16s cache=True
+2026-11-20 20:35:18,831 INFO cordis_sparql: roles@370000 rows=10000 0.16s cache=True
+2026-11-20 20:35:18,948 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/boostedboards params=None status=404 bytes=21
+2026-11-20 20:35:18,983 INFO cordis_sparql: roles@380000 rows=10000 0.15s cache=True
+2026-11-20 20:35:19,122 INFO cordis_sparql: roles@390000 rows=9071 0.14s cache=True
+2026-11-20 20:35:19,158 INFO cordis_sparql: roles: 399071 rows, 40 pages (41 from cache) 6.1s
+2026-11-20 20:35:19,305 INFO cordis_sparql: organisations@0 rows=10000 0.15s cache=True
+2026-11-20 20:35:19,460 INFO cordis_sparql: organisations@10000 rows=10000 0.16s cache=True
+2026-11-20 20:35:19,629 INFO cordis_sparql: organisations@20000 rows=10000 0.17s cache=True
+2026-11-20 20:35:19,652 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/boostly params=None status=200 bytes=710
+2026-11-20 20:35:19,805 INFO cordis_sparql: organisations@30000 rows=10000 0.18s cache=True
+2026-11-20 20:35:19,972 INFO cordis_sparql: organisations@40000 rows=10000 0.17s cache=True
+2026-11-20 20:35:20,118 INFO cordis_sparql: organisations@50000 rows=10000 0.15s cache=True
+2026-11-20 20:35:20,269 INFO cordis_sparql: organisations@60000 rows=10000 0.15s cache=True
+2026-11-20 20:35:20,334 INFO cordis_sparql: organisations@70000 rows=4421 0.06s cache=True
+2026-11-20 20:35:20,363 INFO cordis_sparql: organisations: 74421 rows, 8 pages (9 from cache) 1.2s
+2026-11-20 20:35:20,415 INFO cordis_sparql: organisation_types@0 rows=10000 0.05s cache=True
+2026-11-20 20:35:20,430 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bottomless params=None status=200 bytes=731
+2026-11-20 20:35:20,472 INFO cordis_sparql: organisation_types@10000 rows=10000 0.06s cache=True
+2026-11-20 20:35:20,527 INFO cordis_sparql: organisation_types@20000 rows=10000 0.05s cache=True
+2026-11-20 20:35:20,576 INFO cordis_sparql: organisation_types@30000 rows=10000 0.05s cache=True
+2026-11-20 20:35:20,626 INFO cordis_sparql: organisation_types@40000 rows=10000 0.05s cache=True
+2026-11-20 20:35:20,674 INFO cordis_sparql: organisation_types@50000 rows=10000 0.05s cache=True
+2026-11-20 20:35:20,722 INFO cordis_sparql: organisation_types@60000 rows=10000 0.05s cache=True
+2026-11-20 20:35:20,771 INFO cordis_sparql: organisation_types@70000 rows=10000 0.05s cache=True
+2026-11-20 20:35:20,797 INFO cordis_sparql: organisation_types@80000 rows=5199 0.03s cache=True
+2026-11-20 20:35:20,804 INFO cordis_sparql: organisation_types: 85199 rows, 9 pages (10 from cache) 0.4s
+2026-11-20 20:35:20,983 INFO cordis_sparql: projects@0 rows=10000 0.18s cache=True
+2026-11-20 20:35:21,160 INFO cordis_sparql: projects@10000 rows=10000 0.18s cache=True
+2026-11-20 20:35:21,166 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/boundaryml params=None status=200 bytes=712
+2026-11-20 20:35:21,304 INFO cordis_sparql: projects@20000 rows=10000 0.14s cache=True
+2026-11-20 20:35:21,442 INFO cordis_sparql: projects@30000 rows=10000 0.14s cache=True
+2026-11-20 20:35:21,585 INFO cordis_sparql: projects@40000 rows=10000 0.14s cache=True
+2026-11-20 20:35:21,755 INFO cordis_sparql: projects@50000 rows=10000 0.17s cache=True
+2026-11-20 20:35:21,911 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/box-id params=None status=200 bytes=747
+2026-11-20 20:35:21,925 INFO cordis_sparql: projects@60000 rows=10000 0.17s cache=True
+2026-11-20 20:35:22,096 INFO cordis_sparql: projects@70000 rows=10000 0.17s cache=True
+2026-11-20 20:35:22,101 INFO cordis_sparql: projects@80000 rows=348 0.00s cache=True
+2026-11-20 20:35:22,107 INFO cordis_sparql: projects: 80348 rows, 9 pages (10 from cache) 1.3s
+2026-11-20 20:35:22,191 INFO cordis_sparql: grant_topic@0 rows=10000 0.08s cache=True
+2026-11-20 20:35:22,275 INFO cordis_sparql: grant_topic@10000 rows=10000 0.08s cache=True
+2026-11-20 20:35:22,361 INFO cordis_sparql: grant_topic@20000 rows=10000 0.09s cache=True
+2026-11-20 20:35:22,445 INFO cordis_sparql: grant_topic@30000 rows=10000 0.08s cache=True
+2026-11-20 20:35:22,527 INFO cordis_sparql: grant_topic@40000 rows=10000 0.08s cache=True
+2026-11-20 20:35:22,620 INFO cordis_sparql: grant_topic@50000 rows=10000 0.09s cache=True
+2026-11-20 20:35:22,672 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/boxid params=None status=200 bytes=687
+2026-11-20 20:35:22,703 INFO cordis_sparql: grant_topic@60000 rows=8538 0.08s cache=True
+2026-11-20 20:35:22,709 INFO cordis_sparql: grant_topic: 68538 rows, 7 pages (8 from cache) 0.6s
+2026-11-20 20:35:22,800 INFO cordis_sparql: grant_call@0 rows=10000 0.09s cache=True
+2026-11-20 20:35:22,892 INFO cordis_sparql: grant_call@10000 rows=10000 0.09s cache=True
+2026-11-20 20:35:22,990 INFO cordis_sparql: grant_call@20000 rows=10000 0.10s cache=True
+2026-11-20 20:35:23,068 INFO cordis_sparql: grant_call@30000 rows=10000 0.08s cache=True
+2026-11-20 20:35:23,120 INFO cordis_sparql: grant_call@40000 rows=6961 0.05s cache=True
+2026-11-20 20:35:23,123 INFO cordis_sparql: grant_call: 46961 rows, 5 pages (6 from cache) 0.4s
+2026-11-20 20:35:23,189 INFO cordis_sparql: grant_type@0 rows=10000 0.06s cache=True
+2026-11-20 20:35:23,254 INFO cordis_sparql: grant_type@10000 rows=10000 0.07s cache=True
+2026-11-20 20:35:23,319 INFO cordis_sparql: grant_type@20000 rows=10000 0.06s cache=True
+2026-11-20 20:35:23,383 INFO cordis_sparql: grant_type@30000 rows=10000 0.06s cache=True
+2026-11-20 20:35:23,432 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/brainhi params=None status=404 bytes=21
+2026-11-20 20:35:23,449 INFO cordis_sparql: grant_type@40000 rows=10000 0.07s cache=True
+2026-11-20 20:35:23,515 INFO cordis_sparql: grant_type@50000 rows=10000 0.07s cache=True
+2026-11-20 20:35:23,581 INFO cordis_sparql: grant_type@60000 rows=10000 0.07s cache=True
+2026-11-20 20:35:23,637 INFO cordis_sparql: grant_type@70000 rows=8725 0.06s cache=True
+2026-11-20 20:35:23,641 INFO cordis_sparql: grant_type: 78725 rows, 8 pages (9 from cache) 0.5s
+2026-11-20 20:35:23,701 INFO cordis_sparql: grant_programme@0 rows=10000 0.06s cache=True
+2026-11-20 20:35:23,761 INFO cordis_sparql: grant_programme@10000 rows=10000 0.06s cache=True
+2026-11-20 20:35:23,778 INFO cordis_sparql: grant_programme@20000 rows=2987 0.02s cache=True
+2026-11-20 20:35:23,781 INFO cordis_sparql: grant_programme: 22987 rows, 3 pages (4 from cache) 0.1s
+2026-11-20 20:35:24,184 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/brainjo params=None status=404 bytes=21
+2026-11-20 20:35:24,943 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/brainkey params=None status=200 bytes=760
+2026-11-20 20:35:25,693 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/braintripping params=None status=200 bytes=806
+2026-11-20 20:35:26,407 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/branch8 params=None status=200 bytes=696
+2026-11-20 20:35:27,228 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/breadfast params=None status=200 bytes=768
+2026-11-20 20:35:27,929 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/brick params=None status=200 bytes=753
+2026-11-20 20:35:28,689 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/briohr params=None status=200 bytes=750
+2026-11-20 20:35:29,411 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/browser-use params=None status=200 bytes=793
+2026-11-20 20:35:30,166 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/browseros params=None status=200 bytes=707
+2026-11-20 20:35:30,925 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/buildatmos params=None status=404 bytes=21
+2026-11-20 20:35:31,659 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/buildjet params=None status=200 bytes=817
+2026-11-20 20:35:32,438 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/buildoutfit params=None status=404 bytes=21
+2026-11-20 20:35:33,177 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/buildscience params=None status=200 bytes=770
+2026-11-20 20:35:33,922 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/buildspace params=None status=200 bytes=824
+2026-11-20 20:35:34,697 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/buildwithstar params=None status=200 bytes=729
+2026-11-20 20:35:35,436 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/buildzoom params=None status=200 bytes=712
+2026-11-20 20:35:36,199 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bukuwarung params=None status=200 bytes=739
+2026-11-20 20:35:36,935 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bulkmro params=None status=200 bytes=706
+2026-11-20 20:35:37,678 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bulldozair params=None status=200 bytes=762
+2026-11-20 20:35:38,418 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bunkerhillhealth params=None status=200 bytes=791
+2026-11-20 20:35:39,222 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/bunkyr params=None status=404 bytes=21
+2026-11-20 20:35:40,343 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/buntinglabs params=None status=200 bytes=834
+2026-11-20 20:35:40,916 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/businessonbot params=None status=200 bytes=727
+2026-11-20 20:35:41,467 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/butter params=None status=200 bytes=789
+2026-11-20 20:35:42,191 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/buttercoin params=None status=200 bytes=808
+2026-11-20 20:35:42,940 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/buttoncomputer params=None status=200 bytes=733
+2026-11-20 20:35:44,317 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/buypower params=None status=200 bytes=769
+2026-11-20 20:35:44,490 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/byteask params=None status=200 bytes=699
+2026-11-20 20:35:45,247 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/cadencework params=None status=200 bytes=770
+2026-11-20 20:35:45,987 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/callab params=None status=200 bytes=789
+2026-11-20 20:35:46,748 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/calltree params=None status=200 bytes=704
+2026-11-20 20:35:47,497 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/cambly params=None status=200 bytes=721
+2026-11-20 20:35:48,276 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/canarytechnologies params=None status=404 bytes=21
+2026-11-20 20:35:48,991 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/cancilico params=None status=200 bytes=709
+2026-11-20 20:35:49,774 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/candoriq params=None status=200 bytes=704
+2026-11-20 20:35:49,774 INFO github_owners: ecosyste.ms: 250 / 1901
+2026-11-20 20:35:50,524 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/canvas params=None status=200 bytes=762
+2026-11-20 20:35:51,254 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/capimoney params=None status=200 bytes=792
+2026-11-20 20:35:52,022 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/captivateiq params=None status=200 bytes=769
+2026-11-20 20:35:52,783 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/capuchin params=None status=200 bytes=689
+2026-11-20 20:35:53,511 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/capveon params=None status=200 bytes=714
+2026-11-20 20:35:54,255 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/carbon params=None status=200 bytes=737
+2026-11-20 20:35:54,311 INFO cordis_sparql: roles@0 rows=10000 0.15s cache=True
+2026-11-20 20:35:54,464 INFO cordis_sparql: roles@10000 rows=10000 0.15s cache=True
+2026-11-20 20:35:54,610 INFO cordis_sparql: roles@20000 rows=10000 0.15s cache=True
+2026-11-20 20:35:54,760 INFO cordis_sparql: roles@30000 rows=10000 0.15s cache=True
+2026-11-20 20:35:54,912 INFO cordis_sparql: roles@40000 rows=10000 0.15s cache=True
+2026-11-20 20:35:54,994 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/carbonfact params=None status=200 bytes=800
+2026-11-20 20:35:55,057 INFO cordis_sparql: roles@50000 rows=10000 0.15s cache=True
+2026-11-20 20:35:55,216 INFO cordis_sparql: roles@60000 rows=10000 0.16s cache=True
+2026-11-20 20:35:55,370 INFO cordis_sparql: roles@70000 rows=10000 0.15s cache=True
+2026-11-20 20:35:55,522 INFO cordis_sparql: roles@80000 rows=10000 0.15s cache=True
+2026-11-20 20:35:55,669 INFO cordis_sparql: roles@90000 rows=10000 0.15s cache=True
+2026-11-20 20:35:55,806 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/cardda params=None status=200 bytes=692
+2026-11-20 20:35:55,817 INFO cordis_sparql: roles@100000 rows=10000 0.15s cache=True
+2026-11-20 20:35:55,968 INFO cordis_sparql: roles@110000 rows=10000 0.15s cache=True
+2026-11-20 20:35:56,117 INFO cordis_sparql: roles@120000 rows=10000 0.15s cache=True
+2026-11-20 20:35:56,273 INFO cordis_sparql: roles@130000 rows=10000 0.16s cache=True
+2026-11-20 20:35:56,420 INFO cordis_sparql: roles@140000 rows=10000 0.15s cache=True
+2026-11-20 20:35:56,492 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/cardinalapp params=None status=200 bytes=746
+2026-11-20 20:35:56,565 INFO cordis_sparql: roles@150000 rows=10000 0.15s cache=True
+2026-11-20 20:35:56,711 INFO cordis_sparql: roles@160000 rows=10000 0.15s cache=True
+2026-11-20 20:35:56,872 INFO cordis_sparql: roles@170000 rows=10000 0.16s cache=True
+2026-11-20 20:35:57,037 INFO cordis_sparql: roles@180000 rows=10000 0.16s cache=True
+2026-11-20 20:35:57,204 INFO cordis_sparql: roles@190000 rows=10000 0.17s cache=True
+2026-11-20 20:35:57,256 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/cardinalgray params=None status=200 bytes=750
+2026-11-20 20:35:57,383 INFO cordis_sparql: roles@200000 rows=10000 0.18s cache=True
+2026-11-20 20:35:57,562 INFO cordis_sparql: roles@210000 rows=10000 0.18s cache=True
+2026-11-20 20:35:57,741 INFO cordis_sparql: roles@220000 rows=10000 0.18s cache=True
+2026-11-20 20:35:57,915 INFO cordis_sparql: roles@230000 rows=10000 0.17s cache=True
+2026-11-20 20:35:57,986 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/carelane params=None status=404 bytes=21
+2026-11-20 20:35:58,065 INFO cordis_sparql: roles@240000 rows=10000 0.15s cache=True
+2026-11-20 20:35:58,210 INFO cordis_sparql: roles@250000 rows=10000 0.15s cache=True
+2026-11-20 20:35:58,359 INFO cordis_sparql: roles@260000 rows=10000 0.15s cache=True
+2026-11-20 20:35:58,506 INFO cordis_sparql: roles@270000 rows=10000 0.15s cache=True
+2026-11-20 20:35:58,652 INFO cordis_sparql: roles@280000 rows=10000 0.15s cache=True
+2026-11-20 20:35:58,740 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/careledger params=None status=200 bytes=714
+2026-11-20 20:35:58,805 INFO cordis_sparql: roles@290000 rows=10000 0.15s cache=True
+2026-11-20 20:35:58,954 INFO cordis_sparql: roles@300000 rows=10000 0.15s cache=True
+2026-11-20 20:35:59,105 INFO cordis_sparql: roles@310000 rows=10000 0.15s cache=True
+2026-11-20 20:35:59,249 INFO cordis_sparql: roles@320000 rows=10000 0.14s cache=True
+2026-11-20 20:35:59,397 INFO cordis_sparql: roles@330000 rows=10000 0.15s cache=True
+2026-11-20 20:35:59,515 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/careswift params=None status=200 bytes=923
+2026-11-20 20:35:59,545 INFO cordis_sparql: roles@340000 rows=10000 0.15s cache=True
+2026-11-20 20:35:59,692 INFO cordis_sparql: roles@350000 rows=10000 0.15s cache=True
+2026-11-20 20:35:59,837 INFO cordis_sparql: roles@360000 rows=10000 0.14s cache=True
+2026-11-20 20:36:00,006 INFO cordis_sparql: roles@370000 rows=10000 0.17s cache=True
+2026-11-20 20:36:00,172 INFO cordis_sparql: roles@380000 rows=10000 0.17s cache=True
+2026-11-20 20:36:00,295 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/careweather params=None status=200 bytes=845
+2026-11-20 20:36:00,309 INFO cordis_sparql: roles@390000 rows=9071 0.14s cache=True
+2026-11-20 20:36:00,349 INFO cordis_sparql: roles: 399071 rows, 40 pages (41 from cache) 6.2s
+2026-11-20 20:36:00,493 INFO cordis_sparql: organisations@0 rows=10000 0.14s cache=True
+2026-11-20 20:36:00,639 INFO cordis_sparql: organisations@10000 rows=10000 0.15s cache=True
+2026-11-20 20:36:00,787 INFO cordis_sparql: organisations@20000 rows=10000 0.15s cache=True
+2026-11-20 20:36:00,932 INFO cordis_sparql: organisations@30000 rows=10000 0.14s cache=True
+2026-11-20 20:36:01,090 INFO cordis_sparql: organisations@40000 rows=10000 0.16s cache=True
+2026-11-20 20:36:01,257 INFO cordis_sparql: organisations@50000 rows=10000 0.17s cache=True
+2026-11-20 20:36:01,259 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/casavi params=None status=200 bytes=718
+2026-11-20 20:36:01,404 INFO cordis_sparql: organisations@60000 rows=10000 0.15s cache=True
+2026-11-20 20:36:01,470 INFO cordis_sparql: organisations@70000 rows=4421 0.07s cache=True
+2026-11-20 20:36:01,502 INFO cordis_sparql: organisations: 74421 rows, 8 pages (9 from cache) 1.2s
+2026-11-20 20:36:01,553 INFO cordis_sparql: organisation_types@0 rows=10000 0.05s cache=True
+2026-11-20 20:36:01,604 INFO cordis_sparql: organisation_types@10000 rows=10000 0.05s cache=True
+2026-11-20 20:36:01,653 INFO cordis_sparql: organisation_types@20000 rows=10000 0.05s cache=True
+2026-11-20 20:36:01,703 INFO cordis_sparql: organisation_types@30000 rows=10000 0.05s cache=True
+2026-11-20 20:36:01,753 INFO cordis_sparql: organisation_types@40000 rows=10000 0.05s cache=True
+2026-11-20 20:36:01,775 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/cascading params=None status=200 bytes=739
+2026-11-20 20:36:01,802 INFO cordis_sparql: organisation_types@50000 rows=10000 0.05s cache=True
+2026-11-20 20:36:01,849 INFO cordis_sparql: organisation_types@60000 rows=10000 0.05s cache=True
+2026-11-20 20:36:01,897 INFO cordis_sparql: organisation_types@70000 rows=10000 0.05s cache=True
+2026-11-20 20:36:01,922 INFO cordis_sparql: organisation_types@80000 rows=5199 0.02s cache=True
+2026-11-20 20:36:01,929 INFO cordis_sparql: organisation_types: 85199 rows, 9 pages (10 from cache) 0.4s
+2026-11-20 20:36:02,102 INFO cordis_sparql: projects@0 rows=10000 0.17s cache=True
+2026-11-20 20:36:02,265 INFO cordis_sparql: projects@10000 rows=10000 0.16s cache=True
+2026-11-20 20:36:02,403 INFO cordis_sparql: projects@20000 rows=10000 0.14s cache=True
+2026-11-20 20:36:02,534 INFO cordis_sparql: projects@30000 rows=10000 0.13s cache=True
+2026-11-20 20:36:02,666 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/caseflood params=None status=200 bytes=709
+2026-11-20 20:36:02,669 INFO cordis_sparql: projects@40000 rows=10000 0.14s cache=True
+2026-11-20 20:36:02,849 INFO cordis_sparql: projects@50000 rows=10000 0.18s cache=True
+2026-11-20 20:36:03,024 INFO cordis_sparql: projects@60000 rows=10000 0.17s cache=True
+2026-11-20 20:36:03,202 INFO cordis_sparql: projects@70000 rows=10000 0.18s cache=True
+2026-11-20 20:36:03,207 INFO cordis_sparql: projects@80000 rows=348 0.01s cache=True
+2026-11-20 20:36:03,215 INFO cordis_sparql: projects: 80348 rows, 9 pages (10 from cache) 1.3s
+2026-11-20 20:36:03,265 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/casetext params=None status=200 bytes=788
+2026-11-20 20:36:03,298 INFO cordis_sparql: grant_topic@0 rows=10000 0.08s cache=True
+2026-11-20 20:36:03,383 INFO cordis_sparql: grant_topic@10000 rows=10000 0.08s cache=True
+2026-11-20 20:36:03,464 INFO cordis_sparql: grant_topic@20000 rows=10000 0.08s cache=True
+2026-11-20 20:36:03,546 INFO cordis_sparql: grant_topic@30000 rows=10000 0.08s cache=True
+2026-11-20 20:36:03,627 INFO cordis_sparql: grant_topic@40000 rows=10000 0.08s cache=True
+2026-11-20 20:36:03,712 INFO cordis_sparql: grant_topic@50000 rows=10000 0.08s cache=True
+2026-11-20 20:36:03,781 INFO cordis_sparql: grant_topic@60000 rows=8538 0.07s cache=True
+2026-11-20 20:36:03,787 INFO cordis_sparql: grant_topic: 68538 rows, 7 pages (8 from cache) 0.6s
+2026-11-20 20:36:03,863 INFO cordis_sparql: grant_call@0 rows=10000 0.07s cache=True
+2026-11-20 20:36:03,937 INFO cordis_sparql: grant_call@10000 rows=10000 0.07s cache=True
+2026-11-20 20:36:04,009 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/cashew-labs params=None status=200 bytes=769
+2026-11-20 20:36:04,010 INFO cordis_sparql: grant_call@20000 rows=10000 0.07s cache=True
+2026-11-20 20:36:04,087 INFO cordis_sparql: grant_call@30000 rows=10000 0.08s cache=True
+2026-11-20 20:36:04,139 INFO cordis_sparql: grant_call@40000 rows=6961 0.05s cache=True
+2026-11-20 20:36:04,142 INFO cordis_sparql: grant_call: 46961 rows, 5 pages (6 from cache) 0.4s
+2026-11-20 20:36:04,208 INFO cordis_sparql: grant_type@0 rows=10000 0.06s cache=True
+2026-11-20 20:36:04,272 INFO cordis_sparql: grant_type@10000 rows=10000 0.06s cache=True
+2026-11-20 20:36:04,336 INFO cordis_sparql: grant_type@20000 rows=10000 0.06s cache=True
+2026-11-20 20:36:04,402 INFO cordis_sparql: grant_type@30000 rows=10000 0.07s cache=True
+2026-11-20 20:36:04,468 INFO cordis_sparql: grant_type@40000 rows=10000 0.07s cache=True
+2026-11-20 20:36:04,534 INFO cordis_sparql: grant_type@50000 rows=10000 0.07s cache=True
+2026-11-20 20:36:04,603 INFO cordis_sparql: grant_type@60000 rows=10000 0.07s cache=True
+2026-11-20 20:36:04,662 INFO cordis_sparql: grant_type@70000 rows=8725 0.06s cache=True
+2026-11-20 20:36:04,667 INFO cordis_sparql: grant_type: 78725 rows, 8 pages (9 from cache) 0.5s
+2026-11-20 20:36:04,725 INFO cordis_sparql: grant_programme@0 rows=10000 0.06s cache=True
+2026-11-20 20:36:04,748 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/cashfree params=None status=200 bytes=818
+2026-11-20 20:36:04,787 INFO cordis_sparql: grant_programme@10000 rows=10000 0.06s cache=True
+2026-11-20 20:36:04,805 INFO cordis_sparql: grant_programme@20000 rows=2987 0.02s cache=True
+2026-11-20 20:36:04,808 INFO cordis_sparql: grant_programme: 22987 rows, 3 pages (4 from cache) 0.1s
+2026-11-20 20:36:05,471 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/castle params=None status=200 bytes=794
+2026-11-20 20:36:06,261 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/cedalio params=None status=200 bytes=763
+2026-11-20 20:36:07,015 INFO http: GET https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/cedana params=None status=200 bytes=715

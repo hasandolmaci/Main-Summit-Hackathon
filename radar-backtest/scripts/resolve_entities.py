@@ -271,6 +271,8 @@ def build_events(ent: pd.DataFrame) -> pd.DataFrame:
                          "detail": {"programme": r.programme, "project": str(r.project_id),
                                     "match": r.match_method}})
     ev = make_events(recs)
+    # one company matched to several CORDIS participant ids in the same project -> keep one grant event
+    ev = ev.drop_duplicates(["entity_id", "ts", "source", "type", "detail"])
     ev = ev.sort_values(["entity_id", "ts", "source", "type", "detail"]).reset_index(drop=True)
     errs = validate_events(ev)
     if errs:

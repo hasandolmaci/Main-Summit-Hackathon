@@ -1,0 +1,160 @@
+2026-11-20 18:40:14,055 INFO http: GET https://yc-oss.github.io/api/companies/all.json params=None status=200 bytes=10959903
+2026-11-20 18:41:00,206 INFO http: GET https://www.htgf.de/robots.txt params=None status=200 bytes=162
+2026-11-20 18:41:04,919 INFO http: GET https://www.htgf.de/sitemap_index.xml params=None status=200 bytes=1633
+2026-11-20 18:41:13,570 INFO http: GET https://www.htgf.de/portfolio-sitemap.xml params=None status=200 bytes=130474
+2026-11-20 18:41:14,341 INFO http: GET https://www.htgf.de/portfolio-sitemap2.xml params=None status=200 bytes=11170
+2026-11-20 18:41:20,489 INFO http: GET https://www.htgf.de/wp-json/wp/v2/types params=None status=200 bytes=22611
+2026-11-20 18:41:21,889 INFO http: GET https://www.htgf.de/wp-json/wp/v2/taxonomies params=None status=200 bytes=1650
+2026-11-20 18:41:31,167 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 1} status=200 bytes=1314769
+2026-11-20 18:41:47,074 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 2} status=200 bytes=1311006
+2026-11-20 18:41:48,478 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 3} status=200 bytes=1340233
+2026-11-20 18:41:50,421 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 4} status=200 bytes=1346113
+2026-11-20 18:41:52,408 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 5} status=200 bytes=1354637
+2026-11-20 18:41:54,319 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 6} status=200 bytes=1355836
+2026-11-20 18:41:56,431 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 7} status=200 bytes=1347301
+2026-11-20 18:41:58,332 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 8} status=200 bytes=1340398
+2026-11-20 18:42:00,333 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 9} status=200 bytes=1338996
+2026-11-20 18:42:02,512 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 10} status=200 bytes=1339495
+2026-11-20 18:42:04,262 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 11} status=200 bytes=1095137
+2026-11-20 18:42:05,348 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 12} status=400 bytes=169
+2026-11-20 18:42:39,405 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/advanova/ params=None status=200 bytes=153320
+2026-11-20 18:42:40,747 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/sioptica-2/ params=None status=200 bytes=153223
+2026-11-20 18:42:42,704 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/sunhill-technologies-gmbh-exit/ params=None status=200 bytes=125597
+2026-11-20 18:42:44,694 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/pas-analytik-hmbh-exit/ params=None status=200 bytes=119130
+2026-11-20 18:42:46,754 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/refined-laser-systems/ params=None status=200 bytes=156215
+2026-11-20 18:44:16,424 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 12} status=400 bytes=169
+2026-11-20 18:44:18,118 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/113793/ params=None status=200 bytes=164604
+2026-11-20 18:44:20,061 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/15213/ params=None status=200 bytes=148122
+2026-11-20 18:44:22,027 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/4-animals-alsterscience-gmbh-2/ params=None status=200 bytes=122087
+2026-11-20 18:44:24,094 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/6-wunderkinder/ params=None status=200 bytes=149106
+2026-11-20 18:44:26,083 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/7learnings/ params=None status=200 bytes=163049
+2026-11-20 18:44:28,101 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/abalos/ params=None status=200 bytes=154509
+2026-11-20 18:44:30,091 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/abh-optics/ params=None status=200 bytes=155984
+2026-11-20 18:44:32,071 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/actitrexx/ params=None status=200 bytes=150890
+2026-11-20 18:44:34,099 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/adivo-gmbh-2/ params=None status=200 bytes=157569
+2026-11-20 18:44:36,098 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/adlatus-robotics-2/ params=None status=200 bytes=157748
+2026-11-20 18:44:38,089 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/adtriba-2/ params=None status=200 bytes=158488
+2026-11-20 18:44:40,112 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/aegiq/ params=None status=200 bytes=155523
+2026-11-20 18:44:42,107 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/aerleum/ params=None status=200 bytes=157334
+2026-11-20 18:44:44,081 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/agora-innovation/ params=None status=200 bytes=147533
+2026-11-20 18:44:46,097 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/agriportance/ params=None status=200 bytes=158975
+2026-11-20 18:44:48,059 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ai-predict/ params=None status=200 bytes=150067
+2026-11-20 18:44:49,768 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/aica/ params=None status=200 bytes=162040
+2026-11-20 18:44:52,081 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/aignostics/ params=None status=200 bytes=165700
+2026-11-20 18:44:54,133 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ailos-robotics/ params=None status=200 bytes=157499
+2026-11-20 18:44:56,127 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/airgateway-gmbh/ params=None status=200 bytes=152849
+2026-11-20 18:44:58,080 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/akirolabs/ params=None status=200 bytes=157806
+2026-11-20 18:45:00,089 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/akribion-therapeutics/ params=None status=200 bytes=155512
+2026-11-20 18:45:02,249 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/alentis-2/ params=None status=200 bytes=163173
+2026-11-20 18:45:04,152 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/algiax/ params=None status=200 bytes=155262
+2026-11-20 18:45:06,181 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/all3dp/ params=None status=200 bytes=174072
+2026-11-20 18:45:08,103 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/alpine-eagle/ params=None status=200 bytes=154505
+2026-11-20 18:45:10,107 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/altavo/ params=None status=200 bytes=168805
+2026-11-20 18:45:12,098 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/alteva/ params=None status=200 bytes=158876
+2026-11-20 18:45:14,075 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/altruja-2/ params=None status=200 bytes=156110
+2026-11-20 18:45:16,143 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/aluvation-2/ params=None status=200 bytes=154139
+2026-11-20 18:45:18,131 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/amal-therapeutics-2/ params=None status=200 bytes=163104
+2026-11-20 18:45:20,102 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/amedrix-exit-2/ params=None status=200 bytes=140087
+2026-11-20 18:45:22,056 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/angiolutions/ params=None status=200 bytes=132569
+2026-11-20 18:45:24,122 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/anybill/ params=None status=200 bytes=158362
+2026-11-20 18:45:26,101 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/applanga-2/ params=None status=200 bytes=151674
+2026-11-20 18:45:28,118 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/aq-implants-exit-2/ params=None status=200 bytes=147737
+2026-11-20 18:45:30,081 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/arcos/ params=None status=200 bytes=123902
+2026-11-20 18:45:32,123 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/arga-medtech/ params=None status=200 bytes=147780
+2026-11-20 18:45:34,090 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/arioso-systems-2/ params=None status=200 bytes=129270
+2026-11-20 18:45:36,111 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/asana-rebel/ params=None status=200 bytes=160529
+2026-11-20 18:45:37,771 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/atmos/ params=None status=200 bytes=173179
+2026-11-20 18:45:40,158 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/attenio/ params=None status=200 bytes=156798
+2026-11-20 18:45:42,081 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/audavis/ params=None status=200 bytes=155860
+2026-11-20 18:45:44,133 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/audiocure/ params=None status=200 bytes=162765
+2026-11-20 18:45:46,114 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/auditone/ params=None status=200 bytes=155428
+2026-11-20 18:45:48,076 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/autarkize/ params=None status=200 bytes=156137
+2026-11-20 18:45:50,117 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/autoaid/ params=None status=200 bytes=155845
+2026-11-20 18:45:52,122 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/auxilius/ params=None status=200 bytes=155423
+2026-11-20 18:45:53,774 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/avelios-medical/ params=None status=200 bytes=168873
+2026-11-20 18:45:56,088 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/bab-la/ params=None status=200 bytes=153519
+2026-11-20 18:45:58,123 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/banxware/ params=None status=200 bytes=159865
+2026-11-20 18:46:00,057 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/become-1/ params=None status=200 bytes=155464
+2026-11-20 18:46:02,054 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/beel/ params=None status=200 bytes=127067
+2026-11-20 18:46:04,091 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/beeoled/ params=None status=200 bytes=155100
+2026-11-20 18:46:06,129 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/belyntic-2/ params=None status=200 bytes=152509
+2026-11-20 18:46:08,087 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/bentekk/ params=None status=200 bytes=124816
+2026-11-20 18:46:10,164 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/betterfront/ params=None status=200 bytes=160933
+2026-11-20 18:46:12,143 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/bettzeit-2/ params=None status=200 bytes=156986
+2026-11-20 18:46:14,103 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/bind-x-2/ params=None status=200 bytes=154642
+2026-11-20 18:46:16,142 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/biograil/ params=None status=200 bytes=167596
+2026-11-20 18:46:18,131 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/biovox/ params=None status=200 bytes=158698
+2026-11-20 18:46:20,054 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/bitstars-2/ params=None status=200 bytes=121712
+2026-11-20 18:46:22,108 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/boehner-eh/ params=None status=200 bytes=154681
+2026-11-20 18:46:24,110 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/bonayou-2/ params=None status=200 bytes=156125
+2026-11-20 18:46:26,833 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/box-id-systems/ params=None status=200 bytes=158671
+2026-11-20 18:46:28,110 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/brainjo/ params=None status=200 bytes=157707
+2026-11-20 18:46:30,143 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/btry/ params=None status=200 bytes=161930
+2026-11-20 18:46:31,200 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 18:46:31,236 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:46:31,256 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:46:31,278 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:46:31,303 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:46:31,331 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:46:31,392 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:46:31,415 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:46:31,438 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:46:31,485 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:46:31,571 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:46:31,632 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:46:31,654 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:46:32,126 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/bubbles-beyond-2/ params=None status=200 bytes=153649
+2026-11-20 18:46:34,114 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/c-lecta-2/ params=None status=200 bytes=158255
+2026-11-20 18:46:36,156 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/c-mo/ params=None status=200 bytes=162342
+2026-11-20 18:46:38,184 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/c2s2-2/ params=None status=200 bytes=154984
+2026-11-20 18:46:40,153 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ca-customer-alliance/ params=None status=200 bytes=155068
+2026-11-20 18:46:41,680 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 18:46:41,719 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:46:41,741 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:46:41,769 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:46:41,796 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:46:41,821 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:46:41,868 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:46:41,894 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:46:41,920 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:46:41,950 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:46:41,980 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:46:42,075 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:46:42,104 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:46:42,115 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/caeli-wind/ params=None status=200 bytes=162776
+2026-11-20 18:46:44,117 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cancilico/ params=None status=200 bytes=155788
+2026-11-20 18:46:46,110 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/capical-2/ params=None status=200 bytes=155955
+2026-11-20 18:46:48,121 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cardior/ params=None status=200 bytes=162704
+2026-11-20 18:46:48,550 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 18:46:48,604 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:46:48,633 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:46:48,655 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:46:48,675 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:46:48,703 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:46:48,747 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 18:46:48,766 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 18:46:48,789 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 18:46:48,814 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 18:46:48,840 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 18:46:48,923 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:46:48,952 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 18:46:50,124 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/carelane/ params=None status=200 bytes=159355
+2026-11-20 18:46:52,128 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/casavi/ params=None status=200 bytes=167897
+2026-11-20 18:46:54,136 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cci-custom-cells-itzehoe-2/ params=None status=200 bytes=158416
+2026-11-20 18:46:56,116 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ceregate/ params=None status=200 bytes=165651
+2026-11-20 18:46:58,141 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/certivity/ params=None status=200 bytes=162027
+2026-11-20 18:47:00,109 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cevotec/ params=None status=200 bytes=157841
+2026-11-20 18:47:02,159 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/chipmetrics/ params=None status=200 bytes=153602
+2026-11-20 18:47:04,123 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/chromotek-2/ params=None status=200 bytes=158317
+2026-11-20 18:47:06,158 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/ci-hub/ params=None status=200 bytes=158808
+2026-11-20 18:47:08,108 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/clee-medical/ params=None status=200 bytes=158285
+2026-11-20 18:47:10,121 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/clickworker/ params=None status=200 bytes=155746
+2026-11-20 18:47:12,129 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cloudplan/ params=None status=200 bytes=153164
+2026-11-20 18:47:14,172 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/cloudsquid/ params=None status=200 bytes=160027
+2026-11-20 18:47:16,197 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/co-reactive/ params=None status=200 bytes=158510
+2026-11-20 18:47:17,854 INFO http: GET https://www.htgf.de/wp-json/wp/v2/portfolio params={'per_page': 100, 'page': 12} status=400 bytes=169
+2026-11-20 18:47:18,163 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/codetrails/ params=None status=200 bytes=151383
+2026-11-20 18:47:20,142 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/coinlend/ params=None status=200 bytes=153753
+2026-11-20 18:47:22,116 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/coinpanion/ params=None status=200 bytes=154614
+2026-11-20 18:47:24,148 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/colipi/ params=None status=200 bytes=156072
+2026-11-20 18:47:26,131 INFO http: GET https://www.htgf.de/en/portfolio/htgffamily/collimatehealth/ params=None status=200 bytes=154599

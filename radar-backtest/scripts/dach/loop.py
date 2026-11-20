@@ -245,10 +245,19 @@ def permute_within_groups(y: np.ndarray, groups: np.ndarray, rng) -> np.ndarray:
     return out
 
 
+def _shuffled_run(args):
+    """One shuffled-label control (module-level so it can run in a worker process; seeded -> order-independent)."""
+    L, y, groups, start, clist, base, k = args
+    ys = permute_within_groups(y, groups, np.random.default_rng(CFG["seed"] + 100 + k))
+    r = run_loop(L, ys, start, clist, base, CFG["seed"] + 100 + k, None, f"shuffled_{k}", None)
+    return {"run": k, "kept": len(r["final_set"]), "final_set": r["final_set"], "oof_auc": r["oof_auc"]}
+
+
 def main(argv=None):
     from . import clean as C, features as FE, io, labels as LB
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--shuffles", type=int, default=CFG["shuffled_control"]["runs"])
+    ap.add_argument("--jobs", type=int, default=3, help="worker processes for the shuffled runs (results identical)")
     a = ap.parse_args(argv)
     t0 = time.time()
     live = Live()
@@ -274,17 +283,26 @@ def main(argv=None):
         clist.append((c["name"], m))
     live.set(stage="real run", n_labelled=int(len(L)), n_pos=int(y.sum()), candidates=[c for c, _ in clist])
     log_rows = []
+    groups = (L["meta_cohort_source"] + "|" + L["meta_cohort"]).to_numpy()
+    jobs = [(L, y, groups, start, clist, base, k) for k in range(a.shuffles)]
+    pool = None
+    if a.jobs > 1 and a.shuffles:
+        import multiprocessing as mp
+        from concurrent.futures import ProcessPoolExecutor
+        pool = ProcessPoolExecutor(a.jobs, mp_context=mp.get_context("fork"))
+        futs = [pool.submit(_shuffled_run, j) for j in jobs]          # controls run while the real loop runs
     real = run_loop(L, y, start, clist, base, CFG["seed"], live, "real", log_rows)
     live.set(real=real, stage="shuffled-label control")
-    groups = (L["meta_cohort_source"] + "|" + L["meta_cohort"]).to_numpy()
     shuf = []
-    for k in range(a.shuffles):
-        ys = permute_within_groups(y, groups, np.random.default_rng(CFG["seed"] + 100 + k))
-        r = run_loop(L, ys, start, clist, base, CFG["seed"] + 100 + k, None, f"shuffled_{k}", None)
-        shuf.append({"run": k, "kept": len(r["final_set"]), "final_set": r["final_set"], "oof_auc": r["oof_auc"]})
+    from concurrent.futures import as_completed
+    for res in (as_completed(futs) if pool else map(_shuffled_run, jobs)):
+        d = res.result() if pool else res
+        shuf = sorted(shuf + [d], key=lambda e: e["run"])
         live.state["shuffled"] = shuf
-        live.set(stage=f"shuffled-label control {k + 1}/{a.shuffles}")
-        live.event("shuffled", **shuf[-1])
+        live.set(stage=f"shuffled-label control {len(shuf)}/{a.shuffles}")
+        live.event("shuffled", **d)
+    if pool:
+        pool.shutdown()
     s_auc = np.array([s["oof_auc"] for s in shuf])
     pct = float((s_auc < real["oof_auc"]).mean()) if len(s_auc) else float("nan")
     q = CFG["shuffled_control"]

@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: setup test labels cordis idmap pipeline orgs gharchive gate validate snapshots backtest backtests report all
+.PHONY: setup test labels cordis idmap pipeline orgs gharchive gate validate snapshots backtest backtests report all dach-features dach-loop dach-dashboard dach-report
 
 setup:
 	python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
@@ -45,3 +45,16 @@ report:
 	$(PY) -m scripts.report
 
 all: labels cordis idmap pipeline backtests
+
+# ---- DACH cohort backtest (backtest.csv) ----
+dach-features:   ## clean + convert features (same code as the weekly n8n scoring)
+	$(PY) -m scripts.dach.features --input dach/data/raw/backtest_upload.csv --output dach/data/clean/features.csv
+
+dach-loop:       ## improvement loop + 20 shuffled-label controls (live state in dach/results/loop_state.json)
+	OMP_NUM_THREADS=1 $(PY) -m scripts.dach.loop --jobs 3
+
+dach-dashboard:  ## live local dashboard: http://localhost:8765/dashboard/
+	$(PY) -m scripts.dach.dashboard --port 8765
+
+dach-report:     ## cleaning_report.md, label_review.csv, report.md
+	$(PY) -m scripts.dach.report

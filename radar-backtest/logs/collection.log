@@ -21577,3 +21577,19 @@
 2026-11-20 22:00:39,355 INFO backtest: as_of 2017: test 300 (pos 26), train 1200 (pos 123), refs 0
 2026-11-20 22:00:39,378 INFO backtest: as_of 2018: test 300 (pos 25), train 1500 (pos 156), refs 0
 2026-11-20 22:00:39,401 INFO backtest: as_of 2019: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 22:00:54,776 INFO pipeline: === step resolve_build
+2026-11-20 22:00:56,682 INFO resolve_entities: entities: 6996 (labelled 6607, in_B 393, with github 1148, with cordis 6)
+2026-11-20 22:01:06,214 INFO resolve_entities: events: 640892 rows {('cordis', 'grant_signed'): 20, ('gharchive', 'ext_engagement_month'): 396970, ('gharchive', 'org_activity'): 230264, ('gharchive', 'org_first_event'): 716, ('gharchive', 'team_first_push'): 12922}
+2026-11-20 22:01:06,215 INFO pipeline: === step resolve_build done in 11s
+2026-11-20 22:01:06,215 INFO pipeline: === step validate
+2026-11-20 22:01:06,733 INFO pipeline: === step validate done in 1s
+2026-11-20 22:01:06,733 INFO pipeline: === step gate
+2026-11-20 22:01:07,023 INFO pipeline: === step gate done in 0s
+2026-11-20 22:01:18,204 INFO build_snapshots: as_of 2012: 33 rows, 1 positives, 32 B controls
+2026-11-20 22:01:18,313 INFO build_snapshots: as_of 2013: 75 rows, 2 positives, 73 B controls
+2026-11-20 22:01:18,424 INFO build_snapshots: as_of 2014: 139 rows, 6 positives, 133 B controls
+2026-11-20 22:01:18,550 INFO build_snapshots: as_of 2015: 203 rows, 9 positives, 194 B controls
+2026-11-20 22:01:18,690 INFO build_snapshots: as_of 2016: 238 rows, 7 positives, 231 B controls
+2026-11-20 22:01:18,816 INFO build_snapshots: as_of 2017: 229 rows, 8 positives, 221 B controls
+2026-11-20 22:01:18,924 INFO build_snapshots: as_of 2018: 206 rows, 6 positives, 200 B controls
+2026-11-20 22:01:19,023 INFO build_snapshots: as_of 2019: 157 rows, 8 positives, 149 B controls

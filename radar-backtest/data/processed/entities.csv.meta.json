@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-20T21:51:25.468104+00:00",
+  "created_at": "2026-11-20T22:00:56.661094+00:00",
   "file": "data/processed/entities.csv",
-  "git_sha": "abee174bde8ed2e1552289505939aa8da629551a",
+  "git_sha": "51272f3bd2c4e177722dd612ddb8f27282b766cd",
   "inputs": [
     {
       "path": "data/processed/universe.parquet",
@@ -37,6 +37,6 @@
   "python": "3.13.18",
   "rows": 6996,
   "script": "scripts/resolve_entities.py build",
-  "sha256": "2b41f6dda84c0c632aa285200d6c2a440464a3075e8ab632a9fbfc940c3aad3b",
+  "sha256": "0e39bfc9ecf8e91c76fbeb76b6d79b53cdc84948ad8da9f841e83091a1da731d",
   "sources": []
 }

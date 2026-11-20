@@ -3143,7 +3143,7 @@ karatelabs.io,,False,0.0,True,karatelabs,91312095,2021-10-02 10:44:07+00:00,webs
 karboncard.com,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 karmenai.com,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 karoo.ca,,False,0.0,True,,,,,,,,,,,,,,CA,ccTLD,False,False,,False
-kartverket.no,github_sample,True,0.020000000000000018,False,kartverket,2970101,2012-12-05 13:27:05+00:00,website_equals_domain+login_rule+org_kind (ecosyste.ms),high,1.0,2012-12-05 13:27:05+00:00,2019-12-27 13:09:04+00:00,16145.0,,,,,NO,ccTLD,False,False,2012-12-12 00:00:00+00:00,False
+kartverket.no,github_sample,True,0.020000000000000018,False,kartverket,2970101,2012-12-05 13:27:05+00:00,website_equals_domain+login_rule+org_kind (ecosyste.ms),high,1.0,2012-12-05 13:27:05+00:00,2019-12-27 13:09:04+00:00,16145.0,,,,,NO,ccTLD,True,True,2012-12-12 00:00:00+00:00,False
 karumi.ai,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 kashin.app,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 kaso.ai,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
@@ -3933,7 +3933,7 @@ nasdisc.com,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 natero.com,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 natif.ai,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 nationalfinanceolympiad.com,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
-native.no,,False,0.0,True,,,,,,,,,,,,,,NO,ccTLD,False,False,,False
+native.no,,False,0.0,True,,,,,,,,,,,,,,NO,ccTLD,True,True,,False
 naturallclub.com,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 nautilus.co,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 navanbio.com,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
@@ -6321,7 +6321,7 @@ unifold.io,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 unify.ai,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 uniki.de,,False,0.0,True,,,,,,,,,,,,,,DE,ccTLD,True,True,,False
 unimadx.com,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
-uninett.no,github_sample,True,0.020000000000000018,False,Uninett,778970,2011-06-21 06:15:57+00:00,website_equals_domain+login_rule+org_kind (ecosyste.ms),high,1.0,2011-06-21 06:15:57+00:00,2019-12-27 19:28:34+00:00,14052.0,2008-01-01 00:00:00+00:00,NO,name_country,high,NO,ccTLD,False,False,2011-06-30 00:00:00+00:00,False
+uninett.no,github_sample,True,0.020000000000000018,False,Uninett,778970,2011-06-21 06:15:57+00:00,website_equals_domain+login_rule+org_kind (ecosyste.ms),high,1.0,2011-06-21 06:15:57+00:00,2019-12-27 19:28:34+00:00,14052.0,2008-01-01 00:00:00+00:00,NO,name_country,high,NO,ccTLD,True,True,2011-06-30 00:00:00+00:00,False
 union54.com,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 unionapt.live,,False,0.0,True,,,,,,,,,,,,,,,,False,False,,False
 unisharp.com,github_sample,True,0.016599999999999948,False,UniSharp,4953874,2013-07-06 13:41:14+00:00,website_equals_domain+login_rule+org_kind (ecosyste.ms),high,1.0,2013-07-06 13:41:14+00:00,2019-12-31 16:21:16+00:00,10596.0,,,,,,,False,False,2014-03-22 00:00:00+00:00,False

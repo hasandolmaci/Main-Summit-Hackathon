@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-11-20T22:01:18.189376+00:00",
+  "file": "data/processed/snapshots_2012.parquet",
+  "git_sha": "51272f3bd2c4e177722dd612ddb8f27282b766cd",
+  "inputs": [
+    {
+      "path": "data/processed/entities.csv",
+      "sha256": "0e39bfc9ecf8e91c76fbeb76b6d79b53cdc84948ad8da9f841e83091a1da731d"
+    },
+    {
+      "path": "data/processed/events.parquet",
+      "sha256": "2ea4fe083a37e6075a732a70d842490f088e8ccf9cc966538565dd886a170deb"
+    },
+    {
+      "path": "data/labels/companies.csv",
+      "sha256": "4cfb3b1321d35e791fa65f01961881a7430763e388b179ac1e58b7d9859fd324"
+    }
+  ],
+  "notes": null,
+  "params": {
+    "as_of": "2012-01-01 00:00:00+00:00",
+    "engagement_scaling": "robust_z",
+    "windows": {
+      "accel_clip": 3.0,
+      "engagement_months": 12,
+      "w0_days": 90,
+      "w1_days": 90
+    }
+  },
+  "python": "3.13.18",
+  "rows": 33,
+  "script": "scripts/build_snapshots.py",
+  "sha256": "fa4e70b81776f4d6a15c71999feb612eff28f97be527a23c5e1f5909e58e142f",
+  "sources": []
+}

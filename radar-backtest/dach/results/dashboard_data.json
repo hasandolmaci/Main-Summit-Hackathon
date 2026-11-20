@@ -1,25 +1,25 @@
 {
  "status": [
   {
-   "stage": "real: forward pass (24/24) b2b",
-   "phase": "forward pass",
-   "step": 24,
-   "steps": 24,
+   "stage": "shuffled-label control 5/20",
+   "phase": "shuffled-label control",
+   "step": null,
+   "steps": null,
    "n_labelled": 85,
    "n_pos": 13,
    "baseline_auc": 0.6205,
    "start_auc": 0.565,
-   "current_auc": 0.565,
-   "current_set": "gh_public_repos, gh_open_source, gh_external_contribs",
+   "current_auc": 0.6205,
+   "current_set": "",
    "kept_so_far": 0,
-   "tried_so_far": 24,
-   "real_done": false,
-   "shuffled_done": 0,
+   "tried_so_far": 27,
+   "real_done": true,
+   "shuffled_done": 5,
    "shuffled_total": 20,
    "verdict": "",
    "real_beats_share": null,
    "started_at": "2026-11-20T23:13:07.158051+00:00",
-   "updated_at": "2026-11-20T23:17:33.055057+00:00"
+   "updated_at": "2026-11-20T23:22:57.517039+00:00"
   }
  ],
  "attempts": [
@@ -334,7 +334,77 @@
    "share_improved": null,
    "decision": "skipped",
    "reason": "no variance / no as-of data"
+  },
+  {
+   "n": 25,
+   "pass": "backward",
+   "metric": "gh_public_repos",
+   "auc_before": 0.5673,
+   "auc_after": 0.565,
+   "delta": -0.0023,
+   "ci_lo": -0.0434,
+   "ci_hi": 0.0308,
+   "share_improved": 0.5,
+   "decision": "REMOVED",
+   "reason": ""
+  },
+  {
+   "n": 26,
+   "pass": "backward",
+   "metric": "gh_open_source",
+   "auc_before": 0.5858,
+   "auc_after": 0.5673,
+   "delta": -0.0185,
+   "ci_lo": -0.1258,
+   "ci_hi": 0.0768,
+   "share_improved": 0.3,
+   "decision": "REMOVED",
+   "reason": ""
+  },
+  {
+   "n": 27,
+   "pass": "backward",
+   "metric": "gh_external_contribs",
+   "auc_before": 0.6205,
+   "auc_after": 0.5858,
+   "delta": -0.0347,
+   "ci_lo": -0.1495,
+   "ci_hi": 0.0466,
+   "share_improved": 0.05,
+   "decision": "REMOVED",
+   "reason": ""
   }
  ],
- "shuffled": []
+ "shuffled": [
+  {
+   "run": 0,
+   "kept": 0,
+   "oof_auc": 0.6273,
+   "final_set": ""
+  },
+  {
+   "run": 1,
+   "kept": 0,
+   "oof_auc": 0.6155,
+   "final_set": ""
+  },
+  {
+   "run": 2,
+   "kept": 0,
+   "oof_auc": 0.6293,
+   "final_set": ""
+  },
+  {
+   "run": 3,
+   "kept": 0,
+   "oof_auc": 0.6126,
+   "final_set": ""
+  },
+  {
+   "run": 4,
+   "kept": 0,
+   "oof_auc": 0.6066,
+   "final_set": ""
+  }
+ ]
 }

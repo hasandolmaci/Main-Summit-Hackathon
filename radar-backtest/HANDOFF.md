@@ -89,3 +89,23 @@ and send the user the gate counts and results.
 - `github_activity_acceleration` has weak evidence (no paper measures acceleration); `oss_external_engagement` differs from
   Conti et al. (org-level, fork-dominated) — user's definition kept; see `papers/index.md`.
 - ClickHouse mirror: 1.3% fewer PushEvents than raw GH Archive in a 2021 sample hour; PR/Issues/Release exact.
+
+# DACH cohort backtest (second backtest, `dach/`, `scripts/dach/`)
+
+Separate from the main GitHub backtest above; nothing there was changed. Input: `backtest.csv` (205 DACH accelerator-cohort
+companies, 98 cols) stored as `dach/data/raw/backtest_upload.csv`.
+
+- Pre-registered before the first real run (commit f0e91dc): `dach/config/candidates.yaml` (24 candidates, user's order),
+  `dach/config/loop_config.yaml` (never edited after). LLM category mappings in `dach/features/mappings/` are
+  *proposed, awaiting human review*.
+- Pipeline: `make dach-features` → `make dach-loop` (real run + 20 shuffled-label controls, 3 worker processes,
+  seeded so results do not depend on order) → `make dach-report` (cleaning_report.md, label_review.csv, report.md).
+  Live view: `make dach-dashboard` → http://localhost:8765/dashboard/ ; hosted copy refreshed from
+  `python -m scripts.dach.export_dashboard` output.
+- Feature conversion (`scripts/dach/features.py`) is the same code the weekly n8n scoring must call:
+  `python -m scripts.dach.features --input <csv> --output <csv>` (frozen scaling ref in `dach/features/scaling_ref.json`).
+- Not done: step 4c (per-row LLM text extraction) — no model API key here; the 5 text candidates stay pre-registered
+  and are logged as not available. Running them later is a separate, labelled run.
+- Re-export caveat: the generating pipeline is not in this repo; Excel-mangled Wayback timestamps were recovered to
+  month precision only. A second-precision re-export must come from that pipeline.
+- Biggest lever: `dach/results/label_review.csv` (24 CB_ROUND_NO_DATE + 76 UNKNOWN) — dating these first rounds adds positives.

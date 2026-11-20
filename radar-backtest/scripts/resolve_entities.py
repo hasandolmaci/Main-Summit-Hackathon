@@ -61,6 +61,26 @@ def targets() -> pd.DataFrame:
     return df
 
 
+CORDIS_TO_ISO = {"EL": "GR", "UK": "GB"}
+
+
+def cordis_entity_summary(links: pd.DataFrame, part: pd.DataFrame) -> pd.DataFrame:
+    """Per entity: first public grant time, CORDIS country, match method — from entity_cordis links (R1/R2)."""
+    p = part[(part["activity_type"] == "PRC") & part["public_ts"].notna()]
+    m = links.merge(p[["organisation_id", "public_ts", "country"]], on="organisation_id", how="inner")
+    if m.empty:
+        return pd.DataFrame(columns=["entity_id", "cordis_first_public_ts", "cordis_country", "cordis_match_method",
+                                     "cordis_match_confidence"])
+    m["country"] = m["country"].map(lambda c: CORDIS_TO_ISO.get(c, c) if isinstance(c, str) else None)
+    g = m.groupby("entity_id")
+    return pd.DataFrame({
+        "cordis_first_public_ts": g["public_ts"].min(),
+        "cordis_country": g["country"].agg(lambda x: x.mode().iat[0] if x.notna().any() else None),
+        "cordis_match_method": g["match_method"].first(),
+        "cordis_match_confidence": "high",
+    }).reset_index()
+
+
 def build_entities(universe: pd.DataFrame, labels: pd.DataFrame, gh_links: pd.DataFrame | None,
                    cordis_companies: pd.DataFrame | None, gh_span: pd.DataFrame | None) -> pd.DataFrame:
     ent = pd.DataFrame({"entity_id": sorted(set(universe["entity_id"]) | set(labels["domain"].dropna()))})
@@ -92,10 +112,13 @@ def build_entities(universe: pd.DataFrame, labels: pd.DataFrame, gh_links: pd.Da
         ent["gh_first_event_ts"] = pd.NaT
         ent["gh_n_events"] = np.nan
     if cordis_companies is not None and len(cordis_companies):
-        c = cordis_companies.rename(columns={"domain": "entity_id", "first_public_ts": "cordis_first_public_ts",
-                                             "country": "cordis_country"})
-        c["cordis_match_method"] = "organizationURL_domain_equals"
-        c["cordis_match_confidence"] = "high"
+        if "cordis_first_public_ts" in cordis_companies:            # per-entity summary from entity_cordis links
+            c = cordis_companies
+        else:                                                         # fallback: domain-only cordis_companies table
+            c = cordis_companies.rename(columns={"domain": "entity_id", "first_public_ts": "cordis_first_public_ts",
+                                                 "country": "cordis_country"})
+            c["cordis_match_method"] = "domain"
+            c["cordis_match_confidence"] = "high"
         ent = ent.merge(c[["entity_id", "cordis_first_public_ts", "cordis_country", "cordis_match_method",
                            "cordis_match_confidence"]], on="entity_id", how="left")
     else:
@@ -162,13 +185,21 @@ def build_events(ent: pd.DataFrame) -> pd.DataFrame:
                                      "detail": {"org": org, "actor": r.actor_hash, "pr_opened": int(r.pr_opened),
                                                 "issues_opened": int(r.issues_opened), "pushes": int(r.pushes)}})
     p = PROCESSED / "cordis_participations.parquet"
+    lp = PROCESSED / "entity_cordis.parquet"
     if p.exists():
         cp = pd.read_parquet(p)
-        cp = cp[cp["domain"].isin(set(ent["entity_id"])) & (cp["activity_type"] == "PRC") & cp["public_ts"].notna()]
+        cp = cp[(cp["activity_type"] == "PRC") & cp["public_ts"].notna()]
+        if lp.exists():
+            links = pd.read_parquet(lp)
+            links = links[links["entity_id"].isin(set(ent["entity_id"]))]
+            cp = cp.merge(links[["entity_id", "organisation_id", "match_method"]], on="organisation_id", how="inner")
+        else:
+            cp = cp[cp["domain"].isin(set(ent["entity_id"]))].assign(entity_id=lambda d: d["domain"], match_method="domain")
         for r in cp.itertuples():
-            recs.append({"entity_id": r.domain, "ts": r.public_ts, "source": "cordis", "type": "grant_signed",
+            recs.append({"entity_id": r.entity_id, "ts": r.public_ts, "source": "cordis", "type": "grant_signed",
                          "value": float(r.ec_contribution) if pd.notna(r.ec_contribution) else 0.0,
-                         "detail": {"programme": r.programme, "project": str(r.project_id)}})
+                         "detail": {"programme": r.programme, "project": str(r.project_id),
+                                    "match": r.match_method}})
     ev = make_events(recs)
     ev = ev.sort_values(["entity_id", "ts", "source", "type", "detail"]).reset_index(drop=True)
     errs = validate_events(ev)
@@ -181,9 +212,12 @@ def build():
     universe = pd.read_parquet(PROCESSED / "universe.parquet")
     labels = load_labels()
     paths = {k: PROCESSED / f for k, f in [("links", "entity_github_org.parquet"), ("cordis", "cordis_companies.parquet"),
-                                            ("span", "gh_org_span.parquet")]}
+                                            ("span", "gh_org_span.parquet"), ("cordis_links", "entity_cordis.parquet"),
+                                            ("cordis_part", "cordis_participations.parquet")]}
     get = lambda k: pd.read_parquet(paths[k]) if paths[k].exists() else None
-    ent = build_entities(universe, labels, get("links"), get("cordis"), get("span"))
+    cordis = (cordis_entity_summary(get("cordis_links"), get("cordis_part"))
+              if paths["cordis_links"].exists() and paths["cordis_part"].exists() else get("cordis"))
+    ent = build_entities(universe, labels, get("links"), cordis, get("span"))
     out = PROCESSED / "entities.csv"
     ent.to_csv(out, index=False)
     write_meta(out, "scripts/resolve_entities.py build", rows=len(ent),

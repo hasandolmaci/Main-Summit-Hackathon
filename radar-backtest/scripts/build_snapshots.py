@@ -27,7 +27,7 @@ import pandas as pd
 from .lib.cohort import case_cohort, label_at, label_window_complete, visible_at
 from .lib.config import LABELS, PROCESSED, as_of_date, cfg, data_cutoff, get_logger, guard_years
 from .lib.meta import write_meta
-from .lib.scaling import log_ratio_sigmoid, log_robust_z_sigmoid
+from .lib.scaling import log_ratio_sigmoid, log_robust_z_sigmoid, percentile_rank
 
 log = get_logger("build_snapshots")
 
@@ -78,13 +78,18 @@ def coverage(ent: pd.DataFrame, as_of) -> pd.DataFrame:
                          "has_cordis": cordis_cov.values, "visible": v["visible"].values})
 
 
-def scale(raw: pd.DataFrame, cov: pd.DataFrame, ref_ids: set) -> pd.DataFrame:
+ENGAGEMENT_SCALING = "robust_z"      # main: log1p -> robust z -> sigmoid; sensitivity: "percentile"
+
+
+def scale(raw: pd.DataFrame, cov: pd.DataFrame, ref_ids: set, eng_scaling: str | None = None) -> pd.DataFrame:
     """Scale raw features; reference distribution = outcome-blind B entities (no labels involved)."""
     df = raw.merge(cov, on="entity_id", how="left")
     gh = df["has_github"].fillna(False).astype(bool)
     eng = df["eng_raw"].where(gh)
     ref = eng[df["entity_id"].isin(ref_ids) & gh].values
-    df["oss_external_engagement"] = log_robust_z_sigmoid(eng.values, ref)
+    mode = eng_scaling or ENGAGEMENT_SCALING
+    df["oss_external_engagement"] = (percentile_rank(eng.values, ref) if mode == "percentile"
+                                     else log_robust_z_sigmoid(eng.values, ref))
     df["github_activity_acceleration"] = np.where(gh, log_ratio_sigmoid(df["act_w1"], df["act_w0"],
                                                                        cfg()["windows"]["accel_clip"]), np.nan)
     cc = df["has_cordis"].fillna(False).astype(bool)
@@ -150,7 +155,10 @@ def main(argv=None):
     ap.add_argument("--years", nargs="*", type=int, help="as_of years (default: 2012..last selection year)")
     ap.add_argument("--funding-file", default="companies.csv", help="companies_batchstart.csv for the sensitivity run")
     ap.add_argument("--suffix", default="", help="output suffix, e.g. _batchstart")
+    ap.add_argument("--engagement-scaling", choices=["robust_z", "percentile"], default="robust_z")
     a = ap.parse_args(argv)
+    global ENGAGEMENT_SCALING
+    ENGAGEMENT_SCALING = a.engagement_scaling
     years = a.years or list(range(2012, cfg()["years"]["selection"][1] + 1))
     years = guard_years(years)          # locked test years are refused
     ent, fd = load_inputs(a.funding_file)
@@ -161,7 +169,8 @@ def main(argv=None):
         s.to_parquet(out, index=False)
         write_meta(out, "scripts/build_snapshots.py", inputs=[PROCESSED / "entities.csv", PROCESSED / "events.parquet",
                                                                 LABELS / a.funding_file],
-                   params={"as_of": str(as_of_date(y)), "windows": cfg()["windows"]}, rows=len(s))
+                   params={"as_of": str(as_of_date(y)), "windows": cfg()["windows"],
+                           "engagement_scaling": ENGAGEMENT_SCALING}, rows=len(s))
         log.info("as_of %d: %d rows, %d positives, %d B controls", y, len(s), int(s.label.sum()), int((s.label == 0).sum()))
     ref = reference_profiles(ent, fd, events)
     out = PROCESSED / f"reference_profiles{a.suffix}.parquet"

@@ -87,3 +87,12 @@ def test_scale_signature_has_no_labels():
     import inspect
     assert not set(inspect.signature(bs.scale).parameters) & {"label", "labels", "y", "funding_date"}
     assert not set(inspect.signature(bs.compute_raw_features).parameters) & {"label", "labels", "y", "funding_date"}
+
+
+def test_engagement_scaling_alternatives_are_monotone_and_bounded():
+    raw = pd.DataFrame({"entity_id": list("abcde"), "eng_raw": [0.0, 1.0, 3.0, 10.0, 50.0],
+                        "act_w1": 0.0, "act_w0": 0.0, "grant_raw": 0.0})
+    cov = pd.DataFrame({"entity_id": list("abcde"), "has_github": True, "has_cordis": False, "visible": True})
+    for mode in ("robust_z", "percentile"):
+        out = bs.scale(raw, cov, set("abcde"), eng_scaling=mode)["oss_external_engagement"].to_numpy()
+        assert np.all(np.diff(out) > 0) and np.all((out >= 0) & (out <= 1))

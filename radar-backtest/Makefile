@@ -1,6 +1,6 @@
 PY := .venv/bin/python
 
-.PHONY: setup test labels cordis idmap pipeline orgs gharchive gate validate snapshots backtest report all
+.PHONY: setup test labels cordis idmap pipeline orgs gharchive gate validate snapshots backtest backtests report all
 
 setup:
 	python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
@@ -38,7 +38,10 @@ snapshots:
 backtest:
 	$(PY) -m scripts.backtest
 
+backtests:       ## step 5: snapshots, main backtest, sensitivity runs (R3, batch start, percentile), report
+	$(PY) -m scripts.run_backtests
+
 report:
 	$(PY) -m scripts.report
 
-all: labels cordis idmap pipeline snapshots backtest report
+all: labels cordis idmap pipeline backtests

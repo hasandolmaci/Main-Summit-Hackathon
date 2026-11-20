@@ -99,3 +99,21 @@ def test_every_method_has_every_year():
     per = pred.groupby("method")["as_of"].nunique()
     assert per.nunique() == 1 and per.iloc[0] == 7
     assert pred[(pred.method == "logreg") & (pred.as_of == as_of_date(2013))]["score"].isna().all()
+
+
+def test_reference_requires_public_funding():
+    refs = _refs().assign(funding_known_at=pd.to_datetime(["2015-06-01", "2014-01-01", "2016-01-15", "2009-01-01",
+                                                          "2016-02-01"], utc=True))
+    # c1 funded 2015-01-01 but its funding became public only 2016-01-15 -> not a reference at 2016-01-01
+    assert set(bt.reference_set(refs, as_of_date(2016), 5)["entity_id"]) == {"r1", "r2"}
+    assert "c1" in set(bt.reference_set(refs, as_of_date(2017), 5)["entity_id"])
+
+
+def test_training_drops_positives_not_yet_public():
+    snaps = _synthetic_snaps()
+    snaps["funding_known_at"] = snaps["funding_date"]
+    i = snaps.index[(snaps.as_of == as_of_date(2014)) & (snaps.label == 1)][0]
+    snaps.loc[i, "funding_known_at"] = pd.Timestamp("2016-01-15", tz="UTC")     # acceptance not public at 2016-01-01
+    t = bt.training_rows(snaps, 2016)
+    assert i not in t.index and len(t) > 0
+    assert i in bt.training_rows(snaps, 2017).index

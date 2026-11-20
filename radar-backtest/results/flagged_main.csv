@@ -1,0 +1,29 @@
+entity_id,funding_date,flagged,first_flag_as_of,lead_months,best_rank,cohort_size,europe
+airgateway.com,2018-01-01 00:00:00+00:00,False,,,29,229,False
+animaapp.com,2018-03-31 00:00:00+00:00,False,,,20,206,False
+anniecannons.com,2018-03-31 00:00:00+00:00,False,,,93,206,False
+audm.com,2017-03-31 00:00:00+00:00,True,2017-01-01 00:00:00+00:00,2.924024640657084,1,229,False
+bitmovin.com,2015-03-31 00:00:00+00:00,False,,,74,203,False
+coderhouse.com,2020-10-31 00:00:00+00:00,False,,,113,157,False
+coub.com,2016-03-31 00:00:00+00:00,False,,,50,203,False
+goodybag.com,2015-10-31 00:00:00+00:00,False,,,124,203,False
+mediaire.de,2019-01-01 00:00:00+00:00,False,,,139,157,True
+opentrons.com,2015-10-31 00:00:00+00:00,True,2015-01-01 00:00:00+00:00,9.95482546201232,8,203,False
+peer5.com,2016-10-31 00:00:00+00:00,False,,,94,203,False
+podium.com,2015-10-31 00:00:00+00:00,False,,,35,203,False
+recidiviz.org,2019-03-31 00:00:00+00:00,False,,,38,157,False
+replit.com,2017-10-31 00:00:00+00:00,False,,,181,238,False
+scrimba.com,2020-03-31 00:00:00+00:00,False,,,82,157,False
+skydropx.com,2018-03-31 00:00:00+00:00,False,,,128,206,False
+sqreen.com,2017-10-31 00:00:00+00:00,False,,,175,229,False
+starkbank.com,2019-10-31 00:00:00+00:00,False,,,14,157,False
+suiteness.com,2016-03-31 00:00:00+00:00,False,,,37,238,False
+sunsama.com,2018-10-31 00:00:00+00:00,False,,,39,206,False
+tangany.com,2020-01-01 00:00:00+00:00,False,,,42,157,False
+teamleada.com,2015-03-31 00:00:00+00:00,False,,,103,203,False
+tpaga.co,2017-03-31 00:00:00+00:00,False,,,150,238,False
+upchieve.org,2020-10-31 00:00:00+00:00,False,,,115,157,False
+valispace.com,2018-01-01 00:00:00+00:00,False,,,72,206,False
+webiny.com,2020-10-31 00:00:00+00:00,False,,,94,157,False
+womenwhocode.com,2016-03-31 00:00:00+00:00,False,,,141,203,False
+zeplin.io,2015-03-31 00:00:00+00:00,False,,,26,203,False

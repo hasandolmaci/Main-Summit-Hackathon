@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-20T22:20:38.067617+00:00",
+  "file": "data/processed/org_like_pit.parquet",
+  "git_sha": "fd8011e517a1a64886c666fd5c7bee807de9c3a1",
+  "inputs": [],
+  "notes": "First-calendar-year org-like rule; applied to every matched org (positives and controls).",
+  "params": {
+    "ratio": 0.01
+  },
+  "python": "3.13.18",
+  "rows": 1174,
+  "script": "scripts/sources/org_like_pit.py",
+  "sha256": "aef19f397b0fc7ad6a860636e6fb536d69a42c6baff3d52aad302344a1200e7c",
+  "sources": []
+}

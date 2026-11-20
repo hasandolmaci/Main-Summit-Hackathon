@@ -45,3 +45,31 @@ def test_pool_entry_needs_two_pushers():
     daily = _daily(["2016-03-01"], [100])
     team = pd.Series(pd.to_datetime(["2016-03-01"], utc=True))
     assert pd.isna(pool_entry_ts(first, daily, team, min_act=10, min_pushers=2))
+
+
+def test_decontaminate_removes_name_clash_controls():
+    from scripts.resolve_entities import decontaminate
+    ent = pd.DataFrame({"entity_id": ["airbyte.io", "zeta.com", "acme.com"], "in_B": [True, True, False],
+                        "is_labelled": [False, False, True], "inclusion_prob": [0.01, 0.01, 0.0],
+                        "github_org": ["airbytehq", "zetaorg", "acme"]})
+    labels = pd.DataFrame({"company": ["Airbyte", "Acme"], "domain": ["airbyte.com", "acme.com"]})
+    out = decontaminate(ent, labels).set_index("entity_id")
+    assert not out.loc["airbyte.io", "in_B"] and out.loc["airbyte.io", "inclusion_prob"] == 0   # funded under another domain
+    assert out.loc["zeta.com", "in_B"]
+
+
+def test_recycled_guard_clears_links_with_pandas3_dtypes(tmp_path, monkeypatch):
+    import scripts.resolve_entities as re_
+    monkeypatch.setattr(re_, "PROCESSED", tmp_path)
+    pd.DataFrame({"hour_ts": ["2015-01-01T04:00:00+00:00", "2021-01-01T04:00:00+00:00", "2021-04-01T04:00:00+00:00"],
+                  "max_id": [10_000_000, 70_000_000, 80_000_000], "n_events": [1, 1, 1]}).to_csv(tmp_path / "gh_id_date_map.csv", index=False)
+    pd.DataFrame({"owner": ["calcom"], "day": [pd.Timestamp("2014-03-01").date()], "push": [20], "pr": [0], "issues": [0],
+                  "release": [0]}).to_parquet(tmp_path / "gh_org_activity_daily.parquet")
+    pd.DataFrame({"owner": ["calcom", "calcom"], "actor_hash": ["a", "b"],
+                  "first_push_ts": pd.to_datetime(["2014-03-01", "2014-03-01"], utc=True)}).to_parquet(tmp_path / "gh_team.parquet")
+    ent = pd.DataFrame({"entity_id": ["cal.com"], "github_org": ["calcom"], "github_org_uuid": [79_145_102.0],
+                        "github_org_created_at": pd.to_datetime(["2014-03-01"], utc=True), "github_match_method": ["x"],
+                        "github_match_confidence": ["high"], "github_tier": [1.0],
+                        "gh_first_event_ts": pd.to_datetime(["2014-03-01"], utc=True)})
+    out = re_.add_pool_entry(ent)
+    assert bool(out.loc[0, "gh_login_recycled"]) and pd.isna(out.loc[0, "github_org"]) and pd.isna(out.loc[0, "github_tier"])

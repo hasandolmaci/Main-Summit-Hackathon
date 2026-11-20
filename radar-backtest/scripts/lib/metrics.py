@@ -37,18 +37,28 @@ def pooled_auc(df: pd.DataFrame, score: str = "score", weight: str | None = "wei
     return num / den if den else float("nan")
 
 
-def rank_order(scores, seed: int) -> np.ndarray:
-    """Indices sorted by score desc; ties broken by a seeded random key (never by row order)."""
+def _hash_keys(keys, seed: int) -> np.ndarray:
+    import hashlib
+    return np.array([int(hashlib.sha256(f"{seed}:{k}".encode()).hexdigest()[:12], 16) for k in keys], dtype=float)
+
+
+def rank_order(scores, seed: int, keys=None) -> np.ndarray:
+    """Indices sorted by score desc; ties broken by a seeded key — a hash of the entity id when `keys` is given (so a
+    company keeps its tie position in every bootstrap resample), else a seeded random draw. Never by row order."""
     s = np.nan_to_num(np.asarray(scores, dtype=float), nan=-np.inf)
-    tie = np.random.default_rng(seed).random(len(s))
+    tie = _hash_keys(keys, seed) if keys is not None else np.random.default_rng(seed).random(len(s))
     return np.lexsort((tie, -s))
 
 
-def weighted_top_mask(scores, w, share: float, seed: int) -> np.ndarray:
+def _keys(g: pd.DataFrame):
+    return g["entity_id"].astype(str).to_numpy() if "entity_id" in g else None
+
+
+def weighted_top_mask(scores, w, share: float, seed: int, keys=None) -> np.ndarray:
     """Rows in the pool-equivalent top `share`: walk down the (seed-tie-broken) ranking until the cumulative
     case-cohort weight reaches share * total weight. Always includes at least the first row."""
     w = np.asarray(w, dtype=float)
-    order = rank_order(scores, seed)
+    order = rank_order(scores, seed, keys)
     cw = np.cumsum(w[order])
     k = int(np.searchsorted(cw, share * w.sum(), side="right"))
     k = min(max(k, 1), len(order))
@@ -61,12 +71,12 @@ def top_share_metrics(df: pd.DataFrame, share: float, seed: int, score: str = "s
                       weight: str = "weight") -> dict:
     """Pool-weighted precision / recall / lift in the top `share`, per cohort, averaged over cohorts with positives."""
     prec, rec, lift = [], [], []
-    for i, (_, g) in enumerate(df.groupby("as_of")):
+    for _, g in df.groupby("as_of"):
         y = g["label"].to_numpy()
         if y.sum() == 0:
             continue
         w = g[weight].to_numpy(float)
-        m = weighted_top_mask(g[score].to_numpy(float), w, share, seed + i)
+        m = weighted_top_mask(g[score].to_numpy(float), w, share, seed, _keys(g))
         p = float((w[m] * y[m]).sum() / w[m].sum())
         base = float((w * y).sum() / w.sum())
         prec.append(p)
@@ -76,31 +86,31 @@ def top_share_metrics(df: pd.DataFrame, share: float, seed: int, score: str = "s
     return {"precision": f(prec), "recall": f(rec), "lift": f(lift)}
 
 
-def precision_at_k(y, scores, k: int, seed: int) -> float:
+def precision_at_k(y, scores, k: int, seed: int, keys=None) -> float:
     y = np.asarray(y)
     if len(y) == 0:
         return float("nan")
-    top = rank_order(scores, seed)[: min(k, len(y))]
+    top = rank_order(scores, seed, keys)[: min(k, len(y))]
     return float(y[top].mean())
 
 
-def recall_at_k(y, scores, k: int, seed: int) -> float:
+def recall_at_k(y, scores, k: int, seed: int, keys=None) -> float:
     y = np.asarray(y)
     if y.sum() == 0:
         return float("nan")
-    top = rank_order(scores, seed)[: min(k, len(y))]
+    top = rank_order(scores, seed, keys)[: min(k, len(y))]
     return float(y[top].sum() / y.sum())
 
 
 def mean_precision_at_k(df: pd.DataFrame, k: int, seed: int, score: str = "score") -> float:
     """precision@k computed per as_of cohort, averaged across cohorts (k is per-year)."""
-    vals = [precision_at_k(g["label"].values, g[score].values, k, seed + i) for i, (_, g) in enumerate(df.groupby("as_of"))]
+    vals = [precision_at_k(g["label"].values, g[score].values, k, seed, _keys(g)) for _, g in df.groupby("as_of")]
     return float(np.nanmean(vals)) if vals else float("nan")
 
 
 def mean_recall_at_k(df: pd.DataFrame, k: int, seed: int, score: str = "score") -> float:
     """recall@k per as_of cohort (share of that year's positives in its top-k), averaged over cohorts with positives."""
-    vals = [recall_at_k(g["label"].values, g[score].values, k, seed + i) for i, (_, g) in enumerate(df.groupby("as_of"))]
+    vals = [recall_at_k(g["label"].values, g[score].values, k, seed, _keys(g)) for _, g in df.groupby("as_of")]
     vals = [v for v in vals if not np.isnan(v)]
     return float(np.mean(vals)) if vals else float("nan")
 

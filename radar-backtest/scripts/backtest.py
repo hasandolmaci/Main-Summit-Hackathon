@@ -102,7 +102,20 @@ def reference_set(refs: pd.DataFrame, as_of, window_years: int) -> pd.DataFrame:
     a = pd.Timestamp(as_of)
     f = pd.to_datetime(refs["funding_date"], utc=True)
     m = (f < a) & (f >= a - pd.DateOffset(years=window_years)) & (pd.to_datetime(refs["profile_date"], utc=True) < a)
+    if "funding_known_at" in refs:          # the funding must have been PUBLIC before as_of (YC: batch start)
+        m &= pd.to_datetime(refs["funding_known_at"], utc=True) < a
     return refs[m]
+
+
+def training_rows(snaps: pd.DataFrame, y: int) -> pd.DataFrame:
+    """Training data for year Y: as_of <= Y-2 with complete labels; positives whose funding was not yet PUBLIC
+    at Y (e.g. a YC acceptance before its batch started) are dropped, not relabelled."""
+    a = as_of_date(y)
+    t = snaps[(snaps["as_of"] <= as_of_date(y - 2)) & snaps["labels_complete"]]
+    if "funding_known_at" in t:
+        kn = pd.to_datetime(t["funding_known_at"], utc=True)
+        t = t[~((t["label"] == 1) & kn.notna() & (kn >= a))]
+    return t
 
 
 # ---------------------------------------------------------------- walk-forward
@@ -111,12 +124,12 @@ def score_year(y: int, snaps: pd.DataFrame, refs: pd.DataFrame, features=FEATURE
     s0 = seed()
     a = as_of_date(y)
     test = snaps[snaps["as_of"] == a].copy()
-    train = snaps[(snaps["as_of"] <= as_of_date(y - 2)) & snaps["labels_complete"]]
+    train = training_rows(snaps, y)
     out, coefs = [], []
 
     def add(name, scores):
         cols = ["entity_id", "as_of", "label", "weight", "europe", "has_github", "funding_date"]
-        t = test[cols + (["dach"] if "dach" in test else [])].copy()
+        t = test[cols + [c for c in ("dach", "in_B") if c in test]].copy()
         if "dach" not in t:
             t["dach"] = False
         t["method"] = name
@@ -124,12 +137,19 @@ def score_year(y: int, snaps: pd.DataFrame, refs: pd.DataFrame, features=FEATURE
         out.append(t)
 
     add("random", np.random.default_rng(s0 + y).random(len(test)))
-    for f in features:
-        add(f"baseline_{f}", test[f].values)
+    for f in features:            # missing = neutral rank (median of the outcome-blind B rows), not "last"
+        col = test[f]
+        fill = col[test["in_B"].astype(bool)].median() if "in_B" in test else col.median()
+        add(f"baseline_{f}", col.fillna(0.0 if pd.isna(fill) else fill).values)
+    if "has_cordis" in test:      # geography floor: how far a ccTLD/Europe flag alone 'predicts' (label-source artefact)
+        add("geo_floor_has_cordis", test["has_cordis"].fillna(False).astype(float).values)
     lr = train_logreg(train, features)
     nan = np.full(len(test), np.nan)                 # every method gets a row for every year (NaN ranks last)
     if lr is not None:
-        add("logreg", lr.predict_proba(design(test, features))[:, 1])
+        # has_cordis stays in the fit (fill-0 + has_<source> design) but is neutralised when scoring, so the model
+        # cannot reorder companies by country domain (labels are mostly US/YC -> a geography artefact).
+        neutral = test.assign(**{c: False for c in HAS_FLAGS if c in test})
+        add("logreg", lr.predict_proba(design(neutral, features))[:, 1])
         names = list(features) + HAS_FLAGS
         coefs.append({"as_of": y, "n_train": len(train), "n_train_pos": int(train["label"].sum()),
                       "intercept": float(lr.intercept_[0]), **dict(zip(names, lr.coef_[0].astype(float)))})
@@ -149,8 +169,9 @@ def score_year(y: int, snaps: pd.DataFrame, refs: pd.DataFrame, features=FEATURE
 def lead_times(pred: pd.DataFrame, share: float, s: int) -> pd.Series:
     """Months between the first as_of at which a funded entity is in the pool-equivalent top `share` and its funding."""
     first_top = {}
-    for i, ((method, a), g) in enumerate(pred.groupby(["method", "as_of"])):
-        m = weighted_top_mask(g["score"].to_numpy(float), g["weight"].to_numpy(float), share, s + i)
+    for (method, a), g in pred.groupby(["method", "as_of"]):
+        m = weighted_top_mask(g["score"].to_numpy(float), g["weight"].to_numpy(float), share, s,
+                              g["entity_id"].astype(str).to_numpy())
         top = g[m]
         for r in top[top["label"] == 1].itertuples():
             key = (method, r.entity_id)
@@ -209,7 +230,7 @@ def evaluate(pred: pd.DataFrame, reps: int, s: int, min_pos_ci: int = 15) -> pd.
 def coef_bootstrap(snaps: pd.DataFrame, years, reps: int, s: int, features=FEATURES) -> pd.DataFrame:
     """Bootstrap the LR fit on the training data of the last selection year: sign stability per coefficient."""
     y = max(years)
-    train = snaps[(snaps["as_of"] <= as_of_date(y - 2)) & snaps["labels_complete"]]
+    train = training_rows(snaps, y)
     names = list(features) + HAS_FLAGS
     rng = np.random.default_rng(s)
     ents = train["entity_id"].unique()

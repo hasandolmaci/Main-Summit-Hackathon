@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-11-20T22:15:14.774843+00:00",
+  "file": "results/predictions_batchstart.parquet",
+  "git_sha": "fd8011e517a1a64886c666fd5c7bee807de9c3a1",
+  "inputs": [],
+  "notes": null,
+  "params": {
+    "R": 5,
+    "reps": 200,
+    "seed": 20251120,
+    "suffix": "_batchstart",
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/backtest.py",
+  "sha256": "6c8c7d838862e1bc7d280021942f5c32c8da61a03b060a0757e6e7b818f66e87",
+  "sources": []
+}

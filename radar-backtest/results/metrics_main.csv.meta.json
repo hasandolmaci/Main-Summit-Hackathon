@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-11-20T22:08:54.746883+00:00",
+  "file": "results/metrics_main.csv",
+  "git_sha": "fd8011e517a1a64886c666fd5c7bee807de9c3a1",
+  "inputs": [],
+  "notes": null,
+  "params": {
+    "R": 5,
+    "reps": 1000,
+    "seed": 20251120,
+    "suffix": "",
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/backtest.py",
+  "sha256": "2c2b242f8499d178de4160b55a03575f2ec91e0709188ee134010ee773f46a5d",
+  "sources": []
+}

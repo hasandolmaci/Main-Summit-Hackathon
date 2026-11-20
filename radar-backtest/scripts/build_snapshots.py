@@ -48,6 +48,11 @@ def load_events() -> pd.DataFrame:
 def compute_raw_features(events: pd.DataFrame, entity_ids, as_of) -> pd.DataFrame:
     """Raw (unscaled) features at as_of from events with ts < as_of ONLY."""
     a = pd.Timestamp(as_of)
+    if not (a.day == 1 and a.hour == 0 and a.minute == 0 and a.second == 0):
+        raise ValueError(f"as_of {a} must be a month start: engagement uses monthly buckets")
+    until = pd.Timestamp(cfg()["gharchive"].get("until", "2100-01-01"), tz="UTC")
+    if a > until:
+        raise ValueError(f"as_of {a} is after the GH Archive cut-off {until.date()}: features would be truncated")
     w1 = pd.Timedelta(days=cfg()["windows"]["w1_days"])
     w0 = pd.Timedelta(days=cfg()["windows"]["w0_days"])
     eng_lo = a - pd.DateOffset(months=cfg()["windows"]["engagement_months"])
@@ -72,11 +77,25 @@ def compute_raw_features(events: pd.DataFrame, entity_ids, as_of) -> pd.DataFram
     return out.reset_index()
 
 
+def country_at(ent: pd.DataFrame, as_of) -> pd.Series:
+    """Country known at as_of: ccTLD, else the CORDIS country only if that grant was public before as_of."""
+    cc = ent["entity_id"].map(country_from_domain)
+    if "cordis_country" in ent:
+        known = pd.to_datetime(ent["cordis_first_public_ts"], utc=True) < pd.Timestamp(as_of)
+        cc = cc.where(cc.notna(), ent["cordis_country"].where(known))
+    return cc
+
+
 def coverage(ent: pd.DataFrame, as_of) -> pd.DataFrame:
     v = visible_at(ent, as_of)
-    cordis_cov = ent["horizon_eligible"].fillna(False).astype(bool) | ent["cordis_first_public_ts"].notna()
+    c = country_at(ent, as_of)
+    eu_dom = ent["entity_id"].astype(str).str.endswith(".eu")
+    cordis_cov = c.isin(set(cfg()["horizon_eligible_iso2"])) | eu_dom | \
+        (pd.to_datetime(ent["cordis_first_public_ts"], utc=True) < pd.Timestamp(as_of))
     return pd.DataFrame({"entity_id": ent["entity_id"].values, "has_github": v["gh_cov"].values,
-                         "has_cordis": cordis_cov.values, "visible": v["visible"].values})
+                         "has_cordis": cordis_cov.values, "visible": v["visible"].values,
+                         "europe_pit": (c.isin(set(cfg()["europe_iso2"])) | eu_dom).values,
+                         "dach_pit": c.isin(["DE", "AT", "CH"]).values})
 
 
 ENGAGEMENT_SCALING = "robust_z"      # main: log1p -> robust z -> sigmoid; sensitivity: "percentile"
@@ -99,15 +118,26 @@ def scale(raw: pd.DataFrame, cov: pd.DataFrame, ref_ids: set, eng_scaling: str |
 
 
 def load_inputs(funding_file: str = "companies.csv"):
+    """entities, funding date per entity (label definition) and the date that funding became PUBLIC.
+
+    funding_known_at: YC -> batch start (acceptances are not public before the batch), HTGF -> its own date;
+    taken from companies_batchstart.csv, which carries exactly those dates."""
     ent = pd.read_csv(PROCESSED / "entities.csv")
-    for c in ["github_org_created_at", "gh_first_event_ts", "cordis_first_public_ts"]:
-        ent[c] = pd.to_datetime(ent[c], utc=True)
+    for c in ["github_org_created_at", "gh_first_event_ts", "cordis_first_public_ts", "gh_pool_entry_ts"]:
+        if c in ent:
+            ent[c] = pd.to_datetime(ent[c], utc=True)
     labels = pd.read_csv(LABELS / funding_file, dtype=str, keep_default_na=False)
     fd = ent["entity_id"].map(labels.set_index("domain")["first_funding_date"])
-    return ent, fd
+    kp = LABELS / "companies_batchstart.csv"
+    known_src = pd.read_csv(kp, dtype=str, keep_default_na=False) if kp.exists() else labels
+    known = ent["entity_id"].map(known_src.set_index("domain")["first_funding_date"])
+    known = pd.to_datetime(known.where(known.notna(), fd), utc=True)
+    fdt = pd.to_datetime(fd, utc=True)
+    known = known.where(known.isna() | fdt.isna() | (known >= fdt), fdt)     # never earlier than the funding date
+    return ent, fd, known
 
 
-def snapshot(year: int, ent: pd.DataFrame, fd: pd.Series, events: pd.DataFrame) -> pd.DataFrame:
+def snapshot(year: int, ent: pd.DataFrame, fd: pd.Series, events: pd.DataFrame, known: pd.Series | None = None) -> pd.DataFrame:
     a = as_of_date(year)
     cc = case_cohort(ent, fd, a)                          # visible, not already funded, cases + B controls
     B_vis = set(ent.loc[ent["in_B"].astype(bool) & visible_at(ent, a)["visible"], "entity_id"])
@@ -117,17 +147,19 @@ def snapshot(year: int, ent: pd.DataFrame, fd: pd.Series, events: pd.DataFrame) 
     feat = scale(raw, cov, B_vis)
     snap = cc[["entity_id", "in_B", "inclusion_prob", "weight", "label"]].merge(feat, on="entity_id", how="left")
     e = ent.set_index("entity_id")
-    snap["europe"] = snap["entity_id"].map(e["europe"]).fillna(False).astype(bool)
-    country = snap["entity_id"].map(e["country"]) if "country" in e else snap["entity_id"].map(country_from_domain)
-    snap["dach"] = country.isin(["DE", "AT", "CH"])
+    snap["europe"] = snap["europe_pit"].fillna(False).astype(bool)           # point-in-time country (ccTLD / public CORDIS)
+    snap["dach"] = snap["dach_pit"].fillna(False).astype(bool)
+    snap = snap.drop(columns=["europe_pit", "dach_pit"])
     snap["channels"] = snap["entity_id"].map(e["channels"])
     snap["funding_date"] = snap["entity_id"].map(pd.to_datetime(fd, utc=True).set_axis(ent["entity_id"]))
+    kn = known if known is not None else pd.to_datetime(fd, utc=True)
+    snap["funding_known_at"] = snap["entity_id"].map(pd.to_datetime(kn, utc=True).set_axis(ent["entity_id"]))
     snap.insert(1, "as_of", a)
     snap["labels_complete"] = label_window_complete(a, data_cutoff())
     return snap.sort_values("entity_id").reset_index(drop=True)
 
 
-def reference_profiles(ent: pd.DataFrame, fd: pd.Series, events: pd.DataFrame) -> pd.DataFrame:
+def reference_profiles(ent: pd.DataFrame, fd: pd.Series, events: pd.DataFrame, known: pd.Series | None = None) -> pd.DataFrame:
     """Profile of every labelled entity at month_floor(funding_date - 90d), scaled vs B visible at that date.
 
     Used as kNN references only when funding_date < as_of (enforced in backtest).
@@ -138,6 +170,8 @@ def reference_profiles(ent: pd.DataFrame, fd: pd.Series, events: pd.DataFrame) -
     lab = ent.assign(funding_date=f.values)[f.notna().values]
     lab = lab.assign(profile_date=(lab["funding_date"] - off).dt.tz_localize(None).dt.to_period("M").dt.to_timestamp()
                      .dt.tz_localize("UTC"))
+    until = pd.Timestamp(cfg()["gharchive"].get("until", "2100-01-01"), tz="UTC")
+    lab = lab[lab["profile_date"] <= until]          # beyond the GH Archive cut-off: cannot be a reference for as_of <= until
     for d, grp in lab.groupby("profile_date"):
         v = visible_at(ent, d)
         vis_ids = set(grp.loc[v.loc[grp.index, "visible"].values, "entity_id"])
@@ -149,6 +183,8 @@ def reference_profiles(ent: pd.DataFrame, fd: pd.Series, events: pd.DataFrame) -
         feat = feat[feat["entity_id"].isin(vis_ids)].copy()
         feat["profile_date"] = d
         feat["funding_date"] = feat["entity_id"].map(lab.set_index("entity_id")["funding_date"])
+        kn = known if known is not None else f
+        feat["funding_known_at"] = feat["entity_id"].map(pd.to_datetime(kn, utc=True).set_axis(ent["entity_id"]))
         rows.append(feat)
     return pd.concat(rows, ignore_index=True) if rows else pd.DataFrame()
 
@@ -164,10 +200,10 @@ def main(argv=None):
     ENGAGEMENT_SCALING = a.engagement_scaling
     years = a.years or list(range(2012, cfg()["years"]["selection"][1] + 1))
     years = guard_years(years)          # locked test years are refused
-    ent, fd = load_inputs(a.funding_file)
+    ent, fd, known = load_inputs(a.funding_file)
     events = load_events()
     for y in years:
-        s = snapshot(y, ent, fd, events)
+        s = snapshot(y, ent, fd, events, known)
         out = PROCESSED / f"snapshots_{y}{a.suffix}.parquet"
         s.to_parquet(out, index=False)
         write_meta(out, "scripts/build_snapshots.py", inputs=[PROCESSED / "entities.csv", PROCESSED / "events.parquet",
@@ -175,7 +211,7 @@ def main(argv=None):
                    params={"as_of": str(as_of_date(y)), "windows": cfg()["windows"],
                            "engagement_scaling": ENGAGEMENT_SCALING}, rows=len(s))
         log.info("as_of %d: %d rows, %d positives, %d B controls", y, len(s), int(s.label.sum()), int((s.label == 0).sum()))
-    ref = reference_profiles(ent, fd, events)
+    ref = reference_profiles(ent, fd, events, known)
     out = PROCESSED / f"reference_profiles{a.suffix}.parquet"
     ref.to_parquet(out, index=False)
     write_meta(out, "scripts/build_snapshots.py", rows=len(ref), params={"offset_days": cfg()["reference"]["profile_offset_days"]})

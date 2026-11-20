@@ -21599,3 +21599,1180 @@
 2026-11-20 22:01:21,173 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 16
 2026-11-20 22:01:21,202 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 18
 2026-11-20 22:01:21,241 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 22
+2026-11-20 22:01:42,609 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:42,643 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:42,676 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:42,757 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:42,795 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:42,852 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:42,891 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:42,940 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:43,047 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:43,129 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:43,276 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:43,313 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:43,348 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:43,388 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:43,448 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:43,524 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:43,593 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:43,678 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:43,761 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:43,854 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:44,001 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:44,059 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:44,187 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:44,256 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:44,336 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:44,435 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:44,520 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:44,564 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:44,621 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:44,675 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:44,860 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:44,908 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:44,984 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:45,096 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:45,260 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:45,311 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:45,347 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:45,432 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:45,495 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:45,565 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:45,705 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:45,772 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:45,881 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:45,956 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:45,988 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:46,023 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:46,063 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:46,095 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:46,139 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:46,248 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:46,332 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:46,363 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:46,408 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:46,513 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:46,586 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:46,684 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:46,773 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:46,900 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:47,014 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:47,064 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:47,156 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:47,189 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:47,302 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:47,409 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:47,533 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:47,608 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:47,644 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:47,692 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:47,774 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:47,841 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:47,933 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:47,976 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:48,007 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:48,044 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:48,153 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:48,266 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:48,348 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:48,407 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:48,490 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:48,543 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:48,627 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:48,683 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:48,765 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:48,932 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:49,028 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:49,084 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:49,148 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:49,224 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:49,276 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:49,324 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:49,500 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:49,548 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:49,604 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:49,663 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:49,753 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:49,863 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:49,936 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:49,984 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:50,028 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:50,072 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:50,165 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:50,211 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:50,269 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:50,307 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:50,352 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:50,433 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:50,512 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:50,656 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:50,700 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:50,785 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:51,010 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:51,092 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:51,197 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:51,270 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:51,370 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:51,442 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:51,490 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:51,545 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:51,587 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:51,626 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:51,719 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:51,775 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:51,817 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:51,852 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:51,893 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:51,944 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:52,012 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:52,112 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:52,208 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:52,301 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:52,405 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:52,480 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:52,543 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:52,599 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:52,635 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:52,694 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:52,744 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:52,821 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:52,863 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:52,896 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:53,041 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:53,177 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:53,305 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:53,392 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:53,492 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:53,620 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:53,741 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:53,812 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:53,893 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:53,932 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:54,016 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:54,063 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:54,116 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:54,183 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:54,253 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:54,309 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:54,357 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:54,401 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:54,456 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:54,504 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:54,584 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:54,640 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:54,712 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:54,772 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:54,832 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:54,912 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:54,996 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:55,059 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:55,116 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:55,176 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:55,277 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:55,332 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:55,453 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:55,532 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:55,565 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:55,620 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:55,656 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:55,708 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:55,752 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:55,795 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:55,888 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:55,943 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:56,009 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:56,075 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:56,123 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:56,168 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:56,221 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:56,287 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:56,350 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:56,413 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:56,501 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:56,548 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:56,605 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:56,668 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:56,794 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:56,928 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:56,993 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:57,081 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:57,192 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:57,264 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:57,345 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:57,401 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:57,453 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:57,579 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:57,669 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:57,790 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:57,901 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:57,981 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:58,085 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:58,173 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:58,312 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:58,347 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:58,397 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:58,444 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:58,491 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:58,548 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:58,587 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:58,636 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:58,692 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:58,728 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:58,828 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:58,880 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:58,944 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:58,999 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:59,064 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:59,099 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:59,131 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:59,168 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:59,224 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:59,309 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:59,464 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:59,515 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:01:59,555 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:01:59,631 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:01:59,742 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:01:59,873 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:01:59,953 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:00,032 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:00,088 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:00,132 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:00,212 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:00,243 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:00,292 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:00,348 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:00,410 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:00,529 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:00,564 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:00,595 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:00,641 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:00,691 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:00,776 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:00,853 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:00,916 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:00,971 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:01,042 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:01,099 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:01,147 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:01,240 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:01,332 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:01,399 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:01,475 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:01,523 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:01,555 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:01,612 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:01,705 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:01,803 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:01,904 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:01,939 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:02,013 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:02,080 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:02,177 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:02,272 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:02,340 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:02,407 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:02,464 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:02,515 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:02,539 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:02,569 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:02,712 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:02,816 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:02,972 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:03,024 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:03,083 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:03,123 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:03,168 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:03,220 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:03,263 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:03,303 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:03,345 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:03,432 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:03,570 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:03,647 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:03,681 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:03,714 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:03,776 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:03,817 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:03,880 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:03,913 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:03,957 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:03,993 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:04,140 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:04,219 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:04,307 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:04,355 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:04,405 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:04,479 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:04,530 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:04,595 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:04,666 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:04,740 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:04,869 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:04,944 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:05,004 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:05,076 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:05,198 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:05,287 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:05,349 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:05,403 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:05,477 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:05,564 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:05,722 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:05,789 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:05,853 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:05,912 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:05,975 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:06,028 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:06,104 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:06,158 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:06,220 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:06,283 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:06,372 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:06,415 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:06,476 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:06,632 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:06,736 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:06,790 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:06,835 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:06,917 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:06,990 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:07,124 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:07,313 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:07,433 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:07,524 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:07,555 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:07,595 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:07,639 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:07,683 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:07,765 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:07,787 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:07,844 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:07,923 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:07,963 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:08,017 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:08,092 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:08,164 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:08,216 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:08,259 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:08,309 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:08,372 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:08,436 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:08,536 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:08,633 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:08,710 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:08,786 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:08,864 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:08,916 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:08,964 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:09,015 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:09,051 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:09,091 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:09,235 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:09,349 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:09,461 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:09,589 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:09,639 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:09,704 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:09,768 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:09,912 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:10,000 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:10,100 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:10,189 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:10,239 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:10,310 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:10,421 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:10,573 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:10,662 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:10,705 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:10,745 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:10,788 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:10,837 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:10,934 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:10,991 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:11,044 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:11,100 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:11,136 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:11,176 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:11,215 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:11,260 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:11,330 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:11,369 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:11,466 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:11,520 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:11,574 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:11,646 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:11,696 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:11,753 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:11,803 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:11,844 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:11,912 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:12,000 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:12,176 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:12,272 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:12,351 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:12,399 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:12,439 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:12,503 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:12,551 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:12,607 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:12,724 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:12,828 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:12,936 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:12,996 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:13,027 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:13,059 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:13,091 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:13,135 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:13,192 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:13,239 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:13,280 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:13,324 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:13,477 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:13,556 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:13,644 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:13,707 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:13,776 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:13,815 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:13,860 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:13,928 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:13,996 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:14,040 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:14,144 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:14,249 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:14,368 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:14,451 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:14,520 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:14,576 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:14,616 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:14,660 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:14,732 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:14,804 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:14,956 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:15,006 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:15,071 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:15,152 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:15,245 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:15,315 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:15,372 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:15,444 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:15,597 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:15,717 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:15,913 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:16,037 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:16,125 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:16,214 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:16,289 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:16,347 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:16,438 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:16,524 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:16,663 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:16,729 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:16,847 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:16,901 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:16,942 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:17,015 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:17,096 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:17,193 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:17,305 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:17,344 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:17,372 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:17,413 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:17,504 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:17,574 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:17,654 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:17,779 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:17,901 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:17,956 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:18,025 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:18,080 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:18,136 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:18,200 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:18,345 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:18,417 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:18,478 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:18,516 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:18,548 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:18,584 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:18,637 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:18,671 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:18,713 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:18,752 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:18,951 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:19,063 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:19,225 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:19,313 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:19,367 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:19,452 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:19,501 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:19,566 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:19,608 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:19,657 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:19,768 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:19,841 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:19,872 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:19,908 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:19,968 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:20,012 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:20,090 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:20,113 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:20,160 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:20,235 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:20,349 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:20,400 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:20,433 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:20,468 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:20,504 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:20,561 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:20,661 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:20,740 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:20,845 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:20,953 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:21,075 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:21,133 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:21,209 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:21,292 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:21,371 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:21,437 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:21,491 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:21,579 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:21,697 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:21,838 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:22,009 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:22,090 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:22,166 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:22,234 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:22,305 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:22,362 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:22,415 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:22,470 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:22,515 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:22,566 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:22,760 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:22,871 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:22,938 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:23,019 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:23,085 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:23,153 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:23,277 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:23,380 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:23,476 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:23,607 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:23,698 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:23,766 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:23,855 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:23,929 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:24,014 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:24,133 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:24,265 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:24,405 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:24,506 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:24,622 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:24,827 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:24,901 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:25,021 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:25,100 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:25,168 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:25,221 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:25,255 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:25,300 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:25,348 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:25,389 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:25,473 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:25,554 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:25,732 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:25,866 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:25,934 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:25,981 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:26,060 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:26,197 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:26,320 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:26,362 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:26,461 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:26,512 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:26,592 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:26,678 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:26,717 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:02:26,761 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 0
+2026-11-20 22:02:26,862 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 0
+2026-11-20 22:02:27,014 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 0
+2026-11-20 22:02:27,125 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 0
+2026-11-20 22:02:27,212 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 0
+2026-11-20 22:08:54,877 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 5
+2026-11-20 22:08:54,941 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 11
+2026-11-20 22:08:55,004 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 14
+2026-11-20 22:08:55,073 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 14
+2026-11-20 22:08:55,140 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 12
+2026-11-20 22:12:05,944 INFO build_snapshots: as_of 2012: 33 rows, 1 positives, 32 B controls
+2026-11-20 22:12:06,039 INFO build_snapshots: as_of 2013: 74 rows, 1 positives, 73 B controls
+2026-11-20 22:12:06,162 INFO build_snapshots: as_of 2014: 139 rows, 6 positives, 133 B controls
+2026-11-20 22:12:06,307 INFO build_snapshots: as_of 2015: 204 rows, 10 positives, 194 B controls
+2026-11-20 22:12:06,437 INFO build_snapshots: as_of 2016: 242 rows, 11 positives, 231 B controls
+2026-11-20 22:12:06,550 INFO build_snapshots: as_of 2017: 230 rows, 9 positives, 221 B controls
+2026-11-20 22:12:06,660 INFO build_snapshots: as_of 2018: 210 rows, 10 positives, 200 B controls
+2026-11-20 22:12:06,786 INFO build_snapshots: as_of 2019: 157 rows, 8 positives, 149 B controls
+2026-11-20 22:12:08,470 INFO build_snapshots: reference profiles: 50
+2026-11-20 22:12:08,540 INFO backtest: as_of 2015: test 204 (pos 10), train 107 (pos 2), refs 5
+2026-11-20 22:12:08,566 INFO backtest: as_of 2016: test 242 (pos 11), train 246 (pos 8), refs 10
+2026-11-20 22:12:08,591 INFO backtest: as_of 2017: test 230 (pos 9), train 450 (pos 18), refs 17
+2026-11-20 22:12:08,621 INFO backtest: as_of 2018: test 210 (pos 10), train 692 (pos 29), refs 19
+2026-11-20 22:12:08,650 INFO backtest: as_of 2019: test 157 (pos 8), train 922 (pos 38), refs 27
+2026-11-20 22:15:15,961 INFO build_snapshots: as_of 2012: 33 rows, 1 positives, 32 B controls
+2026-11-20 22:15:16,070 INFO build_snapshots: as_of 2013: 75 rows, 2 positives, 73 B controls
+2026-11-20 22:15:16,169 INFO build_snapshots: as_of 2014: 139 rows, 6 positives, 133 B controls
+2026-11-20 22:15:16,276 INFO build_snapshots: as_of 2015: 203 rows, 9 positives, 194 B controls
+2026-11-20 22:15:16,396 INFO build_snapshots: as_of 2016: 238 rows, 7 positives, 231 B controls
+2026-11-20 22:15:16,508 INFO build_snapshots: as_of 2017: 229 rows, 8 positives, 221 B controls
+2026-11-20 22:15:16,613 INFO build_snapshots: as_of 2018: 206 rows, 6 positives, 200 B controls
+2026-11-20 22:15:16,716 INFO build_snapshots: as_of 2019: 157 rows, 8 positives, 149 B controls
+2026-11-20 22:15:18,527 INFO build_snapshots: reference profiles: 42
+2026-11-20 22:15:18,592 INFO backtest: as_of 2015: test 203 (pos 9), train 108 (pos 3), refs 5
+2026-11-20 22:15:18,616 INFO backtest: as_of 2016: test 238 (pos 7), train 247 (pos 9), refs 12
+2026-11-20 22:15:18,639 INFO backtest: as_of 2017: test 229 (pos 8), train 450 (pos 18), refs 16
+2026-11-20 22:15:18,663 INFO backtest: as_of 2018: test 206 (pos 6), train 688 (pos 25), refs 18
+2026-11-20 22:15:18,690 INFO backtest: as_of 2019: test 157 (pos 8), train 917 (pos 33), refs 22
+2026-11-20 22:18:19,982 INFO run_backtests: results/report.md written
+2026-11-20 22:20:37,466 INFO http: POST https://play.clickhouse.com/?user=play params=None status=200 bytes=183864
+2026-11-20 22:20:37,510 INFO gharchive: query owner_year_orglike_b7047e98 rows=9043 6.94s cache=False
+2026-11-20 22:20:38,070 INFO org_like_pit: org_like_pit: 1174 orgs, 1119 pass, 55 fail
+2026-11-20 22:21:14,343 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 22:21:14,380 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 22:21:14,402 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 22:21:14,425 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 22:21:14,448 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 22:21:14,473 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 22:21:14,514 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 22:21:14,533 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 22:21:14,553 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 22:21:14,573 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 22:21:14,597 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 22:21:14,666 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 22:21:14,693 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 22:21:14,721 INFO backtest: as_of 2013: test 300 (pos 28), train 0 (pos 0), refs 0
+2026-11-20 22:21:14,749 INFO backtest: as_of 2014: test 300 (pos 31), train 300 (pos 31), refs 0
+2026-11-20 22:21:14,773 INFO backtest: as_of 2015: test 300 (pos 33), train 600 (pos 59), refs 0
+2026-11-20 22:21:14,799 INFO backtest: as_of 2016: test 300 (pos 33), train 900 (pos 90), refs 0
+2026-11-20 22:21:14,825 INFO backtest: as_of 2017: test 300 (pos 26), train 1200 (pos 123), refs 0
+2026-11-20 22:21:14,850 INFO backtest: as_of 2018: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 22:21:14,878 INFO backtest: as_of 2019: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 22:22:31,972 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 22:22:32,020 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 22:22:32,048 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 22:22:32,073 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 22:22:32,099 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 22:22:32,124 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 22:22:32,163 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 22:22:32,188 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 22:22:32,213 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 22:22:32,240 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 22:22:32,265 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 22:22:32,332 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 22:22:32,358 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 22:22:32,392 INFO backtest: as_of 2013: test 300 (pos 28), train 0 (pos 0), refs 0
+2026-11-20 22:22:32,416 INFO backtest: as_of 2014: test 300 (pos 31), train 300 (pos 31), refs 0
+2026-11-20 22:22:32,439 INFO backtest: as_of 2015: test 300 (pos 33), train 600 (pos 59), refs 0
+2026-11-20 22:22:32,462 INFO backtest: as_of 2016: test 300 (pos 33), train 900 (pos 90), refs 0
+2026-11-20 22:22:32,486 INFO backtest: as_of 2017: test 300 (pos 26), train 1200 (pos 123), refs 0
+2026-11-20 22:22:32,512 INFO backtest: as_of 2018: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 22:22:32,537 INFO backtest: as_of 2019: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 22:22:54,465 INFO build_snapshots: as_of 2012: 69 rows, 13 positives, 56 B controls
+2026-11-20 22:22:54,518 INFO build_snapshots: as_of 2013: 139 rows, 24 positives, 115 B controls
+2026-11-20 22:22:54,564 INFO build_snapshots: as_of 2014: 176 rows, 23 positives, 153 B controls
+2026-11-20 22:22:54,620 INFO build_snapshots: as_of 2015: 212 rows, 26 positives, 186 B controls
+2026-11-20 22:22:54,665 INFO build_snapshots: as_of 2016: 245 rows, 28 positives, 217 B controls
+2026-11-20 22:22:54,706 INFO build_snapshots: as_of 2017: 243 rows, 28 positives, 215 B controls
+2026-11-20 22:22:54,748 INFO build_snapshots: as_of 2018: 207 rows, 27 positives, 180 B controls
+2026-11-20 22:22:54,787 INFO build_snapshots: as_of 2019: 161 rows, 25 positives, 136 B controls
+2026-11-20 22:23:07,085 INFO build_snapshots: as_of 2012: 69 rows, 13 positives, 56 B controls
+2026-11-20 22:23:07,130 INFO build_snapshots: as_of 2013: 139 rows, 24 positives, 115 B controls
+2026-11-20 22:23:07,174 INFO build_snapshots: as_of 2014: 176 rows, 23 positives, 153 B controls
+2026-11-20 22:23:07,217 INFO build_snapshots: as_of 2015: 212 rows, 26 positives, 186 B controls
+2026-11-20 22:23:07,261 INFO build_snapshots: as_of 2016: 245 rows, 28 positives, 217 B controls
+2026-11-20 22:23:07,306 INFO build_snapshots: as_of 2017: 243 rows, 28 positives, 215 B controls
+2026-11-20 22:23:07,349 INFO build_snapshots: as_of 2018: 207 rows, 27 positives, 180 B controls
+2026-11-20 22:23:07,391 INFO build_snapshots: as_of 2019: 161 rows, 25 positives, 136 B controls
+2026-11-20 22:23:09,076 INFO build_snapshots: reference profiles: 100
+2026-11-20 22:23:09,161 INFO backtest: as_of 2015: test 212 (pos 26), train 208 (pos 37), refs 28
+2026-11-20 22:23:09,207 INFO backtest: as_of 2016: test 245 (pos 28), train 384 (pos 60), refs 40
+2026-11-20 22:23:09,254 INFO backtest: as_of 2017: test 243 (pos 28), train 596 (pos 86), refs 55
+2026-11-20 22:23:09,301 INFO backtest: as_of 2018: test 207 (pos 27), train 841 (pos 114), refs 68
+2026-11-20 22:23:09,349 INFO backtest: as_of 2019: test 161 (pos 25), train 1084 (pos 142), refs 68
+2026-11-20 22:24:37,438 INFO resolve_entities: decontamination: 1 controls share a name with a labelled company -> removed as ambiguous
+2026-11-20 22:25:01,008 INFO backtest: as_of 2016: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 22:25:01,052 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 22:25:01,080 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 22:25:01,107 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 22:25:01,134 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 22:25:01,163 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 22:25:01,205 INFO backtest: as_of 2015: test 300 (pos 34), train 1200 (pos 159), refs 0
+2026-11-20 22:25:01,230 INFO backtest: as_of 2016: test 300 (pos 37), train 1500 (pos 200), refs 0
+2026-11-20 22:25:01,256 INFO backtest: as_of 2017: test 300 (pos 43), train 1800 (pos 234), refs 0
+2026-11-20 22:25:01,282 INFO backtest: as_of 2018: test 300 (pos 38), train 2100 (pos 271), refs 0
+2026-11-20 22:25:01,311 INFO backtest: as_of 2019: test 300 (pos 35), train 2400 (pos 314), refs 0
+2026-11-20 22:25:01,398 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 22:25:01,425 INFO backtest: as_of 2017: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 22:25:01,461 INFO backtest: as_of 2013: test 300 (pos 28), train 0 (pos 0), refs 0
+2026-11-20 22:25:01,494 INFO backtest: as_of 2014: test 300 (pos 31), train 300 (pos 31), refs 0
+2026-11-20 22:25:01,530 INFO backtest: as_of 2015: test 300 (pos 33), train 600 (pos 59), refs 0
+2026-11-20 22:25:01,571 INFO backtest: as_of 2016: test 300 (pos 33), train 900 (pos 90), refs 0
+2026-11-20 22:25:01,617 INFO backtest: as_of 2017: test 300 (pos 26), train 1200 (pos 123), refs 0
+2026-11-20 22:25:01,654 INFO backtest: as_of 2018: test 300 (pos 25), train 1500 (pos 156), refs 0
+2026-11-20 22:25:01,683 INFO backtest: as_of 2019: test 300 (pos 33), train 1800 (pos 182), refs 0
+2026-11-20 22:25:01,862 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 22:25:01,887 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 22:25:01,903 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 22:25:02,087 INFO cordis: FP7: 4 participations (org parse 0.8000, project parse 1.0000, join 0.7500)
+2026-11-20 22:25:02,113 INFO cordis: H2020: 7 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 22:25:02,132 INFO cordis: HORIZON: 5 participations (org parse 1.0000, project parse 1.0000, join 1.0000)
+2026-11-20 22:25:02,186 WARNING cordis: could not resolve HORIZON from the portal (status=200); using fallback https://cordis.europa.eu/data/cordis-HORIZONprojects-csv.zip
+2026-11-20 22:25:02,191 ERROR cordis: H2020: cordis.europa.eu/robots.txt disallows (or could not be read for) automated access to https://cordis.europa.eu/data/cordis-h2020projects-csv.zip. Retry later if it was unreachable; otherwise download it by hand and run `python -m scripts.sources.cordis --zip-dir <folder with cordis-h2020projects-csv.zip>`.
+2026-11-20 22:25:02,197 INFO cordis: H2020: downloaded /tmp/pytest-of-root/pytest-107/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip (155 bytes)
+2026-11-20 22:25:02,198 INFO cordis: H2020: using existing /tmp/pytest-of-root/pytest-107/test_download_when_allowed_wri0/cordis-h2020projects-csv.zip
+2026-11-20 22:25:02,202 INFO cordis: HORIZON: imported /tmp/pytest-of-root/pytest-107/test_import_zip_dir0/zips/cordis-HORIZONprojects-csv.zip -> /tmp/pytest-of-root/pytest-107/test_import_zip_dir0/raw/cordis-HORIZONprojects-csv.zip
+2026-11-20 22:25:02,203 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 22:25:02,206 WARNING cordis: robots.txt of cordis.europa.eu unreachable (status=503): treating as disallow
+2026-11-20 22:25:02,389 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 22:25:02,392 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 22:25:02,395 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 22:25:02,399 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 22:25:02,402 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 22:25:02,406 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 22:25:02,406 INFO cordis_sparql: roles: 22 rows, 6 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,413 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 22:25:02,416 INFO cordis_sparql: organisations@4 rows=4 0.00s cache=False
+2026-11-20 22:25:02,419 INFO cordis_sparql: organisations@8 rows=4 0.00s cache=False
+2026-11-20 22:25:02,420 INFO cordis_sparql: organisations: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,426 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 22:25:02,429 INFO cordis_sparql: organisation_types@4 rows=4 0.00s cache=False
+2026-11-20 22:25:02,432 INFO cordis_sparql: organisation_types@8 rows=4 0.00s cache=False
+2026-11-20 22:25:02,432 INFO cordis_sparql: organisation_types: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,439 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 22:25:02,442 INFO cordis_sparql: projects@4 rows=4 0.00s cache=False
+2026-11-20 22:25:02,445 INFO cordis_sparql: projects@8 rows=4 0.00s cache=False
+2026-11-20 22:25:02,445 INFO cordis_sparql: projects: 12 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,452 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 22:25:02,455 INFO cordis_sparql: grant_topic@4 rows=3 0.00s cache=False
+2026-11-20 22:25:02,455 INFO cordis_sparql: grant_topic: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,461 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 22:25:02,462 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,468 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 22:25:02,471 INFO cordis_sparql: grant_type@4 rows=3 0.00s cache=False
+2026-11-20 22:25:02,471 INFO cordis_sparql: grant_type: 7 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,477 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 22:25:02,477 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,749 INFO cordis_sparql: roles@0 rows=10 0.00s cache=False
+2026-11-20 22:25:02,752 INFO cordis_sparql: roles@10 rows=10 0.00s cache=False
+2026-11-20 22:25:02,755 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 22:25:02,756 INFO cordis_sparql: roles: 22 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,762 INFO cordis_sparql: organisations@0 rows=10 0.00s cache=False
+2026-11-20 22:25:02,765 INFO cordis_sparql: organisations@10 rows=2 0.00s cache=False
+2026-11-20 22:25:02,765 INFO cordis_sparql: organisations: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,771 INFO cordis_sparql: organisation_types@0 rows=10 0.00s cache=False
+2026-11-20 22:25:02,774 INFO cordis_sparql: organisation_types@10 rows=2 0.00s cache=False
+2026-11-20 22:25:02,775 INFO cordis_sparql: organisation_types: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,780 INFO cordis_sparql: projects@0 rows=10 0.00s cache=False
+2026-11-20 22:25:02,783 INFO cordis_sparql: projects@10 rows=2 0.00s cache=False
+2026-11-20 22:25:02,784 INFO cordis_sparql: projects: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,789 INFO cordis_sparql: grant_topic@0 rows=7 0.00s cache=False
+2026-11-20 22:25:02,790 INFO cordis_sparql: grant_topic: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,796 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 22:25:02,797 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,803 INFO cordis_sparql: grant_type@0 rows=7 0.00s cache=False
+2026-11-20 22:25:02,803 INFO cordis_sparql: grant_type: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,809 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 22:25:02,809 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,970 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 22:25:02,970 INFO cordis_sparql: roles: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,976 INFO cordis_sparql: organisations@0 rows=4 0.00s cache=False
+2026-11-20 22:25:02,976 INFO cordis_sparql: organisations: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,982 INFO cordis_sparql: organisation_types@0 rows=4 0.00s cache=False
+2026-11-20 22:25:02,982 INFO cordis_sparql: organisation_types: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,988 INFO cordis_sparql: projects@0 rows=4 0.00s cache=False
+2026-11-20 22:25:02,988 INFO cordis_sparql: projects: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:02,994 INFO cordis_sparql: grant_topic@0 rows=4 0.00s cache=False
+2026-11-20 22:25:02,994 INFO cordis_sparql: grant_topic: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,000 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 22:25:03,000 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,006 INFO cordis_sparql: grant_type@0 rows=4 0.00s cache=False
+2026-11-20 22:25:03,006 INFO cordis_sparql: grant_type: 4 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,013 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 22:25:03,013 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,204 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 1/2
+2026-11-20 22:25:03,205 WARNING cordis_sparql: roles@0: HTTP 500 (Virtuoso 22026 Error SR477: Error serializing the value); pausing 0s before retry 2/2
+2026-11-20 22:25:03,210 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 22:25:03,210 WARNING cordis_sparql: roles@4: HTTP 500 (Virtuoso 22023 Error SR014: Function ri_name_id needs a string); pausing 0s before retry 1/2
+2026-11-20 22:25:03,213 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 22:25:03,217 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 22:25:03,220 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 22:25:03,223 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 22:25:03,226 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 22:25:03,300 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 22:25:03,309 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 22:25:03,313 INFO cordis_sparql: roles@4 rows=4 0.00s cache=True
+2026-11-20 22:25:03,316 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 22:25:03,319 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 22:25:03,322 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 22:25:03,325 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 22:25:03,326 INFO cordis_sparql: roles: 22 rows, 6 pages (1 from cache) 0.0s
+2026-11-20 22:25:03,332 INFO cordis_sparql: roles@0 rows=4 0.00s cache=False
+2026-11-20 22:25:03,335 INFO cordis_sparql: roles@4 rows=4 0.00s cache=False
+2026-11-20 22:25:03,338 INFO cordis_sparql: roles@8 rows=4 0.00s cache=False
+2026-11-20 22:25:03,341 INFO cordis_sparql: roles@12 rows=4 0.00s cache=False
+2026-11-20 22:25:03,344 INFO cordis_sparql: roles@16 rows=4 0.00s cache=False
+2026-11-20 22:25:03,347 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 22:25:03,347 INFO cordis_sparql: roles: 22 rows, 6 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,356 INFO cordis_sparql: roles@0 rows=10 0.00s cache=False
+2026-11-20 22:25:03,359 INFO cordis_sparql: roles@10 rows=10 0.00s cache=False
+2026-11-20 22:25:03,362 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 22:25:03,363 INFO cordis_sparql: roles: 22 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,368 INFO cordis_sparql: organisations@0 rows=10 0.00s cache=False
+2026-11-20 22:25:03,371 INFO cordis_sparql: organisations@10 rows=2 0.00s cache=False
+2026-11-20 22:25:03,371 INFO cordis_sparql: organisations: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,377 INFO cordis_sparql: organisation_types@0 rows=10 0.00s cache=False
+2026-11-20 22:25:03,380 INFO cordis_sparql: organisation_types@10 rows=2 0.00s cache=False
+2026-11-20 22:25:03,380 INFO cordis_sparql: organisation_types: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,387 INFO cordis_sparql: projects@0 rows=10 0.00s cache=False
+2026-11-20 22:25:03,389 INFO cordis_sparql: projects@10 rows=2 0.00s cache=False
+2026-11-20 22:25:03,390 INFO cordis_sparql: projects: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,396 INFO cordis_sparql: grant_topic@0 rows=7 0.00s cache=False
+2026-11-20 22:25:03,397 INFO cordis_sparql: grant_topic: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,403 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 22:25:03,403 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,410 INFO cordis_sparql: grant_type@0 rows=7 0.00s cache=False
+2026-11-20 22:25:03,410 INFO cordis_sparql: grant_type: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,416 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 22:25:03,416 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,647 INFO cordis_sparql: roles@0 rows=10 0.00s cache=False
+2026-11-20 22:25:03,648 INFO cordis_sparql: roles@10 rows=10 0.00s cache=False
+2026-11-20 22:25:03,649 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 22:25:03,649 INFO cordis_sparql: roles: 22 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,651 INFO cordis_sparql: organisations@0 rows=10 0.00s cache=False
+2026-11-20 22:25:03,651 INFO cordis_sparql: organisations@10 rows=2 0.00s cache=False
+2026-11-20 22:25:03,651 INFO cordis_sparql: organisations: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,653 INFO cordis_sparql: organisation_types@0 rows=10 0.00s cache=False
+2026-11-20 22:25:03,654 INFO cordis_sparql: organisation_types@10 rows=2 0.00s cache=False
+2026-11-20 22:25:03,654 INFO cordis_sparql: organisation_types: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,655 INFO cordis_sparql: projects@0 rows=10 0.00s cache=False
+2026-11-20 22:25:03,656 INFO cordis_sparql: projects@10 rows=2 0.00s cache=False
+2026-11-20 22:25:03,656 INFO cordis_sparql: projects: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,657 INFO cordis_sparql: grant_topic@0 rows=7 0.00s cache=False
+2026-11-20 22:25:03,657 INFO cordis_sparql: grant_topic: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,658 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 22:25:03,659 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,660 INFO cordis_sparql: grant_type@0 rows=7 0.00s cache=False
+2026-11-20 22:25:03,660 INFO cordis_sparql: grant_type: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,661 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 22:25:03,662 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,966 INFO cordis_sparql: roles@0 rows=10 0.00s cache=False
+2026-11-20 22:25:03,969 INFO cordis_sparql: roles@10 rows=10 0.00s cache=False
+2026-11-20 22:25:03,972 INFO cordis_sparql: roles@20 rows=2 0.00s cache=False
+2026-11-20 22:25:03,972 INFO cordis_sparql: roles: 22 rows, 3 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,979 INFO cordis_sparql: organisations@0 rows=10 0.00s cache=False
+2026-11-20 22:25:03,981 INFO cordis_sparql: organisations@10 rows=2 0.00s cache=False
+2026-11-20 22:25:03,982 INFO cordis_sparql: organisations: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,988 INFO cordis_sparql: organisation_types@0 rows=10 0.00s cache=False
+2026-11-20 22:25:03,991 INFO cordis_sparql: organisation_types@10 rows=2 0.00s cache=False
+2026-11-20 22:25:03,991 INFO cordis_sparql: organisation_types: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:03,997 INFO cordis_sparql: projects@0 rows=10 0.00s cache=False
+2026-11-20 22:25:04,000 INFO cordis_sparql: projects@10 rows=2 0.00s cache=False
+2026-11-20 22:25:04,001 INFO cordis_sparql: projects: 12 rows, 2 pages (0 from cache) 0.0s
+2026-11-20 22:25:04,007 INFO cordis_sparql: grant_topic@0 rows=7 0.00s cache=False
+2026-11-20 22:25:04,007 INFO cordis_sparql: grant_topic: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:04,013 INFO cordis_sparql: grant_call@0 rows=2 0.00s cache=False
+2026-11-20 22:25:04,013 INFO cordis_sparql: grant_call: 2 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:04,019 INFO cordis_sparql: grant_type@0 rows=7 0.00s cache=False
+2026-11-20 22:25:04,019 INFO cordis_sparql: grant_type: 7 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:04,025 INFO cordis_sparql: grant_programme@0 rows=1 0.00s cache=False
+2026-11-20 22:25:04,025 INFO cordis_sparql: grant_programme: 1 rows, 1 pages (0 from cache) 0.0s
+2026-11-20 22:25:04,494 WARNING gharchive: rejected 2 invalid login value(s) (not [a-z0-9-]{1,39})
+2026-11-20 22:25:04,521 WARNING gharchive: t: splitting chunk of 5 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 22:25:04,527 INFO gharchive: query t_725ab108 rows=2 0.00s cache=False
+2026-11-20 22:25:04,527 WARNING gharchive: t: splitting chunk of 3 (ClickHouse error code=159 status=500: Code: 159. DB::Exception: Timeout exceeded: elapsed 60 seconds)
+2026-11-20 22:25:04,533 INFO gharchive: query t_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 22:25:04,538 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 22:25:04,543 INFO gharchive: query t_044d23a2 rows=2 0.00s cache=False
+2026-11-20 22:25:04,548 INFO gharchive: query t2_ca4710da rows=2 0.00s cache=False
+2026-11-20 22:25:04,548 WARNING gharchive: t2: splitting chunk of 2 (t2: 2 rows > 1)
+2026-11-20 22:25:04,553 INFO gharchive: query t2_9b383db9 rows=1 0.00s cache=False
+2026-11-20 22:25:04,558 INFO gharchive: query t2_cd4a3407 rows=1 0.00s cache=False
+2026-11-20 22:25:04,600 INFO gharchive: query span_1dca1109 rows=2 0.00s cache=False
+2026-11-20 22:25:04,608 INFO gharchive: wrote /tmp/pytest-of-root/pytest-107/test_end_to_end_processed_outp0/span.parquet rows=2
+2026-11-20 22:25:04,614 INFO gharchive: query team_1ba97f53 rows=3 0.00s cache=False
+2026-11-20 22:25:04,623 INFO gharchive: wrote /tmp/pytest-of-root/pytest-107/test_end_to_end_processed_outp0/team.parquet rows=3
+2026-11-20 22:25:04,629 INFO gharchive: query daily_6c90f737 rows=3 0.00s cache=False
+2026-11-20 22:25:04,638 INFO gharchive: wrote /tmp/pytest-of-root/pytest-107/test_end_to_end_processed_outp0/daily.parquet rows=3
+2026-11-20 22:25:04,652 INFO gharchive: query ext_291805af rows=5 0.00s cache=False
+2026-11-20 22:25:04,666 INFO gharchive: wrote /tmp/pytest-of-root/pytest-107/test_end_to_end_processed_outp0/ext.parquet rows=5
+2026-11-20 22:25:04,693 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 22:25:04,704 INFO gharchive: wrote /tmp/pytest-of-root/pytest-107/test_external_refuses_unresolv0/team.parquet rows=3
+2026-11-20 22:25:05,302 INFO gharchive: query t_460f1c7d rows=4 0.00s cache=False
+2026-11-20 22:25:05,303 WARNING gharchive: t: splitting chunk of 4 (t: 4 rows > 2)
+2026-11-20 22:25:05,308 INFO gharchive: query t_ca4710da rows=2 0.00s cache=False
+2026-11-20 22:25:05,314 INFO gharchive: query t_18cc594b rows=2 0.00s cache=False
+2026-11-20 22:25:05,321 INFO gharchive: query team_0400b139 rows=3 0.00s cache=False
+2026-11-20 22:25:05,331 INFO gharchive: wrote /tmp/pytest-of-root/pytest-107/test_external_refuses_team_wit0/team.parquet rows=3
+2026-11-20 22:25:05,346 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 22:25:05,352 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 22:25:05,358 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 22:25:05,372 INFO gharchive: query fidelity_created_same_file_2021-05-12-15_9beb9916 rows=1 0.00s cache=False
+2026-11-20 22:25:05,378 INFO gharchive: query fidelity_file_time_2021-05-12-15_182c4a65 rows=1 0.00s cache=False
+2026-11-20 22:25:05,384 INFO gharchive: query fidelity_created_at_2021-05-12-15_bb67a9e5 rows=1 0.00s cache=False
+2026-11-20 22:25:05,566 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,566 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,566 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,567 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,569 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,569 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,569 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,569 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,569 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,570 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,570 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,570 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,570 ERROR github: lookup failed for bad
+2026-11-20 22:25:05,581 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 22:25:05,629 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 22:25:05,693 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,693 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,693 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,693 WARNING github: GraphQL batch of 64 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,693 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,693 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,693 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,693 WARNING github: GraphQL batch of 32 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 16 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,694 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,695 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,695 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,695 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,695 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,695 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,695 ERROR github: lookup failed for x0
+2026-11-20 22:25:05,695 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,696 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,696 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,696 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,696 ERROR github: lookup failed for x1
+2026-11-20 22:25:05,696 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,696 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,696 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,696 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,696 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,697 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,697 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,697 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,697 ERROR github: lookup failed for x10
+2026-11-20 22:25:05,697 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,697 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,697 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,697 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,697 ERROR github: lookup failed for x11
+2026-11-20 22:25:05,698 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,698 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,698 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,698 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,698 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,698 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,698 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,698 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,698 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,698 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,699 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,699 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,699 ERROR github: lookup failed for x12
+2026-11-20 22:25:05,699 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,699 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,699 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,699 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,699 ERROR github: lookup failed for x13
+2026-11-20 22:25:05,700 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,701 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,701 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,701 WARNING github: GraphQL batch of 2 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,701 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,701 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,701 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,702 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,702 ERROR github: lookup failed for x14
+2026-11-20 22:25:05,702 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,702 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,702 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,702 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,702 ERROR github: lookup failed for x15
+2026-11-20 22:25:05,703 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,703 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,703 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,703 WARNING github: GraphQL batch of 8 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,703 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 1)
+2026-11-20 22:25:05,703 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 2)
+2026-11-20 22:25:05,703 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 3)
+2026-11-20 22:25:05,703 WARNING github: GraphQL batch of 4 not ok (status=200, attempt 4)
+2026-11-20 22:25:05,716 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 22:25:05,764 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 22:25:05,841 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 22:25:05,908 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 22:25:05,930 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 22:25:05,957 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 22:25:05,996 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 22:25:06,040 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 22:25:06,042 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 22:25:06,071 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 22:25:06,111 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 22:25:06,161 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 22:25:06,164 INFO github: find_org tier 1: 5 unresolved entities, 9 logins
+2026-11-20 22:25:06,194 INFO github: find_org tier 2: 3 unresolved entities, 51 logins
+2026-11-20 22:25:06,239 INFO github: find_org tier 3: 2 unresolved entities, 50 logins
+2026-11-20 22:25:06,286 INFO github: find_org: 6 entities, 4 matched ({1: 2, 2: 1, 3: 1})
+2026-11-20 22:25:06,293 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 22:25:06,316 INFO github: find_org tier 2: 1 unresolved entities, 17 logins
+2026-11-20 22:25:06,347 INFO github: find_org tier 3: 1 unresolved entities, 25 logins
+2026-11-20 22:25:06,384 INFO github: find_org: 1 entities, 1 matched ({3: 1})
+2026-11-20 22:25:06,403 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 22:25:06,410 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 1)
+2026-11-20 22:25:06,410 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 2)
+2026-11-20 22:25:06,410 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 3)
+2026-11-20 22:25:06,410 WARNING github: GraphQL batch of 1 not ok (status=200, attempt 4)
+2026-11-20 22:25:06,410 ERROR github: lookup failed for acme
+2026-11-20 22:25:06,419 WARNING github: 1 logins had lookup errors (not persisted; retried next run)
+2026-11-20 22:25:06,437 INFO github: find_org: 1 entities, 0 matched ({})
+2026-11-20 22:25:06,437 WARNING github: find_org: 1 entities held back because a candidate lookup failed (note lookup_error_tier<N> in the search log); rerun find for them
+2026-11-20 22:25:06,454 INFO github: find_org tier 1: 1 unresolved entities, 1 logins
+2026-11-20 22:25:06,501 INFO github: find_org: 1 entities, 1 matched ({1: 1})
+2026-11-20 22:25:06,537 INFO github: id bound 2008: first_id=9994 (2008-01-01 00:44:25+00:00) after 28 calls
+2026-11-20 22:25:06,543 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 35 calls
+2026-11-20 22:25:06,549 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 22:25:06,662 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 22:25:06,673 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 22:25:06,685 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 22:25:06,694 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 22:25:07,348 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 22:25:07,374 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 22:25:07,384 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 22:25:07,395 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 22:25:07,403 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 22:25:08,133 INFO github: sample: 565 orgs (188 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 22:25:08,150 INFO github: id bound 2010: first_id=30500 (2010-01-19 00:18:00+00:00) after 33 calls
+2026-11-20 22:25:08,156 INFO github: id bound 2011: first_id=40000 (2011-01-01 00:00:00+00:00) after 27 calls
+2026-11-20 22:25:08,162 INFO github: id bound 2012: first_id=49995 (2012-01-01 01:37:01+00:00) after 32 calls
+2026-11-20 22:25:08,170 INFO github: sample: 6 pages over years [2010, 2011]
+2026-11-20 22:25:08,673 INFO github: sample: 560 orgs (186 in pool); {'not_found_at_lookup': 0, 'lookup_errors': 0, 'database_id_mismatch': 0}
+2026-11-20 22:25:08,711 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 22:25:08,711 INFO github_owners: owner_activity: 25 logins in 3 ClickHouse queries (~45 s if uncached)
+2026-11-20 22:25:08,717 INFO gharchive: query owner_activity_fd7bbd32 rows=5 0.00s cache=False
+2026-11-20 22:25:08,723 INFO gharchive: query owner_activity_befe13dd rows=5 0.00s cache=False
+2026-11-20 22:25:08,730 INFO gharchive: query owner_activity_3c0b07d4 rows=3 0.00s cache=False
+2026-11-20 22:25:08,742 WARNING gharchive: rejected 1 invalid owner value(s) (not [a-z0-9-]{1,39})
+2026-11-20 22:25:08,805 WARNING github_owners: ecosyste.ms lookup failed for aa: HTTP_503
+2026-11-20 22:25:08,805 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 22:25:08,805 INFO github_owners: ecosyste.ms retry 1 for aa
+2026-11-20 22:25:08,805 INFO github_owners: ecosyste.ms retry 1 for bb
+2026-11-20 22:25:08,805 WARNING github_owners: ecosyste.ms lookup failed for bb: HTTP_503
+2026-11-20 22:25:08,927 WARNING github_owners: ecosyste.ms lookup failed for x0: HTTP_503
+2026-11-20 22:25:08,927 WARNING github_owners: ecosyste.ms lookup failed for x1: HTTP_503
+2026-11-20 22:25:08,927 WARNING github_owners: ecosyste.ms lookup failed for x2: HTTP_503
+2026-11-20 22:25:08,938 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:08,944 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 22:25:08,995 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,001 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 22:25:09,063 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,069 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 22:25:09,131 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 22:25:09,157 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,162 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 22:25:09,212 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,217 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 22:25:09,280 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,286 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 22:25:09,358 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 22:25:09,374 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,380 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 22:25:09,429 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,435 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 22:25:09,508 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,515 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 22:25:09,581 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 22:25:09,597 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,603 INFO gharchive: query owner_activity_a0d16862 rows=1 0.00s cache=False
+2026-11-20 22:25:09,650 INFO github_owners: owner_activity: 17 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,656 INFO gharchive: query owner_activity_c9e2f8d8 rows=1 0.00s cache=False
+2026-11-20 22:25:09,684 INFO github_owners: owner_activity: 25 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,690 INFO gharchive: query owner_activity_c63dd396 rows=1 0.00s cache=False
+2026-11-20 22:25:09,730 INFO github_owners: find_org: 1 entities, 1 matched ({3: 1}), 0 held
+2026-11-20 22:25:09,775 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,781 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 22:25:09,797 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 22:25:09,797 INFO github_owners: ecosyste.ms retry 1 for acme
+2026-11-20 22:25:09,797 WARNING github_owners: ecosyste.ms lookup failed for acme: HTTP_503
+2026-11-20 22:25:09,820 INFO github_owners: find_org: 1 entities, 0 matched ({}), 1 held
+2026-11-20 22:25:09,820 WARNING github_owners: find_org: 1 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 22:25:09,838 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,844 INFO gharchive: query owner_activity_ad3b5db4 rows=1 0.00s cache=False
+2026-11-20 22:25:09,895 INFO github_owners: find_org: 1 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 22:25:09,923 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,931 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 22:25:09,978 INFO github_owners: owner_activity: 51 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:09,983 INFO gharchive: query owner_activity_64406a03 rows=1 0.00s cache=False
+2026-11-20 22:25:10,012 INFO github_owners: owner_activity: 50 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:10,019 INFO gharchive: query owner_activity_57f4a449 rows=1 0.00s cache=False
+2026-11-20 22:25:10,062 INFO github_owners: find_org: 8 entities, 1 matched ({1: 1}), 5 held
+2026-11-20 22:25:10,063 WARNING github_owners: find_org: 5 entities held back (lookup error or request cap; see note in the search log); rerun find for them
+2026-11-20 22:25:10,091 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:10,097 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 22:25:10,155 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:10,161 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 22:25:10,228 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:10,235 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 22:25:10,320 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 22:25:10,346 INFO github_owners: owner_activity: 11 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:10,352 INFO gharchive: query owner_activity_d47b2274 rows=8 0.00s cache=False
+2026-11-20 22:25:10,404 INFO github_owners: owner_activity: 85 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:10,410 INFO gharchive: query owner_activity_da13cc86 rows=1 0.00s cache=False
+2026-11-20 22:25:10,470 INFO github_owners: owner_activity: 100 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:10,476 INFO gharchive: query owner_activity_223d1961 rows=1 0.00s cache=False
+2026-11-20 22:25:10,548 INFO github_owners: find_org: 8 entities, 4 matched ({1: 2, 2: 1, 3: 1}), 0 held
+2026-11-20 22:25:10,635 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 22:25:10,657 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 22:25:10,785 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 22:25:10,804 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 22:25:10,922 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 22:25:10,937 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 22:25:11,003 WARNING github_owners: sample: years [2014, 2015] have pending lookups (request cap / errors) and are NOT written; rerun
+2026-11-20 22:25:11,050 INFO gharchive: query owner_pilot_7f8fdb1d rows=254 0.00s cache=False
+2026-11-20 22:25:11,066 INFO gharchive: query owner_sample_e06ee2cd rows=10 0.01s cache=False
+2026-11-20 22:25:11,207 INFO github_owners: owner_activity: 1 logins in 1 ClickHouse query (~15 s if uncached)
+2026-11-20 22:25:11,212 INFO gharchive: query owner_activity_98d272c6 rows=1 0.00s cache=False
+2026-11-20 22:25:11,266 INFO github_owners: find_org: 2 entities, 1 matched ({1: 1}), 0 held
+2026-11-20 22:25:11,515 INFO labels: duplicate domain acme.io: 2 records ['yc'], kept 2014-10-31 from yc
+2026-11-20 22:25:11,515 INFO labels: duplicate domain examplo-robotics.de: 2 records ['htgf', 'yc'], kept 2016-01-01 from htgf
+2026-11-20 22:25:12,957 INFO build_snapshots: as_of 2012: 69 rows, 13 positives, 56 B controls
+2026-11-20 22:25:13,004 INFO build_snapshots: as_of 2013: 139 rows, 24 positives, 115 B controls
+2026-11-20 22:25:13,048 INFO build_snapshots: as_of 2014: 176 rows, 23 positives, 153 B controls
+2026-11-20 22:25:13,090 INFO build_snapshots: as_of 2015: 212 rows, 26 positives, 186 B controls
+2026-11-20 22:25:13,133 INFO build_snapshots: as_of 2016: 245 rows, 28 positives, 217 B controls
+2026-11-20 22:25:13,175 INFO build_snapshots: as_of 2017: 243 rows, 28 positives, 215 B controls
+2026-11-20 22:25:13,216 INFO build_snapshots: as_of 2018: 207 rows, 27 positives, 180 B controls
+2026-11-20 22:25:13,257 INFO build_snapshots: as_of 2019: 161 rows, 25 positives, 136 B controls
+2026-11-20 22:25:15,135 INFO build_snapshots: reference profiles: 100
+2026-11-20 22:25:15,206 INFO backtest: as_of 2015: test 212 (pos 26), train 208 (pos 37), refs 28
+2026-11-20 22:25:15,242 INFO backtest: as_of 2016: test 245 (pos 28), train 384 (pos 60), refs 40
+2026-11-20 22:25:15,280 INFO backtest: as_of 2017: test 243 (pos 28), train 596 (pos 86), refs 55
+2026-11-20 22:25:15,318 INFO backtest: as_of 2018: test 207 (pos 27), train 841 (pos 114), refs 68
+2026-11-20 22:25:15,360 INFO backtest: as_of 2019: test 161 (pos 25), train 1084 (pos 142), refs 68
+2026-11-20 22:26:21,549 INFO pool_sample: entry scan: buckets < 1 done; years still below target: [2014, 2015]
+2026-11-20 22:26:21,554 INFO pool_sample: entry scan: buckets < 2 done; years still below target: [2014]
+2026-11-20 22:26:21,559 INFO pool_sample: entry scan: buckets < 4 done; years still below target: []
+2026-11-20 22:26:21,598 INFO resolve_entities: decontamination: 1 controls share a name with a labelled company -> removed as ambiguous

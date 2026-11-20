@@ -22,7 +22,7 @@ import numpy as np
 import pandas as pd
 
 from .lib.config import LABELS, PROCESSED, cfg, get_logger, seed
-from .lib.domains import country_from_domain
+from .lib.domains import company_domain, country_from_domain, domain_stem, name_slug
 from .lib.meta import write_meta
 from .lib.schema import make_events, validate_events
 
@@ -154,6 +154,41 @@ def cordis_entity_summary(links: pd.DataFrame, part: pd.DataFrame) -> pd.DataFra
     }).reset_index()
 
 
+def _key(s) -> str:
+    import re
+    return re.sub(r"[^a-z0-9]", "", name_slug(s if isinstance(s, str) else ""))
+
+
+def decontaminate(ent: pd.DataFrame, labels: pd.DataFrame, min_len: int = 4) -> pd.DataFrame:
+    """Controls (B, unlabelled) whose GitHub login / org display name / domain stem equals a labelled company's name
+    or domain stem may be a funded company under another domain -> ambiguous -> removed (from both groups: they are
+    not positives either). Label names are used only to REMOVE controls, never to match positives."""
+    lab_keys = {k for k in pd.concat([labels["company"].map(_key), labels["domain"].map(lambda d: _key(domain_stem(d)) if d else "")])
+                if len(k) >= min_len}
+    own = PROCESSED / "github_owners.parquet"
+    disp = {}
+    if own.exists():
+        o = pd.read_parquet(own)
+        disp = dict(zip(o["login"].str.lower(), o["display_name"]))
+    def keys(r):
+        ks = {_key(domain_stem(r.entity_id))}
+        if isinstance(r.github_org, str):
+            ks |= {_key(r.github_org), _key(disp.get(r.github_org.lower()))}
+        return {k for k in ks if len(k) >= min_len}
+    ctrl = ent["in_B"].astype(bool) & ~ent["is_labelled"].astype(bool)
+    hit = pd.Series(False, index=ent.index)
+    for i, r in ent[ctrl].iterrows():
+        if keys(r) & lab_keys:
+            hit[i] = True
+    if hit.any():
+        log.info("decontamination: %d controls share a name with a labelled company -> removed as ambiguous", int(hit.sum()))
+    ent = ent.copy()
+    ent["ambiguous_control"] = hit
+    ent.loc[hit, "in_B"] = False
+    ent.loc[hit, "inclusion_prob"] = 0.0
+    return ent
+
+
 def build_entities(universe: pd.DataFrame, labels: pd.DataFrame, gh_links: pd.DataFrame | None,
                    cordis_companies: pd.DataFrame | None, gh_span: pd.DataFrame | None) -> pd.DataFrame:
     ent = pd.DataFrame({"entity_id": sorted(set(universe["entity_id"]) | set(labels["domain"].dropna()))})
@@ -172,11 +207,25 @@ def build_entities(universe: pd.DataFrame, labels: pd.DataFrame, gh_links: pd.Da
             g = g.rename(columns={"org_uuid": "github_org_uuid"})
         else:
             g["github_org_uuid"] = None
+        pit = PROCESSED / "org_like_pit.parquet"
+        if pit.exists():          # point-in-time org-like rule (first calendar year), same for every entity
+            ok = pd.read_parquet(pit).set_index("login")["org_like_pit"]
+            keep = g["org_login"].str.lower().map(ok).fillna(False).astype(bool) if "org_login" in g else \
+                g["github_org"].str.lower().map(ok).fillna(False).astype(bool)
+            log.info("org_like_pit: dropping %d of %d GitHub links (not org-like in their first year)",
+                     int((~keep).sum()), len(g))
+            g = g[keep.values]
         ent = ent.merge(g[["entity_id", "github_org", "github_org_uuid", "github_org_created_at", "github_match_method",
                            "github_match_confidence", "github_tier"]], on="entity_id", how="left")
     else:
         for c in ["github_org", "github_org_created_at", "github_match_method", "github_match_confidence", "github_tier"]:
             ent[c] = None
+    # platform-domain entities (github.io, medium.com …) cannot be found by the stem-only search -> drop for everyone
+    plat = ent["entity_id"].map(lambda d: company_domain(d) is None)
+    if plat.any():
+        log.info("dropping %d platform-domain entities", int(plat.sum()))
+        ent = ent[~plat].copy()
+    ent = decontaminate(ent, labels)
     if gh_span is not None and len(gh_span):
         s = gh_span.rename(columns={"owner": "github_org", "first_event_ts": "gh_first_event_ts",
                                     "last_event_ts": "gh_last_event_ts", "n_events": "gh_n_events"})
@@ -280,7 +329,9 @@ def build_events(ent: pd.DataFrame) -> pd.DataFrame:
                                     "match": r.match_method}})
     ev = make_events(recs)
     # one company matched to several CORDIS participant ids in the same project -> keep one grant event
-    ev = ev.drop_duplicates(["entity_id", "ts", "source", "type", "detail"])
+    # (only grants: distinct GitHub engagement events can legitimately have identical detail)
+    g = ev["source"] == "cordis"
+    ev = pd.concat([ev[~g], ev[g].drop_duplicates(["entity_id", "ts", "source", "type", "detail"])], ignore_index=True)
     ev = ev.sort_values(["entity_id", "ts", "source", "type", "detail"]).reset_index(drop=True)
     errs = validate_events(ev)
     if errs:

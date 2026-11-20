@@ -190,6 +190,10 @@ def build(tag: str = "main") -> str:
               f"(0.5 = random). In the top {TOP_SHARE:.0%} of the pool the funded share is estimated at "
               f"**{prim.get('top_precision_w', float('nan')):.4f}** vs **{prim.get('base_rate_w', float('nan')):.4f}** "
               f"overall (lift **{fmt_ci(prim.get('top_lift', float('nan')), prim.get('top_lift_lo'), prim.get('top_lift_hi'), 1)}×**).", "",
+              (f"Geography floor: a flag that only says 'European country domain' reaches AUC "
+               f"**{allm.loc['geo_floor_has_cordis', 'auc']:.3f}** on its own — because the labels are mostly US (YC), "
+               "geography alone separates the groups a little; the logistic regression is scored with this flag "
+               "neutralised." if "geo_floor_has_cordis" in allm.index else ""), "",
               "> Read this as: among companies visible to the radar on 1 January of each year, how well the score "
               "ranks the ones that raised a first round (YC / HTGF) in the next 24 months above the ones that did not. "
               "Controls are an outcome-blind random sample of GitHub organisations and are *assumed* unfunded.", ""]
@@ -250,6 +254,10 @@ def build(tag: str = "main") -> str:
         if m.empty or m["n_pos_entities"].max() == 0:
             L += [f"**Subset: {sub}** — no funded companies in this subset.", ""]
             continue
+        if m["n_pos_entities"].max() < 5:
+            L += [f"**Subset: {sub}** — only {int(m['n_pos_entities'].max())} funded company/companies: too few to report "
+                  "any metric (an AUC of 0 or 1 from one company is noise).", ""]
+            continue
         t = pd.DataFrame({
             "method": m["method"], "n_pos": m["n_pos_entities"],
             "AUC [95% CI]": [fmt_ci(a, l, h) for a, l, h in zip(m["auc"], col(m, "auc_lo"), col(m, "auc_hi"))],
@@ -294,8 +302,10 @@ def build(tag: str = "main") -> str:
     if len(coefs):
         names = FEATURES + HAS_FLAGS
         L += ["## 3. Logistic regression: coefficients", "",
-              "Re-learned from scratch for every as_of year on training years ≤ Y−2 (labels complete at Y). "
-              "Features are on a 0–1 scale, so coefficients are comparable.", "",
+              "Re-learned from scratch for every as_of year on training years ≤ Y−2 (labels complete and public at Y). "
+              "Features are on a 0–1 scale, so coefficients are comparable. `has_github` is constant in v1 (every "
+              "candidate comes from GitHub), so its coefficient carries no information. `has_cordis` (European country "
+              "domain) is fitted but neutralised when scoring (geography artefact of US-centric labels).", "",
               coefs[["as_of", "n_train", "n_train_pos"] + [c for c in names if c in coefs]].round(3).to_markdown(index=False), ""]
         if len(cboot):
             cb = cboot.copy()
@@ -310,10 +320,11 @@ def build(tag: str = "main") -> str:
 
     # ---------- missingness audit
     if len(snap):
+        from .lib.metrics import pooled_auc
         rows = []
         for f in HAS_FLAGS:
-            x = snap[f].fillna(False).astype(float)
-            rows.append({"flag": f, "AUC vs label": auc(snap["label"], x, snap["weight"])})
+            g = snap.assign(score=snap[f].fillna(False).astype(float))
+            rows.append({"flag": f, "pooled within-cohort AUC vs label": pooled_auc(g)})
         L += ["## 4. Missing-data audit", "",
               "If a 'has data' flag alone predicts funding, part of the signal is survivorship or discovery bias "
               "(e.g. dead companies lose repos). Values far from 0.5 are a warning.", "",
@@ -326,6 +337,9 @@ def build(tag: str = "main") -> str:
         p = RESULTS / f"metrics_{t}.csv"
         if p.exists():
             s = pd.read_csv(p)
+            for c in ("auc_lo", "auc_hi"):
+                if c not in s:
+                    s[c] = np.nan
             s = s[s["subset"] == "all"][["method", "auc", "auc_lo", "auc_hi"]].rename(columns={"auc": f"AUC {t}"})
             mm = met[met["subset"] == "all"][["method", "auc"]].rename(columns={"auc": "AUC main"})
             sens.append((label, mm.merge(s, on="method")))
@@ -343,9 +357,10 @@ def build(tag: str = "main") -> str:
         if len(h):
             h["htgf_invest_year"] = pd.to_datetime(h["funding_date"]).dt.year
             h["flagged_on"] = pd.to_datetime(h["first_flag_as_of"]).dt.date
-            L += [f"HTGF portfolio companies in the evaluated cohorts: **{len(h)}**; flagged in the pool's top {TOP_SHARE:.0%} before "
+            L += [f"HTGF portfolio companies in the evaluated cohorts: **{len(h)}**; flagged in the pool's top {TOP_SHARE:.0%} no later than 1 January of "
                   f"HTGF's investment year: **{int(h['flagged'].sum())}**. HTGF dates are year-precise "
-                  f"('Invested since'), so lead time is reported in whole years.", "",
+                  f"('Invested since'), so a flag on 1 January of the investment year counts as 'no later than', not "
+                  f"'before'.", "",
                   h[["entity_id", "htgf_invest_year", "flagged", "flagged_on", "best_rank", "cohort_size"]]
                   .sort_values(["flagged", "best_rank"], ascending=[False, True]).to_markdown(index=False), ""]
             miss = h[~h["flagged"]].sort_values("best_rank")
@@ -402,6 +417,15 @@ def build(tag: str = "main") -> str:
           "- **HTGF dates are year-precise**; YC dates are acceptance proxies (batch start − 76 days; batch start as sensitivity).",
           "- **Weak evidence for acceleration:** no paper measures GitHub *acceleration*; the engagement definition differs "
           "from Conti et al. (team-level PRs/issues/pushes vs org-level forks). See papers/index.md.",
+          "- **Exploratory sample size:** for most YC companies the GitHub org appears around funding (median −0.6 months); "
+          "only ~23% of matched funded companies had public GitHub activity before funding, so few are visible on a "
+          "1 January before their round.",
+          "- **Control listing pre-filter:** owners were pre-filtered with an all-time org-like rule before the point-in-time "
+          "first-year rule was added; small early (2011–2014) orgs that never grew may be under-represented among controls. "
+          "Re-listing with the point-in-time rule is an open item (≈1 h of quota/lookups).",
+          "- **Failed metadata lookups:** a few sampled owners whose ecosyste.ms lookup failed were dropped without adjusting "
+          "inclusion probabilities.",
+          "- **GH Archive cut-off 2020-01-01:** features exist only for as_of ≤ 2019; locked years need a later fetch.",
           "- **Locked test years were not evaluated**; all numbers are from selection years used during development.", ""]
     md = "\n".join(L)
     (RESULTS / "report.md").write_text(md)

@@ -15,7 +15,7 @@ ROUND_TYPES = {"pre-seed", "accelerator", "seed", "series_a"}
 
 def make_events(records: list[dict]) -> pd.DataFrame:
     df = pd.DataFrame.from_records(records, columns=EVENT_COLUMNS)
-    df["ts"] = pd.to_datetime(df["ts"], utc=True)
+    df["ts"] = pd.to_datetime(df["ts"], utc=True, format="ISO8601")
     df["value"] = df["value"].astype(float)
     df["detail"] = df["detail"].map(lambda d: d if isinstance(d, str) else json.dumps(d, sort_keys=True))
     return df

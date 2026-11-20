@@ -485,15 +485,24 @@ def htgf_records(groups: list[dict], parsed_by_link: dict[str, dict | None], res
 # collection
 # ---------------------------------------------------------------------------------------------------------------
 def fetch_rest(client: Client) -> tuple[list[dict], list[dict]]:
-    """All portfolio posts via the REST API. Returns (rows, raw page records)."""
+    """All portfolio posts via the REST API. Returns (rows, raw page records).
+
+    Stops on a short page, or on HTTP 400 past page 1 (WordPress `rest_post_invalid_page_number` when the total is a
+    multiple of PER_PAGE). Any other non-200 answer (e.g. a 5xx that survived the client's retries) raises instead of
+    silently returning a truncated portfolio; the failed page is not cached, so a rerun resumes from the cache."""
     rows, raw = [], []
     page = 1
     while True:
         params = {"per_page": PER_PAGE, "page": page}
         r = client.get(REST_URL, params=params)
-        if r.status != 200:   # WordPress answers 400 past the last page
+        if r.status == 400 and page > 1:
             break
+        if r.status != 200:
+            raise RuntimeError(f"HTGF REST {REST_URL} page {page} returned status {r.status}; refusing to continue "
+                               "with a truncated portfolio")
         data = r.json()
+        if not isinstance(data, list):
+            raise RuntimeError(f"HTGF REST page {page} returned {type(data).__name__}, expected a list")
         raw.append({"url": REST_URL, "params": params, "status": r.status, "fetched_at": r.fetched_at,
                     "text": r.text})
         rows += data
@@ -526,12 +535,16 @@ def collect(client: Client | None = None, limit: int | None = None,
     # sitemaps (discovery + cross-check of the REST listing)
     sm_raw, sitemap_urls = [], set()
     r = client.get(SITEMAP_INDEX)
+    if r.status != 200:
+        raise RuntimeError(f"{SITEMAP_INDEX} returned status {r.status}")
     sm_raw.append({"url": SITEMAP_INDEX, "status": r.status, "fetched_at": r.fetched_at, "text": r.text})
     children, _ = parse_sitemap(r.text)
     for child in children:
         if "portfolio-sitemap" not in child:
             continue
         rc = client.get(child)
+        if rc.status != 200:
+            raise RuntimeError(f"{child} returned status {rc.status}")
         sm_raw.append({"url": child, "status": rc.status, "fetched_at": rc.fetched_at, "text": rc.text})
         sitemap_urls.update(parse_sitemap(rc.text)[1])
     sm_path = RAW_DIR / "sitemaps.jsonl.gz"

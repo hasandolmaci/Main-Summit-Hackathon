@@ -6,7 +6,7 @@ Usage (from radar-backtest/):
     .venv/bin/python -m scripts.collect_labels --htgf-limit 20 # smoke run on the first 20 HTGF pages
 
 Outputs (each with a .meta.json sidecar):
-    data/raw/yc/companies_all.json.gz          raw yc-oss response, byte-identical, gzip
+    data/raw/yc/companies_all.json.gz          yc-oss records, gzip, minus free-text fields that can carry contact data
     data/raw/htgf/...                          see scripts/sources/htgf.py
     data/labels/companies.csv                  one row per company domain; YC date per cfg label.yc_date_mode
     data/labels/companies_batchstart.csv       sensitivity: YC date = batch start
@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import gzip
+import hashlib
 import json
 import re
 from collections import Counter
@@ -187,18 +188,59 @@ def yc_country(all_locations, regions) -> tuple[str | None, str]:
 # ---------------------------------------------------------------------------------------------------------------
 # YC records
 # ---------------------------------------------------------------------------------------------------------------
+# Fields the label rows are built from. They are always stored unchanged, so the labels can be rebuilt from raw.
+YC_LABEL_FIELDS = ("name", "slug", "website", "batch", "industry", "regions", "all_locations", "status")
+# Free-text fields that can carry founders' e-mail addresses / phone numbers; never stored (and not used).
+YC_ALWAYS_DROP = ("long_description",)
+_EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+_INTL_PHONE_RE = re.compile(r"(?<![\w/.-])\+\d{1,3}[ .-]?\(?\d{2,4}\)?[ .-]?\d{3,4}[ .-]?\d{3,4}(?![\w/])")
+
+
+def yc_storable(companies: list[dict]) -> tuple[list[dict], list[str], int]:
+    """Copy of the YC records for data/raw without columns that carry contact data (rule: no personal e-mails or
+    phone numbers on disk). Drops YC_ALWAYS_DROP plus every other non-label column in which an e-mail-like or
+    international phone-like string occurs. Returns (records, dropped columns, label-field hits)."""
+    drop = set(YC_ALWAYS_DROP)
+    label_hits = 0
+    for c in companies:
+        for k, v in c.items():
+            if k in drop:
+                continue
+            s = json.dumps(v, ensure_ascii=False)
+            if _EMAIL_RE.search(s) or _INTL_PHONE_RE.search(s):
+                if k in YC_LABEL_FIELDS:
+                    label_hits += 1
+                else:
+                    drop.add(k)
+    stored = [{k: v for k, v in c.items() if k not in drop} for c in companies]
+    return stored, sorted(drop), label_hits
+
+
 def fetch_yc(client: Client) -> tuple[list[dict], Path]:
     r = client.get(YC_URL)
     if r.status != 200:
         raise RuntimeError(f"yc-oss returned status {r.status}")
+    data = json.loads(r.text)
+    if not isinstance(data, list):
+        raise RuntimeError(f"yc-oss returned {type(data).__name__}, expected a list")
+    stored, dropped, label_hits = yc_storable(data)
+    if label_hits:
+        log.warning("yc: %d label-field values look like e-mail/phone strings (kept: needed for the labels)",
+                    label_hits)
+    body = r.text.encode("utf-8")
     out = RAW / "yc" / "companies_all.json.gz"
     out.parent.mkdir(parents=True, exist_ok=True)
     with open(out, "wb") as fb, gzip.GzipFile(filename="companies_all.json", mode="wb", fileobj=fb, mtime=0) as f:
-        f.write(r.text.encode("utf-8"))
-    data = json.loads(r.text)
-    write_meta(out, script=SCRIPT, params={"url": YC_URL, "fetched_at": r.fetched_at, "from_cache": r.from_cache},
+        f.write(json.dumps(stored, ensure_ascii=False, separators=(",", ":")).encode("utf-8"))
+    write_meta(out, script=SCRIPT, params={"url": YC_URL, "fetched_at": r.fetched_at, "from_cache": r.from_cache,
+                                           "response_sha256": hashlib.sha256(body).hexdigest(),
+                                           "response_bytes": len(body), "dropped_fields": dropped,
+                                           "label_field_contact_hits": label_hits},
                rows=len(data), sources=[YC_URL],
-               notes="Byte-identical yc-oss mirror response (public YC directory), gzip, mtime=0.")
+               notes="yc-oss mirror response (public YC directory) as parsed JSON, record order and values "
+                     "unchanged, minus the dropped_fields (free text that can carry personal e-mail addresses / "
+                     "phone numbers; not used for labels). response_sha256 identifies the full upstream response. "
+                     "gzip, mtime=0.")
     return data, out
 
 

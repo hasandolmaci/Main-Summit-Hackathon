@@ -1,16 +1,17 @@
 {
-  "created_at": "2026-11-20T19:19:00.930303+00:00",
+  "created_at": "2026-11-20T19:28:39.180541+00:00",
   "file": "data/raw/gharchive/hourly/2013-05-08-15.json.gz.manifest.json",
-  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "git_sha": "6187ee2b7e20641426541626b61e6a8e8c7eb994",
   "inputs": [],
-  "notes": "Manifest of a raw GH Archive hourly file (> 20 MB files are kept out of git under data/cache).",
+  "notes": "Manifest of a raw GH Archive hourly file. Raw GH Archive hours contain personal e-mail fields (actor_attributes.email in Timeline-era files, payload.commits[].author.email from 2015). They are only counted (event type + created_at + id) and deleted after counting unless --keep-hourly; re-download from url and verify sha256.",
   "params": {
-    "hour": "2013-05-08-15"
+    "hour": "2013-05-08-15",
+    "retained": false
   },
   "python": "3.13.18",
   "rows": null,
   "script": "scripts/sources/gharchive.py fidelity",
-  "sha256": "99c23b2bab30767f976bce5ea6e490cb14bcf95bc5f49ff87278e9449866ae00",
+  "sha256": "4fdfde5ac700aecf2e2aab6dc1a1e90cdca0481b1cc7a0c0f7ac9c636d133636",
   "sources": [
     "https://data.gharchive.org/2013-05-08-15.json.gz"
   ]

@@ -47,7 +47,9 @@ every query is dry-run first and refused above cfg gharchive.bigquery_max_gb.
 CLI
     .venv/bin/python -m scripts.sources.gharchive {span|team|activity|external|all} [--orgs FILE]
     .venv/bin/python -m scripts.sources.gharchive schema-check
-    .venv/bin/python -m scripts.sources.gharchive fidelity [--hours 2013-05-08-15 ...]
+    .venv/bin/python -m scripts.sources.gharchive fidelity [--hours 2013-05-08-15 ...] [--keep-hourly]
+  fidelity downloads raw hourly files (they contain personal e-mails), counts them and deletes them again; only a
+  manifest (url, sha256, bytes, fetched_at) stays in data/raw/gharchive/hourly/. --keep-hourly keeps them.
     .venv/bin/python -m scripts.sources.gharchive bq-dry-run --orgs FILE        # needs GCP creds (not run now)
   --orgs: one login per line ('#' comments allowed). Without --orgs, span/team/activity/all use the orgs in
   data/processed/entity_github_org.parquet (org_login) + github_org_sample.parquet (login, in_pool).
@@ -340,11 +342,24 @@ def detect_exception(text: str) -> str | None:
     return m.group(1) if m else None
 
 
+def exception_text(text: str, limit: int = 1000) -> str:
+    """Only the ClickHouse exception message (from its 'Code: N. DB::Exception' marker). An HTTP-200 body that fails
+    mid-stream starts with data rows (logins); those must never end up in error messages, logs or stderr."""
+    tail = text[-4000:]
+    last = None
+    for last in _EXC_RE.finditer(tail):
+        pass
+    if last is not None:
+        return tail[last.start():][:limit]
+    m = _EXC_RE.search(text[:4000])
+    return text[m.start():][:limit] if m else "(no ClickHouse exception text)"
+
+
 def parse_tsv(text: str, expected_columns: list[str]) -> pd.DataFrame:
     """Strict TSVWithNames parser: header must match, every row must have exactly len(header) fields."""
     code = detect_exception(text)
     if code is not None:
-        raise ClickHouseError(code, text[-1000:])
+        raise ClickHouseError(code, exception_text(text))
     lines = text.split("\n")
     if lines and lines[-1] == "":
         lines = lines[:-1]
@@ -501,7 +516,9 @@ class ClickHouse:
         code = detect_exception(r.text) if r.text else None
         if r.status != 200 or code is not None:
             self._evict(sql)
-            raise ClickHouseError(code, r.text or "", r.status)
+            # non-200 bodies are server/proxy error text; a 200 body with an exception starts with data rows
+            raise ClickHouseError(code, exception_text(r.text) if code is not None else (r.text or "")[:300],
+                                  r.status)
         try:
             df = parse_tsv(r.text, expected_columns)
         except GHArchiveError:
@@ -532,6 +549,7 @@ class ClickHouse:
             try:
                 df = self.query(name, build(ch), columns)
                 if len(df) > max_rows:
+                    self.log.pop()        # truncated by the LIMIT guard: superseded by the halves, not an input
                     raise ResultTooLarge(f"{name}: {len(df)} rows > {max_rows}")
             except (ResultTooLarge, ClickHouseError) as e:
                 splittable = isinstance(e, ResultTooLarge) or e.splittable
@@ -777,8 +795,13 @@ def fidelity_frame(hour: str, raw_counts: dict, ch_same_file: dict, ch_file: dic
     return pd.DataFrame(rows, columns=FIDELITY_COLUMNS)
 
 
+HOURLY_PII_NOTE = ("Raw GH Archive hours contain personal e-mail fields (actor_attributes.email in Timeline-era files, "
+                   "payload.commits[].author.email from 2015). They are only counted (event type + created_at + id) "
+                   "and deleted after counting unless --keep-hourly; re-download from url and verify sha256.")
+
+
 def fetch_hour(hour: str, client: Client | None = None, cache_dir: Path = HOURLY_CACHE_DIR,
-               manifest_dir: Path = HOURLY_MANIFEST_DIR) -> Path:
+               manifest_dir: Path = HOURLY_MANIFEST_DIR, keep: bool = False) -> Path:
     parse_hour(hour)
     url = GHARCHIVE_URL.format(hour=hour)
     dest = cache_dir / f"{hour}.json.gz"
@@ -787,28 +810,38 @@ def fetch_hour(hour: str, client: Client | None = None, cache_dir: Path = HOURLY
     r = (client or Client()).get(url, stream_to=dest)
     if not dest.exists():
         raise GHArchiveError(f"download failed {url} status={r.status}")
-    if not man.exists() or json.loads(man.read_text()).get("sha256") != sha256_file(dest):
+    sha = sha256_file(dest)
+    old = json.loads(man.read_text()) if man.exists() else None
+    if old is None or old.get("sha256") != sha or old.get("retained") != bool(keep):
+        fetched_at = r.fetched_at or datetime.fromtimestamp(dest.stat().st_mtime, timezone.utc).isoformat()
+        if old is not None and old.get("sha256") == sha and old.get("fetched_at"):
+            fetched_at = old["fetched_at"]          # same bytes: keep the original download time
         manifest_dir.mkdir(parents=True, exist_ok=True)
-        man.write_text(json.dumps({"url": url, "sha256": sha256_file(dest), "bytes": dest.stat().st_size,
-                                   "fetched_at": r.fetched_at or datetime.fromtimestamp(dest.stat().st_mtime,
-                                                                                         timezone.utc).isoformat(),
-                                   "local_path": str(dest.relative_to(ROOT)) if ROOT in dest.parents else str(dest),
-                                   "note": "untrusted raw GH Archive hour; stored under data/cache (gitignored)"},
+        man.write_text(json.dumps({"url": url, "sha256": sha, "bytes": dest.stat().st_size, "fetched_at": fetched_at,
+                                   "retained": bool(keep),
+                                   "local_path": (str(dest.relative_to(ROOT)) if ROOT in dest.parents else str(dest))
+                                   if keep else None,
+                                   "note": "untrusted raw GH Archive hour. " + HOURLY_PII_NOTE},
                                   indent=2, sort_keys=True))
-        write_meta(man, script=SCRIPT + " fidelity", sources=[url], params={"hour": hour},
-                   notes="Manifest of a raw GH Archive hourly file (> 20 MB files are kept out of git under data/cache).")
+        write_meta(man, script=SCRIPT + " fidelity", sources=[url], params={"hour": hour, "retained": bool(keep)},
+                   notes="Manifest of a raw GH Archive hourly file. " + HOURLY_PII_NOTE)
     return dest
 
 
 def fidelity_check(hours: list[str] | None = None, ch: ClickHouse | None = None,
-                   out_path: Path = FIDELITY_PATH) -> pd.DataFrame:
+                   out_path: Path = FIDELITY_PATH, keep_hourly: bool = False, client: Client | None = None,
+                   cache_dir: Path = HOURLY_CACHE_DIR, manifest_dir: Path = HOURLY_MANIFEST_DIR) -> pd.DataFrame:
     ch = ch or backend()
     hours = hours or DEFAULT_FIDELITY_HOURS
     frames, notes = [], {}
-    dl = Client()
+    dl = client or Client()
     for hour in hours:
-        path = fetch_hour(hour, client=dl)
-        rc = count_hour_file(path, hour)
+        path = fetch_hour(hour, client=dl, cache_dir=cache_dir, manifest_dir=manifest_dir, keep=keep_hourly)
+        try:
+            rc = count_hour_file(path, hour)
+        finally:
+            if not keep_hourly:
+                path.unlink(missing_ok=True)       # personal e-mails inside: keep only the manifest (sha256)
         notes[hour] = rc["stats"]
         off = rc["offset_h"]
         q = lambda by: ch.query(f"fidelity_{by}_{hour}", sql_fidelity_hour(hour, by, off), ["event_type", "n"])
@@ -820,9 +853,9 @@ def fidelity_check(hours: list[str] | None = None, ch: ClickHouse | None = None,
     df.to_csv(out_path, index=False, float_format="%.6g")
     write_meta(out_path, script=SCRIPT + " fidelity", rows=len(df),
                sources=[GHARCHIVE_URL.format(hour=h) for h in hours] + [ch.url],
-               inputs=[HOURLY_MANIFEST_DIR / f"{h}.json.gz.manifest.json" for h in hours]
+               inputs=[manifest_dir / f"{h}.json.gz.manifest.json" for h in hours]
                + [Path(q.raw_path) for q in ch.log if q.name.startswith("fidelity_")],
-               params={"hours": hours, "raw_parse_stats": notes},
+               params={"hours": hours, "raw_parse_stats": notes, "hourly_files_retained": bool(keep_hourly)},
                notes="utc_offset_h = modal (created_at UTC - file label) in hours: Timeline-era (pre-2015) files are "
                      "labelled in US/Pacific local time, so their effective UTC window is label + 7/8 h. "
                      "raw_file_events / raw_unique_ids = objects / distinct ids in the file; ch_file_time = ClickHouse "
@@ -939,7 +972,10 @@ class BigQueryBackend:
             return self.run_fn(sql)
         from google.cloud import bigquery  # lazy
 
-        return bigquery.Client().query(sql).to_dataframe()
+        # server-side cap as well: the job fails instead of billing more than the configured limit
+        max_gb = float(cfg()["gharchive"]["bigquery_max_gb"] if self.max_gb is None else self.max_gb)
+        cfg_job = bigquery.QueryJobConfig(maximum_bytes_billed=int(max_gb * 1e9))
+        return bigquery.Client().query(sql, job_config=cfg_job).to_dataframe()
 
     def org_activity_span(self, orgs):
         return self.run(bq_sql("span", normalize_logins(orgs, "org")[0]))
@@ -1040,12 +1076,11 @@ def team_logins_from_raw(team_path: Path = TEAM_PATH) -> pd.DataFrame:
     for p in raws:
         with gzip.open(p, "rt") as f:
             frames.append(frame_team(parse_tsv(f.read(), ["owner", "actor", "first_push_ts"])))
-    if not frames:
-        return pd.DataFrame(columns=["owner", "actor_login", "actor_hash"])
-    lg = pd.concat(frames, ignore_index=True)[["owner", "actor_login"]].drop_duplicates()
+    lg = (pd.concat(frames, ignore_index=True)[["owner", "actor_login"]].drop_duplicates() if frames
+          else pd.DataFrame({"owner": pd.Series(dtype=object), "actor_login": pd.Series(dtype=object)}))
     lg["actor_hash"] = lg["actor_login"].map(actor_hash)
     keep = set(zip(team["owner"], team["actor_hash"]))
-    lg = lg[[(o, h) in keep for o, h in zip(lg["owner"], lg["actor_hash"])]]
+    lg = lg[pd.Series([(o, h) in keep for o, h in zip(lg["owner"], lg["actor_hash"])], index=lg.index, dtype=bool)]
     missing = len(keep) - len(set(zip(lg["owner"], lg["actor_hash"])))
     if missing:
         raise GHArchiveError(f"{missing} gh_team rows could not be resolved from the raw team TSVs")
@@ -1089,6 +1124,8 @@ def main(argv=None) -> int:
                     choices=["span", "team", "activity", "external", "all", "schema-check", "fidelity", "bq-dry-run"])
     ap.add_argument("--orgs", type=Path, help="file with one org login per line")
     ap.add_argument("--hours", nargs="+", default=None, help="fidelity hours YYYY-MM-DD-H (UTC)")
+    ap.add_argument("--keep-hourly", action="store_true",
+                    help="fidelity: keep the raw hourly files (they contain personal e-mails; default: delete)")
     a = ap.parse_args(argv)
 
     if a.cmd == "schema-check":
@@ -1098,7 +1135,7 @@ def main(argv=None) -> int:
         _print_log(backend())
         return 0
     if a.cmd == "fidelity":
-        df = fidelity_check(a.hours)
+        df = fidelity_check(a.hours, keep_hourly=a.keep_hourly)
         print(df.to_string(index=False))
         return 0
     if a.cmd == "bq-dry-run":

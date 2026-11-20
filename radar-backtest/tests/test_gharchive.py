@@ -399,3 +399,77 @@ def test_module_importable_without_bigquery_and_fallback(monkeypatch):
     monkeypatch.setattr(g.shutil, "which", lambda name: None)
     with pytest.raises(g.GHArchiveError):
         g._bq_dry_run_default("SELECT 1")
+
+
+# ---------------------------------------------------------------- review fixes
+def test_error_messages_never_carry_data_rows(tmp_path):
+    body = "actor\tn\nalice\t1\nbob-dev\t2\nCode: 396. DB::Exception: Limit for result exceeded, max rows: 1.00 million"
+    assert g.exception_text(body).startswith("Code: 396. DB::Exception")
+    ch = fake_ch(tmp_path, lambda s: (200, body))
+    with pytest.raises(g.ClickHouseError) as e:
+        ch.query("x", "SELECT 1", ["actor", "n"])
+    assert "alice" not in str(e.value) and "bob-dev" not in str(e.value) and "Code: 396" in str(e.value)
+    with pytest.raises(g.ClickHouseError) as e2:
+        g.parse_tsv(body, ["actor", "n"])
+    assert "alice" not in str(e2.value)
+
+
+def test_limit_guard_result_is_not_recorded_as_input(tmp_path):
+    def server(sql):
+        return 200, "actor\tn\n" + "".join(f"{u}\t1\n" for u in re.findall(r"'(u\d+)'", sql))
+
+    ch = fake_ch(tmp_path, server)
+    build = lambda ch_: "SELECT actor, n FROM t WHERE actor IN " + g.sql_in_list(ch_) + " FORMAT TSVWithNames"
+    df = ch.run_chunked("t", build, ["u1", "u2", "u3", "u4"], ["actor", "n"], chunk_size=4, max_rows=2)
+    assert sorted(df["actor"]) == ["u1", "u2", "u3", "u4"]
+    assert [q.rows for q in ch.log] == [2, 2]                 # only the halves that made it into the output
+
+
+def test_external_refuses_team_without_raw_inputs(tmp_path):
+    ch = fake_ch(tmp_path)
+    g.run_team(["acme"], ch, out=tmp_path / "team.parquet")
+    mp = tmp_path / "team.parquet.meta.json"
+    m = json.loads(mp.read_text())
+    m["inputs"] = []
+    mp.write_text(json.dumps(m))
+    with pytest.raises(g.GHArchiveError):
+        g.team_logins_from_raw(tmp_path / "team.parquet")
+
+
+class FakeDownload:
+    """Stands in for Client.get(url, stream_to=...): writes a gz payload once, then reports a cache hit."""
+
+    def __init__(self, payload: bytes):
+        self.payload, self.calls = payload, 0
+
+    def get(self, url, stream_to=None, **kw):
+        if Path(stream_to).exists():
+            return CachedResponse(url, 200, "", "", True)
+        self.calls += 1
+        Path(stream_to).write_bytes(self.payload)
+        return CachedResponse(url, 200, "", "2026-01-01T00:00:00+00:00", False)
+
+
+def test_fidelity_check_deletes_hourly_file_and_keeps_manifest(tmp_path):
+    ev = [json.dumps({"id": str(i), "type": "PushEvent", "created_at": "2021-05-12T15:00:0%dZ" % i,
+                      "payload": {"commits": [{"author": {"email": "x@example.invalid"}}]}}) for i in range(3)]
+    payload = gzip.compress(("\n".join(ev) + "\n").encode(), mtime=0)
+    dl = FakeDownload(payload)
+    ch = fake_ch(tmp_path, lambda s: (200, "event_type\tn\nPushEvent\t3\n"))
+    cache, man = tmp_path / "cache", tmp_path / "manifests"
+    df = g.fidelity_check(["2021-05-12-15"], ch=ch, out_path=tmp_path / "fid.csv", client=dl, cache_dir=cache,
+                          manifest_dir=man)
+    tot = df.set_index("event_type").loc["_total"]
+    assert tot["raw_file_events"] == 3 and tot["ch_file_time"] == 3 and tot["rel_diff_file"] == 0
+    assert not (cache / "2021-05-12-15.json.gz").exists()                 # e-mails are not kept on disk
+    m = json.loads((man / "2021-05-12-15.json.gz.manifest.json").read_text())
+    assert m["sha256"] == hashlib.sha256(payload).hexdigest() and m["bytes"] == len(payload)
+    assert m["retained"] is False and m["local_path"] is None and m["fetched_at"]
+    assert m["url"] == "https://data.gharchive.org/2021-05-12-15.json.gz"
+    assert (tmp_path / "fid.csv").exists() and (tmp_path / "fid.csv.meta.json").exists()
+    # --keep-hourly keeps the file; the original fetched_at is preserved for identical bytes
+    g.fidelity_check(["2021-05-12-15"], ch=ch, out_path=tmp_path / "fid.csv", client=dl, cache_dir=cache,
+                     manifest_dir=man, keep_hourly=True)
+    assert (cache / "2021-05-12-15.json.gz").exists()
+    m2 = json.loads((man / "2021-05-12-15.json.gz.manifest.json").read_text())
+    assert m2["retained"] is True and m2["fetched_at"] == m["fetched_at"] and m2["sha256"] == m["sha256"]

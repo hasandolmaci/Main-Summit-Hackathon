@@ -1,19 +1,19 @@
 {
-  "created_at": "2026-11-20T19:19:12.296373+00:00",
+  "created_at": "2026-11-20T19:28:50.947547+00:00",
   "file": "data/processed/gharchive_fidelity.csv",
-  "git_sha": "7ca2cc5a36ef7b058319ed06c55ff28dc1b38795",
+  "git_sha": "6187ee2b7e20641426541626b61e6a8e8c7eb994",
   "inputs": [
     {
       "path": "data/raw/gharchive/hourly/2013-05-08-15.json.gz.manifest.json",
-      "sha256": "99c23b2bab30767f976bce5ea6e490cb14bcf95bc5f49ff87278e9449866ae00"
+      "sha256": "4fdfde5ac700aecf2e2aab6dc1a1e90cdca0481b1cc7a0c0f7ac9c636d133636"
     },
     {
       "path": "data/raw/gharchive/hourly/2016-05-11-15.json.gz.manifest.json",
-      "sha256": "c84a5482ea68b436f60f6c4f6bef4d7000e8d2b894a118785e7c5c0b1a5bed8a"
+      "sha256": "1070ad6c6219f3f9d076ac46db161efaf8fd6a7d3fed0f6469e1e46bf166c3b6"
     },
     {
       "path": "data/raw/gharchive/hourly/2021-05-12-15.json.gz.manifest.json",
-      "sha256": "c5257e53056436e1b06ec0c418ceb002195d5b5826812c476178ec7a6ff8a6a2"
+      "sha256": "654d9ca48ad39bc3189107414b348ccbe594f78614a2f339598724c171a463f3"
     },
     {
       "path": "data/raw/gharchive/fidelity_created_same_file_2013-05-08-15_71d82462.tsv.gz",
@@ -54,6 +54,7 @@
   ],
   "notes": "utc_offset_h = modal (created_at UTC - file label) in hours: Timeline-era (pre-2015) files are labelled in US/Pacific local time, so their effective UTC window is label + 7/8 h. raw_file_events / raw_unique_ids = objects / distinct ids in the file; ch_file_time = ClickHouse rows with file_time = label; raw_created_in_window = file events with created_at in the effective UTC hour; ch_created_in_window_same_file = same on ClickHouse (tests created_at timezone handling); ch_created_in_window_all_files = ClickHouse created_at in the window from any file (informative). rel_diff_* = (ClickHouse - raw) / raw.",
   "params": {
+    "hourly_files_retained": false,
     "hours": [
       "2013-05-08-15",
       "2016-05-11-15",

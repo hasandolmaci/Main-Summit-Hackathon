@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-20T22:47:06.817282+00:00",
+  "file": "data/processed/reference_profiles_pct.parquet",
+  "git_sha": "b8ac005a3097f40f53593692b4d2cfe52b8b089d",
+  "inputs": [],
+  "notes": null,
+  "params": {
+    "offset_days": 90
+  },
+  "python": "3.13.18",
+  "rows": 30,
+  "script": "scripts/build_snapshots.py",
+  "sha256": "1efa69a4893f9da77821ced1307cd727b6166b02015b45d00a0d9402182759a4",
+  "sources": []
+}

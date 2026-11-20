@@ -22830,3 +22830,18 @@
 2026-11-20 22:42:39,717 INFO backtest: as_of 2017: test 217 (pos 9), train 398 (pos 15), refs 15
 2026-11-20 22:42:39,750 INFO backtest: as_of 2018: test 200 (pos 9), train 620 (pos 25), refs 17
 2026-11-20 22:42:39,783 INFO backtest: as_of 2019: test 150 (pos 8), train 837 (pos 34), refs 24
+2026-11-20 22:47:04,144 INFO build_snapshots: as_of 2012: 27 rows, 1 positives, 26 B controls
+2026-11-20 22:47:04,262 INFO build_snapshots: as_of 2013: 63 rows, 1 positives, 62 B controls
+2026-11-20 22:47:04,409 INFO build_snapshots: as_of 2014: 124 rows, 6 positives, 118 B controls
+2026-11-20 22:47:04,560 INFO build_snapshots: as_of 2015: 185 rows, 8 positives, 177 B controls
+2026-11-20 22:47:04,695 INFO build_snapshots: as_of 2016: 219 rows, 7 positives, 212 B controls
+2026-11-20 22:47:04,827 INFO build_snapshots: as_of 2017: 216 rows, 8 positives, 208 B controls
+2026-11-20 22:47:04,958 INFO build_snapshots: as_of 2018: 197 rows, 6 positives, 191 B controls
+2026-11-20 22:47:05,094 INFO build_snapshots: as_of 2019: 150 rows, 8 positives, 142 B controls
+2026-11-20 22:47:06,820 INFO build_snapshots: reference profiles: 30
+2026-11-20 22:47:06,896 INFO backtest: as_of 2015: test 185 (pos 8), train 89 (pos 1), refs 2
+2026-11-20 22:47:06,929 INFO backtest: as_of 2016: test 219 (pos 7), train 212 (pos 6), refs 7
+2026-11-20 22:47:06,963 INFO backtest: as_of 2017: test 216 (pos 8), train 398 (pos 15), refs 13
+2026-11-20 22:47:07,004 INFO backtest: as_of 2018: test 197 (pos 6), train 617 (pos 22), refs 15
+2026-11-20 22:47:07,044 INFO backtest: as_of 2019: test 150 (pos 8), train 833 (pos 30), refs 20
+2026-11-20 22:51:43,538 INFO run_backtests: results/report.md written

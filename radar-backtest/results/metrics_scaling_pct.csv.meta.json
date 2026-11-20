@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-11-20T22:51:42.584925+00:00",
+  "file": "results/metrics_scaling_pct.csv",
+  "git_sha": "b8ac005a3097f40f53593692b4d2cfe52b8b089d",
+  "inputs": [],
+  "notes": null,
+  "params": {
+    "R": 5,
+    "reps": 200,
+    "seed": 20251120,
+    "suffix": "_pct",
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/backtest.py",
+  "sha256": "f3524b1acf206bf239b07535da3ec74cf3be83424e10a44e1e9606a65b023623",
+  "sources": []
+}

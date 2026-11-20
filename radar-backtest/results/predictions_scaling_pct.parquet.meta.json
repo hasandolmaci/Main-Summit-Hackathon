@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-11-20T22:51:42.580094+00:00",
+  "file": "results/predictions_scaling_pct.parquet",
+  "git_sha": "b8ac005a3097f40f53593692b4d2cfe52b8b089d",
+  "inputs": [],
+  "notes": null,
+  "params": {
+    "R": 5,
+    "reps": 200,
+    "seed": 20251120,
+    "suffix": "_pct",
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  "python": "3.13.18",
+  "rows": null,
+  "script": "scripts/backtest.py",
+  "sha256": "4e7f68fa97d8aba222a467569d9315c30ac76c3e565e2eced7e5be04a9022ff3",
+  "sources": []
+}

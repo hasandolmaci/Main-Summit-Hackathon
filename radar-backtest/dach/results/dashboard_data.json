@@ -1,8 +1,8 @@
 {
  "status": [
   {
-   "stage": "shuffled-label control 12/20",
-   "phase": "shuffled-label control",
+   "stage": "done",
+   "phase": "done",
    "step": null,
    "steps": null,
    "n_labelled": 85,
@@ -14,12 +14,12 @@
    "kept_so_far": 0,
    "tried_so_far": 27,
    "real_done": true,
-   "shuffled_done": 12,
+   "shuffled_done": 20,
    "shuffled_total": 20,
-   "verdict": "",
-   "real_beats_share": null,
+   "verdict": "no metric distinguishable from noise",
+   "real_beats_share": 0.55,
    "started_at": "2026-11-20T23:13:07.158051+00:00",
-   "updated_at": "2026-11-20T23:33:08.150468+00:00"
+   "updated_at": "2026-11-20T23:47:13.514657+00:00"
   }
  ],
  "attempts": [
@@ -447,6 +447,54 @@
    "kept": 1,
    "oof_auc": 0.7551,
    "final_set": "legal_form_level"
+  },
+  {
+   "run": 12,
+   "kept": 0,
+   "oof_auc": 0.6138,
+   "final_set": ""
+  },
+  {
+   "run": 13,
+   "kept": 0,
+   "oof_auc": 0.6208,
+   "final_set": ""
+  },
+  {
+   "run": 14,
+   "kept": 0,
+   "oof_auc": 0.6132,
+   "final_set": ""
+  },
+  {
+   "run": 15,
+   "kept": 0,
+   "oof_auc": 0.6157,
+   "final_set": ""
+  },
+  {
+   "run": 16,
+   "kept": 0,
+   "oof_auc": 0.6317,
+   "final_set": ""
+  },
+  {
+   "run": 17,
+   "kept": 0,
+   "oof_auc": 0.6011,
+   "final_set": ""
+  },
+  {
+   "run": 18,
+   "kept": 0,
+   "oof_auc": 0.6021,
+   "final_set": ""
+  },
+  {
+   "run": 19,
+   "kept": 1,
+   "oof_auc": 0.6884,
+   "final_set": "team_size"
   }
  ]
 }

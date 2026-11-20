@@ -1,0 +1,15 @@
+{
+ "real": {
+  "final_set": [],
+  "oof_auc": 0.6204516050306174,
+  "baseline_auc": 0.6204516050306174,
+  "start_auc": 0.5649817845618128,
+  "vs_baseline": null
+ },
+ "real_beats_share_of_shuffled": 0.55,
+ "shuffled_mean_kept": 0.1,
+ "verdict": "no metric distinguishable from noise",
+ "n_labelled": 85,
+ "n_pos": 13,
+ "seconds": 2046
+}

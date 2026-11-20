@@ -97,9 +97,13 @@ def loop_report() -> str:
          "- Text candidates 19–21, 23, 24 (step 4c) were not computed: no Claude API key in this environment. "
          "They remain pre-registered; running them later is a separate, clearly labelled run.", "",
          "## Shuffled-label control", "",
-         "| run | kept | OOF AUC |", "|---|---|---|"]
-    L += [f"| {i} | {k} | {a:.3f} |" for i, (k, a) in enumerate(zip([None] * len(s_auc), s_auc))]
-    md = "\n".join(L).replace("| None |", "| – |")
+         "| run | kept | metrics kept | OOF AUC |", "|---|---|---|---|"]
+    shuf = json.loads((RES / "loop_state.json").read_text()).get("shuffled", [])
+    L += [f"| {d['run']} | {d['kept']} | {', '.join(d['final_set']) or '–'} | {d['oof_auc']:.3f} |" for d in shuf]
+    n_fp = sum(d["kept"] > 0 for d in shuf)
+    L += ["", f"With shuffled labels the keep rule still kept at least one metric in {n_fp} of {len(shuf)} runs "
+          f"(an empirical false-keep rate of ~{n_fp / max(len(shuf), 1):.0%} per full loop at n = {S['n_labelled']}).", ""]
+    md = "\n".join(L)
     (RES / "report.md").write_text(md)
     return md
 

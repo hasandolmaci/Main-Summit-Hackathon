@@ -1,0 +1,21 @@
+{
+  "weights": {
+    "f_pricing_page": 0.15,
+    "f_impressum": 0.1,
+    "f_legal_entity": 0.05,
+    "f_gmbh_ig": 0.05,
+    "f_waitlist": 0.05,
+    "f_customer_logos": 0.1,
+    "f_jobs_page": 0.05,
+    "m_grant_score": 0.1,
+    "m_gh_has_open_source": 0.1,
+    "m_gh_external_score": 0.05,
+    "m_patent_verified_before_asof": 0.05,
+    "m_ph_score_before_asof": 0.05,
+    "age_months_le_18": 0.1
+  },
+  "missing_value_policy": "Missing values are scored as 0. Report feature coverage alongside every score or comparison.",
+  "age_months_le_18_definition": "1 if f_age_months <= 18; otherwise 0 (missing f_age_months remains missing and is scored as 0).",
+  "frozen": true,
+  "scorecard": "Research prior; weights are fixed before outcome analysis and sum to 1.00."
+}

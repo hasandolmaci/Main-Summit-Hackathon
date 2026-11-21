@@ -1,0 +1,226 @@
+cid,name,domain,asof_date,set,cohort,known_founders
+bt001,Holloid,holloid.com,2022-03-01,backtest,Batch #1,
+bt002,Medicalytix,medicalytix.ai,2022-03-01,backtest,Batch #1,
+bt003,3C-Labs,3c-labs.tech,2022-03-01,backtest,Batch #1,
+bt004,beworm,linkedin.com,2022-03-01,backtest,Batch #1,
+bt005,1point8,1point8.de,2022-03-01,backtest,Batch #1,
+bt006,Mily Technologies,milytech.com,2022-03-01,backtest,Batch #1,
+bt007,SynthesEyes,syntheseyes.de,2022-07-01,backtest,Batch #2,
+bt008,Noxon,noxon-clothing.de,2022-07-01,backtest,Batch #2,
+bt009,Puray,puray.de,2022-07-01,backtest,Batch #2,
+bt010,Medigital,medigital.io,2022-07-01,backtest,Batch #2,
+bt011,SUPPLYZ,supplyz.eu,2022-07-01,backtest,Batch #2,
+bt012,Spherecast,spherecast.ai,2022-11-01,backtest,Batch #3,
+bt013,Munich Quantum Instruments,munich-quantum-instruments.com,2022-11-01,backtest,Batch #3,
+bt014,Olive Robotics,oliverobotics.de,2022-11-01,backtest,Batch #3,Mojtaba Leox Karimi; Edwin Babaians; Benjamin Felbrich; Prof. Eckehard Steinbach
+bt015,Roundpeg Technologies,roundpeg.tech,2022-11-01,backtest,Batch #3,
+bt016,BAVERTIS,bavertis.com,2022-11-01,backtest,Batch #3,
+bt017,Energyminer,energyminer.eu,2022-11-01,backtest,Batch #3,
+bt018,Hapticlabs,hapticlabs.io,2022-11-01,backtest,Batch #3,
+bt019,caire,caire.ai,2022-11-01,backtest,Batch #3,
+bt020,Scholarmaps,scholarmaps.com,2022-11-01,backtest,Batch #3,
+bt021,Emil Motors,emil-motors.com,2022-11-01,backtest,Batch #3,
+bt022,AcTLAbS,actlabs.space,2022-11-01,backtest,Batch #3,
+bt023,AMPERIAL - Smart Window Technologies,amperial.eu,2023-03-01,backtest,Batch #4,
+bt024,workride.,workride.de,2023-03-01,backtest,Batch #4,
+bt025,MIMBIOSIS,mimbiosis.com,2023-03-01,backtest,Batch #4,
+bt026,neuroTUM,neurotum.com,2023-03-01,backtest,Batch #4,
+bt027,CyberDesk,cyberdesk.app,2023-03-01,backtest,Batch #4,
+bt028,deltaVision,deltavision.space,2023-03-01,backtest,Batch #4,
+bt029,mo:re,more-ls.com,2023-03-01,backtest,Batch #4,
+bt030,Biomotion Technologies,biomotion.tech,2023-03-01,backtest,Batch #4,
+bt031,EnHands,enhands.de,2023-03-01,backtest,Batch #4,
+bt032,WasteEx,wasteex.de,2023-03-01,backtest,Batch #4,
+bt033,CedarDB,cedardb.com,2023-09-01,backtest,Batch #5,
+bt034,Impetus Sailing Team,impetussailing.de,2023-09-01,backtest,Batch #5,
+bt035,WARR space labs,warr.de,2023-09-01,backtest,Batch #5,
+bt036,CinSOIL,nature-culture.eu,2023-09-01,backtest,Batch #5,
+bt037,Decyde,decyde-ai.com,2023-09-01,backtest,Batch #5,
+bt038,Sensus,sensus.ai,2023-09-01,backtest,Batch #5,
+bt039,Visonation,visonation.com,2023-09-01,backtest,Batch #5,
+bt040,FOODYOU,thefoodyou.com,2023-09-01,backtest,Batch #5,
+bt041,Otter Energy Trading,otter-energy-trading.io,2023-09-01,backtest,Batch #5,
+bt042,FLOW eye,flow-eye.com,2023-09-01,backtest,Batch #5,Thomas Schinke; Aref Ariyapour
+bt043,Falcon Vision,falconvision.org,2023-09-01,backtest,Batch #5,
+bt044,Qualiwise,qualiwise.eu,2023-09-01,backtest,Batch #5,
+bt045,HopfON,hopfon.com,2023-09-01,backtest,Batch #5,
+bt046,ESG-X,esg-x.com,2023-09-01,backtest,Batch #5,
+bt047,Octave,maple-aviation.com,2024-03-01,backtest,Batch #6,
+bt048,Emidat,emidat.com,2024-03-01,backtest,Batch #6,
+bt049,Ignition Aerospace,ignition-aerospace.com,2024-03-01,backtest,Batch #6,
+bt050,NTRDE,ntrde.io,2024-03-01,backtest,Batch #6,
+bt051,VORTEX,vortex-aerotec.com,2024-03-01,backtest,Batch #6,
+bt052,Perian,perian.io,2024-03-01,backtest,Batch #6,
+bt053,Empacto,empacto.eco,2024-03-01,backtest,Batch #6,
+bt054,Hula Earth,hula.earth,2024-09-01,backtest,Batch #7,Florian Geiser; David Schmider
+bt055,Admyral,admyral.dev,2024-09-01,backtest,Batch #7,
+bt056,AICU,ai-cu.com,2024-09-01,backtest,Batch #7,
+bt057,Alganize,alganize.de,2024-09-01,backtest,Batch #7,Karl Manias; Nils Brüggemann
+bt058,Bonescreen,bonescreen.de,2024-09-01,backtest,Batch #7,
+bt059,Fungtional Bio,fungtional.bio,2024-09-01,backtest,Batch #7,
+bt060,KATALYST,katalyst-labs.com,2024-09-01,backtest,Batch #7,
+bt061,Micro Factory,micro-factory.de,2024-09-01,backtest,Batch #7,Maximilian Straßer; Leonard Krebs
+bt062,Patalyze,patalyze.com,2024-09-01,backtest,Batch #7,
+bt063,Prio Optics,prio-optic.com,2024-09-01,backtest,Batch #7,
+bt064,SAM Robotics,sam-robotics.com,2024-09-01,backtest,Batch #7,
+bt065,TUfast Moto Electric,tufast-motoelectric.de,2024-09-01,backtest,Batch #7,
+bt066,alago.ai,alago.ai,2024-09-01,backtest,Batch #7,
+bt067,Seal Robotics,seal-robotics.com,2025-03-01,backtest,Batch #8,
+bt068,Qoro Quantum,qoroquantum.de,2025-03-01,backtest,Batch #8,
+bt069,Aiina Robotics,aiina-robotics.com,2025-03-01,backtest,Batch #8,Julian Hoffmann; Claus Carste
+bt070,2NA Fish,2nafish.bio,2025-03-01,backtest,Batch #8,
+bt071,Furward,furward.eu,2025-03-01,backtest,Batch #8,
+bt072,Lexet AI,lexet.ai,2025-03-01,backtest,Batch #8,
+bt073,Neeno,myneeno.com,2025-03-01,backtest,Batch #8,
+bt074,ROBOTUM,robotum.info,2025-03-01,backtest,Batch #8,Sarah Suarez; Reay Finigan
+bt075,Rooted,rooted.farm,2025-03-01,backtest,Batch #8,
+bt076,Spacio,spacio.ai,2025-03-01,backtest,Batch #8,
+bt077,Valuemize,valuemize.io,2025-03-01,backtest,Batch #8,Hannes Gruber; Michael Domanegg; Dominik Finkbeiner
+bt078,DeepMask,deepmask.io,2025-03-01,backtest,Batch #8,
+bt079,VIDA,vida.place,2021-07-01,backtest,Falling Walls Venture finalists 2021,
+bt080,Biotx.ai,biotx.ai,2022-07-01,backtest,Falling Walls Venture finalists 2022,
+bt081,Carbon One,carbon.one,2022-07-01,backtest,Falling Walls Venture finalists 2022,
+bt082,MotorSkins,motorskins.com,2022-07-01,backtest,Falling Walls Venture finalists 2022,
+bt083,PROSION,prosion.eu,2022-07-01,backtest,Falling Walls Venture finalists 2022,Dr. Slim Chiha; Mutlu Yoenel; Prof. Dr. Hans-Günther Schmalz; Dr. Ronald Kühne
+bt084,Q.ANT,qant.de,2022-07-01,backtest,Falling Walls Venture finalists 2022,
+bt085,Tubulis,tubulis.com,2022-07-01,backtest,Falling Walls Venture finalists 2022,
+bt086,Aignostics,aignostics.com,2023-07-01,backtest,Falling Walls Venture finalists 2023,Prof. Frederick Klauschen; Prof. Klaus-Robert Müller; Viktor Matyas; Dr. Maximilian Alber
+bt087,GEMESYS,gemesys.tech,2023-07-01,backtest,Falling Walls Venture finalists 2023,Moritz Schmidt
+bt088,Proxima Fusion,proximafusion.com,2023-07-01,backtest,Falling Walls Venture finalists 2023,
+bt089,Reverion,reverion.com,2023-07-01,backtest,Falling Walls Venture finalists 2023,
+bt090,smartbax,smartbax.de,2023-07-01,backtest,Falling Walls Venture finalists 2023,
+bt091,Sonocrete,sonocrete.com,2023-07-01,backtest,Falling Walls Venture finalists 2023,
+bt092,ActiTrexx,actitrexx.de,2024-07-01,backtest,Falling Walls Venture finalists 2024,Andrea Tüttenberg; Klaus Dembowsky
+bt093,ARQUE Systems,arque.systems,2024-07-01,backtest,Falling Walls Venture finalists 2024,
+bt094,Cyclize,cyclize.de,2024-07-01,backtest,Falling Walls Venture finalists 2024,
+bt095,DeepEn,deepen-imaging.com,2024-07-01,backtest,Falling Walls Venture finalists 2024,Sergey Turtaev
+bt096,ecoLocked,ecolocked.com,2024-07-01,backtest,Falling Walls Venture finalists 2024,Mario Schmitt; Steff Gerhart; Micheil Gordon
+bt097,Pramomolecular,pramomolecular.com,2024-07-01,backtest,Falling Walls Venture finalists 2024,
+bt098,Qkera,qkera.com,2024-07-01,backtest,Falling Walls Venture finalists 2024,
+bt099,m-Bee,stabl.com,2019-07-24,backtest,Münchener Businessplan Wettbewerb 2019 - Phase 3,
+bt100,Orbem,orbem.ai,2019-07-24,backtest,Münchener Businessplan Wettbewerb 2019 - Phase 3,
+bt101,Manyfolds,manyfolds.de,2020-07-22,backtest,Münchener Businessplan Wettbewerb 2020 - Phase 3,
+bt102,NEUREVO,neurevo.de,2020-07-22,backtest,Münchener Businessplan Wettbewerb 2020 - Phase 3,
+bt103,Divizend,divizend.com,2021-07-22,backtest,Münchener Businessplan Wettbewerb 2021 - Phase 3,
+bt104,Opsyon,opsyon.genzentrum.uni-muenchen.de,2021-07-22,backtest,Münchener Businessplan Wettbewerb 2021 - Phase 3,
+bt105,sewts,sewts.de,2021-07-22,backtest,Münchener Businessplan Wettbewerb 2021 - Phase 3,
+bt106,Dymium,dymium.de,2022-07-27,backtest,Münchener Businessplan Wettbewerb 2022 - Phase 3,
+bt107,NIMMSTA,nimmsta.com,2022-07-27,backtest,Münchener Businessplan Wettbewerb 2022 - Phase 3,
+bt108,baind,baind.de,2023-07-26,backtest,Münchener Businessplan Wettbewerb 2023 - Phase 3,
+bt109,Sedivention,sedivention.com,2023-07-26,backtest,Münchener Businessplan Wettbewerb 2023 - Phase 3,
+bt110,AUDAVIS,audavis.ai,2024-07-17,backtest,Münchener Businessplan Wettbewerb 2024 - Phase 3,
+bt111,Airstier Technology GmbH,airstier-technology.de,2021-06-28,backtest,Science4Life Energy Cup 2021 - Businessplanphase,
+bt112,InContAlert,incontalert.de,2021-06-28,backtest,Science4Life Venture Cup 2021 - Businessplanphase,
+bt113,innocept,innocept-mobility.de,2021-06-28,backtest,Science4Life Energy Cup 2021 - Businessplanphase,
+bt114,LIDROTEC GmbH,lidrotec.de,2021-06-28,backtest,Science4Life Venture Cup 2021 - Businessplanphase,
+bt115,NanoStruct GmbH,nanostruct.eu,2021-06-28,backtest,Science4Life Venture Cup 2021 - Businessplanphase,
+bt116,Nephrolytix,nephrolytix.com,2021-06-28,backtest,Science4Life Venture Cup 2021 - Businessplanphase,
+bt117,suena GmbH,suena-company.com,2021-06-28,backtest,Science4Life Energy Cup 2021 - Businessplanphase,
+bt118,DNTOX GmbH,dntox.de,2022-07-18,backtest,Science4Life Venture Cup 2022 - Businessplanphase,
+bt119,HBOX Therapies GmbH,hbox-therapies.com,2022-07-18,backtest,Science4Life Venture Cup 2022 - Businessplanphase,
+bt120,PV2+,pv2plus.com,2022-07-18,backtest,Science4Life Energy Cup 2022 - Businessplanphase,
+bt121,Revoltech GmbH,madewithlovr.com,2022-07-18,backtest,Science4Life Venture Cup 2022 - Businessplanphase,
+bt122,Shards,shards.eco,2022-07-18,backtest,Science4Life Venture Cup 2022 - Businessplanphase,
+bt123,AGRANIMO,agranimo.com,2020-07-24,backtest,SpinLab startup profile 2020,
+bt124,AICURA,aicura-medical.com,2020-07-24,backtest,SpinLab startup profile 2020,
+bt125,AIDHERE,aidhere.de,2020-07-27,backtest,SpinLab startup profile 2020,
+bt126,AIR Q,air-q.com,2020-07-27,backtest,SpinLab startup profile 2020,
+bt127,AUMIO,aumio.de,2020-07-27,backtest,SpinLab startup profile 2020,
+bt128,BETTER AT HOME,better-at-home.de,2020-07-27,backtest,SpinLab startup profile 2020,
+bt129,BREEZE TECHNOLOGIES,breeze-technologies.de,2020-07-27,backtest,SpinLab startup profile 2020,
+bt130,CROWD HEROES,crowdheroes.de,2020-07-27,backtest,SpinLab startup profile 2020,
+bt131,CYFACE,cyface.de,2020-07-27,backtest,SpinLab startup profile 2020,
+bt132,DEEPTUNE,deeptune.de,2020-07-28,backtest,SpinLab startup profile 2020,
+bt133,DENKWEIT,denkweit.com,2020-07-28,backtest,SpinLab startup profile 2020,
+bt134,DIGITAIL,digitail.io,2020-07-28,backtest,SpinLab startup profile 2020,
+bt135,DIPAT,dipat.de,2020-07-28,backtest,SpinLab startup profile 2020,Dr. Paul Brandenburg
+bt136,DOCYET,docyet.com,2020-07-28,backtest,SpinLab startup profile 2020,
+bt137,ECOVERY,ecovery.de,2020-07-28,backtest,SpinLab startup profile 2020,
+bt138,ENERGIE KOPPLER,dieenergiekoppler.com,2020-07-28,backtest,SpinLab startup profile 2020,
+bt139,FLYNEX,flynex.de,2020-08-03,backtest,SpinLab startup profile 2020,
+bt140,GETML,getml.com,2020-08-03,backtest,SpinLab startup profile 2020,
+bt141,INFRASOLID,infrasolid.com,2020-08-03,backtest,SpinLab startup profile 2020,
+bt142,IOCARE,iocare.de,2020-08-03,backtest,SpinLab startup profile 2020,
+bt143,JOB UFO,jobufo.com,2020-08-03,backtest,SpinLab startup profile 2020,
+bt144,LIPSIA DIGITAL,lipsia.digital,2020-08-03,backtest,SpinLab startup profile 2020,
+bt145,MAGNOTHERM SOLUTIONS,magnotherm.com,2020-08-06,backtest,SpinLab startup profile 2020,
+bt146,MEDICSEN,medicsen.com,2020-08-06,backtest,SpinLab startup profile 2020,
+bt147,MEMENTOR,mementor.ch,2020-08-06,backtest,SpinLab startup profile 2020,
+bt148,MEMORESA,memoresa.de,2020-08-06,backtest,SpinLab startup profile 2020,
+bt149,MEROLT,merolt.de,2020-08-06,backtest,SpinLab startup profile 2020,
+bt150,MINDANCE,mindance.de,2020-08-06,backtest,SpinLab startup profile 2020,Robin Maier; Lukas Stenzel; David Schumann
+bt151,MOTIONSCLOUD,motionscloud.com,2020-08-06,backtest,SpinLab startup profile 2020,
+bt152,MYO,myo.de,2020-08-06,backtest,SpinLab startup profile 2020,Jasper Böckel; Felix Kuna
+bt153,OCTAGON,octagoncareers.com,2020-08-07,backtest,SpinLab startup profile 2020,Vanesa Cotlar; Neil Jennings; Chad Barraford
+bt154,OKIKO,okiko.com,2020-08-07,backtest,SpinLab startup profile 2020,
+bt155,QLIPAY,qlipay.de,2020-08-17,backtest,SpinLab startup profile 2020,
+bt156,QLX,qlx-gmbh.de,2020-08-18,backtest,SpinLab startup profile 2020,
+bt157,REHAGO,rehago.eu,2020-08-18,backtest,SpinLab startup profile 2020,Johannes Höfener; Philipp Zajac
+bt158,WATTANDO,wattando.com,2020-08-18,backtest,SpinLab startup profile 2020,
+bt159,RESMENT,frag-paul.de,2020-09-10,backtest,SpinLab startup profile 2020,
+bt160,RHEBO,rhebo.com,2020-09-10,backtest,SpinLab startup profile 2020,
+bt161,SENGI IT,sengi-it.de,2020-09-10,backtest,SpinLab startup profile 2020,
+bt162,SOLAGA,solaga.de,2020-09-10,backtest,SpinLab startup profile 2020,
+bt163,STROMDAO,stromdao.de,2020-09-10,backtest,SpinLab startup profile 2020,
+bt164,VAROMO,varomo.de,2020-09-10,backtest,SpinLab startup profile 2020,
+bt165,VESPUTI,vesputi.com,2020-09-10,backtest,SpinLab startup profile 2020,
+bt166,WALTER'S CUBE,walterscube.com,2020-09-10,backtest,SpinLab startup profile 2020,
+bt167,WE-DO-AI,we-do.ai,2020-09-10,backtest,SpinLab startup profile 2020,
+bt168,WUNDERCURVES,wundercurves.de,2020-09-10,backtest,SpinLab startup profile 2020,
+bt169,CARBONAUTEN,carbonauten.com,2020-12-01,backtest,SpinLab startup profile 2020,
+bt170,PIPE PREDICT,staging.pipepredict.com,2020-12-01,backtest,SpinLab startup profile 2020,
+bt171,THINKERS AI,thinkers.ai,2020-12-01,backtest,SpinLab startup profile 2020,
+bt172,ADVANCED INFRASTRUCTURE,advanced-infrastructure.co.uk,2020-12-02,backtest,SpinLab startup profile 2020,Christopher Jackson; Dan Leighton
+bt173,AIVY,aivy.app,2020-12-02,backtest,SpinLab startup profile 2020,
+bt174,INSONE,sonocom.insone.de,2020-12-02,backtest,SpinLab startup profile 2020,
+bt175,DEFTPOWER,deftpower.com,2021-07-16,backtest,SpinLab startup profile 2021,
+bt176,ENADYNE,enadyne.de,2021-07-16,backtest,SpinLab startup profile 2021,
+bt177,ENERGIEDOCK,energiedock.de,2021-07-16,backtest,SpinLab startup profile 2021,
+bt178,MEINDOC,meindoc.eu,2021-07-16,backtest,SpinLab startup profile 2021,
+bt179,NAECOBLUE,naeco.blue,2021-07-16,backtest,SpinLab startup profile 2021,
+bt180,NEX,nex.engineering,2021-07-16,backtest,SpinLab startup profile 2021,
+bt181,THINK RE,think-renewable.com,2021-07-16,backtest,SpinLab startup profile 2021,Dr. Steffen Hundt; Stephan Maximilan Dinse; Sandy Paasch
+bt182,ENDO HEALTH,endometriose.app,2022-03-08,backtest,SpinLab startup profile 2022,
+bt183,HUSTRO,hustro.com,2022-03-08,backtest,SpinLab startup profile 2022,
+bt184,IO-DYNAMICS,iodynamics.de,2022-03-08,backtest,SpinLab startup profile 2022,Nabil Imran; Felix Kruse; Johann Olsen
+bt185,MAIA / PRODLANE,getmaia.ai,2022-03-08,backtest,SpinLab startup profile 2022,
+bt186,MEMODIO,memodio-app.com,2022-03-08,backtest,SpinLab startup profile 2022,
+bt187,Q-BILITY,q-bility.com,2022-03-08,backtest,SpinLab startup profile 2022,
+bt188,NOXTUA,noxtua.com,2022-06-13,backtest,SpinLab startup profile 2022,
+bt189,MiiCare,miicare.co.uk,2022-10-04,backtest,SpinLab startup profile 2022,Kelvin Summoogum; Ophir Levy; John Wall; Andy Smith
+bt190,Rausch Technology,rausch.se,2022-10-04,backtest,SpinLab startup profile 2022,
+bt191,Reonic,reonic.com,2022-10-04,backtest,SpinLab startup profile 2022,
+bt192,RWInno Tec,rwinnotec.de,2022-10-04,backtest,SpinLab startup profile 2022,
+bt193,SpiNNcloud Systems,spinncloud.com,2022-10-04,backtest,SpinLab startup profile 2022,
+bt194,The Yellow Sic,yellow-sic.com,2022-10-04,backtest,SpinLab startup profile 2022,
+bt195,GLAICE,glaice.de,2023-05-10,backtest,SpinLab startup profile 2023,
+bt196,Granular Energy,granular-energy.com,2023-05-10,backtest,SpinLab startup profile 2023,
+bt197,HandsOn Robotics,handson-robotics.de,2023-05-10,backtest,SpinLab startup profile 2023,
+bt198,Nadar Earth,nadar.earth,2023-05-10,backtest,SpinLab startup profile 2023,Caroline Busse; Marco Eberle
+bt199,Neology,neology.ch,2023-05-10,backtest,SpinLab startup profile 2023,Aris Maroonian; Ruben Feldman
+bt200,retoflow,retoflow.de,2023-05-10,backtest,SpinLab startup profile 2023,
+bt201,Statotest,statotest.com,2023-05-10,backtest,SpinLab startup profile 2023,
+bt202,zentur.io,zentur.io,2023-05-10,backtest,SpinLab startup profile 2023,Michael Detke; Alexander Stoll
+bt203,bitteiler,bitteiler.com,2024-01-05,backtest,SpinLab startup profile 2024,
+bt204,Breathment,breathment.com,2024-01-05,backtest,SpinLab startup profile 2024,Yalvaç Top; Baturay Yalvaç
+bt205,HeatVentors,heatventors.com,2024-01-05,backtest,SpinLab startup profile 2024,
+lv001,AI VisionGuard,aivisionguard.eu,2026-11-21,live,LinkedIn live 2026-11,Arkadius Dalek
+lv002,Intra AI,intra-ai.de,2026-11-21,live,LinkedIn live 2026-11,Jan Skarbecki; Simon Klimaszyk
+lv003,BatteryIncluded,batteryincluded.ai,2026-11-21,live,LinkedIn live 2026-11,Thomas Ballmann; Simon Reichel
+lv004,Synagen AI,synagen.ai,2026-11-21,live,LinkedIn live 2026-11,Gandolf Finke; Dyke Ferber
+lv005,Zen AI,zenai.de,2026-11-21,live,LinkedIn live 2026-11,Jorrit Posor; Fabian Hertwig; Kyrill Schmid; Lenz Belzner
+lv006,mitte.ai,mitte.ai,2026-11-21,live,LinkedIn live 2026-11,
+lv007,ImmoFynn AI,immofynn.ai,2026-11-21,live,LinkedIn live 2026-11,Jonas Haußner; Samuel Pochotov
+lv008,AI Data Defense,aidatadefense.com,2026-11-21,live,LinkedIn live 2026-11,Mikael Loefstrand; Solveig Ellila Kristiansen
+lv009,Rhesis AI,rhesis.ai,2026-11-21,live,LinkedIn live 2026-11,Nicolai Bohn
+lv010,AI Recruiter,ai-recruiter.com,2026-11-21,live,LinkedIn live 2026-11,
+lv011,AI SLEIPNIR,aisleipnir.com,2026-11-21,live,LinkedIn live 2026-11,
+lv012,turnus.ai,turnus.ai,2026-11-21,live,LinkedIn live 2026-11,Ferdinand Heck; Tobias Seidel
+lv013,Airgonomics.ai,airgonomics.ai,2026-11-21,live,LinkedIn live 2026-11,Nikola Miskovic
+lv014,Practible AI,practible.ai,2026-11-21,live,LinkedIn live 2026-11,
+lv015,AI-VORTEX,ai-vortex.de,2026-11-21,live,LinkedIn live 2026-11,Arjanit Bajrami
+lv016,phablo.ai,phablo.ai,2026-11-21,live,LinkedIn live 2026-11,Marc Gerlach; Tharak Sreedharan
+lv017,VPATH AI,vpathai.com,2026-11-21,live,LinkedIn live 2026-11,Alexander Krumm; André Fischer
+lv018,POMA AI,poma-ai.com,2026-11-21,live,LinkedIn live 2026-11,Alexander Kihm; Jan Simon Raue
+lv019,Tabularis.AI,tabularis.ai,2026-11-21,live,LinkedIn live 2026-11,Vadim Borisov; Richard Schreiber
+lv020,Narratic AI,narratic.ai,2026-11-21,live,LinkedIn live 2026-11,Arne Wolfewicz; Hagen Hoferichter

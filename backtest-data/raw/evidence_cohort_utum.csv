@@ -1,0 +1,1130 @@
+name,asof_date,field,value,url,snapshot_ts,retrieved_at
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_domain,tumcarbon.com,https://www.tumcarbon.com/,,2026-11-20T19:33:54Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,wb_first_capture_any,2021-07-31,http://web.archive.org/cdx/search/cdx?url=tumcarbon.com&output=json&limit=1&fl=timestamp&from=1996,20210731173235,2026-11-20T19:33:54Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_first_capture,2021-07-31,http://web.archive.org/cdx/search/cdx?url=tumcarbon.com&output=json&limit=1&fl=timestamp&from=1996,20210731173235,2026-11-20T19:33:54Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_age_months,7,http://web.archive.org/cdx/search/cdx?url=tumcarbon.com&output=json&limit=1&fl=timestamp&from=1996,20210731173235,2026-11-20T19:33:54Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_snapshot_date,2021-07-31,http://web.archive.org/web/20210731173235id_/https://www.tumcarbon.com/,20210731173235,2026-11-20T19:34:03Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_impressum,1 (Impressum),http://web.archive.org/web/20210731173235id_/https://www.tumcarbon.com/,20210731173235,2026-11-20T19:34:03Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_pricing_page,0,http://web.archive.org/web/20210731173235id_/https://www.tumcarbon.com/,20210731173235,2026-11-20T19:34:03Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_waitlist,0,http://web.archive.org/web/20210731173235id_/https://www.tumcarbon.com/,20210731173235,2026-11-20T19:34:03Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_customer_logos,0,http://web.archive.org/web/20210731173235id_/https://www.tumcarbon.com/,20210731173235,2026-11-20T19:34:03Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_jobs_page,0,http://web.archive.org/web/20210731173235id_/https://www.tumcarbon.com/,20210731173235,2026-11-20T19:34:03Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_legal_entity,,http://web.archive.org/web/20210731173235id_/https://www.tumcarbon.com/,20210731173235,2026-11-20T19:34:03Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_gmbh_ig,0,http://web.archive.org/web/20210731173235id_/https://www.tumcarbon.com/,20210731173235,2026-11-20T19:34:03Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_description_text,1500 chars,http://web.archive.org/web/20210731173235id_/https://www.tumcarbon.com/,20210731173235,2026-11-20T19:34:03Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=tumcarbon.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1646092800&hitsPerPage=100,,2026-11-20T19:34:03Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_certs_before,20,https://crt.sh/?q=%25.tumcarbon.com&output=json,,2026-11-20T19:34:28Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_first_cert_date,2021-07-03,https://crt.sh/?id=4803930178,,2026-11-20T19:34:37Z
+TUM Carbon Removal Initiative e.V.,2022-03-01,f_product_live,0,https://crt.sh/?q=%25.tumcarbon.com&output=json,,2026-11-20T19:34:28Z
+Holloid,2022-03-01,f_domain,holloid.com,https://www.holloid.com/,,2026-11-20T19:33:54Z
+Holloid,2022-03-01,wb_first_capture_any,2021-03-07,http://web.archive.org/cdx/search/cdx?url=holloid.com&output=json&limit=1&fl=timestamp&from=1996,20210307062453,2026-11-20T19:32:57Z
+Holloid,2022-03-01,f_first_capture,2021-03-07,http://web.archive.org/cdx/search/cdx?url=holloid.com&output=json&limit=1&fl=timestamp&from=1996,20210307062453,2026-11-20T19:32:57Z
+Holloid,2022-03-01,f_age_months,11,http://web.archive.org/cdx/search/cdx?url=holloid.com&output=json&limit=1&fl=timestamp&from=1996,20210307062453,2026-11-20T19:32:57Z
+Holloid,2022-03-01,f_snapshot_date,2022-02-03,http://web.archive.org/web/20220203115757id_/https://www.holloid.com/,20220203115757,2026-11-20T19:33:00Z
+Holloid,2022-03-01,f_impressum,1 (Impressum),http://web.archive.org/web/20220203115757id_/https://www.holloid.com/,20220203115757,2026-11-20T19:33:00Z
+Holloid,2022-03-01,f_pricing_page,0,http://web.archive.org/web/20220203115757id_/https://www.holloid.com/,20220203115757,2026-11-20T19:33:00Z
+Holloid,2022-03-01,f_waitlist,0,http://web.archive.org/web/20220203115757id_/https://www.holloid.com/,20220203115757,2026-11-20T19:33:00Z
+Holloid,2022-03-01,f_customer_logos,0,http://web.archive.org/web/20220203115757id_/https://www.holloid.com/,20220203115757,2026-11-20T19:33:00Z
+Holloid,2022-03-01,f_jobs_page,0,http://web.archive.org/web/20220203115757id_/https://www.holloid.com/,20220203115757,2026-11-20T19:33:00Z
+Holloid,2022-03-01,f_legal_entity,,http://web.archive.org/web/20220203115757id_/https://www.holloid.com/,20220203115757,2026-11-20T19:33:00Z
+Holloid,2022-03-01,f_gmbh_ig,0,http://web.archive.org/web/20220203115757id_/https://www.holloid.com/,20220203115757,2026-11-20T19:33:00Z
+Holloid,2022-03-01,f_description_text,1266 chars,http://web.archive.org/web/20220203115757id_/https://www.holloid.com/,20220203115757,2026-11-20T19:33:00Z
+Holloid,2022-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=holloid.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1646092800&hitsPerPage=100,,2026-11-20T19:33:00Z
+Holloid,2022-03-01,f_certs_before,18,https://crt.sh/?q=%25.holloid.com&output=json,,2026-11-20T19:33:24Z
+Holloid,2022-03-01,f_first_cert_date,2020-10-13,https://crt.sh/?id=3503032003,,2026-11-20T19:33:54Z
+Holloid,2022-03-01,f_product_live,0,https://crt.sh/?q=%25.holloid.com&output=json,,2026-11-20T19:33:24Z
+Holloid,2022-03-01,f_gh_org,Holloid (matched by name),https://api.github.com/search/users?q=Holloid+type%3Aorg,,2026-11-20T19:33:27Z
+Holloid,2022-03-01,f_gh_created,2022-05-30,https://api.github.com/users/Holloid,2022-05-30T13:30:52Z,2026-11-20T19:33:28Z
+Medicalytix,2022-03-01,f_domain,medicalytix.ai,https://medicalytix.ai/,,2026-11-20T19:33:54Z
+Medicalytix,2022-03-01,wb_first_capture_any,2022-07-07,http://web.archive.org/cdx/search/cdx?url=medicalytix.ai&output=json&limit=1&fl=timestamp&from=1996,20220707171115,2026-11-20T19:33:29Z
+Medicalytix,2022-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=medicalytix.ai&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20220228&from=1996,,2026-11-20T19:33:29Z
+Medicalytix,2022-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=medicalytix.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1646092800&hitsPerPage=100,,2026-11-20T19:33:30Z
+Medicalytix,2022-03-01,f_certs_before,8,https://crt.sh/?q=%25.medicalytix.ai&output=json,,2026-11-20T19:33:30Z
+Medicalytix,2022-03-01,f_first_cert_date,2021-12-03,https://crt.sh/?id=5728857890,,2026-11-20T19:33:54Z
+Medicalytix,2022-03-01,f_product_live,0,https://crt.sh/?q=%25.medicalytix.ai&output=json,,2026-11-20T19:33:30Z
+3C-Labs,2022-03-01,f_domain,3c-labs.tech,http://3c-labs.tech,,2026-11-20T19:33:54Z
+3C-Labs,2022-03-01,wb_first_capture_any,2021-10-13,http://web.archive.org/cdx/search/cdx?url=3c-labs.tech&output=json&limit=1&fl=timestamp&from=1996,20211013075615,2026-11-20T19:33:38Z
+3C-Labs,2022-03-01,f_first_capture,2021-10-13,http://web.archive.org/cdx/search/cdx?url=3c-labs.tech&output=json&limit=1&fl=timestamp&from=1996,20211013075615,2026-11-20T19:33:38Z
+3C-Labs,2022-03-01,f_age_months,4,http://web.archive.org/cdx/search/cdx?url=3c-labs.tech&output=json&limit=1&fl=timestamp&from=1996,20211013075615,2026-11-20T19:33:38Z
+3C-Labs,2022-03-01,f_snapshot_date,2021-11-27,http://web.archive.org/web/20211127041747id_/https://3c-labs.tech/,20211127041747,2026-11-20T19:33:41Z
+3C-Labs,2022-03-01,f_impressum,1 (Imprint),http://web.archive.org/web/20211127041747id_/https://3c-labs.tech/,20211127041747,2026-11-20T19:33:41Z
+3C-Labs,2022-03-01,f_pricing_page,0,http://web.archive.org/web/20211127041747id_/https://3c-labs.tech/,20211127041747,2026-11-20T19:33:41Z
+3C-Labs,2022-03-01,f_waitlist,0,http://web.archive.org/web/20211127041747id_/https://3c-labs.tech/,20211127041747,2026-11-20T19:33:41Z
+3C-Labs,2022-03-01,f_customer_logos,0,http://web.archive.org/web/20211127041747id_/https://3c-labs.tech/,20211127041747,2026-11-20T19:33:41Z
+3C-Labs,2022-03-01,f_jobs_page,0,http://web.archive.org/web/20211127041747id_/https://3c-labs.tech/,20211127041747,2026-11-20T19:33:41Z
+3C-Labs,2022-03-01,f_legal_entity,,http://web.archive.org/web/20211127041747id_/https://3c-labs.tech/,20211127041747,2026-11-20T19:33:41Z
+3C-Labs,2022-03-01,f_gmbh_ig,0,http://web.archive.org/web/20211127041747id_/https://3c-labs.tech/,20211127041747,2026-11-20T19:33:41Z
+3C-Labs,2022-03-01,f_description_text,1500 chars,http://web.archive.org/web/20211127041747id_/https://3c-labs.tech/,20211127041747,2026-11-20T19:33:41Z
+3C-Labs,2022-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=3c-labs.tech&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1646092800&hitsPerPage=100,,2026-11-20T19:33:41Z
+3C-Labs,2022-03-01,f_certs_before,20,https://crt.sh/?q=%25.3c-labs.tech&output=json,,2026-11-20T19:33:43Z
+3C-Labs,2022-03-01,f_first_cert_date,2020-08-07,https://crt.sh/?id=3197854369,,2026-11-20T19:33:54Z
+3C-Labs,2022-03-01,f_product_live,0,https://crt.sh/?q=%25.3c-labs.tech&output=json,,2026-11-20T19:33:43Z
+Avemoy,2022-03-01,f_gh_org,avemoy (matched by name),https://api.github.com/search/users?q=Avemoy+type%3Aorg,,2026-11-20T19:33:55Z
+Avemoy,2022-03-01,f_gh_created,2023-03-31,https://api.github.com/users/avemoy,2023-03-31T06:13:19Z,2026-11-20T19:33:57Z
+1point8,2022-03-01,f_domain,1point8.de,https://1point8.de/,,2026-11-20T19:33:54Z
+1point8,2022-03-01,wb_first_capture_any,2021-11-23,http://web.archive.org/cdx/search/cdx?url=1point8.de&output=json&limit=1&fl=timestamp&from=1996,20211123102240,2026-11-20T19:33:55Z
+1point8,2022-03-01,f_first_capture,2021-11-23,http://web.archive.org/cdx/search/cdx?url=1point8.de&output=json&limit=1&fl=timestamp&from=1996,20211123102240,2026-11-20T19:33:55Z
+1point8,2022-03-01,f_age_months,3,http://web.archive.org/cdx/search/cdx?url=1point8.de&output=json&limit=1&fl=timestamp&from=1996,20211123102240,2026-11-20T19:33:55Z
+1point8,2022-03-01,f_snapshot_date,2021-11-26,http://web.archive.org/web/20211126005956id_/https://1point8.de/,20211126005956,2026-11-20T19:34:03Z
+1point8,2022-03-01,f_impressum,0,http://web.archive.org/web/20211126005956id_/https://1point8.de/,20211126005956,2026-11-20T19:34:03Z
+1point8,2022-03-01,f_pricing_page,0,http://web.archive.org/web/20211126005956id_/https://1point8.de/,20211126005956,2026-11-20T19:34:03Z
+1point8,2022-03-01,f_waitlist,0,http://web.archive.org/web/20211126005956id_/https://1point8.de/,20211126005956,2026-11-20T19:34:03Z
+1point8,2022-03-01,f_customer_logos,0,http://web.archive.org/web/20211126005956id_/https://1point8.de/,20211126005956,2026-11-20T19:34:03Z
+1point8,2022-03-01,f_jobs_page,0,http://web.archive.org/web/20211126005956id_/https://1point8.de/,20211126005956,2026-11-20T19:34:03Z
+1point8,2022-03-01,f_legal_entity,,http://web.archive.org/web/20211126005956id_/https://1point8.de/,20211126005956,2026-11-20T19:34:03Z
+1point8,2022-03-01,f_gmbh_ig,0,http://web.archive.org/web/20211126005956id_/https://1point8.de/,20211126005956,2026-11-20T19:34:03Z
+1point8,2022-03-01,f_description_text,22 chars,http://web.archive.org/web/20211126005956id_/https://1point8.de/,20211126005956,2026-11-20T19:34:03Z
+1point8,2022-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=1point8.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1646092800&hitsPerPage=100,,2026-11-20T19:34:04Z
+1point8,2022-03-01,f_certs_before,2,https://crt.sh/?q=%25.1point8.de&output=json,,2026-11-20T19:34:44Z
+1point8,2022-03-01,f_first_cert_date,2021-11-04,https://crt.sh/?id=6302246318,,2026-11-20T19:35:02Z
+1point8,2022-03-01,f_product_live,0,https://crt.sh/?q=%25.1point8.de&output=json,,2026-11-20T19:34:44Z
+Atlas,2022-03-01,f_gh_org,atlas (matched by name),https://api.github.com/search/users?q=Atlas+type%3Aorg,,2026-11-20T19:33:56Z
+Atlas,2022-03-01,f_gh_created,2011-07-18,https://api.github.com/users/atlas,2011-07-18T11:04:49Z,2026-11-20T19:33:58Z
+Atlas,2022-03-01,f_gh_public_repos_before,1,https://api.github.com/orgs/atlas/repos?per_page=100,,2026-11-20T19:34:00Z
+Atlas,2022-03-01,f_gh_commit_weeks_active,0 (repo hiring),https://api.github.com/repos/atlas/hiring/commits?since=2022-01-04T00%3A00%3A00Z&until=2022-03-01T00%3A00%3A00Z&per_page=100,,2026-11-20T19:34:00Z
+Mily Technologies,2022-03-01,f_domain,milytech.com,https://milytech.com/,,2026-11-20T19:33:54Z
+Mily Technologies,2022-03-01,wb_first_capture_any,2021-04-20,http://web.archive.org/cdx/search/cdx?url=milytech.com&output=json&limit=1&fl=timestamp&from=1996,20210420143302,2026-11-20T19:33:56Z
+Mily Technologies,2022-03-01,f_first_capture,2021-04-20,http://web.archive.org/cdx/search/cdx?url=milytech.com&output=json&limit=1&fl=timestamp&from=1996,20210420143302,2026-11-20T19:33:56Z
+Mily Technologies,2022-03-01,f_age_months,10,http://web.archive.org/cdx/search/cdx?url=milytech.com&output=json&limit=1&fl=timestamp&from=1996,20210420143302,2026-11-20T19:33:56Z
+Mily Technologies,2022-03-01,f_snapshot_date,2022-01-20,http://web.archive.org/web/20220120162531id_/https://milytech.com/,20220120162531,2026-11-20T19:34:06Z
+Mily Technologies,2022-03-01,f_impressum,1 (Impressum),http://web.archive.org/web/20220120162531id_/https://milytech.com/,20220120162531,2026-11-20T19:34:06Z
+Mily Technologies,2022-03-01,f_pricing_page,0,http://web.archive.org/web/20220120162531id_/https://milytech.com/,20220120162531,2026-11-20T19:34:06Z
+Mily Technologies,2022-03-01,f_waitlist,0,http://web.archive.org/web/20220120162531id_/https://milytech.com/,20220120162531,2026-11-20T19:34:06Z
+Mily Technologies,2022-03-01,f_customer_logos,1 (our customers),http://web.archive.org/web/20220120162531id_/https://milytech.com/,20220120162531,2026-11-20T19:34:06Z
+Mily Technologies,2022-03-01,f_jobs_page,0,http://web.archive.org/web/20220120162531id_/https://milytech.com/,20220120162531,2026-11-20T19:34:06Z
+Mily Technologies,2022-03-01,f_legal_entity,,http://web.archive.org/web/20220120162531id_/https://milytech.com/,20220120162531,2026-11-20T19:34:06Z
+Mily Technologies,2022-03-01,f_gmbh_ig,0,http://web.archive.org/web/20220120162531id_/https://milytech.com/,20220120162531,2026-11-20T19:34:06Z
+Mily Technologies,2022-03-01,f_description_text,1500 chars,http://web.archive.org/web/20220120162531id_/https://milytech.com/,20220120162531,2026-11-20T19:34:06Z
+Mily Technologies,2022-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=milytech.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1646092800&hitsPerPage=100,,2026-11-20T19:34:07Z
+DASH e.V.,2022-03-01,f_domain,tumdash.com,https://tumdash.com/,,2026-11-20T19:33:57Z
+DASH e.V.,2022-03-01,wb_first_capture_any,2023-01-21,http://web.archive.org/cdx/search/cdx?url=tumdash.com&output=json&limit=1&fl=timestamp&from=1996,20230121091556,2026-11-20T19:34:00Z
+DASH e.V.,2022-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=tumdash.com&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20220228&from=1996,,2026-11-20T19:34:04Z
+DASH e.V.,2022-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=tumdash.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1646092800&hitsPerPage=100,,2026-11-20T19:34:05Z
+SynthesEyes,2022-07-01,f_domain,syntheseyes.de,https://www.syntheseyes.de/,,2026-11-20T19:34:00Z
+SynthesEyes,2022-07-01,wb_first_capture_any,2022-12-05,http://web.archive.org/cdx/search/cdx?url=syntheseyes.de&output=json&limit=1&fl=timestamp&from=1996,20221205214818,2026-11-20T19:34:03Z
+SynthesEyes,2022-07-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=syntheseyes.de&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20220630&from=1996,,2026-11-20T19:34:08Z
+SynthesEyes,2022-07-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=syntheseyes.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1656633600&hitsPerPage=100,,2026-11-20T19:34:08Z
+Noxon,2022-07-01,f_domain,noxon-clothing.de,http://noxon-clothing.de/,,2026-11-20T19:34:39Z
+Noxon,2022-07-01,wb_first_capture_any,2022-08-18,http://web.archive.org/cdx/search/cdx?url=noxon-clothing.de&output=json&limit=1&fl=timestamp&from=1996,20220818075408,2026-11-20T19:34:40Z
+Noxon,2022-07-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=noxon-clothing.de&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20220630&from=1996,,2026-11-20T19:34:41Z
+Noxon,2022-07-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=noxon-clothing.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1656633600&hitsPerPage=100,,2026-11-20T19:34:41Z
+Noxon,2022-07-01,f_certs_before,1,https://crt.sh/?q=%25.noxon-clothing.de&output=json,,2026-11-20T19:34:49Z
+Noxon,2022-07-01,f_first_cert_date,2022-04-27,https://crt.sh/?id=6623673068,,2026-11-20T19:35:13Z
+Noxon,2022-07-01,f_product_live,0,https://crt.sh/?q=%25.noxon-clothing.de&output=json,,2026-11-20T19:34:49Z
+Puray,2022-07-01,f_domain,puray.de,https://www.puray.de,,2026-11-20T19:35:03Z
+Puray,2022-07-01,wb_first_capture_any,2021-10-22,http://web.archive.org/cdx/search/cdx?url=puray.de&output=json&limit=1&fl=timestamp&from=1996,20211022071621,2026-11-20T19:35:05Z
+Puray,2022-07-01,f_first_capture,2021-10-22,http://web.archive.org/cdx/search/cdx?url=puray.de&output=json&limit=1&fl=timestamp&from=1996,20211022071621,2026-11-20T19:35:05Z
+Puray,2022-07-01,f_age_months,8,http://web.archive.org/cdx/search/cdx?url=puray.de&output=json&limit=1&fl=timestamp&from=1996,20211022071621,2026-11-20T19:35:05Z
+Puray,2022-07-01,f_snapshot_date,2022-05-28,http://web.archive.org/web/20220528164202id_/https://puray.de/,20220528164202,2026-11-20T19:35:10Z
+Puray,2022-07-01,f_impressum,0,http://web.archive.org/web/20220528164202id_/https://puray.de/,20220528164202,2026-11-20T19:35:10Z
+Puray,2022-07-01,f_pricing_page,0,http://web.archive.org/web/20220528164202id_/https://puray.de/,20220528164202,2026-11-20T19:35:10Z
+Puray,2022-07-01,f_waitlist,0,http://web.archive.org/web/20220528164202id_/https://puray.de/,20220528164202,2026-11-20T19:35:10Z
+Puray,2022-07-01,f_customer_logos,0,http://web.archive.org/web/20220528164202id_/https://puray.de/,20220528164202,2026-11-20T19:35:10Z
+Puray,2022-07-01,f_jobs_page,0,http://web.archive.org/web/20220528164202id_/https://puray.de/,20220528164202,2026-11-20T19:35:10Z
+Puray,2022-07-01,f_legal_entity,,http://web.archive.org/web/20220528164202id_/https://puray.de/,20220528164202,2026-11-20T19:35:10Z
+Puray,2022-07-01,f_gmbh_ig,0,http://web.archive.org/web/20220528164202id_/https://puray.de/,20220528164202,2026-11-20T19:35:10Z
+Puray,2022-07-01,f_description_text,1500 chars,http://web.archive.org/web/20220528164202id_/https://puray.de/,20220528164202,2026-11-20T19:35:10Z
+Puray,2022-07-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=puray.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1656633600&hitsPerPage=100,,2026-11-20T19:35:10Z
+Medigital,2022-07-01,f_domain,medigital.io,https://www.medigital.io/,,2026-11-20T19:35:15Z
+Medigital,2022-07-01,wb_first_capture_any,2021-12-12,http://web.archive.org/cdx/search/cdx?url=medigital.io&output=json&limit=1&fl=timestamp&from=1996,20211212004533,2026-11-20T19:35:16Z
+Medigital,2022-07-01,f_first_capture,2021-12-12,http://web.archive.org/cdx/search/cdx?url=medigital.io&output=json&limit=1&fl=timestamp&from=1996,20211212004533,2026-11-20T19:35:16Z
+Medigital,2022-07-01,f_age_months,6,http://web.archive.org/cdx/search/cdx?url=medigital.io&output=json&limit=1&fl=timestamp&from=1996,20211212004533,2026-11-20T19:35:16Z
+Medigital,2022-07-01,f_snapshot_date,2022-03-31,http://web.archive.org/web/20220331044708id_/https://www.medigital.io/,20220331044708,2026-11-20T19:35:23Z
+Medigital,2022-07-01,f_impressum,1 (Impressum),http://web.archive.org/web/20220331044708id_/https://www.medigital.io/,20220331044708,2026-11-20T19:35:23Z
+Medigital,2022-07-01,f_pricing_page,0,http://web.archive.org/web/20220331044708id_/https://www.medigital.io/,20220331044708,2026-11-20T19:35:23Z
+Medigital,2022-07-01,f_waitlist,0,http://web.archive.org/web/20220331044708id_/https://www.medigital.io/,20220331044708,2026-11-20T19:35:23Z
+Medigital,2022-07-01,f_customer_logos,0,http://web.archive.org/web/20220331044708id_/https://www.medigital.io/,20220331044708,2026-11-20T19:35:23Z
+Medigital,2022-07-01,f_jobs_page,0,http://web.archive.org/web/20220331044708id_/https://www.medigital.io/,20220331044708,2026-11-20T19:35:23Z
+Medigital,2022-07-01,f_legal_entity,,http://web.archive.org/web/20220331044708id_/https://www.medigital.io/,20220331044708,2026-11-20T19:35:23Z
+Medigital,2022-07-01,f_gmbh_ig,0,http://web.archive.org/web/20220331044708id_/https://www.medigital.io/,20220331044708,2026-11-20T19:35:23Z
+Medigital,2022-07-01,f_description_text,1500 chars,http://web.archive.org/web/20220331044708id_/https://www.medigital.io/,20220331044708,2026-11-20T19:35:23Z
+Medigital,2022-07-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=medigital.io&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1656633600&hitsPerPage=100,,2026-11-20T19:35:23Z
+SUPPLYZ,2022-07-01,f_domain,supplyz.eu,https://supplyz.eu/,,2026-11-20T19:36:05Z
+SUPPLYZ,2022-07-01,wb_first_capture_any,2021-12-26,http://web.archive.org/cdx/search/cdx?url=supplyz.eu&output=json&limit=1&fl=timestamp&from=1996,20211226042825,2026-11-20T19:36:06Z
+SUPPLYZ,2022-07-01,f_first_capture,2021-12-26,http://web.archive.org/cdx/search/cdx?url=supplyz.eu&output=json&limit=1&fl=timestamp&from=1996,20211226042825,2026-11-20T19:36:06Z
+SUPPLYZ,2022-07-01,f_age_months,6,http://web.archive.org/cdx/search/cdx?url=supplyz.eu&output=json&limit=1&fl=timestamp&from=1996,20211226042825,2026-11-20T19:36:06Z
+SUPPLYZ,2022-07-01,f_snapshot_date,2022-05-17,http://web.archive.org/web/20220517213039id_/https://www.supplyz.eu/,20220517213039,2026-11-20T19:36:11Z
+SUPPLYZ,2022-07-01,f_impressum,1 (Impressum),http://web.archive.org/web/20220517213039id_/https://www.supplyz.eu/,20220517213039,2026-11-20T19:36:11Z
+SUPPLYZ,2022-07-01,f_pricing_page,0,http://web.archive.org/web/20220517213039id_/https://www.supplyz.eu/,20220517213039,2026-11-20T19:36:11Z
+SUPPLYZ,2022-07-01,f_waitlist,0,http://web.archive.org/web/20220517213039id_/https://www.supplyz.eu/,20220517213039,2026-11-20T19:36:11Z
+SUPPLYZ,2022-07-01,f_customer_logos,1 (our customers),http://web.archive.org/web/20220517213039id_/https://www.supplyz.eu/,20220517213039,2026-11-20T19:36:11Z
+SUPPLYZ,2022-07-01,f_jobs_page,0,http://web.archive.org/web/20220517213039id_/https://www.supplyz.eu/,20220517213039,2026-11-20T19:36:11Z
+SUPPLYZ,2022-07-01,f_legal_entity,,http://web.archive.org/web/20220517213039id_/https://www.supplyz.eu/,20220517213039,2026-11-20T19:36:11Z
+SUPPLYZ,2022-07-01,f_gmbh_ig,0,http://web.archive.org/web/20220517213039id_/https://www.supplyz.eu/,20220517213039,2026-11-20T19:36:11Z
+SUPPLYZ,2022-07-01,f_description_text,1500 chars,http://web.archive.org/web/20220517213039id_/https://www.supplyz.eu/,20220517213039,2026-11-20T19:36:11Z
+SUPPLYZ,2022-07-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=supplyz.eu&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1656633600&hitsPerPage=100,,2026-11-20T19:36:11Z
+SUPPLYZ,2022-07-01,f_gh_org,SUPPLYZ (matched by name),https://api.github.com/search/users?q=SUPPLYZ+type%3Aorg,,2026-11-20T19:37:56Z
+SUPPLYZ,2022-07-01,f_gh_created,2022-03-14,https://api.github.com/users/SUPPLYZ,2022-03-14T17:40:55Z,2026-11-20T19:37:57Z
+SUPPLYZ,2022-07-01,f_gh_public_repos_before,0,https://api.github.com/orgs/SUPPLYZ/repos?per_page=100,,2026-11-20T19:37:58Z
+Spherecast,2022-11-01,f_domain,spherecast.ai,https://spherecast.ai/,,2026-11-20T19:36:28Z
+Spherecast,2022-11-01,wb_first_capture_any,2023-01-29,http://web.archive.org/cdx/search/cdx?url=spherecast.ai&output=json&limit=1&fl=timestamp&from=1996,20230129183426,2026-11-20T19:36:29Z
+Spherecast,2022-11-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=spherecast.ai&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20221031&from=1996,,2026-11-20T19:36:31Z
+Spherecast,2022-11-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=spherecast.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1667260800&hitsPerPage=100,,2026-11-20T19:36:31Z
+Spherecast,2022-11-01,f_gh_org,Spherecast (matched by name),https://api.github.com/search/users?q=Spherecast+type%3Aorg,,2026-11-20T19:38:22Z
+Spherecast,2022-11-01,f_gh_created,2024-03-22,https://api.github.com/users/Spherecast,2024-03-22T16:18:13Z,2026-11-20T19:38:23Z
+Munich Quantum Instruments,2022-11-01,f_domain,munich-quantum-instruments.com,http://munich-quantum-instruments.com/,,2026-11-20T19:36:34Z
+Munich Quantum Instruments,2022-11-01,wb_first_capture_any,2021-12-08,http://web.archive.org/cdx/search/cdx?url=munich-quantum-instruments.com&output=json&limit=1&fl=timestamp&from=1996,20211208091308,2026-11-20T19:36:36Z
+Munich Quantum Instruments,2022-11-01,f_first_capture,2021-12-08,http://web.archive.org/cdx/search/cdx?url=munich-quantum-instruments.com&output=json&limit=1&fl=timestamp&from=1996,20211208091308,2026-11-20T19:36:36Z
+Munich Quantum Instruments,2022-11-01,f_age_months,10,http://web.archive.org/cdx/search/cdx?url=munich-quantum-instruments.com&output=json&limit=1&fl=timestamp&from=1996,20211208091308,2026-11-20T19:36:36Z
+Munich Quantum Instruments,2022-11-01,f_snapshot_date,2021-12-08,http://web.archive.org/web/20211208091308id_/http://munich-quantum-instruments.com/,20211208091308,2026-11-20T19:36:39Z
+Munich Quantum Instruments,2022-11-01,f_impressum,0,http://web.archive.org/web/20211208091308id_/http://munich-quantum-instruments.com/,20211208091308,2026-11-20T19:36:39Z
+Munich Quantum Instruments,2022-11-01,f_pricing_page,0,http://web.archive.org/web/20211208091308id_/http://munich-quantum-instruments.com/,20211208091308,2026-11-20T19:36:39Z
+Munich Quantum Instruments,2022-11-01,f_waitlist,0,http://web.archive.org/web/20211208091308id_/http://munich-quantum-instruments.com/,20211208091308,2026-11-20T19:36:39Z
+Munich Quantum Instruments,2022-11-01,f_customer_logos,0,http://web.archive.org/web/20211208091308id_/http://munich-quantum-instruments.com/,20211208091308,2026-11-20T19:36:39Z
+Munich Quantum Instruments,2022-11-01,f_jobs_page,0,http://web.archive.org/web/20211208091308id_/http://munich-quantum-instruments.com/,20211208091308,2026-11-20T19:36:39Z
+Munich Quantum Instruments,2022-11-01,f_legal_entity,,http://web.archive.org/web/20211208091308id_/http://munich-quantum-instruments.com/,20211208091308,2026-11-20T19:36:39Z
+Munich Quantum Instruments,2022-11-01,f_gmbh_ig,0,http://web.archive.org/web/20211208091308id_/http://munich-quantum-instruments.com/,20211208091308,2026-11-20T19:36:39Z
+Munich Quantum Instruments,2022-11-01,f_description_text,476 chars,http://web.archive.org/web/20211208091308id_/http://munich-quantum-instruments.com/,20211208091308,2026-11-20T19:36:39Z
+Munich Quantum Instruments,2022-11-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=munich-quantum-instruments.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1667260800&hitsPerPage=100,,2026-11-20T19:36:40Z
+Olive Robotics,2022-11-01,f_domain,oliverobotics.de,https://www.oliverobotics.de/,,2026-11-20T19:37:18Z
+Olive Robotics,2022-11-01,wb_first_capture_any,2021-10-17,http://web.archive.org/cdx/search/cdx?url=oliverobotics.de&output=json&limit=1&fl=timestamp&from=1996,20211017062557,2026-11-20T19:37:19Z
+Olive Robotics,2022-11-01,f_first_capture,2021-10-17,http://web.archive.org/cdx/search/cdx?url=oliverobotics.de&output=json&limit=1&fl=timestamp&from=1996,20211017062557,2026-11-20T19:37:19Z
+Olive Robotics,2022-11-01,f_age_months,12,http://web.archive.org/cdx/search/cdx?url=oliverobotics.de&output=json&limit=1&fl=timestamp&from=1996,20211017062557,2026-11-20T19:37:19Z
+Olive Robotics,2022-11-01,f_snapshot_date,2022-08-11,http://web.archive.org/web/20220811045908id_/https://www.oliverobotics.de/,20220811045908,2026-11-20T19:37:21Z
+Olive Robotics,2022-11-01,f_impressum,1 (Imprint),http://web.archive.org/web/20220811045908id_/https://www.oliverobotics.de/,20220811045908,2026-11-20T19:37:21Z
+Olive Robotics,2022-11-01,f_pricing_page,0,http://web.archive.org/web/20220811045908id_/https://www.oliverobotics.de/,20220811045908,2026-11-20T19:37:21Z
+Olive Robotics,2022-11-01,f_waitlist,1 (Early Access),http://web.archive.org/web/20220811045908id_/https://www.oliverobotics.de/,20220811045908,2026-11-20T19:37:21Z
+Olive Robotics,2022-11-01,f_customer_logos,0,http://web.archive.org/web/20220811045908id_/https://www.oliverobotics.de/,20220811045908,2026-11-20T19:37:21Z
+Olive Robotics,2022-11-01,f_jobs_page,0,http://web.archive.org/web/20220811045908id_/https://www.oliverobotics.de/,20220811045908,2026-11-20T19:37:21Z
+Olive Robotics,2022-11-01,f_legal_entity,,http://web.archive.org/web/20220811045908id_/https://www.oliverobotics.de/,20220811045908,2026-11-20T19:37:21Z
+Olive Robotics,2022-11-01,f_gmbh_ig,0,http://web.archive.org/web/20220811045908id_/https://www.oliverobotics.de/,20220811045908,2026-11-20T19:37:21Z
+Olive Robotics,2022-11-01,f_description_text,1500 chars,http://web.archive.org/web/20220811045908id_/https://www.oliverobotics.de/,20220811045908,2026-11-20T19:37:21Z
+Olive Robotics,2022-11-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=oliverobotics.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1667260800&hitsPerPage=100,,2026-11-20T19:37:21Z
+Olive Robotics,2022-11-01,f_gh_org,oliverobotics (matched by name),https://api.github.com/search/users?q=Olive+Robotics+type%3Aorg,,2026-11-20T19:39:06Z
+Olive Robotics,2022-11-01,f_gh_created,2021-04-10,https://api.github.com/users/oliverobotics,2021-04-10T11:16:17Z,2026-11-20T19:39:08Z
+Olive Robotics,2022-11-01,f_gh_public_repos_before,0,https://api.github.com/orgs/oliverobotics/repos?per_page=100,,2026-11-20T19:39:09Z
+Roundpeg Technologies,2022-11-01,f_domain,roundpeg.tech,https://roundpeg.tech,,2026-11-20T19:37:33Z
+Roundpeg Technologies,2022-11-01,wb_first_capture_any,2021-12-23,http://web.archive.org/cdx/search/cdx?url=roundpeg.tech&output=json&limit=1&fl=timestamp&from=1996,20211223065527,2026-11-20T19:37:33Z
+Roundpeg Technologies,2022-11-01,f_first_capture,2021-12-23,http://web.archive.org/cdx/search/cdx?url=roundpeg.tech&output=json&limit=1&fl=timestamp&from=1996,20211223065527,2026-11-20T19:37:33Z
+Roundpeg Technologies,2022-11-01,f_age_months,10,http://web.archive.org/cdx/search/cdx?url=roundpeg.tech&output=json&limit=1&fl=timestamp&from=1996,20211223065527,2026-11-20T19:37:33Z
+Roundpeg Technologies,2022-11-01,f_snapshot_date,2022-10-11,http://web.archive.org/web/20221011104936id_/https://roundpeg.techinfo@roundpeg.tech/,20221011104936,2026-11-20T19:37:36Z
+Roundpeg Technologies,2022-11-01,f_impressum,1 (Impressum),http://web.archive.org/web/20221011104936id_/https://roundpeg.techinfo@roundpeg.tech/,20221011104936,2026-11-20T19:37:36Z
+Roundpeg Technologies,2022-11-01,f_pricing_page,0,http://web.archive.org/web/20221011104936id_/https://roundpeg.techinfo@roundpeg.tech/,20221011104936,2026-11-20T19:37:36Z
+Roundpeg Technologies,2022-11-01,f_waitlist,0,http://web.archive.org/web/20221011104936id_/https://roundpeg.techinfo@roundpeg.tech/,20221011104936,2026-11-20T19:37:36Z
+Roundpeg Technologies,2022-11-01,f_customer_logos,1 (our customers),http://web.archive.org/web/20221011104936id_/https://roundpeg.techinfo@roundpeg.tech/,20221011104936,2026-11-20T19:37:36Z
+Roundpeg Technologies,2022-11-01,f_jobs_page,0,http://web.archive.org/web/20221011104936id_/https://roundpeg.techinfo@roundpeg.tech/,20221011104936,2026-11-20T19:37:36Z
+Roundpeg Technologies,2022-11-01,f_legal_entity,,http://web.archive.org/web/20221011104936id_/https://roundpeg.techinfo@roundpeg.tech/,20221011104936,2026-11-20T19:37:36Z
+Roundpeg Technologies,2022-11-01,f_gmbh_ig,0,http://web.archive.org/web/20221011104936id_/https://roundpeg.techinfo@roundpeg.tech/,20221011104936,2026-11-20T19:37:36Z
+Roundpeg Technologies,2022-11-01,f_description_text,1500 chars,http://web.archive.org/web/20221011104936id_/https://roundpeg.techinfo@roundpeg.tech/,20221011104936,2026-11-20T19:37:36Z
+Roundpeg Technologies,2022-11-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=roundpeg.tech&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1667260800&hitsPerPage=100,,2026-11-20T19:37:36Z
+BAVERTIS,2022-11-01,f_domain,bavertis.com,https://bavertis.com/,,2026-11-20T19:37:47Z
+BAVERTIS,2022-11-01,wb_first_capture_any,2021-05-12,http://web.archive.org/cdx/search/cdx?url=bavertis.com&output=json&limit=1&fl=timestamp&from=1996,20210512235411,2026-11-20T19:37:47Z
+BAVERTIS,2022-11-01,f_first_capture,2021-05-12,http://web.archive.org/cdx/search/cdx?url=bavertis.com&output=json&limit=1&fl=timestamp&from=1996,20210512235411,2026-11-20T19:37:47Z
+BAVERTIS,2022-11-01,f_age_months,17,http://web.archive.org/cdx/search/cdx?url=bavertis.com&output=json&limit=1&fl=timestamp&from=1996,20210512235411,2026-11-20T19:37:47Z
+BAVERTIS,2022-11-01,f_snapshot_date,2022-07-05,http://web.archive.org/web/20220705205544id_/https://bavertis.com/,20220705205544,2026-11-20T19:37:52Z
+BAVERTIS,2022-11-01,f_impressum,1 (Imprint),http://web.archive.org/web/20220705205544id_/https://bavertis.com/,20220705205544,2026-11-20T19:37:52Z
+BAVERTIS,2022-11-01,f_pricing_page,0,http://web.archive.org/web/20220705205544id_/https://bavertis.com/,20220705205544,2026-11-20T19:37:52Z
+BAVERTIS,2022-11-01,f_waitlist,0,http://web.archive.org/web/20220705205544id_/https://bavertis.com/,20220705205544,2026-11-20T19:37:52Z
+BAVERTIS,2022-11-01,f_customer_logos,0,http://web.archive.org/web/20220705205544id_/https://bavertis.com/,20220705205544,2026-11-20T19:37:52Z
+BAVERTIS,2022-11-01,f_jobs_page,1 (Join our team),http://web.archive.org/web/20220705205544id_/https://bavertis.com/,20220705205544,2026-11-20T19:37:52Z
+BAVERTIS,2022-11-01,f_legal_entity,GmbH,http://web.archive.org/web/20220705205544id_/https://bavertis.com/,20220705205544,2026-11-20T19:37:52Z
+BAVERTIS,2022-11-01,f_gmbh_ig,0,http://web.archive.org/web/20220705205544id_/https://bavertis.com/,20220705205544,2026-11-20T19:37:52Z
+BAVERTIS,2022-11-01,f_description_text,1500 chars,http://web.archive.org/web/20220705205544id_/https://bavertis.com/,20220705205544,2026-11-20T19:37:52Z
+BAVERTIS,2022-11-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=bavertis.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1667260800&hitsPerPage=100,,2026-11-20T19:37:53Z
+Energyminer,2022-11-01,f_domain,energyminer.eu,https://www.energyminer.eu/,,2026-11-20T19:38:19Z
+Energyminer,2022-11-01,wb_first_capture_any,2021-11-29,http://web.archive.org/cdx/search/cdx?url=energyminer.eu&output=json&limit=1&fl=timestamp&from=1996,20211129132830,2026-11-20T19:38:19Z
+Energyminer,2022-11-01,f_first_capture,2021-11-29,http://web.archive.org/cdx/search/cdx?url=energyminer.eu&output=json&limit=1&fl=timestamp&from=1996,20211129132830,2026-11-20T19:38:19Z
+Energyminer,2022-11-01,f_age_months,11,http://web.archive.org/cdx/search/cdx?url=energyminer.eu&output=json&limit=1&fl=timestamp&from=1996,20211129132830,2026-11-20T19:38:19Z
+Energyminer,2022-11-01,f_snapshot_date,2022-10-02,http://web.archive.org/web/20221002123219id_/https://energyminer.eu/,20221002123219,2026-11-20T19:38:26Z
+Energyminer,2022-11-01,f_impressum,1 (Impressum),http://web.archive.org/web/20221002123219id_/https://energyminer.eu/,20221002123219,2026-11-20T19:38:26Z
+Energyminer,2022-11-01,f_pricing_page,0,http://web.archive.org/web/20221002123219id_/https://energyminer.eu/,20221002123219,2026-11-20T19:38:26Z
+Energyminer,2022-11-01,f_waitlist,0,http://web.archive.org/web/20221002123219id_/https://energyminer.eu/,20221002123219,2026-11-20T19:38:26Z
+Energyminer,2022-11-01,f_customer_logos,0,http://web.archive.org/web/20221002123219id_/https://energyminer.eu/,20221002123219,2026-11-20T19:38:26Z
+Energyminer,2022-11-01,f_jobs_page,0,http://web.archive.org/web/20221002123219id_/https://energyminer.eu/,20221002123219,2026-11-20T19:38:26Z
+Energyminer,2022-11-01,f_legal_entity,,http://web.archive.org/web/20221002123219id_/https://energyminer.eu/,20221002123219,2026-11-20T19:38:26Z
+Energyminer,2022-11-01,f_gmbh_ig,0,http://web.archive.org/web/20221002123219id_/https://energyminer.eu/,20221002123219,2026-11-20T19:38:26Z
+Energyminer,2022-11-01,f_description_text,1500 chars,http://web.archive.org/web/20221002123219id_/https://energyminer.eu/,20221002123219,2026-11-20T19:38:26Z
+Energyminer,2022-11-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=energyminer.eu&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1667260800&hitsPerPage=100,,2026-11-20T19:38:26Z
+Hapticlabs,2022-11-01,f_domain,hapticlabs.io,https://www.hapticlabs.io/,,2026-11-20T19:38:24Z
+Hapticlabs,2022-11-01,wb_first_capture_any,2021-02-15,http://web.archive.org/cdx/search/cdx?url=hapticlabs.io&output=json&limit=1&fl=timestamp&from=1996,20210215131912,2026-11-20T19:38:24Z
+Hapticlabs,2022-11-01,f_first_capture,2021-02-15,http://web.archive.org/cdx/search/cdx?url=hapticlabs.io&output=json&limit=1&fl=timestamp&from=1996,20210215131912,2026-11-20T19:38:24Z
+Hapticlabs,2022-11-01,f_age_months,20,http://web.archive.org/cdx/search/cdx?url=hapticlabs.io&output=json&limit=1&fl=timestamp&from=1996,20210215131912,2026-11-20T19:38:24Z
+Hapticlabs,2022-11-01,f_snapshot_date,2022-10-02,http://web.archive.org/web/20221002215609id_/https://www.hapticlabs.io/,20221002215609,2026-11-20T19:38:26Z
+Hapticlabs,2022-11-01,f_impressum,0,http://web.archive.org/web/20221002215609id_/https://www.hapticlabs.io/,20221002215609,2026-11-20T19:38:26Z
+Hapticlabs,2022-11-01,f_pricing_page,0,http://web.archive.org/web/20221002215609id_/https://www.hapticlabs.io/,20221002215609,2026-11-20T19:38:26Z
+Hapticlabs,2022-11-01,f_waitlist,0,http://web.archive.org/web/20221002215609id_/https://www.hapticlabs.io/,20221002215609,2026-11-20T19:38:26Z
+Hapticlabs,2022-11-01,f_customer_logos,1 (our customers),http://web.archive.org/web/20221002215609id_/https://www.hapticlabs.io/,20221002215609,2026-11-20T19:38:26Z
+Hapticlabs,2022-11-01,f_jobs_page,0,http://web.archive.org/web/20221002215609id_/https://www.hapticlabs.io/,20221002215609,2026-11-20T19:38:26Z
+Hapticlabs,2022-11-01,f_legal_entity,,http://web.archive.org/web/20221002215609id_/https://www.hapticlabs.io/,20221002215609,2026-11-20T19:38:26Z
+Hapticlabs,2022-11-01,f_gmbh_ig,0,http://web.archive.org/web/20221002215609id_/https://www.hapticlabs.io/,20221002215609,2026-11-20T19:38:26Z
+Hapticlabs,2022-11-01,f_description_text,1500 chars,http://web.archive.org/web/20221002215609id_/https://www.hapticlabs.io/,20221002215609,2026-11-20T19:38:26Z
+Hapticlabs,2022-11-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=hapticlabs.io&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1667260800&hitsPerPage=100,,2026-11-20T19:38:27Z
+Hapticlabs,2022-11-01,f_gh_org,HapticlabsIO (matched by blog),https://api.github.com/search/users?q=hapticlabs.io+in%3Ablog+type%3Aorg,,2026-11-20T19:39:44Z
+Hapticlabs,2022-11-01,f_gh_created,2023-04-06,https://api.github.com/users/HapticlabsIO,2023-04-06T14:58:05Z,2026-11-20T19:39:45Z
+caire,2022-11-01,f_domain,caire.ai,https://caire.ai/,,2026-11-20T19:38:51Z
+caire,2022-11-01,wb_first_capture_any,2018-03-27,http://web.archive.org/cdx/search/cdx?url=caire.ai&output=json&limit=1&fl=timestamp&from=1996,20180327213435,2026-11-20T19:38:52Z
+caire,2022-11-01,f_first_capture,2018-03-27,http://web.archive.org/cdx/search/cdx?url=caire.ai&output=json&limit=1&fl=timestamp&from=1996,20180327213435,2026-11-20T19:38:52Z
+caire,2022-11-01,f_age_months,55,http://web.archive.org/cdx/search/cdx?url=caire.ai&output=json&limit=1&fl=timestamp&from=1996,20180327213435,2026-11-20T19:38:52Z
+caire,2022-11-01,f_snapshot_date,2022-07-04,http://web.archive.org/web/20220704110611id_/https://caire.ai/,20220704110611,2026-11-20T19:38:54Z
+caire,2022-11-01,f_impressum,0,http://web.archive.org/web/20220704110611id_/https://caire.ai/,20220704110611,2026-11-20T19:38:54Z
+caire,2022-11-01,f_pricing_page,0,http://web.archive.org/web/20220704110611id_/https://caire.ai/,20220704110611,2026-11-20T19:38:54Z
+caire,2022-11-01,f_waitlist,0,http://web.archive.org/web/20220704110611id_/https://caire.ai/,20220704110611,2026-11-20T19:38:54Z
+caire,2022-11-01,f_customer_logos,0,http://web.archive.org/web/20220704110611id_/https://caire.ai/,20220704110611,2026-11-20T19:38:54Z
+caire,2022-11-01,f_jobs_page,0,http://web.archive.org/web/20220704110611id_/https://caire.ai/,20220704110611,2026-11-20T19:38:54Z
+caire,2022-11-01,f_legal_entity,,http://web.archive.org/web/20220704110611id_/https://caire.ai/,20220704110611,2026-11-20T19:38:54Z
+caire,2022-11-01,f_gmbh_ig,0,http://web.archive.org/web/20220704110611id_/https://caire.ai/,20220704110611,2026-11-20T19:38:54Z
+caire,2022-11-01,f_description_text,1500 chars,http://web.archive.org/web/20220704110611id_/https://caire.ai/,20220704110611,2026-11-20T19:38:54Z
+caire,2022-11-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=caire.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1667260800&hitsPerPage=100,,2026-11-20T19:38:55Z
+Scholarmaps,2022-11-01,f_domain,scholarmaps.com,https://www.scholarmaps.com/,,2026-11-20T19:39:09Z
+Scholarmaps,2022-11-01,wb_first_capture_any,2023-04-06,http://web.archive.org/cdx/search/cdx?url=scholarmaps.com&output=json&limit=1&fl=timestamp&from=1996,20230406140833,2026-11-20T19:39:09Z
+Scholarmaps,2022-11-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=scholarmaps.com&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20221031&from=1996,,2026-11-20T19:39:11Z
+Scholarmaps,2022-11-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=scholarmaps.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1667260800&hitsPerPage=100,,2026-11-20T19:39:11Z
+Crestworks,2022-11-01,f_gh_org,crestworks (matched by name),https://api.github.com/search/users?q=Crestworks+type%3Aorg,,2026-11-20T19:39:40Z
+Crestworks,2022-11-01,f_gh_created,2019-07-05,https://api.github.com/users/crestworks,2019-07-05T02:20:47Z,2026-11-20T19:39:41Z
+Crestworks,2022-11-01,f_gh_public_repos_before,0,https://api.github.com/orgs/crestworks/repos?per_page=100,,2026-11-20T19:39:42Z
+Emil Motors,2022-11-01,f_domain,emil-motors.com,https://www.emil-motors.com/?lang=de,,2026-11-20T19:39:42Z
+Emil Motors,2022-11-01,wb_first_capture_any,2021-12-01,http://web.archive.org/cdx/search/cdx?url=emil-motors.com&output=json&limit=1&fl=timestamp&from=1996,20211201044636,2026-11-20T19:39:43Z
+Emil Motors,2022-11-01,f_first_capture,2021-12-01,http://web.archive.org/cdx/search/cdx?url=emil-motors.com&output=json&limit=1&fl=timestamp&from=1996,20211201044636,2026-11-20T19:39:43Z
+Emil Motors,2022-11-01,f_age_months,11,http://web.archive.org/cdx/search/cdx?url=emil-motors.com&output=json&limit=1&fl=timestamp&from=1996,20211201044636,2026-11-20T19:39:43Z
+Emil Motors,2022-11-01,f_snapshot_date,2022-01-14,http://web.archive.org/web/20220114002306id_/https://www.emil-motors.com/,20220114002306,2026-11-20T19:39:46Z
+Emil Motors,2022-11-01,f_impressum,1 (Impressum),http://web.archive.org/web/20220114002306id_/https://www.emil-motors.com/,20220114002306,2026-11-20T19:39:46Z
+Emil Motors,2022-11-01,f_pricing_page,0,http://web.archive.org/web/20220114002306id_/https://www.emil-motors.com/,20220114002306,2026-11-20T19:39:46Z
+Emil Motors,2022-11-01,f_waitlist,0,http://web.archive.org/web/20220114002306id_/https://www.emil-motors.com/,20220114002306,2026-11-20T19:39:46Z
+Emil Motors,2022-11-01,f_customer_logos,0,http://web.archive.org/web/20220114002306id_/https://www.emil-motors.com/,20220114002306,2026-11-20T19:39:46Z
+Emil Motors,2022-11-01,f_jobs_page,0,http://web.archive.org/web/20220114002306id_/https://www.emil-motors.com/,20220114002306,2026-11-20T19:39:46Z
+Emil Motors,2022-11-01,f_legal_entity,,http://web.archive.org/web/20220114002306id_/https://www.emil-motors.com/,20220114002306,2026-11-20T19:39:46Z
+Emil Motors,2022-11-01,f_gmbh_ig,0,http://web.archive.org/web/20220114002306id_/https://www.emil-motors.com/,20220114002306,2026-11-20T19:39:46Z
+Emil Motors,2022-11-01,f_description_text,1500 chars,http://web.archive.org/web/20220114002306id_/https://www.emil-motors.com/,20220114002306,2026-11-20T19:39:46Z
+Emil Motors,2022-11-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=emil-motors.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1667260800&hitsPerPage=100,,2026-11-20T19:39:46Z
+AcTLAbS,2022-11-01,f_domain,actlabs.space,https://www.actlabs.space/,,2026-11-20T19:39:45Z
+AcTLAbS,2022-11-01,wb_first_capture_any,2023-02-23,http://web.archive.org/cdx/search/cdx?url=actlabs.space&output=json&limit=1&fl=timestamp&from=1996,20230223200200,2026-11-20T19:39:46Z
+AcTLAbS,2022-11-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=actlabs.space&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20221031&from=1996,,2026-11-20T19:39:47Z
+AcTLAbS,2022-11-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=actlabs.space&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1667260800&hitsPerPage=100,,2026-11-20T19:39:47Z
+AMPERIAL - Smart Window Technologies,2023-03-01,f_domain,amperial.eu,https://www.amperial.eu/Home/,,2026-11-20T19:40:19Z
+AMPERIAL - Smart Window Technologies,2023-03-01,wb_first_capture_any,2023-03-30,http://web.archive.org/cdx/search/cdx?url=amperial.eu&output=json&limit=1&fl=timestamp&from=1996,20230330104848,2026-11-20T19:40:19Z
+AMPERIAL - Smart Window Technologies,2023-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=amperial.eu&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20230228&from=1996,,2026-11-20T19:40:20Z
+AMPERIAL - Smart Window Technologies,2023-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=amperial.eu&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1677628800&hitsPerPage=100,,2026-11-20T19:40:21Z
+workride.,2023-03-01,f_domain,workride.de,https://workride.de/,,2026-11-20T19:40:45Z
+workride.,2023-03-01,wb_first_capture_any,2023-01-22,http://web.archive.org/cdx/search/cdx?url=workride.de&output=json&limit=1&fl=timestamp&from=1996,20230122180921,2026-11-20T19:40:46Z
+workride.,2023-03-01,f_first_capture,2023-01-22,http://web.archive.org/cdx/search/cdx?url=workride.de&output=json&limit=1&fl=timestamp&from=1996,20230122180921,2026-11-20T19:40:46Z
+workride.,2023-03-01,f_age_months,1,http://web.archive.org/cdx/search/cdx?url=workride.de&output=json&limit=1&fl=timestamp&from=1996,20230122180921,2026-11-20T19:40:46Z
+workride.,2023-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=workride.de&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20230228&from=1996,,2026-11-20T19:40:47Z
+workride.,2023-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=workride.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1677628800&hitsPerPage=100,,2026-11-20T19:40:48Z
+MIMBIOSIS,2023-03-01,f_domain,mimbiosis.com,https://mimbiosis.com/,,2026-11-20T19:40:56Z
+MIMBIOSIS,2023-03-01,wb_first_capture_any,2023-04-05,http://web.archive.org/cdx/search/cdx?url=mimbiosis.com&output=json&limit=1&fl=timestamp&from=1996,20230405080823,2026-11-20T19:40:58Z
+MIMBIOSIS,2023-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=mimbiosis.com&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20230228&from=1996,,2026-11-20T19:40:59Z
+MIMBIOSIS,2023-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=mimbiosis.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1677628800&hitsPerPage=100,,2026-11-20T19:40:59Z
+neuroTUM,2023-03-01,f_domain,neurotum.com,https://neurotum.com,,2026-11-20T19:41:33Z
+neuroTUM,2023-03-01,wb_first_capture_any,2014-12-30,http://web.archive.org/cdx/search/cdx?url=neurotum.com&output=json&limit=1&fl=timestamp&from=1996,20141230230736,2026-11-20T19:41:33Z
+neuroTUM,2023-03-01,f_first_capture,2014-12-30,http://web.archive.org/cdx/search/cdx?url=neurotum.com&output=json&limit=1&fl=timestamp&from=1996,20141230230736,2026-11-20T19:41:33Z
+neuroTUM,2023-03-01,f_age_months,98,http://web.archive.org/cdx/search/cdx?url=neurotum.com&output=json&limit=1&fl=timestamp&from=1996,20141230230736,2026-11-20T19:41:33Z
+neuroTUM,2023-03-01,f_snapshot_date,2022-11-30,http://web.archive.org/web/20221130084322id_/https://www.neurotum.com/,20221130084322,2026-11-20T19:41:35Z
+neuroTUM,2023-03-01,f_impressum,1 (Impressum),http://web.archive.org/web/20221130084322id_/https://www.neurotum.com/,20221130084322,2026-11-20T19:41:35Z
+neuroTUM,2023-03-01,f_pricing_page,0,http://web.archive.org/web/20221130084322id_/https://www.neurotum.com/,20221130084322,2026-11-20T19:41:35Z
+neuroTUM,2023-03-01,f_waitlist,0,http://web.archive.org/web/20221130084322id_/https://www.neurotum.com/,20221130084322,2026-11-20T19:41:35Z
+neuroTUM,2023-03-01,f_customer_logos,0,http://web.archive.org/web/20221130084322id_/https://www.neurotum.com/,20221130084322,2026-11-20T19:41:35Z
+neuroTUM,2023-03-01,f_jobs_page,0,http://web.archive.org/web/20221130084322id_/https://www.neurotum.com/,20221130084322,2026-11-20T19:41:35Z
+neuroTUM,2023-03-01,f_legal_entity,,http://web.archive.org/web/20221130084322id_/https://www.neurotum.com/,20221130084322,2026-11-20T19:41:35Z
+neuroTUM,2023-03-01,f_gmbh_ig,0,http://web.archive.org/web/20221130084322id_/https://www.neurotum.com/,20221130084322,2026-11-20T19:41:35Z
+neuroTUM,2023-03-01,f_description_text,1190 chars,http://web.archive.org/web/20221130084322id_/https://www.neurotum.com/,20221130084322,2026-11-20T19:41:35Z
+neuroTUM,2023-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=neurotum.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1677628800&hitsPerPage=100,,2026-11-20T19:41:36Z
+neuroTUM,2023-03-01,f_gh_org,neuroTUM (matched by name),https://api.github.com/search/users?q=neuroTUM+type%3Aorg,,2026-11-20T19:43:58Z
+neuroTUM,2023-03-01,f_gh_created,2023-06-08,https://api.github.com/users/neuroTUM,2023-06-08T17:17:16Z,2026-11-20T19:43:59Z
+CyberDesk,2023-03-01,f_domain,cyberdesk.app,https://cyberdesk.app,,2026-11-20T19:41:38Z
+CyberDesk,2023-03-01,wb_first_capture_any,2023-02-02,http://web.archive.org/cdx/search/cdx?url=cyberdesk.app&output=json&limit=1&fl=timestamp&from=1996,20230202181147,2026-11-20T19:41:39Z
+CyberDesk,2023-03-01,f_first_capture,2023-02-02,http://web.archive.org/cdx/search/cdx?url=cyberdesk.app&output=json&limit=1&fl=timestamp&from=1996,20230202181147,2026-11-20T19:41:39Z
+CyberDesk,2023-03-01,f_age_months,0,http://web.archive.org/cdx/search/cdx?url=cyberdesk.app&output=json&limit=1&fl=timestamp&from=1996,20230202181147,2026-11-20T19:41:39Z
+CyberDesk,2023-03-01,f_snapshot_date,2023-02-02,http://web.archive.org/web/20230202181147id_/https://www.cyberdesk.app/,20230202181147,2026-11-20T19:41:42Z
+CyberDesk,2023-03-01,f_impressum,1 (Impressum),http://web.archive.org/web/20230202181147id_/https://www.cyberdesk.app/,20230202181147,2026-11-20T19:41:42Z
+CyberDesk,2023-03-01,f_pricing_page,0,http://web.archive.org/web/20230202181147id_/https://www.cyberdesk.app/,20230202181147,2026-11-20T19:41:42Z
+CyberDesk,2023-03-01,f_waitlist,0,http://web.archive.org/web/20230202181147id_/https://www.cyberdesk.app/,20230202181147,2026-11-20T19:41:42Z
+CyberDesk,2023-03-01,f_customer_logos,0,http://web.archive.org/web/20230202181147id_/https://www.cyberdesk.app/,20230202181147,2026-11-20T19:41:42Z
+CyberDesk,2023-03-01,f_jobs_page,0,http://web.archive.org/web/20230202181147id_/https://www.cyberdesk.app/,20230202181147,2026-11-20T19:41:42Z
+CyberDesk,2023-03-01,f_legal_entity,,http://web.archive.org/web/20230202181147id_/https://www.cyberdesk.app/,20230202181147,2026-11-20T19:41:42Z
+CyberDesk,2023-03-01,f_gmbh_ig,0,http://web.archive.org/web/20230202181147id_/https://www.cyberdesk.app/,20230202181147,2026-11-20T19:41:42Z
+CyberDesk,2023-03-01,f_description_text,38 chars,http://web.archive.org/web/20230202181147id_/https://www.cyberdesk.app/,20230202181147,2026-11-20T19:41:42Z
+CyberDesk,2023-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=cyberdesk.app&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1677628800&hitsPerPage=100,,2026-11-20T19:41:43Z
+CyberDesk,2023-03-01,f_gh_org,CYBERDESK (matched by name),https://api.github.com/search/users?q=CyberDesk+type%3Aorg,,2026-11-20T19:43:10Z
+CyberDesk,2023-03-01,f_gh_created,2016-06-17,https://api.github.com/users/CYBERDESK,2016-06-17T13:38:10Z,2026-11-20T19:43:11Z
+CyberDesk,2023-03-01,f_gh_public_repos_before,0,https://api.github.com/orgs/CYBERDESK/repos?per_page=100,,2026-11-20T19:43:12Z
+deltaVision,2023-03-01,f_domain,deltavision.space,https://deltaVision.space,,2026-11-20T19:42:09Z
+deltaVision,2023-03-01,wb_first_capture_any,2021-11-29,http://web.archive.org/cdx/search/cdx?url=deltavision.space&output=json&limit=1&fl=timestamp&from=1996,20211129115656,2026-11-20T19:42:09Z
+deltaVision,2023-03-01,f_first_capture,2021-11-29,http://web.archive.org/cdx/search/cdx?url=deltavision.space&output=json&limit=1&fl=timestamp&from=1996,20211129115656,2026-11-20T19:42:09Z
+deltaVision,2023-03-01,f_age_months,15,http://web.archive.org/cdx/search/cdx?url=deltavision.space&output=json&limit=1&fl=timestamp&from=1996,20211129115656,2026-11-20T19:42:09Z
+deltaVision,2023-03-01,f_snapshot_date,2023-02-04,http://web.archive.org/web/20230204044530id_/https://deltavision.space/,20230204044530,2026-11-20T19:42:11Z
+deltaVision,2023-03-01,f_impressum,1 (Impressum),http://web.archive.org/web/20230204044530id_/https://deltavision.space/,20230204044530,2026-11-20T19:42:11Z
+deltaVision,2023-03-01,f_pricing_page,0,http://web.archive.org/web/20230204044530id_/https://deltavision.space/,20230204044530,2026-11-20T19:42:11Z
+deltaVision,2023-03-01,f_waitlist,0,http://web.archive.org/web/20230204044530id_/https://deltavision.space/,20230204044530,2026-11-20T19:42:11Z
+deltaVision,2023-03-01,f_customer_logos,1 (our customers),http://web.archive.org/web/20230204044530id_/https://deltavision.space/,20230204044530,2026-11-20T19:42:11Z
+deltaVision,2023-03-01,f_jobs_page,0,http://web.archive.org/web/20230204044530id_/https://deltavision.space/,20230204044530,2026-11-20T19:42:11Z
+deltaVision,2023-03-01,f_legal_entity,GmbH,http://web.archive.org/web/20230204044530id_/https://deltavision.space/,20230204044530,2026-11-20T19:42:11Z
+deltaVision,2023-03-01,f_gmbh_ig,0,http://web.archive.org/web/20230204044530id_/https://deltavision.space/,20230204044530,2026-11-20T19:42:11Z
+deltaVision,2023-03-01,f_description_text,1393 chars,http://web.archive.org/web/20230204044530id_/https://deltavision.space/,20230204044530,2026-11-20T19:42:11Z
+deltaVision,2023-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=deltavision.space&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1677628800&hitsPerPage=100,,2026-11-20T19:42:12Z
+mo:re,2023-03-01,f_domain,more-ls.com,https://more-ls.com,,2026-11-20T19:42:13Z
+mo:re,2023-03-01,wb_first_capture_any,2023-04-02,http://web.archive.org/cdx/search/cdx?url=more-ls.com&output=json&limit=1&fl=timestamp&from=1996,20230402103029,2026-11-20T19:42:13Z
+mo:re,2023-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=more-ls.com&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20230228&from=1996,,2026-11-20T19:42:14Z
+mo:re,2023-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=more-ls.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1677628800&hitsPerPage=100,,2026-11-20T19:42:15Z
+Biomotion Technologies,2023-03-01,f_domain,biomotion.tech,https://biomotion.tech,,2026-11-20T19:42:34Z
+Biomotion Technologies,2023-03-01,wb_first_capture_any,2021-02-17,http://web.archive.org/cdx/search/cdx?url=biomotion.tech&output=json&limit=1&fl=timestamp&from=1996,20210217163022,2026-11-20T19:42:34Z
+Biomotion Technologies,2023-03-01,f_first_capture,2021-02-17,http://web.archive.org/cdx/search/cdx?url=biomotion.tech&output=json&limit=1&fl=timestamp&from=1996,20210217163022,2026-11-20T19:42:34Z
+Biomotion Technologies,2023-03-01,f_age_months,24,http://web.archive.org/cdx/search/cdx?url=biomotion.tech&output=json&limit=1&fl=timestamp&from=1996,20210217163022,2026-11-20T19:42:34Z
+Biomotion Technologies,2023-03-01,f_snapshot_date,2023-01-27,http://web.archive.org/web/20230127180400id_/https://biomotion.tech/,20230127180400,2026-11-20T19:42:37Z
+Biomotion Technologies,2023-03-01,f_impressum,0,http://web.archive.org/web/20230127180400id_/https://biomotion.tech/,20230127180400,2026-11-20T19:42:37Z
+Biomotion Technologies,2023-03-01,f_pricing_page,0,http://web.archive.org/web/20230127180400id_/https://biomotion.tech/,20230127180400,2026-11-20T19:42:37Z
+Biomotion Technologies,2023-03-01,f_waitlist,0,http://web.archive.org/web/20230127180400id_/https://biomotion.tech/,20230127180400,2026-11-20T19:42:37Z
+Biomotion Technologies,2023-03-01,f_customer_logos,0,http://web.archive.org/web/20230127180400id_/https://biomotion.tech/,20230127180400,2026-11-20T19:42:37Z
+Biomotion Technologies,2023-03-01,f_jobs_page,0,http://web.archive.org/web/20230127180400id_/https://biomotion.tech/,20230127180400,2026-11-20T19:42:37Z
+Biomotion Technologies,2023-03-01,f_legal_entity,,http://web.archive.org/web/20230127180400id_/https://biomotion.tech/,20230127180400,2026-11-20T19:42:37Z
+Biomotion Technologies,2023-03-01,f_gmbh_ig,0,http://web.archive.org/web/20230127180400id_/https://biomotion.tech/,20230127180400,2026-11-20T19:42:37Z
+Biomotion Technologies,2023-03-01,f_description_text,1031 chars,http://web.archive.org/web/20230127180400id_/https://biomotion.tech/,20230127180400,2026-11-20T19:42:37Z
+Biomotion Technologies,2023-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=biomotion.tech&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1677628800&hitsPerPage=100,,2026-11-20T19:42:37Z
+Biomotion Technologies,2023-03-01,f_gh_org,Biomotion-Technologies (matched by name),https://api.github.com/search/users?q=Biomotion+Technologies+type%3Aorg,,2026-11-20T19:44:22Z
+Biomotion Technologies,2023-03-01,f_gh_created,2024-05-29,https://api.github.com/users/Biomotion-Technologies,2024-05-29T06:45:49Z,2026-11-20T19:44:23Z
+EnHands,2023-03-01,f_domain,enhands.de,https://enhands.de/,,2026-11-20T19:43:15Z
+EnHands,2023-03-01,wb_first_capture_any,2023-05-29,http://web.archive.org/cdx/search/cdx?url=enhands.de&output=json&limit=1&fl=timestamp&from=1996,20230529220916,2026-11-20T19:43:16Z
+EnHands,2023-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=enhands.de&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20230228&from=1996,,2026-11-20T19:43:16Z
+EnHands,2023-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=enhands.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1677628800&hitsPerPage=100,,2026-11-20T19:43:17Z
+EnHands,2023-03-01,f_gh_org,EnHands (matched by name),https://api.github.com/search/users?q=EnHands+type%3Aorg,,2026-11-20T19:45:07Z
+EnHands,2023-03-01,f_gh_created,2022-10-14,https://api.github.com/users/EnHands,2022-10-14T17:45:38Z,2026-11-20T19:45:08Z
+EnHands,2023-03-01,f_gh_public_repos_before,2,https://api.github.com/orgs/EnHands/repos?per_page=100,,2026-11-20T19:45:09Z
+EnHands,2023-03-01,f_gh_commit_weeks_active,2 (repo enhands-tailwind-ws),https://api.github.com/repos/EnHands/enhands-tailwind-ws/commits?since=2023-01-04T00%3A00%3A00Z&until=2023-03-01T00%3A00%3A00Z&per_page=100,,2026-11-20T19:45:10Z
+WasteEx,2023-03-01,f_domain,wasteex.de,https://wasteex.de/,,2026-11-20T19:43:24Z
+WasteEx,2023-03-01,wb_first_capture_any,2023-12-26,http://web.archive.org/cdx/search/cdx?url=wasteex.de&output=json&limit=1&fl=timestamp&from=1996,20231226191216,2026-11-20T19:43:25Z
+WasteEx,2023-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=wasteex.de&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20230228&from=1996,,2026-11-20T19:43:26Z
+WasteEx,2023-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=wasteex.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1677628800&hitsPerPage=100,,2026-11-20T19:43:26Z
+CedarDB,2023-09-01,f_domain,cedardb.com,https://cedardb.com/,,2026-11-20T19:43:59Z
+CedarDB,2023-09-01,wb_first_capture_any,2014-10-02,http://web.archive.org/cdx/search/cdx?url=cedardb.com&output=json&limit=1&fl=timestamp&from=1996,20141002083217,2026-11-20T19:44:00Z
+CedarDB,2023-09-01,f_first_capture,2014-10-02,http://web.archive.org/cdx/search/cdx?url=cedardb.com&output=json&limit=1&fl=timestamp&from=1996,20141002083217,2026-11-20T19:44:00Z
+CedarDB,2023-09-01,f_age_months,106,http://web.archive.org/cdx/search/cdx?url=cedardb.com&output=json&limit=1&fl=timestamp&from=1996,20141002083217,2026-11-20T19:44:00Z
+CedarDB,2023-09-01,f_snapshot_date,2021-12-02,http://web.archive.org/web/20211202003557id_/https://cedardb.com/,20211202003557,2026-11-20T19:44:03Z
+CedarDB,2023-09-01,f_impressum,0,http://web.archive.org/web/20211202003557id_/https://cedardb.com/,20211202003557,2026-11-20T19:44:03Z
+CedarDB,2023-09-01,f_pricing_page,0,http://web.archive.org/web/20211202003557id_/https://cedardb.com/,20211202003557,2026-11-20T19:44:03Z
+CedarDB,2023-09-01,f_waitlist,0,http://web.archive.org/web/20211202003557id_/https://cedardb.com/,20211202003557,2026-11-20T19:44:03Z
+CedarDB,2023-09-01,f_customer_logos,0,http://web.archive.org/web/20211202003557id_/https://cedardb.com/,20211202003557,2026-11-20T19:44:03Z
+CedarDB,2023-09-01,f_jobs_page,0,http://web.archive.org/web/20211202003557id_/https://cedardb.com/,20211202003557,2026-11-20T19:44:03Z
+CedarDB,2023-09-01,f_legal_entity,,http://web.archive.org/web/20211202003557id_/https://cedardb.com/,20211202003557,2026-11-20T19:44:03Z
+CedarDB,2023-09-01,f_gmbh_ig,0,http://web.archive.org/web/20211202003557id_/https://cedardb.com/,20211202003557,2026-11-20T19:44:03Z
+CedarDB,2023-09-01,f_description_text,1500 chars,http://web.archive.org/web/20211202003557id_/https://cedardb.com/,20211202003557,2026-11-20T19:44:03Z
+CedarDB,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=cedardb.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:44:04Z
+CedarDB,2023-09-01,f_gh_org,cedardb (matched by name),https://api.github.com/search/users?q=CedarDB+type%3Aorg,,2026-11-20T19:45:52Z
+CedarDB,2023-09-01,f_gh_created,2019-11-16,https://api.github.com/users/cedardb,2019-11-16T03:00:12Z,2026-11-20T19:45:54Z
+CedarDB,2023-09-01,f_gh_public_repos_before,0,https://api.github.com/orgs/cedardb/repos?per_page=100,,2026-11-20T19:45:56Z
+Impetus Sailing Team,2023-09-01,f_domain,impetussailing.de,https://www.impetussailing.de/,,2026-11-20T19:44:12Z
+Impetus Sailing Team,2023-09-01,wb_first_capture_any,2023-01-19,http://web.archive.org/cdx/search/cdx?url=impetussailing.de&output=json&limit=1&fl=timestamp&from=1996,20230119081546,2026-11-20T19:44:13Z
+Impetus Sailing Team,2023-09-01,f_first_capture,2023-01-19,http://web.archive.org/cdx/search/cdx?url=impetussailing.de&output=json&limit=1&fl=timestamp&from=1996,20230119081546,2026-11-20T19:44:13Z
+Impetus Sailing Team,2023-09-01,f_age_months,7,http://web.archive.org/cdx/search/cdx?url=impetussailing.de&output=json&limit=1&fl=timestamp&from=1996,20230119081546,2026-11-20T19:44:13Z
+Impetus Sailing Team,2023-09-01,f_snapshot_date,2023-06-08,http://web.archive.org/web/20230608193457id_/https://www.impetussailing.de/,20230608193457,2026-11-20T19:44:15Z
+Impetus Sailing Team,2023-09-01,f_impressum,1 (IMPRESSUM),http://web.archive.org/web/20230608193457id_/https://www.impetussailing.de/,20230608193457,2026-11-20T19:44:15Z
+Impetus Sailing Team,2023-09-01,f_pricing_page,0,http://web.archive.org/web/20230608193457id_/https://www.impetussailing.de/,20230608193457,2026-11-20T19:44:15Z
+Impetus Sailing Team,2023-09-01,f_waitlist,0,http://web.archive.org/web/20230608193457id_/https://www.impetussailing.de/,20230608193457,2026-11-20T19:44:15Z
+Impetus Sailing Team,2023-09-01,f_customer_logos,0,http://web.archive.org/web/20230608193457id_/https://www.impetussailing.de/,20230608193457,2026-11-20T19:44:15Z
+Impetus Sailing Team,2023-09-01,f_jobs_page,1 (JOIN OUR TEAM),http://web.archive.org/web/20230608193457id_/https://www.impetussailing.de/,20230608193457,2026-11-20T19:44:15Z
+Impetus Sailing Team,2023-09-01,f_legal_entity,,http://web.archive.org/web/20230608193457id_/https://www.impetussailing.de/,20230608193457,2026-11-20T19:44:15Z
+Impetus Sailing Team,2023-09-01,f_gmbh_ig,0,http://web.archive.org/web/20230608193457id_/https://www.impetussailing.de/,20230608193457,2026-11-20T19:44:15Z
+Impetus Sailing Team,2023-09-01,f_description_text,1500 chars,http://web.archive.org/web/20230608193457id_/https://www.impetussailing.de/,20230608193457,2026-11-20T19:44:15Z
+Impetus Sailing Team,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=impetussailing.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:44:16Z
+WARR space labs,2023-09-01,f_domain,warr.de,https://warr.de/projects/spacelabs/,,2026-11-20T19:44:23Z
+WARR space labs,2023-09-01,wb_first_capture_any,2001-10-16,http://web.archive.org/cdx/search/cdx?url=warr.de&output=json&limit=1&fl=timestamp&from=1996,20011016091600,2026-11-20T19:44:24Z
+WARR space labs,2023-09-01,f_first_capture,2001-10-16,http://web.archive.org/cdx/search/cdx?url=warr.de&output=json&limit=1&fl=timestamp&from=1996,20011016091600,2026-11-20T19:44:24Z
+WARR space labs,2023-09-01,f_age_months,262,http://web.archive.org/cdx/search/cdx?url=warr.de&output=json&limit=1&fl=timestamp&from=1996,20011016091600,2026-11-20T19:44:24Z
+WARR space labs,2023-09-01,f_snapshot_date,2023-06-14,http://web.archive.org/web/20230614083858id_/https://warr.de/,20230614083858,2026-11-20T19:44:27Z
+WARR space labs,2023-09-01,f_impressum,1 (Impressum),http://web.archive.org/web/20230614083858id_/https://warr.de/,20230614083858,2026-11-20T19:44:27Z
+WARR space labs,2023-09-01,f_pricing_page,0,http://web.archive.org/web/20230614083858id_/https://warr.de/,20230614083858,2026-11-20T19:44:27Z
+WARR space labs,2023-09-01,f_waitlist,0,http://web.archive.org/web/20230614083858id_/https://warr.de/,20230614083858,2026-11-20T19:44:27Z
+WARR space labs,2023-09-01,f_customer_logos,0,http://web.archive.org/web/20230614083858id_/https://warr.de/,20230614083858,2026-11-20T19:44:27Z
+WARR space labs,2023-09-01,f_jobs_page,0,http://web.archive.org/web/20230614083858id_/https://warr.de/,20230614083858,2026-11-20T19:44:27Z
+WARR space labs,2023-09-01,f_legal_entity,e. V.,http://web.archive.org/web/20230614083858id_/https://warr.de/,20230614083858,2026-11-20T19:44:27Z
+WARR space labs,2023-09-01,f_gmbh_ig,0,http://web.archive.org/web/20230614083858id_/https://warr.de/,20230614083858,2026-11-20T19:44:27Z
+WARR space labs,2023-09-01,f_description_text,1500 chars,http://web.archive.org/web/20230614083858id_/https://warr.de/,20230614083858,2026-11-20T19:44:27Z
+WARR space labs,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=warr.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:44:27Z
+CinSOIL,2023-09-01,f_domain,nature-culture.eu,https://nature-culture.eu/,,2026-11-20T19:44:34Z
+CinSOIL,2023-09-01,wb_first_capture_any,2007-06-25,http://web.archive.org/cdx/search/cdx?url=nature-culture.eu&output=json&limit=1&fl=timestamp&from=1996,20070625045203,2026-11-20T19:44:35Z
+CinSOIL,2023-09-01,f_first_capture,2007-06-25,http://web.archive.org/cdx/search/cdx?url=nature-culture.eu&output=json&limit=1&fl=timestamp&from=1996,20070625045203,2026-11-20T19:44:35Z
+CinSOIL,2023-09-01,f_age_months,194,http://web.archive.org/cdx/search/cdx?url=nature-culture.eu&output=json&limit=1&fl=timestamp&from=1996,20070625045203,2026-11-20T19:44:35Z
+CinSOIL,2023-09-01,f_snapshot_date,2009-08-12,http://web.archive.org/web/20090812061149id_/http://www.nature-culture.eu:80/,20090812061149,2026-11-20T19:44:37Z
+CinSOIL,2023-09-01,f_impressum,0,http://web.archive.org/web/20090812061149id_/http://www.nature-culture.eu:80/,20090812061149,2026-11-20T19:44:37Z
+CinSOIL,2023-09-01,f_pricing_page,0,http://web.archive.org/web/20090812061149id_/http://www.nature-culture.eu:80/,20090812061149,2026-11-20T19:44:37Z
+CinSOIL,2023-09-01,f_waitlist,0,http://web.archive.org/web/20090812061149id_/http://www.nature-culture.eu:80/,20090812061149,2026-11-20T19:44:37Z
+CinSOIL,2023-09-01,f_customer_logos,0,http://web.archive.org/web/20090812061149id_/http://www.nature-culture.eu:80/,20090812061149,2026-11-20T19:44:37Z
+CinSOIL,2023-09-01,f_jobs_page,0,http://web.archive.org/web/20090812061149id_/http://www.nature-culture.eu:80/,20090812061149,2026-11-20T19:44:37Z
+CinSOIL,2023-09-01,f_legal_entity,,http://web.archive.org/web/20090812061149id_/http://www.nature-culture.eu:80/,20090812061149,2026-11-20T19:44:37Z
+CinSOIL,2023-09-01,f_gmbh_ig,0,http://web.archive.org/web/20090812061149id_/http://www.nature-culture.eu:80/,20090812061149,2026-11-20T19:44:37Z
+CinSOIL,2023-09-01,f_description_text,0 chars,http://web.archive.org/web/20090812061149id_/http://www.nature-culture.eu:80/,20090812061149,2026-11-20T19:44:37Z
+CinSOIL,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=nature-culture.eu&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:44:37Z
+Decyde,2023-09-01,f_domain,decyde-ai.com,https://www.decyde-ai.com/,,2026-11-20T19:45:10Z
+Decyde,2023-09-01,wb_first_capture_any,2023-07-23,http://web.archive.org/cdx/search/cdx?url=decyde-ai.com&output=json&limit=1&fl=timestamp&from=1996,20230723035924,2026-11-20T19:45:11Z
+Decyde,2023-09-01,f_first_capture,2023-07-23,http://web.archive.org/cdx/search/cdx?url=decyde-ai.com&output=json&limit=1&fl=timestamp&from=1996,20230723035924,2026-11-20T19:45:11Z
+Decyde,2023-09-01,f_age_months,1,http://web.archive.org/cdx/search/cdx?url=decyde-ai.com&output=json&limit=1&fl=timestamp&from=1996,20230723035924,2026-11-20T19:45:11Z
+Decyde,2023-09-01,f_snapshot_date,2023-07-23,http://web.archive.org/web/20230723040005id_/https://www.decyde-ai.com/,20230723040005,2026-11-20T19:45:13Z
+Decyde,2023-09-01,f_impressum,0,http://web.archive.org/web/20230723040005id_/https://www.decyde-ai.com/,20230723040005,2026-11-20T19:45:13Z
+Decyde,2023-09-01,f_pricing_page,0,http://web.archive.org/web/20230723040005id_/https://www.decyde-ai.com/,20230723040005,2026-11-20T19:45:13Z
+Decyde,2023-09-01,f_waitlist,0,http://web.archive.org/web/20230723040005id_/https://www.decyde-ai.com/,20230723040005,2026-11-20T19:45:13Z
+Decyde,2023-09-01,f_customer_logos,0,http://web.archive.org/web/20230723040005id_/https://www.decyde-ai.com/,20230723040005,2026-11-20T19:45:13Z
+Decyde,2023-09-01,f_jobs_page,0,http://web.archive.org/web/20230723040005id_/https://www.decyde-ai.com/,20230723040005,2026-11-20T19:45:13Z
+Decyde,2023-09-01,f_legal_entity,,http://web.archive.org/web/20230723040005id_/https://www.decyde-ai.com/,20230723040005,2026-11-20T19:45:13Z
+Decyde,2023-09-01,f_gmbh_ig,0,http://web.archive.org/web/20230723040005id_/https://www.decyde-ai.com/,20230723040005,2026-11-20T19:45:13Z
+Decyde,2023-09-01,f_description_text,0 chars,http://web.archive.org/web/20230723040005id_/https://www.decyde-ai.com/,20230723040005,2026-11-20T19:45:13Z
+Decyde,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=decyde-ai.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:45:15Z
+Sensus,2023-09-01,f_domain,sensus.ai,https://sensus.ai/,,2026-11-20T19:45:56Z
+Sensus,2023-09-01,wb_first_capture_any,2023-03-08,http://web.archive.org/cdx/search/cdx?url=sensus.ai&output=json&limit=1&fl=timestamp&from=1996,20230308183248,2026-11-20T19:45:57Z
+Sensus,2023-09-01,f_first_capture,2023-03-08,http://web.archive.org/cdx/search/cdx?url=sensus.ai&output=json&limit=1&fl=timestamp&from=1996,20230308183248,2026-11-20T19:45:57Z
+Sensus,2023-09-01,f_age_months,5,http://web.archive.org/cdx/search/cdx?url=sensus.ai&output=json&limit=1&fl=timestamp&from=1996,20230308183248,2026-11-20T19:45:57Z
+Sensus,2023-09-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=sensus.ai&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20230831&from=1996,,2026-11-20T19:45:58Z
+Sensus,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=sensus.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:45:59Z
+LEVITUM e.V.,2023-09-01,f_domain,levitum.de,https://www.levitum.de/,,2026-11-20T19:45:57Z
+LEVITUM e.V.,2023-09-01,wb_first_capture_any,2021-01-26,http://web.archive.org/cdx/search/cdx?url=levitum.de&output=json&limit=1&fl=timestamp&from=1996,20210126143538,2026-11-20T19:45:59Z
+LEVITUM e.V.,2023-09-01,f_first_capture,2021-01-26,http://web.archive.org/cdx/search/cdx?url=levitum.de&output=json&limit=1&fl=timestamp&from=1996,20210126143538,2026-11-20T19:45:59Z
+LEVITUM e.V.,2023-09-01,f_age_months,31,http://web.archive.org/cdx/search/cdx?url=levitum.de&output=json&limit=1&fl=timestamp&from=1996,20210126143538,2026-11-20T19:45:59Z
+LEVITUM e.V.,2023-09-01,f_snapshot_date,2023-06-08,http://web.archive.org/web/20230608154326id_/https://www.levitum.de/,20230608154326,2026-11-20T19:46:01Z
+LEVITUM e.V.,2023-09-01,f_impressum,1 (Impressum),http://web.archive.org/web/20230608154326id_/https://www.levitum.de/,20230608154326,2026-11-20T19:46:01Z
+LEVITUM e.V.,2023-09-01,f_pricing_page,0,http://web.archive.org/web/20230608154326id_/https://www.levitum.de/,20230608154326,2026-11-20T19:46:01Z
+LEVITUM e.V.,2023-09-01,f_waitlist,0,http://web.archive.org/web/20230608154326id_/https://www.levitum.de/,20230608154326,2026-11-20T19:46:01Z
+LEVITUM e.V.,2023-09-01,f_customer_logos,0,http://web.archive.org/web/20230608154326id_/https://www.levitum.de/,20230608154326,2026-11-20T19:46:01Z
+LEVITUM e.V.,2023-09-01,f_jobs_page,1 (Join our team),http://web.archive.org/web/20230608154326id_/https://www.levitum.de/,20230608154326,2026-11-20T19:46:01Z
+LEVITUM e.V.,2023-09-01,f_legal_entity,,http://web.archive.org/web/20230608154326id_/https://www.levitum.de/,20230608154326,2026-11-20T19:46:01Z
+LEVITUM e.V.,2023-09-01,f_gmbh_ig,0,http://web.archive.org/web/20230608154326id_/https://www.levitum.de/,20230608154326,2026-11-20T19:46:01Z
+LEVITUM e.V.,2023-09-01,f_description_text,1500 chars,http://web.archive.org/web/20230608154326id_/https://www.levitum.de/,20230608154326,2026-11-20T19:46:01Z
+LEVITUM e.V.,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=levitum.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:46:01Z
+Visonation,2023-09-01,f_domain,visonation.com,https://visonation.com/,,2026-11-20T19:46:04Z
+Visonation,2023-09-01,wb_first_capture_any,2023-07-22,http://web.archive.org/cdx/search/cdx?url=visonation.com&output=json&limit=1&fl=timestamp&from=1996,20230722094219,2026-11-20T19:46:04Z
+Visonation,2023-09-01,f_first_capture,2023-07-22,http://web.archive.org/cdx/search/cdx?url=visonation.com&output=json&limit=1&fl=timestamp&from=1996,20230722094219,2026-11-20T19:46:04Z
+Visonation,2023-09-01,f_age_months,1,http://web.archive.org/cdx/search/cdx?url=visonation.com&output=json&limit=1&fl=timestamp&from=1996,20230722094219,2026-11-20T19:46:04Z
+Visonation,2023-09-01,f_snapshot_date,2023-07-23,http://web.archive.org/web/20230723041745id_/https://visonation.com/,20230723041745,2026-11-20T19:46:07Z
+Visonation,2023-09-01,f_impressum,1 (Impressum),http://web.archive.org/web/20230723041745id_/https://visonation.com/,20230723041745,2026-11-20T19:46:07Z
+Visonation,2023-09-01,f_pricing_page,0,http://web.archive.org/web/20230723041745id_/https://visonation.com/,20230723041745,2026-11-20T19:46:07Z
+Visonation,2023-09-01,f_waitlist,0,http://web.archive.org/web/20230723041745id_/https://visonation.com/,20230723041745,2026-11-20T19:46:07Z
+Visonation,2023-09-01,f_customer_logos,1 (Kunden),http://web.archive.org/web/20230723041745id_/https://visonation.com/,20230723041745,2026-11-20T19:46:07Z
+Visonation,2023-09-01,f_jobs_page,0,http://web.archive.org/web/20230723041745id_/https://visonation.com/,20230723041745,2026-11-20T19:46:07Z
+Visonation,2023-09-01,f_legal_entity,,http://web.archive.org/web/20230723041745id_/https://visonation.com/,20230723041745,2026-11-20T19:46:07Z
+Visonation,2023-09-01,f_gmbh_ig,0,http://web.archive.org/web/20230723041745id_/https://visonation.com/,20230723041745,2026-11-20T19:46:07Z
+Visonation,2023-09-01,f_description_text,1500 chars,http://web.archive.org/web/20230723041745id_/https://visonation.com/,20230723041745,2026-11-20T19:46:07Z
+Visonation,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=visonation.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:46:08Z
+FOODYOU,2023-09-01,f_domain,thefoodyou.com,https://www.thefoodyou.com/,,2026-11-20T19:46:12Z
+FOODYOU,2023-09-01,wb_first_capture_any,2023-08-20,http://web.archive.org/cdx/search/cdx?url=thefoodyou.com&output=json&limit=1&fl=timestamp&from=1996,20230820055056,2026-11-20T19:46:14Z
+FOODYOU,2023-09-01,f_first_capture,2023-08-20,http://web.archive.org/cdx/search/cdx?url=thefoodyou.com&output=json&limit=1&fl=timestamp&from=1996,20230820055056,2026-11-20T19:46:14Z
+FOODYOU,2023-09-01,f_age_months,0,http://web.archive.org/cdx/search/cdx?url=thefoodyou.com&output=json&limit=1&fl=timestamp&from=1996,20230820055056,2026-11-20T19:46:14Z
+FOODYOU,2023-09-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=thefoodyou.com&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20230831&from=1996,,2026-11-20T19:46:14Z
+FOODYOU,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=thefoodyou.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:46:15Z
+FOODYOU,2023-09-01,f_gh_org,foodyou (matched by name),https://api.github.com/search/users?q=FOODYOU+type%3Aorg,,2026-11-20T19:48:00Z
+FOODYOU,2023-09-01,f_gh_created,2018-03-07,https://api.github.com/users/foodyou,2018-03-07T15:53:57Z,2026-11-20T19:48:01Z
+FOODYOU,2023-09-01,f_gh_public_repos_before,0,https://api.github.com/orgs/foodyou/repos?per_page=100,,2026-11-20T19:48:01Z
+Otter Energy Trading,2023-09-01,f_domain,otter-energy-trading.io,https://www.otter-energy-trading.io/,,2026-11-20T19:46:55Z
+Otter Energy Trading,2023-09-01,wb_first_capture_any,2023-01-29,http://web.archive.org/cdx/search/cdx?url=otter-energy-trading.io&output=json&limit=1&fl=timestamp&from=1996,20230129044130,2026-11-20T19:46:56Z
+Otter Energy Trading,2023-09-01,f_first_capture,2023-01-29,http://web.archive.org/cdx/search/cdx?url=otter-energy-trading.io&output=json&limit=1&fl=timestamp&from=1996,20230129044130,2026-11-20T19:46:56Z
+Otter Energy Trading,2023-09-01,f_age_months,7,http://web.archive.org/cdx/search/cdx?url=otter-energy-trading.io&output=json&limit=1&fl=timestamp&from=1996,20230129044130,2026-11-20T19:46:56Z
+Otter Energy Trading,2023-09-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=otter-energy-trading.io&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20230831&from=1996,,2026-11-20T19:46:59Z
+Otter Energy Trading,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=otter-energy-trading.io&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:47:00Z
+FLOW eye,2023-09-01,f_domain,flow-eye.com,https://www.flow-eye.com/,,2026-11-20T19:47:23Z
+FLOW eye,2023-09-01,wb_first_capture_any,2023-03-16,http://web.archive.org/cdx/search/cdx?url=flow-eye.com&output=json&limit=1&fl=timestamp&from=1996,20230316105805,2026-11-20T19:47:25Z
+FLOW eye,2023-09-01,f_first_capture,2023-03-16,http://web.archive.org/cdx/search/cdx?url=flow-eye.com&output=json&limit=1&fl=timestamp&from=1996,20230316105805,2026-11-20T19:47:25Z
+FLOW eye,2023-09-01,f_age_months,5,http://web.archive.org/cdx/search/cdx?url=flow-eye.com&output=json&limit=1&fl=timestamp&from=1996,20230316105805,2026-11-20T19:47:25Z
+FLOW eye,2023-09-01,f_snapshot_date,2023-07-23,http://web.archive.org/web/20230723074934id_/https://www.flow-eye.com/,20230723074934,2026-11-20T19:47:27Z
+FLOW eye,2023-09-01,f_impressum,1 (Imprint),http://web.archive.org/web/20230723074934id_/https://www.flow-eye.com/,20230723074934,2026-11-20T19:47:27Z
+FLOW eye,2023-09-01,f_pricing_page,0,http://web.archive.org/web/20230723074934id_/https://www.flow-eye.com/,20230723074934,2026-11-20T19:47:27Z
+FLOW eye,2023-09-01,f_waitlist,0,http://web.archive.org/web/20230723074934id_/https://www.flow-eye.com/,20230723074934,2026-11-20T19:47:27Z
+FLOW eye,2023-09-01,f_customer_logos,0,http://web.archive.org/web/20230723074934id_/https://www.flow-eye.com/,20230723074934,2026-11-20T19:47:27Z
+FLOW eye,2023-09-01,f_jobs_page,0,http://web.archive.org/web/20230723074934id_/https://www.flow-eye.com/,20230723074934,2026-11-20T19:47:27Z
+FLOW eye,2023-09-01,f_legal_entity,,http://web.archive.org/web/20230723074934id_/https://www.flow-eye.com/,20230723074934,2026-11-20T19:47:27Z
+FLOW eye,2023-09-01,f_gmbh_ig,0,http://web.archive.org/web/20230723074934id_/https://www.flow-eye.com/,20230723074934,2026-11-20T19:47:27Z
+FLOW eye,2023-09-01,f_description_text,897 chars,http://web.archive.org/web/20230723074934id_/https://www.flow-eye.com/,20230723074934,2026-11-20T19:47:27Z
+FLOW eye,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=flow-eye.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:47:28Z
+FLOW eye,2023-09-01,f_gh_org,flow-eye (matched by name),https://api.github.com/search/users?q=FLOW+eye+type%3Aorg,,2026-11-20T19:49:14Z
+FLOW eye,2023-09-01,f_gh_created,2023-07-12,https://api.github.com/users/flow-eye,2023-07-12T08:40:46Z,2026-11-20T19:49:16Z
+FLOW eye,2023-09-01,f_gh_public_repos_before,0,https://api.github.com/orgs/flow-eye/repos?per_page=100,,2026-11-20T19:49:17Z
+Falcon Vision,2023-09-01,f_domain,falconvision.org,https://falconvision.org/,,2026-11-20T19:47:53Z
+Falcon Vision,2023-09-01,wb_first_capture_any,2021-11-30,http://web.archive.org/cdx/search/cdx?url=falconvision.org&output=json&limit=1&fl=timestamp&from=1996,20211130002827,2026-11-20T19:47:54Z
+Falcon Vision,2023-09-01,f_first_capture,2021-11-30,http://web.archive.org/cdx/search/cdx?url=falconvision.org&output=json&limit=1&fl=timestamp&from=1996,20211130002827,2026-11-20T19:47:54Z
+Falcon Vision,2023-09-01,f_age_months,21,http://web.archive.org/cdx/search/cdx?url=falconvision.org&output=json&limit=1&fl=timestamp&from=1996,20211130002827,2026-11-20T19:47:54Z
+Falcon Vision,2023-09-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=falconvision.org&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20230831&from=1996,,2026-11-20T19:47:54Z
+Falcon Vision,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=falconvision.org&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:47:55Z
+Falcon Vision,2023-09-01,f_gh_org,Falcon-Vision (matched by name),https://api.github.com/search/users?q=Falcon+Vision+type%3Aorg,,2026-11-20T19:50:16Z
+Falcon Vision,2023-09-01,f_gh_created,2024-03-14,https://api.github.com/users/Falcon-Vision,2024-03-14T11:17:55Z,2026-11-20T19:50:17Z
+Qualiwise,2023-09-01,f_domain,qualiwise.eu,https://www.qualiwise.eu/,,2026-11-20T19:48:01Z
+Qualiwise,2023-09-01,wb_first_capture_any,2023-04-06,http://web.archive.org/cdx/search/cdx?url=qualiwise.eu&output=json&limit=1&fl=timestamp&from=1996,20230406032414,2026-11-20T19:48:02Z
+Qualiwise,2023-09-01,f_first_capture,2023-04-06,http://web.archive.org/cdx/search/cdx?url=qualiwise.eu&output=json&limit=1&fl=timestamp&from=1996,20230406032414,2026-11-20T19:48:02Z
+Qualiwise,2023-09-01,f_age_months,4,http://web.archive.org/cdx/search/cdx?url=qualiwise.eu&output=json&limit=1&fl=timestamp&from=1996,20230406032414,2026-11-20T19:48:02Z
+Qualiwise,2023-09-01,f_snapshot_date,2023-05-10,http://web.archive.org/web/20230510100729id_/https://www.qualiwise.eu/,20230510100729,2026-11-20T19:48:05Z
+Qualiwise,2023-09-01,f_impressum,1 (Impressum),http://web.archive.org/web/20230510100729id_/https://www.qualiwise.eu/,20230510100729,2026-11-20T19:48:05Z
+Qualiwise,2023-09-01,f_pricing_page,0,http://web.archive.org/web/20230510100729id_/https://www.qualiwise.eu/,20230510100729,2026-11-20T19:48:05Z
+Qualiwise,2023-09-01,f_waitlist,0,http://web.archive.org/web/20230510100729id_/https://www.qualiwise.eu/,20230510100729,2026-11-20T19:48:05Z
+Qualiwise,2023-09-01,f_customer_logos,0,http://web.archive.org/web/20230510100729id_/https://www.qualiwise.eu/,20230510100729,2026-11-20T19:48:05Z
+Qualiwise,2023-09-01,f_jobs_page,0,http://web.archive.org/web/20230510100729id_/https://www.qualiwise.eu/,20230510100729,2026-11-20T19:48:05Z
+Qualiwise,2023-09-01,f_legal_entity,,http://web.archive.org/web/20230510100729id_/https://www.qualiwise.eu/,20230510100729,2026-11-20T19:48:05Z
+Qualiwise,2023-09-01,f_gmbh_ig,0,http://web.archive.org/web/20230510100729id_/https://www.qualiwise.eu/,20230510100729,2026-11-20T19:48:05Z
+Qualiwise,2023-09-01,f_description_text,1500 chars,http://web.archive.org/web/20230510100729id_/https://www.qualiwise.eu/,20230510100729,2026-11-20T19:48:05Z
+Qualiwise,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=qualiwise.eu&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:48:05Z
+Qualiwise,2023-09-01,f_gh_org,qualiwise (matched by name),https://api.github.com/search/users?q=Qualiwise+type%3Aorg,,2026-11-20T19:49:22Z
+Qualiwise,2023-09-01,f_gh_created,2025-12-21,https://api.github.com/users/qualiwise,2025-12-21T16:20:07Z,2026-11-20T19:49:23Z
+HopfON,2023-09-01,f_domain,hopfon.com,https://hopfon.com/,,2026-11-20T19:48:24Z
+HopfON,2023-09-01,wb_first_capture_any,2023-05-08,http://web.archive.org/cdx/search/cdx?url=hopfon.com&output=json&limit=1&fl=timestamp&from=1996,20230508115309,2026-11-20T19:48:25Z
+HopfON,2023-09-01,f_first_capture,2023-05-08,http://web.archive.org/cdx/search/cdx?url=hopfon.com&output=json&limit=1&fl=timestamp&from=1996,20230508115309,2026-11-20T19:48:25Z
+HopfON,2023-09-01,f_age_months,3,http://web.archive.org/cdx/search/cdx?url=hopfon.com&output=json&limit=1&fl=timestamp&from=1996,20230508115309,2026-11-20T19:48:25Z
+HopfON,2023-09-01,f_snapshot_date,2023-06-22,http://web.archive.org/web/20230622064635id_/https://hopfon.com/,20230622064635,2026-11-20T19:48:28Z
+HopfON,2023-09-01,f_impressum,0,http://web.archive.org/web/20230622064635id_/https://hopfon.com/,20230622064635,2026-11-20T19:48:28Z
+HopfON,2023-09-01,f_pricing_page,0,http://web.archive.org/web/20230622064635id_/https://hopfon.com/,20230622064635,2026-11-20T19:48:28Z
+HopfON,2023-09-01,f_waitlist,0,http://web.archive.org/web/20230622064635id_/https://hopfon.com/,20230622064635,2026-11-20T19:48:28Z
+HopfON,2023-09-01,f_customer_logos,0,http://web.archive.org/web/20230622064635id_/https://hopfon.com/,20230622064635,2026-11-20T19:48:28Z
+HopfON,2023-09-01,f_jobs_page,0,http://web.archive.org/web/20230622064635id_/https://hopfon.com/,20230622064635,2026-11-20T19:48:28Z
+HopfON,2023-09-01,f_legal_entity,,http://web.archive.org/web/20230622064635id_/https://hopfon.com/,20230622064635,2026-11-20T19:48:28Z
+HopfON,2023-09-01,f_gmbh_ig,0,http://web.archive.org/web/20230622064635id_/https://hopfon.com/,20230622064635,2026-11-20T19:48:28Z
+HopfON,2023-09-01,f_description_text,1310 chars,http://web.archive.org/web/20230622064635id_/https://hopfon.com/,20230622064635,2026-11-20T19:48:28Z
+HopfON,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=hopfon.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:48:29Z
+ESG-X,2023-09-01,f_domain,esg-x.com,https://www.esg-x.com/,,2026-11-20T19:48:52Z
+ESG-X,2023-09-01,wb_first_capture_any,2021-12-02,http://web.archive.org/cdx/search/cdx?url=esg-x.com&output=json&limit=1&fl=timestamp&from=1996,20211202135030,2026-11-20T19:48:53Z
+ESG-X,2023-09-01,f_first_capture,2021-12-02,http://web.archive.org/cdx/search/cdx?url=esg-x.com&output=json&limit=1&fl=timestamp&from=1996,20211202135030,2026-11-20T19:48:53Z
+ESG-X,2023-09-01,f_age_months,20,http://web.archive.org/cdx/search/cdx?url=esg-x.com&output=json&limit=1&fl=timestamp&from=1996,20211202135030,2026-11-20T19:48:53Z
+ESG-X,2023-09-01,f_snapshot_date,2022-03-07,http://web.archive.org/web/20220307122440id_/http://esg-x.com/,20220307122440,2026-11-20T19:48:56Z
+ESG-X,2023-09-01,f_impressum,0,http://web.archive.org/web/20220307122440id_/http://esg-x.com/,20220307122440,2026-11-20T19:48:56Z
+ESG-X,2023-09-01,f_pricing_page,0,http://web.archive.org/web/20220307122440id_/http://esg-x.com/,20220307122440,2026-11-20T19:48:56Z
+ESG-X,2023-09-01,f_waitlist,0,http://web.archive.org/web/20220307122440id_/http://esg-x.com/,20220307122440,2026-11-20T19:48:56Z
+ESG-X,2023-09-01,f_customer_logos,0,http://web.archive.org/web/20220307122440id_/http://esg-x.com/,20220307122440,2026-11-20T19:48:56Z
+ESG-X,2023-09-01,f_jobs_page,0,http://web.archive.org/web/20220307122440id_/http://esg-x.com/,20220307122440,2026-11-20T19:48:56Z
+ESG-X,2023-09-01,f_legal_entity,,http://web.archive.org/web/20220307122440id_/http://esg-x.com/,20220307122440,2026-11-20T19:48:56Z
+ESG-X,2023-09-01,f_gmbh_ig,0,http://web.archive.org/web/20220307122440id_/http://esg-x.com/,20220307122440,2026-11-20T19:48:56Z
+ESG-X,2023-09-01,f_description_text,1071 chars,http://web.archive.org/web/20220307122440id_/http://esg-x.com/,20220307122440,2026-11-20T19:48:56Z
+ESG-X,2023-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=esg-x.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1693526400&hitsPerPage=100,,2026-11-20T19:48:56Z
+Radical Dot,2024-03-01,f_gh_org,RadicalDot (matched by name),https://api.github.com/search/users?q=Radical+Dot+type%3Aorg,,2026-11-20T19:49:18Z
+Radical Dot,2024-03-01,f_gh_created,2025-01-29,https://api.github.com/users/RadicalDot,2025-01-29T09:26:57Z,2026-11-20T19:49:18Z
+Octave,2024-03-01,f_domain,maple-aviation.com,https://maple-aviation.com,,2026-11-20T19:49:20Z
+Octave,2024-03-01,wb_first_capture_any,2013-06-06,http://web.archive.org/cdx/search/cdx?url=maple-aviation.com&output=json&limit=1&fl=timestamp&from=1996,20130606094755,2026-11-20T19:49:20Z
+Octave,2024-03-01,f_first_capture,2013-06-06,http://web.archive.org/cdx/search/cdx?url=maple-aviation.com&output=json&limit=1&fl=timestamp&from=1996,20130606094755,2026-11-20T19:49:20Z
+Octave,2024-03-01,f_age_months,128,http://web.archive.org/cdx/search/cdx?url=maple-aviation.com&output=json&limit=1&fl=timestamp&from=1996,20130606094755,2026-11-20T19:49:20Z
+Octave,2024-03-01,f_snapshot_date,2023-09-29,http://web.archive.org/web/20230929212414id_/https://maple-aviation.com/,20230929212414,2026-11-20T19:49:23Z
+Octave,2024-03-01,f_impressum,0,http://web.archive.org/web/20230929212414id_/https://maple-aviation.com/,20230929212414,2026-11-20T19:49:23Z
+Octave,2024-03-01,f_pricing_page,0,http://web.archive.org/web/20230929212414id_/https://maple-aviation.com/,20230929212414,2026-11-20T19:49:23Z
+Octave,2024-03-01,f_waitlist,0,http://web.archive.org/web/20230929212414id_/https://maple-aviation.com/,20230929212414,2026-11-20T19:49:23Z
+Octave,2024-03-01,f_customer_logos,0,http://web.archive.org/web/20230929212414id_/https://maple-aviation.com/,20230929212414,2026-11-20T19:49:23Z
+Octave,2024-03-01,f_jobs_page,0,http://web.archive.org/web/20230929212414id_/https://maple-aviation.com/,20230929212414,2026-11-20T19:49:23Z
+Octave,2024-03-01,f_legal_entity,GmbH,http://web.archive.org/web/20230929212414id_/https://maple-aviation.com/,20230929212414,2026-11-20T19:49:23Z
+Octave,2024-03-01,f_gmbh_ig,0,http://web.archive.org/web/20230929212414id_/https://maple-aviation.com/,20230929212414,2026-11-20T19:49:23Z
+Octave,2024-03-01,f_description_text,1500 chars,http://web.archive.org/web/20230929212414id_/https://maple-aviation.com/,20230929212414,2026-11-20T19:49:23Z
+Octave,2024-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=maple-aviation.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1709251200&hitsPerPage=100,,2026-11-20T19:49:23Z
+Emidat,2024-03-01,f_domain,emidat.com,https://emidat.com/,,2026-11-20T19:49:25Z
+Emidat,2024-03-01,wb_first_capture_any,2023-02-14,http://web.archive.org/cdx/search/cdx?url=emidat.com&output=json&limit=1&fl=timestamp&from=1996,20230214192811,2026-11-20T19:49:26Z
+Emidat,2024-03-01,f_first_capture,2023-02-14,http://web.archive.org/cdx/search/cdx?url=emidat.com&output=json&limit=1&fl=timestamp&from=1996,20230214192811,2026-11-20T19:49:26Z
+Emidat,2024-03-01,f_age_months,12,http://web.archive.org/cdx/search/cdx?url=emidat.com&output=json&limit=1&fl=timestamp&from=1996,20230214192811,2026-11-20T19:49:26Z
+Emidat,2024-03-01,f_snapshot_date,2023-11-30,http://web.archive.org/web/20231130144230id_/https://emidat.com/,20231130144230,2026-11-20T19:49:28Z
+Emidat,2024-03-01,f_impressum,1 (Imprint),http://web.archive.org/web/20231130144230id_/https://emidat.com/,20231130144230,2026-11-20T19:49:28Z
+Emidat,2024-03-01,f_pricing_page,0,http://web.archive.org/web/20231130144230id_/https://emidat.com/,20231130144230,2026-11-20T19:49:28Z
+Emidat,2024-03-01,f_waitlist,0,http://web.archive.org/web/20231130144230id_/https://emidat.com/,20231130144230,2026-11-20T19:49:28Z
+Emidat,2024-03-01,f_customer_logos,0,http://web.archive.org/web/20231130144230id_/https://emidat.com/,20231130144230,2026-11-20T19:49:28Z
+Emidat,2024-03-01,f_jobs_page,1 (Jobs),http://web.archive.org/web/20231130144230id_/https://emidat.com/,20231130144230,2026-11-20T19:49:28Z
+Emidat,2024-03-01,f_legal_entity,GmbH,http://web.archive.org/web/20231130144230id_/https://emidat.com/,20231130144230,2026-11-20T19:49:28Z
+Emidat,2024-03-01,f_gmbh_ig,0,http://web.archive.org/web/20231130144230id_/https://emidat.com/,20231130144230,2026-11-20T19:49:28Z
+Emidat,2024-03-01,f_description_text,1500 chars,http://web.archive.org/web/20231130144230id_/https://emidat.com/,20231130144230,2026-11-20T19:49:28Z
+Emidat,2024-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=emidat.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1709251200&hitsPerPage=100,,2026-11-20T19:49:29Z
+Emidat,2024-03-01,f_gh_org,Emidat (matched by name),https://api.github.com/search/users?q=Emidat+type%3Aorg,,2026-11-20T19:50:46Z
+Emidat,2024-03-01,f_gh_created,2023-06-10,https://api.github.com/users/Emidat,2023-06-10T12:36:06Z,2026-11-20T19:50:47Z
+Emidat,2024-03-01,f_gh_public_repos_before,0,https://api.github.com/orgs/Emidat/repos?per_page=100,,2026-11-20T19:50:48Z
+Ignition Aerospace,2024-03-01,f_domain,ignition-aerospace.com,https://ignition-aerospace.com,,2026-11-20T19:50:18Z
+Ignition Aerospace,2024-03-01,wb_first_capture_any,2024-11-29,http://web.archive.org/cdx/search/cdx?url=ignition-aerospace.com&output=json&limit=1&fl=timestamp&from=1996,20241129112926,2026-11-20T19:50:18Z
+Ignition Aerospace,2024-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=ignition-aerospace.com&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20240229&from=1996,,2026-11-20T19:50:19Z
+Ignition Aerospace,2024-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=ignition-aerospace.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1709251200&hitsPerPage=100,,2026-11-20T19:50:20Z
+CRATER (WARR Space Robotics),2024-03-01,f_domain,warr.de,https://warr.de/projects/spacerobotics/,,2026-11-20T19:50:45Z
+CRATER (WARR Space Robotics),2024-03-01,wb_first_capture_any,2001-10-16,http://web.archive.org/cdx/search/cdx?url=warr.de&output=json&limit=1&fl=timestamp&from=1996,20011016091600,2026-11-20T19:44:24Z
+CRATER (WARR Space Robotics),2024-03-01,f_first_capture,2001-10-16,http://web.archive.org/cdx/search/cdx?url=warr.de&output=json&limit=1&fl=timestamp&from=1996,20011016091600,2026-11-20T19:44:24Z
+CRATER (WARR Space Robotics),2024-03-01,f_age_months,268,http://web.archive.org/cdx/search/cdx?url=warr.de&output=json&limit=1&fl=timestamp&from=1996,20011016091600,2026-11-20T19:44:24Z
+CRATER (WARR Space Robotics),2024-03-01,f_snapshot_date,2024-02-28,http://web.archive.org/web/20240228085041id_/https://warr.de/,20240228085041,2026-11-20T19:50:47Z
+CRATER (WARR Space Robotics),2024-03-01,f_impressum,1 (Impressum),http://web.archive.org/web/20240228085041id_/https://warr.de/,20240228085041,2026-11-20T19:50:47Z
+CRATER (WARR Space Robotics),2024-03-01,f_pricing_page,0,http://web.archive.org/web/20240228085041id_/https://warr.de/,20240228085041,2026-11-20T19:50:47Z
+CRATER (WARR Space Robotics),2024-03-01,f_waitlist,0,http://web.archive.org/web/20240228085041id_/https://warr.de/,20240228085041,2026-11-20T19:50:47Z
+CRATER (WARR Space Robotics),2024-03-01,f_customer_logos,0,http://web.archive.org/web/20240228085041id_/https://warr.de/,20240228085041,2026-11-20T19:50:47Z
+CRATER (WARR Space Robotics),2024-03-01,f_jobs_page,0,http://web.archive.org/web/20240228085041id_/https://warr.de/,20240228085041,2026-11-20T19:50:47Z
+CRATER (WARR Space Robotics),2024-03-01,f_legal_entity,e. V.,http://web.archive.org/web/20240228085041id_/https://warr.de/,20240228085041,2026-11-20T19:50:47Z
+CRATER (WARR Space Robotics),2024-03-01,f_gmbh_ig,0,http://web.archive.org/web/20240228085041id_/https://warr.de/,20240228085041,2026-11-20T19:50:47Z
+CRATER (WARR Space Robotics),2024-03-01,f_description_text,1500 chars,http://web.archive.org/web/20240228085041id_/https://warr.de/,20240228085041,2026-11-20T19:50:47Z
+CRATER (WARR Space Robotics),2024-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=warr.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1709251200&hitsPerPage=100,,2026-11-20T19:50:48Z
+NTRDE,2024-03-01,f_domain,ntrde.io,https://ntrde.io,,2026-11-20T19:50:48Z
+NTRDE,2024-03-01,wb_first_capture_any,2021-12-19,http://web.archive.org/cdx/search/cdx?url=ntrde.io&output=json&limit=1&fl=timestamp&from=1996,20211219084822,2026-11-20T19:50:49Z
+NTRDE,2024-03-01,f_first_capture,2021-12-19,http://web.archive.org/cdx/search/cdx?url=ntrde.io&output=json&limit=1&fl=timestamp&from=1996,20211219084822,2026-11-20T19:50:49Z
+NTRDE,2024-03-01,f_age_months,26,http://web.archive.org/cdx/search/cdx?url=ntrde.io&output=json&limit=1&fl=timestamp&from=1996,20211219084822,2026-11-20T19:50:49Z
+NTRDE,2024-03-01,f_snapshot_date,2024-02-24,http://web.archive.org/web/20240224105305id_/https://ntrde.io/,20240224105305,2026-11-20T19:50:51Z
+NTRDE,2024-03-01,f_impressum,1 (Imprint),http://web.archive.org/web/20240224105305id_/https://ntrde.io/,20240224105305,2026-11-20T19:50:51Z
+NTRDE,2024-03-01,f_pricing_page,0,http://web.archive.org/web/20240224105305id_/https://ntrde.io/,20240224105305,2026-11-20T19:50:51Z
+NTRDE,2024-03-01,f_waitlist,1 (beta),http://web.archive.org/web/20240224105305id_/https://ntrde.io/,20240224105305,2026-11-20T19:50:51Z
+NTRDE,2024-03-01,f_customer_logos,0,http://web.archive.org/web/20240224105305id_/https://ntrde.io/,20240224105305,2026-11-20T19:50:51Z
+NTRDE,2024-03-01,f_jobs_page,1 (Careers),http://web.archive.org/web/20240224105305id_/https://ntrde.io/,20240224105305,2026-11-20T19:50:51Z
+NTRDE,2024-03-01,f_legal_entity,GmbH,http://web.archive.org/web/20240224105305id_/https://ntrde.io/,20240224105305,2026-11-20T19:50:51Z
+NTRDE,2024-03-01,f_gmbh_ig,0,http://web.archive.org/web/20240224105305id_/https://ntrde.io/,20240224105305,2026-11-20T19:50:51Z
+NTRDE,2024-03-01,f_description_text,1500 chars,http://web.archive.org/web/20240224105305id_/https://ntrde.io/,20240224105305,2026-11-20T19:50:51Z
+NTRDE,2024-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=ntrde.io&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1709251200&hitsPerPage=100,,2026-11-20T19:50:52Z
+VORTEX,2024-03-01,f_domain,vortex-aerotec.com,https://www.vortex-aerotec.com/,,2026-11-20T19:50:52Z
+VORTEX,2024-03-01,wb_first_capture_any,2023-11-07,http://web.archive.org/cdx/search/cdx?url=vortex-aerotec.com&output=json&limit=1&fl=timestamp&from=1996,20231107020739,2026-11-20T19:50:52Z
+VORTEX,2024-03-01,f_first_capture,2023-11-07,http://web.archive.org/cdx/search/cdx?url=vortex-aerotec.com&output=json&limit=1&fl=timestamp&from=1996,20231107020739,2026-11-20T19:50:52Z
+VORTEX,2024-03-01,f_age_months,3,http://web.archive.org/cdx/search/cdx?url=vortex-aerotec.com&output=json&limit=1&fl=timestamp&from=1996,20231107020739,2026-11-20T19:50:52Z
+VORTEX,2024-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=vortex-aerotec.com&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20240229&from=1996,,2026-11-20T19:50:53Z
+VORTEX,2024-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=vortex-aerotec.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1709251200&hitsPerPage=100,,2026-11-20T19:50:54Z
+Perian,2024-03-01,f_domain,perian.io,https://perian.io,,2026-11-20T19:51:35Z
+Perian,2024-03-01,wb_first_capture_any,2023-04-03,http://web.archive.org/cdx/search/cdx?url=perian.io&output=json&limit=1&fl=timestamp&from=1996,20230403124017,2026-11-20T19:51:35Z
+Perian,2024-03-01,f_first_capture,2023-04-03,http://web.archive.org/cdx/search/cdx?url=perian.io&output=json&limit=1&fl=timestamp&from=1996,20230403124017,2026-11-20T19:51:35Z
+Perian,2024-03-01,f_age_months,10,http://web.archive.org/cdx/search/cdx?url=perian.io&output=json&limit=1&fl=timestamp&from=1996,20230403124017,2026-11-20T19:51:35Z
+Perian,2024-03-01,f_snapshot_date,2024-02-29,http://web.archive.org/web/20240229104331id_/https://perian.io/,20240229104331,2026-11-20T19:51:38Z
+Perian,2024-03-01,f_impressum,0,http://web.archive.org/web/20240229104331id_/https://perian.io/,20240229104331,2026-11-20T19:51:38Z
+Perian,2024-03-01,f_pricing_page,0,http://web.archive.org/web/20240229104331id_/https://perian.io/,20240229104331,2026-11-20T19:51:38Z
+Perian,2024-03-01,f_waitlist,0,http://web.archive.org/web/20240229104331id_/https://perian.io/,20240229104331,2026-11-20T19:51:38Z
+Perian,2024-03-01,f_customer_logos,0,http://web.archive.org/web/20240229104331id_/https://perian.io/,20240229104331,2026-11-20T19:51:38Z
+Perian,2024-03-01,f_jobs_page,0,http://web.archive.org/web/20240229104331id_/https://perian.io/,20240229104331,2026-11-20T19:51:38Z
+Perian,2024-03-01,f_legal_entity,,http://web.archive.org/web/20240229104331id_/https://perian.io/,20240229104331,2026-11-20T19:51:38Z
+Perian,2024-03-01,f_gmbh_ig,0,http://web.archive.org/web/20240229104331id_/https://perian.io/,20240229104331,2026-11-20T19:51:38Z
+Perian,2024-03-01,f_description_text,0 chars,http://web.archive.org/web/20240229104331id_/https://perian.io/,20240229104331,2026-11-20T19:51:38Z
+Perian,2024-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=perian.io&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1709251200&hitsPerPage=100,,2026-11-20T19:51:38Z
+Empacto,2024-03-01,f_domain,empacto.eco,https://www.empacto.eco,,2026-11-20T19:51:48Z
+Empacto,2024-03-01,wb_first_capture_any,2023-10-06,http://web.archive.org/cdx/search/cdx?url=empacto.eco&output=json&limit=1&fl=timestamp&from=1996,20231006222510,2026-11-20T19:51:49Z
+Empacto,2024-03-01,f_first_capture,2023-10-06,http://web.archive.org/cdx/search/cdx?url=empacto.eco&output=json&limit=1&fl=timestamp&from=1996,20231006222510,2026-11-20T19:51:49Z
+Empacto,2024-03-01,f_age_months,4,http://web.archive.org/cdx/search/cdx?url=empacto.eco&output=json&limit=1&fl=timestamp&from=1996,20231006222510,2026-11-20T19:51:49Z
+Empacto,2024-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=empacto.eco&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20240229&from=1996,,2026-11-20T19:51:51Z
+Empacto,2024-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=empacto.eco&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1709251200&hitsPerPage=100,,2026-11-20T19:51:51Z
+Hula Earth,2024-09-01,f_domain,hula.earth,https://hula.earth,,2026-11-20T19:52:05Z
+Hula Earth,2024-09-01,wb_first_capture_any,2023-10-30,http://web.archive.org/cdx/search/cdx?url=hula.earth&output=json&limit=1&fl=timestamp&from=1996,20231030073618,2026-11-20T19:52:05Z
+Hula Earth,2024-09-01,f_first_capture,2023-10-30,http://web.archive.org/cdx/search/cdx?url=hula.earth&output=json&limit=1&fl=timestamp&from=1996,20231030073618,2026-11-20T19:52:05Z
+Hula Earth,2024-09-01,f_age_months,10,http://web.archive.org/cdx/search/cdx?url=hula.earth&output=json&limit=1&fl=timestamp&from=1996,20231030073618,2026-11-20T19:52:05Z
+Hula Earth,2024-09-01,f_snapshot_date,2024-08-13,http://web.archive.org/web/20240813141811id_/https://hula.earth/,20240813141811,2026-11-20T19:52:07Z
+Hula Earth,2024-09-01,f_impressum,0,http://web.archive.org/web/20240813141811id_/https://hula.earth/,20240813141811,2026-11-20T19:52:07Z
+Hula Earth,2024-09-01,f_pricing_page,0,http://web.archive.org/web/20240813141811id_/https://hula.earth/,20240813141811,2026-11-20T19:52:07Z
+Hula Earth,2024-09-01,f_waitlist,0,http://web.archive.org/web/20240813141811id_/https://hula.earth/,20240813141811,2026-11-20T19:52:07Z
+Hula Earth,2024-09-01,f_customer_logos,0,http://web.archive.org/web/20240813141811id_/https://hula.earth/,20240813141811,2026-11-20T19:52:07Z
+Hula Earth,2024-09-01,f_jobs_page,0,http://web.archive.org/web/20240813141811id_/https://hula.earth/,20240813141811,2026-11-20T19:52:07Z
+Hula Earth,2024-09-01,f_legal_entity,GmbH,http://web.archive.org/web/20240813141811id_/https://hula.earth/,20240813141811,2026-11-20T19:52:07Z
+Hula Earth,2024-09-01,f_gmbh_ig,0,http://web.archive.org/web/20240813141811id_/https://hula.earth/,20240813141811,2026-11-20T19:52:07Z
+Hula Earth,2024-09-01,f_description_text,1500 chars,http://web.archive.org/web/20240813141811id_/https://hula.earth/,20240813141811,2026-11-20T19:52:07Z
+Hula Earth,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=hula.earth&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:52:08Z
+Hula Earth,2024-09-01,f_gh_org,hulaearth (matched by name),https://api.github.com/search/users?q=Hula+Earth+type%3Aorg,,2026-11-20T19:53:23Z
+Hula Earth,2024-09-01,f_gh_created,2023-04-11,https://api.github.com/users/hulaearth,2023-04-11T10:56:24Z,2026-11-20T19:53:24Z
+Hula Earth,2024-09-01,f_gh_public_repos_before,0,https://api.github.com/orgs/hulaearth/repos?per_page=100,,2026-11-20T19:53:25Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_domain,tum-boring.com,https://tum-boring.com/,,2026-11-20T19:52:38Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,wb_first_capture_any,2020-10-28,http://web.archive.org/cdx/search/cdx?url=tum-boring.com&output=json&limit=1&fl=timestamp&from=1996,20201028115227,2026-11-20T19:52:39Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_first_capture,2020-10-28,http://web.archive.org/cdx/search/cdx?url=tum-boring.com&output=json&limit=1&fl=timestamp&from=1996,20201028115227,2026-11-20T19:52:39Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_age_months,46,http://web.archive.org/cdx/search/cdx?url=tum-boring.com&output=json&limit=1&fl=timestamp&from=1996,20201028115227,2026-11-20T19:52:39Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_snapshot_date,2024-08-12,http://web.archive.org/web/20240812013746id_/https://tum-boring.com/,20240812013746,2026-11-20T19:52:41Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_impressum,1 (Imprint),http://web.archive.org/web/20240812013746id_/https://tum-boring.com/,20240812013746,2026-11-20T19:52:41Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_pricing_page,0,http://web.archive.org/web/20240812013746id_/https://tum-boring.com/,20240812013746,2026-11-20T19:52:41Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_waitlist,0,http://web.archive.org/web/20240812013746id_/https://tum-boring.com/,20240812013746,2026-11-20T19:52:41Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_customer_logos,0,http://web.archive.org/web/20240812013746id_/https://tum-boring.com/,20240812013746,2026-11-20T19:52:41Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_jobs_page,0,http://web.archive.org/web/20240812013746id_/https://tum-boring.com/,20240812013746,2026-11-20T19:52:41Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_legal_entity,e.V.,http://web.archive.org/web/20240812013746id_/https://tum-boring.com/,20240812013746,2026-11-20T19:52:41Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_gmbh_ig,0,http://web.archive.org/web/20240812013746id_/https://tum-boring.com/,20240812013746,2026-11-20T19:52:41Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_description_text,1500 chars,http://web.archive.org/web/20240812013746id_/https://tum-boring.com/,20240812013746,2026-11-20T19:52:41Z
+TUM Boring Innovation in Tunneling e.V.,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=tum-boring.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:52:41Z
+Admyral,2024-09-01,f_domain,admyral.dev,https://admyral.dev/,,2026-11-20T19:52:51Z
+Admyral,2024-09-01,wb_first_capture_any,2024-04-25,http://web.archive.org/cdx/search/cdx?url=admyral.dev&output=json&limit=1&fl=timestamp&from=1996,20240425171851,2026-11-20T19:52:52Z
+Admyral,2024-09-01,f_first_capture,2024-04-25,http://web.archive.org/cdx/search/cdx?url=admyral.dev&output=json&limit=1&fl=timestamp&from=1996,20240425171851,2026-11-20T19:52:52Z
+Admyral,2024-09-01,f_age_months,4,http://web.archive.org/cdx/search/cdx?url=admyral.dev&output=json&limit=1&fl=timestamp&from=1996,20240425171851,2026-11-20T19:52:52Z
+Admyral,2024-09-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=admyral.dev&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20240831&from=1996,,2026-11-20T19:52:53Z
+Admyral,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=admyral.dev&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:52:53Z
+AICU,2024-09-01,f_domain,ai-cu.com,https://www.ai-cu.com/,,2026-11-20T19:53:15Z
+AICU,2024-09-01,wb_first_capture_any,2023-02-27,http://web.archive.org/cdx/search/cdx?url=ai-cu.com&output=json&limit=1&fl=timestamp&from=1996,20230227102654,2026-11-20T19:53:15Z
+AICU,2024-09-01,f_first_capture,2023-02-27,http://web.archive.org/cdx/search/cdx?url=ai-cu.com&output=json&limit=1&fl=timestamp&from=1996,20230227102654,2026-11-20T19:53:15Z
+AICU,2024-09-01,f_age_months,18,http://web.archive.org/cdx/search/cdx?url=ai-cu.com&output=json&limit=1&fl=timestamp&from=1996,20230227102654,2026-11-20T19:53:15Z
+AICU,2024-09-01,f_snapshot_date,2024-08-27,http://web.archive.org/web/20240827184644id_/https://www.ai-cu.com/,20240827184644,2026-11-20T19:53:17Z
+AICU,2024-09-01,f_impressum,1 (Impressum),http://web.archive.org/web/20240827184644id_/https://www.ai-cu.com/,20240827184644,2026-11-20T19:53:17Z
+AICU,2024-09-01,f_pricing_page,0,http://web.archive.org/web/20240827184644id_/https://www.ai-cu.com/,20240827184644,2026-11-20T19:53:17Z
+AICU,2024-09-01,f_waitlist,1 (waitlist),http://web.archive.org/web/20240827184644id_/https://www.ai-cu.com/,20240827184644,2026-11-20T19:53:17Z
+AICU,2024-09-01,f_customer_logos,0,http://web.archive.org/web/20240827184644id_/https://www.ai-cu.com/,20240827184644,2026-11-20T19:53:17Z
+AICU,2024-09-01,f_jobs_page,0,http://web.archive.org/web/20240827184644id_/https://www.ai-cu.com/,20240827184644,2026-11-20T19:53:17Z
+AICU,2024-09-01,f_legal_entity,,http://web.archive.org/web/20240827184644id_/https://www.ai-cu.com/,20240827184644,2026-11-20T19:53:17Z
+AICU,2024-09-01,f_gmbh_ig,0,http://web.archive.org/web/20240827184644id_/https://www.ai-cu.com/,20240827184644,2026-11-20T19:53:17Z
+AICU,2024-09-01,f_description_text,1500 chars,http://web.archive.org/web/20240827184644id_/https://www.ai-cu.com/,20240827184644,2026-11-20T19:53:17Z
+AICU,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=ai-cu.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:53:18Z
+AICU,2024-09-01,f_gh_org,aicu (matched by name),https://api.github.com/search/users?q=AICU+type%3Aorg,,2026-11-20T19:55:09Z
+AICU,2024-09-01,f_gh_created,2015-10-28,https://api.github.com/users/aicu,2015-10-28T23:27:43Z,2026-11-20T19:55:10Z
+AICU,2024-09-01,f_gh_public_repos_before,0,https://api.github.com/orgs/aicu/repos?per_page=100,,2026-11-20T19:55:11Z
+Alganize,2024-09-01,f_domain,alganize.de,https://www.alganize.de,,2026-11-20T19:53:25Z
+Alganize,2024-09-01,wb_first_capture_any,2023-03-13,http://web.archive.org/cdx/search/cdx?url=alganize.de&output=json&limit=1&fl=timestamp&from=1996,20230313082327,2026-11-20T19:53:26Z
+Alganize,2024-09-01,f_first_capture,2023-03-13,http://web.archive.org/cdx/search/cdx?url=alganize.de&output=json&limit=1&fl=timestamp&from=1996,20230313082327,2026-11-20T19:53:26Z
+Alganize,2024-09-01,f_age_months,17,http://web.archive.org/cdx/search/cdx?url=alganize.de&output=json&limit=1&fl=timestamp&from=1996,20230313082327,2026-11-20T19:53:26Z
+Alganize,2024-09-01,f_snapshot_date,2024-08-23,http://web.archive.org/web/20240823000912id_/https://www.alganize.de/,20240823000912,2026-11-20T19:53:31Z
+Alganize,2024-09-01,f_impressum,1 (Imprint),http://web.archive.org/web/20240823000912id_/https://www.alganize.de/,20240823000912,2026-11-20T19:53:31Z
+Alganize,2024-09-01,f_pricing_page,0,http://web.archive.org/web/20240823000912id_/https://www.alganize.de/,20240823000912,2026-11-20T19:53:31Z
+Alganize,2024-09-01,f_waitlist,0,http://web.archive.org/web/20240823000912id_/https://www.alganize.de/,20240823000912,2026-11-20T19:53:31Z
+Alganize,2024-09-01,f_customer_logos,0,http://web.archive.org/web/20240823000912id_/https://www.alganize.de/,20240823000912,2026-11-20T19:53:31Z
+Alganize,2024-09-01,f_jobs_page,0,http://web.archive.org/web/20240823000912id_/https://www.alganize.de/,20240823000912,2026-11-20T19:53:31Z
+Alganize,2024-09-01,f_legal_entity,,http://web.archive.org/web/20240823000912id_/https://www.alganize.de/,20240823000912,2026-11-20T19:53:31Z
+Alganize,2024-09-01,f_gmbh_ig,0,http://web.archive.org/web/20240823000912id_/https://www.alganize.de/,20240823000912,2026-11-20T19:53:31Z
+Alganize,2024-09-01,f_description_text,1500 chars,http://web.archive.org/web/20240823000912id_/https://www.alganize.de/,20240823000912,2026-11-20T19:53:31Z
+Alganize,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=alganize.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:53:32Z
+Beautechful,2024-09-01,f_gh_org,Beautechful (matched by name),https://api.github.com/search/users?q=Beautechful+type%3Aorg,,2026-11-20T19:53:40Z
+Beautechful,2024-09-01,f_gh_created,2023-12-16,https://api.github.com/users/Beautechful,2023-12-16T16:05:29Z,2026-11-20T19:53:41Z
+Beautechful,2024-09-01,f_gh_public_repos_before,0,https://api.github.com/orgs/Beautechful/repos?per_page=100,,2026-11-20T19:53:42Z
+Bonescreen,2024-09-01,f_domain,bonescreen.de,https://www.bonescreen.de/,,2026-11-20T19:53:44Z
+Bonescreen,2024-09-01,wb_first_capture_any,2021-03-02,http://web.archive.org/cdx/search/cdx?url=bonescreen.de&output=json&limit=1&fl=timestamp&from=1996,20210302231854,2026-11-20T19:53:45Z
+Bonescreen,2024-09-01,f_first_capture,2021-03-02,http://web.archive.org/cdx/search/cdx?url=bonescreen.de&output=json&limit=1&fl=timestamp&from=1996,20210302231854,2026-11-20T19:53:45Z
+Bonescreen,2024-09-01,f_age_months,41,http://web.archive.org/cdx/search/cdx?url=bonescreen.de&output=json&limit=1&fl=timestamp&from=1996,20210302231854,2026-11-20T19:53:45Z
+Bonescreen,2024-09-01,f_snapshot_date,2024-08-15,http://web.archive.org/web/20240815080121id_/https://www.bonescreen.de/,20240815080121,2026-11-20T19:53:47Z
+Bonescreen,2024-09-01,f_impressum,1 (Impressum),http://web.archive.org/web/20240815080121id_/https://www.bonescreen.de/,20240815080121,2026-11-20T19:53:47Z
+Bonescreen,2024-09-01,f_pricing_page,0,http://web.archive.org/web/20240815080121id_/https://www.bonescreen.de/,20240815080121,2026-11-20T19:53:47Z
+Bonescreen,2024-09-01,f_waitlist,0,http://web.archive.org/web/20240815080121id_/https://www.bonescreen.de/,20240815080121,2026-11-20T19:53:47Z
+Bonescreen,2024-09-01,f_customer_logos,1 (used by),http://web.archive.org/web/20240815080121id_/https://www.bonescreen.de/,20240815080121,2026-11-20T19:53:47Z
+Bonescreen,2024-09-01,f_jobs_page,0,http://web.archive.org/web/20240815080121id_/https://www.bonescreen.de/,20240815080121,2026-11-20T19:53:47Z
+Bonescreen,2024-09-01,f_legal_entity,GmbH,http://web.archive.org/web/20240815080121id_/https://www.bonescreen.de/,20240815080121,2026-11-20T19:53:47Z
+Bonescreen,2024-09-01,f_gmbh_ig,0,http://web.archive.org/web/20240815080121id_/https://www.bonescreen.de/,20240815080121,2026-11-20T19:53:47Z
+Bonescreen,2024-09-01,f_description_text,1500 chars,http://web.archive.org/web/20240815080121id_/https://www.bonescreen.de/,20240815080121,2026-11-20T19:53:47Z
+Bonescreen,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=bonescreen.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:53:48Z
+Bonescreen,2024-09-01,f_gh_org,bonescreen (matched by name),https://api.github.com/search/users?q=Bonescreen+type%3Aorg,,2026-11-20T19:54:25Z
+Bonescreen,2024-09-01,f_gh_created,2024-02-29,https://api.github.com/users/bonescreen,2024-02-29T11:12:48Z,2026-11-20T19:54:26Z
+Bonescreen,2024-09-01,f_gh_public_repos_before,0,https://api.github.com/orgs/bonescreen/repos?per_page=100,,2026-11-20T19:54:27Z
+Countful,2024-09-01,f_gh_org,countful (matched by name),https://api.github.com/search/users?q=Countful+type%3Aorg,,2026-11-20T19:54:28Z
+Countful,2024-09-01,f_gh_created,2023-06-12,https://api.github.com/users/countful,2023-06-12T14:21:10Z,2026-11-20T19:54:29Z
+Countful,2024-09-01,f_gh_public_repos_before,0,https://api.github.com/orgs/countful/repos?per_page=100,,2026-11-20T19:54:30Z
+Fungtional Bio,2024-09-01,f_domain,fungtional.bio,https://www.fungtional.bio,,2026-11-20T19:54:31Z
+Fungtional Bio,2024-09-01,wb_first_capture_any,2024-04-19,http://web.archive.org/cdx/search/cdx?url=fungtional.bio&output=json&limit=1&fl=timestamp&from=1996,20240419165401,2026-11-20T19:54:33Z
+Fungtional Bio,2024-09-01,f_first_capture,2024-04-19,http://web.archive.org/cdx/search/cdx?url=fungtional.bio&output=json&limit=1&fl=timestamp&from=1996,20240419165401,2026-11-20T19:54:33Z
+Fungtional Bio,2024-09-01,f_age_months,4,http://web.archive.org/cdx/search/cdx?url=fungtional.bio&output=json&limit=1&fl=timestamp&from=1996,20240419165401,2026-11-20T19:54:33Z
+Fungtional Bio,2024-09-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=fungtional.bio&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20240831&from=1996,,2026-11-20T19:54:35Z
+Fungtional Bio,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=fungtional.bio&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:54:35Z
+KATALYST,2024-09-01,f_domain,katalyst-labs.com,https://katalyst-labs.com/,,2026-11-20T19:54:42Z
+KATALYST,2024-09-01,wb_first_capture_any,2011-02-08,http://web.archive.org/cdx/search/cdx?url=katalyst-labs.com&output=json&limit=1&fl=timestamp&from=1996,20110208011913,2026-11-20T19:54:43Z
+KATALYST,2024-09-01,f_first_capture,2011-02-08,http://web.archive.org/cdx/search/cdx?url=katalyst-labs.com&output=json&limit=1&fl=timestamp&from=1996,20110208011913,2026-11-20T19:54:43Z
+KATALYST,2024-09-01,f_age_months,162,http://web.archive.org/cdx/search/cdx?url=katalyst-labs.com&output=json&limit=1&fl=timestamp&from=1996,20110208011913,2026-11-20T19:54:43Z
+KATALYST,2024-09-01,f_snapshot_date,2024-08-19,http://web.archive.org/web/20240819163417id_/https://katalyst-labs.com/,20240819163417,2026-11-20T19:54:45Z
+KATALYST,2024-09-01,f_impressum,1 (impressum),http://web.archive.org/web/20240819163417id_/https://katalyst-labs.com/,20240819163417,2026-11-20T19:54:45Z
+KATALYST,2024-09-01,f_pricing_page,0,http://web.archive.org/web/20240819163417id_/https://katalyst-labs.com/,20240819163417,2026-11-20T19:54:45Z
+KATALYST,2024-09-01,f_waitlist,0,http://web.archive.org/web/20240819163417id_/https://katalyst-labs.com/,20240819163417,2026-11-20T19:54:45Z
+KATALYST,2024-09-01,f_customer_logos,0,http://web.archive.org/web/20240819163417id_/https://katalyst-labs.com/,20240819163417,2026-11-20T19:54:45Z
+KATALYST,2024-09-01,f_jobs_page,0,http://web.archive.org/web/20240819163417id_/https://katalyst-labs.com/,20240819163417,2026-11-20T19:54:45Z
+KATALYST,2024-09-01,f_legal_entity,,http://web.archive.org/web/20240819163417id_/https://katalyst-labs.com/,20240819163417,2026-11-20T19:54:45Z
+KATALYST,2024-09-01,f_gmbh_ig,0,http://web.archive.org/web/20240819163417id_/https://katalyst-labs.com/,20240819163417,2026-11-20T19:54:45Z
+KATALYST,2024-09-01,f_description_text,1500 chars,http://web.archive.org/web/20240819163417id_/https://katalyst-labs.com/,20240819163417,2026-11-20T19:54:45Z
+KATALYST,2024-09-01,f_hn_posts_before,1,https://hn.algolia.com/api/v1/search?query=katalyst-labs.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:54:46Z
+KATALYST,2024-09-01,f_hn_max_points,2,https://news.ycombinator.com/item?id=40777365,2024-06-24T15:39:23Z,2026-11-20T19:54:46Z
+Micro Factory,2024-09-01,f_domain,micro-factory.de,https://micro-factory.de/,,2026-11-20T19:55:04Z
+Micro Factory,2024-09-01,wb_first_capture_any,2023-10-03,http://web.archive.org/cdx/search/cdx?url=micro-factory.de&output=json&limit=1&fl=timestamp&from=1996,20231003192523,2026-11-20T19:55:04Z
+Micro Factory,2024-09-01,f_first_capture,2023-10-03,http://web.archive.org/cdx/search/cdx?url=micro-factory.de&output=json&limit=1&fl=timestamp&from=1996,20231003192523,2026-11-20T19:55:04Z
+Micro Factory,2024-09-01,f_age_months,10,http://web.archive.org/cdx/search/cdx?url=micro-factory.de&output=json&limit=1&fl=timestamp&from=1996,20231003192523,2026-11-20T19:55:04Z
+Micro Factory,2024-09-01,f_snapshot_date,2024-08-17,http://web.archive.org/web/20240817045543id_/https://micro-factory.de/,20240817045543,2026-11-20T19:55:08Z
+Micro Factory,2024-09-01,f_impressum,1 (Impressum),http://web.archive.org/web/20240817045543id_/https://micro-factory.de/,20240817045543,2026-11-20T19:55:08Z
+Micro Factory,2024-09-01,f_pricing_page,0,http://web.archive.org/web/20240817045543id_/https://micro-factory.de/,20240817045543,2026-11-20T19:55:08Z
+Micro Factory,2024-09-01,f_waitlist,0,http://web.archive.org/web/20240817045543id_/https://micro-factory.de/,20240817045543,2026-11-20T19:55:08Z
+Micro Factory,2024-09-01,f_customer_logos,0,http://web.archive.org/web/20240817045543id_/https://micro-factory.de/,20240817045543,2026-11-20T19:55:08Z
+Micro Factory,2024-09-01,f_jobs_page,1 (jobs),http://web.archive.org/web/20240817045543id_/https://micro-factory.de/,20240817045543,2026-11-20T19:55:08Z
+Micro Factory,2024-09-01,f_legal_entity,,http://web.archive.org/web/20240817045543id_/https://micro-factory.de/,20240817045543,2026-11-20T19:55:08Z
+Micro Factory,2024-09-01,f_gmbh_ig,0,http://web.archive.org/web/20240817045543id_/https://micro-factory.de/,20240817045543,2026-11-20T19:55:08Z
+Micro Factory,2024-09-01,f_description_text,1500 chars,http://web.archive.org/web/20240817045543id_/https://micro-factory.de/,20240817045543,2026-11-20T19:55:08Z
+Micro Factory,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=micro-factory.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:55:08Z
+Patalyze,2024-09-01,f_domain,patalyze.com,https://www.patalyze.com/,,2026-11-20T19:55:11Z
+Patalyze,2024-09-01,wb_first_capture_any,2023-12-16,http://web.archive.org/cdx/search/cdx?url=patalyze.com&output=json&limit=1&fl=timestamp&from=1996,20231216062450,2026-11-20T19:55:13Z
+Patalyze,2024-09-01,f_first_capture,2023-12-16,http://web.archive.org/cdx/search/cdx?url=patalyze.com&output=json&limit=1&fl=timestamp&from=1996,20231216062450,2026-11-20T19:55:13Z
+Patalyze,2024-09-01,f_age_months,8,http://web.archive.org/cdx/search/cdx?url=patalyze.com&output=json&limit=1&fl=timestamp&from=1996,20231216062450,2026-11-20T19:55:13Z
+Patalyze,2024-09-01,f_snapshot_date,2024-08-18,http://web.archive.org/web/20240818180017id_/https://www.patalyze.com/,20240818180017,2026-11-20T19:55:15Z
+Patalyze,2024-09-01,f_impressum,0,http://web.archive.org/web/20240818180017id_/https://www.patalyze.com/,20240818180017,2026-11-20T19:55:15Z
+Patalyze,2024-09-01,f_pricing_page,0,http://web.archive.org/web/20240818180017id_/https://www.patalyze.com/,20240818180017,2026-11-20T19:55:15Z
+Patalyze,2024-09-01,f_waitlist,1 (Waitlist),http://web.archive.org/web/20240818180017id_/https://www.patalyze.com/,20240818180017,2026-11-20T19:55:15Z
+Patalyze,2024-09-01,f_customer_logos,0,http://web.archive.org/web/20240818180017id_/https://www.patalyze.com/,20240818180017,2026-11-20T19:55:15Z
+Patalyze,2024-09-01,f_jobs_page,0,http://web.archive.org/web/20240818180017id_/https://www.patalyze.com/,20240818180017,2026-11-20T19:55:15Z
+Patalyze,2024-09-01,f_legal_entity,GmbH,http://web.archive.org/web/20240818180017id_/https://www.patalyze.com/,20240818180017,2026-11-20T19:55:15Z
+Patalyze,2024-09-01,f_gmbh_ig,0,http://web.archive.org/web/20240818180017id_/https://www.patalyze.com/,20240818180017,2026-11-20T19:55:15Z
+Patalyze,2024-09-01,f_description_text,1500 chars,http://web.archive.org/web/20240818180017id_/https://www.patalyze.com/,20240818180017,2026-11-20T19:55:15Z
+Patalyze,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=patalyze.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:55:15Z
+Patalyze,2024-09-01,f_gh_org,patalyze (matched by name),https://api.github.com/search/users?q=Patalyze+type%3Aorg,,2026-11-20T19:57:38Z
+Patalyze,2024-09-01,f_gh_created,2023-12-14,https://api.github.com/users/patalyze,2023-12-14T16:32:55Z,2026-11-20T19:57:39Z
+Patalyze,2024-09-01,f_gh_public_repos_before,0,https://api.github.com/orgs/patalyze/repos?per_page=100,,2026-11-20T19:57:40Z
+Prio Optics,2024-09-01,f_domain,prio-optic.com,https://prio-optic.com,,2026-11-20T19:55:19Z
+Prio Optics,2024-09-01,wb_first_capture_any,2025-01-24,http://web.archive.org/cdx/search/cdx?url=prio-optic.com&output=json&limit=1&fl=timestamp&from=1996,20250124130908,2026-11-20T19:55:19Z
+Prio Optics,2024-09-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=prio-optic.com&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20240831&from=1996,,2026-11-20T19:55:20Z
+Prio Optics,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=prio-optic.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:55:21Z
+SAM Robotics,2024-09-01,f_domain,sam-robotics.com,https://sam-robotics.com,,2026-11-20T19:56:03Z
+SAM Robotics,2024-09-01,wb_first_capture_any,2024-09-17,http://web.archive.org/cdx/search/cdx?url=sam-robotics.com&output=json&limit=1&fl=timestamp&from=1996,20240917094437,2026-11-20T19:56:03Z
+SAM Robotics,2024-09-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=sam-robotics.com&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20240831&from=1996,,2026-11-20T19:56:04Z
+SAM Robotics,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=sam-robotics.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:56:05Z
+syn2core,2024-09-01,f_gh_org,syn2core (matched by name),https://api.github.com/search/users?q=syn2core+type%3Aorg,,2026-11-20T19:56:28Z
+syn2core,2024-09-01,f_gh_created,2025-04-30,https://api.github.com/users/syn2core,2025-04-30T06:32:53Z,2026-11-20T19:56:30Z
+TUfast Moto Electric,2024-09-01,f_domain,tufast-motoelectric.de,https://tufast-motoelectric.de/team025/,,2026-11-20T19:56:30Z
+TUfast Moto Electric,2024-09-01,wb_first_capture_any,2024-04-25,http://web.archive.org/cdx/search/cdx?url=tufast-motoelectric.de&output=json&limit=1&fl=timestamp&from=1996,20240425212554,2026-11-20T19:56:31Z
+TUfast Moto Electric,2024-09-01,f_first_capture,2024-04-25,http://web.archive.org/cdx/search/cdx?url=tufast-motoelectric.de&output=json&limit=1&fl=timestamp&from=1996,20240425212554,2026-11-20T19:56:31Z
+TUfast Moto Electric,2024-09-01,f_age_months,4,http://web.archive.org/cdx/search/cdx?url=tufast-motoelectric.de&output=json&limit=1&fl=timestamp&from=1996,20240425212554,2026-11-20T19:56:31Z
+TUfast Moto Electric,2024-09-01,f_snapshot_date,2024-08-25,http://web.archive.org/web/20240825205722id_/https://tufast-motoelectric.de/,20240825205722,2026-11-20T19:56:37Z
+TUfast Moto Electric,2024-09-01,f_impressum,1 (Imprint),http://web.archive.org/web/20240825205722id_/https://tufast-motoelectric.de/,20240825205722,2026-11-20T19:56:37Z
+TUfast Moto Electric,2024-09-01,f_pricing_page,0,http://web.archive.org/web/20240825205722id_/https://tufast-motoelectric.de/,20240825205722,2026-11-20T19:56:37Z
+TUfast Moto Electric,2024-09-01,f_waitlist,0,http://web.archive.org/web/20240825205722id_/https://tufast-motoelectric.de/,20240825205722,2026-11-20T19:56:37Z
+TUfast Moto Electric,2024-09-01,f_customer_logos,0,http://web.archive.org/web/20240825205722id_/https://tufast-motoelectric.de/,20240825205722,2026-11-20T19:56:37Z
+TUfast Moto Electric,2024-09-01,f_jobs_page,0,http://web.archive.org/web/20240825205722id_/https://tufast-motoelectric.de/,20240825205722,2026-11-20T19:56:37Z
+TUfast Moto Electric,2024-09-01,f_legal_entity,e.V.,http://web.archive.org/web/20240825205722id_/https://tufast-motoelectric.de/,20240825205722,2026-11-20T19:56:37Z
+TUfast Moto Electric,2024-09-01,f_gmbh_ig,0,http://web.archive.org/web/20240825205722id_/https://tufast-motoelectric.de/,20240825205722,2026-11-20T19:56:37Z
+TUfast Moto Electric,2024-09-01,f_description_text,1500 chars,http://web.archive.org/web/20240825205722id_/https://tufast-motoelectric.de/,20240825205722,2026-11-20T19:56:37Z
+TUfast Moto Electric,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=tufast-motoelectric.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:56:38Z
+alago.ai,2024-09-01,f_domain,alago.ai,https://www.alago.ai/,,2026-11-20T19:56:31Z
+alago.ai,2024-09-01,wb_first_capture_any,2024-07-20,http://web.archive.org/cdx/search/cdx?url=alago.ai&output=json&limit=1&fl=timestamp&from=1996,20240720052924,2026-11-20T19:56:33Z
+alago.ai,2024-09-01,f_first_capture,2024-07-20,http://web.archive.org/cdx/search/cdx?url=alago.ai&output=json&limit=1&fl=timestamp&from=1996,20240720052924,2026-11-20T19:56:33Z
+alago.ai,2024-09-01,f_age_months,1,http://web.archive.org/cdx/search/cdx?url=alago.ai&output=json&limit=1&fl=timestamp&from=1996,20240720052924,2026-11-20T19:56:33Z
+alago.ai,2024-09-01,f_snapshot_date,2024-08-27,http://web.archive.org/web/20240827181410id_/https://www.alago.ai/,20240827181410,2026-11-20T19:56:36Z
+alago.ai,2024-09-01,f_impressum,0,http://web.archive.org/web/20240827181410id_/https://www.alago.ai/,20240827181410,2026-11-20T19:56:36Z
+alago.ai,2024-09-01,f_pricing_page,0,http://web.archive.org/web/20240827181410id_/https://www.alago.ai/,20240827181410,2026-11-20T19:56:36Z
+alago.ai,2024-09-01,f_waitlist,0,http://web.archive.org/web/20240827181410id_/https://www.alago.ai/,20240827181410,2026-11-20T19:56:36Z
+alago.ai,2024-09-01,f_customer_logos,0,http://web.archive.org/web/20240827181410id_/https://www.alago.ai/,20240827181410,2026-11-20T19:56:36Z
+alago.ai,2024-09-01,f_jobs_page,0,http://web.archive.org/web/20240827181410id_/https://www.alago.ai/,20240827181410,2026-11-20T19:56:36Z
+alago.ai,2024-09-01,f_legal_entity,,http://web.archive.org/web/20240827181410id_/https://www.alago.ai/,20240827181410,2026-11-20T19:56:36Z
+alago.ai,2024-09-01,f_gmbh_ig,0,http://web.archive.org/web/20240827181410id_/https://www.alago.ai/,20240827181410,2026-11-20T19:56:36Z
+alago.ai,2024-09-01,f_description_text,1023 chars,http://web.archive.org/web/20240827181410id_/https://www.alago.ai/,20240827181410,2026-11-20T19:56:36Z
+alago.ai,2024-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=alago.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1725148800&hitsPerPage=100,,2026-11-20T19:56:37Z
+Seal Robotics,2025-03-01,f_domain,seal-robotics.com,https://seal-robotics.com,,2026-11-20T19:57:22Z
+Seal Robotics,2025-03-01,wb_first_capture_any,2024-09-06,http://web.archive.org/cdx/search/cdx?url=seal-robotics.com&output=json&limit=1&fl=timestamp&from=1996,20240906055402,2026-11-20T19:57:22Z
+Seal Robotics,2025-03-01,f_first_capture,2024-09-06,http://web.archive.org/cdx/search/cdx?url=seal-robotics.com&output=json&limit=1&fl=timestamp&from=1996,20240906055402,2026-11-20T19:57:22Z
+Seal Robotics,2025-03-01,f_age_months,5,http://web.archive.org/cdx/search/cdx?url=seal-robotics.com&output=json&limit=1&fl=timestamp&from=1996,20240906055402,2026-11-20T19:57:22Z
+Seal Robotics,2025-03-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=seal-robotics.com&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20250228&from=1996,,2026-11-20T19:57:28Z
+Seal Robotics,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=seal-robotics.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T19:57:29Z
+Seal Robotics,2025-03-01,f_gh_org,SEAL-Robotics (matched by name),https://api.github.com/search/users?q=Seal+Robotics+type%3Aorg,,2026-11-20T19:59:20Z
+Seal Robotics,2025-03-01,f_gh_created,2026-03-06,https://api.github.com/users/SEAL-Robotics,2026-03-06T14:02:35Z,2026-11-20T19:59:21Z
+Qoro Quantum,2025-03-01,f_domain,qoroquantum.de,https://www.qoroquantum.de,,2026-11-20T19:57:32Z
+Qoro Quantum,2025-03-01,wb_first_capture_any,2024-07-22,http://web.archive.org/cdx/search/cdx?url=qoroquantum.de&output=json&limit=1&fl=timestamp&from=1996,20240722142948,2026-11-20T19:57:33Z
+Qoro Quantum,2025-03-01,f_first_capture,2024-07-22,http://web.archive.org/cdx/search/cdx?url=qoroquantum.de&output=json&limit=1&fl=timestamp&from=1996,20240722142948,2026-11-20T19:57:33Z
+Qoro Quantum,2025-03-01,f_age_months,7,http://web.archive.org/cdx/search/cdx?url=qoroquantum.de&output=json&limit=1&fl=timestamp&from=1996,20240722142948,2026-11-20T19:57:33Z
+Qoro Quantum,2025-03-01,f_snapshot_date,2025-02-17,http://web.archive.org/web/20250217103245id_/https://www.qoroquantum.de/,20250217103245,2026-11-20T19:57:35Z
+Qoro Quantum,2025-03-01,f_impressum,0,http://web.archive.org/web/20250217103245id_/https://www.qoroquantum.de/,20250217103245,2026-11-20T19:57:35Z
+Qoro Quantum,2025-03-01,f_pricing_page,0,http://web.archive.org/web/20250217103245id_/https://www.qoroquantum.de/,20250217103245,2026-11-20T19:57:35Z
+Qoro Quantum,2025-03-01,f_waitlist,0,http://web.archive.org/web/20250217103245id_/https://www.qoroquantum.de/,20250217103245,2026-11-20T19:57:35Z
+Qoro Quantum,2025-03-01,f_customer_logos,0,http://web.archive.org/web/20250217103245id_/https://www.qoroquantum.de/,20250217103245,2026-11-20T19:57:35Z
+Qoro Quantum,2025-03-01,f_jobs_page,0,http://web.archive.org/web/20250217103245id_/https://www.qoroquantum.de/,20250217103245,2026-11-20T19:57:35Z
+Qoro Quantum,2025-03-01,f_legal_entity,,http://web.archive.org/web/20250217103245id_/https://www.qoroquantum.de/,20250217103245,2026-11-20T19:57:35Z
+Qoro Quantum,2025-03-01,f_gmbh_ig,0,http://web.archive.org/web/20250217103245id_/https://www.qoroquantum.de/,20250217103245,2026-11-20T19:57:35Z
+Qoro Quantum,2025-03-01,f_description_text,0 chars,http://web.archive.org/web/20250217103245id_/https://www.qoroquantum.de/,20250217103245,2026-11-20T19:57:35Z
+Qoro Quantum,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=qoroquantum.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T19:57:35Z
+Aiina Robotics,2025-03-01,f_domain,aiina-robotics.com,https://aiina-robotics.com/,,2026-11-20T19:57:40Z
+Aiina Robotics,2025-03-01,wb_first_capture_any,2024-04-28,http://web.archive.org/cdx/search/cdx?url=aiina-robotics.com&output=json&limit=1&fl=timestamp&from=1996,20240428174331,2026-11-20T19:57:41Z
+Aiina Robotics,2025-03-01,f_first_capture,2024-04-28,http://web.archive.org/cdx/search/cdx?url=aiina-robotics.com&output=json&limit=1&fl=timestamp&from=1996,20240428174331,2026-11-20T19:57:41Z
+Aiina Robotics,2025-03-01,f_age_months,10,http://web.archive.org/cdx/search/cdx?url=aiina-robotics.com&output=json&limit=1&fl=timestamp&from=1996,20240428174331,2026-11-20T19:57:41Z
+Aiina Robotics,2025-03-01,f_snapshot_date,2025-02-18,http://web.archive.org/web/20250218060048id_/https://aiina-robotics.com/,20250218060048,2026-11-20T19:57:44Z
+Aiina Robotics,2025-03-01,f_impressum,0,http://web.archive.org/web/20250218060048id_/https://aiina-robotics.com/,20250218060048,2026-11-20T19:57:44Z
+Aiina Robotics,2025-03-01,f_pricing_page,0,http://web.archive.org/web/20250218060048id_/https://aiina-robotics.com/,20250218060048,2026-11-20T19:57:44Z
+Aiina Robotics,2025-03-01,f_waitlist,0,http://web.archive.org/web/20250218060048id_/https://aiina-robotics.com/,20250218060048,2026-11-20T19:57:44Z
+Aiina Robotics,2025-03-01,f_customer_logos,0,http://web.archive.org/web/20250218060048id_/https://aiina-robotics.com/,20250218060048,2026-11-20T19:57:44Z
+Aiina Robotics,2025-03-01,f_jobs_page,0,http://web.archive.org/web/20250218060048id_/https://aiina-robotics.com/,20250218060048,2026-11-20T19:57:44Z
+Aiina Robotics,2025-03-01,f_legal_entity,,http://web.archive.org/web/20250218060048id_/https://aiina-robotics.com/,20250218060048,2026-11-20T19:57:44Z
+Aiina Robotics,2025-03-01,f_gmbh_ig,0,http://web.archive.org/web/20250218060048id_/https://aiina-robotics.com/,20250218060048,2026-11-20T19:57:44Z
+Aiina Robotics,2025-03-01,f_description_text,1500 chars,http://web.archive.org/web/20250218060048id_/https://aiina-robotics.com/,20250218060048,2026-11-20T19:57:44Z
+Aiina Robotics,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=aiina-robotics.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T19:57:44Z
+2NA Fish,2025-03-01,f_domain,2nafish.bio,https://2nafish.bio/,,2026-11-20T19:57:51Z
+2NA Fish,2025-03-01,wb_first_capture_any,2021-11-23,http://web.archive.org/cdx/search/cdx?url=2nafish.bio&output=json&limit=1&fl=timestamp&from=1996,20211123164318,2026-11-20T19:57:53Z
+2NA Fish,2025-03-01,f_first_capture,2021-11-23,http://web.archive.org/cdx/search/cdx?url=2nafish.bio&output=json&limit=1&fl=timestamp&from=1996,20211123164318,2026-11-20T19:57:53Z
+2NA Fish,2025-03-01,f_age_months,39,http://web.archive.org/cdx/search/cdx?url=2nafish.bio&output=json&limit=1&fl=timestamp&from=1996,20211123164318,2026-11-20T19:57:53Z
+2NA Fish,2025-03-01,f_snapshot_date,2025-02-09,http://web.archive.org/web/20250209052701id_/https://2nafish.bio/,20250209052701,2026-11-20T19:57:57Z
+2NA Fish,2025-03-01,f_impressum,1 (Impressum),http://web.archive.org/web/20250209052701id_/https://2nafish.bio/,20250209052701,2026-11-20T19:57:57Z
+2NA Fish,2025-03-01,f_pricing_page,0,http://web.archive.org/web/20250209052701id_/https://2nafish.bio/,20250209052701,2026-11-20T19:57:57Z
+2NA Fish,2025-03-01,f_waitlist,0,http://web.archive.org/web/20250209052701id_/https://2nafish.bio/,20250209052701,2026-11-20T19:57:57Z
+2NA Fish,2025-03-01,f_customer_logos,0,http://web.archive.org/web/20250209052701id_/https://2nafish.bio/,20250209052701,2026-11-20T19:57:57Z
+2NA Fish,2025-03-01,f_jobs_page,0,http://web.archive.org/web/20250209052701id_/https://2nafish.bio/,20250209052701,2026-11-20T19:57:57Z
+2NA Fish,2025-03-01,f_legal_entity,,http://web.archive.org/web/20250209052701id_/https://2nafish.bio/,20250209052701,2026-11-20T19:57:57Z
+2NA Fish,2025-03-01,f_gmbh_ig,0,http://web.archive.org/web/20250209052701id_/https://2nafish.bio/,20250209052701,2026-11-20T19:57:57Z
+2NA Fish,2025-03-01,f_description_text,174 chars,http://web.archive.org/web/20250209052701id_/https://2nafish.bio/,20250209052701,2026-11-20T19:57:57Z
+2NA Fish,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=2nafish.bio&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T19:57:57Z
+Furward,2025-03-01,f_domain,furward.eu,https://www.furward.eu/,,2026-11-20T19:58:29Z
+Furward,2025-03-01,wb_first_capture_any,2024-08-04,http://web.archive.org/cdx/search/cdx?url=furward.eu&output=json&limit=1&fl=timestamp&from=1996,20240804192138,2026-11-20T19:58:29Z
+Furward,2025-03-01,f_first_capture,2024-08-04,http://web.archive.org/cdx/search/cdx?url=furward.eu&output=json&limit=1&fl=timestamp&from=1996,20240804192138,2026-11-20T19:58:29Z
+Furward,2025-03-01,f_age_months,6,http://web.archive.org/cdx/search/cdx?url=furward.eu&output=json&limit=1&fl=timestamp&from=1996,20240804192138,2026-11-20T19:58:29Z
+Furward,2025-03-01,f_snapshot_date,2025-01-20,http://web.archive.org/web/20250120145612id_/https://www.furward.eu/,20250120145612,2026-11-20T19:58:32Z
+Furward,2025-03-01,f_impressum,0,http://web.archive.org/web/20250120145612id_/https://www.furward.eu/,20250120145612,2026-11-20T19:58:32Z
+Furward,2025-03-01,f_pricing_page,0,http://web.archive.org/web/20250120145612id_/https://www.furward.eu/,20250120145612,2026-11-20T19:58:32Z
+Furward,2025-03-01,f_waitlist,0,http://web.archive.org/web/20250120145612id_/https://www.furward.eu/,20250120145612,2026-11-20T19:58:32Z
+Furward,2025-03-01,f_customer_logos,0,http://web.archive.org/web/20250120145612id_/https://www.furward.eu/,20250120145612,2026-11-20T19:58:32Z
+Furward,2025-03-01,f_jobs_page,0,http://web.archive.org/web/20250120145612id_/https://www.furward.eu/,20250120145612,2026-11-20T19:58:32Z
+Furward,2025-03-01,f_legal_entity,,http://web.archive.org/web/20250120145612id_/https://www.furward.eu/,20250120145612,2026-11-20T19:58:32Z
+Furward,2025-03-01,f_gmbh_ig,0,http://web.archive.org/web/20250120145612id_/https://www.furward.eu/,20250120145612,2026-11-20T19:58:32Z
+Furward,2025-03-01,f_description_text,0 chars,http://web.archive.org/web/20250120145612id_/https://www.furward.eu/,20250120145612,2026-11-20T19:58:32Z
+Furward,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=furward.eu&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T19:58:32Z
+Lexet AI,2025-03-01,f_domain,lexet.ai,https://lexet.ai,,2026-11-20T19:58:52Z
+Lexet AI,2025-03-01,wb_first_capture_any,2024-08-07,http://web.archive.org/cdx/search/cdx?url=lexet.ai&output=json&limit=1&fl=timestamp&from=1996,20240807101309,2026-11-20T19:58:53Z
+Lexet AI,2025-03-01,f_first_capture,2024-08-07,http://web.archive.org/cdx/search/cdx?url=lexet.ai&output=json&limit=1&fl=timestamp&from=1996,20240807101309,2026-11-20T19:58:53Z
+Lexet AI,2025-03-01,f_age_months,6,http://web.archive.org/cdx/search/cdx?url=lexet.ai&output=json&limit=1&fl=timestamp&from=1996,20240807101309,2026-11-20T19:58:53Z
+Lexet AI,2025-03-01,f_snapshot_date,2025-02-24,http://web.archive.org/web/20250224230354id_/https://www.lexet.ai/,20250224230354,2026-11-20T19:58:55Z
+Lexet AI,2025-03-01,f_impressum,0,http://web.archive.org/web/20250224230354id_/https://www.lexet.ai/,20250224230354,2026-11-20T19:58:55Z
+Lexet AI,2025-03-01,f_pricing_page,0,http://web.archive.org/web/20250224230354id_/https://www.lexet.ai/,20250224230354,2026-11-20T19:58:55Z
+Lexet AI,2025-03-01,f_waitlist,0,http://web.archive.org/web/20250224230354id_/https://www.lexet.ai/,20250224230354,2026-11-20T19:58:55Z
+Lexet AI,2025-03-01,f_customer_logos,0,http://web.archive.org/web/20250224230354id_/https://www.lexet.ai/,20250224230354,2026-11-20T19:58:55Z
+Lexet AI,2025-03-01,f_jobs_page,0,http://web.archive.org/web/20250224230354id_/https://www.lexet.ai/,20250224230354,2026-11-20T19:58:55Z
+Lexet AI,2025-03-01,f_legal_entity,,http://web.archive.org/web/20250224230354id_/https://www.lexet.ai/,20250224230354,2026-11-20T19:58:55Z
+Lexet AI,2025-03-01,f_gmbh_ig,0,http://web.archive.org/web/20250224230354id_/https://www.lexet.ai/,20250224230354,2026-11-20T19:58:55Z
+Lexet AI,2025-03-01,f_description_text,225 chars,http://web.archive.org/web/20250224230354id_/https://www.lexet.ai/,20250224230354,2026-11-20T19:58:55Z
+Lexet AI,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=lexet.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T19:58:55Z
+Neeno,2025-03-01,f_domain,myneeno.com,https://myneeno.com,,2026-11-20T19:59:21Z
+Neeno,2025-03-01,wb_first_capture_any,2021-12-08,http://web.archive.org/cdx/search/cdx?url=myneeno.com&output=json&limit=1&fl=timestamp&from=1996,20211208134354,2026-11-20T19:59:21Z
+Neeno,2025-03-01,f_first_capture,2021-12-08,http://web.archive.org/cdx/search/cdx?url=myneeno.com&output=json&limit=1&fl=timestamp&from=1996,20211208134354,2026-11-20T19:59:21Z
+Neeno,2025-03-01,f_age_months,38,http://web.archive.org/cdx/search/cdx?url=myneeno.com&output=json&limit=1&fl=timestamp&from=1996,20211208134354,2026-11-20T19:59:21Z
+Neeno,2025-03-01,f_snapshot_date,2023-01-08,http://web.archive.org/web/20230108221417id_/https://myneeno.com/,20230108221417,2026-11-20T19:59:24Z
+Neeno,2025-03-01,f_impressum,0,http://web.archive.org/web/20230108221417id_/https://myneeno.com/,20230108221417,2026-11-20T19:59:24Z
+Neeno,2025-03-01,f_pricing_page,0,http://web.archive.org/web/20230108221417id_/https://myneeno.com/,20230108221417,2026-11-20T19:59:24Z
+Neeno,2025-03-01,f_waitlist,0,http://web.archive.org/web/20230108221417id_/https://myneeno.com/,20230108221417,2026-11-20T19:59:24Z
+Neeno,2025-03-01,f_customer_logos,0,http://web.archive.org/web/20230108221417id_/https://myneeno.com/,20230108221417,2026-11-20T19:59:24Z
+Neeno,2025-03-01,f_jobs_page,0,http://web.archive.org/web/20230108221417id_/https://myneeno.com/,20230108221417,2026-11-20T19:59:24Z
+Neeno,2025-03-01,f_legal_entity,,http://web.archive.org/web/20230108221417id_/https://myneeno.com/,20230108221417,2026-11-20T19:59:24Z
+Neeno,2025-03-01,f_gmbh_ig,0,http://web.archive.org/web/20230108221417id_/https://myneeno.com/,20230108221417,2026-11-20T19:59:24Z
+Neeno,2025-03-01,f_description_text,917 chars,http://web.archive.org/web/20230108221417id_/https://myneeno.com/,20230108221417,2026-11-20T19:59:24Z
+Neeno,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=myneeno.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T19:59:24Z
+OnMCU,2025-03-01,f_gh_org,onmcu (matched by name),https://api.github.com/search/users?q=OnMCU+type%3Aorg,,2026-11-20T19:59:45Z
+OnMCU,2025-03-01,f_gh_created,2024-07-30,https://api.github.com/users/onmcu,2024-07-30T08:58:50Z,2026-11-20T19:59:46Z
+OnMCU,2025-03-01,f_gh_public_repos_before,2,https://api.github.com/orgs/onmcu/repos?per_page=100,,2026-11-20T19:59:47Z
+OnMCU,2025-03-01,f_gh_commit_weeks_active,2 (repo awesome-embedded-testing),https://api.github.com/repos/onmcu/awesome-embedded-testing/commits?since=2025-01-04T00%3A00%3A00Z&until=2025-03-01T00%3A00%3A00Z&per_page=100,,2026-11-20T19:59:49Z
+ROBOTUM,2025-03-01,f_domain,robotum.info,https://www.robotum.info/,,2026-11-20T19:59:49Z
+ROBOTUM,2025-03-01,wb_first_capture_any,2024-07-12,http://web.archive.org/cdx/search/cdx?url=robotum.info&output=json&limit=1&fl=timestamp&from=1996,20240712172935,2026-11-20T19:59:49Z
+ROBOTUM,2025-03-01,f_first_capture,2024-07-12,http://web.archive.org/cdx/search/cdx?url=robotum.info&output=json&limit=1&fl=timestamp&from=1996,20240712172935,2026-11-20T19:59:49Z
+ROBOTUM,2025-03-01,f_age_months,7,http://web.archive.org/cdx/search/cdx?url=robotum.info&output=json&limit=1&fl=timestamp&from=1996,20240712172935,2026-11-20T19:59:49Z
+ROBOTUM,2025-03-01,f_snapshot_date,2025-02-16,http://web.archive.org/web/20250216151006id_/https://www.robotum.info/,20250216151006,2026-11-20T19:59:53Z
+ROBOTUM,2025-03-01,f_impressum,1 (Impressum),http://web.archive.org/web/20250216151006id_/https://www.robotum.info/,20250216151006,2026-11-20T19:59:53Z
+ROBOTUM,2025-03-01,f_pricing_page,0,http://web.archive.org/web/20250216151006id_/https://www.robotum.info/,20250216151006,2026-11-20T19:59:53Z
+ROBOTUM,2025-03-01,f_waitlist,0,http://web.archive.org/web/20250216151006id_/https://www.robotum.info/,20250216151006,2026-11-20T19:59:53Z
+ROBOTUM,2025-03-01,f_customer_logos,0,http://web.archive.org/web/20250216151006id_/https://www.robotum.info/,20250216151006,2026-11-20T19:59:53Z
+ROBOTUM,2025-03-01,f_jobs_page,0,http://web.archive.org/web/20250216151006id_/https://www.robotum.info/,20250216151006,2026-11-20T19:59:53Z
+ROBOTUM,2025-03-01,f_legal_entity,,http://web.archive.org/web/20250216151006id_/https://www.robotum.info/,20250216151006,2026-11-20T19:59:53Z
+ROBOTUM,2025-03-01,f_gmbh_ig,0,http://web.archive.org/web/20250216151006id_/https://www.robotum.info/,20250216151006,2026-11-20T19:59:53Z
+ROBOTUM,2025-03-01,f_description_text,1500 chars,http://web.archive.org/web/20250216151006id_/https://www.robotum.info/,20250216151006,2026-11-20T19:59:53Z
+ROBOTUM,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=robotum.info&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T19:59:54Z
+Rooted,2025-03-01,f_domain,rooted.farm,https://rooted.farm,,2026-11-20T19:59:50Z
+Rooted,2025-03-01,wb_first_capture_any,2021-12-23,http://web.archive.org/cdx/search/cdx?url=rooted.farm&output=json&limit=1&fl=timestamp&from=1996,20211223021149,2026-11-20T19:59:52Z
+Rooted,2025-03-01,f_first_capture,2021-12-23,http://web.archive.org/cdx/search/cdx?url=rooted.farm&output=json&limit=1&fl=timestamp&from=1996,20211223021149,2026-11-20T19:59:52Z
+Rooted,2025-03-01,f_age_months,38,http://web.archive.org/cdx/search/cdx?url=rooted.farm&output=json&limit=1&fl=timestamp&from=1996,20211223021149,2026-11-20T19:59:52Z
+Rooted,2025-03-01,f_snapshot_date,2025-01-11,http://web.archive.org/web/20250111095547id_/https://rooted.farm/,20250111095547,2026-11-20T19:59:55Z
+Rooted,2025-03-01,f_impressum,0,http://web.archive.org/web/20250111095547id_/https://rooted.farm/,20250111095547,2026-11-20T19:59:55Z
+Rooted,2025-03-01,f_pricing_page,0,http://web.archive.org/web/20250111095547id_/https://rooted.farm/,20250111095547,2026-11-20T19:59:55Z
+Rooted,2025-03-01,f_waitlist,1 (beta),http://web.archive.org/web/20250111095547id_/https://rooted.farm/,20250111095547,2026-11-20T19:59:55Z
+Rooted,2025-03-01,f_customer_logos,1 (used by),http://web.archive.org/web/20250111095547id_/https://rooted.farm/,20250111095547,2026-11-20T19:59:55Z
+Rooted,2025-03-01,f_jobs_page,0,http://web.archive.org/web/20250111095547id_/https://rooted.farm/,20250111095547,2026-11-20T19:59:55Z
+Rooted,2025-03-01,f_legal_entity,,http://web.archive.org/web/20250111095547id_/https://rooted.farm/,20250111095547,2026-11-20T19:59:55Z
+Rooted,2025-03-01,f_gmbh_ig,0,http://web.archive.org/web/20250111095547id_/https://rooted.farm/,20250111095547,2026-11-20T19:59:55Z
+Rooted,2025-03-01,f_description_text,1500 chars,http://web.archive.org/web/20250111095547id_/https://rooted.farm/,20250111095547,2026-11-20T19:59:55Z
+Rooted,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=rooted.farm&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T19:59:56Z
+Rooted,2025-03-01,f_gh_org,rooted (matched by name),https://api.github.com/search/users?q=Rooted+type%3Aorg,,2026-11-20T20:01:43Z
+Rooted,2025-03-01,f_gh_created,2012-09-12,https://api.github.com/users/rooted,2012-09-12T05:58:20Z,2026-11-20T20:21:17Z
+Rooted,2025-03-01,f_gh_public_repos_before,0,https://api.github.com/orgs/rooted/repos?per_page=100,,2026-11-20T20:21:22Z
+Spacio,2025-03-01,f_domain,spacio.ai,https://spacio.ai/,,2026-11-20T20:00:07Z
+Spacio,2025-03-01,wb_first_capture_any,2022-05-12,http://web.archive.org/cdx/search/cdx?url=spacio.ai&output=json&limit=1&fl=timestamp&from=1996,20220512104723,2026-11-20T20:00:07Z
+Spacio,2025-03-01,f_first_capture,2022-05-12,http://web.archive.org/cdx/search/cdx?url=spacio.ai&output=json&limit=1&fl=timestamp&from=1996,20220512104723,2026-11-20T20:00:07Z
+Spacio,2025-03-01,f_age_months,33,http://web.archive.org/cdx/search/cdx?url=spacio.ai&output=json&limit=1&fl=timestamp&from=1996,20220512104723,2026-11-20T20:00:07Z
+Spacio,2025-03-01,f_snapshot_date,2025-02-19,http://web.archive.org/web/20250219220425id_/https://spacio.ai/,20250219220425,2026-11-20T20:00:10Z
+Spacio,2025-03-01,f_impressum,0,http://web.archive.org/web/20250219220425id_/https://spacio.ai/,20250219220425,2026-11-20T20:00:10Z
+Spacio,2025-03-01,f_pricing_page,1 (pricing),http://web.archive.org/web/20250219220425id_/https://spacio.ai/,20250219220425,2026-11-20T20:00:10Z
+Spacio,2025-03-01,f_waitlist,0,http://web.archive.org/web/20250219220425id_/https://spacio.ai/,20250219220425,2026-11-20T20:00:10Z
+Spacio,2025-03-01,f_customer_logos,0,http://web.archive.org/web/20250219220425id_/https://spacio.ai/,20250219220425,2026-11-20T20:00:10Z
+Spacio,2025-03-01,f_jobs_page,0,http://web.archive.org/web/20250219220425id_/https://spacio.ai/,20250219220425,2026-11-20T20:00:10Z
+Spacio,2025-03-01,f_legal_entity,Ltd,http://web.archive.org/web/20250219220425id_/https://spacio.ai/,20250219220425,2026-11-20T20:00:10Z
+Spacio,2025-03-01,f_gmbh_ig,0,http://web.archive.org/web/20250219220425id_/https://spacio.ai/,20250219220425,2026-11-20T20:00:10Z
+Spacio,2025-03-01,f_description_text,1500 chars,http://web.archive.org/web/20250219220425id_/https://spacio.ai/,20250219220425,2026-11-20T20:00:10Z
+Spacio,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=spacio.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T20:00:12Z
+TRITON,2025-03-01,f_gh_org,triton (matched by name),https://api.github.com/search/users?q=TRITON+type%3Aorg,,2026-11-20T20:00:45Z
+TRITON,2025-03-01,f_gh_created,2015-06-02,https://api.github.com/users/triton,2015-06-02T16:33:38Z,2026-11-20T20:00:46Z
+TRITON,2025-03-01,f_gh_public_repos_before,17,https://api.github.com/orgs/triton/repos?per_page=100,,2026-11-20T20:21:16Z
+TRITON,2025-03-01,f_gh_commit_weeks_active,0 (repo triton),https://api.github.com/repos/triton/triton/commits?since=2025-01-04T00%3A00%3A00Z&until=2025-03-01T00%3A00%3A00Z&per_page=100,,2026-11-20T20:21:21Z
+Valuemize,2025-03-01,f_domain,valuemize.io,https://www.valuemize.io/,,2026-11-20T20:01:18Z
+Valuemize,2025-03-01,wb_first_capture_any,2024-04-02,http://web.archive.org/cdx/search/cdx?url=valuemize.io&output=json&limit=1&fl=timestamp&from=1996,20240402171537,2026-11-20T20:01:19Z
+Valuemize,2025-03-01,f_first_capture,2024-04-02,http://web.archive.org/cdx/search/cdx?url=valuemize.io&output=json&limit=1&fl=timestamp&from=1996,20240402171537,2026-11-20T20:01:19Z
+Valuemize,2025-03-01,f_age_months,10,http://web.archive.org/cdx/search/cdx?url=valuemize.io&output=json&limit=1&fl=timestamp&from=1996,20240402171537,2026-11-20T20:01:19Z
+Valuemize,2025-03-01,f_snapshot_date,2025-02-19,http://web.archive.org/web/20250219021852id_/https://www.valuemize.io/,20250219021852,2026-11-20T20:01:23Z
+Valuemize,2025-03-01,f_impressum,1 (imprint),http://web.archive.org/web/20250219021852id_/https://www.valuemize.io/,20250219021852,2026-11-20T20:01:23Z
+Valuemize,2025-03-01,f_pricing_page,1 (pricing),http://web.archive.org/web/20250219021852id_/https://www.valuemize.io/,20250219021852,2026-11-20T20:01:23Z
+Valuemize,2025-03-01,f_waitlist,0,http://web.archive.org/web/20250219021852id_/https://www.valuemize.io/,20250219021852,2026-11-20T20:01:23Z
+Valuemize,2025-03-01,f_customer_logos,0,http://web.archive.org/web/20250219021852id_/https://www.valuemize.io/,20250219021852,2026-11-20T20:01:23Z
+Valuemize,2025-03-01,f_jobs_page,0,http://web.archive.org/web/20250219021852id_/https://www.valuemize.io/,20250219021852,2026-11-20T20:01:23Z
+Valuemize,2025-03-01,f_legal_entity,AG,http://web.archive.org/web/20250219021852id_/https://www.valuemize.io/,20250219021852,2026-11-20T20:01:23Z
+Valuemize,2025-03-01,f_gmbh_ig,0,http://web.archive.org/web/20250219021852id_/https://www.valuemize.io/,20250219021852,2026-11-20T20:01:23Z
+Valuemize,2025-03-01,f_description_text,1500 chars,http://web.archive.org/web/20250219021852id_/https://www.valuemize.io/,20250219021852,2026-11-20T20:01:23Z
+Valuemize,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=valuemize.io&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T20:01:24Z
+Valuemize,2025-03-01,f_certs_before,106,https://crt.sh/?q=%25.valuemize.io&output=json,,2026-11-20T20:02:45Z
+Valuemize,2025-03-01,f_first_cert_date,2023-10-29,https://crt.sh/?id=10933862321,,2026-11-20T20:04:01Z
+Valuemize,2025-03-01,f_product_live,0,https://crt.sh/?q=%25.valuemize.io&output=json,,2026-11-20T20:02:45Z
+DeepMask,2025-03-01,f_domain,deepmask.io,https://deepmask.io/,,2026-11-20T20:01:59Z
+DeepMask,2025-03-01,wb_first_capture_any,2024-06-04,http://web.archive.org/cdx/search/cdx?url=deepmask.io&output=json&limit=1&fl=timestamp&from=1996,20240604011656,2026-11-20T20:02:01Z
+DeepMask,2025-03-01,f_first_capture,2024-06-04,http://web.archive.org/cdx/search/cdx?url=deepmask.io&output=json&limit=1&fl=timestamp&from=1996,20240604011656,2026-11-20T20:02:01Z
+DeepMask,2025-03-01,f_age_months,8,http://web.archive.org/cdx/search/cdx?url=deepmask.io&output=json&limit=1&fl=timestamp&from=1996,20240604011656,2026-11-20T20:02:01Z
+DeepMask,2025-03-01,f_snapshot_date,2025-02-20,http://web.archive.org/web/20250220003739id_/https://www.deepmask.io/,20250220003739,2026-11-20T20:02:04Z
+DeepMask,2025-03-01,f_impressum,0,http://web.archive.org/web/20250220003739id_/https://www.deepmask.io/,20250220003739,2026-11-20T20:02:04Z
+DeepMask,2025-03-01,f_pricing_page,0,http://web.archive.org/web/20250220003739id_/https://www.deepmask.io/,20250220003739,2026-11-20T20:02:04Z
+DeepMask,2025-03-01,f_waitlist,0,http://web.archive.org/web/20250220003739id_/https://www.deepmask.io/,20250220003739,2026-11-20T20:02:04Z
+DeepMask,2025-03-01,f_customer_logos,0,http://web.archive.org/web/20250220003739id_/https://www.deepmask.io/,20250220003739,2026-11-20T20:02:04Z
+DeepMask,2025-03-01,f_jobs_page,1 (Jobs),http://web.archive.org/web/20250220003739id_/https://www.deepmask.io/,20250220003739,2026-11-20T20:02:04Z
+DeepMask,2025-03-01,f_legal_entity,,http://web.archive.org/web/20250220003739id_/https://www.deepmask.io/,20250220003739,2026-11-20T20:02:04Z
+DeepMask,2025-03-01,f_gmbh_ig,0,http://web.archive.org/web/20250220003739id_/https://www.deepmask.io/,20250220003739,2026-11-20T20:02:04Z
+DeepMask,2025-03-01,f_description_text,103 chars,http://web.archive.org/web/20250220003739id_/https://www.deepmask.io/,20250220003739,2026-11-20T20:02:04Z
+DeepMask,2025-03-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=deepmask.io&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1740787200&hitsPerPage=100,,2026-11-20T20:02:06Z
+DeepMask,2025-03-01,f_certs_before,53,https://crt.sh/?q=%25.deepmask.io&output=json,,2026-11-20T20:02:33Z
+DeepMask,2025-03-01,f_first_cert_date,2023-10-21,https://crt.sh/?id=10853964916,,2026-11-20T20:03:46Z
+DeepMask,2025-03-01,f_product_live,1 (app.demo.deepmask.io logged 2024-02-13),https://crt.sh/?id=12067163059,,2026-11-20T20:03:46Z
+Fibclick,2025-09-01,f_domain,fibclick.de,https://fibclick.de/en/homepage-2/,,2026-11-20T20:02:17Z
+Fibclick,2025-09-01,wb_first_capture_any,2024-02-26,http://web.archive.org/cdx/search/cdx?url=fibclick.de&output=json&limit=1&fl=timestamp&from=1996,20240226234142,2026-11-20T20:02:22Z
+Fibclick,2025-09-01,f_first_capture,2024-02-26,http://web.archive.org/cdx/search/cdx?url=fibclick.de&output=json&limit=1&fl=timestamp&from=1996,20240226234142,2026-11-20T20:02:22Z
+Fibclick,2025-09-01,f_age_months,18,http://web.archive.org/cdx/search/cdx?url=fibclick.de&output=json&limit=1&fl=timestamp&from=1996,20240226234142,2026-11-20T20:02:22Z
+Fibclick,2025-09-01,f_snapshot_date,2025-08-08,http://web.archive.org/web/20250808165945id_/https://fibclick.de/,20250808165945,2026-11-20T20:02:24Z
+Fibclick,2025-09-01,f_impressum,1 (Impressum),http://web.archive.org/web/20250808165945id_/https://fibclick.de/,20250808165945,2026-11-20T20:02:24Z
+Fibclick,2025-09-01,f_pricing_page,1 (plans),http://web.archive.org/web/20250808165945id_/https://fibclick.de/,20250808165945,2026-11-20T20:02:24Z
+Fibclick,2025-09-01,f_waitlist,0,http://web.archive.org/web/20250808165945id_/https://fibclick.de/,20250808165945,2026-11-20T20:02:24Z
+Fibclick,2025-09-01,f_customer_logos,1 (our clients),http://web.archive.org/web/20250808165945id_/https://fibclick.de/,20250808165945,2026-11-20T20:02:24Z
+Fibclick,2025-09-01,f_jobs_page,0,http://web.archive.org/web/20250808165945id_/https://fibclick.de/,20250808165945,2026-11-20T20:02:24Z
+Fibclick,2025-09-01,f_legal_entity,GmbH,http://web.archive.org/web/20250808165945id_/https://fibclick.de/,20250808165945,2026-11-20T20:02:24Z
+Fibclick,2025-09-01,f_gmbh_ig,0,http://web.archive.org/web/20250808165945id_/https://fibclick.de/,20250808165945,2026-11-20T20:02:24Z
+Fibclick,2025-09-01,f_description_text,1500 chars,http://web.archive.org/web/20250808165945id_/https://fibclick.de/,20250808165945,2026-11-20T20:02:24Z
+Fibclick,2025-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=fibclick.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1756684800&hitsPerPage=100,,2026-11-20T20:02:24Z
+Fibclick,2025-09-01,f_certs_before,62,https://crt.sh/?q=%25.fibclick.de&output=json,,2026-11-20T20:03:39Z
+Fibclick,2025-09-01,f_first_cert_date,2023-01-11,https://crt.sh/?id=8392971980,,2026-11-20T20:04:54Z
+Fibclick,2025-09-01,f_product_live,0,https://crt.sh/?q=%25.fibclick.de&output=json,,2026-11-20T20:03:39Z
+Fibclick,2025-09-01,f_gh_org,fibclick (matched by name),https://api.github.com/search/users?q=Fibclick+type%3Aorg,,2026-11-20T20:04:55Z
+Fibclick,2025-09-01,f_gh_created,2022-12-14,https://api.github.com/users/fibclick,2022-12-14T12:44:09Z,2026-11-20T20:21:19Z
+Fibclick,2025-09-01,f_gh_public_repos_before,0,https://api.github.com/orgs/fibclick/repos?per_page=100,,2026-11-20T20:21:24Z
+Clinivox,2025-09-01,f_domain,firebaseapp.com,https://stanford-clinivox.firebaseapp.com/,,2026-11-20T20:03:47Z
+Clinivox,2025-09-01,wb_first_capture_any,2014-05-17,http://web.archive.org/cdx/search/cdx?url=firebaseapp.com&output=json&limit=1&fl=timestamp&from=1996,20140517113839,2026-11-20T20:03:48Z
+Clinivox,2025-09-01,f_first_capture,2014-05-17,http://web.archive.org/cdx/search/cdx?url=firebaseapp.com&output=json&limit=1&fl=timestamp&from=1996,20140517113839,2026-11-20T20:03:48Z
+Clinivox,2025-09-01,f_age_months,135,http://web.archive.org/cdx/search/cdx?url=firebaseapp.com&output=json&limit=1&fl=timestamp&from=1996,20140517113839,2026-11-20T20:03:48Z
+Clinivox,2025-09-01,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=firebaseapp.com&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20250831&from=1996,,2026-11-20T20:03:51Z
+Clinivox,2025-09-01,f_hn_posts_before,100,https://hn.algolia.com/api/v1/search?query=firebaseapp.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1756684800&hitsPerPage=100,,2026-11-20T20:03:52Z
+Clinivox,2025-09-01,f_hn_max_points,132,https://news.ycombinator.com/item?id=14210425,2017-04-27T10:18:49Z,2026-11-20T20:03:52Z
+Clinivox,2025-09-01,f_gh_org,CliniVox (matched by name),https://api.github.com/search/users?q=Clinivox+type%3Aorg,,2026-11-20T20:21:23Z
+Clinivox,2025-09-01,f_gh_created,2025-04-19,https://api.github.com/users/CliniVox,2025-04-19T14:37:33Z,2026-11-20T20:21:27Z
+Clinivox,2025-09-01,f_gh_public_repos_before,1,https://api.github.com/orgs/CliniVox/repos?per_page=100,,2026-11-20T20:21:29Z
+Clinivox,2025-09-01,f_gh_commit_weeks_active,0 (repo CliniVox),https://api.github.com/repos/CliniVox/CliniVox/commits?since=2025-07-07T00%3A00%3A00Z&until=2025-09-01T00%3A00%3A00Z&per_page=100,,2026-11-20T20:21:30Z
+ProviGen.ai,2025-09-01,f_domain,provigen.ai,https://provigen.ai/,,2026-11-20T20:21:20Z
+ProviGen.ai,2025-09-01,f_snapshot_date,2025-05-25,http://web.archive.org/web/20250525211403id_/https://provigen.ai/,20250525211403,2026-11-20T20:22:22Z
+ProviGen.ai,2025-09-01,f_impressum,0,http://web.archive.org/web/20250525211403id_/https://provigen.ai/,20250525211403,2026-11-20T20:22:22Z
+ProviGen.ai,2025-09-01,f_pricing_page,0,http://web.archive.org/web/20250525211403id_/https://provigen.ai/,20250525211403,2026-11-20T20:22:22Z
+ProviGen.ai,2025-09-01,f_waitlist,0,http://web.archive.org/web/20250525211403id_/https://provigen.ai/,20250525211403,2026-11-20T20:22:22Z
+ProviGen.ai,2025-09-01,f_customer_logos,0,http://web.archive.org/web/20250525211403id_/https://provigen.ai/,20250525211403,2026-11-20T20:22:22Z
+ProviGen.ai,2025-09-01,f_jobs_page,0,http://web.archive.org/web/20250525211403id_/https://provigen.ai/,20250525211403,2026-11-20T20:22:22Z
+ProviGen.ai,2025-09-01,f_legal_entity,,http://web.archive.org/web/20250525211403id_/https://provigen.ai/,20250525211403,2026-11-20T20:22:22Z
+ProviGen.ai,2025-09-01,f_gmbh_ig,0,http://web.archive.org/web/20250525211403id_/https://provigen.ai/,20250525211403,2026-11-20T20:22:22Z
+ProviGen.ai,2025-09-01,f_description_text,1240 chars,http://web.archive.org/web/20250525211403id_/https://provigen.ai/,20250525211403,2026-11-20T20:22:22Z
+ProviGen.ai,2025-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=provigen.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1756684800&hitsPerPage=100,,2026-11-20T20:22:22Z
+ProviGen.ai,2025-09-01,f_certs_before,42,https://crt.sh/?q=%25.provigen.ai&output=json,,2026-11-20T20:22:27Z
+ProviGen.ai,2025-09-01,f_first_cert_date,2023-11-11,https://crt.sh/?id=11067019088,,2026-11-20T20:22:40Z
+ProviGen.ai,2025-09-01,f_product_live,0,https://crt.sh/?q=%25.provigen.ai&output=json,,2026-11-20T20:22:27Z
+ProviGen.ai,2025-09-01,f_gh_org,ProviGen-ai (matched by name),https://api.github.com/search/users?q=ProviGen.ai+type%3Aorg,,2026-11-20T20:22:42Z
+ProviGen.ai,2025-09-01,f_gh_created,2024-04-09,https://api.github.com/users/ProviGen-ai,2024-04-09T17:27:02Z,2026-11-20T20:22:41Z
+ProviGen.ai,2025-09-01,f_gh_public_repos_before,1,https://api.github.com/orgs/ProviGen-ai/repos?per_page=100,,2026-11-20T20:22:43Z
+ProviGen.ai,2025-09-01,f_gh_commit_weeks_active,2 (repo ProvigenHomepage),https://api.github.com/repos/ProviGen-ai/ProvigenHomepage/commits?since=2025-07-07T00%3A00%3A00Z&until=2025-09-01T00%3A00%3A00Z&per_page=100,,2026-11-20T20:22:44Z
+nuno.ai,2025-09-01,f_domain,nuno-labs.de,https://nuno-labs.de/,,2026-11-20T20:21:24Z
+nuno.ai,2025-09-01,wb_first_capture_any,2025-04-15,http://web.archive.org/cdx/search/cdx?url=nuno-labs.de&output=json&limit=1&fl=timestamp&from=1996,20250415193245,2026-11-20T20:21:56Z
+nuno.ai,2025-09-01,f_first_capture,2025-04-15,http://web.archive.org/cdx/search/cdx?url=nuno-labs.de&output=json&limit=1&fl=timestamp&from=1996,20250415193245,2026-11-20T20:21:56Z
+nuno.ai,2025-09-01,f_age_months,4,http://web.archive.org/cdx/search/cdx?url=nuno-labs.de&output=json&limit=1&fl=timestamp&from=1996,20250415193245,2026-11-20T20:21:56Z
+nuno.ai,2025-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=nuno-labs.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1756684800&hitsPerPage=100,,2026-11-20T20:22:53Z
+nuno.ai,2025-09-01,f_certs_before,6,https://crt.sh/?q=%25.nuno-labs.de&output=json,,2026-11-20T20:22:54Z
+nuno.ai,2025-09-01,f_first_cert_date,2025-04-15,https://crt.sh/?id=17861409593,,2026-11-20T20:22:56Z
+nuno.ai,2025-09-01,f_product_live,0,https://crt.sh/?q=%25.nuno-labs.de&output=json,,2026-11-20T20:22:54Z
+Linq Photonics,2025-09-01,f_domain,linq-photonics.com,https://www.linq-photonics.com/,,2026-11-20T20:21:25Z
+Linq Photonics,2025-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=linq-photonics.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1756684800&hitsPerPage=100,,2026-11-20T20:23:19Z
+Linq Photonics,2025-09-01,f_certs_before,8,https://crt.sh/?q=%25.linq-photonics.com&output=json,,2026-11-20T20:23:32Z
+Linq Photonics,2025-09-01,f_first_cert_date,2025-01-09,https://crt.sh/?id=16118619476,,2026-11-20T20:23:35Z
+Linq Photonics,2025-09-01,f_product_live,0,https://crt.sh/?q=%25.linq-photonics.com&output=json,,2026-11-20T20:23:32Z
+Linq Photonics,2025-09-01,f_gh_org,LinQ-Photonics (matched by name),https://api.github.com/search/users?q=Linq+Photonics+type%3Aorg,,2026-11-20T20:23:36Z
+Linq Photonics,2025-09-01,f_gh_created,2026-01-26,https://api.github.com/users/LinQ-Photonics,2026-01-26T18:15:34Z,2026-11-20T20:23:37Z
+Cancelight,2025-09-01,f_domain,cancelight.com,https://cancelight.com/,,2026-11-20T20:21:28Z
+Cancelight,2025-09-01,wb_first_capture_any,2025-07-11,http://web.archive.org/cdx/search/cdx?url=cancelight.com&output=json&limit=1&fl=timestamp&from=1996,20250711001539,2026-11-20T20:21:58Z
+Cancelight,2025-09-01,f_first_capture,2025-07-11,http://web.archive.org/cdx/search/cdx?url=cancelight.com&output=json&limit=1&fl=timestamp&from=1996,20250711001539,2026-11-20T20:21:58Z
+Cancelight,2025-09-01,f_age_months,1,http://web.archive.org/cdx/search/cdx?url=cancelight.com&output=json&limit=1&fl=timestamp&from=1996,20250711001539,2026-11-20T20:21:58Z
+Cancelight,2025-09-01,f_snapshot_date,2025-08-30,http://web.archive.org/web/20250830224738id_/https://cancelight.com/,20250830224738,2026-11-20T20:22:14Z
+Cancelight,2025-09-01,f_impressum,0,http://web.archive.org/web/20250830224738id_/https://cancelight.com/,20250830224738,2026-11-20T20:22:14Z
+Cancelight,2025-09-01,f_pricing_page,0,http://web.archive.org/web/20250830224738id_/https://cancelight.com/,20250830224738,2026-11-20T20:22:14Z
+Cancelight,2025-09-01,f_waitlist,0,http://web.archive.org/web/20250830224738id_/https://cancelight.com/,20250830224738,2026-11-20T20:22:14Z
+Cancelight,2025-09-01,f_customer_logos,0,http://web.archive.org/web/20250830224738id_/https://cancelight.com/,20250830224738,2026-11-20T20:22:14Z
+Cancelight,2025-09-01,f_jobs_page,0,http://web.archive.org/web/20250830224738id_/https://cancelight.com/,20250830224738,2026-11-20T20:22:14Z
+Cancelight,2025-09-01,f_legal_entity,,http://web.archive.org/web/20250830224738id_/https://cancelight.com/,20250830224738,2026-11-20T20:22:14Z
+Cancelight,2025-09-01,f_gmbh_ig,0,http://web.archive.org/web/20250830224738id_/https://cancelight.com/,20250830224738,2026-11-20T20:22:14Z
+Cancelight,2025-09-01,f_description_text,1185 chars,http://web.archive.org/web/20250830224738id_/https://cancelight.com/,20250830224738,2026-11-20T20:22:14Z
+Cancelight,2025-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=cancelight.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1756684800&hitsPerPage=100,,2026-11-20T20:22:15Z
+Cancelight,2025-09-01,f_certs_before,40,https://crt.sh/?q=%25.cancelight.com&output=json,,2026-11-20T20:22:22Z
+Cancelight,2025-09-01,f_first_cert_date,2025-02-02,https://crt.sh/?id=16503384991,,2026-11-20T20:22:33Z
+Cancelight,2025-09-01,f_product_live,0,https://crt.sh/?q=%25.cancelight.com&output=json,,2026-11-20T20:22:22Z
+Twogee Biotech,2025-09-01,f_domain,twogee-biotech.com,https://www.twogee-biotech.com/,,2026-11-20T20:21:30Z
+Twogee Biotech,2025-09-01,f_snapshot_date,2025-08-09,http://web.archive.org/web/20250809143430id_/https://www.twogee-biotech.com/,20250809143430,2026-11-20T20:23:03Z
+Twogee Biotech,2025-09-01,f_impressum,1 (Imprint),http://web.archive.org/web/20250809143430id_/https://www.twogee-biotech.com/,20250809143430,2026-11-20T20:23:03Z
+Twogee Biotech,2025-09-01,f_pricing_page,0,http://web.archive.org/web/20250809143430id_/https://www.twogee-biotech.com/,20250809143430,2026-11-20T20:23:03Z
+Twogee Biotech,2025-09-01,f_waitlist,0,http://web.archive.org/web/20250809143430id_/https://www.twogee-biotech.com/,20250809143430,2026-11-20T20:23:03Z
+Twogee Biotech,2025-09-01,f_customer_logos,0,http://web.archive.org/web/20250809143430id_/https://www.twogee-biotech.com/,20250809143430,2026-11-20T20:23:03Z
+Twogee Biotech,2025-09-01,f_jobs_page,0,http://web.archive.org/web/20250809143430id_/https://www.twogee-biotech.com/,20250809143430,2026-11-20T20:23:03Z
+Twogee Biotech,2025-09-01,f_legal_entity,,http://web.archive.org/web/20250809143430id_/https://www.twogee-biotech.com/,20250809143430,2026-11-20T20:23:03Z
+Twogee Biotech,2025-09-01,f_gmbh_ig,0,http://web.archive.org/web/20250809143430id_/https://www.twogee-biotech.com/,20250809143430,2026-11-20T20:23:03Z
+Twogee Biotech,2025-09-01,f_description_text,1500 chars,http://web.archive.org/web/20250809143430id_/https://www.twogee-biotech.com/,20250809143430,2026-11-20T20:23:03Z
+Twogee Biotech,2025-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=twogee-biotech.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1756684800&hitsPerPage=100,,2026-11-20T20:23:03Z
+Twogee Biotech,2025-09-01,f_certs_before,8,https://crt.sh/?q=%25.twogee-biotech.com&output=json,,2026-11-20T20:23:08Z
+Twogee Biotech,2025-09-01,f_first_cert_date,2024-08-05,https://crt.sh/?id=14014442828,,2026-11-20T20:23:14Z
+Twogee Biotech,2025-09-01,f_product_live,0,https://crt.sh/?q=%25.twogee-biotech.com&output=json,,2026-11-20T20:23:08Z
+Metalonn,2025-09-01,f_domain,metalonn.com,https://metalonn.com/,,2026-11-20T20:22:35Z
+Metalonn,2025-09-01,wb_first_capture_any,2023-10-04,http://web.archive.org/cdx/search/cdx?url=metalonn.com&output=json&limit=1&fl=timestamp&from=1996,20231004003436,2026-11-20T20:23:05Z
+Metalonn,2025-09-01,f_first_capture,2023-10-04,http://web.archive.org/cdx/search/cdx?url=metalonn.com&output=json&limit=1&fl=timestamp&from=1996,20231004003436,2026-11-20T20:23:05Z
+Metalonn,2025-09-01,f_age_months,22,http://web.archive.org/cdx/search/cdx?url=metalonn.com&output=json&limit=1&fl=timestamp&from=1996,20231004003436,2026-11-20T20:23:05Z
+Metalonn,2025-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=metalonn.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1756684800&hitsPerPage=100,,2026-11-20T20:24:19Z
+Metalonn,2025-09-01,f_certs_before,42,https://crt.sh/?q=%25.metalonn.com&output=json,,2026-11-20T20:24:19Z
+Metalonn,2025-09-01,f_first_cert_date,2023-04-09,https://crt.sh/?id=9103307821,,2026-11-20T20:24:56Z
+Metalonn,2025-09-01,f_product_live,0,https://crt.sh/?q=%25.metalonn.com&output=json,,2026-11-20T20:24:19Z

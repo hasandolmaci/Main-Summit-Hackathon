@@ -1,0 +1,21 @@
+name,funding_status,funding_evidence_url,funding_note,grant_score,grant_evidence,founder_names,founder_count,founder_technical,founder_serial_vc,founder_industry_exp,star_academic,gh_org,gh_has_open_source,ph_launched,trademark_found,patent_found,is_consulting_or_agency,sector,legal_form
+AI VisionGuard,UNKNOWN,https://aivisionguard.eu/impressum,Website aivisionguard.eu is the site of patent attorney Arkadius Dalek; no startup/funding info found,,,Arkadius Dalek,1,,,,,,,,,,1,other,UG
+Intra AI,NONE_FOUND,https://intra-ai.de/impressum,Web search found no round; founders in ALPHA programme (sponsor unnamed),0.5,ALPHA programme selection (per founder LinkedIn snippet),Jan Skarbecki; Simon Klimaszyk,2,1,,,,,,,,,0,software/ai,GmbH i.G.
+BatteryIncluded,NONE_FOUND,https://batteryincluded.ai/ueber-uns,"Site states founder-led, independent, no investors; web search found no round",0,searched none,Thomas Ballmann; Simon Reichel,2,,,1,,,,,,,0,software/ai,GmbH
+Synagen AI,ANGEL_SMALL,https://www.synagen.ai/funding,Only ERDF small-enterprise grant (workplace equipment) found; no equity round found,1,EU ERDF funding programme for small/micro enterprises Dresden,Gandolf Finke; Dyke Ferber,4,,,,,SynagenAI,0,,,,0,health,GmbH
+Zen AI,NONE_FOUND,https://zenai.de/impressum.html,Web search found no funding for Zen AI GmbH,0,searched none,Jorrit Posor; Fabian Hertwig; Kyrill Schmid; Lenz Belzner,4,1,,,,,,,,,0,software/ai,GmbH
+mitte.ai,NONE_FOUND,,Web search found no funding for mitte.ai (only unrelated water company Mitte),,,,,,,,,mitteai,1,,,,0,software/ai,
+ImmoFynn AI,NONE_FOUND,https://immofynn.ai/impressum,Web search found nothing; Impressum c/o Futury GmbH Frankfurt (address only),0,searched none,Jonas Haußner; Samuel Pochotov,2,,,,,,,,,,0,software/ai,GmbH
+AI Data Defense,UNKNOWN,https://forskningsparken.no/en/news/2025-ai-data-defense,"Appears Norwegian (Oslo Science Park), not German; no funding found",,,Mikael Loefstrand; Solveig Ellila Kristiansen,2,1,,,,,,,,,0,software/ai,other
+Rhesis AI,NONE_FOUND,https://www.bitsandpretzels.com/st-startups/rhesis-ai-book,Bits & Pretzels 2025 profile lists company as bootstrapped,0,searched none,Nicolai Bohn,2,1,,,,rhesis-ai,1,,,,0,software/ai,
+AI Recruiter,UNKNOWN,,Site unreachable/no info; not searched in depth,,,,,,,,,,,,,,0,software/ai,
+AI SLEIPNIR,UNKNOWN,,Web search found nothing on the company; site has no content,,,,,,,,,,,,,,,hardware/deeptech,
+turnus.ai,NONE_FOUND,https://turnus.ai/impressum,Web search found no funding,0,searched none,Ferdinand Heck; Tobias Seidel,2,,,,,,,,,,0,software/ai,GmbH
+Airgonomics.ai,NONE_FOUND,https://www.munich-startup.de/startups-and-ecosystem/airgonomics-gmbh,Web search found no funding; Munich Startup lists Airgonomics GmbH (legal form unverified),0,EXIST search found none,Nikola Miskovic,,,,,,,,,,,0,software/ai,
+Practible AI,UNKNOWN,https://f4.fund/startups/practible,"f4.fund lists a Practible profile (could not read, 403); possibly Hamburg-based; unverified",,,,,,,,,,,,,,0,software/ai,
+AI-VORTEX,UNKNOWN,,Web search found nothing,,,Arjanit Bajrami,,,,,,,,,,,0,software/ai,
+phablo.ai,INSTITUTIONAL,https://english.metrovaartha.com/amp/story/economy/business/malayali-co-founded-startup-phabloai-secures-125000-from-global-vc-antler-to-revolutionize-life-sciences-compliance,"USD 125k pre-seed from Antler (accelerator equity); entity is Phablo Pte Ltd, Singapore, so not a German company",0.5,Antler programme,Marc Gerlach; Tharak Sreedharan,2,,,,,,,,,,0,software/ai,other
+VPATH AI,NONE_FOUND,https://www.vpathai.com/impressum,Web search found no funding,0,searched none,Alexander Krumm; André Fischer,2,,,,,,,,,,0,software/ai,GmbH
+POMA AI,INSTITUTIONAL,https://poma-ai.com/about,"Site lists backers IBB Ventures, Heartfelt Ventures, D&F Ventures; amount not found",0,none found,Alexander Kihm; Jan Simon Raue,2,1,1,,0,poma-ai,1,,,,0,software/ai,GmbH
+Tabularis.AI,NONE_FOUND,https://cyber-valley.de/de/news/cerebri-and-tabularis-ai-join-the-cyber-valley-start-up-network,Web search found no funding; Cyber Valley start-up network member; address c/o Campus Founders,0.5,Cyber Valley start-up network; Campus Founders address,Vadim Borisov; Richard Schreiber,2,1,,,,,,,,,0,software/ai,GmbH
+Narratic AI,NONE_FOUND,https://narratic.ai/imprint,Web search found no funding,0,searched none,Arne Wolfewicz; Hagen Hoferichter,2,,,,,,,,,,0,software/ai,GmbH

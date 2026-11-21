@@ -1,0 +1,984 @@
+source,name,website,asof_date,category,htgf_relevant,reason,used_website
+baystartup,m-Bee,https://stabl.com/,2019-07-24,deep_tech,yes,Modular battery power electronics replace centralized high-voltage inverters,0
+baystartup,Orbem,https://orbem.ai/,2019-07-24,deep_tech,yes,Noncontact imaging sorts poultry eggs by fertilization and sex,0
+baystartup,presize.ai,,2019-07-24,deep_tech,yes,Computer vision measures shoppers for accurate clothing size recommendations,0
+baystartup,Manyfolds,https://manyfolds.de/,2020-07-22,deep_tech,yes,Image recognition and compact machines produce fitted shipping packaging,0
+baystartup,NEUREVO,https://neurevo.de/news/,2020-07-22,life_science,yes,"Neuroprotective drugs target stroke, ALS, and Parkinson's disease",0
+baystartup,qbound,,2020-07-22,digital_tech,yes,Identity and access management secures cloud and on-premise applications,0
+baystartup,Divizend,https://divizend.com/,2021-07-22,digital_tech,yes,Software automates foreign dividend withholding tax refunds,0
+baystartup,Opsyon,https://www.opsyon.genzentrum.uni-muenchen.de/index.html,2021-07-22,life_science,yes,Multifunctional antibodies target tumors and immune checkpoints,0
+baystartup,sewts,https://www.sewts.de/,2021-07-22,deep_tech,yes,Robot control and machine vision automate deformable textile handling,0
+baystartup,Dymium,https://www.dymium.de/,2022-07-27,life_science,yes,Magnetic separation removes residual kidney stone fragments,0
+baystartup,NIMMSTA,https://nimmsta.com/industrie-waearables-produkte/#scanner,2022-07-27,deep_tech,yes,Industrial smartwatch integrates scanning and warehouse workflow interaction,0
+baystartup,Reverion,https://www.reverion.de/,2022-07-27,deep_tech,yes,Reversible biogas power plants generate electricity and renewable gas,0
+baystartup,baind,http://www.baind.de,2023-07-26,deep_tech,yes,"AI controls heating, cooling, lighting, and building energy systems",0
+baystartup,Energyminer,http://www.energyminer.eu,2023-07-26,deep_tech,yes,River turbines harvest kinetic hydropower without altering water flow,0
+baystartup,Sedivention,https://www.sedivention.com/,2023-07-26,life_science,yes,Cryotherapy catheter ablates gastric hunger nerves to treat obesity,0
+baystartup,AUDAVIS,https://www.audavis.ai,2024-07-17,deep_tech,yes,AI audit platform automates data analysis and financial reporting,0
+baystartup,EpiCure,,2024-07-17,life_science,yes,Epigenetic cancer drugs target leukemia with carbacitabine,0
+baystartup,Qualiwise,https://www.qualiwise.io/,2024-07-17,deep_tech,yes,AI supports visual quality collaboration between manufacturers and suppliers,0
+baystartup,BioExoTec,https://www.bioexotec.com/,2025-07-29,life_science,yes,Blood and saliva tests detect cancer through circulating particles,0
+baystartup,Peak Quantum,https://www.peakquantum.de/,2025-07-29,deep_tech,yes,Fault-protected quantum processors improve computing reliability,0
+baystartup,Versatile Robotics,https://versatile-robotics.com/,2025-07-29,deep_tech,yes,Precision robot control enables sensitive industrial manipulation,0
+cyberlab_karlsruhe,40three,https://heavendata.com/de/,2019-07-01,digital_tech,yes,Product information platform distributes ecommerce data and media across channels,1
+cyberlab_karlsruhe,auvisus,https://www.auvisus.com,2019-07-01,unclear,maybe,Auvisus homepage returns server errors; no company description supplied,1
+cyberlab_karlsruhe,bestfit,http://bestfit.app,2019-07-01,unclear,maybe,Bestfit's homepage certificate fails; app purpose remains undocumented,1
+cyberlab_karlsruhe,BLACKPIN,http://www.blackpin.app,2019-07-01,digital_tech,yes,Encrypted business messenger enables secure team collaboration,1
+cyberlab_karlsruhe,Flowcess,,2019-07-01,unclear,maybe,Flowcess has no description or website to establish its product,0
+cyberlab_karlsruhe,heliopas ai,https://www.heliopas.com/,2019-07-01,deep_tech,yes,Satellite analytics and AI optimize agriculture and irrigation,1
+cyberlab_karlsruhe,MEMINTO,,2019-07-01,unclear,maybe,MEMINTO lacks a description and supplied homepage for verification,0
+cyberlab_karlsruhe,nestyu,,2019-07-01,unclear,maybe,Nestyu's activity is not described and no website is supplied,0
+cyberlab_karlsruhe,prenode GmbH,https://www.prenode.de/,2019-07-01,deep_tech,yes,Adaptive AI monitors machines and prevents manufacturing errors,0
+cyberlab_karlsruhe,Zana,https://www.zana.com/,2019-07-01,life_science,yes,Voice biomarkers predict cardiopulmonary deterioration and support remote monitoring,1
+cyberlab_karlsruhe,10erKarte,http://www.10erkarte.de,2020-07-01,unclear,maybe,10erKarte homepage provides no readable business information,1
+cyberlab_karlsruhe,articlett,https://articlett.de/wordpress/,2020-07-01,digital_tech,yes,Journalism app aggregates publications and subscription access,1
+cyberlab_karlsruhe,blackforestai,https://blackforest.ai/,2020-07-01,deep_tech,yes,Reasoning orchestration enables causal enterprise AI workflows,1
+cyberlab_karlsruhe,corefi,https://corefihub.com/,2020-07-01,unclear,maybe,Corefi's homepage times out; no description establishes its activity,1
+cyberlab_karlsruhe,gixel,https://www.gixel.de/,2020-07-01,deep_tech,yes,Optical display engines enable next-generation augmented reality glasses,1
+cyberlab_karlsruhe,haas,,2020-07-01,unclear,maybe,Haas has no product description or identifiable supplied website,0
+cyberlab_karlsruhe,infinity maps,https://infinitymaps.io/,2020-07-01,digital_tech,yes,Visual knowledge mapping software combines whiteboards and wikis,1
+cyberlab_karlsruhe,modugen,http://www.modugen.de,2020-07-01,non_tech,no,Structural engineering consultancy designs timber buildings,1
+cyberlab_karlsruhe,steig,https://steig-app.de/,2020-07-01,digital_tech,yes,Workplace stress management app delivers personalized exercises,1
+cyberlab_karlsruhe,ventecon,https://ventecon.com/,2020-07-01,deep_tech,yes,Autonomous AI coworker automates product management tasks,1
+cyberlab_karlsruhe,123erfasst,http://www.123erfasst.de,2021-07-01,digital_tech,yes,"Construction apps manage site documentation, timekeeping, and equipment",1
+cyberlab_karlsruhe,aimino,https://www.aimino.de,2021-07-01,digital_tech,maybe,Marketing and product testing platform; implementation details limited,1
+cyberlab_karlsruhe,airys,https://abenteuer-markt.de/de/,2021-07-01,non_tech,no,Children's activity portal publishes crafts and educational content,1
+cyberlab_karlsruhe,anyola,,2021-07-01,unclear,maybe,Anyola provides neither a description nor a researchable website,0
+cyberlab_karlsruhe,apartmen,https://apart.men/,2021-07-01,unclear,maybe,Apartmen's homepage times out; product remains unverified,1
+cyberlab_karlsruhe,askui GmbH,http://www.askui.com,2021-07-01,digital_tech,yes,UI test automation software validates digital applications,0
+cyberlab_karlsruhe,asvin,https://www.asvin.io/,2021-07-01,deep_tech,yes,Graph analytics and AI prioritize cybersecurity risks,0
+cyberlab_karlsruhe,bauta,http://www.bauta.io,2021-07-01,deep_tech,yes,Privacy-preserving computer vision sensors monitor spaces and safety,1
+cyberlab_karlsruhe,Bitahoy,https://www.bitahoy.com/,2021-07-01,deep_tech,yes,AI security system protects connected smart home devices,1
+cyberlab_karlsruhe,bitbaker,https://bit-baker.com/,2021-07-01,unclear,maybe,Bitbaker's website fails TLS; no product evidence supplied,1
+cyberlab_karlsruhe,buildersmind,,2021-07-01,unclear,maybe,Buildersmind's name lacks a described product or supporting website,0
+cyberlab_karlsruhe,cepri,http://www.cepri.tech/,2021-07-01,unclear,maybe,Cepri's supplied homepage returns 404 without usable product information,1
+cyberlab_karlsruhe,cognitx,https://cognitx.ai/,2021-07-01,deep_tech,yes,Enterprise AI connects business tools and automates workflows,1
+cyberlab_karlsruhe,constreo,https://constreo.de/,2021-07-01,unclear,maybe,Constreo's domain fails resolution; company activity undocumented,1
+cyberlab_karlsruhe,cympire,https://cympire.com/,2021-07-01,deep_tech,yes,AI cyber range simulates attacks for security training,1
+cyberlab_karlsruhe,dazo,,2021-07-01,unclear,maybe,Dazo has no description or website identifying its business,0
+cyberlab_karlsruhe,deepscenario,https://www.deepscenario.com/index.html#home,2021-07-01,deep_tech,yes,Spatial AI reconstructs three-dimensional environments from ordinary video,1
+cyberlab_karlsruhe,DeepSign,https://deepsign.de/,2021-07-01,unclear,maybe,DeepSign domain now shows casino content unrelated to the startup,1
+cyberlab_karlsruhe,edgify,https://www.edgefy.net/de,2021-07-01,unclear,maybe,Edgify's supplied domain is unavailable; product cannot be verified,1
+cyberlab_karlsruhe,enabl Technologies UG,https://enabl-tech.de/,2021-07-01,deep_tech,yes,Remote-control technology automates industrial material handling equipment,0
+cyberlab_karlsruhe,endeema,https://endeema.com/,2021-07-01,deep_tech,yes,Machine learning matches industrial energy demand with renewable supply,1
+cyberlab_karlsruhe,erbsenzaehlerei,https://erbsenzaehlerei.de/,2021-07-01,unclear,maybe,Erbsenz?hlerei mentions personalized nutrition without describing a product,1
+cyberlab_karlsruhe,garoma,https://www.garoma.de/,2021-07-01,deep_tech,yes,AI analyzes restaurant menus and hospitality market data,1
+cyberlab_karlsruhe,growments,https://www.growments.de/,2021-07-01,unclear,maybe,Growments' domain no longer resolves; no description supplied,1
+cyberlab_karlsruhe,haurysolutions,https://www.haury-solutions.com/de/haury-solutions/,2021-07-01,digital_tech,yes,"Strategic HR software connects personnel, projects, and processes",1
+cyberlab_karlsruhe,hayv,https://www.heyvie.io/,2021-07-01,unclear,maybe,Hayv's website fails TLS; health product details unavailable,1
+cyberlab_karlsruhe,klangio,https://klangio.com/,2021-07-01,deep_tech,yes,AI transcribes music recordings into scores and MIDI,1
+cyberlab_karlsruhe,ladestationplanen,https://chargingmobility.com/,2021-07-01,unclear,maybe,Chargingmobility blocks access; Ladestationplanen's actual product remains unverified,1
+cyberlab_karlsruhe,Leefs,https://leefs.io/,2021-07-01,unclear,maybe,Leefs' expired website certificate prevents product verification,1
+cyberlab_karlsruhe,litkey,https://www.litkey.de/,2021-07-01,unclear,maybe,Litkey homepage returns 404; company activity is undocumented,1
+cyberlab_karlsruhe,maduka,https://www.maduka-innovation.com/,2021-07-01,deep_tech,yes,Sensor-based pool alarms detect motionless swimmers without video,1
+cyberlab_karlsruhe,medicalvalues GmbH,https://medicalvalues.de/de/,2021-07-01,life_science,yes,Explainable diagnostic decision support combines laboratory data and medical knowledge,0
+cyberlab_karlsruhe,OPTASTIX,,2021-07-01,unclear,maybe,OPTASTIX lacks a product description and supplied homepage,0
+cyberlab_karlsruhe,palasts,https://palasts.de/,2021-07-01,unclear,maybe,Palasts' website fails TLS; business activity remains unspecified,1
+cyberlab_karlsruhe,patena,https://www.patoffice.de/,2021-07-01,deep_tech,yes,AI patent monitoring and research platform supports IP teams,1
+cyberlab_karlsruhe,pavao,,2021-07-01,unclear,maybe,Pavao provides no company description or researchable homepage,0
+cyberlab_karlsruhe,pockethost,https://pockethost.app/de/,2021-07-01,digital_tech,yes,Self-service game server hosting platform deploys multiplayer environments,1
+cyberlab_karlsruhe,reasonance,https://reasonance.de/de/startseite/,2021-07-01,deep_tech,yes,Physics-informed AI forecasts renewable output and optimizes battery dispatch,1
+cyberlab_karlsruhe,respeak,https://www.respeak.io/home,2021-07-01,unclear,maybe,Respeak's homepage returns 404; no product description supplied,1
+cyberlab_karlsruhe,revoai,https://www.revoai.de/,2021-07-01,unclear,maybe,Revoai homepage returns 503; AI business model remains undocumented,1
+cyberlab_karlsruhe,rotolab,,2021-07-01,unclear,maybe,Rotolab lacks evidence identifying its laboratory or technology product,0
+cyberlab_karlsruhe,secondbikelife,https://www.secondbikelife.de/,2021-07-01,digital_tech,yes,Peer-to-peer bicycle marketplace supports listings and seller communication,1
+cyberlab_karlsruhe,sensorwing,https://www.oneiot.de/,2021-07-01,unclear,maybe,Sensorwing's supplied OneIoT page returns 404,1
+cyberlab_karlsruhe,spannwerk,,2021-07-01,unclear,maybe,Spannwerk has no description or homepage establishing its activity,0
+cyberlab_karlsruhe,statpile,https://statpile.de/,2021-07-01,deep_tech,yes,AI logistics platform digitizes warehouse intake and operational data,1
+cyberlab_karlsruhe,thing,https://www.thing.online/,2021-07-01,deep_tech,yes,Home assistance robots support independent living for elderly people,1
+cyberlab_karlsruhe,traggert,https://www.traggert.com,2021-07-01,digital_tech,yes,Rollout management software coordinates network hardware installations across sites,1
+cyberlab_karlsruhe,upflowrech,,2021-07-01,unclear,maybe,Upflowrech lacks a description and supplied company website,0
+cyberlab_karlsruhe,Validaitor,https://validaitor.com/,2021-07-01,digital_tech,yes,"AI governance platform inventories models, tests risks, and manages compliance",1
+cyberlab_karlsruhe,VALUEWORKS,https://valueworks.ai/,2021-07-01,deep_tech,yes,AI financial planning platform automates reporting and management decisions,1
+cyberlab_karlsruhe,Woodmatch,,2021-07-01,unclear,maybe,Woodmatch's name alone does not establish a technology business,0
+cyberlab_karlsruhe,world for climate,https://www.worldforclimate.com,2021-07-01,deep_tech,maybe,Environmental multisensor platforms; current foreign operator complicates identity continuity,1
+cyberlab_karlsruhe,xplicitTrust,https://xplicittrust.com/,2021-07-01,digital_tech,yes,Zero-trust VPN controls identity-based access to enterprise applications,1
+cyberlab_karlsruhe,zesavi,https://getclypp.com/en/,2021-07-01,deep_tech,yes,AI converts process recordings into training guides and documentation,1
+cyberlab_karlsruhe,123Parkplatzfrei,,2022-07-01,unclear,maybe,123Parkplatzfrei has no description establishing parking software versus service,0
+cyberlab_karlsruhe,aicorn,,2022-07-01,unclear,maybe,Aicorn's product is unspecified and no homepage is supplied,0
+cyberlab_karlsruhe,Airlead,,2022-07-01,unclear,maybe,Airlead lacks evidence distinguishing aviation technology from lead-generation services,0
+cyberlab_karlsruhe,alitiq,https://alitiq.com/,2022-07-01,deep_tech,yes,"AI forecasts renewable energy, demand, and flood risks",1
+cyberlab_karlsruhe,amexis,,2022-07-01,unclear,maybe,Amexis has no description or supplied website identifying its activity,0
+cyberlab_karlsruhe,ampi,http://ampipower.com,2022-07-01,unclear,maybe,Ampi homepage exposes only a name and template metadata,1
+cyberlab_karlsruhe,apptivegrid,https://www.apptivegrid.de/,2022-07-01,digital_tech,yes,"No-code platform creates business databases, forms, and workflows",1
+cyberlab_karlsruhe,arxly,https://www.arxly.com/,2022-07-01,unclear,maybe,Arxly's TLS connection fails; product cannot be verified,1
+cyberlab_karlsruhe,awwt,,2022-07-01,unclear,maybe,Awwt lacks a company description and supporting website,0
+cyberlab_karlsruhe,become1,https://www.become1.de/,2022-07-01,unclear,maybe,Become1 blocks homepage access; product details are absent,1
+cyberlab_karlsruhe,besser in der schule,https://besserinderschule.de/,2022-07-01,unclear,maybe,Besser in der Schule lacks accessible evidence distinguishing tutoring from software,1
+cyberlab_karlsruhe,beyond emotion,https://beyond-emotion.de/en/,2022-07-01,deep_tech,yes,Facial expression AI recognizes emotions using privacy-preserving processing,1
+cyberlab_karlsruhe,bloom studios,,2022-07-01,unclear,maybe,Bloom Studios lacks evidence distinguishing creative services from technology products,0
+cyberlab_karlsruhe,botiguard,,2022-07-01,unclear,maybe,Botiguard has no description or homepage confirming its product,0
+cyberlab_karlsruhe,Bytefabrik ai,https://bytefabrik.ai/,2022-07-01,deep_tech,yes,Industrial IoT platform uses AI to analyze manufacturing losses,1
+cyberlab_karlsruhe,casablancaai,https://casablanca.ai/,2022-07-01,deep_tech,yes,AI video processing restores eye contact during online calls,1
+cyberlab_karlsruhe,charismatischer,https://charismatischer.de/,2022-07-01,deep_tech,yes,Acoustic voice profiling software analyzes voices and supports training,1
+cyberlab_karlsruhe,conbotics,,2022-07-01,unclear,maybe,Conbotics lacks a supplied description or homepage to verify robotics,0
+cyberlab_karlsruhe,cyberinsight,https://cyber-insight.de/,2022-07-01,digital_tech,yes,Product security software turns vulnerability findings into traceable decisions,1
+cyberlab_karlsruhe,deepDoc,https://www.deepdoc.ai/,2022-07-01,unclear,maybe,DeepDoc's homepage returns 404; medical software claim remains unverified,1
+cyberlab_karlsruhe,digitalbuddy,,2022-07-01,unclear,maybe,Digitalbuddy has no description distinguishing software from support services,0
+cyberlab_karlsruhe,Elani,,2022-07-01,unclear,maybe,Elani has neither product details nor a supplied website,0
+cyberlab_karlsruhe,emiigo,https://www.emiigo.de/,2022-07-01,unclear,maybe,Emiigo homepage returns no readable company information,1
+cyberlab_karlsruhe,Fast AI Movies,https://fast-ai-movies.de/,2022-07-01,unclear,maybe,Fast AI Movies has inaccessible website and no product description,1
+cyberlab_karlsruhe,findiq,https://findiq.de/,2022-07-01,deep_tech,yes,AI fault diagnosis captures expert knowledge for industrial maintenance,1
+cyberlab_karlsruhe,flixbeton,https://flixbeton.com/#rec524686181,2022-07-01,deep_tech,yes,AI concrete ordering and tracking software manages construction deliveries,1
+cyberlab_karlsruhe,Flixorder,https://flixorder.de/,2022-07-01,digital_tech,yes,Restaurant and hotel ordering software digitizes guest purchases,1
+cyberlab_karlsruhe,fox berry,,2022-07-01,unclear,maybe,"Fox Berry lacks a description establishing food, services, or technology",0
+cyberlab_karlsruhe,freedprinting,,2022-07-01,unclear,maybe,Freedprinting provides no details establishing manufacturing technology versus printing services,0
+cyberlab_karlsruhe,Glottering,http://www.glotting.com/code,2022-07-01,unclear,maybe,Glottering's supplied page requires authorization; product remains undocumented,1
+cyberlab_karlsruhe,greenheat,,2022-07-01,unclear,maybe,Greenheat's name suggests heating but no concrete technology is described,0
+cyberlab_karlsruhe,humatx,https://www.humatx.com/,2022-07-01,unclear,maybe,Humatx blocks homepage access; business activity cannot be verified,1
+cyberlab_karlsruhe,immune,https://immune.gmbh/,2022-07-01,unclear,maybe,Immune's domain no longer resolves; security versus healthcare activity unknown,1
+cyberlab_karlsruhe,liefo,,2022-07-01,unclear,maybe,Liefo has neither a description nor a supplied website,0
+cyberlab_karlsruhe,miiomedico,,2022-07-01,unclear,maybe,Miiomedico lacks details establishing a medical product or service,0
+cyberlab_karlsruhe,MissionBuddies,,2022-07-01,unclear,maybe,MissionBuddies provides no description or homepage identifying its business,0
+cyberlab_karlsruhe,move me,,2022-07-01,unclear,maybe,Move Me lacks evidence distinguishing transport services from software,0
+cyberlab_karlsruhe,mozz,,2022-07-01,unclear,maybe,Mozz's company activity is unspecified and no website is supplied,0
+cyberlab_karlsruhe,neocargo,https://www.neocargo.de/,2022-07-01,digital_tech,yes,Logistics integration platform connects freight forwarders' systems and partners,1
+cyberlab_karlsruhe,nutribit,https://dishdetective.app/,2022-07-01,unclear,maybe,DishDetective homepage exposes no readable nutrition app information,1
+cyberlab_karlsruhe,Onino,,2022-07-01,unclear,maybe,Onino has no supplied product description or homepage,0
+cyberlab_karlsruhe,pdt,http://pdt.ai/,2022-07-01,unclear,maybe,Pdt's homepage provides no readable information about its AI offering,1
+cyberlab_karlsruhe,project count,https://de.project-count.com/,2022-07-01,unclear,maybe,Project Count's homepage times out; no description supplied,1
+cyberlab_karlsruhe,Resoniks,http://resoniks.com,2022-07-01,deep_tech,yes,AI acoustic inspection detects internal manufacturing defects nondestructively,1
+cyberlab_karlsruhe,rocket routine,,2022-07-01,unclear,maybe,Rocket Routine lacks a description confirming software versus coaching,0
+cyberlab_karlsruhe,SDAC,https://sdac.tech/,2022-07-01,non_tech,no,Construction research network exchanges AI knowledge and services,1
+cyberlab_karlsruhe,Semorai,https://semor.ai/,2022-07-01,deep_tech,yes,"Engineering AI evaluates specifications, standards, and requirements",1
+cyberlab_karlsruhe,Spotium,https://www.spotium.de/,2022-07-01,deep_tech,yes,AI sales intelligence finds and qualifies markets and prospects,1
+cyberlab_karlsruhe,Stogl Robotics Consulting,,2022-07-01,non_tech,no,Robotics consulting business; no proprietary product described,0
+cyberlab_karlsruhe,Studierenden Computerhilfe,https://studenten-computerhilfe.de/,2022-07-01,non_tech,no,Student-run computer support provides onsite help and remote assistance,1
+cyberlab_karlsruhe,synthavo,https://www.synthavo.de/,2022-07-01,deep_tech,yes,Image recognition identifies machine spare parts from smartphone photos,1
+cyberlab_karlsruhe,t2k,https://text2knowledge.de/start,2022-07-01,unclear,maybe,Text2knowledge homepage returns 404; product details unavailable,1
+cyberlab_karlsruhe,tech formation,,2022-07-01,unclear,maybe,Tech Formation lacks evidence distinguishing technical services from a product,0
+cyberlab_karlsruhe,Themis,,2022-07-01,unclear,maybe,Themis has no description or website identifying its specific business,0
+cyberlab_karlsruhe,TrustSpace,,2022-07-01,unclear,maybe,TrustSpace lacks a described security product or company website,0
+cyberlab_karlsruhe,vamos,,2022-07-01,unclear,maybe,Vamos supplies no activity description or researchable homepage,0
+cyberlab_karlsruhe,vitas,https://www.telefonassistent.de/,2022-07-01,deep_tech,yes,AI telephone assistant automates incoming calls and appointment handling,1
+cyberlab_karlsruhe,Web Guide,https://webguide.one,2022-07-01,non_tech,no,Cybersecurity consultancy provides compliance advice and managed security,1
+cyberlab_karlsruhe,wetog,,2022-07-01,unclear,maybe,Wetog lacks a product description and supplied website,0
+cyberlab_karlsruhe,WorkBuddy,https://workbuddy.chat/,2022-07-01,unclear,maybe,WorkBuddy's homepage returns 404; chat product details unverified,1
+cyberlab_karlsruhe,AICook,,2023-07-01,unclear,maybe,AICook's name lacks evidence distinguishing food services from software,0
+cyberlab_karlsruhe,Brifle,https://www.brifle.de,2023-07-01,digital_tech,yes,"Digital mailbox app handles official letters, invoices, and contracts",1
+cyberlab_karlsruhe,cellgrid,https://cellgrid.co/,2023-07-01,unclear,maybe,Cellgrid's domain is parked with a coming-soon page,1
+cyberlab_karlsruhe,Ceramic Wheels,https://ceramicwheels.de/,2023-07-01,unclear,maybe,Ceramic Wheels' website is unavailable; technical innovation remains unspecified,1
+cyberlab_karlsruhe,cerpro,https://www.cepro.de/,2023-07-01,unclear,maybe,Cerpro's supplied domain belongs to differently named welding supplier Cepro,1
+cyberlab_karlsruhe,Cheflink,http://www.letsdook.de,2023-07-01,unclear,maybe,Cheflink's supplied Dook domain no longer resolves,1
+cyberlab_karlsruhe,climateproof,,2023-07-01,unclear,maybe,Climateproof lacks details identifying climate technology versus advisory services,0
+cyberlab_karlsruhe,Conic,https://conic.technology/,2023-07-01,unclear,maybe,Conic's supplied domain is unavailable and description absent,1
+cyberlab_karlsruhe,core one,https://www.coreone.one/,2023-07-01,unclear,maybe,Core One's homepage returns 404; product remains unspecified,1
+cyberlab_karlsruhe,cosonfy,https://cosonify.com/,2023-07-01,unclear,maybe,Cosonfy's supplied domain no longer resolves; no activity description,1
+cyberlab_karlsruhe,cybersecurityLabs,,2023-07-01,unclear,maybe,CybersecurityLabs lacks evidence distinguishing software from consulting or training,0
+cyberlab_karlsruhe,deeplify,https://www.deeplify.de/,2023-07-01,deep_tech,yes,AI integrates inspection and engineering data for asset integrity,1
+cyberlab_karlsruhe,Emintes,,2023-07-01,unclear,maybe,Emintes has no supplied product description or homepage,0
+cyberlab_karlsruhe,genitor,,2023-07-01,unclear,maybe,Genitor's business cannot be identified from its name alone,0
+cyberlab_karlsruhe,heyfam,https://heyfam-app.com/,2023-07-01,unclear,maybe,Heyfam's app domain no longer resolves; functionality undocumented,1
+cyberlab_karlsruhe,imagetocaptionai,http://www.imagetocaption.ai,2023-07-01,deep_tech,yes,AI generates brand-specific social media captions from images,1
+cyberlab_karlsruhe,InGoodTerms,https://ongoodterms.io/,2023-07-01,unclear,maybe,InGoodTerms' supplied domain is unavailable; legal product remains undocumented,1
+cyberlab_karlsruhe,inventlife,https://inventife.com/,2023-07-01,deep_tech,yes,AI room sensors automate homes and detect falls,1
+cyberlab_karlsruhe,krautvision,https://krautvision.dev/,2023-07-01,deep_tech,maybe,AI point-of-sale solutions claimed; site under construction,1
+cyberlab_karlsruhe,lawlink,https://www.lawlink.de,2023-07-01,deep_tech,yes,AI links legal citations directly to source databases,1
+cyberlab_karlsruhe,LEVEL8,http://www.level-acht.de,2023-07-01,unclear,maybe,LEVEL8's homepage returns 404; company activity remains unspecified,1
+cyberlab_karlsruhe,linetrack,https://linetrack.de/,2023-07-01,digital_tech,yes,"Industrial project management software coordinates portfolios, capacity, and suppliers",1
+cyberlab_karlsruhe,lucidwrite,,2023-07-01,unclear,maybe,Lucidwrite lacks a description establishing writing software versus creative services,0
+cyberlab_karlsruhe,Luftflug,,2023-07-01,unclear,maybe,Luftflug has no supplied evidence of an aviation technology product,0
+cyberlab_karlsruhe,machinerecord,,2023-07-01,unclear,maybe,Machinerecord lacks product details and a researchable homepage,0
+cyberlab_karlsruhe,Matvis,http://www.matvis.com,2023-07-01,digital_tech,yes,Deterministic AI firewall blocks prompt injections and data leaks,1
+cyberlab_karlsruhe,meindein,https://www.meindein.com/,2023-07-01,unclear,maybe,Meindein's homepage provides no readable business information,1
+cyberlab_karlsruhe,MOTORMAIT,,2023-07-01,unclear,maybe,MOTORMAIT lacks a description establishing automotive hardware or software,0
+cyberlab_karlsruhe,neckar,https://neckar.io,2023-07-01,digital_tech,yes,Document management software structures small-business financial data,1
+cyberlab_karlsruhe,new essay ai,https://www.newessay.ai/,2023-07-01,unclear,maybe,New Essay AI's domain is unavailable; product functionality undocumented,1
+cyberlab_karlsruhe,PCB arts,https://www.pcb-arts.com/de/,2023-07-01,deep_tech,yes,Embedded computing products include Jetson hardware and edge systems,1
+cyberlab_karlsruhe,Perception Labs,,2023-07-01,unclear,maybe,Perception Labs supplies no described product or researchable homepage,0
+cyberlab_karlsruhe,perspektive care,https://perspectivecare.de/,2023-07-01,life_science,yes,Patient monitoring system alerts caregivers to critical changes,1
+cyberlab_karlsruhe,razo,https://www.razo.energy/,2023-07-01,deep_tech,yes,Energy management toolkit optimizes smart charging and virtual power plants,1
+cyberlab_karlsruhe,restegourmet,https://restegourmet.de/,2023-07-01,digital_tech,yes,Ingredient-based recipe search helps users use leftover food,1
+cyberlab_karlsruhe,rockstartit,http://www.rockstartit.com/,2023-07-01,unclear,maybe,Rockstartit's homepage times out; company activity remains undocumented,1
+cyberlab_karlsruhe,Showgoon,https://www.showgoon.eu/de/,2023-07-01,digital_tech,yes,Cloud streaming software and tournament platform serve esports audiences,1
+cyberlab_karlsruhe,skinmate,https://www.skinmate.app/,2023-07-01,unclear,maybe,Skinmate's website fails TLS; medical versus cosmetic use unknown,1
+cyberlab_karlsruhe,smartvision,https://www.smrtvsn.co/,2023-07-01,unclear,maybe,Smartvision's supplied domain is unavailable; product cannot be verified,1
+cyberlab_karlsruhe,teamup,https://teamup.rocks/,2023-07-01,unclear,maybe,Teamup's supplied domain no longer resolves; activity unspecified,1
+cyberlab_karlsruhe,Training Arc,,2023-07-01,unclear,maybe,Training Arc lacks evidence distinguishing courses from a software product,0
+cyberlab_karlsruhe,adapt2move,https://www.adapt2move.de/,2024-07-01,digital_tech,yes,Fleet analytics and mobility platform coordinate business travel options,1
+cyberlab_karlsruhe,adjusted flow,https://adjustedflow.com/,2024-07-01,deep_tech,yes,AI optimizes industrial electricity demand against dynamic power prices,1
+cyberlab_karlsruhe,Alithea Biotechnology,http://www.alithea-bio.com,2024-07-01,life_science,yes,Immunopeptidomics platform identifies targets for cancer immunotherapies,1
+cyberlab_karlsruhe,Antaris,https://www.dev.antaris.io,2024-07-01,unclear,maybe,Antaris' supplied development domain is unavailable; product remains undocumented,1
+cyberlab_karlsruhe,Arena Innovation,https://www.arena-innovation.com/,2024-07-01,unclear,maybe,Arena Innovation homepage contains legal notices without a business description,1
+cyberlab_karlsruhe,auditect,,2024-07-01,unclear,maybe,Auditect supplies no description establishing its sensing or software product,0
+cyberlab_karlsruhe,Avior,http://avior.live,2024-07-01,digital_tech,yes,Job matching software monitors employers' live career listings,1
+cyberlab_karlsruhe,avorne,,2024-07-01,unclear,maybe,Avorne has neither company description nor supplied website,0
+cyberlab_karlsruhe,bacchus,https://bacchus-software.de/,2024-07-01,digital_tech,yes,Vineyard operations software coordinates field work and crews,1
+cyberlab_karlsruhe,BF,https://www.bee-found.de/,2024-07-01,unclear,maybe,BF's supplied Bee Found domain no longer resolves,1
+cyberlab_karlsruhe,Bloom Future,,2024-07-01,unclear,maybe,Bloom Future lacks evidence distinguishing career services from software,0
+cyberlab_karlsruhe,captica,https://www.captica.de/,2024-07-01,non_tech,no,Software consultancy modernizes legacy systems and provides architecture advice,1
+cyberlab_karlsruhe,CloudMent,https://cloudment.io,2024-07-01,deep_tech,yes,AI cloud advisor supports migration and architecture planning,1
+cyberlab_karlsruhe,cori,https://getcori.app,2024-07-01,digital_tech,yes,"Choir app combines practice tracks, scores, and rehearsal planning",1
+cyberlab_karlsruhe,craftomatic,http://www.craftomatic.de,2024-07-01,digital_tech,yes,"Timekeeping software automates employee, project, and equipment tracking",1
+cyberlab_karlsruhe,dashbook,http://www.dashbook.dev,2024-07-01,unclear,maybe,Dashbook's homepage returns 404; software function remains unspecified,1
+cyberlab_karlsruhe,Desoltik,https://desoltik.com,2024-07-01,deep_tech,yes,AI analyzes electrical startup currents to diagnose electronics defects,1
+cyberlab_karlsruhe,devops highway,,2024-07-01,unclear,maybe,Devops Highway lacks evidence distinguishing development services from software,0
+cyberlab_karlsruhe,dianovi,https://www.mysympto.com/,2024-07-01,unclear,maybe,Dianovi's MySympto website blocks access; medical functionality unverified,1
+cyberlab_karlsruhe,DungeonTinker,http://Dungeon-tinker.com,2024-07-01,digital_tech,yes,Roleplaying campaign software builds adventures and shares encounters,1
+cyberlab_karlsruhe,EnergyTrack,http://www.energytrack.eu,2024-07-01,unclear,maybe,EnergyTrack domain is offered for sale without company information,1
+cyberlab_karlsruhe,envima,https://www.envima.de/,2024-07-01,digital_tech,yes,Lifecycle assessment software calculates industrial product environmental footprints,1
+cyberlab_karlsruhe,Gesundheitsheldinnen,,2024-07-01,unclear,maybe,Gesundheitsheldinnen lacks evidence identifying health services versus medical technology,0
+cyberlab_karlsruhe,GetResult,,2024-07-01,unclear,maybe,GetResult has no description or homepage establishing its business,0
+cyberlab_karlsruhe,Heimat Software,https://heimat-software.com/,2024-07-01,deep_tech,yes,AI skill management optimizes staffing and identifies competency gaps,1
+cyberlab_karlsruhe,HELLO WE CARE UG,https://hellowecare.de/,2024-07-01,non_tech,no,Employee mental health service provides counseling and workshops,1
+cyberlab_karlsruhe,Industrial AI,https://industrial-ai.dev/,2024-07-01,digital_tech,yes,Reusable analytics workflow software supports industrial engineering teams,1
+cyberlab_karlsruhe,Jinacare,http://www.jina.group,2024-07-01,unclear,maybe,Jinacare's supplied homepage returns no readable business information,1
+cyberlab_karlsruhe,Labmaite,http://labmaite.com,2024-07-01,deep_tech,yes,Proprietary AI platform optimizes bioprocess experiments alongside engineering expertise,1
+cyberlab_karlsruhe,liftwise,http://www.liftwise.de,2024-07-01,digital_tech,yes,Gym management software personalizes training plans and member communication,1
+cyberlab_karlsruhe,LIQRO,,2024-07-01,unclear,maybe,LIQRO lacks a supplied description identifying its technology or market,0
+cyberlab_karlsruhe,Manukai,https://www.manukai.ch/,2024-07-01,deep_tech,yes,AI converts CNC production history into machining automation,1
+cyberlab_karlsruhe,Mindsetr,http://www.mindsetr-info.com,2024-07-01,deep_tech,yes,AI-assisted therapy matching automates intake and appointments,1
+cyberlab_karlsruhe,Monki,https://monki-solutions.com/,2024-07-01,digital_tech,yes,"Mortgage brokerage CRM manages customers, documents, and financing workflows",1
+cyberlab_karlsruhe,Mr.Protect,https://mr-protect.com/,2024-07-01,deep_tech,yes,AI parental controls filter inappropriate content across operating systems,1
+cyberlab_karlsruhe,NewDrive,https://www.newdriveanalytics.de/,2024-07-01,digital_tech,yes,SaaS records manufacturing quality problems and operational disruptions,1
+cyberlab_karlsruhe,Nexato,http://www.nexato.de,2024-07-01,digital_tech,yes,"SaaS applications manage fleets, routing, and handover documentation",1
+cyberlab_karlsruhe,NextStepHR,https://nextstephr.de/,2024-07-01,deep_tech,maybe,AI recruiting offering; product versus agency delivery remains unconfirmed,1
+cyberlab_karlsruhe,Nono,http://www.getnono.app,2024-07-01,unclear,maybe,Nono's app domain no longer resolves; no product description,1
+cyberlab_karlsruhe,Normify,http://www.normify.me,2024-07-01,deep_tech,yes,Regulatory intelligence software extracts obligations and checks compliance,1
+cyberlab_karlsruhe,novaSkill,http://www.novaskill.de,2024-07-01,deep_tech,yes,AI competency platform supports employee development and job matching,1
+cyberlab_karlsruhe,OnSite Solutions,https://smartreadinessindicator.com/,2024-07-01,unclear,maybe,Supplied site explains building ratings without identifying OnSite's commercial product,1
+cyberlab_karlsruhe,preatmos,http://www.preatmos.de,2024-07-01,digital_tech,yes,Location-based recruiting app enables one-click job applications,1
+cyberlab_karlsruhe,Prefiro,https://www.prefiro.de/,2024-07-01,deep_tech,yes,AI agricultural robots precisely harvest green asparagus,1
+cyberlab_karlsruhe,ProtoDevs,https://www.protodevs.de/,2024-07-01,deep_tech,yes,Low-power electronics control smart lockers and parcel stations,1
+cyberlab_karlsruhe,Qubitoss,https://qubitoss.com/,2024-07-01,digital_tech,maybe,Automation software offering; concrete product functionality remains underdescribed,1
+cyberlab_karlsruhe,Ramp7,https://www.ramp7.com/de,2024-07-01,deep_tech,yes,AI supplier management platform tracks project budgets and delivery,1
+cyberlab_karlsruhe,roomjack,http://www.roomjack.de,2024-07-01,digital_tech,yes,"Furnished rental software automates bookings, contracts, and payments",1
+cyberlab_karlsruhe,SaidGor,http://www.saidgor.de,2024-07-01,deep_tech,yes,Proprietary drones and flight software automate steep-slope viticulture,1
+cyberlab_karlsruhe,Senani,https://senani.de/,2024-07-01,life_science,yes,AI wearable tracker detects canine pain and disease,1
+cyberlab_karlsruhe,Sensaru,http://www.sensaru.com,2024-07-01,unclear,maybe,Sensaru homepage is gone; supplied record lacks product details,1
+cyberlab_karlsruhe,ServerlessSalad,http://www.serverlesssalad.io,2024-07-01,unclear,maybe,ServerlessSalad's homepage returns 404; software offering unverified,1
+cyberlab_karlsruhe,slideroom,http://www.slideroom.de,2024-07-01,deep_tech,yes,PowerPoint add-in combines brand assets with AI presentation tools,1
+cyberlab_karlsruhe,start2fix,http://www.start2fix.com,2024-07-01,unclear,maybe,Start2fix homepage returns 404; repair business model remains unspecified,1
+cyberlab_karlsruhe,Stay Sana,https://staysana.com/,2024-07-01,digital_tech,maybe,Wellness marketplace lists complementary practitioners; proprietary technology limited,1
+cyberlab_karlsruhe,Streamlingo,http://www.streamlingo.net,2024-07-01,deep_tech,yes,AI translates live speech into multiple languages via browser,1
+cyberlab_karlsruhe,Tabularis AI,https://www.tabularis.ai/,2024-07-01,deep_tech,yes,Synthetic data generation and custom AI models support enterprise deployment,1
+cyberlab_karlsruhe,TenderFix,,2024-07-01,unclear,maybe,TenderFix lacks a description confirming procurement software or advisory services,0
+cyberlab_karlsruhe,topostoria,,2024-07-01,unclear,maybe,Topostoria has no product description or supplied homepage,0
+cyberlab_karlsruhe,TuCAN,https://tucantest.org,2024-07-01,life_science,yes,Tablet-based cognitive assessment diagnoses neuropsychiatric disorders,1
+cyberlab_karlsruhe,TurtleLoop,,2024-07-01,unclear,maybe,TurtleLoop lacks a described business and supporting website,0
+cyberlab_karlsruhe,VISS,https://www.viss.cc/,2024-07-01,deep_tech,yes,Hardware isolation protects industrial and governmental computer endpoints,1
+cyberlab_karlsruhe,whitemacs,https://whitemacs.com/,2024-07-01,unclear,maybe,Whitemacs homepage exposes only its name without a business description,1
+cyberlab_karlsruhe,Whometa inc,https://whometa.io/,2024-07-01,deep_tech,yes,Enterprise AI operators execute verifiable workflows within customer systems,1
+cyberlab_karlsruhe,XPipe,https://xpipe.io,2024-07-01,digital_tech,yes,"Desktop connection hub manages servers, terminals, and remote infrastructure",1
+cyberlab_karlsruhe,Yesalwa,,2024-07-01,unclear,maybe,Yesalwa lacks company details and a supplied research website,0
+cyberlab_karlsruhe,YuNext,http://www.yunext-med.com,2024-07-01,unclear,maybe,YuNext's medical domain returns conflict errors; product remains unverified,1
+cyberlab_karlsruhe,abblino,https://abblino.com/,2025-07-01,deep_tech,yes,AI conversation partners and feedback personalize language learning,1
+cyberlab_karlsruhe,adric,https://adric.gmbh,2025-07-01,deep_tech,yes,AI invoice review detects errors and automates corrections,1
+cyberlab_karlsruhe,AgentLink,http://www.agentlink.cloud,2025-07-01,unclear,maybe,AgentLink's TLS failure prevents verification of its cloud offering,1
+cyberlab_karlsruhe,AI VisionGuard UG (haftungsbeschränkt),https://aivisionguard.eu/,2025-07-01,unclear,maybe,AI VisionGuard's supplied domain redirects to an unrelated patent attorney,1
+cyberlab_karlsruhe,Alcora,http://www.alcora.io,2025-07-01,unclear,maybe,Alcora's certificate hostname mismatch prevents verifying company activity,1
+cyberlab_karlsruhe,audicius,https://audicius.de,2025-07-01,digital_tech,yes,"Cybersecurity evidence software reconciles policies, reports, and findings",1
+cyberlab_karlsruhe,Axelon,https://axelon.ai,2025-07-01,unclear,maybe,Axelon's domain no longer resolves; AI functionality undocumented,1
+cyberlab_karlsruhe,BAISOFT,,2025-07-01,unclear,maybe,BAISOFT has no description establishing its software or service offering,0
+cyberlab_karlsruhe,Bimraum,,2025-07-01,unclear,maybe,Bimraum lacks evidence identifying a commercial BIM software product,0
+cyberlab_karlsruhe,BiStorage,,2025-07-01,unclear,maybe,BiStorage lacks details confirming storage hardware or software,0
+cyberlab_karlsruhe,Byte,https://byte-robotics.com/,2025-07-01,deep_tech,yes,Robot motion planning software automates programs and cycle optimization,1
+cyberlab_karlsruhe,Casavero,,2025-07-01,unclear,maybe,Casavero has no description distinguishing property services from software,0
+cyberlab_karlsruhe,codaco,https://codaco.app,2025-07-01,unclear,maybe,Codaco's homepage exposes only its name without product details,1
+cyberlab_karlsruhe,ConbaseAI,,2025-07-01,unclear,maybe,ConbaseAI lacks description or homepage establishing its AI product,0
+cyberlab_karlsruhe,CoreExplorer,,2025-07-01,unclear,maybe,CoreExplorer's name alone does not establish its business activity,0
+cyberlab_karlsruhe,Cynus,http://cynus.de,2025-07-01,deep_tech,yes,Free-floating 3D mouse enables configurable CAD and gaming controls,1
+cyberlab_karlsruhe,DataDrivenConstruction,http://datadrivenconstruction.io,2025-07-01,digital_tech,yes,Construction software converts CAD/BIM data and automates ERP workflows,1
+cyberlab_karlsruhe,DatapulseAI,,2025-07-01,unclear,maybe,DatapulseAI has no description establishing a concrete AI product,0
+cyberlab_karlsruhe,DataRevolution,https://www.data-revolution.de/,2025-07-01,digital_tech,yes,Data access platform shares industrial device data and analytics,1
+cyberlab_karlsruhe,datin,https://datin.io/,2025-07-01,deep_tech,yes,Laboratory data platform links experiments and supports sourced AI answers,1
+cyberlab_karlsruhe,DelcauxLabs,,2025-07-01,unclear,maybe,DelcauxLabs lacks a product description and supplied website,0
+cyberlab_karlsruhe,Docary,https://docary.de/,2025-07-01,deep_tech,yes,"Meeting software drafts minutes, decisions, and assigned actions",1
+cyberlab_karlsruhe,Durava,http://www.durava.de,2025-07-01,deep_tech,yes,AI audit platform checks documents against organizational rules,1
+cyberlab_karlsruhe,EE Netzwerk,https://www.eenetzwerk.de/,2025-07-01,digital_tech,yes,Energy consultant software calculates building loads and manages projects,1
+cyberlab_karlsruhe,Efficientware GmbH,http://efficientware.net,2025-07-01,deep_tech,maybe,Software optimization improves AI hardware utilization; scalable product needs confirmation,1
+cyberlab_karlsruhe,empowerling,http://www.empowerling.de,2025-07-01,deep_tech,yes,AI strategy app guides planning and tracks business goals,1
+cyberlab_karlsruhe,Erzeugerland,http://erzeuger-land.de,2025-07-01,digital_tech,yes,Direct-sales software manages livestock processing and meat orders,1
+cyberlab_karlsruhe,ezfox,,2025-07-01,unclear,maybe,Ezfox lacks a description identifying its product or service,0
+cyberlab_karlsruhe,farblQ,,2025-07-01,unclear,maybe,FarblQ has no product description or supplied company website,0
+cyberlab_karlsruhe,flinq,,2025-07-01,unclear,maybe,Flinq lacks evidence identifying its particular software or business,0
+cyberlab_karlsruhe,GEFION,http://www.gefion.info,2025-07-01,digital_tech,maybe,Timber carbon certificate project uses analytics; commercial product remains unconfirmed,1
+cyberlab_karlsruhe,gonster,,2025-07-01,unclear,maybe,Gonster's business activity is undocumented and no homepage is supplied,0
+cyberlab_karlsruhe,Good Words,,2025-07-01,unclear,maybe,Good Words lacks evidence distinguishing writing services from software,0
+cyberlab_karlsruhe,HPC Trust,,2025-07-01,unclear,maybe,HPC Trust lacks details establishing computing technology versus services,0
+cyberlab_karlsruhe,HyBrayn,,2025-07-01,unclear,maybe,HyBrayn lacks a described product and supplied homepage,0
+cyberlab_karlsruhe,Intagium,,2025-07-01,unclear,maybe,Intagium's name provides insufficient evidence of its business activity,0
+cyberlab_karlsruhe,IOWIS,https://iowis.com/,2025-07-01,deep_tech,yes,On-premise AI platform securely processes internal enterprise knowledge,1
+cyberlab_karlsruhe,Liveocracy,https://live-ocracy.com/,2025-07-01,non_tech,no,Hotel operator provides accommodation through a digital booking model,1
+cyberlab_karlsruhe,maiq,,2025-07-01,unclear,maybe,Maiq has no description or website identifying its business,0
+cyberlab_karlsruhe,makeMINT UG (haftungsbeschränkt) & Co. KG,http://www.makemint.de,2025-07-01,non_tech,no,"STEM education provider runs workshops, bootcamps, and school events",1
+cyberlab_karlsruhe,mofiGo,,2025-07-01,unclear,maybe,MofiGo lacks a description establishing mobility software or services,0
+cyberlab_karlsruhe,mrppilot,,2025-07-01,unclear,maybe,Mrppilot has no description confirming a production planning product,0
+cyberlab_karlsruhe,MuWind,https://muwind.de,2025-07-01,unclear,maybe,MuWind blocks homepage access; wind technology details remain unavailable,1
+cyberlab_karlsruhe,MyJobAI,http://www.myjobai.de,2025-07-01,deep_tech,yes,AI job application platform automates matching and submissions,1
+cyberlab_karlsruhe,MYNR,,2025-07-01,unclear,maybe,MYNR's product and target market are not described,0
+cyberlab_karlsruhe,OnlyGreens,http://www.onlygreens.de,2025-07-01,deep_tech,yes,Modular indoor growing systems integrate LEDs and proprietary electronics,1
+cyberlab_karlsruhe,Recall Space,https://recall.space,2025-07-01,deep_tech,yes,AI agents automate purchasing using detailed product intelligence,1
+cyberlab_karlsruhe,ReSource,,2025-07-01,unclear,maybe,ReSource lacks evidence distinguishing resource services from technology,0
+cyberlab_karlsruhe,Sciplex,http://sciplex.de,2025-07-01,unclear,maybe,Sciplex's maintenance page provides no usable company information,1
+cyberlab_karlsruhe,ScoreGO,http://www.scorego-app.com,2025-07-01,digital_tech,yes,"Tennis app aggregates live scores, rankings, and match statistics",1
+cyberlab_karlsruhe,Studio Fluffy,https://studiofluffy.de,2025-07-01,digital_tech,maybe,Engineering software includes DashSet alongside substantial custom development services,1
+cyberlab_karlsruhe,SURFBANK,,2025-07-01,unclear,maybe,SURFBANK lacks a description establishing finance software or another activity,0
+cyberlab_karlsruhe,TenderScout,,2025-07-01,unclear,maybe,TenderScout has no supplied evidence confirming procurement software,0
+cyberlab_karlsruhe,Tetractys B.V.,,2025-07-01,unclear,maybe,Tetractys B.V. supplies no description or website identifying its product,0
+cyberlab_karlsruhe,Toxifree,https://toxifree.de,2025-07-01,unclear,maybe,Toxifree's website fails TLS; toxin-related product remains unspecified,1
+cyberlab_karlsruhe,Trainator,https://trainator.eu,2025-07-01,deep_tech,yes,Probabilistic railway delay prediction API assesses missed-connection risks,1
+cyberlab_karlsruhe,TransferKings,http://www.transferkings.de,2025-07-01,digital_tech,yes,"Mobile games share characters across action, strategy, and football",1
+cyberlab_karlsruhe,veema,,2025-07-01,unclear,maybe,Veema lacks a product description and supplied company homepage,0
+cyberlab_karlsruhe,Vynta CyberRisk,http://www.vynta.de,2025-07-01,deep_tech,yes,Cyber risk scoring scans attack surfaces for insurance underwriting,1
+falling_walls,FibreCoat,,2020-07-01,deep_tech,yes,Thermoplastic-coated glass fibers enable affordable lightweight composites,0
+falling_walls,Helio Heat,,2020-07-01,deep_tech,yes,Solar thermal components deliver renewable industrial process heat,0
+falling_walls,Made of Air,,2020-07-01,deep_tech,yes,Biomass-derived thermoplastics store carbon in construction and consumer products,0
+falling_walls,NanoWired,,2020-07-01,deep_tech,yes,Metallic nanowires connect electronic components without conventional soldering,0
+falling_walls,Cellbricks,,2021-07-01,life_science,yes,Bioprinting and bioinks produce personalized human soft tissue implants,0
+falling_walls,Core Sensing,,2021-07-01,deep_tech,yes,Embedded drivetrain sensors enable machine condition monitoring,0
+falling_walls,Hypnetic,,2021-07-01,deep_tech,yes,Containerized hydraulic energy storage supports decentralized electricity systems,0
+falling_walls,LIDROTEC,,2021-07-01,deep_tech,yes,Ultrashort laser machining cuts semiconductor wafers in liquid,0
+falling_walls,traceless materials,,2021-07-01,deep_tech,yes,Food production residues become compostable plastic replacement materials,0
+falling_walls,VIDA,http://www.vida.place,2021-07-01,deep_tech,yes,Satellite data and machine learning guide rural infrastructure investment,0
+falling_walls,Biotx.ai,https://www.biotx.ai,2022-07-01,life_science,yes,Computational drug discovery develops treatments using synthetic clinical trials,0
+falling_walls,Carbon One,https://www.carbon.one/,2022-07-01,deep_tech,yes,Proprietary catalysis improves renewable methanol production,0
+falling_walls,InCirT,,2022-07-01,deep_tech,yes,"Transceiver microchips enable faster, efficient wireless communications",0
+falling_walls,MotorSkins,https://motorskins.com,2022-07-01,deep_tech,yes,Fluidic textiles create wearable soft robots and adaptive surfaces,0
+falling_walls,PROSION,https://www.prosion.eu,2022-07-01,life_science,yes,Drug platform addresses previously undruggable protein targets,0
+falling_walls,Q.ANT,https://www.qant.de,2022-07-01,deep_tech,yes,Quantum sensors and photonic chips improve sensing and computation,0
+falling_walls,Tubulis,https://www.tubulis.com/,2022-07-01,life_science,yes,Antibody-drug conjugates deliver targeted cancer therapies,0
+falling_walls,Aignostics,https://www.aignostics.com/,2023-07-01,life_science,yes,AI tissue biomarkers support cancer diagnostics and precision medicine,0
+falling_walls,GEMESYS,https://gemesys.tech/,2023-07-01,deep_tech,yes,Brain-inspired chips improve AI training energy efficiency,0
+falling_walls,Proxima Fusion,https://www.proximafusion.com,2023-07-01,deep_tech,yes,Optimized stellarators target commercial nuclear fusion electricity,0
+falling_walls,Reverion,https://reverion.com/,2023-07-01,deep_tech,yes,Reversible biogas plants combine power generation and carbon capture,0
+falling_walls,smartbax,https://www.smartbax.de/,2023-07-01,life_science,yes,Novel antibiotics activate enzymes to kill resistant bacteria,0
+falling_walls,Sonocrete,https://www.sonocrete.com,2023-07-01,deep_tech,yes,Ultrasound processing reduces cement requirements in concrete,0
+falling_walls,ActiTrexx,https://www.actitrexx.de/,2024-07-01,life_science,yes,Cell therapies regulate immune responses after stem cell transplantation,0
+falling_walls,ARQUE Systems,https://www.arque.systems/,2024-07-01,deep_tech,yes,Silicon electron-spin quantum architectures address computing scalability,0
+falling_walls,Cyclize,https://cyclize.de/de/,2024-07-01,deep_tech,yes,Plasma reactors convert plastic waste and CO2 into syngas,0
+falling_walls,DeepEn,https://deepen-imaging.com/about-us/,2024-07-01,life_science,yes,Hair-thin microendoscopes image neurons and sensitive biological tissues,0
+falling_walls,ecoLocked,https://www.ecolocked.com/de-de,2024-07-01,deep_tech,yes,Biomass carbon additives turn concrete into carbon storage,0
+falling_walls,Greenlyte,,2024-07-01,deep_tech,yes,Direct air capture removes CO2 while producing hydrogen,0
+falling_walls,Level Nine,,2024-07-01,deep_tech,yes,Engineered nanozymes catalyze sustainable industrial chemical production,0
+falling_walls,Pramomolecular,https://www.pramomolecular.com/,2024-07-01,life_science,yes,Gene-silencing drugs target cancer proteins and heart failure,0
+falling_walls,Provolut (prev. Exazyme),,2024-07-01,life_science,yes,Machine learning tools optimize protein engineering for pharmaceutical production,0
+falling_walls,Qkera,https://qkera.com/,2024-07-01,deep_tech,yes,Ceramic solid electrolytes improve lithium battery safety and density,0
+falling_walls,xemX,,2024-07-01,deep_tech,yes,Machine learning discovers scalable electrocatalysts for green hydrogen,0
+falling_walls,Allogenetics,https://www.allogenetics.de/,2025-07-01,life_science,yes,Engineered donor organs evade immune rejection after transplantation,0
+falling_walls,BioThrust,https://www.biothrust.com,2025-07-01,life_science,yes,Bubble-free bioreactors improve biopharmaceutical manufacturing,0
+falling_walls,Collimate Health,,2025-07-01,life_science,yes,Microbeam radiation enhances targeted cancer immunotherapy,0
+falling_walls,eleQtron,https://eleqtron.com/,2025-07-01,deep_tech,yes,Builds quantum computers and provides cloud computing access,0
+falling_walls,Mallia Therapeutics,https://www.mallia-therapeutics.com,2025-07-01,life_science,yes,Soluble CD83 therapeutics target hair loss,0
+falling_walls,Neggst,https://www.neggst.co/,2025-07-01,non_tech,no,Plant-based egg alternative is a consumer food product,0
+falling_walls,O11 biomedical,https://www.o11-biomedical.com,2025-07-01,life_science,yes,Drinkable microparticles remove excess CO2 through the intestines,0
+falling_walls,Phlair,https://phlair.com,2025-07-01,deep_tech,yes,Electrochemical direct air capture uses renewable electricity,0
+falling_walls,Pulsetrain,https://pulsetrain.com/,2025-07-01,deep_tech,yes,Battery management and inverter technology extend electric vehicle battery life,0
+falling_walls,re.solution,https://resolution.technology/,2025-07-01,deep_tech,yes,Chemical recycling recovers textile raw materials using water and electricity,0
+falling_walls,Roofline,https://www.roofline.ai/,2025-07-01,deep_tech,yes,AI compiler deploys machine learning models across different hardware,0
+falling_walls,TURN2X,https://turn2x.com,2025-07-01,deep_tech,yes,Patented reactors convert hydrogen and CO2 into renewable natural gas,0
+hightechxl_portfolio,Aircision,https://www.aircision.com/,2019-07-01,deep_tech,yes,Free-space optical links enable wireless communication backhaul,0
+hightechxl_portfolio,Carbyon,https://carbyon.com,2019-07-01,deep_tech,yes,Thin-film direct air capture removes atmospheric CO2,0
+hightechxl_portfolio,Keiron,https://keirontechnologies.com,2019-07-01,deep_tech,yes,Laser transfer technology enables stencil-free electronics manufacturing,0
+hightechxl_portfolio,InPhocal,https://inphocal.com,2020-07-01,deep_tech,yes,Precision laser systems mark materials with lower environmental impact,0
+hightechxl_portfolio,Veridis,https://veridis.tech,2020-07-01,deep_tech,yes,Material characterization technology analyzes complex materials,0
+hightechxl_portfolio,AVOXT,https://avoxt.com,2021-07-01,deep_tech,yes,Membraneless electrolyzers produce green hydrogen,0
+hightechxl_portfolio,Astrape Networks,https://www.astrapenetworks.com/,2022-07-01,deep_tech,yes,Photonics infrastructure reduces data center energy demand,0
+hightechxl_portfolio,Inner,https://www.innertech.nl/,2022-07-01,deep_tech,yes,Hardware and machine learning diagnose battery condition,0
+hightechxl_portfolio,Senergetics,https://www.senergetics.ai/,2022-07-01,deep_tech,yes,Integrated photonic sensors provide continuous industrial monitoring,0
+hightechxl_portfolio,Luper Technologies,https://luper.tech,2023-07-01,deep_tech,yes,Industrial air cleaning mimics natural atmospheric purification,0
+hightechxl_portfolio,SonicPrecision,https://sonicprecision.us/,2023-07-01,life_science,yes,Ultrasound monitoring improves medical ablation catheters,0
+hightechxl_portfolio,VitalWear,https://vitalwear.nl,2023-07-01,life_science,yes,Textile optical sensors assess pressure ulcer risk in patients,1
+hightechxl_portfolio,High Tech Binders,https://hightechbinders.com/,2024-07-01,deep_tech,yes,Carbon-negative bio-based asphalt binder replaces fossil bitumen,0
+hightechxl_portfolio,FlowVolta,,2025-07-01,deep_tech,maybe,Electrochemical systems innovation; specific product requires confirmation,0
+hightechxl_portfolio,MarisCarbon,https://www.mariscarbon.com/,2025-07-01,deep_tech,yes,Patented ship exhaust systems eliminate methane slip,1
+hightechxl_portfolio,Perovix,https://www.perovix.com/#hero,2025-07-01,deep_tech,yes,"Perovskite X-ray detectors serve medical, industrial, and security imaging",1
+hightechxl_portfolio,Zermicor,,2025-07-01,life_science,yes,Optical fiber imaging improves cardiovascular interventions,0
+science4life,Actome GmbH,,2019-06-17,life_science,yes,Molecular analysis supports pharmaceutical development,0
+science4life,Ebenbuild,,2019-06-17,life_science,yes,Digital lung twins personalize ventilation for respiratory distress patients,0
+science4life,Freemotion Systems,,2019-06-17,life_science,yes,Semi-autonomous wheelchair climbs stairs using wheels and legs,0
+science4life,implacit GmbH,,2019-06-17,life_science,yes,Develops treatments for otherwise inoperable tumors,0
+science4life,KOENA tec GmbH,,2019-06-17,deep_tech,yes,Existing electrical devices provide distributed grid stabilization storage,0
+science4life,Mediaire GmbH,,2019-06-17,life_science,yes,Automated radiology measurements improve neurodegenerative disease assessment,0
+science4life,PerioTrap Pharmaceuticals GmbH,,2019-06-17,life_science,yes,Pharmaceutical development targets periodontal disease,0
+science4life,Phytoprove Pflanzenanalytik UG,,2019-06-17,deep_tech,yes,Optical instruments detect plant nutrient deficiencies and damage,0
+science4life,PolyGlyco Biotech GmbH i.Gr.,,2019-06-17,life_science,yes,Therapeutics target dry age-related macular degeneration,0
+science4life,QYOBO,,2019-06-17,digital_tech,yes,Platform connects chemical and pharmaceutical ingredient markets,0
+science4life,YCOR,,2019-06-17,life_science,yes,Heart implant technology reduces invasiveness of artificial heart surgery,0
+science4life,CellUnite GmbH,,2020-09-21,life_science,yes,Personalized cell therapies broaden access to treatment,0
+science4life,DEOXY,,2020-09-21,life_science,yes,Automated single-cell gene expression analysis supports diagnostics,0
+science4life,DERMAGNOSTIX,,2020-09-21,life_science,yes,Point-of-care molecular device diagnoses skin diseases,0
+science4life,Fibragg Diagnostics GmbH,,2020-09-21,life_science,yes,Cardiology diagnostic technology assesses narrowed blood vessels,0
+science4life,Green Elephant Biotech,,2020-09-21,deep_tech,yes,Sustainable materials replace disposable plastic laboratory products,0
+science4life,greenventory GmbH,,2020-09-21,digital_tech,yes,Data platform supports municipal energy project planning,0
+science4life,InnoSurge AC,,2020-09-21,life_science,yes,Medical software automates surgical planning,0
+science4life,Nia Health GmbH,,2020-09-21,life_science,yes,Neurodermatitis app supports patients managing chronic skin disease,0
+science4life,Pionierkraft GmbH,,2020-09-21,deep_tech,maybe,Clean energy access solution; technical mechanism missing from description,0
+science4life,Prime Vector Technologies GmbH,,2020-09-21,life_science,yes,Viral platform accelerates prophylactic and therapeutic vaccine development,0
+science4life,Senodis Technologies GmbH,,2020-09-21,deep_tech,yes,Ceracode markings enable industrial part tracking and process traceability,0
+science4life,Smela,,2020-09-21,deep_tech,yes,Compact electromechanical linear actuators replace pneumatic cylinders,0
+science4life,YURI GmbH,,2020-09-21,deep_tech,yes,Microgravity platforms enable biotechnology research aboard spacecraft,0
+science4life,Airstier Technology GmbH,https://www.airstier-technology.de/,2021-06-28,deep_tech,yes,Digitally controlled electric motors improve energy efficiency,0
+science4life,EpiBlock,,2021-06-28,life_science,yes,Gene vectors suppress focal epileptic seizures,0
+science4life,GOETHE CVI,,2021-06-28,life_science,yes,"AI automates cardiac imaging, analysis, and medical reporting",0
+science4life,InContAlert,https://incontalert.de/,2021-06-28,life_science,yes,Wearable monitors bladder filling to prevent incontinence episodes,0
+science4life,innocept,https://www.innocept-mobility.de/,2021-06-28,digital_tech,yes,Charging platform shares private and commercial electric vehicle chargers,0
+science4life,LIDROTEC GmbH,https://www.lidrotec.de/,2021-06-28,deep_tech,yes,Laser processing equipment separates semiconductor microchips,0
+science4life,NanoStruct GmbH,https://www.nanostruct.eu/,2021-06-28,deep_tech,yes,Biosensors detect trace pollutants and explosive substances,0
+science4life,Nephrolytix,https://nephrolytix.com/,2021-06-28,life_science,maybe,Kidney-health venture; inaccessible homepage leaves the medical product unverified,1
+science4life,NEUREVO GmbH,https://www.neurevo.de/,2021-06-28,life_science,yes,Neuroprotective therapies target ALS and Parkinson's disease,0
+science4life,PRAMOMOLECULAR,https://www.pramo-molecular.org/,2021-06-28,life_science,yes,Protein-targeting medicines address lung and pancreatic cancers,0
+science4life,ProSion GmbH,https://prosion.io/,2021-06-28,life_science,yes,Pharmaceutical building blocks enable difficult disease drug discovery,0
+science4life,RECTECH,,2021-06-28,life_science,yes,Engineered recombinases precisely repair genetic defects,0
+science4life,suena GmbH,https://www.suena-company.com/,2021-06-28,deep_tech,yes,Battery optimization enables flexible operation across energy markets,0
+science4life,Advylop,,2022-07-18,life_science,yes,PEG alternatives improve safety of medical formulations,0
+science4life,CatSper,,2022-07-18,life_science,yes,Laboratory tests detect CatSper-related male infertility,0
+science4life,DNTOX GmbH,https://www.dntox.de/,2022-07-18,life_science,yes,Animal-free toxicology assays evaluate chemical safety,0
+science4life,Dymium,,2022-07-18,life_science,yes,Magnetic separation enables complete kidney stone removal,0
+science4life,FUSIX BIOTECH GmbH,,2022-07-18,life_science,yes,Immunotherapy platform treats difficult cancers,0
+science4life,HBOX Therapies GmbH,https://www.hbox-therapies.com/,2022-07-18,life_science,yes,Medical devices treat carbon monoxide poisoning,0
+science4life,n-biotics,,2022-07-18,life_science,yes,Antibacterial implant surfaces prevent dental and orthopedic infections,0
+science4life,OPSYON Therapeutics GmbH,,2022-07-18,life_science,yes,Tumor-specific immunotherapies reduce cancer treatment side effects,0
+science4life,plugX,,2022-07-18,deep_tech,yes,Retrofit electrical connections become electric mobility charging points,0
+science4life,PV2+,https://pv2plus.com/,2022-07-18,deep_tech,yes,Copper electroplating replaces silver contacts in solar cells,0
+science4life,Reverion,https://reverion.com/,2022-07-18,deep_tech,yes,Biogas power generation balances intermittent renewable electricity,0
+science4life,Revoltech GmbH,https://madewithlovr.com/password,2022-07-18,deep_tech,yes,Hemp residue materials replace leather without plastics,0
+science4life,Shards,https://shards.eco/,2022-07-18,deep_tech,yes,Construction waste becomes recycled building tiles,0
+science4life,Akribion Genomics,,2023-06-26,life_science,yes,CRISPR platforms edit genomes and deplete cancer cells,0
+science4life,ArtifiCell,,2023-06-26,life_science,yes,Modular bioprinting systems cultivate functional human tissue,0
+science4life,DeepEn,,2023-06-26,life_science,yes,Miniature endoscopes enable minimally invasive neurological imaging,0
+science4life,FLIPoQ,,2023-06-26,deep_tech,yes,Resource-efficient manufacturing produces prototypes and small-series components,0
+science4life,LigniLabs,,2023-06-26,deep_tech,yes,Lignin microcarriers encapsulate active ingredients,0
+science4life,MAKROPHAGEN 2.0,,2023-06-26,life_science,yes,Engineered macrophage cell therapies attack solid tumors,0
+science4life,MYTRA,,2023-06-26,deep_tech,yes,Sensors and analytics measure microplastic contamination,0
+science4life,Octo Germany,,2023-06-26,deep_tech,yes,Nonwettable yarn eliminates PFAS in water-repellent textiles,0
+science4life,retoflow,,2023-06-26,deep_tech,yes,Digital grid planning automates connections and energy network design,0
+science4life,SAFIA Technologies,,2023-06-26,deep_tech,yes,Rapid toxin detection improves food safety testing,0
+science4life,Sedivention,,2023-06-26,life_science,yes,Gastric nerve ablation device treats obesity without implants,0
+science4life,xemX,,2023-06-26,deep_tech,yes,AI-guided materials discovery develops tailored electrocatalysts,0
+science4life,ÖkoVision,,2023-06-26,deep_tech,yes,AI electricity analytics identify supermarket energy savings and equipment defects,0
+science4life,AdaptX Systems,,2024-07-01,deep_tech,yes,Patented machine-tool cooling reduces emissions and worker health risks,0
+science4life,CeraSleeve,,2024-07-01,deep_tech,yes,Recyclable waterproof paper material replaces synthetic resins,0
+science4life,fiberior,,2024-07-01,deep_tech,yes,Manufacturing process lowers thermoplastic fiber composite production costs,0
+science4life,Hydrogenea,,2024-07-01,deep_tech,yes,Material innovations extend electrolyzer and fuel cell lifetimes,0
+science4life,ILLUTHERM,,2024-07-01,deep_tech,yes,Blue LED heating decarbonizes ceramic and cement processing,0
+science4life,QUASAR Therapeutics,,2024-07-01,life_science,yes,Complement system regulators treat rare severe diseases,0
+science4life,ResCure,,2024-07-01,life_science,yes,Polymer wound dressings bind inflammatory factors to enable healing,0
+science4life,TENTA VISION,,2024-07-01,deep_tech,yes,Patented sensing detects hidden defects in manufactured components,0
+science4life,Blueprint Biomed,,2025-06-30,life_science,yes,Resorbable biomaterial implants stimulate bone regeneration,0
+science4life,CiX,https://cixgreentech.de/,2025-06-30,deep_tech,yes,Electrically powered water modules remove PFAS and pharmaceutical pollutants,0
+science4life,HeartGate,,2025-06-30,life_science,yes,Implantation kits enable beating-heart ventricular assist device surgery,0
+science4life,Plantman,https://plantman.notion.site/,2025-06-30,life_science,yes,Plant-derived therapeutic proteins target Huntington's disease,0
+science4life,Radiant Solar,https://radiant.systems/,2025-06-30,deep_tech,yes,Solar power distribution hardware simplifies apartment building photovoltaics,0
+science4life,TwinWatt,,2025-06-30,deep_tech,yes,Optimized wind turbines harvest energy in urban settings,0
+science4life,WeldNova,https://weldnova.com/de/start/,2025-06-30,deep_tech,yes,Electromagnetic weld support enables thick-plate laser welding,0
+science4life,X-ECD,,2025-06-30,deep_tech,yes,Nonradioactive electron capture detectors measure chemical pollutants,0
+startup_incubator_berlin,2 FINGERS,,2021-07-01,unclear,maybe,2 FINGERS describes innovation without identifying a product or market,0
+startup_incubator_berlin,6th Sense,,2021-07-01,non_tech,no,Workplace mental wellbeing service for startups and coworking spaces,0
+startup_incubator_berlin,7×17 Collective,,2021-07-01,non_tech,no,Artist collective publishes limited-edition artworks and supports promotion,0
+startup_incubator_berlin,A2zebra,https://tuktoro.com,2022-07-01,deep_tech,yes,Connected learning toys assist primary pupils with learning difficulties,0
+startup_incubator_berlin,Aam Digital,https://aam-digital.com,2021-07-01,digital_tech,yes,Case management software serves NGOs and social workers,1
+startup_incubator_berlin,Agaia Coliving,https://www.agaia-coliving.com/faq,2022-07-01,non_tech,no,Coliving and coworking retreats operate in Tuscany,0
+startup_incubator_berlin,AgroHut,,2020-07-01,unclear,maybe,AgroHut identifies agriculture without describing its business or technology,0
+startup_incubator_berlin,Aidvance,http://aidvance.co,2024-07-01,life_science,yes,AI digital therapeutics deliver cognitive behavioral therapy,0
+startup_incubator_berlin,Aimee,https://getaimee.app,2024-07-01,deep_tech,yes,AI relationship coaching app improves communication and self-reflection,0
+startup_incubator_berlin,alift.io,https://www.alift.io,2025-07-01,non_tech,no,Placement service connects students with NGO and business projects,0
+startup_incubator_berlin,Alter Falter,http://tarasenkoelizabeth.wixsite.com/alterfalter-berlin,2023-07-01,non_tech,no,"Event organizer provides outings, workshops, and celebrations for seniors",1
+startup_incubator_berlin,alvego,http://www.alvego.de,2019-07-01,non_tech,no,Macroalgae-based healthy food brand,0
+startup_incubator_berlin,aMente,,2025-07-01,unclear,maybe,aMente describes psychotherapy access problems without specifying its solution,0
+startup_incubator_berlin,Anegoica Studio,https://www.anecoica.net/,2022-07-01,deep_tech,maybe,Generative music technology accompanies creative services; medical application remains unverified,1
+startup_incubator_berlin,Artemis,https://www.artemis-solutions.de/,2023-07-01,deep_tech,yes,"AI SaaS automates pharmaceutical sales, production planning, and purchasing",0
+startup_incubator_berlin,ATHLEO,,2024-07-01,deep_tech,yes,AI phone and messaging assistants automate fitness studio workflows,0
+startup_incubator_berlin,Baheis,,2024-07-01,non_tech,no,Jewelry retail combines online sales with social media services,0
+startup_incubator_berlin,Basgar-Shop,http://basgarshop.com,2022-07-01,non_tech,no,Recycled-plastic streetwear bags are fashion products,0
+startup_incubator_berlin,Bearcover,http://www.bearcover.de,2020-07-01,deep_tech,maybe,Care home monitoring support; homepage unavailable to verify technology,1
+startup_incubator_berlin,Beazy,,2020-07-01,digital_tech,yes,Software operating system serves creative industry workflows,0
+startup_incubator_berlin,Berliner Institut für Governance & Leadership e.V. (BIGL),,2024-07-01,non_tech,no,Nonprofit association promotes governance and leadership,0
+startup_incubator_berlin,Bloom Health,https://www.bloomhealth.de,2020-07-01,non_tech,no,Patient recruitment service builds clinical trial communities,1
+startup_incubator_berlin,Brea,,2021-07-01,digital_tech,yes,Breast cancer information app supports patients and relatives,0
+startup_incubator_berlin,Buddies-App,https://buddies-app.com,2022-07-01,digital_tech,yes,Friendship app matches expats through shared interests,0
+startup_incubator_berlin,Cabin Experience,http://cabinexperience.com,2020-07-01,digital_tech,maybe,"Tiny-house marketplace combines sales, land brokerage, and rentals",1
+startup_incubator_berlin,CALLSTR,http://callstr.com,2021-07-01,digital_tech,yes,Browser-based video calls integrate directly into websites,0
+startup_incubator_berlin,careloop,http://www.pflegista.de,2019-07-01,non_tech,no,Recruitment service places international nurses in German healthcare institutions,0
+startup_incubator_berlin,Cbright,https://www.cbright.io/,2022-07-01,non_tech,no,Sustainability engagement project connects young consumers with NGOs,1
+startup_incubator_berlin,Ceamless,https://www.ceamless.events/,2024-07-01,digital_tech,yes,Matching platform connects female cofounders with startups,1
+startup_incubator_berlin,CETZ,https://www.cetz-fensterschutz.de,2025-07-01,non_tech,no,Consumer window guards prevent cats becoming trapped,1
+startup_incubator_berlin,CHEERY,,2021-07-01,non_tech,no,Microdonation platform serves charitable fundraising,0
+startup_incubator_berlin,Chetan Phakatkar,,2021-07-01,non_tech,no,Cross-border brokerage connects German and Indian businesses,0
+startup_incubator_berlin,Circum,https://www.avanera.de,2021-07-01,digital_tech,yes,Hotel resource management software tracks consumption and efficiency measures,1
+startup_incubator_berlin,cleverlohn,,2021-07-01,non_tech,no,Payroll bureau provides managed wage processing with an HR portal,0
+startup_incubator_berlin,cleverlohn.de,https://www.cleverlohn.de/,2022-07-01,non_tech,no,Payroll bookkeeping service combines digital delivery with personal support,1
+startup_incubator_berlin,Cliqe,https://www.cliqe.de/,2022-07-01,digital_tech,maybe,Referral marketing platform connects brands with community content creators,1
+startup_incubator_berlin,Clokity,https://clokity.com,2024-07-01,digital_tech,yes,Time tracking software serves small teams and freelancers,0
+startup_incubator_berlin,COM.UNITY,,2021-07-01,non_tech,no,Operates student apartments to improve housing access,0
+startup_incubator_berlin,Creme Frech,https://cremefrech.com,2024-07-01,non_tech,no,Online retailer sells original art and interior goods,0
+startup_incubator_berlin,DayTM,https://www.daytm.app/,2024-07-01,deep_tech,yes,AI family organizer automates everyday administrative tasks,0
+startup_incubator_berlin,Dean | Zane,https://deanzane.com/,2019-07-01,non_tech,no,Sustainable fashion label produces individualized clothing,0
+startup_incubator_berlin,Debias,https://debiaslab.com,2025-07-01,non_tech,no,Behavioral research consultancy advises customers on conversion improvements,0
+startup_incubator_berlin,Deep Skin Ai,https://deepskinai.com,2022-07-01,deep_tech,yes,AI skin analysis recommends cosmetics for retail customers,0
+startup_incubator_berlin,Deep Talks,https://thedeeptalks.com/,2020-07-01,non_tech,no,Facilitated conversation spaces encourage deeper interpersonal dialogue,0
+startup_incubator_berlin,deepfile,https://www.deepfile.eu,2023-07-01,deep_tech,yes,Private enterprise AI search retrieves answers and files,0
+startup_incubator_berlin,Delvo,https://www.delvo.ai,2025-07-01,deep_tech,yes,AI procurement agent analyzes suppliers and negotiation opportunities,0
+startup_incubator_berlin,Department of Public Feeling,,2025-07-01,non_tech,no,Experimental music theater production serves opera houses,0
+startup_incubator_berlin,DGS-Übersetzer,,2025-07-01,deep_tech,yes,AI avatar translates spoken German into sign language,0
+startup_incubator_berlin,Digital Health Dashboard,,2024-07-01,digital_tech,yes,Hospital dashboard tracks sustainability data for CSRD reporting,0
+startup_incubator_berlin,DocVox,https://docvox.io/index.html,2020-07-01,deep_tech,yes,Business AI automates meeting workflows,1
+startup_incubator_berlin,Dreamsome,https://dreamsome.space,2025-07-01,non_tech,no,"Dream coaching, lucid dreaming courses, and events",1
+startup_incubator_berlin,DS Consult,https://www.compassteams.de,2019-07-01,digital_tech,maybe,CompassTeams digitizes peer coaching and team development,1
+startup_incubator_berlin,DSConsulting,,2019-07-01,non_tech,no,Consultancy addresses workplace globalization and digital transformation,0
+startup_incubator_berlin,Eagle Eye,,2020-07-01,digital_tech,yes,Football analytics software makes data accessible to clubs,0
+startup_incubator_berlin,Eagle Set,,2020-07-01,digital_tech,yes,Football analytics tool serves clubs without data science staff,0
+startup_incubator_berlin,EagleStats,,2020-07-01,digital_tech,maybe,Football data project; scalable software product remains unconfirmed,0
+startup_incubator_berlin,Easy Cook Asia,http://www.easycookasia.de,2019-07-01,non_tech,no,Asian meal kits sell prepared ingredients and recipes,0
+startup_incubator_berlin,EasyCookies,,2020-07-01,non_tech,no,Produces health-conscious snack cookies,0
+startup_incubator_berlin,Ecommutely,http://ecommutely.com,2022-07-01,unclear,maybe,Ecommutely's commuting concept remains unspecified; website no longer resolves,1
+startup_incubator_berlin,ENGEL Systems,https://engel-systems.de,2025-07-01,deep_tech,yes,IoT systems predict maintenance needs for cargo bikes,0
+startup_incubator_berlin,Faircado,https://faircado.de,2021-07-01,digital_tech,yes,Secondhand search engine compares online resale offers,0
+startup_incubator_berlin,femconnect / DS Consult,,2019-07-01,non_tech,no,Virtual empowerment training organizes peer coaching for young women,0
+startup_incubator_berlin,Femote (ex Flowise),https://femote.co,2023-07-01,non_tech,no,Human data services employ remote women in Africa,0
+startup_incubator_berlin,Find-Your-Software,,2023-07-01,deep_tech,yes,AI software discovery platform supports business digitalization,0
+startup_incubator_berlin,Fireflyting,https://fireflyting.co/,2021-07-01,deep_tech,yes,Autonomous AI drones inspect infrastructure for wildfire prevention,0
+startup_incubator_berlin,Fixit,,2023-07-01,digital_tech,yes,Video guidance platform supports household repair troubleshooting,0
+startup_incubator_berlin,Flaneury,https://www.flaneury.de,2021-07-01,digital_tech,yes,Online marketplace gives local fashion boutiques digital storefronts,0
+startup_incubator_berlin,FoodRaccoon,https://www.foodraccoon.com,2023-07-01,digital_tech,yes,Food-focused social networking and pickup app,1
+startup_incubator_berlin,Forget Finance,https://forget.finance,2020-07-01,digital_tech,yes,Smartphone financial advisory app manages personal finance planning,0
+startup_incubator_berlin,Fritz & Dietz,,2020-07-01,non_tech,no,Vegan CBD lubricant is a consumer intimate care product,0
+startup_incubator_berlin,Generation Reach GmbH,https://family.cards,2022-07-01,deep_tech,yes,Card-operated TV interface enables older adults' digital communication,1
+startup_incubator_berlin,Gifty App,https://www.giftd.app,2022-07-01,digital_tech,yes,Local clothing giveaway app connects brands and communities,0
+startup_incubator_berlin,Glasque,https://glasque.de,2021-07-01,non_tech,no,Glass contact lens cases replace conventional plastic containers,1
+startup_incubator_berlin,Glazed,https://glazedanalytics.com,2023-07-01,digital_tech,yes,Figma plugin generates visual analytics tracking plans,0
+startup_incubator_berlin,Global Good,https://global-good.de,2021-07-01,non_tech,no,German-Indian business brokerage matches demand for professional services,1
+startup_incubator_berlin,Glokal AI,https://glokalai.com,2024-07-01,deep_tech,yes,Data-sovereign AI agents automate regulated financial and supply-chain workflows,0
+startup_incubator_berlin,GoOxivit,https://www.go-oxivit.com/,2025-07-01,deep_tech,yes,Energy-harvesting shoe insoles charge powerbanks during walking,0
+startup_incubator_berlin,Grabbi,https://grabbi.de,2021-07-01,non_tech,no,Local delivery service consolidates orders from neighborhood shops,0
+startup_incubator_berlin,Graberr,https://www.examberg.com,2022-07-01,deep_tech,yes,AI language learning uses stories and roleplay,0
+startup_incubator_berlin,Grains,https://www.grains.education/,2024-07-01,non_tech,no,Nonprofit hospitality school trains and integrates displaced people,0
+startup_incubator_berlin,GrantGPT,https://grantgpt.eu,2024-07-01,deep_tech,yes,AI matching platform finds relevant European funding programs,0
+startup_incubator_berlin,Grüneo,http://gruneo.com,2019-07-01,non_tech,no,Organic DIY gardening boxes are consumer gardening kits,0
+startup_incubator_berlin,Haderlump,https://haderlump.berlin,2022-07-01,non_tech,no,Berlin fashion label designs clothing,0
+startup_incubator_berlin,Hale,http://www.halecommunity.com,2022-07-01,life_science,maybe,Digital support for chronic pelvic pain; medical product unconfirmed,1
+startup_incubator_berlin,Handstree,https://handstree.com,2023-07-01,digital_tech,yes,All-in-one SaaS supports nonprofit organization operations,0
+startup_incubator_berlin,HealthCaters,https://www.healthcaters.de,2020-07-01,life_science,yes,Workplace health screening kiosk pairs with virtual health assistance,0
+startup_incubator_berlin,Healthea,https://helthea.com,2025-07-01,non_tech,no,Women's resilience academy sells courses and workshops,0
+startup_incubator_berlin,Helthea,,2025-07-01,non_tech,no,Certified online prevention courses target women's wellbeing,0
+startup_incubator_berlin,Heppy,,2024-07-01,digital_tech,yes,App encourages gratitude and appreciation in everyday relationships,0
+startup_incubator_berlin,HER BODY HER MIND,,2024-07-01,non_tech,no,Integrative wellness offerings support women with cancer,0
+startup_incubator_berlin,herb&mango,http://www.herbandmango.com/,2019-07-01,non_tech,no,Indian meal kits supply curated ingredients and recipes,0
+startup_incubator_berlin,HerbiBox,,2022-07-01,non_tech,no,Sells fresh herbs as consumer products,0
+startup_incubator_berlin,Hoopooh,,2021-07-01,digital_tech,yes,"Childcare communication platform connects nurseries, educators, and parents",0
+startup_incubator_berlin,Horus Prosthetics,,2020-07-01,life_science,yes,Affordable 3D-manufactured leg prostheses serve amputees through subscriptions,0
+startup_incubator_berlin,HYBRIGHT,,2022-07-01,digital_tech,maybe,Consumer reward system promotes sustainable purchases; software details limited,0
+startup_incubator_berlin,Hybright (Cheery),,2022-07-01,non_tech,no,Charitable platform enables rapid microdonations,0
+startup_incubator_berlin,ignore gravity,https://www.ignore-gravity.com,2022-07-01,non_tech,no,Organizational consultancy supports cultural change and transformation,0
+startup_incubator_berlin,Innovation Platform,https://the-innovation-platform.de,2021-07-01,digital_tech,maybe,Innovation collaboration platform links universities and companies,1
+startup_incubator_berlin,Intrials,https://intrials.de/,2020-07-01,non_tech,no,Patient recruitment service connects clinical trials with health app networks,0
+startup_incubator_berlin,Jannis Groh,https://hoefe.berlin,2021-07-01,non_tech,no,Berlin-inspired scented candles and perfumes are consumer goods,0
+startup_incubator_berlin,Jannis Groh X-Stand,,2021-07-01,non_tech,no,Wooden tabletop risers convert desks into standing workspaces,0
+startup_incubator_berlin,Jouly AI,https://jouly.ai,2025-07-01,deep_tech,yes,AI energy assistant supports smarter household energy decisions,0
+startup_incubator_berlin,Juriverse,http://juriverse.com,2021-07-01,digital_tech,yes,Law study platform provides cases and digital revision materials,1
+startup_incubator_berlin,KAJUVI,https://www.KAJUVI.com/,2022-07-01,non_tech,no,Circular interior design brand retails reused-material furnishings,0
+startup_incubator_berlin,KARTA,https://karta.de,2023-07-01,digital_tech,yes,Project management software serves interior designers,0
+startup_incubator_berlin,Kinu Health (ex Ailara),https://www.kinuhealth.com,2024-07-01,digital_tech,yes,"Wellbeing journal tracks symptoms, treatments, and laboratory results",1
+startup_incubator_berlin,kleiderly,https://www.kleiderly.com,2020-07-01,unclear,maybe,Kleiderly's fashion description and generic website do not establish technology,1
+startup_incubator_berlin,konfetti.ai,https://konfetti.ai,2024-07-01,digital_tech,yes,Marketplace matches participants with creative courses and workshops,0
+startup_incubator_berlin,KRENU,http://www.krenu.com,2019-07-01,non_tech,no,Design studio produces customized porcelain tableware,0
+startup_incubator_berlin,Kursinsel,https://www.kursinsel.de/,2022-07-01,digital_tech,yes,Online marketplace books verified live classes for children,0
+startup_incubator_berlin,Lastdecades,https://lastdecades.de,2025-07-01,non_tech,no,Retails curated vintage streetwear,0
+startup_incubator_berlin,LearnFlex UG,https://learnflex.de/,2019-07-01,digital_tech,yes,Education platforms provide software for improved learning processes,0
+startup_incubator_berlin,Leav,https://www.leav.tech/,2022-07-01,life_science,yes,DiGA therapeutic app helps reduce or stop cannabis consumption,0
+startup_incubator_berlin,Lemberg Solutions,https://lembergsolutions.com,2020-07-01,non_tech,no,IT service provider performs software work and technical audits,0
+startup_incubator_berlin,LexHub,https://www.lexhub.de,2021-07-01,unclear,maybe,LexHub's supplied website now advertises unrelated funding advisory services,1
+startup_incubator_berlin,Lingobook,https://lingobook.odoo.com/,2024-07-01,digital_tech,yes,Language learning community connects learners with native speakers,0
+startup_incubator_berlin,Lisa,,2022-07-01,deep_tech,yes,Plug-and-play solar systems integrate batteries for home energy independence,0
+startup_incubator_berlin,LYlife,https://lylife.eu,2025-07-01,life_science,maybe,AI self-management app supports lymphoedema; medical product status unconfirmed,0
+startup_incubator_berlin,MATCHBRAND,https://www.matchbrand.de,2023-07-01,digital_tech,yes,Recruitment marketplace uses social media referrals to fill vacancies,0
+startup_incubator_berlin,MetaVision,http://www.meetavision.com,2022-07-01,deep_tech,yes,Real-time image translation overlays translated screen content,0
+startup_incubator_berlin,Microgreens,https://microgreens.berlin/,2022-07-01,non_tech,no,Local grower supplies fresh microgreens to Berlin customers,0
+startup_incubator_berlin,Mini Mentor,https://minimentor.net/,2024-07-01,non_tech,no,Develops consumer goods distributed through retail partners,0
+startup_incubator_berlin,Minmo,,2025-07-01,deep_tech,yes,AI assistant personalizes household energy management,0
+startup_incubator_berlin,Miyol,https://www.miyol.io,2025-07-01,deep_tech,yes,Motion-harvesting insoles generate electricity while walking or running,0
+startup_incubator_berlin,My Second Ear,https://www.mysecondear.de,2019-07-01,non_tech,no,Hearing aid retailer provides audiology advice and fitting,1
+startup_incubator_berlin,MyHelpBuddy,http://www.myhelpbuddy.com,2019-07-01,digital_tech,yes,International community marketplace matches people with practical helpers,0
+startup_incubator_berlin,Native Foods,https://www.native-foods.com,2020-07-01,non_tech,no,Insect-based protein alternatives are food products,0
+startup_incubator_berlin,NEX,https://www.nex.aero,2021-07-01,deep_tech,yes,Hydrogen-powered eVTOL aircraft targets urban mobility,0
+startup_incubator_berlin,neXpen,,2021-07-01,deep_tech,maybe,Ergonomic learning pen combines physical writing support with an app,0
+startup_incubator_berlin,NICO AI,,2024-07-01,deep_tech,yes,Voice AI companion supports reflection and mental wellbeing,0
+startup_incubator_berlin,Nieds,https://nieds.de,2022-07-01,digital_tech,yes,Travel marketplace connects customers with local experience providers,0
+startup_incubator_berlin,NovoStock,https://www.novostock.de,2023-07-01,digital_tech,yes,Dental inventory software tracks UDI barcodes and automates reordering,1
+startup_incubator_berlin,Nyma,https://nyma.app,2025-07-01,deep_tech,yes,AI coaching app supports adults managing ADHD routines,0
+startup_incubator_berlin,Onboring,https://onboring.com,2022-07-01,digital_tech,yes,SaaS management software automates license allocation,0
+startup_incubator_berlin,One Roof,https://www.oneroof.earth,2025-07-01,digital_tech,yes,Collaboration and knowledge platform supports sustainable construction,0
+startup_incubator_berlin,Onni Care,https://www.onni-care.com,2024-07-01,digital_tech,maybe,Fertility information platform supports egg-freezing journeys,1
+startup_incubator_berlin,Onu,,2024-07-01,deep_tech,yes,Connected consumer electronics support healthier everyday breathing,0
+startup_incubator_berlin,Orbit,https://www.3am-energy.com,2023-07-01,non_tech,no,"Event agency connects artists, brands, venues, and festivals",0
+startup_incubator_berlin,Outzip UG,https://outzip.de,2022-07-01,digital_tech,yes,Rental marketplace circulates outdoor equipment,0
+startup_incubator_berlin,Pacelo,https://www.pacelo.de/,2022-07-01,non_tech,no,Consumer scooter luggage accessory carries loads up to 20 kilograms,0
+startup_incubator_berlin,Parkinsonic,https://demo.parkinsonic.app,2023-07-01,life_science,yes,Video-derived motor biomarkers personalize Parkinson's therapy music,0
+startup_incubator_berlin,PEARL3D Agency,,2024-07-01,non_tech,no,3D creative agency supplies branded content and personal branding,0
+startup_incubator_berlin,People Pulse Analytix,https://peoplepulseanalytix.io/,2024-07-01,deep_tech,yes,AI leadership analytics support organizational decision-making,0
+startup_incubator_berlin,Periodly,https://www.tiktok.com/@queerworldapp,2024-07-01,digital_tech,maybe,Cycle and nutrition wellbeing offering; medical product unestablished,1
+startup_incubator_berlin,Philia.Health,https://philia.health/,2024-07-01,unclear,maybe,Philia.Health lacks concrete product detail; website no longer resolves,1
+startup_incubator_berlin,PikaDo,https://pikado.io,2021-07-01,digital_tech,yes,Language conversation app connects young learners with courses,0
+startup_incubator_berlin,Pioneers Club,https://pioneersclub.io,2025-07-01,non_tech,no,Startup development league organizes public growth and funding preparation,0
+startup_incubator_berlin,Plotterlabs,,2020-07-01,deep_tech,yes,Automated handwriting robots produce personalized physical mail at scale,0
+startup_incubator_berlin,PluraPolit,https://plurapolit.de/,2020-07-01,non_tech,no,Free political education and debate audio project,0
+startup_incubator_berlin,POEPLEPULSANALYTIX,https://www.ppa-leadertek.com/,2024-07-01,deep_tech,yes,AI personnel analytics generate real-time leadership insights,0
+startup_incubator_berlin,PysSolution,https://www.tepavi.de,2022-07-01,non_tech,no,Therapy placement service secures privately delivered psychotherapy appointments,0
+startup_incubator_berlin,Queer World,https://queer-world.com,2024-07-01,digital_tech,yes,Community directory app helps users discover queer resources,0
+startup_incubator_berlin,R5,,2022-07-01,digital_tech,maybe,Digital collection service organizes private electronic waste recycling,0
+startup_incubator_berlin,Reach,https://reach.family,2022-07-01,deep_tech,yes,NFC cards turn televisions into accessible interfaces for seniors,0
+startup_incubator_berlin,ResCoach,http://rescoach.softr.app,2022-07-01,non_tech,no,Coaching network provides individual career and education guidance,0
+startup_incubator_berlin,RESEARCHPRENEURS,https://researchpreneurs.com/,2022-07-01,non_tech,no,Expert matching service arranges independent scientific due diligence,0
+startup_incubator_berlin,RiffRaff,https://riffraff.berlin,2019-07-01,non_tech,no,Macroalgae snacks include jerky and salads,0
+startup_incubator_berlin,Robbi,https://robbi.co/,2022-07-01,deep_tech,yes,Drone-mounted AI detects vegetation and wildfire risks,0
+startup_incubator_berlin,Robox,,2019-07-01,deep_tech,yes,Learning collaborative robots automate warehouses and factories,0
+startup_incubator_berlin,Routines,https://www.routines-app.com,2024-07-01,deep_tech,yes,AI generates legal pleadings from law firms' previous documents,0
+startup_incubator_berlin,Rückmal,http://www.rueckmal.com,2022-07-01,non_tech,no,Desk conversion accessory enables electric height adjustment,0
+startup_incubator_berlin,Rvolt,https://www.rvolt.io,2019-07-01,digital_tech,yes,Energy consumption app rewards climate-friendly behavior,0
+startup_incubator_berlin,Sadu,https://sadu.app/,2022-07-01,digital_tech,maybe,Fitness and environmental engagement concept; website appears unrelated,1
+startup_incubator_berlin,Sailwint,https://www.sailwint.com/,2024-07-01,deep_tech,yes,Wind-powered ship designs reduce maritime transport emissions,0
+startup_incubator_berlin,Savage Edits,https://savageedits.com/,2022-07-01,non_tech,no,Self-publishing service package supports authors retaining publishing rights,0
+startup_incubator_berlin,Sedris Vision,https://www.sedris.vision/home,2025-07-01,life_science,yes,AI assistive wearable conveys visual information to blind users,0
+startup_incubator_berlin,Senza Design,,2025-07-01,non_tech,no,Modular activity board engages people living with Alzheimer's,0
+startup_incubator_berlin,Silica Corpora,https://www.silica-corpora.tech/,2022-07-01,life_science,yes,AI-designed antibody therapeutics target disease-causing proteins,0
+startup_incubator_berlin,Sittery,https://www.sittery.com/,2022-07-01,digital_tech,yes,"Babysitting marketplace integrates matching, payments, and community",0
+startup_incubator_berlin,SITYHUB,https://www.sityhub.co,2023-07-01,digital_tech,yes,Rental housing platform coordinates listings and tenancy workflows,0
+startup_incubator_berlin,SmrtCut,https://smrtcut.com/,2024-07-01,digital_tech,yes,Browser software suggests context-sensitive keyboard shortcuts,0
+startup_incubator_berlin,SnapSurprise,http://www.snapsurprise.com,2019-07-01,digital_tech,yes,Smartphone app creates disposable-camera photography experiences,0
+startup_incubator_berlin,Solar Patron,,2020-07-01,unclear,maybe,Solar Patron describes climate ambitions without a concrete technical product,0
+startup_incubator_berlin,Solaran,,2025-07-01,digital_tech,maybe,Solar coordination for apartment owners; proprietary technical product unconfirmed,0
+startup_incubator_berlin,Solu,,2019-07-01,digital_tech,yes,Ride-matching app connects passengers with licensed drivers,0
+startup_incubator_berlin,Space Egg,https://space-egg.de/,2024-07-01,non_tech,no,Sells printed artwork combining AI imagery and human craft,0
+startup_incubator_berlin,SpeedePay,http://speed-epay.com/,2020-07-01,digital_tech,maybe,Digital payments concept; inaccessible website prevents product verification,1
+startup_incubator_berlin,Speedstock,https://www.speedstock.de/,2024-07-01,deep_tech,yes,Integrated warehouse hardware and software accelerate item retrieval,1
+startup_incubator_berlin,stand:art,,2021-07-01,non_tech,no,Standing desk attachment is an ergonomic furniture accessory,0
+startup_incubator_berlin,Startupdetector,https://www.startupdetector.de,2019-07-01,digital_tech,yes,Startup database aggregates information on German companies,0
+startup_incubator_berlin,Stella,https://stella.coach/,2022-07-01,non_tech,no,Personal video coaching supports young people in training,0
+startup_incubator_berlin,STRAYZ,http://www.strayz.de,2021-07-01,non_tech,no,Organic pet food brand funds stray animal welfare,1
+startup_incubator_berlin,Substanz,https://substanz.io,2025-07-01,deep_tech,yes,AI visual and semantic search integrates with fashion shops,0
+startup_incubator_berlin,Sul Pont,http://sulpont.com,2022-07-01,non_tech,no,Event agency plans and delivers experiential events,0
+startup_incubator_berlin,SunPatron,,2020-07-01,non_tech,no,Solar investment financing connects sunny regions with distant investors,0
+startup_incubator_berlin,Susteyn,https://susteyn.io,2021-07-01,deep_tech,yes,Automated office farming systems grow herbs and microgreens,0
+startup_incubator_berlin,SWAP,http://swap.softwarematch.de,2023-07-01,deep_tech,yes,AI matches SMEs with suitable business software,0
+startup_incubator_berlin,Sylbaa,https://selinasylbaa.wixsite.com/website-5,2022-07-01,digital_tech,yes,Gold trading marketplace connects sellers with verified experts,0
+startup_incubator_berlin,SyncdHealth,https://syncd.health,2023-07-01,non_tech,no,Human consultations explain psychotherapy access; earlier AI concept remains unverified,1
+startup_incubator_berlin,Telemarie,https://telemarie.de,2021-07-01,digital_tech,yes,Simplified tablet software enables older adults' family communication,1
+startup_incubator_berlin,Telix,https://www.athleo.de/,2024-07-01,deep_tech,yes,AI phone and WhatsApp assistants handle fitness studio enquiries,1
+startup_incubator_berlin,The Undoing,https://undoing.it.com,2025-07-01,non_tech,no,Personal coaching and online content address inner conflicts,0
+startup_incubator_berlin,TheGiftyApp,https://thegiftyapp.glideapp.io/,2022-07-01,digital_tech,yes,Gift recommendation app matches wishlists with independent brands,0
+startup_incubator_berlin,TherapyNow,http://psysolutions.de,2022-07-01,non_tech,no,Psychotherapy placement service arranges treatment without patient fees,0
+startup_incubator_berlin,Thing,https://www.thing.house/,2020-07-01,deep_tech,yes,Home assistance robots support safe independent elderly living,0
+startup_incubator_berlin,TolerEd,https://www.tolered.com,2025-07-01,non_tech,no,Educational social project equips teachers to counter prejudice,1
+startup_incubator_berlin,Tourist Helpline,https://www.touristhelpline.com,2025-07-01,digital_tech,yes,Travel community marketplace connects businesses and service providers,0
+startup_incubator_berlin,Translue,,2022-07-01,deep_tech,yes,Real-time translation software translates websites and online text,0
+startup_incubator_berlin,TRU3 Technologies,https://www.truemetrics.io/,2021-07-01,deep_tech,yes,Aerospace-derived motion sensing analyzes athletic performance,0
+startup_incubator_berlin,Truckstay,http://truckstay.de,2020-07-01,digital_tech,maybe,Digital truck driver accommodation solution; homepage unavailable,1
+startup_incubator_berlin,TRUE Technologies,,2020-07-01,deep_tech,yes,Motion capture technology records and analyzes athletes' movements,0
+startup_incubator_berlin,Trueffles,https://www.trueffles.com/,2022-07-01,digital_tech,yes,Research platform transforms collected knowledge into shareable mindmaps,0
+startup_incubator_berlin,u.mension,,2020-07-01,deep_tech,maybe,3D-printed bioplastic textile components; proprietary process needs confirmation,0
+startup_incubator_berlin,UMA,,2025-07-01,non_tech,no,Interchangeable activity board supports people with dementia,0
+startup_incubator_berlin,UniPassage,https://unipassage.com,2025-07-01,deep_tech,yes,AI platform automates overseas university applications and visas,0
+startup_incubator_berlin,Unite,,2024-07-01,deep_tech,maybe,AI-assisted international recruitment; software versus agency model unconfirmed,0
+startup_incubator_berlin,Uplyvt,https://www.uplyvt.de/,2022-07-01,digital_tech,yes,Financial education app supports women's financial independence,0
+startup_incubator_berlin,Upto,https://www.joinupto.com,2022-07-01,digital_tech,yes,Social calendar app shares friends' plans and events,0
+startup_incubator_berlin,Vedra,https://findvedra.com,2021-07-01,non_tech,no,Sexual wellbeing brand sells intimacy and care products,0
+startup_incubator_berlin,VertiKal,,2021-07-01,deep_tech,yes,App-controlled indoor gardening hardware enables home vegetable production,0
+startup_incubator_berlin,VertiKal Farms,,2020-07-01,deep_tech,yes,Indoor farming systems support consumer food cultivation,0
+startup_incubator_berlin,Vidar,https://prevact.earth,2022-07-01,deep_tech,yes,Smart bulk dispensers measure unpackaged goods into reusable containers,0
+startup_incubator_berlin,Visit4me,https://visit4.me,2019-07-01,unclear,maybe,Visit4me's truncated description and inaccessible homepage leave activity unresolved,1
+startup_incubator_berlin,Vonda,,2021-07-01,non_tech,no,Career guidance service helps people identify suitable professions,0
+startup_incubator_berlin,Wanowa,,2025-07-01,non_tech,no,Interactive workshops deliver practical skills training,0
+startup_incubator_berlin,Wavess,https://www.wavess.io/,2022-07-01,deep_tech,yes,AI converts organic LinkedIn activity into business leads,0
+startup_incubator_berlin,We4All,https://we4all.eu,2022-07-01,digital_tech,maybe,Engineering tools accompany 3D printing consulting and training,1
+startup_incubator_berlin,Wearable-Sensorik,,2025-07-01,life_science,maybe,Wearable sensors support neurodivergent children; clinical use requires confirmation,0
+startup_incubator_berlin,Wonder,https://www.wonder.me,2020-07-01,digital_tech,yes,Virtual meeting spaces enable large-group online interaction,0
+startup_incubator_berlin,Wonder.me,https://www.dw.com/digital-communication/av-54152224,2020-07-01,digital_tech,yes,Online gathering platform enables spontaneous group conversations,0
+startup_incubator_berlin,Worknector,https://worknector.de,2022-07-01,digital_tech,yes,Freelance technology job marketplace rewards peer referrals,0
+startup_incubator_berlin,X-Stand/stand:art,,2021-07-01,non_tech,no,Standing desk riser is an ergonomic furniture accessory,0
+startup_incubator_berlin,xounds,,2024-07-01,deep_tech,yes,AI audio discovery platform supports peer sharing of erotic content,0
+startup_incubator_berlin,Zilu,https://zilu.app,2025-07-01,digital_tech,yes,Book recommendation app matches reading to moods and themes,0
+spinlab_leipzig,AGRANIMO,https://www.agranimo.com/,2020-07-24,deep_tech,yes,Microclimate sensors and remote sensing guide crop management,0
+spinlab_leipzig,AICURA,https://aicura-medical.com/,2020-07-24,life_science,yes,Machine learning platform integrates algorithms into clinical workflows,0
+spinlab_leipzig,AIDHERE,https://aidhere.de/,2020-07-27,life_science,yes,Personalized digital therapeutics target cardiovascular disease,0
+spinlab_leipzig,AIR Q,https://air-q.com/,2020-07-27,deep_tech,yes,Indoor air analyzer measures pollutants and integrates home automation,0
+spinlab_leipzig,AISERVE,,2020-07-27,life_science,yes,AI navigation glasses assist blind and visually impaired pedestrians,0
+spinlab_leipzig,AUMIO,https://www.aumio.de/,2020-07-27,life_science,yes,Children's mental health app provides therapeutic mindfulness training,0
+spinlab_leipzig,BE ON TRACK,,2020-07-27,deep_tech,yes,"Long-life tracking hardware locates bicycles, pets, and vulnerable people",0
+spinlab_leipzig,BETTER AT HOME,https://www.better-at-home.de,2020-07-27,deep_tech,yes,Digital home assistance systems support independent elderly living,0
+spinlab_leipzig,BINEE,,2020-07-27,deep_tech,maybe,Smart collection solutions recover discarded consumer electronics,0
+spinlab_leipzig,BRAIN PLUG,,2020-07-27,deep_tech,yes,Camera AI detects security threats in real time,0
+spinlab_leipzig,BREEZE TECHNOLOGIES,https://www.breeze-technologies.de/de/,2020-07-27,deep_tech,yes,Air quality sensors and AI guide pollution reduction,0
+spinlab_leipzig,CROWD HEROES,http://crowdheroes.de/,2020-07-27,digital_tech,yes,Insurance auction app aggregates community purchasing power,0
+spinlab_leipzig,CYFACE,https://www.cyface.de,2020-07-27,deep_tech,yes,Smartphone motion data and machine learning assess road surfaces,0
+spinlab_leipzig,DASHFACTORY,http://www.dashbike.de/,2020-07-28,deep_tech,yes,Patented bicycle dashcams record collisions and improve visibility,0
+spinlab_leipzig,DEEPTUNE,http://deeptune.de/,2020-07-28,deep_tech,maybe,Oscillator modules aim to improve energy and data efficiency,0
+spinlab_leipzig,DEGIV,,2020-07-28,digital_tech,yes,"Healthcare terminals connect pharmacies, providers, and insurers",0
+spinlab_leipzig,DENKWEIT,https://denkweit.com/,2020-07-28,deep_tech,yes,Proprietary sensors and machine learning analyze industrial measurements,0
+spinlab_leipzig,DIGITAIL,https://www.digitail.io/,2020-07-28,digital_tech,yes,"Veterinary clinic software integrates records, CRM, and administration",0
+spinlab_leipzig,DIPAT,https://www.dipat.de/,2020-07-28,digital_tech,yes,Algorithmic consultation generates precise online living wills,0
+spinlab_leipzig,DOCYET,https://docyet.com/,2020-07-28,deep_tech,yes,AI chatbots recommend healthcare and travel assistance,0
+spinlab_leipzig,ECOVERY,https://ecovery.de/,2020-07-28,life_science,yes,Sensor-based rehabilitation app supports patients and physiotherapists,0
+spinlab_leipzig,EKOIO,,2020-07-28,deep_tech,yes,Vehicle telematics enable efficient driving and remote diagnostics,0
+spinlab_leipzig,ENERGIE KOPPLER,https://dieenergiekoppler.com/,2020-07-28,deep_tech,yes,"Distributed control combines electricity, heating, and mobility flexibility",0
+spinlab_leipzig,ETE ENGINEERING,,2020-07-28,deep_tech,yes,Emission control equipment filters industrial air and flue gases,0
+spinlab_leipzig,EXPLICATES,,2020-07-28,digital_tech,yes,Modular software monitors and analyzes industrial energy efficiency,0
+spinlab_leipzig,FLYNEX,https://www.flynex.de/,2020-08-03,digital_tech,yes,"Drone operations software manages planning, flights, and analytics",0
+spinlab_leipzig,GETML,https://getml.com/,2020-08-03,deep_tech,yes,AutoSQL automates relational data preparation for machine learning,0
+spinlab_leipzig,IDATASE,,2020-08-03,deep_tech,yes,Semantic platform builds real-time industrial machine learning systems,0
+spinlab_leipzig,IN HARMONY,,2020-08-03,life_science,yes,Personalized music software alleviates tinnitus symptoms,0
+spinlab_leipzig,INDEEWORK,,2020-08-03,deep_tech,yes,AI schedules field service visits and infrastructure maintenance,0
+spinlab_leipzig,INFRASOLID,https://www.infrasolid.com/,2020-08-03,deep_tech,yes,Miniaturized infrared emitters enable gas and material spectroscopy,0
+spinlab_leipzig,IOCARE,http://www.iocare.de/,2020-08-03,deep_tech,yes,Sensors learn movement patterns and alert relatives to unusual elderly activity,1
+spinlab_leipzig,JOB UFO,https://www.jobufo.com,2020-08-03,digital_tech,yes,Video recruitment SaaS integrates applications with employer HR systems,0
+spinlab_leipzig,KELEYA,https://keleya.de/,2020-08-03,digital_tech,yes,Pregnancy app personalizes fitness and nutrition plans,0
+spinlab_leipzig,LIPSIA DIGITAL,https://lipsia.digital/,2020-08-03,digital_tech,yes,Advisory APIs digitize customer guidance across websites and apps,0
+spinlab_leipzig,SMART IX,,2020-08-03,deep_tech,yes,"AI platform integrates smart home, city, and energy services",0
+spinlab_leipzig,MAGNOTHERM SOLUTIONS,https://www.magnotherm.com/de/,2020-08-06,deep_tech,yes,Magnetocaloric refrigeration replaces hazardous conventional refrigerants,0
+spinlab_leipzig,MEDICSEN,https://medicsen.com/en/,2020-08-06,life_science,yes,Needle-free wearable devices deliver insulin and large drug molecules,0
+spinlab_leipzig,MEMENTOR,https://www.mementor.ch/,2020-08-06,life_science,yes,Evidence-based digital sleep therapy treats insomnia,0
+spinlab_leipzig,MEMORESA,https://memoresa.de/de/,2020-08-06,deep_tech,yes,AI extracts documents and manages digital inheritance,0
+spinlab_leipzig,MEROLT,http://www.merolt.de,2020-08-06,non_tech,no,Business travel service negotiates pooled hotel accommodation rates,0
+spinlab_leipzig,MINDANCE,https://www.mindance.de/,2020-08-06,digital_tech,yes,Mental training app supports corporate employee wellbeing,0
+spinlab_leipzig,MOTIONSCLOUD,http://motionscloud.com/,2020-08-06,deep_tech,yes,Image recognition automates insurance claims assessment,0
+spinlab_leipzig,MYO,https://myo.de/,2020-08-06,digital_tech,yes,Care home communication platform connects caregivers and relatives,0
+spinlab_leipzig,NEURONADE,http://www.neuronade.com,2020-08-07,non_tech,no,Plant extract drinking powder markets cognitive performance benefits,0
+spinlab_leipzig,OCTAGON,https://www.octagoncareers.com/,2020-08-07,digital_tech,yes,Challenge-based recruitment software assesses anonymized candidate skills,0
+spinlab_leipzig,OKIKO,https://www.okiko.com/,2020-08-07,digital_tech,yes,Parental-controlled payment platform enables safe spending by minors,0
+spinlab_leipzig,POQIT BERLIN,,2020-08-07,deep_tech,yes,Smart wallet combines wireless smartphone charging and location tracking,0
+spinlab_leipzig,Q COAT,,2020-08-17,deep_tech,yes,Nanocoated filtration membranes resist fouling in water treatment,0
+spinlab_leipzig,QLIPAY,http://qlipay.de,2020-08-17,digital_tech,yes,Payments platform enables purpose-specific remittances to African families,0
+spinlab_leipzig,QLX,http://www.QLX-Gmbh.de,2020-08-18,digital_tech,yes,3D infrastructure design software calculates costs and schedules,0
+spinlab_leipzig,REHAGO,https://rehago.eu/,2020-08-18,life_science,yes,Virtual reality mirror therapy supports stroke rehabilitation,0
+spinlab_leipzig,REPLEX,,2020-08-18,digital_tech,yes,"Infrastructure analytics optimize server, container, and cloud costs",0
+spinlab_leipzig,WATTANDO,https://www.wattando.com/,2020-08-18,deep_tech,yes,Energy management hardware enables safe high-power plug-in solar,0
+spinlab_leipzig,RESMENT,https://frag-paul.de/,2020-09-10,digital_tech,yes,"HR software automates employee records, scheduling, and payroll",0
+spinlab_leipzig,RHEBO,http://www.rhebo.com,2020-09-10,digital_tech,yes,Industrial network monitoring detects anomalies and cyberattacks,0
+spinlab_leipzig,SENGI IT,http://www.sengi-it.de,2020-09-10,digital_tech,yes,Encrypted interface consolidates cloud storage and messaging accounts,0
+spinlab_leipzig,SENSAPE,http://www.sensape.com,2020-09-10,deep_tech,yes,Computer vision powers interactive retail displays,0
+spinlab_leipzig,SOLAGA,https://www.solaga.de/,2020-09-10,deep_tech,yes,Microalgae biofilms remove air pollutants and produce bioenergy,0
+spinlab_leipzig,STIKI,,2020-09-10,digital_tech,yes,Team knowledge platform preserves notes and shared information,0
+spinlab_leipzig,STROMDAO,https://stromdao.de/,2020-09-10,digital_tech,yes,Blockchain network coordinates decentralized energy transactions,0
+spinlab_leipzig,TEX-LOCK,http://www.texlock.de,2020-09-10,deep_tech,yes,High-performance textile fibers create cut-resistant bicycle locks,0
+spinlab_leipzig,VAROMO,http://varomo.de/,2020-09-10,deep_tech,yes,Modular household transport robots assist older and disabled people,0
+spinlab_leipzig,VESPUTI,https://www.vesputi.com/,2020-09-10,digital_tech,yes,Mobility platform integrates public and private transport networks,0
+spinlab_leipzig,VIZZLO,http://www.vizzlo.com,2020-09-10,digital_tech,yes,Online graphic software creates business charts and presentations,0
+spinlab_leipzig,WALTER'S CUBE,https://walterscube.com/,2020-09-10,digital_tech,yes,Digital exhibition platform offers remote access to art shows,0
+spinlab_leipzig,WE-DO-AI,https://www.we-do.ai/,2020-09-10,deep_tech,yes,"Reusable AI products automate text, chat, and image processing",0
+spinlab_leipzig,WUNDERCURVES,http://www.wundercurves.de,2020-09-10,digital_tech,yes,Proprietary commerce platform aggregates plus-size fashion offerings,0
+spinlab_leipzig,YOLAWO,https://yolawo.de/,2020-09-10,digital_tech,yes,Club booking software automates sports activity administration,0
+spinlab_leipzig,CARBONAUTEN,https://www.carbonauten.com/,2020-12-01,deep_tech,yes,Biocarbon materials store CO2 and replace fossil feedstocks,0
+spinlab_leipzig,HY2CON,,2020-12-01,deep_tech,yes,Anaerobic processing converts biomass into hydrogen and methane,0
+spinlab_leipzig,MESHMERIZE,https://www.meshmerize.net/,2020-12-01,deep_tech,yes,Multipath wireless mesh networking connects industrial equipment reliably,0
+spinlab_leipzig,OXFORD IMMUNE ALGORITHMICS,,2020-12-01,life_science,yes,Individual immune diagnostics replace population-based symptom matching,0
+spinlab_leipzig,PIPE PREDICT,https://staging.pipepredict.com/en/,2020-12-01,deep_tech,yes,Digital twins predict failures in heating and water pipes,0
+spinlab_leipzig,TENAC IO,https://www.tenac.io/,2020-12-01,life_science,yes,Cardiovascular decision support assesses risk and recommends treatment,0
+spinlab_leipzig,THINKERS AI,https://www.thinkers.ai/,2020-12-01,deep_tech,yes,AI search filters web information for professional research,0
+spinlab_leipzig,ADVANCED INFRASTRUCTURE,https://www.advanced-infrastructure.co.uk/,2020-12-02,deep_tech,yes,Real-time energy tracing supports emissions reporting and optimization,0
+spinlab_leipzig,AIVY,https://www.aivy.app/,2020-12-02,digital_tech,yes,Game-based assessments automate evidence-based recruitment decisions,0
+spinlab_leipzig,INSONE,https://sonocom.insone.de/,2020-12-02,deep_tech,yes,AI optimizes call audio to improve communication outcomes,0
+spinlab_leipzig,CALLPIMA,,2021-07-16,digital_tech,yes,Voice applications streamline nursing and patient communication,0
+spinlab_leipzig,DEFTPOWER,http://www.deftpower.com,2021-07-16,digital_tech,yes,"EV charging platform coordinates drivers, operators, and fleet services",1
+spinlab_leipzig,ENADYNE,http://www.enadyne.de/,2021-07-16,deep_tech,yes,Plasma reactors convert CO2 into fuels and chemical feedstocks,0
+spinlab_leipzig,ENERGIEDOCK,https://energiedock.de/,2021-07-16,digital_tech,yes,Digital flexibility market connects electrical loads and renewables,0
+spinlab_leipzig,MEINDOC,https://www.meindoc.eu/,2021-07-16,digital_tech,yes,3D visualizations explain surgical procedures to patients,0
+spinlab_leipzig,NAECOBLUE,https://www.naeco.blue/,2021-07-16,deep_tech,yes,Forecasting software predicts solar and wind electricity production,0
+spinlab_leipzig,NEX,http://www.nex.engineering,2021-07-16,unclear,maybe,Infrastructure ambition does not specify product or delivery model,1
+spinlab_leipzig,PLANTED,https://www.planted.green/,2021-07-16,non_tech,no,Afforestation and conservation projects sell climate compensation services,0
+spinlab_leipzig,STRESSCOACH,,2021-07-16,life_science,yes,Therapeutic chatbot delivers anxiety and stress coping programs,0
+spinlab_leipzig,THINK RE,https://think-renewable.com/,2021-07-16,digital_tech,yes,Renewable energy procurement platform manages power purchase agreements,0
+spinlab_leipzig,Conbox,,2021-10-26,digital_tech,maybe,Platform connects television broadcasters and internet content distribution,0
+spinlab_leipzig,ENDO HEALTH,https://endometriose.app/,2022-03-08,life_science,yes,"Endometriosis app supports diagnosis, treatment, and prevention",0
+spinlab_leipzig,HUSTRO,http://hustro.com/,2022-03-08,digital_tech,yes,"Construction software manages quality, health, safety, and environment",0
+spinlab_leipzig,IO-DYNAMICS,https://www.iodynamics.de/,2022-03-08,deep_tech,yes,Vehicle data optimizes electric fleet charging,0
+spinlab_leipzig,MAIA / PRODLANE,https://www.getmaia.ai/,2022-03-08,deep_tech,yes,Enterprise AI retrieves technical knowledge for employees,0
+spinlab_leipzig,MEMODIO,https://memodio-app.com/,2022-03-08,life_science,yes,Medical app treats early cognitive impairment and prevents dementia,0
+spinlab_leipzig,PYONEER,,2022-03-08,deep_tech,yes,No-code AI analyzes customer feedback and automates text workflows,0
+spinlab_leipzig,Q-BILITY,https://q-bility.com/,2022-03-08,digital_tech,yes,Digital marketplace trades greenhouse gas emissions quotas,0
+spinlab_leipzig,SNORE FREE,http://www.snorefree.com,2022-03-08,life_science,yes,App delivers speech therapy exercises to treat snoring,0
+spinlab_leipzig,SUENA,https://suena.energy/,2022-03-08,deep_tech,yes,Software optimizes batteries across renewable energy markets,0
+spinlab_leipzig,SWITCHBOARD,,2022-03-08,digital_tech,yes,Energy marketplace connects IT interfaces and solution providers,0
+spinlab_leipzig,NOXTUA,https://www.noxtua.com/,2022-06-13,deep_tech,yes,Legal AI reviews and analyzes professional legal documents,0
+spinlab_leipzig,elena international,,2022-10-04,digital_tech,yes,SaaS automates renewable energy project sales and planning,0
+spinlab_leipzig,inContAlert,https://incontalert.de/,2022-10-04,life_science,yes,Bladder monitoring prevents uncontrolled urine loss,0
+spinlab_leipzig,MiiCare,http://www.miicare.co.uk,2022-10-04,deep_tech,yes,AI health coach supports older adults living independently,0
+spinlab_leipzig,Rausch Technology,http://rausch.se,2022-10-04,deep_tech,yes,AI heating analytics prevent failures and reduce energy use,0
+spinlab_leipzig,Reonic,http://www.reonic.com/,2022-10-04,digital_tech,yes,Software plans and optimizes renewable energy systems,0
+spinlab_leipzig,Reverion,https://www.reverion.de/,2022-10-04,deep_tech,yes,Reversible biogas plants generate carbon-negative electricity and renewable gas,0
+spinlab_leipzig,RWInno Tec,https://rwinnotec.de/,2022-10-04,deep_tech,yes,Radio-wave heating machines rehabilitate roads efficiently,0
+spinlab_leipzig,SpiNNcloud Systems,https://spinncloud.com/,2022-10-04,deep_tech,yes,Specialized computing hardware enables large-scale real-time AI,0
+spinlab_leipzig,The Yellow Sic,http://www.yellow-sic.com,2022-10-04,deep_tech,yes,Silicon carbide manufacturing enables solar hydrogen photocatalysis,0
+spinlab_leipzig,Clay Health,,2022-10-12,digital_tech,yes,Personalized mental wellbeing app offers psychologist-designed exercises,0
+spinlab_leipzig,GLAICE,https://www.glaice.de/,2023-05-10,life_science,yes,Diabetes app analyzes glucose data for personalized management,0
+spinlab_leipzig,Granular Energy,https://www.granular-energy.com,2023-05-10,digital_tech,yes,Clean energy platform manages and trades time-matched electricity certificates,0
+spinlab_leipzig,HandsOn Robotics,https://handson-robotics.de/,2023-05-10,deep_tech,yes,Printed tactile skins and artificial muscles improve robot manipulation,0
+spinlab_leipzig,meal&heal,http://www.mealandheal.de,2023-05-10,life_science,yes,App identifies food intolerances and guides symptom-based nutrition,0
+spinlab_leipzig,Nadar Earth,http://www.nadar.earth,2023-05-10,deep_tech,yes,Satellite imagery and AI verify nature-based carbon projects,0
+spinlab_leipzig,Neology,http://neology.ch,2023-05-10,deep_tech,yes,Decentralized ammonia cracking systems supply green hydrogen,0
+spinlab_leipzig,retoflow,http://www.retoflow.de,2023-05-10,deep_tech,yes,Grid digital twins automate network connection checks and planning,0
+spinlab_leipzig,Statotest,http://statotest.com,2023-05-10,deep_tech,yes,"IoT sensors monitor bridges, buildings, and industrial structures",0
+spinlab_leipzig,vimum,http://www.vimum.com,2023-05-10,non_tech,no,"Online courses teach childbirth preparation, breastfeeding, and infant care",1
+spinlab_leipzig,zentur.io,http://www.zentur.io,2023-05-10,deep_tech,yes,Digital systems enable efficient district heating networks,1
+spinlab_leipzig,bitteiler,https://www.bitteiler.com/,2024-01-05,deep_tech,yes,AI compression reduces IoT sensor data before transmission,0
+spinlab_leipzig,Brandenburg Labs,https://brandenburg-labs.com/,2024-01-05,deep_tech,yes,Immersive audio processing enables augmented reality headphones,0
+spinlab_leipzig,Breathment,https://breathment.com/,2024-01-05,life_science,yes,AI respiratory therapy app integrates remote patient monitoring,0
+spinlab_leipzig,HeatVentors,https://www.heatventors.com/,2024-01-05,deep_tech,yes,Thermal batteries store heat and cold for HVAC systems,0
+spinlab_leipzig,LipoCheck,https://www.lipocheck.de/,2024-01-05,life_science,yes,AI platform identifies and manages lipedema,0
+spinlab_leipzig,LOKK,https://lokk-platform.com/,2024-01-05,digital_tech,yes,Urban planning platform combines spatial data and city models,0
+spinlab_leipzig,PolymerActive,https://polymeractive.de/,2024-01-05,deep_tech,yes,Waste plastic filters remove pollutants from wastewater and exhaust,0
+spinlab_leipzig,Streamcheck,https://streamcheck24.com/,2024-01-05,life_science,yes,AI urine analysis enables home urological screening,0
+spinlab_leipzig,Unbound Potential,https://www.unbound-potential.com/,2024-01-05,deep_tech,yes,Membraneless flow batteries store electricity without critical mined materials,0
+spinlab_leipzig,Oliment,https://oliment.de/,2024-01-08,deep_tech,yes,Olivine-based cement reduces concrete production emissions,0
+spinlab_leipzig,Akademie für Klimajobs,http://www.climatejobsacademy.com,2024-08-02,non_tech,no,Vocational training academy supplies renewable energy industry workers,0
+spinlab_leipzig,carbonsate,https://www.carbonsate.com/,2024-08-02,deep_tech,yes,Engineered biomass storage sequesters carbon underground,0
+spinlab_leipzig,Certflow,,2024-08-02,deep_tech,yes,AI platform automates renewable energy certification workflows,0
+spinlab_leipzig,clever bioTechnologies,,2024-08-02,deep_tech,yes,AI and process models optimize biogas plant feeding,0
+spinlab_leipzig,coobie,https://www.coobi.health/,2024-08-02,life_science,yes,Wearable data predicts addiction risks and triggers therapeutic interventions,0
+spinlab_leipzig,JustHealth,,2024-08-02,life_science,yes,Digital oncology platform monitors patients and supports treatment,0
+spinlab_leipzig,Nimble Diagnostics,,2024-08-02,life_science,yes,Microwave devices noninvasively monitor implanted cardiac stents,0
+spinlab_leipzig,UpGreen,https://www.getupgreen.com/,2024-08-02,digital_tech,yes,"Property retrofit platform coordinates savings, financing, and installation",0
+spinlab_leipzig,Windfire,,2024-08-02,deep_tech,yes,Wind turbines generate heat directly for industrial heating networks,0
+spinlab_leipzig,BarrierSystems,https://www.barriersystems.de/,2025-01-14,deep_tech,yes,AI vehicle recognition controls urban traffic access,0
+spinlab_leipzig,Belle Health,https://bellehealth.co/de/,2025-01-14,life_science,yes,Digital precision medicine supports hormone-related conditions,0
+spinlab_leipzig,Blindleister,https://blindleister.de/,2025-01-14,deep_tech,yes,Aggregates renewable assets' reactive power to stabilize electrical grids,0
+spinlab_leipzig,CHAMELAION,https://www.chamelaion.com/,2025-01-14,deep_tech,yes,AI video translation preserves voices and synchronizes lips,0
+spinlab_leipzig,ContainerGrid,https://containergrid.de/,2025-01-14,digital_tech,yes,Reverse logistics platform connects industrial recycling supply chains,0
+spinlab_leipzig,Kaarlo,https://www.kaarlo.de,2025-01-14,life_science,yes,Digital therapy personalizes treatment for psychosomatic illnesses,0
+spinlab_leipzig,MINTD,https://mintdcareers.com/,2025-01-14,non_tech,no,STEM career network provides workshops and mentoring for women,0
+spinlab_leipzig,regryd,https://www.regryd.de/,2025-01-14,deep_tech,yes,Recycled materials store high-temperature renewable and industrial heat,0
+spinlab_leipzig,SectorPi,https://www.sectorpi.com,2025-01-14,deep_tech,yes,AI funding platform prepares R&D applications and documentation,0
+unikat,Veli,,2019-08-01,deep_tech,yes,Utility consumption analytics detect emergencies in older people's homes,0
+unikat,Zazmo (früher: Zazter),http://www.zazmo.de,2020-01-01,digital_tech,yes,Group payments split costs and liability in real time,0
+unikat,Shards,http://www.shardstiles.com,2020-11-01,deep_tech,yes,Recycled construction waste becomes additive-free building tiles,0
+unikat,CoroVision,http://www.coro.vision,2020-12-01,deep_tech,yes,Optical measurement systems localize electrical corona discharges,0
+unikat,SURAP,,2021-02-01,digital_tech,yes,Software assesses construction projects' lifecycle environmental footprints,0
+unikat,Peerscope,,2021-04-01,digital_tech,yes,Interactive videoconferencing preserves nonverbal communication cues,0
+unikat,climactivity,,2022-09-01,digital_tech,maybe,Climate education game combines social networking and local events,0
+unikat,ÖkoVision,,2023-03-01,deep_tech,yes,Energy monitoring identifies consumption patterns and efficiency opportunities,0
+unikat,LARABICUS,,2023-10-01,deep_tech,yes,Autonomous underwater robots clean moving container ship hulls,0
+unikat,metubiq,,2024-05-01,deep_tech,yes,Vibration-corrected interferometry measures nanoscale surfaces during production,0
+unikat,CoARTec,,2024-06-01,deep_tech,yes,"AR assistance supports manufacturing, ergonomics, and robot collaboration",0
+unikat,maevsi,,2024-10-01,digital_tech,yes,"Event discovery app connects organizers, attendees, and friends",0
+unikat,riprip,,2024-10-01,digital_tech,yes,Proprietary mobile game engine supports episodic community storytelling,0
+unikat,DIMMABLE,,2025-03-01,deep_tech,yes,Electrochromic molded films create lightweight adjustable optical products,0
+unternehmertum_prototyping_grant,TUM Carbon Removal Initiative e.V.,https://www.tumcarbon.com/,2022-03-01,non_tech,no,Student association researches long-term atmospheric carbon removal,0
+unternehmertum_prototyping_grant,Holloid,https://www.holloid.com/,2022-03-01,deep_tech,yes,"Real-time 3D imaging measures microbes, particles, and microplastics",0
+unternehmertum_prototyping_grant,Medicalytix,https://medicalytix.ai/,2022-03-01,digital_tech,yes,Planning software serves pharmaceutical and medical technology companies,1
+unternehmertum_prototyping_grant,3C-Labs,http://3c-labs.tech,2022-03-01,life_science,yes,Automated micro-laboratories manufacture and characterize 3D cell cultures,0
+unternehmertum_prototyping_grant,beworm,https://www.linkedin.com/company/beworm/,2022-03-01,deep_tech,yes,Biocatalytic recycling converts plastics into reusable petrochemical feedstocks,0
+unternehmertum_prototyping_grant,Avemoy,,2022-03-01,deep_tech,yes,Sensor fusion enables autonomous agricultural drone operations,0
+unternehmertum_prototyping_grant,1point8,https://1point8.de/,2022-03-01,deep_tech,maybe,Offshore macroalgae cultivation targets permanent atmospheric carbon removal,1
+unternehmertum_prototyping_grant,Atlas,,2022-03-01,deep_tech,yes,Certified battery storage and distribution systems power electric aircraft,0
+unternehmertum_prototyping_grant,Mily Technologies,https://milytech.com/,2022-03-01,digital_tech,yes,Delivery analytics platform identifies logistics inefficiencies,0
+unternehmertum_prototyping_grant,DASH e.V.,https://tumdash.com/,2022-03-01,non_tech,no,Student association develops exoskeleton research projects,0
+unternehmertum_prototyping_grant,SynthesEyes,https://www.syntheseyes.de/,2022-07-01,life_science,yes,VR surgical simulators train ophthalmologists with physical interfaces,0
+unternehmertum_prototyping_grant,Noxon,http://noxon-clothing.de/,2022-07-01,deep_tech,yes,Printable nanosensor inks enable medical and industrial sensing,0
+unternehmertum_prototyping_grant,Puray,https://www.puray.de,2022-07-01,life_science,yes,Infection-resistant catheter protects patients during treatment,0
+unternehmertum_prototyping_grant,Cebellum,,2022-07-01,digital_tech,yes,Laboratory integration software connects instruments and automates data,0
+unternehmertum_prototyping_grant,Medigital,https://www.medigital.io/,2022-07-01,digital_tech,yes,Hospital software automates bed management,0
+unternehmertum_prototyping_grant,SUPPLYZ,https://supplyz.eu/,2022-07-01,deep_tech,yes,AI sensors create digital twins of industrial storage containers,0
+unternehmertum_prototyping_grant,Spherecast,https://spherecast.ai/,2022-11-01,digital_tech,yes,Inventory planning platform automates ecommerce replenishment,0
+unternehmertum_prototyping_grant,Munich Quantum Instruments,http://munich-quantum-instruments.com/,2022-11-01,deep_tech,yes,Photonic quantum sensors support computing and precision optical measurements,0
+unternehmertum_prototyping_grant,Olive Robotics,https://www.oliverobotics.de/,2022-11-01,deep_tech,yes,Plug-and-play robotic modules simplify robot assembly,0
+unternehmertum_prototyping_grant,Roundpeg Technologies,https://roundpeg.tech,2022-11-01,deep_tech,yes,Environment-aware robots reduce industrial automation risks,0
+unternehmertum_prototyping_grant,BAVERTIS,https://bavertis.com/,2022-11-01,deep_tech,yes,Battery management extends pack lifetime beyond weakest-cell limits,0
+unternehmertum_prototyping_grant,trado.,,2022-11-01,digital_tech,yes,Cloud procurement software automates regulated compliance approvals,0
+unternehmertum_prototyping_grant,haidhunt,,2022-11-01,deep_tech,yes,AI automates headhunting for growing businesses,0
+unternehmertum_prototyping_grant,Energyminer,https://www.energyminer.eu/,2022-11-01,deep_tech,yes,River hydropower technology generates low-impact renewable electricity,0
+unternehmertum_prototyping_grant,Collective AI,,2022-11-01,deep_tech,yes,Privacy-focused document processing automates organizational workflows,0
+unternehmertum_prototyping_grant,Hapticlabs,https://www.hapticlabs.io/,2022-11-01,deep_tech,yes,Haptic development platform supports tangible interaction design,0
+unternehmertum_prototyping_grant,caire,https://caire.ai/,2022-11-01,life_science,yes,Facial video measures vital signs for hospital emergency departments,0
+unternehmertum_prototyping_grant,Scholarmaps,https://www.scholarmaps.com/,2022-11-01,deep_tech,yes,AI research assistant analyzes scientific publications,0
+unternehmertum_prototyping_grant,Crestworks,,2022-11-01,deep_tech,yes,Water-fueled plasma propulsion powers satellites,0
+unternehmertum_prototyping_grant,Emil Motors,https://www.emil-motors.com/?lang=de,2022-11-01,deep_tech,yes,Electric motor design retrofits existing diesel trucks,0
+unternehmertum_prototyping_grant,AcTLAbS,https://www.actlabs.space/,2022-11-01,deep_tech,yes,CubeSat microwave detectors identify space debris,0
+unternehmertum_prototyping_grant,AgroDetectAI,https://www.linkedin.com/company/funding-for-innovators/posts/?feedView=all,2022-11-01,deep_tech,yes,Automated sensing grades and sorts unwashed potatoes,0
+unternehmertum_prototyping_grant,VIABLE Surgery,,2023-03-01,life_science,yes,Laparoscopic devices simplify personalized surgical workflows,0
+unternehmertum_prototyping_grant,AMPERIAL - Smart Window Technologies,https://www.amperial.eu/Home/,2023-03-01,deep_tech,yes,Switchable nanomaterial window films reduce solar heat gain,0
+unternehmertum_prototyping_grant,workride.,https://workride.de/,2023-03-01,digital_tech,yes,Corporate mobility platform plans routes and monitors transport performance,0
+unternehmertum_prototyping_grant,MIMBIOSIS,https://mimbiosis.com/,2023-03-01,deep_tech,yes,Waste-derived biodegradable materials replace packaging and construction foams,0
+unternehmertum_prototyping_grant,neuroTUM,https://neurotum.com,2023-03-01,non_tech,no,Student research group develops assistive brain-computer interfaces,0
+unternehmertum_prototyping_grant,CyberDesk,https://cyberdesk.app,2023-03-01,deep_tech,yes,AI identifies and remediates multicloud data security risks,0
+unternehmertum_prototyping_grant,deltaVision,https://deltaVision.space,2023-03-01,deep_tech,yes,Cryogenic fluid control equipment enables hydrogen aircraft,0
+unternehmertum_prototyping_grant,watchr,,2023-03-01,deep_tech,yes,AI prospect insights improve sales conversion,0
+unternehmertum_prototyping_grant,mo:re,https://more-ls.com,2023-03-01,life_science,yes,Laboratory robots automate advanced cell culture workflows,0
+unternehmertum_prototyping_grant,Cocrafter,,2023-03-01,digital_tech,yes,Construction marketplace matches craft companies with subcontractors,0
+unternehmertum_prototyping_grant,Biomotion Technologies,https://biomotion.tech,2023-03-01,life_science,yes,Bioprinting systems standardize production of tissues and implants,0
+unternehmertum_prototyping_grant,Aquafy,,2023-03-01,deep_tech,yes,Advanced satellite propulsion improves performance and sustainability,0
+unternehmertum_prototyping_grant,AlgenTechnik,https://www.linkedin.com/company/algentechnik/?viewAsMember=true,2023-03-01,deep_tech,yes,Microalgae production systems recycle dairy waste into animal feed,0
+unternehmertum_prototyping_grant,MOA Mobility,,2023-03-01,deep_tech,yes,Electric cargo vehicles serve smallholders and rural businesses,0
+unternehmertum_prototyping_grant,EnHands,https://enhands.de/,2023-03-01,non_tech,no,Student group develops affordable upper-limb prostheses,0
+unternehmertum_prototyping_grant,WasteEx,https://wasteex.de/,2023-03-01,deep_tech,yes,Plastic waste conversion produces fuel,1
+unternehmertum_prototyping_grant,CedarDB,https://cedardb.com/,2023-09-01,digital_tech,yes,Database combines transactional and analytical processing without ETL pipelines,0
+unternehmertum_prototyping_grant,Impetus Sailing Team,https://www.impetussailing.de/,2023-09-01,non_tech,no,Student sailing team builds boats for competitive events,0
+unternehmertum_prototyping_grant,WARR space labs,https://warr.de/projects/spacelabs/,2023-09-01,non_tech,no,Student space laboratory develops microgravity research experiments,0
+unternehmertum_prototyping_grant,CinSOIL,https://nature-culture.eu/,2023-09-01,deep_tech,yes,Satellite analytics support carbon farming and regenerative agriculture,0
+unternehmertum_prototyping_grant,Decyde,https://www.decyde-ai.com/,2023-09-01,deep_tech,yes,AI process software automates data team information requests,0
+unternehmertum_prototyping_grant,Sinforsa,,2023-09-01,deep_tech,yes,Plasma recycling converts CO2 into chemicals and renewable fuels,0
+unternehmertum_prototyping_grant,Sensus,https://sensus.ai/,2023-09-01,life_science,yes,AI detects clinical anomalies and produces medical reports,0
+unternehmertum_prototyping_grant,LEVITUM e.V.,https://www.levitum.de/,2023-09-01,non_tech,no,Student association develops hydrogen-powered long-range drones,0
+unternehmertum_prototyping_grant,Visonation,https://visonation.com/,2023-09-01,deep_tech,yes,AI converts floor plans into furnished 3D property models,0
+unternehmertum_prototyping_grant,FOODYOU,https://www.thefoodyou.com/,2023-09-01,non_tech,no,Mycoprotein ingredient targets plant-based convenience food production,0
+unternehmertum_prototyping_grant,Otter Energy Trading,https://www.otter-energy-trading.io/,2023-09-01,digital_tech,yes,Automated software trades commercial rooftop solar electricity,0
+unternehmertum_prototyping_grant,FLOW eye,https://www.flow-eye.com/,2023-09-01,deep_tech,yes,Edge computer vision tracks intralogistics items and detects anomalies,0
+unternehmertum_prototyping_grant,Falcon Vision,https://falconvision.org/,2023-09-01,deep_tech,yes,Autonomous drones locate missing people during mountain rescue,0
+unternehmertum_prototyping_grant,Qualiwise,https://www.qualiwise.eu/,2023-09-01,deep_tech,yes,AI platform coordinates manufacturer and supplier quality management,0
+unternehmertum_prototyping_grant,Lactoverde,,2023-09-01,life_science,yes,Fermentation and cell cultures produce animal-free dairy milk,0
+unternehmertum_prototyping_grant,HopfON,https://hopfon.com/,2023-09-01,deep_tech,yes,Hop waste becomes carbon-negative construction materials,0
+unternehmertum_prototyping_grant,ESG-X,https://www.esg-x.com/,2023-09-01,deep_tech,yes,Language models automate ESG reporting data extraction,0
+unternehmertum_prototyping_grant,Radical Dot,https://www.linkedin.com/company/radicaldot,2024-03-01,deep_tech,yes,Proprietary chemical recycling converts mixed plastics into chemical building blocks,0
+unternehmertum_prototyping_grant,Airgae,https://www.linkedin.com/company/airgae-algae/?viewAsMember=true,2024-03-01,deep_tech,yes,Aquaculture wastewater powers circular microalgae feed production,0
+unternehmertum_prototyping_grant,Octave,https://maple-aviation.com,2024-03-01,deep_tech,yes,Drone transport systems deliver medical goods,0
+unternehmertum_prototyping_grant,Trem-Blocks,https://www.linkedin.com/in/mert-karacan-5101b8284/,2024-03-01,deep_tech,yes,Magnetically driven networked microrobots enable precise manipulation,0
+unternehmertum_prototyping_grant,iNSyT,,2024-03-01,deep_tech,yes,Optical microscopy images high-speed precision surface processes,0
+unternehmertum_prototyping_grant,Emidat,https://emidat.com/,2024-03-01,digital_tech,yes,Software manages environmental product data for building materials,0
+unternehmertum_prototyping_grant,Hoop Solar,https://www.linkedin.com/company/99088241/,2024-03-01,deep_tech,yes,Semitransparent photovoltaic greenhouse coverings generate electricity,0
+unternehmertum_prototyping_grant,Ignition Aerospace,https://ignition-aerospace.com,2024-03-01,deep_tech,yes,Microsatellite systems support suborbital and orbital missions,0
+unternehmertum_prototyping_grant,Yngvik,https://www.linkedin.com/company/yngvik,2024-03-01,deep_tech,yes,Food waste becomes biodegradable plastic materials,0
+unternehmertum_prototyping_grant,CRATER (WARR Space Robotics),https://warr.de/projects/spacerobotics/,2024-03-01,non_tech,no,Student space robotics project develops planetary exploration rovers,0
+unternehmertum_prototyping_grant,NTRDE,https://ntrde.io,2024-03-01,digital_tech,yes,Vertical SaaS automates chemical product trading,0
+unternehmertum_prototyping_grant,VORTEX,https://www.vortex-aerotec.com/,2024-03-01,deep_tech,yes,Hydrogen-powered drones improve flight economics and efficiency,0
+unternehmertum_prototyping_grant,Perian,https://perian.io,2024-03-01,digital_tech,yes,Cloud orchestration platform deploys and manages AI workloads,0
+unternehmertum_prototyping_grant,ImuVeo,https://www.linkedin.com/company/imuveo,2024-03-01,life_science,yes,Imaging technology visualizes T-cells inside the human body,0
+unternehmertum_prototyping_grant,Empacto,https://www.empacto.eco,2024-03-01,deep_tech,yes,AI personalizes sustainability training through a learning platform,0
+unternehmertum_prototyping_grant,Hula Earth,https://hula.earth,2024-09-01,deep_tech,yes,Proprietary IoT sensors and satellite imagery monitor natural ecosystems,0
+unternehmertum_prototyping_grant,TUM Boring Innovation in Tunneling e.V.,https://tum-boring.com/,2024-09-01,non_tech,no,University association develops competitive tunnel boring machines,0
+unternehmertum_prototyping_grant,Admyral,https://admyral.dev/,2024-09-01,digital_tech,yes,Open-source SDK automates security engineering workflows,0
+unternehmertum_prototyping_grant,AICU,https://www.ai-cu.com/,2024-09-01,life_science,yes,Clinical data analysis platform supports medical research,0
+unternehmertum_prototyping_grant,Alganize,https://www.alganize.de,2024-09-01,deep_tech,yes,Microalgae-derived soil treatments improve plant resilience and humus,0
+unternehmertum_prototyping_grant,Beautechful,https://www.linkedin.com/company/beautechful?trk=blended-typeahead,2024-09-01,deep_tech,yes,Skin-tone analysis hardware manufactures personalized cosmetics in stores,0
+unternehmertum_prototyping_grant,Bevel,,2024-09-01,deep_tech,yes,Language models maintain and migrate legacy software,0
+unternehmertum_prototyping_grant,Bluebear,https://www.linkedin.com/company/igem-tum-campus-straubing/,2024-09-01,life_science,yes,Cell-free protein synthesis platform accelerates gene prototyping,0
+unternehmertum_prototyping_grant,Bonescreen,https://www.bonescreen.de/,2024-09-01,life_science,yes,AI medical imaging detects osteoporosis and fractures,0
+unternehmertum_prototyping_grant,Countful,,2024-09-01,deep_tech,yes,Fine-tuned language models automate accounting workflows,0
+unternehmertum_prototyping_grant,ExoSphere,https://www.linkedin.com/company/exospherediagnostics/,2024-09-01,life_science,yes,Microfluidic kits detect early cancer in high-risk patients,0
+unternehmertum_prototyping_grant,Fungtional Bio,https://www.fungtional.bio,2024-09-01,deep_tech,yes,Deep learning optimizes fermentation media,0
+unternehmertum_prototyping_grant,Healthiator,,2024-09-01,deep_tech,yes,AI detects incorrect hospital bills for insurers,0
+unternehmertum_prototyping_grant,KATALYST,https://katalyst-labs.com/,2024-09-01,digital_tech,yes,Mechanical design software automates engineering workflows,0
+unternehmertum_prototyping_grant,Micro Factory,https://micro-factory.de/,2024-09-01,deep_tech,yes,"Integrated 3D printers automate printing, curing, and postprocessing",0
+unternehmertum_prototyping_grant,Patalyze,https://www.patalyze.com/,2024-09-01,deep_tech,yes,AI analyzes patent infringement risks,0
+unternehmertum_prototyping_grant,Prio Optics,https://prio-optic.com,2024-09-01,deep_tech,yes,Novel printing processes manufacture customized optical filters,0
+unternehmertum_prototyping_grant,QTAS,,2024-09-01,life_science,yes,Quantum sensor systems monitor tumor therapy responses,0
+unternehmertum_prototyping_grant,SAM Robotics,https://sam-robotics.com,2024-09-01,deep_tech,yes,AI-powered service robots automate retail tasks,0
+unternehmertum_prototyping_grant,skyLARC,,2024-09-01,deep_tech,yes,Advanced rotor hardware reduces drone vibration and structural loads,0
+unternehmertum_prototyping_grant,syn2core,,2024-09-01,deep_tech,yes,Wearable AI copilots guide frontline manufacturing workers,0
+unternehmertum_prototyping_grant,TUfast Moto Electric,https://tufast-motoelectric.de/team025/,2024-09-01,non_tech,no,University motorsport team develops competitive electric motorcycles,0
+unternehmertum_prototyping_grant,alago.ai,https://www.alago.ai/,2024-09-01,deep_tech,yes,AI assistant automates construction planning and documentation,0
+unternehmertum_prototyping_grant,Seal Robotics,https://seal-robotics.com,2025-03-01,deep_tech,yes,AI robotic arms automate shipping container twistlock handling,0
+unternehmertum_prototyping_grant,Qoro Quantum,https://www.qoroquantum.de,2025-03-01,deep_tech,yes,Quantum network stack coordinates heterogeneous computing clusters,0
+unternehmertum_prototyping_grant,Aiina Robotics,https://aiina-robotics.com/,2025-03-01,deep_tech,yes,Autonomous water-jet robots remove concrete,0
+unternehmertum_prototyping_grant,Accelion,,2025-03-01,deep_tech,yes,Miniature automated laboratories accelerate battery development,0
+unternehmertum_prototyping_grant,APS,,2025-03-01,deep_tech,maybe,Shelf-life extension spray; proprietary technical differentiation needs confirmation,0
+unternehmertum_prototyping_grant,2NA Fish,https://2nafish.bio/,2025-03-01,life_science,yes,Spatial RNA biomarkers guide personalized cancer therapy selection,0
+unternehmertum_prototyping_grant,Everybot,,2025-03-01,deep_tech,yes,Learning-based robot control automates commercial cleaning,0
+unternehmertum_prototyping_grant,Furward,https://www.furward.eu/,2025-03-01,life_science,yes,Infrared AI diagnostics detect diseases in livestock,0
+unternehmertum_prototyping_grant,Lexet AI,https://lexet.ai,2025-03-01,deep_tech,yes,Conversational AI analyzes European regulatory compliance,0
+unternehmertum_prototyping_grant,Neeno,https://myneeno.com,2025-03-01,deep_tech,yes,Edge AI wearables track hand movements without cameras,0
+unternehmertum_prototyping_grant,OnMCU,,2025-03-01,digital_tech,yes,Cloud testing platform remotely validates embedded systems,0
+unternehmertum_prototyping_grant,ROBOTUM,https://www.robotum.info/,2025-03-01,non_tech,no,Student robotics initiative develops competitive humanoid robots,0
+unternehmertum_prototyping_grant,Rooted,https://rooted.farm,2025-03-01,deep_tech,yes,AI agronomy platform monitors agricultural risk and climate impacts,0
+unternehmertum_prototyping_grant,Spacio,https://spacio.ai/,2025-03-01,deep_tech,yes,AI building design platform generates structured 3D models,0
+unternehmertum_prototyping_grant,TRITON,,2025-03-01,deep_tech,yes,Protein-based liquid coolants improve data center thermal management,0
+unternehmertum_prototyping_grant,Valuemize,https://www.valuemize.io/,2025-03-01,deep_tech,yes,Software uses AI to optimize hardware costs and carbon footprints,0
+unternehmertum_prototyping_grant,DeepMask,https://deepmask.io/,2025-03-01,deep_tech,yes,Private infrastructure supports secure language model fine-tuning,0
+unternehmertum_prototyping_grant,Fibclick,https://fibclick.de/en/homepage-2/,2025-09-01,deep_tech,yes,AI engineering assistants automate machine component design,0
+unternehmertum_prototyping_grant,Clinivox,https://stanford-clinivox.firebaseapp.com/,2025-09-01,deep_tech,yes,AI platform manages clinical trial inbound communications,0
+unternehmertum_prototyping_grant,ProviGen.ai,https://provigen.ai/,2025-09-01,deep_tech,yes,Software controls closed-loop robotic laboratory experimentation,0
+unternehmertum_prototyping_grant,Cellvi,,2025-09-01,life_science,yes,Computer vision counts cells for laboratory analysis,0
+unternehmertum_prototyping_grant,IARET Catalysis,,2025-09-01,deep_tech,yes,Electrochemistry recovers noble metals from scrap,0
+unternehmertum_prototyping_grant,nuno.ai,https://nuno-labs.de/,2025-09-01,deep_tech,yes,Short-term solar forecasting reduces electricity balancing costs,0
+unternehmertum_prototyping_grant,Linq Photonics,https://www.linq-photonics.com/,2025-09-01,deep_tech,yes,Integrated photonic control systems scale quantum computing,0
+unternehmertum_prototyping_grant,Blue Aegis Technologies,,2025-09-01,deep_tech,yes,Autonomous surface drones monitor underwater infrastructure,0
+unternehmertum_prototyping_grant,Cancelight,https://cancelight.com/,2025-09-01,life_science,yes,Label-free tissue testing devices enable personalized medicine,0
+unternehmertum_prototyping_grant,Twogee Biotech,https://www.twogee-biotech.com/,2025-09-01,deep_tech,yes,Engineered enzymes and microbes convert industrial biomass into feedstocks,0
+unternehmertum_prototyping_grant,Tissue Mind,,2025-09-01,life_science,yes,AI bioprinting platform produces precision tissues,0
+unternehmertum_prototyping_grant,Metalonn,https://metalonn.com/,2025-09-01,deep_tech,yes,Manufacturing technology produces ultralight aerospace waveguide components,0

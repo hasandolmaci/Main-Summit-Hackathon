@@ -1,0 +1,13 @@
+{"run_id": "ZgWWLX3Tgk7MOeg1X", "dataset_id": "J1rjdHQiRKwkWcE47", "actor": "omkar-cloud/crunchbase-funding-rounds-scraper", "date": "2026-11-20", "input": ["CedarDB", "Radical Dot", "Emidat", "Hula Earth", "Qualiwise", "Holloid", "Medicalytix", "Puray", "Olive Robotics", "Roundpeg Technologies"],
+"rounds": [
+{"company": "Radical Dot", "round_type": "pre_seed", "is_equity": true, "announced_on": null, "lead": "UVC Partners | Visionaries Tomorrow", "news_latest_date": "2025-03-04"},
+{"company": "Emidat", "round_type": "pre_seed", "is_equity": true, "announced_on": null, "lead": "Suffolk Technologies", "news_latest_date": "2023-11-09"},
+{"company": "Emidat", "round_type": "seed", "is_equity": true, "announced_on": null, "lead": "Auxxo", "news_latest_date": "2025-07-21"},
+{"company": "Emidat", "round_type": "seed", "is_equity": true, "announced_on": null, "lead": null, "investors": "Lisa Gradow | General Catalyst | BOOOM", "news_latest_date": "2024-11-25"},
+{"company": "Hula Earth", "round_type": "non_equity_assistance", "is_equity": false, "announced_on": null, "lead": "Amazon Sustainability Accelerator", "news_latest_date": "2026-09-14"},
+{"company": "Hula Earth", "round_type": "pre_seed", "is_equity": true, "announced_on": null, "lead": "Point Nine", "news_latest_date": "2024-11-15"},
+{"company": "Qualiwise", "round_type": "pre_seed", "is_equity": true, "announced_on": null, "lead": "123 Ventures", "news_latest_date": "2024-08-30"},
+{"company": "Holloid", "round_type": "grant", "is_equity": false, "announced_on": null, "lead": "EIC Accelerator", "news_latest_date": "2025-11-03"},
+{"company": "Puray", "round_type": "convertible_note", "is_equity": false, "announced_on": null, "investors": "Plug and Play", "news_latest_date": null}
+],
+"not_found": ["CedarDB", "Medicalytix", "Olive Robotics", "Roundpeg Technologies"]}

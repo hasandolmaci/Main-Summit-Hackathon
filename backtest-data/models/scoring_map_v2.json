@@ -1,0 +1,534 @@
+{
+  "gates": [
+    {
+      "name": "No institutional investor yet",
+      "columns": [
+        "y_funding_status",
+        "cb_has_equity_round"
+      ],
+      "rule": "Pass only with verified pre-cutoff evidence of founders' money, friends/family, grants/prizes of any amount, or angels totalling <= approximately EUR150k and no institutional investor. Fail for a pre-cutoff VC fund, equity-taking accelerator, priced/announced round, or >EUR150k angels. FUNDED_BEFORE/EXCLUDE_NOT_FIRST or an equity-round flag require dated investor/type evidence before failing; FUNDED_LATER/FUNDED_WITHIN are future outcomes and must not exclude. Unknown angel size, undated round, UNKNOWN, NO_FUNDING_FOUND, or insufficient investor evidence -> unknown/review; absence of a found round is not proof of passing.",
+      "hard_fail": true
+    },
+    {
+      "name": "Not in HTGF portfolio",
+      "columns": [
+        "info_e_in_htgf_portfolio"
+      ],
+      "rule": "Pass if explicitly not in HTGF portfolio at cutoff; fail if already in portfolio at cutoff; missing or current-only/undated portfolio evidence -> unknown/review.",
+      "hard_fail": true
+    },
+    {
+      "name": "German seat or operating base",
+      "columns": [
+        "f_description_text",
+        "s_legal_form",
+        "s_registered_court_hrb"
+      ],
+      "rule": "Pass for explicit German registered seat or operating base in historical text/register evidence; fail only for verified absence of both. Legal form alone is insufficient; missing/ambiguous geographic evidence -> unknown/review.",
+      "hard_fail": true
+    },
+    {
+      "name": "Alive (not closed, insolvent or acquired)",
+      "columns": [
+        "y_funding_status"
+      ],
+      "rule": "Fail for EXCLUDE_ACQUISITION only if acquisition preceded cutoff; pass only with affirmative dated operating evidence and no closure/insolvency/acquisition at cutoff. Other funding statuses do not establish survival; missing dates or survival evidence -> unknown/review. Closure and insolvency are not directly collected.",
+      "hard_fail": true
+    },
+    {
+      "name": "Independent (not corporate-owned)",
+      "columns": [
+        "s_parent_company_mentioned",
+        "f_description_text"
+      ],
+      "rule": "Fail for explicit evidence that this startup is corporate-owned at cutoff; pass for verified independence. A parent-company mention alone may describe subsidiaries or partners and requires review; absent or ambiguous ownership evidence -> unknown/review.",
+      "hard_fail": true
+    },
+    {
+      "name": "Commercial (not e.V., gGmbH, student club or pure research)",
+      "columns": [
+        "s_legal_form",
+        "f_description_text"
+      ],
+      "rule": "Fail for e.V./e. V., gGmbH, student club, or pure research without a commercial venture; pass for verified commercial company activity; blank/ambiguous legal form or business purpose -> unknown/review.",
+      "hard_fail": true
+    },
+    {
+      "name": "Investable sector (not consulting, agency, retail, real estate, gambling or crypto token)",
+      "columns": [
+        "f_description_text"
+      ],
+      "rule": "Pass for explicit investable product/technology sector; fail for consulting, agency, retail, real estate, gambling or crypto-token business. Classify historical description; missing/ambiguous business model -> unknown/review. External relevance_v2 categories deep_tech/digital_tech/life_science can guide review but are not dataset columns; non_tech/unclear alone do not establish a fail.",
+      "hard_fail": true
+    },
+    {
+      "name": "Not noise (not hobby, student assignment or company-less open source)",
+      "columns": [
+        "f_description_text",
+        "f_legal_entity",
+        "s_legal_form"
+      ],
+      "rule": "Fail for explicit hobby, student assignment or company-less open-source project; pass for verified startup activity; missing entity evidence alone is not a fail, and ambiguous company intent -> unknown/review.",
+      "hard_fail": true
+    },
+    {
+      "name": "Age <= 3 years",
+      "columns": [
+        "f_age_months"
+      ],
+      "rule": "Pass if observed age is between 0 and 36 months inclusive at cutoff; fail if >36 months; blank/invalid age -> unknown/review. Website age is a proxy and needs review if venture founding age differs.",
+      "hard_fail": true
+    },
+    {
+      "name": "Active in the last 90 days",
+      "columns": [],
+      "rule": "Pass for verified operating/shipping activity within 90 days before cutoff; fail for verified inactivity throughout that window; unknown/review because dated operating activity is not collected. Website capture/certificate dates do not establish activity.",
+      "hard_fail": true
+    },
+    {
+      "name": "Not faked (no star bursts, new-account stars or bought upvotes)",
+      "columns": [],
+      "rule": "Pass after verified engagement-authenticity checks; fail for confirmed star bursts, new-account stars or bought upvotes; unknown/review because engagement-authenticity evidence is not collected.",
+      "hard_fail": true
+    },
+    {
+      "name": "More than 25 people (review flag)",
+      "columns": [
+        "s_team_size_on_page",
+        "info_li_employees_now"
+      ],
+      "rule": "At cutoff, <=25 verified people -> pass/no flag; >25 -> review flag, not exclusion; missing size -> unknown/review. Current LinkedIn size is review-only and cannot establish historical size without dated corroboration.",
+      "hard_fail": false
+    }
+  ],
+  "quality": [
+    {
+      "metric": "Founder worked in this industry before",
+      "columns": [
+        "m_founder_industry_exp"
+      ],
+      "transform": "binary; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Relevant skills over credentials",
+      "columns": [
+        "m_founder_technical"
+      ],
+      "transform": "binary; technical-skill evidence only; broader relevant practical skills versus credentials are not collected; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Complementary team (technical + commercial)",
+      "columns": [],
+      "transform": "uncollected; technical-plus-commercial founder complementarity cannot be established from founder count or technical flag; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Prior successful founder / exit",
+      "columns": [
+        "m_serial_score"
+      ],
+      "transform": "score_0_1; prior VC-backed venture or exit; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Execution continuity (weeks with commits in the last 8)",
+      "columns": [],
+      "transform": "uncollected; no pre-cutoff active-commit-week count for the last 8 weeks; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Founder background",
+      "columns": [
+        "m_founder_industry_exp",
+        "m_founder_technical",
+        "m_serial_score"
+      ],
+      "transform": "score_0_1; mean of observed background component scores with missing components contributing 0; partial background coverage; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Founder building (actively shipping)",
+      "columns": [],
+      "transform": "uncollected; public repository existence alone does not establish actively shipping founders; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Founder commitment (full-time, named in the Impressum)",
+      "columns": [
+        "s_founders_named_in_impressum"
+      ],
+      "transform": "binary; partial commitment signal: named in Impressum; full-time commitment is not collected; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Technical substance (working artifact, benchmark, paper)",
+      "columns": [
+        "f_product_live",
+        "m_gh_has_open_source",
+        "m_gh_public_repos_before"
+      ],
+      "transform": "score_0_1; max(binary live-product evidence, binary public-code artifact evidence); artifact proxy requires technical review; benchmarks/papers not directly collected; resolve prior weights by feature name, respecting model aliases: m_gh_has_open_source; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "prior",
+      "is_penalty": false
+    },
+    {
+      "metric": "Patents",
+      "columns": [
+        "m_patent_verified_before_asof",
+        "m_patent_applications_before",
+        "m_patent_score"
+      ],
+      "transform": "binary verified pre-cutoff patent evidence; unverified application counts/scores are review context, not verified patent credit; resolve prior weights by feature name, respecting model aliases: m_patent_verified_before_asof; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "prior",
+      "is_penalty": false
+    },
+    {
+      "metric": "Product readiness (live app, docs, first TLS certificate, waitlist)",
+      "columns": [
+        "f_product_live",
+        "f_first_cert_date",
+        "f_waitlist"
+      ],
+      "transform": "score_0_1; max(binary live product, binary first TLS certificate on/before cutoff, binary waitlist); TLS and waitlist are readiness proxies, not proof of a live product; docs not collected; resolve prior weights by feature name, respecting model aliases: f_waitlist; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "prior",
+      "is_penalty": false
+    },
+    {
+      "metric": "Experimentation tools (A/B testing, analytics stack)",
+      "columns": [
+        "s_ab_testing_tool",
+        "s_analytics_tools"
+      ],
+      "transform": "binary; detected A/B testing or analytics tooling; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Momentum vs own baseline with time decay",
+      "columns": [],
+      "transform": "uncollected; no eligible historical own-baseline activity series or time-decay inputs; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Verified customers / pilots",
+      "columns": [
+        "f_customer_logos"
+      ],
+      "transform": "binary; displayed customer-logo proxy, requires verification of customers/pilots; logos alone do not establish paid customers; resolve learned weights at runtime from models/benchmark_weights.json by feature name: f_customer_logos (do not treat other component columns as learned); missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "learned",
+      "is_penalty": false
+    },
+    {
+      "metric": "Outside open-source contributions",
+      "columns": [
+        "m_gh_external_score",
+        "m_gh_external_contribs_12m"
+      ],
+      "transform": "score_0_1 using historical external-contribution score; log1p_capped external contribution count is corroboration, not a second independent score; resolve prior weights by feature name, respecting model aliases: m_gh_external_score; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "prior",
+      "is_penalty": false
+    },
+    {
+      "metric": "Online attention / web mentions",
+      "columns": [
+        "e_news_mentions_before_12m",
+        "e_news_mentions_before_total",
+        "f_hn_posts_before"
+      ],
+      "transform": "log1p_capped; pre-cutoff news/Hacker News attention; prefer 12-month news over overlapping total and avoid double-counting; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Launch-platform spread",
+      "columns": [
+        "m_ph_score_before_asof",
+        "f_hn_posts_before",
+        "e_devpost_projects_before"
+      ],
+      "transform": "score_0_1; count observed pre-cutoff platforms with positive activity / 3; Product Hunt score supplies launch evidence, not unique-platform counts; resolve prior weights by feature name, respecting model aliases: m_ph_score_before_asof; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "prior",
+      "is_penalty": false
+    },
+    {
+      "metric": "Clear paying buyer and costly problem",
+      "columns": [
+        "f_description_text",
+        "f_pricing_page"
+      ],
+      "transform": "score_0_1; manual historical-text rubric for identifiable paying buyer and costly problem; pricing is supporting evidence and alone cannot establish buyer/problem; resolve learned weights at runtime from models/benchmark_weights.json by feature name: f_pricing_page (do not treat other component columns as learned); missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "learned",
+      "is_penalty": false
+    },
+    {
+      "metric": "Market health",
+      "columns": [],
+      "transform": "uncollected; no sector market-health or growth series in backtest.csv; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Regulated or hardware market",
+      "columns": [
+        "f_description_text"
+      ],
+      "transform": "binary; explicit historical evidence of regulated market or hardware product; ambiguous text remains unobserved; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "University spin-off origin",
+      "columns": [
+        "f_description_text"
+      ],
+      "transform": "binary; explicit university spin-off origin in historical text; programme membership or research grants alone do not establish spin-off origin; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Programme validation (EXIST, SPRIND, incubator, competition)",
+      "columns": [
+        "m_grant_score",
+        "m_exist_or_programme_grant",
+        "m_cordis_projects_before",
+        "m_foekat_projects_before",
+        "meta_cohort",
+        "meta_cohort_source"
+      ],
+      "transform": "score_0_1 using m_grant_score; verified pre-cutoff programme/grant/cohort evidence supplies validation context; cohort membership is a sampling-dependent proxy, not automatic validation; resolve learned weights at runtime from models/benchmark_weights.json by feature name: m_grant_score (do not treat other component columns as learned); missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "learned",
+      "is_penalty": false
+    },
+    {
+      "metric": "Similarity to past winners (embeddings)",
+      "columns": [],
+      "transform": "uncollected; no company embeddings or past-winner similarity measure; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Trademark filed before as-of",
+      "columns": [
+        "m_trademark_before_asof"
+      ],
+      "transform": "binary; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Certified star academic founder",
+      "columns": [
+        "m_star_academic"
+      ],
+      "transform": "binary; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Founder team size (2+ founders)",
+      "columns": [
+        "m_founder_count"
+      ],
+      "transform": "founder_count_ge_2; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 0.5
+    },
+    {
+      "metric": "Founder PhD",
+      "columns": [
+        "m_founder_phd"
+      ],
+      "transform": "binary; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 0.5
+    }
+  ],
+  "opportunity": [
+    {
+      "metric": "Raise-soon score (GmbH i.G., pricing live, founding-engineer job, pitching at events)",
+      "columns": [
+        "f_gmbh_ig",
+        "f_pricing_page",
+        "s_job_titles"
+      ],
+      "transform": "score_0_1; max(binary GmbH i.G. evidence, binary pricing live, binary explicit founding-engineer role); f_gmbh_ig also includes ordinary GmbH/UG so requires text verification of formation stage; pitching-event evidence not collected; resolve learned weights at runtime from models/benchmark_weights.json by feature name: f_pricing_page (do not treat other component columns as learned); missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "learned",
+      "is_penalty": false
+    },
+    {
+      "metric": "Venture age (best at 3-18 months)",
+      "columns": [
+        "f_age_months"
+      ],
+      "transform": "f_age_months<=18 (learned feature age_le_18; nonnegative observed ages only); best-window 3<=f_age_months<=18 is the spec preference, while the learned <=18 proxy also includes 0-2 months; resolve learned weights at runtime from models/benchmark_weights.json by feature name: age_le_18 (do not treat other component columns as learned); missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "learned",
+      "is_penalty": false
+    },
+    {
+      "metric": "Head start in days vs databases/press",
+      "columns": [
+        "f_first_capture",
+        "f_first_cert_date",
+        "e_news_first_mention_date"
+      ],
+      "transform": "log1p_capped; max(0, days from earliest observed website/certificate date to first dated news mention), using only dates on/before cutoff; partial press head-start proxy; database appearance dates not collected; missing press date is unknown, not infinite lead; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Stealth-founder signal",
+      "columns": [],
+      "transform": "uncollected; absence of press/funding is not affirmative stealth-founder evidence; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Hackathon-to-company signal",
+      "columns": [
+        "e_devpost_projects_before",
+        "e_devpost_evidence",
+        "f_legal_entity"
+      ],
+      "transform": "binary; verified pre-cutoff Devpost project linked to this company and subsequent company formation; project count alone is a partial hackathon proxy, not proof of conversion; resolve learned weights at runtime from models/benchmark_weights.json by feature name: has_legal_entity (do not treat other component columns as learned); missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "learned",
+      "is_penalty": false
+    },
+    {
+      "metric": "Investor attention",
+      "columns": [],
+      "transform": "uncollected; no eligible pre-cutoff investor-attention measure; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Hiring mix (engineering vs sales hires)",
+      "columns": [
+        "s_careers_engineering_roles",
+        "s_careers_sales_roles",
+        "s_job_titles"
+      ],
+      "transform": "score_0_1; engineering_roles/(engineering_roles+sales_roles) when total>0; explicit zero roles scores 0; title extraction can support role classification; missing counts are unknown; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Own domain",
+      "columns": [
+        "f_domain"
+      ],
+      "transform": "binary; verified company-owned domain; a hosted profile or lookup identifier alone does not prove domain ownership; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "Impressum with named founders",
+      "columns": [
+        "f_impressum",
+        "s_founders_named_in_impressum",
+        "s_founder_names"
+      ],
+      "transform": "binary; require Impressum and explicit founder named there; a generic Impressum or director name alone is only partial evidence; resolve learned weights at runtime from models/benchmark_weights.json by feature name: f_impressum (do not treat other component columns as learned); missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "learned",
+      "is_penalty": false
+    },
+    {
+      "metric": "Legal entity",
+      "columns": [
+        "f_legal_entity",
+        "s_legal_form",
+        "s_registered_court_hrb"
+      ],
+      "transform": "binary; learned has_legal_entity = 1 if stripped f_legal_entity is nonempty and not 0; blank unknown; legal form/register evidence provides review context; resolve learned weights at runtime from models/benchmark_weights.json by feature name: has_legal_entity (do not treat other component columns as learned); missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "learned",
+      "is_penalty": false
+    },
+    {
+      "metric": "Pricing / pilot offer",
+      "columns": [
+        "f_pricing_page",
+        "f_description_text"
+      ],
+      "transform": "binary; pricing page or explicit pilot offer in historical description; text-only pilot offer uses default evidence weight; resolve learned weights at runtime from models/benchmark_weights.json by feature name: f_pricing_page (do not treat other component columns as learned); missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "learned",
+      "is_penalty": false
+    },
+    {
+      "metric": "Open roles",
+      "columns": [
+        "f_jobs_page",
+        "s_jobs_page_found",
+        "s_job_titles"
+      ],
+      "transform": "binary; verify at least one open pre-cutoff role; careers page alone is a proxy; resolve learned weights at runtime from models/benchmark_weights.json by feature name: f_jobs_page (do not treat other component columns as learned); missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "learned",
+      "is_penalty": false
+    },
+    {
+      "metric": "Thesis match (AI / deep tech / industrial, repeatable product)",
+      "columns": [
+        "f_description_text"
+      ],
+      "transform": "score_0_1; manual rubric for AI/deep tech/industrial fit and repeatable product; external sector categories guide review only and cannot substitute for product-repeatability evidence; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": false,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "No contact or founder name (penalty)",
+      "columns": [
+        "s_contact_email_present",
+        "s_founder_names"
+      ],
+      "transform": "penalty_if_missing; apply negative contribution if no observed contact email OR no founder name; blank/unknown fields score 0 and reduce coverage rather than assert confirmed absence; missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "default",
+      "is_penalty": true,
+      "default_weight": 1.0
+    },
+    {
+      "metric": "No legal entity yet (penalty)",
+      "columns": [
+        "f_legal_entity",
+        "s_legal_form",
+        "s_registered_court_hrb"
+      ],
+      "transform": "penalty_if_missing; apply negative contribution for explicitly absent legal entity; blank/unknown entity evidence scores 0 and reduces coverage; reference positive has_legal_entity weight by name for penalty magnitude, not a separately fitted absence effect; resolve learned weights at runtime from models/benchmark_weights.json by feature name: has_legal_entity (do not treat other component columns as learned); missing or uncollected evidence scores 0 and is excluded from observed coverage",
+      "weight_source": "learned",
+      "is_penalty": true
+    }
+  ]
+}

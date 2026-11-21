@@ -1,0 +1,109 @@
+column,group,type,meaning,source,point_in_time,use_in_analysis
+id_company,id,string/category,Normalized company identifier.,Assembled from cohort/company records.,no,no
+id_domain,id,string/category,Company domain/profile identifier as assembled.,Assembled from cohort/company records.,no,no
+id_name,id,string/category,Company display name.,Assembled from cohort/company records.,no,no
+meta_cohort_source,meta,string/category,Source cohort/list identifier.,Cohort input and backtest assembly.,partly,no
+meta_cohort,meta,string/category,Cohort or programme label.,Cohort input and backtest assembly.,partly,no
+meta_asof_date,meta,date/timestamp,Historical cutoff date for features and outcome window.,Cohort input and backtest assembly.,partly,no
+meta_sampling,meta,string/category,Sampling method/group.,Cohort input and backtest assembly.,no,no
+f_domain,feature_point_in_time,string/category,Domain used for feature lookup.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",partly,yes
+f_first_capture,feature_point_in_time,date/timestamp,First captured website date.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",partly,yes
+f_age_months,feature_point_in_time,number,"Age in months at historical cutoff, when available.","Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_snapshot_missing,feature_point_in_time,boolean/flag,Whether historical website snapshot was missing.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",partly,yes
+f_snapshot_date,feature_point_in_time,date/timestamp,Date of website snapshot used for features.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",partly,yes
+f_impressum,feature_point_in_time,boolean/flag,Impressum/legal notice detected in the historical website snapshot.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_legal_entity,feature_point_in_time,boolean/flag,Legal entity evidence extracted from the pre-as-of snapshot.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_gmbh_ig,feature_point_in_time,boolean/flag,German corporate form signal (GmbH/UG) in the historical imprint.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_pricing_page,feature_point_in_time,boolean/flag,Pricing page detected in the pre-as-of website snapshot.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_waitlist,feature_point_in_time,boolean/flag,Waitlist or early access signup signal on the historical site.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_customer_logos,feature_point_in_time,boolean/flag,Customer logos displayed on the historical site.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_jobs_page,feature_point_in_time,boolean/flag,Jobs or careers page signal in the historical site.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_first_cert_date,feature_point_in_time,date/timestamp,First certificate transparency date.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_certs_before,feature_point_in_time,number,Certificates recorded before cutoff.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_product_live,feature_point_in_time,boolean/flag,Product appeared live in snapshot.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",partly,yes
+f_hn_posts_before,feature_point_in_time,number,Hacker News posts dated before cutoff.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_gh_org,feature_point_in_time,string/category,Matched GitHub organization identifier/flag.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",partly,yes
+f_gh_match,feature_point_in_time,string/category,GitHub account matching evidence/category.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",partly,yes
+f_gh_created,feature_point_in_time,number/score or flag,GitHub account creation date.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_gh_created_before_asof,feature_point_in_time,boolean/flag,Whether GitHub account predates cutoff.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_gh_public_repos_before,feature_point_in_time,number,Public repositories created before cutoff.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_gh_commit_weeks_active,feature_point_in_time,number,Active commit weeks in historical window.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",yes,yes
+f_description_text,feature_point_in_time,text,Company description captured in feature source.,"Historical website, certificate transparency, Hacker News, or GitHub feature extraction; see scripts/features.py.",partly,yes
+y_label,label,boolean/flag,Funding outcome label within specified horizon (1/0; blank unknown).,Funding label research (public sources; see evidence_url).,no,no
+y_round_date,label,date/timestamp,Recorded funding round date.,Funding label research (public sources; see evidence_url).,no,no
+y_round_type,label,string/category,Recorded funding round type.,Funding label research (public sources; see evidence_url).,no,no
+y_amount_eur,label,number,Recorded round amount in euros.,Funding label research (public sources; see evidence_url).,no,no
+y_dead,label,boolean/flag,Current death/unreachability indicator; not necessarily historical.,Funding label research (public sources; see evidence_url).,no,no
+y_funding_status,label,string/category,Funding label status/reason.,Funding label research (public sources; see evidence_url).,no,no
+cb_rounds,crunchbase,string,Crunchbase reported round count.,Crunchbase round cross-check files.,no,no
+cb_has_equity_round,crunchbase,boolean/flag,Crunchbase equity round indicator.,Crunchbase round cross-check files.,no,no
+needs_review,meta,string/category,Manual review required flag.,Backtest assembly/review metadata.,no,no
+evidence_url,meta,text,Evidence/source URL associated with record.,Backtest assembly/review metadata.,no,no
+e_devpost_projects_before,enrichment,number,Devpost projects dated before cutoff.,Enrichment/portfolio/news/patent evidence sources; see column evidence.,partly,no
+e_devpost_evidence,enrichment,text,Devpost evidence/source.,Enrichment/portfolio/news/patent evidence sources; see column evidence.,partly,no
+e_news_mentions_before_12m,enrichment,number,News mentions in 12 months before cutoff.,Enrichment/portfolio/news/patent evidence sources; see column evidence.,partly,no
+e_news_mentions_before_total,enrichment,number,Total news mentions before cutoff.,Enrichment/portfolio/news/patent evidence sources; see column evidence.,partly,no
+e_news_first_mention_date,enrichment,date/timestamp,First dated news mention.,Enrichment/portfolio/news/patent evidence sources; see column evidence.,partly,no
+e_patents_before,enrichment,number,Patent count before cutoff.,Enrichment/portfolio/news/patent evidence sources; see column evidence.,partly,no
+e_patent_evidence,enrichment,text,Patent evidence.,Enrichment/portfolio/news/patent evidence sources; see column evidence.,partly,no
+e_sector_news_growth,enrichment,number,Sector news growth enrichment metric.,Enrichment/portfolio/news/patent evidence sources; see column evidence.,partly,no
+s_homepage_snapshot_ts,enrichment,date/timestamp,Homepage snapshot timestamp.,Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_impressum_snapshot_ts,enrichment,date/timestamp,Impressum snapshot timestamp.,Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_analytics_tools,enrichment,string/category,"Extracted company, team, hiring, contact, or technology attribute: analytics tools.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_ab_testing_tool,enrichment,boolean or text (mixed),"Extracted company, team, hiring, contact, or technology attribute: ab testing tool.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_founder_names,enrichment,text,"Extracted company, team, hiring, contact, or technology attribute: founder names.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_managing_directors,enrichment,text,"Extracted company, team, hiring, contact, or technology attribute: managing directors.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_founders_named_in_impressum,enrichment,boolean or text (mixed),"Extracted company, team, hiring, contact, or technology attribute: founders named in impressum.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_legal_form,enrichment,string/category,"Extracted company, team, hiring, contact, or technology attribute: legal form.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_registered_court_hrb,enrichment,string/category,"Extracted company, team, hiring, contact, or technology attribute: registered court hrb.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_parent_company_mentioned,enrichment,boolean or text (mixed),"Extracted company, team, hiring, contact, or technology attribute: parent company mentioned.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_team_page_found,enrichment,boolean or text (mixed),"Extracted company, team, hiring, contact, or technology attribute: team page found.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_team_size_on_page,enrichment,number,"Extracted company, team, hiring, contact, or technology attribute: team size on page.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_jobs_page_found,enrichment,boolean or text (mixed),"Extracted company, team, hiring, contact, or technology attribute: jobs page found.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_job_titles,enrichment,text,"Extracted company, team, hiring, contact, or technology attribute: job titles.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_contact_email_present,enrichment,boolean or text (mixed),"Extracted company, team, hiring, contact, or technology attribute: contact email present.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_careers_engineering_roles,enrichment,number,"Extracted company, team, hiring, contact, or technology attribute: careers engineering roles.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+s_careers_sales_roles,enrichment,number,"Extracted company, team, hiring, contact, or technology attribute: careers sales roles.",Snapshot extraction/enrichment; snapshot timestamp fields indicate temporal provenance.,partly,no
+m_gh_account,priority_metric,string/category,Enrichment metric or evidence: gh account.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_gh_account_type,priority_metric,string/category,Enrichment metric or evidence: gh account type.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_gh_match_method,priority_metric,string/category,Enrichment metric or evidence: gh match method.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_gh_created,priority_metric,date/timestamp,Enrichment metric or evidence: gh created.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_gh_public_repos_before,priority_metric,number,Enrichment metric or evidence: gh public repos before.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_gh_has_open_source,priority_metric,boolean/flag,Whether matched GitHub organization had public open-source repositories created before as-of.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,yes,yes
+m_gh_members_checked,priority_metric,number,Enrichment metric or evidence: gh members checked.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_gh_external_contribs_12m,priority_metric,number,Enrichment metric or evidence: gh external contribs 12m.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_gh_external_score,priority_metric,number/score or flag,Historical GitHub external contribution score (12-month pre-as-of window).,Metric-specific public data enrichment; see corresponding scripts and evidence field.,yes,yes
+m_cordis_projects_before,priority_metric,number,Enrichment metric or evidence: cordis projects before.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,yes,yes
+m_cordis_first_start_date,priority_metric,date/timestamp,Enrichment metric or evidence: cordis first start date.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,yes,yes
+m_cordis_evidence,priority_metric,text,Enrichment metric or evidence: cordis evidence.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_foekat_projects_before,priority_metric,number,Enrichment metric or evidence: foekat projects before.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,yes,yes
+m_foekat_evidence,priority_metric,text,Enrichment metric or evidence: foekat evidence.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_exist_or_programme_grant,priority_metric,boolean/flag,Enrichment metric or evidence: exist or programme grant.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_grant_score,priority_metric,score,Grant signal based on eligible public R&D/programme evidence before as-of.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,yes,yes
+m_patent_applications_before,priority_metric,number,Enrichment metric or evidence: patent applications before.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,yes,yes
+m_patent_first_priority_date,priority_metric,date/timestamp,Enrichment metric or evidence: patent first priority date.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,yes,yes
+m_patent_evidence,priority_metric,text,Enrichment metric or evidence: patent evidence.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_patent_score,priority_metric,number/score or flag,Enrichment metric or evidence: patent score.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_patent_verified_before_asof,priority_metric,boolean/flag,Verified patent evidence with relevant filing/publication before as-of.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,yes,yes
+m_patent_verified_first_priority,priority_metric,date/timestamp,Enrichment metric or evidence: patent verified first priority.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_ph_score_before_asof,priority_metric,number/score or flag,Product Hunt score available before as-of.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,yes,yes
+info_li_employees_now,info_not_for_training,number,Dataset field: info li employees now.,Backtest assembly/review metadata.,no,no
+info_li_founded_year,info_not_for_training,number,Dataset field: info li founded year.,Backtest assembly/review metadata.,no,no
+m_serial_score,priority_metric,number/score or flag,Enrichment metric or evidence: serial score.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_founder_industry_exp,priority_metric,number/score or flag,Enrichment metric or evidence: founder industry exp.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+m_founder_technical,priority_metric,boolean/flag,Enrichment metric or evidence: founder technical.,Metric-specific public data enrichment; see corresponding scripts and evidence field.,partly,yes
+y_label_confident,label,string,Dataset field: y label confident.,Funding label research (public sources; see evidence_url).,no,no
+y_label_basis,label,string,Dataset field: y label basis.,Funding label research (public sources; see evidence_url).,no,no
+y_label_incl_dead,label,string,Dataset field: y label incl dead.,Funding label research (public sources; see evidence_url).,no,no
+info_f_description_cohort,info_not_for_training,string,Dataset field: info f description cohort.,Backtest assembly/review metadata.,no,no
+info_e_in_htgf_portfolio,info_not_for_training,string,Dataset field: info e in htgf portfolio.,Backtest assembly/review metadata.,no,no
+info_e_htgf_match_evidence,info_not_for_training,string,Dataset field: info e htgf match evidence.,Backtest assembly/review metadata.,no,no
+info_m_gh_stars_top_repo_now,info_not_for_training,string,Dataset field: info m gh stars top repo now.,Backtest assembly/review metadata.,no,no
+info_m_gh_momentum_ratio,info_not_for_training,string,Dataset field: info m gh momentum ratio.,Backtest assembly/review metadata.,no,no
+info_m_gh_momentum_score,info_not_for_training,string,Dataset field: info m gh momentum score.,Backtest assembly/review metadata.,no,no
+info_m_gh_commits_last3m,info_not_for_training,string,Dataset field: info m gh commits last3m.,Backtest assembly/review metadata.,no,no
+info_m_gh_commits_prev3m,info_not_for_training,string,Dataset field: info m gh commits prev3m.,Backtest assembly/review metadata.,no,no
+info_f_hn_max_points,info_not_for_training,string,Dataset field: info f hn max points.,Backtest assembly/review metadata.,no,no
+info_m_ph_launch_date_any,info_not_for_training,string,Dataset field: info m ph launch date any.,Backtest assembly/review metadata.,no,no
+info_m_gh_top_repo,info_not_for_training,string,Dataset field: info m gh top repo.,Backtest assembly/review metadata.,no,no
+age_months_le_18,priority_metric,boolean (derived),Derived indicator: f_age_months <= 18.,Derived from f_age_months in backtest.csv.,yes,yes

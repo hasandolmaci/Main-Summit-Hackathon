@@ -1,0 +1,247 @@
+[
+ {
+  "company": "Visonation",
+  "asof_date": "2023-09-01",
+  "person": "Fabian Pauli",
+  "firstName": "Fabian",
+  "lastName": "Pauli"
+ },
+ {
+  "company": "Emidat",
+  "asof_date": "2024-03-01",
+  "person": "Lisa Oberaigner",
+  "firstName": "Lisa",
+  "lastName": "Oberaigner"
+ },
+ {
+  "company": "Emidat",
+  "asof_date": "2024-03-01",
+  "person": "Florian Fesch",
+  "firstName": "Florian",
+  "lastName": "Fesch"
+ },
+ {
+  "company": "Patalyze",
+  "asof_date": "2024-09-01",
+  "person": "Daniel Stoll",
+  "firstName": "Daniel",
+  "lastName": "Stoll"
+ },
+ {
+  "company": "Valuemize",
+  "asof_date": "2025-03-01",
+  "person": "Michael Domanegg",
+  "firstName": "Michael",
+  "lastName": "Domanegg"
+ },
+ {
+  "company": "Valuemize",
+  "asof_date": "2025-03-01",
+  "person": "Dominik Finkbeiner",
+  "firstName": "Dominik",
+  "lastName": "Finkbeiner"
+ },
+ {
+  "company": "MotorSkins",
+  "asof_date": "2022-07-01",
+  "person": "Facundo Gutierrez",
+  "firstName": "Facundo",
+  "lastName": "Gutierrez"
+ },
+ {
+  "company": "MotorSkins",
+  "asof_date": "2022-07-01",
+  "person": "Juan Silva",
+  "firstName": "Juan",
+  "lastName": "Silva"
+ },
+ {
+  "company": "Sedivention",
+  "asof_date": "2023-07-26",
+  "person": "Ute Nollert",
+  "firstName": "Ute",
+  "lastName": "Nollert"
+ },
+ {
+  "company": "suena GmbH",
+  "asof_date": "2021-06-28",
+  "person": "Lennard Wilkening",
+  "firstName": "Lennard",
+  "lastName": "Wilkening"
+ },
+ {
+  "company": "suena GmbH",
+  "asof_date": "2021-06-28",
+  "person": "Miguel Wesselmann",
+  "firstName": "Miguel",
+  "lastName": "Wesselmann"
+ },
+ {
+  "company": "suena GmbH",
+  "asof_date": "2021-06-28",
+  "person": "Tom Witter",
+  "firstName": "Tom",
+  "lastName": "Witter"
+ },
+ {
+  "company": "SOLAGA",
+  "asof_date": "2020-09-10",
+  "person": "Benjamin Herzog",
+  "firstName": "Benjamin",
+  "lastName": "Herzog"
+ },
+ {
+  "company": "STROMDAO",
+  "asof_date": "2020-09-10",
+  "person": "Thorsten Zoerner",
+  "firstName": "Thorsten",
+  "lastName": "Zoerner"
+ },
+ {
+  "company": "WE-DO-AI",
+  "asof_date": "2020-09-10",
+  "person": "Sebastian Hecker",
+  "firstName": "Sebastian",
+  "lastName": "Hecker"
+ },
+ {
+  "company": "WE-DO-AI",
+  "asof_date": "2020-09-10",
+  "person": "André Naumann",
+  "firstName": "André",
+  "lastName": "Naumann"
+ },
+ {
+  "company": "WE-DO-AI",
+  "asof_date": "2020-09-10",
+  "person": "Sebastian Stephan",
+  "firstName": "Sebastian",
+  "lastName": "Stephan"
+ },
+ {
+  "company": "CARBONAUTEN",
+  "asof_date": "2020-12-01",
+  "person": "Torsten Becker",
+  "firstName": "Torsten",
+  "lastName": "Becker"
+ },
+ {
+  "company": "ENERGIEDOCK",
+  "asof_date": "2021-07-16",
+  "person": "Tim Dethlefs",
+  "firstName": "Tim",
+  "lastName": "Dethlefs"
+ },
+ {
+  "company": "ENERGIEDOCK",
+  "asof_date": "2021-07-16",
+  "person": "Tim Plath",
+  "firstName": "Tim",
+  "lastName": "Plath"
+ },
+ {
+  "company": "IO-DYNAMICS",
+  "asof_date": "2022-03-08",
+  "person": "Johann Olsen",
+  "firstName": "Johann",
+  "lastName": "Olsen"
+ },
+ {
+  "company": "IO-DYNAMICS",
+  "asof_date": "2022-03-08",
+  "person": "Felix Kruse",
+  "firstName": "Felix",
+  "lastName": "Kruse"
+ },
+ {
+  "company": "IO-DYNAMICS",
+  "asof_date": "2022-03-08",
+  "person": "Nabil Imran",
+  "firstName": "Nabil",
+  "lastName": "Imran"
+ },
+ {
+  "company": "RWInno Tec",
+  "asof_date": "2022-10-04",
+  "person": "Markus Kraus",
+  "firstName": "Markus",
+  "lastName": "Kraus"
+ },
+ {
+  "company": "retoflow",
+  "asof_date": "2023-05-10",
+  "person": "Leon Thurner",
+  "firstName": "Leon",
+  "lastName": "Thurner"
+ },
+ {
+  "company": "retoflow",
+  "asof_date": "2023-05-10",
+  "person": "Jannis Kupka",
+  "firstName": "Jannis",
+  "lastName": "Kupka"
+ },
+ {
+  "company": "retoflow",
+  "asof_date": "2023-05-10",
+  "person": "Produktmanager Stromnetze",
+  "firstName": "Produktmanager",
+  "lastName": "Stromnetze"
+ },
+ {
+  "company": "Statotest",
+  "asof_date": "2023-05-10",
+  "person": "Petr Klokočník",
+  "firstName": "Petr",
+  "lastName": "Klokočník"
+ },
+ {
+  "company": "zentur.io",
+  "asof_date": "2023-05-10",
+  "person": "Michael Detke",
+  "firstName": "Michael",
+  "lastName": "Detke"
+ },
+ {
+  "company": "Breathment",
+  "asof_date": "2024-01-05",
+  "person": "Elçin Can Çavuşoğlu",
+  "firstName": "Elçin",
+  "lastName": "Çavuşoğlu"
+ },
+ {
+  "company": "Breathment",
+  "asof_date": "2024-01-05",
+  "person": "Yalvaç Top",
+  "firstName": "Yalvaç",
+  "lastName": "Top"
+ },
+ {
+  "company": "Breathment",
+  "asof_date": "2024-01-05",
+  "person": "Baturay Yalvaç",
+  "firstName": "Baturay",
+  "lastName": "Yalvaç"
+ },
+ {
+  "company": "HeatVentors",
+  "asof_date": "2024-01-05",
+  "person": "Rita Andrássyné Farkas",
+  "firstName": "Rita",
+  "lastName": "Farkas"
+ },
+ {
+  "company": "HeatVentors",
+  "asof_date": "2024-01-05",
+  "person": "Zoli Andrássy",
+  "firstName": "Zoli",
+  "lastName": "Andrássy"
+ },
+ {
+  "company": "HeatVentors",
+  "asof_date": "2024-01-05",
+  "person": "Zoltán Andrássy",
+  "firstName": "Zoltán",
+  "lastName": "Andrássy"
+ }
+]

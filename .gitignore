@@ -1,0 +1,6 @@
+# local-only: scraper caches (copies of third-party pages), run logs, Python caches
+**/raw/cache/
+**/cache/
+*.log
+__pycache__/
+*.pyc

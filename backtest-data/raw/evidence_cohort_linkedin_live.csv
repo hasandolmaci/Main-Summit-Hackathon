@@ -1,0 +1,312 @@
+name,asof_date,field,value,url,snapshot_ts,retrieved_at
+AI VisionGuard,2026-11-21,f_domain,aivisionguard.eu,https://aivisionguard.eu/,,2026-11-20T23:38:19Z
+AI VisionGuard,2026-11-21,wb_first_capture_any,2024-04-27,http://web.archive.org/cdx/search/cdx?url=aivisionguard.eu&output=json&limit=1&fl=timestamp&from=1996,20240427122107,2026-11-20T23:34:36Z
+AI VisionGuard,2026-11-21,f_first_capture,2024-04-27,http://web.archive.org/cdx/search/cdx?url=aivisionguard.eu&output=json&limit=1&fl=timestamp&from=1996,20240427122107,2026-11-20T23:34:36Z
+AI VisionGuard,2026-11-21,f_age_months,30,http://web.archive.org/cdx/search/cdx?url=aivisionguard.eu&output=json&limit=1&fl=timestamp&from=1996,20240427122107,2026-11-20T23:34:36Z
+AI VisionGuard,2026-11-21,f_snapshot_date,2025-08-15,http://web.archive.org/web/20250815063705id_/https://aivisionguard.eu/,20250815063705,2026-11-20T23:34:44Z
+AI VisionGuard,2026-11-21,f_impressum,1 (Impressum),http://web.archive.org/web/20250815063705id_/https://aivisionguard.eu/,20250815063705,2026-11-20T23:34:44Z
+AI VisionGuard,2026-11-21,f_pricing_page,1 (Preise),http://web.archive.org/web/20250815063705id_/https://aivisionguard.eu/,20250815063705,2026-11-20T23:34:44Z
+AI VisionGuard,2026-11-21,f_waitlist,0,http://web.archive.org/web/20250815063705id_/https://aivisionguard.eu/,20250815063705,2026-11-20T23:34:44Z
+AI VisionGuard,2026-11-21,f_customer_logos,1 (Kunden),http://web.archive.org/web/20250815063705id_/https://aivisionguard.eu/,20250815063705,2026-11-20T23:34:44Z
+AI VisionGuard,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20250815063705id_/https://aivisionguard.eu/,20250815063705,2026-11-20T23:34:44Z
+AI VisionGuard,2026-11-21,f_legal_entity,UG (haftungsbeschränkt),http://web.archive.org/web/20250815063705id_/https://aivisionguard.eu/,20250815063705,2026-11-20T23:34:44Z
+AI VisionGuard,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20250815063705id_/https://aivisionguard.eu/,20250815063705,2026-11-20T23:34:44Z
+AI VisionGuard,2026-11-21,f_description_text,1500 chars,http://web.archive.org/web/20250815063705id_/https://aivisionguard.eu/,20250815063705,2026-11-20T23:34:44Z
+AI VisionGuard,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=aivisionguard.eu&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:34:45Z
+Intra AI,2026-11-21,f_domain,intra-ai.de,https://intra-ai.de/,,2026-11-20T23:38:19Z
+Intra AI,2026-11-21,wb_first_capture_any,2024-09-25,http://web.archive.org/cdx/search/cdx?url=intra-ai.de&output=json&limit=1&fl=timestamp&from=1996,20240925114500,2026-11-20T23:34:37Z
+Intra AI,2026-11-21,f_first_capture,2024-09-25,http://web.archive.org/cdx/search/cdx?url=intra-ai.de&output=json&limit=1&fl=timestamp&from=1996,20240925114500,2026-11-20T23:34:37Z
+Intra AI,2026-11-21,f_age_months,25,http://web.archive.org/cdx/search/cdx?url=intra-ai.de&output=json&limit=1&fl=timestamp&from=1996,20240925114500,2026-11-20T23:34:37Z
+Intra AI,2026-11-21,f_snapshot_date,2026-08-10,http://web.archive.org/web/20260810020815id_/https://www.intra-ai.de/,20260810020815,2026-11-20T23:34:47Z
+Intra AI,2026-11-21,f_impressum,1 (Impressum),http://web.archive.org/web/20260810020815id_/https://www.intra-ai.de/,20260810020815,2026-11-20T23:34:47Z
+Intra AI,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20260810020815id_/https://www.intra-ai.de/,20260810020815,2026-11-20T23:34:47Z
+Intra AI,2026-11-21,f_waitlist,0,http://web.archive.org/web/20260810020815id_/https://www.intra-ai.de/,20260810020815,2026-11-20T23:34:47Z
+Intra AI,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20260810020815id_/https://www.intra-ai.de/,20260810020815,2026-11-20T23:34:47Z
+Intra AI,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20260810020815id_/https://www.intra-ai.de/,20260810020815,2026-11-20T23:34:47Z
+Intra AI,2026-11-21,f_legal_entity,GmbH,http://web.archive.org/web/20260810020815id_/https://www.intra-ai.de/,20260810020815,2026-11-20T23:34:47Z
+Intra AI,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20260810020815id_/https://www.intra-ai.de/,20260810020815,2026-11-20T23:34:47Z
+Intra AI,2026-11-21,f_description_text,1500 chars,http://web.archive.org/web/20260810020815id_/https://www.intra-ai.de/,20260810020815,2026-11-20T23:34:47Z
+Intra AI,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=intra-ai.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:34:48Z
+Intra AI,2026-11-21,f_certs_before,34,https://crt.sh/?q=%25.intra-ai.de&output=json,,2026-11-20T23:34:58Z
+Intra AI,2026-11-21,f_first_cert_date,2024-10-01,https://crt.sh/?id=14761858956,,2026-11-20T23:38:19Z
+Intra AI,2026-11-21,f_product_live,0,https://crt.sh/?q=%25.intra-ai.de&output=json,,2026-11-20T23:34:58Z
+Intra AI,2026-11-21,f_gh_org,Intra-AI (matched by name),https://api.github.com/search/users?q=Intra+AI+type%3Aorg,,2026-11-20T23:35:24Z
+Intra AI,2026-11-21,f_gh_created,2024-08-04,https://api.github.com/users/Intra-AI,2024-08-04T14:10:16Z,2026-11-20T23:35:25Z
+Intra AI,2026-11-21,f_gh_public_repos_before,0,https://api.github.com/orgs/Intra-AI/repos?per_page=100,,2026-11-20T23:38:19Z
+BatteryIncluded,2026-11-21,f_domain,batteryincluded.ai,https://batteryincluded.ai/,,2026-11-20T23:38:19Z
+BatteryIncluded,2026-11-21,wb_first_capture_any,2023-12-22,http://web.archive.org/cdx/search/cdx?url=batteryincluded.ai&output=json&limit=1&fl=timestamp&from=1996,20231222105905,2026-11-20T23:34:40Z
+BatteryIncluded,2026-11-21,f_first_capture,2023-12-22,http://web.archive.org/cdx/search/cdx?url=batteryincluded.ai&output=json&limit=1&fl=timestamp&from=1996,20231222105905,2026-11-20T23:34:40Z
+BatteryIncluded,2026-11-21,f_age_months,34,http://web.archive.org/cdx/search/cdx?url=batteryincluded.ai&output=json&limit=1&fl=timestamp&from=1996,20231222105905,2026-11-20T23:34:40Z
+BatteryIncluded,2026-11-21,f_snapshot_date,2026-07-13,http://web.archive.org/web/20260713184629id_/https://batteryincluded.ai/,20260713184629,2026-11-20T23:35:10Z
+BatteryIncluded,2026-11-21,f_impressum,1 (Impressum),http://web.archive.org/web/20260713184629id_/https://batteryincluded.ai/,20260713184629,2026-11-20T23:35:10Z
+BatteryIncluded,2026-11-21,f_pricing_page,1 (Pricing),http://web.archive.org/web/20260713184629id_/https://batteryincluded.ai/,20260713184629,2026-11-20T23:35:10Z
+BatteryIncluded,2026-11-21,f_waitlist,0,http://web.archive.org/web/20260713184629id_/https://batteryincluded.ai/,20260713184629,2026-11-20T23:35:10Z
+BatteryIncluded,2026-11-21,f_customer_logos,1 (Kunden),http://web.archive.org/web/20260713184629id_/https://batteryincluded.ai/,20260713184629,2026-11-20T23:35:10Z
+BatteryIncluded,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20260713184629id_/https://batteryincluded.ai/,20260713184629,2026-11-20T23:35:10Z
+BatteryIncluded,2026-11-21,f_legal_entity,GmbH,http://web.archive.org/web/20260713184629id_/https://batteryincluded.ai/,20260713184629,2026-11-20T23:35:10Z
+BatteryIncluded,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20260713184629id_/https://batteryincluded.ai/,20260713184629,2026-11-20T23:35:10Z
+BatteryIncluded,2026-11-21,f_description_text,1500 chars,http://web.archive.org/web/20260713184629id_/https://batteryincluded.ai/,20260713184629,2026-11-20T23:35:10Z
+BatteryIncluded,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=batteryincluded.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:35:11Z
+Synagen AI,2026-11-21,f_domain,synagen.ai,https://www.synagen.ai/,,2026-11-20T23:38:19Z
+Synagen AI,2026-11-21,wb_first_capture_any,2024-09-17,http://web.archive.org/cdx/search/cdx?url=synagen.ai&output=json&limit=1&fl=timestamp&from=1996,20240917105921,2026-11-20T23:34:39Z
+Synagen AI,2026-11-21,f_first_capture,2024-09-17,http://web.archive.org/cdx/search/cdx?url=synagen.ai&output=json&limit=1&fl=timestamp&from=1996,20240917105921,2026-11-20T23:34:39Z
+Synagen AI,2026-11-21,f_age_months,26,http://web.archive.org/cdx/search/cdx?url=synagen.ai&output=json&limit=1&fl=timestamp&from=1996,20240917105921,2026-11-20T23:34:39Z
+Synagen AI,2026-11-21,f_snapshot_date,2026-06-14,http://web.archive.org/web/20260614161353id_/https://www.synagen.ai/,20260614161353,2026-11-20T23:34:48Z
+Synagen AI,2026-11-21,f_impressum,1 (Imprint),http://web.archive.org/web/20260614161353id_/https://www.synagen.ai/,20260614161353,2026-11-20T23:34:48Z
+Synagen AI,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20260614161353id_/https://www.synagen.ai/,20260614161353,2026-11-20T23:34:48Z
+Synagen AI,2026-11-21,f_waitlist,0,http://web.archive.org/web/20260614161353id_/https://www.synagen.ai/,20260614161353,2026-11-20T23:34:48Z
+Synagen AI,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20260614161353id_/https://www.synagen.ai/,20260614161353,2026-11-20T23:34:48Z
+Synagen AI,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20260614161353id_/https://www.synagen.ai/,20260614161353,2026-11-20T23:34:48Z
+Synagen AI,2026-11-21,f_legal_entity,,http://web.archive.org/web/20260614161353id_/https://www.synagen.ai/,20260614161353,2026-11-20T23:34:48Z
+Synagen AI,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20260614161353id_/https://www.synagen.ai/,20260614161353,2026-11-20T23:34:48Z
+Synagen AI,2026-11-21,f_description_text,1500 chars,http://web.archive.org/web/20260614161353id_/https://www.synagen.ai/,20260614161353,2026-11-20T23:34:48Z
+Synagen AI,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=synagen.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:34:48Z
+Synagen AI,2026-11-21,f_gh_org,SynagenAI (matched by name),https://api.github.com/search/users?q=Synagen+AI+type%3Aorg,,2026-11-20T23:37:01Z
+Synagen AI,2026-11-21,f_gh_created,2024-12-18,https://api.github.com/users/SynagenAI,2024-12-18T10:38:21Z,2026-11-20T23:37:02Z
+Synagen AI,2026-11-21,f_gh_public_repos_before,0,https://api.github.com/orgs/SynagenAI/repos?per_page=100,,2026-11-20T23:39:38Z
+Zen AI,2026-11-21,f_domain,zenai.de,https://zenai.de/,,2026-11-20T23:38:19Z
+Zen AI,2026-11-21,wb_first_capture_any,2017-05-28,http://web.archive.org/cdx/search/cdx?url=zenai.de&output=json&limit=1&fl=timestamp&from=1996,20170528184641,2026-11-20T23:34:38Z
+Zen AI,2026-11-21,f_first_capture,2017-05-28,http://web.archive.org/cdx/search/cdx?url=zenai.de&output=json&limit=1&fl=timestamp&from=1996,20170528184641,2026-11-20T23:34:38Z
+Zen AI,2026-11-21,f_age_months,113,http://web.archive.org/cdx/search/cdx?url=zenai.de&output=json&limit=1&fl=timestamp&from=1996,20170528184641,2026-11-20T23:34:38Z
+Zen AI,2026-11-21,f_snapshot_date,2022-10-05,http://web.archive.org/web/20221005183644id_/http://zenai.de/,20221005183644,2026-11-20T23:34:46Z
+Zen AI,2026-11-21,f_impressum,0,http://web.archive.org/web/20221005183644id_/http://zenai.de/,20221005183644,2026-11-20T23:34:46Z
+Zen AI,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20221005183644id_/http://zenai.de/,20221005183644,2026-11-20T23:34:46Z
+Zen AI,2026-11-21,f_waitlist,0,http://web.archive.org/web/20221005183644id_/http://zenai.de/,20221005183644,2026-11-20T23:34:46Z
+Zen AI,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20221005183644id_/http://zenai.de/,20221005183644,2026-11-20T23:34:46Z
+Zen AI,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20221005183644id_/http://zenai.de/,20221005183644,2026-11-20T23:34:46Z
+Zen AI,2026-11-21,f_legal_entity,,http://web.archive.org/web/20221005183644id_/http://zenai.de/,20221005183644,2026-11-20T23:34:46Z
+Zen AI,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20221005183644id_/http://zenai.de/,20221005183644,2026-11-20T23:34:46Z
+Zen AI,2026-11-21,f_description_text,516 chars,http://web.archive.org/web/20221005183644id_/http://zenai.de/,20221005183644,2026-11-20T23:34:46Z
+Zen AI,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=zenai.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:34:46Z
+mitte.ai,2026-11-21,f_domain,mitte.ai,https://mitte.ai/,,2026-11-20T23:38:19Z
+mitte.ai,2026-11-21,wb_first_capture_any,2024-07-01,http://web.archive.org/cdx/search/cdx?url=mitte.ai&output=json&limit=1&fl=timestamp&from=1996,20240701103818,2026-11-20T23:35:26Z
+mitte.ai,2026-11-21,f_first_capture,2024-07-01,http://web.archive.org/cdx/search/cdx?url=mitte.ai&output=json&limit=1&fl=timestamp&from=1996,20240701103818,2026-11-20T23:35:26Z
+mitte.ai,2026-11-21,f_age_months,28,http://web.archive.org/cdx/search/cdx?url=mitte.ai&output=json&limit=1&fl=timestamp&from=1996,20240701103818,2026-11-20T23:35:26Z
+mitte.ai,2026-11-21,f_snapshot_date,2026-10-02,http://web.archive.org/web/20261002083527id_/https://mitte.ai/,20261002083527,2026-11-20T23:35:28Z
+mitte.ai,2026-11-21,f_impressum,0,http://web.archive.org/web/20261002083527id_/https://mitte.ai/,20261002083527,2026-11-20T23:35:28Z
+mitte.ai,2026-11-21,f_pricing_page,1 (Pricing),http://web.archive.org/web/20261002083527id_/https://mitte.ai/,20261002083527,2026-11-20T23:35:28Z
+mitte.ai,2026-11-21,f_waitlist,0,http://web.archive.org/web/20261002083527id_/https://mitte.ai/,20261002083527,2026-11-20T23:35:28Z
+mitte.ai,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20261002083527id_/https://mitte.ai/,20261002083527,2026-11-20T23:35:28Z
+mitte.ai,2026-11-21,f_jobs_page,1 (Careers),http://web.archive.org/web/20261002083527id_/https://mitte.ai/,20261002083527,2026-11-20T23:35:28Z
+mitte.ai,2026-11-21,f_legal_entity,,http://web.archive.org/web/20261002083527id_/https://mitte.ai/,20261002083527,2026-11-20T23:35:28Z
+mitte.ai,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20261002083527id_/https://mitte.ai/,20261002083527,2026-11-20T23:35:28Z
+mitte.ai,2026-11-21,f_description_text,104 chars,http://web.archive.org/web/20261002083527id_/https://mitte.ai/,20261002083527,2026-11-20T23:35:28Z
+mitte.ai,2026-11-21,f_hn_posts_before,7,https://hn.algolia.com/api/v1/search?query=mitte.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:35:29Z
+mitte.ai,2026-11-21,f_hn_max_points,3,https://news.ycombinator.com/item?id=44596354,2025-07-17T18:16:51Z,2026-11-20T23:38:19Z
+mitte.ai,2026-11-21,f_gh_org,mitteai (matched by blog),https://api.github.com/search/users?q=mitte.ai+in%3Ablog+type%3Aorg,,2026-11-20T23:37:19Z
+mitte.ai,2026-11-21,f_gh_created,2025-08-23,https://api.github.com/users/mitteai,2025-08-23T16:00:48Z,2026-11-20T23:37:20Z
+mitte.ai,2026-11-21,f_gh_public_repos_before,5,https://api.github.com/orgs/mitteai/repos?per_page=100,,2026-11-20T23:39:34Z
+mitte.ai,2026-11-21,f_gh_commit_weeks_active,2 (repo bind),https://api.github.com/repos/mitteai/bind/commits?since=2026-09-26T00%3A00%3A00Z&until=2026-11-21T00%3A00%3A00Z&per_page=100,,2026-11-20T23:37:23Z
+ImmoFynn AI,2026-11-21,f_domain,immofynn.ai,https://immofynn.ai/,,2026-11-20T23:39:34Z
+ImmoFynn AI,2026-11-21,f_snapshot_missing,1,http://web.archive.org/cdx/search/cdx?url=immofynn.ai&output=json&limit=-1&fl=timestamp%2Coriginal%2Cstatuscode&filter=statuscode%3A200&to=20261120&from=1996,,2026-11-20T23:36:01Z
+ImmoFynn AI,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=immofynn.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:36:02Z
+ImmoFynn AI,2026-11-21,f_gh_org,ImmoFynn-AI (matched by name),https://api.github.com/search/users?q=ImmoFynn+AI+type%3Aorg,,2026-11-20T23:40:43Z
+ImmoFynn AI,2026-11-21,f_gh_created,2026-07-28,https://api.github.com/users/ImmoFynn-AI,2026-07-28T13:45:04Z,2026-11-20T23:40:44Z
+ImmoFynn AI,2026-11-21,f_gh_public_repos_before,0,https://api.github.com/orgs/ImmoFynn-AI/repos?per_page=100,,2026-11-20T23:40:45Z
+AI Data Defense,2026-11-21,f_domain,aidatadefense.com,https://aidatadefense.com/,,2026-11-20T23:39:38Z
+AI Data Defense,2026-11-21,wb_first_capture_any,2025-01-21,http://web.archive.org/cdx/search/cdx?url=aidatadefense.com&output=json&limit=1&fl=timestamp&from=1996,20250121125046,2026-11-20T23:36:29Z
+AI Data Defense,2026-11-21,f_first_capture,2025-01-21,http://web.archive.org/cdx/search/cdx?url=aidatadefense.com&output=json&limit=1&fl=timestamp&from=1996,20250121125046,2026-11-20T23:36:29Z
+AI Data Defense,2026-11-21,f_age_months,22,http://web.archive.org/cdx/search/cdx?url=aidatadefense.com&output=json&limit=1&fl=timestamp&from=1996,20250121125046,2026-11-20T23:36:29Z
+AI Data Defense,2026-11-21,f_snapshot_date,2026-07-18,http://web.archive.org/web/20260718062452id_/https://aidatadefense.com/,20260718062452,2026-11-20T23:36:30Z
+AI Data Defense,2026-11-21,f_impressum,0,http://web.archive.org/web/20260718062452id_/https://aidatadefense.com/,20260718062452,2026-11-20T23:36:30Z
+AI Data Defense,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20260718062452id_/https://aidatadefense.com/,20260718062452,2026-11-20T23:36:30Z
+AI Data Defense,2026-11-21,f_waitlist,0,http://web.archive.org/web/20260718062452id_/https://aidatadefense.com/,20260718062452,2026-11-20T23:36:30Z
+AI Data Defense,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20260718062452id_/https://aidatadefense.com/,20260718062452,2026-11-20T23:36:30Z
+AI Data Defense,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20260718062452id_/https://aidatadefense.com/,20260718062452,2026-11-20T23:36:30Z
+AI Data Defense,2026-11-21,f_legal_entity,,http://web.archive.org/web/20260718062452id_/https://aidatadefense.com/,20260718062452,2026-11-20T23:36:30Z
+AI Data Defense,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20260718062452id_/https://aidatadefense.com/,20260718062452,2026-11-20T23:36:30Z
+AI Data Defense,2026-11-21,f_description_text,0 chars,http://web.archive.org/web/20260718062452id_/https://aidatadefense.com/,20260718062452,2026-11-20T23:36:30Z
+AI Data Defense,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=aidatadefense.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:36:31Z
+AI Data Defense,2026-11-21,f_gh_org,AI-Data-Defense (matched by name),https://api.github.com/search/users?q=AI+Data+Defense+type%3Aorg,,2026-11-20T23:41:26Z
+AI Data Defense,2026-11-21,f_gh_created,2025-05-16,https://api.github.com/users/AI-Data-Defense,2025-05-16T19:35:57Z,2026-11-20T23:41:27Z
+AI Data Defense,2026-11-21,f_gh_public_repos_before,1,https://api.github.com/orgs/AI-Data-Defense/repos?per_page=100,,2026-11-20T23:41:28Z
+AI Data Defense,2026-11-21,f_gh_commit_weeks_active,0 (repo ai-chatbot-public),https://api.github.com/repos/AI-Data-Defense/ai-chatbot-public/commits?since=2026-09-26T00%3A00%3A00Z&until=2026-11-21T00%3A00%3A00Z&per_page=100,,2026-11-20T23:41:30Z
+Rhesis AI,2026-11-21,f_domain,rhesis.ai,https://www.rhesis.ai/,,2026-11-20T23:40:09Z
+Rhesis AI,2026-11-21,wb_first_capture_any,2024-05-28,http://web.archive.org/cdx/search/cdx?url=rhesis.ai&output=json&limit=1&fl=timestamp&from=1996,20240528171247,2026-11-20T23:37:03Z
+Rhesis AI,2026-11-21,f_first_capture,2024-05-28,http://web.archive.org/cdx/search/cdx?url=rhesis.ai&output=json&limit=1&fl=timestamp&from=1996,20240528171247,2026-11-20T23:37:03Z
+Rhesis AI,2026-11-21,f_age_months,29,http://web.archive.org/cdx/search/cdx?url=rhesis.ai&output=json&limit=1&fl=timestamp&from=1996,20240528171247,2026-11-20T23:37:03Z
+Rhesis AI,2026-11-21,f_snapshot_date,2026-10-08,http://web.archive.org/web/20261008232909id_/https://rhesis.ai/,20261008232909,2026-11-20T23:37:08Z
+Rhesis AI,2026-11-21,f_impressum,0,http://web.archive.org/web/20261008232909id_/https://rhesis.ai/,20261008232909,2026-11-20T23:37:08Z
+Rhesis AI,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20261008232909id_/https://rhesis.ai/,20261008232909,2026-11-20T23:37:08Z
+Rhesis AI,2026-11-21,f_waitlist,0,http://web.archive.org/web/20261008232909id_/https://rhesis.ai/,20261008232909,2026-11-20T23:37:08Z
+Rhesis AI,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20261008232909id_/https://rhesis.ai/,20261008232909,2026-11-20T23:37:08Z
+Rhesis AI,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20261008232909id_/https://rhesis.ai/,20261008232909,2026-11-20T23:37:08Z
+Rhesis AI,2026-11-21,f_legal_entity,,http://web.archive.org/web/20261008232909id_/https://rhesis.ai/,20261008232909,2026-11-20T23:37:08Z
+Rhesis AI,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20261008232909id_/https://rhesis.ai/,20261008232909,2026-11-20T23:37:08Z
+Rhesis AI,2026-11-21,f_description_text,207 chars,http://web.archive.org/web/20261008232909id_/https://rhesis.ai/,20261008232909,2026-11-20T23:37:08Z
+Rhesis AI,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=rhesis.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:37:09Z
+Rhesis AI,2026-11-21,f_gh_org,rhesis-ai (matched by name),https://api.github.com/search/users?q=Rhesis+AI+type%3Aorg,,2026-11-20T23:41:58Z
+Rhesis AI,2026-11-21,f_gh_created,2024-04-28,https://api.github.com/users/rhesis-ai,2024-04-28T10:52:39Z,2026-11-20T23:41:59Z
+Rhesis AI,2026-11-21,f_gh_public_repos_before,6,https://api.github.com/orgs/rhesis-ai/repos?per_page=100,,2026-11-20T23:42:00Z
+Rhesis AI,2026-11-21,f_gh_commit_weeks_active,2 (repo rhesis),https://api.github.com/repos/rhesis-ai/rhesis/commits?since=2026-09-26T00%3A00%3A00Z&until=2026-11-21T00%3A00%3A00Z&per_page=100,,2026-11-20T23:42:01Z
+AI Recruiter,2026-11-21,f_domain,ai-recruiter.com,https://www.ai-recruiter.com/,,2026-11-20T23:40:13Z
+AI Recruiter,2026-11-21,wb_first_capture_any,2021-11-25,http://web.archive.org/cdx/search/cdx?url=ai-recruiter.com&output=json&limit=1&fl=timestamp&from=1996,20211125191013,2026-11-20T23:37:24Z
+AI Recruiter,2026-11-21,f_first_capture,2021-11-25,http://web.archive.org/cdx/search/cdx?url=ai-recruiter.com&output=json&limit=1&fl=timestamp&from=1996,20211125191013,2026-11-20T23:37:24Z
+AI Recruiter,2026-11-21,f_age_months,59,http://web.archive.org/cdx/search/cdx?url=ai-recruiter.com&output=json&limit=1&fl=timestamp&from=1996,20211125191013,2026-11-20T23:37:24Z
+AI Recruiter,2026-11-21,f_snapshot_date,2023-05-22,http://web.archive.org/web/20230522192251id_/http://ai-recruiter.com/,20230522192251,2026-11-20T23:37:28Z
+AI Recruiter,2026-11-21,f_impressum,0,http://web.archive.org/web/20230522192251id_/http://ai-recruiter.com/,20230522192251,2026-11-20T23:37:28Z
+AI Recruiter,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20230522192251id_/http://ai-recruiter.com/,20230522192251,2026-11-20T23:37:28Z
+AI Recruiter,2026-11-21,f_waitlist,0,http://web.archive.org/web/20230522192251id_/http://ai-recruiter.com/,20230522192251,2026-11-20T23:37:28Z
+AI Recruiter,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20230522192251id_/http://ai-recruiter.com/,20230522192251,2026-11-20T23:37:28Z
+AI Recruiter,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20230522192251id_/http://ai-recruiter.com/,20230522192251,2026-11-20T23:37:28Z
+AI Recruiter,2026-11-21,f_legal_entity,,http://web.archive.org/web/20230522192251id_/http://ai-recruiter.com/,20230522192251,2026-11-20T23:37:28Z
+AI Recruiter,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20230522192251id_/http://ai-recruiter.com/,20230522192251,2026-11-20T23:37:28Z
+AI Recruiter,2026-11-21,f_description_text,0 chars,http://web.archive.org/web/20230522192251id_/http://ai-recruiter.com/,20230522192251,2026-11-20T23:37:28Z
+AI Recruiter,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=ai-recruiter.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:37:29Z
+AI Recruiter,2026-11-21,f_gh_org,AI-Recruiter (matched by name),https://api.github.com/search/users?q=AI+Recruiter+type%3Aorg,,2026-11-20T23:41:31Z
+AI Recruiter,2026-11-21,f_gh_created,2025-06-21,https://api.github.com/users/AI-Recruiter,2025-06-21T14:02:46Z,2026-11-20T23:41:32Z
+AI Recruiter,2026-11-21,f_gh_public_repos_before,0,https://api.github.com/orgs/AI-Recruiter/repos?per_page=100,,2026-11-20T23:41:33Z
+AI SLEIPNIR,2026-11-21,f_domain,aisleipnir.com,https://www.aisleipnir.com/,,2026-11-20T23:40:37Z
+AI SLEIPNIR,2026-11-21,wb_first_capture_any,2025-02-24,http://web.archive.org/cdx/search/cdx?url=aisleipnir.com&output=json&limit=1&fl=timestamp&from=1996,20250224224439,2026-11-20T23:37:25Z
+AI SLEIPNIR,2026-11-21,f_first_capture,2025-02-24,http://web.archive.org/cdx/search/cdx?url=aisleipnir.com&output=json&limit=1&fl=timestamp&from=1996,20250224224439,2026-11-20T23:37:25Z
+AI SLEIPNIR,2026-11-21,f_age_months,20,http://web.archive.org/cdx/search/cdx?url=aisleipnir.com&output=json&limit=1&fl=timestamp&from=1996,20250224224439,2026-11-20T23:37:25Z
+AI SLEIPNIR,2026-11-21,f_snapshot_date,2026-10-15,http://web.archive.org/web/20261015213813id_/https://aisleipnir.com/,20261015213813,2026-11-20T23:37:29Z
+AI SLEIPNIR,2026-11-21,f_impressum,0,http://web.archive.org/web/20261015213813id_/https://aisleipnir.com/,20261015213813,2026-11-20T23:37:29Z
+AI SLEIPNIR,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20261015213813id_/https://aisleipnir.com/,20261015213813,2026-11-20T23:37:29Z
+AI SLEIPNIR,2026-11-21,f_waitlist,0,http://web.archive.org/web/20261015213813id_/https://aisleipnir.com/,20261015213813,2026-11-20T23:37:29Z
+AI SLEIPNIR,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20261015213813id_/https://aisleipnir.com/,20261015213813,2026-11-20T23:37:29Z
+AI SLEIPNIR,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20261015213813id_/https://aisleipnir.com/,20261015213813,2026-11-20T23:37:29Z
+AI SLEIPNIR,2026-11-21,f_legal_entity,,http://web.archive.org/web/20261015213813id_/https://aisleipnir.com/,20261015213813,2026-11-20T23:37:29Z
+AI SLEIPNIR,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20261015213813id_/https://aisleipnir.com/,20261015213813,2026-11-20T23:37:29Z
+AI SLEIPNIR,2026-11-21,f_description_text,0 chars,http://web.archive.org/web/20261015213813id_/https://aisleipnir.com/,20261015213813,2026-11-20T23:37:29Z
+AI SLEIPNIR,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=aisleipnir.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:37:29Z
+turnus.ai,2026-11-21,f_domain,turnus.ai,https://turnus.ai/,,2026-11-20T23:40:45Z
+turnus.ai,2026-11-21,wb_first_capture_any,2024-09-16,http://web.archive.org/cdx/search/cdx?url=turnus.ai&output=json&limit=1&fl=timestamp&from=1996,20240916092121,2026-11-20T23:40:46Z
+turnus.ai,2026-11-21,f_first_capture,2024-09-16,http://web.archive.org/cdx/search/cdx?url=turnus.ai&output=json&limit=1&fl=timestamp&from=1996,20240916092121,2026-11-20T23:40:46Z
+turnus.ai,2026-11-21,f_age_months,26,http://web.archive.org/cdx/search/cdx?url=turnus.ai&output=json&limit=1&fl=timestamp&from=1996,20240916092121,2026-11-20T23:40:46Z
+turnus.ai,2026-11-21,f_snapshot_date,2026-08-13,http://web.archive.org/web/20260813022648id_/https://turnus.ai/,20260813022648,2026-11-20T23:40:48Z
+turnus.ai,2026-11-21,f_impressum,1 (Impressum),http://web.archive.org/web/20260813022648id_/https://turnus.ai/,20260813022648,2026-11-20T23:40:48Z
+turnus.ai,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20260813022648id_/https://turnus.ai/,20260813022648,2026-11-20T23:40:48Z
+turnus.ai,2026-11-21,f_waitlist,0,http://web.archive.org/web/20260813022648id_/https://turnus.ai/,20260813022648,2026-11-20T23:40:48Z
+turnus.ai,2026-11-21,f_customer_logos,1 (Kunden),http://web.archive.org/web/20260813022648id_/https://turnus.ai/,20260813022648,2026-11-20T23:40:48Z
+turnus.ai,2026-11-21,f_jobs_page,1 (Karriere),http://web.archive.org/web/20260813022648id_/https://turnus.ai/,20260813022648,2026-11-20T23:40:48Z
+turnus.ai,2026-11-21,f_legal_entity,e.V.,http://web.archive.org/web/20260813022648id_/https://turnus.ai/,20260813022648,2026-11-20T23:40:48Z
+turnus.ai,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20260813022648id_/https://turnus.ai/,20260813022648,2026-11-20T23:40:48Z
+turnus.ai,2026-11-21,f_description_text,1500 chars,http://web.archive.org/web/20260813022648id_/https://turnus.ai/,20260813022648,2026-11-20T23:40:48Z
+turnus.ai,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=turnus.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:40:49Z
+turnus.ai,2026-11-21,f_gh_org,turnus-ai (matched by name),https://api.github.com/search/users?q=turnus.ai+type%3Aorg,,2026-11-20T23:43:13Z
+turnus.ai,2026-11-21,f_gh_created,2024-09-23,https://api.github.com/users/turnus-ai,2024-09-23T16:48:05Z,2026-11-20T23:43:12Z
+turnus.ai,2026-11-21,f_gh_public_repos_before,1,https://api.github.com/orgs/turnus-ai/repos?per_page=100,,2026-11-20T23:43:14Z
+turnus.ai,2026-11-21,f_gh_commit_weeks_active,0 (repo turnus-superglue),https://api.github.com/repos/turnus-ai/turnus-superglue/commits?since=2026-09-26T00%3A00%3A00Z&until=2026-11-21T00%3A00%3A00Z&per_page=100,,2026-11-20T23:43:15Z
+Airgonomics.ai,2026-11-21,f_domain,airgonomics.ai,https://airgonomics.ai/,,2026-11-20T23:41:30Z
+Airgonomics.ai,2026-11-21,wb_first_capture_any,2024-01-29,http://web.archive.org/cdx/search/cdx?url=airgonomics.ai&output=json&limit=1&fl=timestamp&from=1996,20240129180541,2026-11-20T23:41:30Z
+Airgonomics.ai,2026-11-21,f_first_capture,2024-01-29,http://web.archive.org/cdx/search/cdx?url=airgonomics.ai&output=json&limit=1&fl=timestamp&from=1996,20240129180541,2026-11-20T23:41:30Z
+Airgonomics.ai,2026-11-21,f_age_months,33,http://web.archive.org/cdx/search/cdx?url=airgonomics.ai&output=json&limit=1&fl=timestamp&from=1996,20240129180541,2026-11-20T23:41:30Z
+Airgonomics.ai,2026-11-21,f_snapshot_date,2026-07-20,http://web.archive.org/web/20260720034201id_/https://airgonomics.ai/,20260720034201,2026-11-20T23:41:33Z
+Airgonomics.ai,2026-11-21,f_impressum,1 (IMPRESSUM),http://web.archive.org/web/20260720034201id_/https://airgonomics.ai/,20260720034201,2026-11-20T23:41:33Z
+Airgonomics.ai,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20260720034201id_/https://airgonomics.ai/,20260720034201,2026-11-20T23:41:33Z
+Airgonomics.ai,2026-11-21,f_waitlist,0,http://web.archive.org/web/20260720034201id_/https://airgonomics.ai/,20260720034201,2026-11-20T23:41:33Z
+Airgonomics.ai,2026-11-21,f_customer_logos,1 (used by),http://web.archive.org/web/20260720034201id_/https://airgonomics.ai/,20260720034201,2026-11-20T23:41:33Z
+Airgonomics.ai,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20260720034201id_/https://airgonomics.ai/,20260720034201,2026-11-20T23:41:33Z
+Airgonomics.ai,2026-11-21,f_legal_entity,,http://web.archive.org/web/20260720034201id_/https://airgonomics.ai/,20260720034201,2026-11-20T23:41:33Z
+Airgonomics.ai,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20260720034201id_/https://airgonomics.ai/,20260720034201,2026-11-20T23:41:33Z
+Airgonomics.ai,2026-11-21,f_description_text,1500 chars,http://web.archive.org/web/20260720034201id_/https://airgonomics.ai/,20260720034201,2026-11-20T23:41:33Z
+Airgonomics.ai,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=airgonomics.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:41:33Z
+Practible AI,2026-11-21,f_domain,practible.ai,https://www.practible.ai/,,2026-11-20T23:41:33Z
+Practible AI,2026-11-21,wb_first_capture_any,2026-03-08,http://web.archive.org/cdx/search/cdx?url=practible.ai&output=json&limit=1&fl=timestamp&from=1996,20260308140459,2026-11-20T23:41:36Z
+Practible AI,2026-11-21,f_first_capture,2026-03-08,http://web.archive.org/cdx/search/cdx?url=practible.ai&output=json&limit=1&fl=timestamp&from=1996,20260308140459,2026-11-20T23:41:36Z
+Practible AI,2026-11-21,f_age_months,8,http://web.archive.org/cdx/search/cdx?url=practible.ai&output=json&limit=1&fl=timestamp&from=1996,20260308140459,2026-11-20T23:41:36Z
+Practible AI,2026-11-21,f_snapshot_date,2026-07-19,http://web.archive.org/web/20260719032633id_/https://www.practible.ai/,20260719032633,2026-11-20T23:41:38Z
+Practible AI,2026-11-21,f_impressum,0,http://web.archive.org/web/20260719032633id_/https://www.practible.ai/,20260719032633,2026-11-20T23:41:38Z
+Practible AI,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20260719032633id_/https://www.practible.ai/,20260719032633,2026-11-20T23:41:38Z
+Practible AI,2026-11-21,f_waitlist,0,http://web.archive.org/web/20260719032633id_/https://www.practible.ai/,20260719032633,2026-11-20T23:41:38Z
+Practible AI,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20260719032633id_/https://www.practible.ai/,20260719032633,2026-11-20T23:41:38Z
+Practible AI,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20260719032633id_/https://www.practible.ai/,20260719032633,2026-11-20T23:41:38Z
+Practible AI,2026-11-21,f_legal_entity,,http://web.archive.org/web/20260719032633id_/https://www.practible.ai/,20260719032633,2026-11-20T23:41:38Z
+Practible AI,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20260719032633id_/https://www.practible.ai/,20260719032633,2026-11-20T23:41:38Z
+Practible AI,2026-11-21,f_description_text,0 chars,http://web.archive.org/web/20260719032633id_/https://www.practible.ai/,20260719032633,2026-11-20T23:41:38Z
+Practible AI,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=practible.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:41:38Z
+AI-VORTEX,2026-11-21,f_domain,ai-vortex.de,https://ai-vortex.de/,,2026-11-20T23:42:01Z
+AI-VORTEX,2026-11-21,wb_first_capture_any,2025-09-11,http://web.archive.org/cdx/search/cdx?url=ai-vortex.de&output=json&limit=1&fl=timestamp&from=1996,20250911175917,2026-11-20T23:42:02Z
+AI-VORTEX,2026-11-21,f_first_capture,2025-09-11,http://web.archive.org/cdx/search/cdx?url=ai-vortex.de&output=json&limit=1&fl=timestamp&from=1996,20250911175917,2026-11-20T23:42:02Z
+AI-VORTEX,2026-11-21,f_age_months,14,http://web.archive.org/cdx/search/cdx?url=ai-vortex.de&output=json&limit=1&fl=timestamp&from=1996,20250911175917,2026-11-20T23:42:02Z
+AI-VORTEX,2026-11-21,f_snapshot_date,2025-09-11,http://web.archive.org/web/20250911175917id_/https://www.ai-vortex.de/,20250911175917,2026-11-20T23:42:06Z
+AI-VORTEX,2026-11-21,f_impressum,0,http://web.archive.org/web/20250911175917id_/https://www.ai-vortex.de/,20250911175917,2026-11-20T23:42:06Z
+AI-VORTEX,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20250911175917id_/https://www.ai-vortex.de/,20250911175917,2026-11-20T23:42:06Z
+AI-VORTEX,2026-11-21,f_waitlist,0,http://web.archive.org/web/20250911175917id_/https://www.ai-vortex.de/,20250911175917,2026-11-20T23:42:06Z
+AI-VORTEX,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20250911175917id_/https://www.ai-vortex.de/,20250911175917,2026-11-20T23:42:06Z
+AI-VORTEX,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20250911175917id_/https://www.ai-vortex.de/,20250911175917,2026-11-20T23:42:06Z
+AI-VORTEX,2026-11-21,f_legal_entity,,http://web.archive.org/web/20250911175917id_/https://www.ai-vortex.de/,20250911175917,2026-11-20T23:42:06Z
+AI-VORTEX,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20250911175917id_/https://www.ai-vortex.de/,20250911175917,2026-11-20T23:42:06Z
+AI-VORTEX,2026-11-21,f_description_text,481 chars,http://web.archive.org/web/20250911175917id_/https://www.ai-vortex.de/,20250911175917,2026-11-20T23:42:06Z
+AI-VORTEX,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=ai-vortex.de&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:42:07Z
+phablo.ai,2026-11-21,f_domain,phablo.ai,https://phablo.ai/,,2026-11-20T23:42:31Z
+phablo.ai,2026-11-21,wb_first_capture_any,2024-08-14,http://web.archive.org/cdx/search/cdx?url=phablo.ai&output=json&limit=1&fl=timestamp&from=1996,20240814222323,2026-11-20T23:42:31Z
+phablo.ai,2026-11-21,f_first_capture,2024-08-14,http://web.archive.org/cdx/search/cdx?url=phablo.ai&output=json&limit=1&fl=timestamp&from=1996,20240814222323,2026-11-20T23:42:31Z
+phablo.ai,2026-11-21,f_age_months,27,http://web.archive.org/cdx/search/cdx?url=phablo.ai&output=json&limit=1&fl=timestamp&from=1996,20240814222323,2026-11-20T23:42:31Z
+phablo.ai,2026-11-21,f_snapshot_date,2026-08-11,http://web.archive.org/web/20260811172222id_/https://www.phablo.ai/,20260811172222,2026-11-20T23:42:34Z
+phablo.ai,2026-11-21,f_impressum,0,http://web.archive.org/web/20260811172222id_/https://www.phablo.ai/,20260811172222,2026-11-20T23:42:34Z
+phablo.ai,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20260811172222id_/https://www.phablo.ai/,20260811172222,2026-11-20T23:42:34Z
+phablo.ai,2026-11-21,f_waitlist,0,http://web.archive.org/web/20260811172222id_/https://www.phablo.ai/,20260811172222,2026-11-20T23:42:34Z
+phablo.ai,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20260811172222id_/https://www.phablo.ai/,20260811172222,2026-11-20T23:42:34Z
+phablo.ai,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20260811172222id_/https://www.phablo.ai/,20260811172222,2026-11-20T23:42:34Z
+phablo.ai,2026-11-21,f_legal_entity,,http://web.archive.org/web/20260811172222id_/https://www.phablo.ai/,20260811172222,2026-11-20T23:42:34Z
+phablo.ai,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20260811172222id_/https://www.phablo.ai/,20260811172222,2026-11-20T23:42:34Z
+phablo.ai,2026-11-21,f_description_text,1500 chars,http://web.archive.org/web/20260811172222id_/https://www.phablo.ai/,20260811172222,2026-11-20T23:42:34Z
+phablo.ai,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=phablo.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:42:34Z
+phablo.ai,2026-11-21,f_gh_org,phablo-ai (matched by name),https://api.github.com/search/users?q=phablo.ai+type%3Aorg,,2026-11-20T23:44:20Z
+phablo.ai,2026-11-21,f_gh_created,2025-03-10,https://api.github.com/users/phablo-ai,2025-03-10T09:51:46Z,2026-11-20T23:44:19Z
+phablo.ai,2026-11-21,f_gh_public_repos_before,0,https://api.github.com/orgs/phablo-ai/repos?per_page=100,,2026-11-20T23:44:21Z
+VPATH AI,2026-11-21,f_domain,vpathai.com,https://www.vpathai.com/,,2026-11-20T23:42:44Z
+VPATH AI,2026-11-21,wb_first_capture_any,2025-04-06,http://web.archive.org/cdx/search/cdx?url=vpathai.com&output=json&limit=1&fl=timestamp&from=1996,20250406152453,2026-11-20T23:42:45Z
+VPATH AI,2026-11-21,f_first_capture,2025-04-06,http://web.archive.org/cdx/search/cdx?url=vpathai.com&output=json&limit=1&fl=timestamp&from=1996,20250406152453,2026-11-20T23:42:45Z
+VPATH AI,2026-11-21,f_age_months,19,http://web.archive.org/cdx/search/cdx?url=vpathai.com&output=json&limit=1&fl=timestamp&from=1996,20250406152453,2026-11-20T23:42:45Z
+VPATH AI,2026-11-21,f_snapshot_date,2026-06-14,http://web.archive.org/web/20260614095327id_/https://vpathai.com/,20260614095327,2026-11-20T23:42:48Z
+VPATH AI,2026-11-21,f_impressum,1 (Impressum),http://web.archive.org/web/20260614095327id_/https://vpathai.com/,20260614095327,2026-11-20T23:42:48Z
+VPATH AI,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20260614095327id_/https://vpathai.com/,20260614095327,2026-11-20T23:42:48Z
+VPATH AI,2026-11-21,f_waitlist,0,http://web.archive.org/web/20260614095327id_/https://vpathai.com/,20260614095327,2026-11-20T23:42:48Z
+VPATH AI,2026-11-21,f_customer_logos,1 (vertrauen uns),http://web.archive.org/web/20260614095327id_/https://vpathai.com/,20260614095327,2026-11-20T23:42:48Z
+VPATH AI,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20260614095327id_/https://vpathai.com/,20260614095327,2026-11-20T23:42:48Z
+VPATH AI,2026-11-21,f_legal_entity,GmbH,http://web.archive.org/web/20260614095327id_/https://vpathai.com/,20260614095327,2026-11-20T23:42:48Z
+VPATH AI,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20260614095327id_/https://vpathai.com/,20260614095327,2026-11-20T23:42:48Z
+VPATH AI,2026-11-21,f_description_text,1500 chars,http://web.archive.org/web/20260614095327id_/https://vpathai.com/,20260614095327,2026-11-20T23:42:48Z
+VPATH AI,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=vpathai.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:42:48Z
+POMA AI,2026-11-21,f_domain,poma-ai.com,https://poma-ai.com/,,2026-11-20T23:43:15Z
+POMA AI,2026-11-21,wb_first_capture_any,2025-07-13,http://web.archive.org/cdx/search/cdx?url=poma-ai.com&output=json&limit=1&fl=timestamp&from=1996,20250713180609,2026-11-20T23:43:16Z
+POMA AI,2026-11-21,f_first_capture,2025-07-13,http://web.archive.org/cdx/search/cdx?url=poma-ai.com&output=json&limit=1&fl=timestamp&from=1996,20250713180609,2026-11-20T23:43:16Z
+POMA AI,2026-11-21,f_age_months,16,http://web.archive.org/cdx/search/cdx?url=poma-ai.com&output=json&limit=1&fl=timestamp&from=1996,20250713180609,2026-11-20T23:43:16Z
+POMA AI,2026-11-21,f_snapshot_date,2026-07-14,http://web.archive.org/web/20260714135951id_/https://www.poma-ai.com/,20260714135951,2026-11-20T23:43:23Z
+POMA AI,2026-11-21,f_impressum,1 (Imprint),http://web.archive.org/web/20260714135951id_/https://www.poma-ai.com/,20260714135951,2026-11-20T23:43:23Z
+POMA AI,2026-11-21,f_pricing_page,1 (Pricing),http://web.archive.org/web/20260714135951id_/https://www.poma-ai.com/,20260714135951,2026-11-20T23:43:23Z
+POMA AI,2026-11-21,f_waitlist,0,http://web.archive.org/web/20260714135951id_/https://www.poma-ai.com/,20260714135951,2026-11-20T23:43:23Z
+POMA AI,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20260714135951id_/https://www.poma-ai.com/,20260714135951,2026-11-20T23:43:23Z
+POMA AI,2026-11-21,f_jobs_page,0,http://web.archive.org/web/20260714135951id_/https://www.poma-ai.com/,20260714135951,2026-11-20T23:43:23Z
+POMA AI,2026-11-21,f_legal_entity,,http://web.archive.org/web/20260714135951id_/https://www.poma-ai.com/,20260714135951,2026-11-20T23:43:23Z
+POMA AI,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20260714135951id_/https://www.poma-ai.com/,20260714135951,2026-11-20T23:43:23Z
+POMA AI,2026-11-21,f_description_text,1500 chars,http://web.archive.org/web/20260714135951id_/https://www.poma-ai.com/,20260714135951,2026-11-20T23:43:23Z
+POMA AI,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=poma-ai.com&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:43:24Z
+POMA AI,2026-11-21,f_gh_org,poma-ai (matched by name),https://api.github.com/search/users?q=POMA+AI+type%3Aorg,,2026-11-20T23:45:11Z
+POMA AI,2026-11-21,f_gh_created,2023-10-24,https://api.github.com/users/poma-ai,2023-10-24T22:56:21Z,2026-11-20T23:45:12Z
+POMA AI,2026-11-21,f_gh_public_repos_before,14,https://api.github.com/orgs/poma-ai/repos?per_page=100,,2026-11-20T23:45:13Z
+POMA AI,2026-11-21,f_gh_commit_weeks_active,6 (repo megavibe),https://api.github.com/repos/poma-ai/megavibe/commits?since=2026-09-26T00%3A00%3A00Z&until=2026-11-21T00%3A00%3A00Z&per_page=100,,2026-11-20T23:45:15Z
+Tabularis.AI,2026-11-21,f_domain,tabularis.ai,https://www.tabularis.ai/,,2026-11-20T23:43:26Z
+Tabularis.AI,2026-11-21,wb_first_capture_any,2024-03-02,http://web.archive.org/cdx/search/cdx?url=tabularis.ai&output=json&limit=1&fl=timestamp&from=1996,20240302170848,2026-11-20T23:43:40Z
+Tabularis.AI,2026-11-21,f_first_capture,2024-03-02,http://web.archive.org/cdx/search/cdx?url=tabularis.ai&output=json&limit=1&fl=timestamp&from=1996,20240302170848,2026-11-20T23:43:40Z
+Tabularis.AI,2026-11-21,f_age_months,32,http://web.archive.org/cdx/search/cdx?url=tabularis.ai&output=json&limit=1&fl=timestamp&from=1996,20240302170848,2026-11-20T23:43:40Z
+Tabularis.AI,2026-11-21,f_snapshot_date,2026-08-07,http://web.archive.org/web/20260807112726id_/https://www.tabularis.ai/,20260807112726,2026-11-20T23:43:42Z
+Tabularis.AI,2026-11-21,f_impressum,1 (Impressum),http://web.archive.org/web/20260807112726id_/https://www.tabularis.ai/,20260807112726,2026-11-20T23:43:42Z
+Tabularis.AI,2026-11-21,f_pricing_page,0,http://web.archive.org/web/20260807112726id_/https://www.tabularis.ai/,20260807112726,2026-11-20T23:43:42Z
+Tabularis.AI,2026-11-21,f_waitlist,0,http://web.archive.org/web/20260807112726id_/https://www.tabularis.ai/,20260807112726,2026-11-20T23:43:42Z
+Tabularis.AI,2026-11-21,f_customer_logos,1 (Trusted by),http://web.archive.org/web/20260807112726id_/https://www.tabularis.ai/,20260807112726,2026-11-20T23:43:42Z
+Tabularis.AI,2026-11-21,f_jobs_page,1 (Careers),http://web.archive.org/web/20260807112726id_/https://www.tabularis.ai/,20260807112726,2026-11-20T23:43:42Z
+Tabularis.AI,2026-11-21,f_legal_entity,,http://web.archive.org/web/20260807112726id_/https://www.tabularis.ai/,20260807112726,2026-11-20T23:43:42Z
+Tabularis.AI,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20260807112726id_/https://www.tabularis.ai/,20260807112726,2026-11-20T23:43:42Z
+Tabularis.AI,2026-11-21,f_description_text,1500 chars,http://web.archive.org/web/20260807112726id_/https://www.tabularis.ai/,20260807112726,2026-11-20T23:43:42Z
+Tabularis.AI,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=tabularis.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:43:43Z
+Narratic AI,2026-11-21,f_domain,narratic.ai,https://narratic.ai/,,2026-11-20T23:43:55Z
+Narratic AI,2026-11-21,wb_first_capture_any,2023-06-08,http://web.archive.org/cdx/search/cdx?url=narratic.ai&output=json&limit=1&fl=timestamp&from=1996,20230608053036,2026-11-20T23:44:00Z
+Narratic AI,2026-11-21,f_first_capture,2023-06-08,http://web.archive.org/cdx/search/cdx?url=narratic.ai&output=json&limit=1&fl=timestamp&from=1996,20230608053036,2026-11-20T23:44:00Z
+Narratic AI,2026-11-21,f_age_months,41,http://web.archive.org/cdx/search/cdx?url=narratic.ai&output=json&limit=1&fl=timestamp&from=1996,20230608053036,2026-11-20T23:44:00Z
+Narratic AI,2026-11-21,f_snapshot_date,2025-10-11,http://web.archive.org/web/20251011191257id_/https://www.narratic.ai/,20251011191257,2026-11-20T23:44:02Z
+Narratic AI,2026-11-21,f_impressum,1 (Imprint),http://web.archive.org/web/20251011191257id_/https://www.narratic.ai/,20251011191257,2026-11-20T23:44:02Z
+Narratic AI,2026-11-21,f_pricing_page,1 (plans),http://web.archive.org/web/20251011191257id_/https://www.narratic.ai/,20251011191257,2026-11-20T23:44:02Z
+Narratic AI,2026-11-21,f_waitlist,0,http://web.archive.org/web/20251011191257id_/https://www.narratic.ai/,20251011191257,2026-11-20T23:44:02Z
+Narratic AI,2026-11-21,f_customer_logos,0,http://web.archive.org/web/20251011191257id_/https://www.narratic.ai/,20251011191257,2026-11-20T23:44:02Z
+Narratic AI,2026-11-21,f_jobs_page,1 (Careers),http://web.archive.org/web/20251011191257id_/https://www.narratic.ai/,20251011191257,2026-11-20T23:44:02Z
+Narratic AI,2026-11-21,f_legal_entity,,http://web.archive.org/web/20251011191257id_/https://www.narratic.ai/,20251011191257,2026-11-20T23:44:02Z
+Narratic AI,2026-11-21,f_gmbh_ig,0,http://web.archive.org/web/20251011191257id_/https://www.narratic.ai/,20251011191257,2026-11-20T23:44:02Z
+Narratic AI,2026-11-21,f_description_text,1500 chars,http://web.archive.org/web/20251011191257id_/https://www.narratic.ai/,20251011191257,2026-11-20T23:44:02Z
+Narratic AI,2026-11-21,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=narratic.ai&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1795219200&hitsPerPage=100,,2026-11-20T23:44:03Z
+Narratic AI,2026-11-21,f_certs_before,223,https://crt.sh/?q=%25.narratic.ai&output=json,,2026-11-20T23:45:49Z
+Narratic AI,2026-11-21,f_first_cert_date,2023-05-31,https://crt.sh/?id=9533316858,,2026-11-20T23:46:01Z
+Narratic AI,2026-11-21,f_product_live,1 (app.narratic.ai logged 2024-05-28),https://crt.sh/?id=13210445580,,2026-11-20T23:46:01Z

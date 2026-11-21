@@ -1,0 +1,8 @@
+SHARED RULES (read first). Working dir = backtest-data. Input list: raw/companies_all.csv (cid,name,domain,asof_date,set,cohort,known_founders): 205 backtest companies (set=backtest, as-of dates 2019-2025) + 20 live leads (set=live, as-of 2026-11-21 = today).
+- POINT IN TIME: for backtest rows, a fact only counts as 'before as-of' if its own date (filing date, publication date, archived snapshot date, role start date) is strictly before asof_date. Always record the date you used. Facts without a date: put them in a separate column, never in the before-as-of column.
+- Blank = unknown/not checked. 0 = checked and not found. Never guess. Record an evidence URL for every positive.
+- Python stdlib only for scripts; polite scraping (<=2 req/s per host, retries with backoff, User-Agent 'research script'), cache raw responses under raw/cache/<your_script_name>/. GITHUB_TOKEN may be in env: never print or write it.
+- Privacy: founder names and public professional facts only. No emails, phone numbers, addresses, birth dates or private social profiles in output files.
+- ONLY create/modify the files named in YOUR TASK below (plus your cache dir). Never edit backtest.csv, live_leads.csv, existing scripts, models/ or reports/.
+- Work fast: process companies in parallel threads where the source allows, skip a source after it blocks/fails 3 times and say so. Target finishing within 30 minutes. Write partial results to the output file as you go (so progress survives interruption).
+- At the end print: rows written, fill count per column, which sources worked/failed.

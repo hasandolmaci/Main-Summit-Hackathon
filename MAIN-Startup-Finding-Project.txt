@@ -1,0 +1,498 @@
+MAIN STARTUP FINDING PROJECT
+HTGF track: "Find the Founders Before Everyone Else"
+=====================================================================
+
+GOAL
+Find promising startups in Germany (70% of HTGF's deals; the rest of
+Europe is secondary) from the traces they leave BEFORE their first
+funding round, and walk in with one "best find".
+
+Judged on: lead quality, earliness, creativity of signals,
+technical execution, scalability.
+
+
+=====================================================================
+1. METRICS: HOW WE RATE A STARTUP
+=====================================================================
+
+STEP 1: GATES (a lead must pass every gate before it is scored)
+
+  Run the cheapest gates first. A lead stops at the first gate it
+  fails. If a gate can't decide, the lead goes to a human ("review")
+  instead of being thrown out.
+
+  GATE                  RULE                                  IF IT FAILS
+  --------------------  ------------------------------------  ------------
+  1. Not HTGF already   Company is not in HTGF's portfolio    excluded
+  2. Germany            German seat or operating base         moved to a
+                        (Impressum, register court, team);    separate
+                        a "GmbH i.G." with German founders    "Europe" list
+                        also counts
+  3. Alive              Not closed, insolvent, in             excluded
+                        liquidation, merged or acquired
+  4. Independent        Not a corporate's project or          excluded
+                        subsidiary (corporate owns >50%;      (25-50%:
+                        Impressum says "a company of X")      review)
+  5. Commercial         Not an e.V., gGmbH, foundation,       excluded
+                        student club or purely academic
+                        project with no plan to spin out
+  6. Investable sector  Not pure consulting, an agency,       excluded only
+                        retail without tech, real estate,     if clear;
+                        gambling or a crypto token            otherwise review
+  7. Not noise          Not a hobby, a student assignment,    excluded
+                        or open source with no company;
+                        not older than 3 years; active in
+                        the last 90 days
+  8. Not faked          No star bursts, stars from new        momentum set
+                        accounts or bought upvotes            to 0 + badge
+  9. Not funded         See the FUNDING CHECK below           excluded or
+                                                              review
+
+  Flags (not gates):
+  - More than 25 people        -> review (a sign of funding, but not proof)
+  - No contact or founder name -> score penalty
+  - No legal entity yet        -> score penalty (keep: these are the earliest leads!)
+  - Personal data: store only public business info about founders (GDPR)
+
+  Real example from our test: the UnternehmerTUM grant list includes
+  "Impetus Sailing Team", "WARR space labs", "TUM Carbon Removal
+  Initiative e.V." and "DASH e.V.". Gate 5 removes these.
+
+
+FUNDING CHECK: HOW WE ACTUALLY DO IT (all sources free)
+
+  Step 0  IDENTITY. Store legal name, brand names, domain, founders,
+          city and register number (HRB). Match on domain first;
+          a name alone is not enough (needs the same city or founder).
+
+  Step 1  BLACKLISTS (instant)
+          Scrape investor portfolios once: HTGF, First Momentum,
+          Antler, Merantix, UnternehmerTUM Funding, YC Europe.
+          Domain or name match = FUNDED (VC) or BACKED (accelerator).
+
+  Step 2  COMPANY WEBSITE (5-10 sec)
+          Crawl the home, about, team, press and investors pages
+          and the Impressum. Look for: "backed by", "funded by",
+          "investors", "pre-seed", "seed", "Finanzierungsrunde",
+          "Business Angel", plus investor logos (logos alone = review).
+
+  Step 3  NEWS (about 4 sec)
+          Google News RSS, in German and English:
+          https://news.google.com/rss/search?q="NAME"+(Finanzierung
+            OR Finanzierungsrunde OR raises OR funding OR seed
+            OR investor)&hl=de&gl=DE&ceid=DE:de
+          Also search the deutsche-startups.de, Tech.eu and
+          EU-Startups feeds we collect overnight.
+          Luna reads each article and returns: is it about this
+          company? event (priced round / angel / SAFE / grant / none),
+          investor, amount, date and an exact quote. A result whose
+          quote is not in the text is dropped.
+
+  Step 4  JOB ADS
+          Arbeitnow / Bundesagentur ad text containing "VC-backed",
+          "funded by" or "Seed-Finanzierung".
+
+  Step 5  REGISTRY (slow, HARD; only for the ~100 leads still in)
+          Handelsregister / Bundesanzeiger:
+          - a fund or investment company listed as a shareholder
+            (Gesellschafterliste)             -> FUNDED
+          - a capital increase, share capital well above 25,000 EUR,
+            or a large capital reserve in the accounts -> review
+            (suspicious, but not proof on its own)
+          If a CAPTCHA appears, stop and hand it to a human. Never
+          solve it.
+
+  Step 6  GRANTS
+          EXIST, SPRIND, EIC and university grant lists only give the
+          label GRANT-ONLY. They NEVER prove a company is unfunded.
+
+  Step 7  BY HAND (overnight, top ~20 only)
+          Crunchbase, Dealroom, LinkedIn and North Data in a browser.
+
+  DECISION RULES
+    FUNDED     one strong signal: portfolio match, OR an exact quote
+               about a priced or angel round from the company itself
+               or 2 independent news sources, OR an investor
+               shareholder in the register
+    BACKED     SAFE, convertible note, or an accelerator that takes equity
+    UNKNOWN    only weak signals, unclear identity, or a step failed
+               -> human review
+    GRANT-ONLY only grant evidence, all steps ran
+    CLEAN      all steps ran, nothing found
+               (= "nothing found", not "proven unfunded")
+
+  Every check is saved (query, link, quote, date) and shown on the
+  lead card. Time: about 20 seconds per company. 300 companies take
+  about 15 minutes with 8 parallel workers; the registry step runs
+  overnight for the survivors.
+
+  OUR PILOT TEST (8 teams from the UnternehmerTUM grant list)
+    CedarDB      -> FUNDED   (news: "sichert sich 5,3 Millionen Euro")
+    Avemoy       -> FUNDED   (news: million investment; also Austrian)
+    Spherecast   -> BACKED   (no news, but its website says
+                              "backed by y-combinator")
+    Holloid, Medicalytix, Puray, Olive Robotics, Roundpeg
+                 -> nothing found yet (registry + manual still needed)
+    Lessons: 3 of 8 "grant" teams were already funded, and each
+    check catches different companies, so we need all of them.
+
+  HOW WE TEST IT
+    - 40-50 German startups known to be funded: >= 90% must come out
+      FUNDED or BACKED, and none CLEAN.
+    - 30 hand-checked clean teams (EXIST, new 2026 companies): >= 85%
+      of CLEAN calls must be correct; UNKNOWN at most 25%.
+    - Tricky cases: same names ("Nova AI"), rebrands, founder holding
+      companies, grant-only teams.
+    - Labels are made by a teammate who did NOT write the rules.
+
+STEP 2: SCORE (0-100)
+
+  Team .............. 25   founders' relevant experience in this exact
+                           problem; how consistently they ship code
+  Product / tech .... 20   a real working product or model; is it live?
+  Traction .......... 15   star, Show HN and Hugging Face growth;
+                           verified customers or pilots
+  Commercial intent . 10   own domain, legal entity, pricing, open jobs
+  Market ............ 10   a clear paying buyer and a costly problem
+  HTGF fit .......... 10   AI / deep tech; picked by a grant or incubator
+  Earliness ......... 10   best at 3-18 months old
+
+  Rule: missing data scores 0. A lead with evidence for less than
+  70% of the score stays out of the ranking.
+
+WHAT OUR YC RESEARCH SHOWED (60 companies, small sample)
+  - Founder with domain expertise:      73% of survivors vs 43% of dead ones
+  - Regulated or hardware market:       55% of survivors vs 25% of dead ones
+  - Pivoting:                           no difference
+
+
+=====================================================================
+2. HOW TO GATHER STARTUPS
+=====================================================================
+
+  1. COLLECT    Pull candidates from the sources below into SQLite,
+                keeping the raw data.
+  2. MERGE      Group repos, posts and people into one company, using
+                the website domain first.
+  3. ENRICH     Read each company website (Impressum, team, pricing,
+                investor logos), plus Wayback, crt.sh and GitHub.
+  4. FILTER     Run the gates: not funded, not noise, Germany, not faked.
+  5. SCORE      Apply the 0-100 scorecard and the coverage %.
+  6. EARLINESS  Compare "first seen by us" with "first seen in
+                databases or press" to get our head start in days.
+  7. SHOW       A dashboard of lead cards, each with its evidence links.
+
+  Data plan: collect overnight, freeze the data at 08:00, and run the
+  demo on that frozen copy. A "Refresh" button pulls live data and
+  falls back to the frozen copy if it fails.
+
+  Signals other VCs probably don't watch:
+  - A project website gets an Impressum (it has become a business)
+  - "GmbH i.G." in the Impressum (the company is being founded now)
+  - Teams pitching at Luma or Eventbrite pitch nights
+  - University email addresses in GitHub commits (a spin-off is forming)
+  - A first security certificate for app./api. subdomains (product going live)
+  - "Founding Engineer" job posts from companies nobody has heard of
+
+
+=====================================================================
+3. SOURCES FOR DATA
+=====================================================================
+
+LABELS
+  [FREE-API]     free, direct access through an API, RSS feed or
+                 bulk download
+  [FREE-SCRAPE]  free public web pages; a simple scraper works
+  [HARD]         free, but hard to scrape (bot protection, logins,
+                 heavy JavaScript, or the site's terms say no)
+  [PAID]         needs payment or a paid account
+  * = best starting points for us
+
+---------------------------------------------------------------------
+3.1 DEVELOPER AND LAUNCH PLATFORMS
+---------------------------------------------------------------------
+[FREE-API]    * GitHub search API - new orgs by location and date,
+                repos by topic, contributors (free token)
+                https://docs.github.com/en/search-github/searching-on-github/searching-users
+[FREE-API]    * Hacker News / Show HN (Algolia) - every launch, no key
+                https://hn.algolia.com/api
+[FREE-API]      Hugging Face Hub API - AI orgs, models, datasets
+                https://huggingface.co/docs/hub/api
+[FREE-API]      HF Daily Papers - trending papers (/api/daily_papers)
+                https://huggingface.co/papers/trending
+[FREE-API]      GitLab Explore - public projects
+                https://gitlab.com/explore/projects
+[FREE-API]      npm registry search - new JavaScript SDKs
+                https://registry.npmjs.org/-/v1/search?text=keywords:llm
+[FREE-API]      PyPI newest packages (RSS) - new Python SDKs
+                https://pypi.org/rss/packages.xml
+[FREE-API]      Product Hunt API - launches (token, non-commercial use only)
+                https://api.producthunt.com/v2/docs
+[FREE-SCRAPE]   Show HN newest
+                https://news.ycombinator.com/shownew
+[FREE-SCRAPE]   GitHub Trending
+                https://github.com/trending
+[FREE-SCRAPE]   BetaList Germany
+                https://betalist.com/regions/germany
+[FREE-SCRAPE]   Indie Hackers products
+                https://www.indiehackers.com/products
+[FREE-SCRAPE]   Launching Next
+                https://www.launchingnext.com
+[FREE-SCRAPE]   Peerlist Launchpad
+                https://peerlist.io/launchpad
+[FREE-SCRAPE]   Docker Hub
+                https://hub.docker.com/search
+
+---------------------------------------------------------------------
+3.2 UNIVERSITY INCUBATORS AND SPIN-OFFS
+---------------------------------------------------------------------
+[FREE-SCRAPE] * UnternehmerTUM prototyping grants (prototype-stage teams)
+                https://funding.unternehmertum.de/supportedteams-2/
+[FREE-SCRAPE] * Startup Incubator Berlin (HWR)
+                https://www.startup-incubator.berlin/startups/
+[FREE-SCRAPE]   TUM Venture Labs - Software & AI
+                https://www.tum-venture-labs.de/labs/software-ai/
+[FREE-SCRAPE]   TUM Start-up Wall
+                https://www.tum.de/en/innovation/entrepreneurship/for-alumni-corporates/tum-start-up-wall
+[FREE-SCRAPE]   KIT-Gruenderschmiede
+                https://kit-gruenderschmiede.de/gruendungen/
+[FREE-SCRAPE]   TU Berlin startups
+                https://www.tu.berlin/entrepreneurship/startup-support/tu-startups
+[FREE-SCRAPE]   Strascheg Center (HM Munich)
+                https://www.sce.de/en/start-ups/currently-supported-start-ups.html
+[FREE-SCRAPE]   Uni Kassel UNIKAT (EXIST projects)
+                https://www.uni-kassel.de/einrichtung/ukt/unikat-von-der-idee-zur-gruendung/gruendungsprojekte.html
+[FREE-SCRAPE]   dresden|exists (teams looking for co-founders)
+                https://www.dresden-exists.de/jobs/
+[FREE-SCRAPE]   UtrechtInc (NL)
+                https://utrechtinc.nl/community/startups/
+[FREE-SCRAPE]   KU Leuven spin-offs (BE)
+                https://lrd.kuleuven.be/en/spinoff/spin-off-companies
+[FREE-SCRAPE]   Ghent University spin-offs (BE)
+                https://techtransfer.ugent.be/en/overview-spin-companies-ghent-university
+[FREE-SCRAPE]   UGent/imec IDLab spin-offs (BE)
+                https://idlab.ugent.be/spin-offs
+[FREE-SCRAPE]   University of Antwerp spin-offs (BE)
+                https://www.uantwerpen.be/en/research/info-for-companies/spin-offs/overview-spin-offs/
+[HARD]          University of Luxembourg incubator (bot check)
+                https://www.uni.lu/life-en/incubator-and-entrepreneurship-programme/our-startups/
+
+---------------------------------------------------------------------
+3.3 ACCELERATORS AND VENTURE BUILDERS
+---------------------------------------------------------------------
+[FREE-SCRAPE] * HighTechXL (NL deep tech)
+                https://www.hightechxl.com/portfolio/
+[FREE-SCRAPE] * imec.istart (BE/NL/DE, AI tags)
+                https://www.imecistart.com/portfolio
+[FREE-SCRAPE]   CyberLab Karlsruhe
+                https://www.cyberlab-karlsruhe.de/en/our-startups
+[FREE-SCRAPE]   SpinLab Leipzig
+                https://www.spinlab.co/portfolio/all
+[FREE-SCRAPE]   Startupbootcamp
+                https://startupbootcamp.org/startups/portfolio-companies
+[FREE-SCRAPE]   Start it @KBC (BE)
+                https://startit-x.com/en/accelerate/all-startups
+[FREE-SCRAPE]   Fit 4 Start (LU)
+                https://luxinnovation.lu/fr-lu/assess-and-accelerate/programme-acceleration-fit-4-start/fit-4-start-14/fit-4-start-14-selected-startups
+[FREE-API]      Luxembourg City Incubator (CSV export)
+                https://cityincubator.lu/startups/
+[FREE-SCRAPE]   YC Startup Directory, Europe (also a funding blacklist)
+                https://www.ycombinator.com/companies?regions=Europe
+[HARD]          RWTH Spring 2026 cohort (a LinkedIn post; read by hand)
+                https://www.linkedin.com/posts/rwthinnovation_rwth-incubation-program-spring-batch-2026-activity-7439279704928460800-onCK
+
+---------------------------------------------------------------------
+3.4 PITCH COMPETITIONS AND EVENTS
+---------------------------------------------------------------------
+[FREE-SCRAPE]   BayStartUP Munich 2026 winners
+                https://www.baystartup.de/startupdate/sieger-startups-aus-phase-1-im-muenchener-businessplan-wettbewerb-2026
+[FREE-SCRAPE]   Science4Life 2026 winners
+                https://www.technologieland-hessen.de/news/Science4Life-praemiert-die-besten-Geschaeftskonzepte-2026
+[FREE-SCRAPE]   Falling Walls Venture finalists
+                https://falling-walls.com/activities/venture/finalists
+[FREE-SCRAPE] * Eventbrite: Berlin startup pitch (tested; event JSON in the page)
+                https://www.eventbrite.de/d/germany--berlin/startup-pitch/
+[FREE-SCRAPE]   Luma (event data embedded as JSON)
+                https://lu.ma/berlin
+[HARD]          Gruendungswettbewerb Digitale Innovationen (rate-limited)
+                https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Dossier/Gruenderwettbewerb/Artikel/preistraegerinnen-und-preistraeger.html
+
+---------------------------------------------------------------------
+3.5 PUBLIC GRANTS
+---------------------------------------------------------------------
+[FREE-API]      CORDIS Horizon Europe (bulk CSV/JSON)
+                https://data.europa.eu/data/datasets/cordis-eu-research-projects-under-horizon-europe-2021-2027?locale=en
+[FREE-SCRAPE]   RVO project database (NL)
+                https://projecten.rvo.nl/nl
+[FREE-SCRAPE]   EIC Accelerator 2026 selection (PDF)
+                https://webgate.ec.europa.eu/circabc-ewpp/d/d/workspace/SpacesStore/20c01cdb-3f50-40ae-afd6-f75589e3e0af/download
+[HARD]          SPRIND projects (results load dynamically)
+                https://www.sprind.org/en/actions/projects
+[HARD]          Foerderkatalog FOEKAT (search form, slow)
+                https://foerderportal.bund.de/foekat/jsp/SucheAction.do?actionMode=searchmask
+[HARD]          NWO Take-off 2025 (NL, slow; read by hand)
+                https://www.nwo.nl/onderzoeksprogrammas/take-off/toewijzingen-take-off/2025
+
+---------------------------------------------------------------------
+3.6 RESEARCH AND PATENTS
+---------------------------------------------------------------------
+[FREE-API]      arXiv API
+                https://info.arxiv.org/help/api/user-manual.html
+[FREE-API]      OpenAlex API (institutions by country)
+                https://developers.openalex.org/api-reference/institutions/list-institutions.md
+[FREE-API]      Semantic Scholar API
+                https://www.semanticscholar.org/product/api
+[FREE-API]      EPO Open Patent Services (free signup)
+                https://www.epo.org/en/searching-for-patents/data/web-services/ops
+[FREE-SCRAPE]   Google Patents
+                https://patents.google.com
+[HARD]          Espacenet (blocks scripts; use EPO OPS instead)
+                https://worldwide.espacenet.com
+[HARD]          DPMAregister (read by hand; its API costs money)
+                https://www.dpma.de/en/ip-search/databases/dpmaregister
+
+---------------------------------------------------------------------
+3.7 COMPANY REGISTRIES
+---------------------------------------------------------------------
+[FREE-API]      KVK Open Data (NL, daily)
+                https://www.kvk.nl/producten-bestellen/kvk-handelsregister-open-data-set/
+[FREE-API]      KBO/BCE Open Data (BE, free signup)
+                https://kbopub.economie.fgov.be/kbo-open-data
+[FREE-API]      OffeneRegister (old DE data, ~2018)
+                https://offeneregister.de
+[FREE-API]      bundesAPI handelsregister (Python client)
+                https://github.com/bundesAPI/handelsregister
+[HARD]          Handelsregister (DE; no API, session-based; scrape slowly)
+                https://www.handelsregister.de
+[FREE-SCRAPE]   Unternehmensregister (DE)
+                https://www.unternehmensregister.de/en
+[FREE-SCRAPE]   Bundesanzeiger (DE)
+                https://www.bundesanzeiger.de/pub/en/start?0=null
+[FREE-SCRAPE]   Belgian Official Gazette
+                https://ejustice.just.fgov.be/cgi_tsv/tsv.pl
+[HARD]          Luxembourg Business Registers (read by hand)
+                https://www.lbr.lu
+[PAID]          KVK developer APIs (cheap)
+                https://developers.kvk.nl/documentation
+[PAID]          North Data
+                https://github.com/northdata/api/
+[PAID]          OpenCorporates
+                https://opencorporates.com/pricing/
+[PAID]          startupdetector (new DE startups weekly; free trial)
+                https://www.startupdetector.de/neue-startups/
+
+---------------------------------------------------------------------
+3.8 WEB AND DOMAIN SIGNALS (to enrich companies already found)
+---------------------------------------------------------------------
+[FREE-API]      crt.sh - first security certificates for a domain
+                https://crt.sh/
+[FREE-API]      Wayback CDX API - when a domain or Impressum was first seen
+                https://github.com/internetarchive/wayback/blob/master/wayback-cdx-server/README.md
+[FREE-API]      BuiltWith free API - tech stack
+                https://api.builtwith.com/free-api
+[PAID]          Whoxy newly registered domains (partly free)
+                https://www.whoxy.com/newly-registered-domains/
+[HARD]          ICANN CZDS zone files (needs approval)
+                https://czds.icann.org
+
+---------------------------------------------------------------------
+3.9 JOBS (hiring signals)
+---------------------------------------------------------------------
+[FREE-API]      Arbeitnow job API (DE, no key)
+                https://www.arbeitnow.com/api/job-board-api
+[FREE-API]      Bundesagentur Jobsuche (unofficial API)
+                https://github.com/bundesAPI/jobsuche-api
+[FREE-SCRAPE]   JOIN: Deutsche Startups board
+                https://join.com/en/job-boards/deutsche-startups
+[FREE-SCRAPE]   Berlin Startup Jobs
+                https://berlinstartupjobs.com
+[FREE-SCRAPE]   YC jobs
+                https://www.ycombinator.com/jobs
+[HARD]          Wellfound Berlin (anti-bot protection)
+                https://wellfound.com/location/berlin
+[HARD]          startup.jobs (blocks scripts)
+                https://startup.jobs/locations/berlin/ai-engineer
+
+---------------------------------------------------------------------
+3.10 INVESTOR PORTFOLIOS (funding blacklist: anything listed is already funded)
+---------------------------------------------------------------------
+[FREE-SCRAPE]   First Momentum Ventures
+                https://www.firstmomentum.vc/portfolio
+[FREE-SCRAPE]   UnternehmerTUM Funding for Innovators
+                https://funding.unternehmertum.de/portfolio
+[FREE-SCRAPE]   LUMO Labs
+                https://lumofunds.vc/portfolio
+[FREE-SCRAPE]   Antler
+                https://www.antler.co/portfolio
+[FREE-SCRAPE]   Merantix Capital
+                https://www.merantix-capital.com/portfolio
+
+---------------------------------------------------------------------
+3.11 STARTUP DIRECTORIES AND DATABASES
+---------------------------------------------------------------------
+[FREE-SCRAPE]   Startbase (~11k German startups)
+                https://www.startbase.de/country/deutschland/
+[FREE-SCRAPE]   Munich Startup directory
+                https://www.munich-startup.de/en/startups-and-ecosystem
+[FREE-SCRAPE]   hessian.AI Startup Landscape
+                https://startup-landscape.hessian.ai/
+[HARD]          appliedAI German AI Startup Landscape (read by hand)
+                https://www.appliedai-institute.de/en/hub/2025-ai-german-startup-landscape
+[HARD]          Berlin Startup Map (Dealroom; its terms forbid scraping)
+                https://startup-map.berlin/companies
+[HARD]          Amsterdam Startup Map (Dealroom; its terms forbid scraping)
+                https://startupmap.iamsterdam.com/companies
+[HARD]          Techleap Finder (NL; needs a login)
+                https://finder.techleap.nl/companies
+[HARD]          Startup Luxembourg directory (read by hand)
+                https://startupluxembourg.com/engage-with-the-ecosystem/explore-luxembourg-startup-ecosystem
+[PAID]          Dealroom
+                https://app.dealroom.co
+[PAID]          Crunchbase (use it only to CHECK funding)
+                https://www.crunchbase.com
+[PAID]          StartupBlink (full list is Pro)
+                https://startupblink.com/startup-ecosystem/belgium
+
+---------------------------------------------------------------------
+3.12 NEWS (mainly for the "already funded?" check)
+---------------------------------------------------------------------
+[FREE-API]      deutsche-startups.de (RSS)
+                https://www.deutsche-startups.de/feed/
+[FREE-API]      Tech.eu (RSS)
+                https://tech.eu/feed/
+[FREE-API]      Silicon Canals (RSS; looked stale)
+                https://siliconcanals.com/feed/
+[HARD]          EU-Startups (RSS blocks scripts; send a browser user agent)
+                https://www.eu-startups.com/feed/
+[FREE-SCRAPE]   Silicon Luxembourg
+                https://siliconluxembourg.lu
+[HARD]          Gruenderszene (partly paywalled)
+                https://www.businessinsider.de/gruenderszene/
+[PAID]          Sifted
+                https://sifted.eu
+
+---------------------------------------------------------------------
+3.13 SOCIAL AND COMMUNITY
+---------------------------------------------------------------------
+[FREE-API]      Mastodon hashtag timelines (no login)
+                https://docs.joinmastodon.org/methods/timelines/
+[FREE-API]      Bluesky searchPosts (use api.bsky.app)
+                https://docs.bsky.app/docs/api/app-bsky-feed-search-posts
+[HARD]          Reddit (OAuth plus approval needed)
+                https://www.reddit.com/r/startups/
+[HARD]          LinkedIn (read by hand only; its terms forbid scraping)
+                https://www.linkedin.com
+[HARD]          Discord (needs a login)
+                https://discord.com
+[PAID]          X (Twitter) API
+                https://developer.x.com
+
+
+=====================================================================
+NOTES
+- Links were tested on 2026-11-20. Before scraping a site, check its
+  robots.txt and go slowly (about 1 request every 1-2 seconds).
+- Papers with Code shut down in 2025; use HF Daily Papers instead.
+- Being in an incubator or on a grant list does NOT prove a company
+  is unfunded. Always run the funding check.
+=====================================================================

@@ -1,0 +1,9 @@
+# local-only: scraper caches (copies of third-party pages), run logs, Python caches
+**/raw/cache/
+**/cache/
+*.log
+__pycache__/
+*.pyc
+
+# engine: derived data, rebuilt by engine/prepare_eu.py
+engine/build/

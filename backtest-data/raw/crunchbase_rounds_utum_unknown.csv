@@ -1,0 +1,13 @@
+company,round_type,is_equity,investors,check
+Avemoy,seed,True,Startinvest | Lakeside Technologie Privatstiftung | DOL Group | Carinthian Venture Fund,ok (Austrian)
+Atlas,seed,True,Techstars | Right Side Capital,WRONG MATCH: Atlas Wearables (US)
+Mily Technologies,pre_seed,True,South Central Ventures | Katapult Akcelerator,ok
+Mily Technologies,grant,False,Katapult Akcelerator,grant
+Spherecast,pre_seed,True,altitude,ok
+Spherecast,pre_seed,True,Y Combinator,ok (accelerator equity)
+Energyminer,seed,True,,ok
+Cocrafter,pre_seed,True,Y Combinator,ok (accelerator equity)
+NTRDE,angel,True,,angel (allowed if <=150k)
+NTRDE,grant,False,IFB Innovationsstarter,grant
+APS,debt/grant,False,US Department of Energy,WRONG MATCH: Arizona Public Service
+2NA Fish,pre_seed,True,Twip Impact Ventures | GF BRYCK Ventures,ok

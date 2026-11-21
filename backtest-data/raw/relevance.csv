@@ -1,0 +1,984 @@
+source,name,website,asof_date,category,htgf_relevant,reason
+baystartup,m-Bee,https://stabl.com/,2019-07-24,digital_tech,yes,Scalable digital product or software platform
+baystartup,Orbem,https://orbem.ai/,2019-07-24,unclear,maybe,Description does not establish a clear technology business model
+baystartup,presize.ai,,2019-07-24,deep_tech,yes,Technology-driven innovation in ai
+baystartup,Manyfolds,https://manyfolds.de/,2020-07-22,deep_tech,yes,Technology-driven innovation in material
+baystartup,NEUREVO,https://neurevo.de/news/,2020-07-22,digital_tech,yes,Scalable digital product or software platform
+baystartup,qbound,,2020-07-22,digital_tech,yes,Scalable digital product or software platform
+baystartup,Divizend,https://divizend.com/,2021-07-22,digital_tech,maybe,Scalable digital product or software platform
+baystartup,Opsyon,https://www.opsyon.genzentrum.uni-muenchen.de/index.html,2021-07-22,deep_tech,yes,Technology-driven innovation in therapeut
+baystartup,sewts,https://www.sewts.de/,2021-07-22,deep_tech,yes,Technology-driven innovation in ai
+baystartup,Dymium,https://www.dymium.de/,2022-07-27,unclear,maybe,Description does not establish a clear technology business model
+baystartup,NIMMSTA,https://nimmsta.com/industrie-waearables-produkte/#scanner,2022-07-27,deep_tech,yes,Technology-driven innovation in industrial
+baystartup,Reverion,https://www.reverion.de/,2022-07-27,deep_tech,yes,Technology-driven innovation in patent
+baystartup,baind,http://www.baind.de,2023-07-26,deep_tech,yes,Technology-driven innovation in ai
+baystartup,Energyminer,http://www.energyminer.eu,2023-07-26,deep_tech,yes,Technology-driven innovation in energy
+baystartup,Sedivention,https://www.sedivention.com/,2023-07-26,unclear,maybe,Description does not establish a clear technology business model
+baystartup,AUDAVIS,https://www.audavis.ai,2024-07-17,digital_tech,yes,Scalable digital product or software platform
+baystartup,EpiCure,,2024-07-17,digital_tech,yes,Scalable digital product or software platform
+baystartup,Qualiwise,https://www.qualiwise.io/,2024-07-17,digital_tech,yes,Scalable digital product or software platform
+baystartup,BioExoTec,https://www.bioexotec.com/,2025-07-29,unclear,maybe,Description does not establish a clear technology business model
+baystartup,Peak Quantum,https://www.peakquantum.de/,2025-07-29,deep_tech,yes,Technology-driven innovation in quantum
+baystartup,Versatile Robotics,https://versatile-robotics.com/,2025-07-29,deep_tech,yes,Technology-driven innovation in robot
+cyberlab_karlsruhe,40three,https://heavendata.com/de/,2019-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,auvisus,https://www.auvisus.com,2019-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,bestfit,http://bestfit.app,2019-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,BLACKPIN,http://www.blackpin.app,2019-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Flowcess,,2019-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,heliopas ai,https://www.heliopas.com/,2019-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,MEMINTO,,2019-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,nestyu,,2019-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,prenode GmbH,https://www.prenode.de/,2019-07-01,deep_tech,yes,Technology-driven innovation in ai
+cyberlab_karlsruhe,Zana,https://www.zana.com/,2019-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,10erKarte,http://www.10erkarte.de,2020-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,articlett,https://articlett.de/wordpress/,2020-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,blackforestai,https://blackforest.ai/,2020-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,corefi,https://corefihub.com/,2020-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,gixel,https://www.gixel.de/,2020-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,haas,,2020-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,infinity maps,https://infinitymaps.io/,2020-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,modugen,http://www.modugen.de,2020-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,steig,https://steig-app.de/,2020-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,ventecon,https://ventecon.com/,2020-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,123erfasst,http://www.123erfasst.de,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,aimino,https://www.aimino.de,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,airys,https://abenteuer-markt.de/de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,anyola,,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,apartmen,https://apart.men/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,askui GmbH,http://www.askui.com,2021-07-01,digital_tech,yes,Scalable digital product or software platform
+cyberlab_karlsruhe,asvin,https://www.asvin.io/,2021-07-01,deep_tech,yes,Technology-driven innovation in ai
+cyberlab_karlsruhe,bauta,http://www.bauta.io,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Bitahoy,https://www.bitahoy.com/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,bitbaker,https://bit-baker.com/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,buildersmind,,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,cepri,http://www.cepri.tech/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,cognitx,https://cognitx.ai/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,constreo,https://constreo.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,cympire,https://cympire.com/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,dazo,,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,deepscenario,https://www.deepscenario.com/index.html#home,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,DeepSign,https://deepsign.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,edgify,https://www.edgefy.net/de,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,enabl Technologies UG,https://enabl-tech.de/,2021-07-01,deep_tech,yes,Technology-driven innovation in material
+cyberlab_karlsruhe,endeema,https://endeema.com/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,erbsenzaehlerei,https://erbsenzaehlerei.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,garoma,https://www.garoma.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,growments,https://www.growments.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,haurysolutions,https://www.haury-solutions.com/de/haury-solutions/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,hayv,https://www.heyvie.io/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,klangio,https://klangio.com/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,ladestationplanen,https://chargingmobility.com/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Leefs,https://leefs.io/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,litkey,https://www.litkey.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,maduka,https://www.maduka-innovation.com/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,medicalvalues GmbH,https://medicalvalues.de/de/,2021-07-01,deep_tech,yes,Technology-driven innovation in ai
+cyberlab_karlsruhe,OPTASTIX,,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,palasts,https://palasts.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,patena,https://www.patoffice.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,pavao,,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,pockethost,https://pockethost.app/de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,reasonance,https://reasonance.de/de/startseite/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,respeak,https://www.respeak.io/home,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,revoai,https://www.revoai.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,rotolab,,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,secondbikelife,https://www.secondbikelife.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,sensorwing,https://www.oneiot.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,spannwerk,,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,statpile,https://statpile.de/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,thing,https://www.thing.online/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,traggert,https://www.traggert.com,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,upflowrech,,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Validaitor,https://validaitor.com/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,VALUEWORKS,https://valueworks.ai/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Woodmatch,,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,world for climate,https://www.worldforclimate.com,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,xplicitTrust,https://xplicittrust.com/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,zesavi,https://getclypp.com/en/,2021-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,123Parkplatzfrei,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,aicorn,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Airlead,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,alitiq,https://alitiq.com/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,amexis,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,ampi,http://ampipower.com,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,apptivegrid,https://www.apptivegrid.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,arxly,https://www.arxly.com/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,awwt,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,become1,https://www.become1.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,besser in der schule,https://besserinderschule.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,beyond emotion,https://beyond-emotion.de/en/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,bloom studios,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,botiguard,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Bytefabrik ai,https://bytefabrik.ai/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,casablancaai,https://casablanca.ai/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,charismatischer,https://charismatischer.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,conbotics,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,cyberinsight,https://cyber-insight.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,deepDoc,https://www.deepdoc.ai/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,digitalbuddy,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Elani,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,emiigo,https://www.emiigo.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Fast AI Movies,https://fast-ai-movies.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,findiq,https://findiq.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,flixbeton,https://flixbeton.com/#rec524686181,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Flixorder,https://flixorder.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,fox berry,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,freedprinting,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Glottering,http://www.glotting.com/code,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,greenheat,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,humatx,https://www.humatx.com/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,immune,https://immune.gmbh/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,liefo,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,miiomedico,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,MissionBuddies,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,move me,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,mozz,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,neocargo,https://www.neocargo.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,nutribit,https://dishdetective.app/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Onino,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,pdt,http://pdt.ai/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,project count,https://de.project-count.com/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Resoniks,http://resoniks.com,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,rocket routine,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,SDAC,https://sdac.tech/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Semorai,https://semor.ai/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Spotium,https://www.spotium.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Stogl Robotics Consulting,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Studierenden Computerhilfe,https://studenten-computerhilfe.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,synthavo,https://www.synthavo.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,t2k,https://text2knowledge.de/start,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,tech formation,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Themis,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,TrustSpace,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,vamos,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,vitas,https://www.telefonassistent.de/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Web Guide,https://webguide.one,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,wetog,,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,WorkBuddy,https://workbuddy.chat/,2022-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,AICook,,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Brifle,https://www.brifle.de,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,cellgrid,https://cellgrid.co/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Ceramic Wheels,https://ceramicwheels.de/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,cerpro,https://www.cepro.de/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Cheflink,http://www.letsdook.de,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,climateproof,,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Conic,https://conic.technology/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,core one,https://www.coreone.one/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,cosonfy,https://cosonify.com/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,cybersecurityLabs,,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,deeplify,https://www.deeplify.de/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Emintes,,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,genitor,,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,heyfam,https://heyfam-app.com/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,imagetocaptionai,http://www.imagetocaption.ai,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,InGoodTerms,https://ongoodterms.io/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,inventlife,https://inventife.com/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,krautvision,https://krautvision.dev/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,lawlink,https://www.lawlink.de,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,LEVEL8,http://www.level-acht.de,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,linetrack,https://linetrack.de/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,lucidwrite,,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Luftflug,,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,machinerecord,,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Matvis,http://www.matvis.com,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,meindein,https://www.meindein.com/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,MOTORMAIT,,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,neckar,https://neckar.io,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,new essay ai,https://www.newessay.ai/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,PCB arts,https://www.pcb-arts.com/de/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Perception Labs,,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,perspektive care,https://perspectivecare.de/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,razo,https://www.razo.energy/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,restegourmet,https://restegourmet.de/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,rockstartit,http://www.rockstartit.com/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Showgoon,https://www.showgoon.eu/de/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,skinmate,https://www.skinmate.app/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,smartvision,https://www.smrtvsn.co/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,teamup,https://teamup.rocks/,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Training Arc,,2023-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,adapt2move,https://www.adapt2move.de/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,adjusted flow,https://adjustedflow.com/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Alithea Biotechnology,http://www.alithea-bio.com,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Antaris,https://www.dev.antaris.io,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Arena Innovation,https://www.arena-innovation.com/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,auditect,,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Avior,http://avior.live,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,avorne,,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,bacchus,https://bacchus-software.de/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,BF,https://www.bee-found.de/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Bloom Future,,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,captica,https://www.captica.de/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,CloudMent,https://cloudment.io,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,cori,https://getcori.app,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,craftomatic,http://www.craftomatic.de,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,dashbook,http://www.dashbook.dev,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Desoltik,https://desoltik.com,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,devops highway,,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,dianovi,https://www.mysympto.com/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,DungeonTinker,http://Dungeon-tinker.com,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,EnergyTrack,http://www.energytrack.eu,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,envima,https://www.envima.de/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Gesundheitsheldinnen,,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,GetResult,,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Heimat Software,https://heimat-software.com/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,HELLO WE CARE UG,https://hellowecare.de/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Industrial AI,https://industrial-ai.dev/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Jinacare,http://www.jina.group,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Labmaite,http://labmaite.com,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,liftwise,http://www.liftwise.de,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,LIQRO,,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Manukai,https://www.manukai.ch/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Mindsetr,http://www.mindsetr-info.com,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Monki,https://monki-solutions.com/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Mr.Protect,https://mr-protect.com/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,NewDrive,https://www.newdriveanalytics.de/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Nexato,http://www.nexato.de,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,NextStepHR,https://nextstephr.de/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Nono,http://www.getnono.app,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Normify,http://www.normify.me,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,novaSkill,http://www.novaskill.de,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,OnSite Solutions,https://smartreadinessindicator.com/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,preatmos,http://www.preatmos.de,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Prefiro,https://www.prefiro.de/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,ProtoDevs,https://www.protodevs.de/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Qubitoss,https://qubitoss.com/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Ramp7,https://www.ramp7.com/de,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,roomjack,http://www.roomjack.de,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,SaidGor,http://www.saidgor.de,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Senani,https://senani.de/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Sensaru,http://www.sensaru.com,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,ServerlessSalad,http://www.serverlesssalad.io,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,slideroom,http://www.slideroom.de,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,start2fix,http://www.start2fix.com,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Stay Sana,https://staysana.com/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Streamlingo,http://www.streamlingo.net,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Tabularis AI,https://www.tabularis.ai/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,TenderFix,,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,topostoria,,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,TuCAN,https://tucantest.org,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,TurtleLoop,,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,VISS,https://www.viss.cc/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,whitemacs,https://whitemacs.com/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Whometa inc,https://whometa.io/,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,XPipe,https://xpipe.io,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Yesalwa,,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,YuNext,http://www.yunext-med.com,2024-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,abblino,https://abblino.com/,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,adric,https://adric.gmbh,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,AgentLink,http://www.agentlink.cloud,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,AI VisionGuard UG (haftungsbeschränkt),https://aivisionguard.eu/,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Alcora,http://www.alcora.io,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,audicius,https://audicius.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Axelon,https://axelon.ai,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,BAISOFT,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Bimraum,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,BiStorage,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Byte,https://byte-robotics.com/,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Casavero,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,codaco,https://codaco.app,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,ConbaseAI,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,CoreExplorer,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Cynus,http://cynus.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,DataDrivenConstruction,http://datadrivenconstruction.io,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,DatapulseAI,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,DataRevolution,https://www.data-revolution.de/,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,datin,https://datin.io/,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,DelcauxLabs,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Docary,https://docary.de/,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Durava,http://www.durava.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,EE Netzwerk,https://www.eenetzwerk.de/,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Efficientware GmbH,http://efficientware.net,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,empowerling,http://www.empowerling.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Erzeugerland,http://erzeuger-land.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,ezfox,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,farblQ,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,flinq,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,GEFION,http://www.gefion.info,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,gonster,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Good Words,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,HPC Trust,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,HyBrayn,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Intagium,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,IOWIS,https://iowis.com/,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Liveocracy,https://live-ocracy.com/,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,maiq,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,makeMINT UG (haftungsbeschränkt) & Co. KG,http://www.makemint.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,mofiGo,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,mrppilot,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,MuWind,https://muwind.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,MyJobAI,http://www.myjobai.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,MYNR,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,OnlyGreens,http://www.onlygreens.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Recall Space,https://recall.space,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,ReSource,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Sciplex,http://sciplex.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,ScoreGO,http://www.scorego-app.com,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Studio Fluffy,https://studiofluffy.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,SURFBANK,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,TenderScout,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Tetractys B.V.,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Toxifree,https://toxifree.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Trainator,https://trainator.eu,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,TransferKings,http://www.transferkings.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,veema,,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+cyberlab_karlsruhe,Vynta CyberRisk,http://www.vynta.de,2025-07-01,unclear,maybe,Description unavailable; company activity cannot be assessed
+falling_walls,FibreCoat,,2020-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Helio Heat,,2020-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Made of Air,,2020-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,NanoWired,,2020-07-01,deep_tech,yes,Technology-driven innovation in sensor
+falling_walls,Cellbricks,,2021-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Core Sensing,,2021-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Hypnetic,,2021-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,LIDROTEC,,2021-07-01,deep_tech,yes,Technology-driven innovation in medtech
+falling_walls,traceless materials,,2021-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,VIDA,http://www.vida.place,2021-07-01,deep_tech,yes,Technology-driven innovation in machine learning
+falling_walls,Biotx.ai,https://www.biotx.ai,2022-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Carbon One,https://www.carbon.one/,2022-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,InCirT,,2022-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,MotorSkins,https://motorskins.com,2022-07-01,deep_tech,yes,Technology-driven innovation in robot
+falling_walls,PROSION,https://www.prosion.eu,2022-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Q.ANT,https://www.qant.de,2022-07-01,deep_tech,yes,Technology-driven innovation in sensor
+falling_walls,Tubulis,https://www.tubulis.com/,2022-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Aignostics,https://www.aignostics.com/,2023-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,GEMESYS,https://gemesys.tech/,2023-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Proxima Fusion,https://www.proximafusion.com,2023-07-01,deep_tech,yes,Technology-driven innovation in energy
+falling_walls,Reverion,https://reverion.com/,2023-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,smartbax,https://www.smartbax.de/,2023-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Sonocrete,https://www.sonocrete.com,2023-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,ActiTrexx,https://www.actitrexx.de/,2024-07-01,deep_tech,yes,Technology-driven innovation in biotech
+falling_walls,ARQUE Systems,https://www.arque.systems/,2024-07-01,deep_tech,yes,Technology-driven innovation in artificial intelligence
+falling_walls,Cyclize,https://cyclize.de/de/,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,DeepEn,https://deepen-imaging.com/about-us/,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,ecoLocked,https://www.ecolocked.com/de-de,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Greenlyte,,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Level Nine,,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Pramomolecular,https://www.pramomolecular.com/,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Provolut (prev. Exazyme),,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Qkera,https://qkera.com/,2024-07-01,deep_tech,yes,Technology-driven innovation in battery
+falling_walls,xemX,,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Allogenetics,https://www.allogenetics.de/,2025-07-01,deep_tech,yes,Technology-driven innovation in therapeut
+falling_walls,BioThrust,https://www.biothrust.com,2025-07-01,deep_tech,yes,Technology-driven innovation in pharma
+falling_walls,Collimate Health,,2025-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,eleQtron,https://eleqtron.com/,2025-07-01,deep_tech,yes,Technology-driven innovation in hardware
+falling_walls,Mallia Therapeutics,https://www.mallia-therapeutics.com,2025-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Neggst,https://www.neggst.co/,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+falling_walls,O11 biomedical,https://www.o11-biomedical.com,2025-07-01,deep_tech,yes,Technology-driven innovation in medical
+falling_walls,Phlair,https://phlair.com,2025-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Pulsetrain,https://pulsetrain.com/,2025-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,re.solution,https://resolution.technology/,2025-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,Roofline,https://www.roofline.ai/,2025-07-01,deep_tech,yes,Technology-driven innovation in ai
+falling_walls,TURN2X,https://turn2x.com,2025-07-01,deep_tech,yes,Technology-driven innovation in ai
+hightechxl_portfolio,Aircision,https://www.aircision.com/,2019-07-01,deep_tech,yes,Technology-driven innovation in ai
+hightechxl_portfolio,Carbyon,https://carbyon.com,2019-07-01,deep_tech,yes,Technology-driven innovation in ai
+hightechxl_portfolio,Keiron,https://keirontechnologies.com,2019-07-01,deep_tech,yes,Technology-driven innovation in manufactur
+hightechxl_portfolio,InPhocal,https://inphocal.com,2020-07-01,deep_tech,yes,Technology-driven innovation in laser
+hightechxl_portfolio,Veridis,https://veridis.tech,2020-07-01,deep_tech,yes,Technology-driven innovation in material
+hightechxl_portfolio,AVOXT,https://avoxt.com,2021-07-01,deep_tech,yes,Technology-driven innovation in hydrogen
+hightechxl_portfolio,Astrape Networks,https://www.astrapenetworks.com/,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+hightechxl_portfolio,Inner,https://www.innertech.nl/,2022-07-01,deep_tech,yes,Technology-driven innovation in diagnostic
+hightechxl_portfolio,Senergetics,https://www.senergetics.ai/,2022-07-01,deep_tech,yes,Technology-driven innovation in sensor
+hightechxl_portfolio,Luper Technologies,https://luper.tech,2023-07-01,deep_tech,yes,Technology-driven innovation in ai
+hightechxl_portfolio,SonicPrecision,https://sonicprecision.us/,2023-07-01,unclear,maybe,Description does not establish a clear technology business model
+hightechxl_portfolio,VitalWear,https://vitalwear.nl,2023-07-01,deep_tech,yes,Technology-driven innovation in sensor
+hightechxl_portfolio,High Tech Binders,https://hightechbinders.com/,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+hightechxl_portfolio,FlowVolta,,2025-07-01,deep_tech,yes,Technology-driven innovation in chemical
+hightechxl_portfolio,MarisCarbon,https://www.mariscarbon.com/,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+hightechxl_portfolio,Perovix,https://www.perovix.com/#hero,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+hightechxl_portfolio,Zermicor,,2025-07-01,deep_tech,yes,Technology-driven innovation in medical
+science4life,Actome GmbH,,2019-06-17,unclear,maybe,Description does not establish a clear technology business model
+science4life,Ebenbuild,,2019-06-17,digital_tech,yes,Scalable digital product or software platform
+science4life,Freemotion Systems,,2019-06-17,deep_tech,yes,Technology-driven innovation in ai
+science4life,implacit GmbH,,2019-06-17,unclear,maybe,Description does not establish a clear technology business model
+science4life,KOENA tec GmbH,,2019-06-17,unclear,maybe,Description does not establish a clear technology business model
+science4life,Mediaire GmbH,,2019-06-17,deep_tech,yes,Technology-driven innovation in ai
+science4life,PerioTrap Pharmaceuticals GmbH,,2019-06-17,deep_tech,yes,Technology-driven innovation in pharma
+science4life,Phytoprove Pflanzenanalytik UG,,2019-06-17,deep_tech,yes,Technology-driven innovation in ai
+science4life,PolyGlyco Biotech GmbH i.Gr.,,2019-06-17,deep_tech,yes,Technology-driven innovation in biotech
+science4life,QYOBO,,2019-06-17,deep_tech,yes,Technology-driven innovation in pharma
+science4life,YCOR,,2019-06-17,unclear,maybe,Description does not establish a clear technology business model
+science4life,CellUnite GmbH,,2020-09-21,digital_tech,yes,Scalable digital product or software platform
+science4life,DEOXY,,2020-09-21,digital_tech,yes,Scalable digital product or software platform
+science4life,DERMAGNOSTIX,,2020-09-21,unclear,maybe,Description does not establish a clear technology business model
+science4life,Fibragg Diagnostics GmbH,,2020-09-21,deep_tech,yes,Technology-driven innovation in ai
+science4life,Green Elephant Biotech,,2020-09-21,deep_tech,yes,Technology-driven innovation in biotech
+science4life,greenventory GmbH,,2020-09-21,unclear,maybe,Description does not establish a clear technology business model
+science4life,InnoSurge AC,,2020-09-21,digital_tech,yes,Scalable digital product or software platform
+science4life,Nia Health GmbH,,2020-09-21,digital_tech,yes,Scalable digital product or software platform
+science4life,Pionierkraft GmbH,,2020-09-21,unclear,maybe,Description does not establish a clear technology business model
+science4life,Prime Vector Technologies GmbH,,2020-09-21,deep_tech,yes,Technology-driven innovation in therapeut
+science4life,Senodis Technologies GmbH,,2020-09-21,unclear,maybe,Description does not establish a clear technology business model
+science4life,Smela,,2020-09-21,unclear,maybe,Description does not establish a clear technology business model
+science4life,YURI GmbH,,2020-09-21,deep_tech,yes,Technology-driven innovation in biotech
+science4life,Airstier Technology GmbH,https://www.airstier-technology.de/,2021-06-28,deep_tech,yes,Technology-driven innovation in ai
+science4life,EpiBlock,,2021-06-28,digital_tech,yes,Scalable digital product or software platform
+science4life,GOETHE CVI,,2021-06-28,deep_tech,yes,Technology-driven innovation in ai
+science4life,InContAlert,https://incontalert.de/,2021-06-28,unclear,maybe,Description does not establish a clear technology business model
+science4life,innocept,https://www.innocept-mobility.de/,2021-06-28,deep_tech,yes,Technology-driven innovation in ai
+science4life,LIDROTEC GmbH,https://www.lidrotec.de/,2021-06-28,deep_tech,yes,Technology-driven innovation in laser
+science4life,NanoStruct GmbH,https://www.nanostruct.eu/,2021-06-28,deep_tech,yes,Technology-driven innovation in sensor
+science4life,Nephrolytix,https://nephrolytix.com/,2021-06-28,deep_tech,yes,Technology-driven innovation in ai
+science4life,NEUREVO GmbH,https://www.neurevo.de/,2021-06-28,digital_tech,yes,Scalable digital product or software platform
+science4life,PRAMOMOLECULAR,https://www.pramo-molecular.org/,2021-06-28,unclear,maybe,Description does not establish a clear technology business model
+science4life,ProSion GmbH,https://prosion.io/,2021-06-28,deep_tech,yes,Technology-driven innovation in pharma
+science4life,RECTECH,,2021-06-28,unclear,maybe,Description does not establish a clear technology business model
+science4life,suena GmbH,https://www.suena-company.com/,2021-06-28,unclear,maybe,Description does not establish a clear technology business model
+science4life,Advylop,,2022-07-18,deep_tech,yes,Technology-driven innovation in ai
+science4life,CatSper,,2022-07-18,unclear,maybe,Description does not establish a clear technology business model
+science4life,DNTOX GmbH,https://www.dntox.de/,2022-07-18,unclear,maybe,Description does not establish a clear technology business model
+science4life,Dymium,,2022-07-18,unclear,maybe,Description does not establish a clear technology business model
+science4life,FUSIX BIOTECH GmbH,,2022-07-18,deep_tech,yes,Technology-driven innovation in biotech
+science4life,HBOX Therapies GmbH,https://www.hbox-therapies.com/,2022-07-18,digital_tech,yes,Scalable digital product or software platform
+science4life,n-biotics,,2022-07-18,deep_tech,yes,Technology-driven innovation in therapeut
+science4life,OPSYON Therapeutics GmbH,,2022-07-18,unclear,maybe,Description unavailable; company activity cannot be assessed
+science4life,plugX,,2022-07-18,unclear,maybe,Description does not establish a clear technology business model
+science4life,PV2+,https://pv2plus.com/,2022-07-18,deep_tech,yes,Technology-driven innovation in patent
+science4life,Reverion,https://reverion.com/,2022-07-18,unclear,maybe,Description does not establish a clear technology business model
+science4life,Revoltech GmbH,https://madewithlovr.com/password,2022-07-18,unclear,maybe,Description does not establish a clear technology business model
+science4life,Shards,https://shards.eco/,2022-07-18,unclear,maybe,Description does not establish a clear technology business model
+science4life,Akribion Genomics,,2023-06-26,deep_tech,yes,Technology-driven innovation in biom
+science4life,ArtifiCell,,2023-06-26,unclear,maybe,Description does not establish a clear technology business model
+science4life,DeepEn,,2023-06-26,deep_tech,yes,Technology-driven innovation in pharma
+science4life,FLIPoQ,,2023-06-26,unclear,maybe,Description does not establish a clear technology business model
+science4life,LigniLabs,,2023-06-26,unclear,maybe,Description does not establish a clear technology business model
+science4life,MAKROPHAGEN 2.0,,2023-06-26,deep_tech,yes,Technology-driven innovation in patent
+science4life,MYTRA,,2023-06-26,deep_tech,yes,Technology-driven innovation in sensor
+science4life,Octo Germany,,2023-06-26,unclear,maybe,Description does not establish a clear technology business model
+science4life,retoflow,,2023-06-26,digital_tech,yes,Scalable digital product or software platform
+science4life,SAFIA Technologies,,2023-06-26,unclear,maybe,Description does not establish a clear technology business model
+science4life,Sedivention,,2023-06-26,unclear,maybe,Description does not establish a clear technology business model
+science4life,xemX,,2023-06-26,unclear,maybe,Description does not establish a clear technology business model
+science4life,ÖkoVision,,2023-06-26,digital_tech,yes,Scalable digital product or software platform
+science4life,AdaptX Systems,,2024-07-01,deep_tech,yes,Technology-driven innovation in patent
+science4life,CeraSleeve,,2024-07-01,deep_tech,yes,Technology-driven innovation in material
+science4life,fiberior,,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+science4life,Hydrogenea,,2024-07-01,deep_tech,yes,Technology-driven innovation in hydrogen
+science4life,ILLUTHERM,,2024-07-01,deep_tech,yes,Technology-driven innovation in material
+science4life,QUASAR Therapeutics,,2024-07-01,deep_tech,yes,Technology-driven innovation in therapeut
+science4life,ResCure,,2024-07-01,deep_tech,yes,Technology-driven innovation in material
+science4life,TENTA VISION,,2024-07-01,deep_tech,yes,Technology-driven innovation in patent
+science4life,Blueprint Biomed,,2025-06-30,deep_tech,yes,Technology-driven innovation in material
+science4life,CiX,https://cixgreentech.de/,2025-06-30,unclear,maybe,Description does not establish a clear technology business model
+science4life,HeartGate,,2025-06-30,unclear,maybe,Description does not establish a clear technology business model
+science4life,Plantman,https://plantman.notion.site/,2025-06-30,deep_tech,yes,Technology-driven innovation in therapeut
+science4life,Radiant Solar,https://radiant.systems/,2025-06-30,unclear,maybe,Description does not establish a clear technology business model
+science4life,TwinWatt,,2025-06-30,deep_tech,yes,Technology-driven innovation in ai
+science4life,WeldNova,https://weldnova.com/de/start/,2025-06-30,deep_tech,yes,Technology-driven innovation in laser
+science4life,X-ECD,,2025-06-30,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,2 FINGERS,,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,6th Sense,,2021-07-01,deep_tech,yes,Technology-driven innovation in space
+startup_incubator_berlin,7×17 Collective,,2021-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,A2zebra,https://tuktoro.com,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Aam Digital,https://aam-digital.com,2021-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Agaia Coliving,https://www.agaia-coliving.com/faq,2022-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,AgroHut,,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Aidvance,http://aidvance.co,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,Aimee,https://getaimee.app,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,alift.io,https://www.alift.io,2025-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Alter Falter,http://tarasenkoelizabeth.wixsite.com/alterfalter-berlin,2023-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,alvego,http://www.alvego.de,2019-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,aMente,,2025-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Anegoica Studio,https://www.anecoica.net/,2022-07-01,deep_tech,yes,Technology-driven innovation in therapeut
+startup_incubator_berlin,Artemis,https://www.artemis-solutions.de/,2023-07-01,deep_tech,yes,Technology-driven innovation in pharma
+startup_incubator_berlin,ATHLEO,,2024-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Baheis,,2024-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Basgar-Shop,http://basgarshop.com,2022-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Bearcover,http://www.bearcover.de,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Beazy,,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Berliner Institut für Governance & Leadership e.V. (BIGL),,2024-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Bloom Health,https://www.bloomhealth.de,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Brea,,2021-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Buddies-App,https://buddies-app.com,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Cabin Experience,http://cabinexperience.com,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,CALLSTR,http://callstr.com,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,careloop,http://www.pflegista.de,2019-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Cbright,https://www.cbright.io/,2022-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Ceamless,https://www.ceamless.events/,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,CETZ,https://www.cetz-fensterschutz.de,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,CHEERY,,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Chetan Phakatkar,,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Circum,https://www.avanera.de,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,cleverlohn,,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,cleverlohn.de,https://www.cleverlohn.de/,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Cliqe,https://www.cliqe.de/,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Clokity,https://clokity.com,2024-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,COM.UNITY,,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Creme Frech,https://cremefrech.com,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,DayTM,https://www.daytm.app/,2024-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Dean | Zane,https://deanzane.com/,2019-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Debias,https://debiaslab.com,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Deep Skin Ai,https://deepskinai.com,2022-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,Deep Talks,https://thedeeptalks.com/,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,deepfile,https://www.deepfile.eu,2023-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Delvo,https://www.delvo.ai,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Department of Public Feeling,,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,DGS-Übersetzer,,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Digital Health Dashboard,,2024-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,DocVox,https://docvox.io/index.html,2020-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,Dreamsome,https://dreamsome.space,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,DS Consult,https://www.compassteams.de,2019-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,DSConsulting,,2019-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Eagle Eye,,2020-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Eagle Set,,2020-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,EagleStats,,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Easy Cook Asia,http://www.easycookasia.de,2019-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,EasyCookies,,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Ecommutely,http://ecommutely.com,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,ENGEL Systems,https://engel-systems.de,2025-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Faircado,https://faircado.de,2021-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,femconnect / DS Consult,,2019-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,Femote (ex Flowise),https://femote.co,2023-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Find-Your-Software,,2023-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Fireflyting,https://fireflyting.co/,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Fixit,,2023-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Flaneury,https://www.flaneury.de,2021-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,FoodRaccoon,https://www.foodraccoon.com,2023-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Forget Finance,https://forget.finance,2020-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Fritz & Dietz,,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Generation Reach GmbH,https://family.cards,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Gifty App,https://www.giftd.app,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Glasque,https://glasque.de,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Glazed,https://glazedanalytics.com,2023-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Global Good,https://global-good.de,2021-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Glokal AI,https://glokalai.com,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,GoOxivit,https://www.go-oxivit.com/,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Grabbi,https://grabbi.de,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Graberr,https://www.examberg.com,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Grains,https://www.grains.education/,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,GrantGPT,https://grantgpt.eu,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Grüneo,http://gruneo.com,2019-07-01,deep_tech,yes,Technology-driven innovation in material
+startup_incubator_berlin,Haderlump,https://haderlump.berlin,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Hale,http://www.halecommunity.com,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Handstree,https://handstree.com,2023-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,HealthCaters,https://www.healthcaters.de,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Healthea,https://helthea.com,2025-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Helthea,,2025-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Heppy,,2024-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,HER BODY HER MIND,,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,herb&mango,http://www.herbandmango.com/,2019-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,HerbiBox,,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Hoopooh,,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Horus Prosthetics,,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,HYBRIGHT,,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Hybright (Cheery),,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,ignore gravity,https://www.ignore-gravity.com,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Innovation Platform,https://the-innovation-platform.de,2021-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Intrials,https://intrials.de/,2020-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Jannis Groh,https://hoefe.berlin,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Jannis Groh X-Stand,,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Jouly AI,https://jouly.ai,2025-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,Juriverse,http://juriverse.com,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,KAJUVI,https://www.KAJUVI.com/,2022-07-01,deep_tech,yes,Technology-driven innovation in material
+startup_incubator_berlin,KARTA,https://karta.de,2023-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Kinu Health (ex Ailara),https://www.kinuhealth.com,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,kleiderly,https://www.kleiderly.com,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,konfetti.ai,https://konfetti.ai,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,KRENU,http://www.krenu.com,2019-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Kursinsel,https://www.kursinsel.de/,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Lastdecades,https://lastdecades.de,2025-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,LearnFlex UG,https://learnflex.de/,2019-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Leav,https://www.leav.tech/,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Lemberg Solutions,https://lembergsolutions.com,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,LexHub,https://www.lexhub.de,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Lingobook,https://lingobook.odoo.com/,2024-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Lisa,,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,LYlife,https://lylife.eu,2025-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,MATCHBRAND,https://www.matchbrand.de,2023-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,MetaVision,http://www.meetavision.com,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Microgreens,https://microgreens.berlin/,2022-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Mini Mentor,https://minimentor.net/,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Minmo,,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Miyol,https://www.miyol.io,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,My Second Ear,https://www.mysecondear.de,2019-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,MyHelpBuddy,http://www.myhelpbuddy.com,2019-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Native Foods,https://www.native-foods.com,2020-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,NEX,https://www.nex.aero,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,neXpen,,2021-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,NICO AI,,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,Nieds,https://nieds.de,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,NovoStock,https://www.novostock.de,2023-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Nyma,https://nyma.app,2025-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Onboring,https://onboring.com,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,One Roof,https://www.oneroof.earth,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Onni Care,https://www.onni-care.com,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Onu,,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Orbit,https://www.3am-energy.com,2023-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Outzip UG,https://outzip.de,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Pacelo,https://www.pacelo.de/,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Parkinsonic,https://demo.parkinsonic.app,2023-07-01,deep_tech,yes,Technology-driven innovation in biom
+startup_incubator_berlin,PEARL3D Agency,,2024-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,People Pulse Analytix,https://peoplepulseanalytix.io/,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Periodly,https://www.tiktok.com/@queerworldapp,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Philia.Health,https://philia.health/,2024-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,PikaDo,https://pikado.io,2021-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Pioneers Club,https://pioneersclub.io,2025-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Plotterlabs,,2020-07-01,deep_tech,yes,Technology-driven innovation in robot
+startup_incubator_berlin,PluraPolit,https://plurapolit.de/,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,POEPLEPULSANALYTIX,https://www.ppa-leadertek.com/,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,PysSolution,https://www.tepavi.de,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Queer World,https://queer-world.com,2024-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,R5,,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Reach,https://reach.family,2022-07-01,deep_tech,yes,Technology-driven innovation in device
+startup_incubator_berlin,ResCoach,http://rescoach.softr.app,2022-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,RESEARCHPRENEURS,https://researchpreneurs.com/,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,RiffRaff,https://riffraff.berlin,2019-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Robbi,https://robbi.co/,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Robox,,2019-07-01,deep_tech,yes,Technology-driven innovation in robot
+startup_incubator_berlin,Routines,https://www.routines-app.com,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Rückmal,http://www.rueckmal.com,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Rvolt,https://www.rvolt.io,2019-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Sadu,https://sadu.app/,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Sailwint,https://www.sailwint.com/,2024-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,Savage Edits,https://savageedits.com/,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Sedris Vision,https://www.sedris.vision/home,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Senza Design,,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Silica Corpora,https://www.silica-corpora.tech/,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Sittery,https://www.sittery.com/,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,SITYHUB,https://www.sityhub.co,2023-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,SmrtCut,https://smrtcut.com/,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,SnapSurprise,http://www.snapsurprise.com,2019-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Solar Patron,,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Solaran,,2025-07-01,deep_tech,yes,Technology-driven innovation in ai
+startup_incubator_berlin,Solu,,2019-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Space Egg,https://space-egg.de/,2024-07-01,deep_tech,yes,Technology-driven innovation in space
+startup_incubator_berlin,SpeedePay,http://speed-epay.com/,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Speedstock,https://www.speedstock.de/,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,stand:art,,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Startupdetector,https://www.startupdetector.de,2019-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Stella,https://stella.coach/,2022-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,STRAYZ,http://www.strayz.de,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Substanz,https://substanz.io,2025-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Sul Pont,http://sulpont.com,2022-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,SunPatron,,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Susteyn,https://susteyn.io,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,SWAP,http://swap.softwarematch.de,2023-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Sylbaa,https://selinasylbaa.wixsite.com/website-5,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,SyncdHealth,https://syncd.health,2023-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Telemarie,https://telemarie.de,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Telix,https://www.athleo.de/,2024-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,The Undoing,https://undoing.it.com,2025-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,TheGiftyApp,https://thegiftyapp.glideapp.io/,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,TherapyNow,http://psysolutions.de,2022-07-01,deep_tech,yes,Technology-driven innovation in therapy
+startup_incubator_berlin,Thing,https://www.thing.house/,2020-07-01,deep_tech,yes,Technology-driven innovation in robot
+startup_incubator_berlin,TolerEd,https://www.tolered.com,2025-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Tourist Helpline,https://www.touristhelpline.com,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Translue,,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,TRU3 Technologies,https://www.truemetrics.io/,2021-07-01,deep_tech,yes,Technology-driven innovation in space
+startup_incubator_berlin,Truckstay,http://truckstay.de,2020-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,TRUE Technologies,,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Trueffles,https://www.trueffles.com/,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,u.mension,,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,UMA,,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,UniPassage,https://unipassage.com,2025-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Unite,,2024-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Uplyvt,https://www.uplyvt.de/,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Upto,https://www.joinupto.com,2022-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Vedra,https://findvedra.com,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,VertiKal,,2021-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,VertiKal Farms,,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Vidar,https://prevact.earth,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Visit4me,https://visit4.me,2019-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Vonda,,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Wanowa,,2025-07-01,non_tech,no,"Primarily a service, consumer business, or organization"
+startup_incubator_berlin,Wavess,https://www.wavess.io/,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,We4All,https://we4all.eu,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Wearable-Sensorik,,2025-07-01,deep_tech,yes,Technology-driven innovation in sensor
+startup_incubator_berlin,Wonder,https://www.wonder.me,2020-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,Wonder.me,https://www.dw.com/digital-communication/av-54152224,2020-07-01,digital_tech,yes,Scalable digital product or software platform
+startup_incubator_berlin,Worknector,https://worknector.de,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,X-Stand/stand:art,,2021-07-01,unclear,maybe,Description does not establish a clear technology business model
+startup_incubator_berlin,xounds,,2024-07-01,deep_tech,yes,Technology-driven innovation in space
+startup_incubator_berlin,Zilu,https://zilu.app,2025-07-01,digital_tech,yes,Scalable digital product or software platform
+spinlab_leipzig,AGRANIMO,https://www.agranimo.com/,2020-07-24,deep_tech,yes,Technology-driven innovation in sensor
+spinlab_leipzig,AICURA,https://aicura-medical.com/,2020-07-24,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,AIDHERE,https://aidhere.de/,2020-07-27,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,AIR Q,https://air-q.com/,2020-07-27,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,AISERVE,,2020-07-27,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,AUMIO,https://www.aumio.de/,2020-07-27,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,BE ON TRACK,,2020-07-27,deep_tech,yes,Technology-driven innovation in battery
+spinlab_leipzig,BETTER AT HOME,https://www.better-at-home.de,2020-07-27,digital_tech,yes,Scalable digital product or software platform
+spinlab_leipzig,BINEE,,2020-07-27,deep_tech,yes,Technology-driven innovation in device
+spinlab_leipzig,BRAIN PLUG,,2020-07-27,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,BREEZE TECHNOLOGIES,https://www.breeze-technologies.de/de/,2020-07-27,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,CROWD HEROES,http://crowdheroes.de/,2020-07-27,digital_tech,maybe,Scalable digital product or software platform
+spinlab_leipzig,CYFACE,https://www.cyface.de,2020-07-27,deep_tech,yes,Technology-driven innovation in machine learning
+spinlab_leipzig,DASHFACTORY,http://www.dashbike.de/,2020-07-28,deep_tech,yes,Technology-driven innovation in patent
+spinlab_leipzig,DEEPTUNE,http://deeptune.de/,2020-07-28,deep_tech,yes,Technology-driven innovation in hardware
+spinlab_leipzig,DEGIV,,2020-07-28,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,DENKWEIT,https://denkweit.com/,2020-07-28,deep_tech,yes,Technology-driven innovation in sensor
+spinlab_leipzig,DIGITAIL,https://www.digitail.io/,2020-07-28,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,DIPAT,https://www.dipat.de/,2020-07-28,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,DOCYET,https://docyet.com/,2020-07-28,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,ECOVERY,https://ecovery.de/,2020-07-28,deep_tech,yes,Technology-driven innovation in medical
+spinlab_leipzig,EKOIO,,2020-07-28,deep_tech,yes,Technology-driven innovation in diagnostic
+spinlab_leipzig,ENERGIE KOPPLER,https://dieenergiekoppler.com/,2020-07-28,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,ETE ENGINEERING,,2020-07-28,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,EXPLICATES,,2020-07-28,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,FLYNEX,https://www.flynex.de/,2020-08-03,deep_tech,yes,Technology-driven innovation in industrial
+spinlab_leipzig,GETML,https://getml.com/,2020-08-03,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,IDATASE,,2020-08-03,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,IN HARMONY,,2020-08-03,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,INDEEWORK,,2020-08-03,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,INFRASOLID,https://www.infrasolid.com/,2020-08-03,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,IOCARE,http://www.iocare.de/,2020-08-03,non_tech,no,"Primarily a service, consumer business, or organization"
+spinlab_leipzig,JOB UFO,https://www.jobufo.com,2020-08-03,digital_tech,yes,Scalable digital product or software platform
+spinlab_leipzig,KELEYA,https://keleya.de/,2020-08-03,digital_tech,yes,Scalable digital product or software platform
+spinlab_leipzig,LIPSIA DIGITAL,https://lipsia.digital/,2020-08-03,non_tech,no,"Primarily a service, consumer business, or organization"
+spinlab_leipzig,SMART IX,,2020-08-03,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,MAGNOTHERM SOLUTIONS,https://www.magnotherm.com/de/,2020-08-06,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,MEDICSEN,https://medicsen.com/en/,2020-08-06,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,MEMENTOR,https://www.mementor.ch/,2020-08-06,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,MEMORESA,https://memoresa.de/de/,2020-08-06,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,MEROLT,http://www.merolt.de,2020-08-06,unclear,maybe,Description does not establish a clear technology business model
+spinlab_leipzig,MINDANCE,https://www.mindance.de/,2020-08-06,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,MOTIONSCLOUD,http://motionscloud.com/,2020-08-06,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,MYO,https://myo.de/,2020-08-06,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,NEURONADE,http://www.neuronade.com,2020-08-07,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,OCTAGON,https://www.octagoncareers.com/,2020-08-07,digital_tech,yes,Scalable digital product or software platform
+spinlab_leipzig,OKIKO,https://www.okiko.com/,2020-08-07,non_tech,no,"Primarily a service, consumer business, or organization"
+spinlab_leipzig,POQIT BERLIN,,2020-08-07,digital_tech,yes,Scalable digital product or software platform
+spinlab_leipzig,Q COAT,,2020-08-17,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,QLIPAY,http://qlipay.de,2020-08-17,non_tech,no,"Primarily a service, consumer business, or organization"
+spinlab_leipzig,QLX,http://www.QLX-Gmbh.de,2020-08-18,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,REHAGO,https://rehago.eu/,2020-08-18,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,REPLEX,,2020-08-18,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,WATTANDO,https://www.wattando.com/,2020-08-18,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,RESMENT,https://frag-paul.de/,2020-09-10,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,RHEBO,http://www.rhebo.com,2020-09-10,deep_tech,yes,Technology-driven innovation in industrial
+spinlab_leipzig,SENGI IT,http://www.sengi-it.de,2020-09-10,digital_tech,yes,Scalable digital product or software platform
+spinlab_leipzig,SENSAPE,http://www.sensape.com,2020-09-10,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,SOLAGA,https://www.solaga.de/,2020-09-10,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,STIKI,,2020-09-10,unclear,maybe,Description does not establish a clear technology business model
+spinlab_leipzig,STROMDAO,https://stromdao.de/,2020-09-10,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,TEX-LOCK,http://www.texlock.de,2020-09-10,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,VAROMO,http://varomo.de/,2020-09-10,deep_tech,yes,Technology-driven innovation in robot
+spinlab_leipzig,VESPUTI,https://www.vesputi.com/,2020-09-10,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,VIZZLO,http://www.vizzlo.com,2020-09-10,unclear,maybe,Description does not establish a clear technology business model
+spinlab_leipzig,WALTER'S CUBE,https://walterscube.com/,2020-09-10,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,WE-DO-AI,https://www.we-do.ai/,2020-09-10,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,WUNDERCURVES,http://www.wundercurves.de,2020-09-10,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,YOLAWO,https://yolawo.de/,2020-09-10,non_tech,no,"Primarily a service, consumer business, or organization"
+spinlab_leipzig,CARBONAUTEN,https://www.carbonauten.com/,2020-12-01,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,HY2CON,,2020-12-01,deep_tech,yes,Technology-driven innovation in hydrogen
+spinlab_leipzig,MESHMERIZE,https://www.meshmerize.net/,2020-12-01,deep_tech,yes,Technology-driven innovation in industrial
+spinlab_leipzig,OXFORD IMMUNE ALGORITHMICS,,2020-12-01,deep_tech,yes,Technology-driven innovation in biotech
+spinlab_leipzig,PIPE PREDICT,https://staging.pipepredict.com/en/,2020-12-01,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,TENAC IO,https://www.tenac.io/,2020-12-01,non_tech,no,"Primarily a service, consumer business, or organization"
+spinlab_leipzig,THINKERS AI,https://www.thinkers.ai/,2020-12-01,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,ADVANCED INFRASTRUCTURE,https://www.advanced-infrastructure.co.uk/,2020-12-02,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,AIVY,https://www.aivy.app/,2020-12-02,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,INSONE,https://sonocom.insone.de/,2020-12-02,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,CALLPIMA,,2021-07-16,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,DEFTPOWER,http://www.deftpower.com,2021-07-16,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,ENADYNE,http://www.enadyne.de/,2021-07-16,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,ENERGIEDOCK,https://energiedock.de/,2021-07-16,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,MEINDOC,https://www.meindoc.eu/,2021-07-16,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,NAECOBLUE,https://www.naeco.blue/,2021-07-16,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,NEX,http://www.nex.engineering,2021-07-16,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,PLANTED,https://www.planted.green/,2021-07-16,unclear,maybe,Description does not establish a clear technology business model
+spinlab_leipzig,STRESSCOACH,,2021-07-16,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,THINK RE,https://think-renewable.com/,2021-07-16,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Conbox,,2021-10-26,unclear,maybe,Description does not establish a clear technology business model
+spinlab_leipzig,ENDO HEALTH,https://endometriose.app/,2022-03-08,non_tech,no,"Primarily a service, consumer business, or organization"
+spinlab_leipzig,HUSTRO,http://hustro.com/,2022-03-08,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,IO-DYNAMICS,https://www.iodynamics.de/,2022-03-08,deep_tech,yes,Technology-driven innovation in manufactur
+spinlab_leipzig,MAIA / PRODLANE,https://www.getmaia.ai/,2022-03-08,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,MEMODIO,https://memodio-app.com/,2022-03-08,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,PYONEER,,2022-03-08,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Q-BILITY,https://q-bility.com/,2022-03-08,digital_tech,yes,Scalable digital product or software platform
+spinlab_leipzig,SNORE FREE,http://www.snorefree.com,2022-03-08,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,SUENA,https://suena.energy/,2022-03-08,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,SWITCHBOARD,,2022-03-08,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,NOXTUA,https://www.noxtua.com/,2022-06-13,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,elena international,,2022-10-04,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,inContAlert,https://incontalert.de/,2022-10-04,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,MiiCare,http://www.miicare.co.uk,2022-10-04,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Rausch Technology,http://rausch.se,2022-10-04,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Reonic,http://www.reonic.com/,2022-10-04,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,Reverion,https://www.reverion.de/,2022-10-04,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,RWInno Tec,https://rwinnotec.de/,2022-10-04,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,SpiNNcloud Systems,https://spinncloud.com/,2022-10-04,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,The Yellow Sic,http://www.yellow-sic.com,2022-10-04,deep_tech,yes,Technology-driven innovation in hydrogen
+spinlab_leipzig,Clay Health,,2022-10-12,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,GLAICE,https://www.glaice.de/,2023-05-10,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Granular Energy,https://www.granular-energy.com,2023-05-10,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,HandsOn Robotics,https://handson-robotics.de/,2023-05-10,deep_tech,yes,Technology-driven innovation in robot
+spinlab_leipzig,meal&heal,http://www.mealandheal.de,2023-05-10,digital_tech,yes,Scalable digital product or software platform
+spinlab_leipzig,Nadar Earth,http://www.nadar.earth,2023-05-10,deep_tech,yes,Technology-driven innovation in artificial intelligence
+spinlab_leipzig,Neology,http://neology.ch,2023-05-10,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,retoflow,http://www.retoflow.de,2023-05-10,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,Statotest,http://statotest.com,2023-05-10,deep_tech,yes,Technology-driven innovation in sensor
+spinlab_leipzig,vimum,http://www.vimum.com,2023-05-10,unclear,maybe,Description does not establish a clear technology business model
+spinlab_leipzig,zentur.io,http://www.zentur.io,2023-05-10,digital_tech,yes,Scalable digital product or software platform
+spinlab_leipzig,bitteiler,https://www.bitteiler.com/,2024-01-05,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Brandenburg Labs,https://brandenburg-labs.com/,2024-01-05,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Breathment,https://breathment.com/,2024-01-05,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,HeatVentors,https://www.heatventors.com/,2024-01-05,deep_tech,yes,Technology-driven innovation in battery
+spinlab_leipzig,LipoCheck,https://www.lipocheck.de/,2024-01-05,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,LOKK,https://lokk-platform.com/,2024-01-05,digital_tech,yes,Scalable digital product or software platform
+spinlab_leipzig,PolymerActive,https://polymeractive.de/,2024-01-05,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Streamcheck,https://streamcheck24.com/,2024-01-05,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Unbound Potential,https://www.unbound-potential.com/,2024-01-05,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Oliment,https://oliment.de/,2024-01-08,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Akademie für Klimajobs,http://www.climatejobsacademy.com,2024-08-02,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,carbonsate,https://www.carbonsate.com/,2024-08-02,deep_tech,yes,Technology-driven innovation in biom
+spinlab_leipzig,Certflow,,2024-08-02,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,clever bioTechnologies,,2024-08-02,deep_tech,yes,Technology-driven innovation in artificial intelligence
+spinlab_leipzig,coobie,https://www.coobi.health/,2024-08-02,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,JustHealth,,2024-08-02,deep_tech,yes,Technology-driven innovation in therapy
+spinlab_leipzig,Nimble Diagnostics,,2024-08-02,deep_tech,yes,Technology-driven innovation in medical
+spinlab_leipzig,UpGreen,https://www.getupgreen.com/,2024-08-02,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Windfire,,2024-08-02,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,BarrierSystems,https://www.barriersystems.de/,2025-01-14,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Belle Health,https://bellehealth.co/de/,2025-01-14,deep_tech,yes,Technology-driven innovation in medical
+spinlab_leipzig,Blindleister,https://blindleister.de/,2025-01-14,deep_tech,yes,Technology-driven innovation in battery
+spinlab_leipzig,CHAMELAION,https://www.chamelaion.com/,2025-01-14,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,ContainerGrid,https://containergrid.de/,2025-01-14,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,Kaarlo,https://www.kaarlo.de,2025-01-14,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,MINTD,https://mintdcareers.com/,2025-01-14,deep_tech,yes,Technology-driven innovation in ai
+spinlab_leipzig,regryd,https://www.regryd.de/,2025-01-14,deep_tech,yes,Technology-driven innovation in energy
+spinlab_leipzig,SectorPi,https://www.sectorpi.com,2025-01-14,deep_tech,yes,Technology-driven innovation in ai
+unikat,Veli,,2019-08-01,deep_tech,yes,Technology-driven innovation in sensor
+unikat,Zazmo (früher: Zazter),http://www.zazmo.de,2020-01-01,unclear,maybe,Description does not establish a clear technology business model
+unikat,Shards,http://www.shardstiles.com,2020-11-01,deep_tech,yes,Technology-driven innovation in material
+unikat,CoroVision,http://www.coro.vision,2020-12-01,unclear,maybe,Description does not establish a clear technology business model
+unikat,SURAP,,2021-02-01,digital_tech,yes,Scalable digital product or software platform
+unikat,Peerscope,,2021-04-01,unclear,maybe,Description does not establish a clear technology business model
+unikat,climactivity,,2022-09-01,unclear,maybe,Description does not establish a clear technology business model
+unikat,ÖkoVision,,2023-03-01,unclear,maybe,Description does not establish a clear technology business model
+unikat,LARABICUS,,2023-10-01,deep_tech,yes,Technology-driven innovation in ai
+unikat,metubiq,,2024-05-01,unclear,maybe,Description does not establish a clear technology business model
+unikat,CoARTec,,2024-06-01,deep_tech,yes,Technology-driven innovation in robot
+unikat,maevsi,,2024-10-01,non_tech,no,"Primarily a service, consumer business, or organization"
+unikat,riprip,,2024-10-01,digital_tech,yes,Scalable digital product or software platform
+unikat,DIMMABLE,,2025-03-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,TUM Carbon Removal Initiative e.V.,https://www.tumcarbon.com/,2022-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Holloid,https://www.holloid.com/,2022-03-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,Medicalytix,https://medicalytix.ai/,2022-03-01,deep_tech,yes,Technology-driven innovation in medical
+unternehmertum_prototyping_grant,3C-Labs,http://3c-labs.tech,2022-03-01,deep_tech,yes,Technology-driven innovation in manufactur
+unternehmertum_prototyping_grant,beworm,https://www.linkedin.com/company/beworm/,2022-03-01,deep_tech,yes,Technology-driven innovation in material
+unternehmertum_prototyping_grant,Avemoy,,2022-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,1point8,https://1point8.de/,2022-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Atlas,,2022-03-01,deep_tech,yes,Technology-driven innovation in space
+unternehmertum_prototyping_grant,Mily Technologies,https://milytech.com/,2022-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,DASH e.V.,https://tumdash.com/,2022-03-01,non_tech,no,"Primarily a service, consumer business, or organization"
+unternehmertum_prototyping_grant,SynthesEyes,https://www.syntheseyes.de/,2022-07-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Noxon,http://noxon-clothing.de/,2022-07-01,deep_tech,yes,Technology-driven innovation in medical
+unternehmertum_prototyping_grant,Puray,https://www.puray.de,2022-07-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,Cebellum,,2022-07-01,deep_tech,yes,Technology-driven innovation in hardware
+unternehmertum_prototyping_grant,Medigital,https://www.medigital.io/,2022-07-01,digital_tech,yes,Scalable digital product or software platform
+unternehmertum_prototyping_grant,SUPPLYZ,https://supplyz.eu/,2022-07-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Spherecast,https://spherecast.ai/,2022-11-01,digital_tech,yes,Scalable digital product or software platform
+unternehmertum_prototyping_grant,Munich Quantum Instruments,http://munich-quantum-instruments.com/,2022-11-01,deep_tech,yes,Technology-driven innovation in sensor
+unternehmertum_prototyping_grant,Olive Robotics,https://www.oliverobotics.de/,2022-11-01,deep_tech,yes,Technology-driven innovation in robot
+unternehmertum_prototyping_grant,Roundpeg Technologies,https://roundpeg.tech,2022-11-01,deep_tech,yes,Technology-driven innovation in robot
+unternehmertum_prototyping_grant,BAVERTIS,https://bavertis.com/,2022-11-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,trado.,,2022-11-01,digital_tech,yes,Scalable digital product or software platform
+unternehmertum_prototyping_grant,haidhunt,,2022-11-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Energyminer,https://www.energyminer.eu/,2022-11-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Collective AI,,2022-11-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Hapticlabs,https://www.hapticlabs.io/,2022-11-01,digital_tech,yes,Scalable digital product or software platform
+unternehmertum_prototyping_grant,caire,https://caire.ai/,2022-11-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Scholarmaps,https://www.scholarmaps.com/,2022-11-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Crestworks,,2022-11-01,deep_tech,yes,Technology-driven innovation in satellite
+unternehmertum_prototyping_grant,Emil Motors,https://www.emil-motors.com/?lang=de,2022-11-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,AcTLAbS,https://www.actlabs.space/,2022-11-01,deep_tech,yes,Technology-driven innovation in space
+unternehmertum_prototyping_grant,AgroDetectAI,https://www.linkedin.com/company/funding-for-innovators/posts/?feedView=all,2022-11-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,VIABLE Surgery,,2023-03-01,deep_tech,yes,Technology-driven innovation in device
+unternehmertum_prototyping_grant,AMPERIAL - Smart Window Technologies,https://www.amperial.eu/Home/,2023-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,workride.,https://workride.de/,2023-03-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,MIMBIOSIS,https://mimbiosis.com/,2023-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,neuroTUM,https://neurotum.com,2023-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,CyberDesk,https://cyberdesk.app,2023-03-01,deep_tech,yes,Technology-driven innovation in artificial intelligence
+unternehmertum_prototyping_grant,deltaVision,https://deltaVision.space,2023-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,watchr,,2023-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,mo:re,https://more-ls.com,2023-03-01,deep_tech,yes,Technology-driven innovation in robot
+unternehmertum_prototyping_grant,Cocrafter,,2023-03-01,digital_tech,yes,Scalable digital product or software platform
+unternehmertum_prototyping_grant,Biomotion Technologies,https://biomotion.tech,2023-03-01,deep_tech,yes,Technology-driven innovation in biom
+unternehmertum_prototyping_grant,Aquafy,,2023-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,AlgenTechnik,https://www.linkedin.com/company/algentechnik/?viewAsMember=true,2023-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,MOA Mobility,,2023-03-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,EnHands,https://enhands.de/,2023-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,WasteEx,https://wasteex.de/,2023-03-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,CedarDB,https://cedardb.com/,2023-09-01,digital_tech,yes,Scalable digital product or software platform
+unternehmertum_prototyping_grant,Impetus Sailing Team,https://www.impetussailing.de/,2023-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,WARR space labs,https://warr.de/projects/spacelabs/,2023-09-01,deep_tech,yes,Technology-driven innovation in space
+unternehmertum_prototyping_grant,CinSOIL,https://nature-culture.eu/,2023-09-01,deep_tech,yes,Technology-driven innovation in agri
+unternehmertum_prototyping_grant,Decyde,https://www.decyde-ai.com/,2023-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Sinforsa,,2023-09-01,deep_tech,yes,Technology-driven innovation in chemical
+unternehmertum_prototyping_grant,Sensus,https://sensus.ai/,2023-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,LEVITUM e.V.,https://www.levitum.de/,2023-09-01,deep_tech,yes,Technology-driven innovation in hydrogen
+unternehmertum_prototyping_grant,Visonation,https://visonation.com/,2023-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,FOODYOU,https://www.thefoodyou.com/,2023-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Otter Energy Trading,https://www.otter-energy-trading.io/,2023-09-01,deep_tech,yes,Technology-driven innovation in energy
+unternehmertum_prototyping_grant,FLOW eye,https://www.flow-eye.com/,2023-09-01,non_tech,no,"Primarily a service, consumer business, or organization"
+unternehmertum_prototyping_grant,Falcon Vision,https://falconvision.org/,2023-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Qualiwise,https://www.qualiwise.eu/,2023-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Lactoverde,,2023-09-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,HopfON,https://hopfon.com/,2023-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,ESG-X,https://www.esg-x.com/,2023-09-01,digital_tech,yes,Scalable digital product or software platform
+unternehmertum_prototyping_grant,Radical Dot,https://www.linkedin.com/company/radicaldot,2024-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Airgae,https://www.linkedin.com/company/airgae-algae/?viewAsMember=true,2024-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Octave,https://maple-aviation.com,2024-03-01,deep_tech,yes,Technology-driven innovation in medical
+unternehmertum_prototyping_grant,Trem-Blocks,https://www.linkedin.com/in/mert-karacan-5101b8284/,2024-03-01,deep_tech,yes,Technology-driven innovation in robot
+unternehmertum_prototyping_grant,iNSyT,,2024-03-01,deep_tech,yes,Technology-driven innovation in optical
+unternehmertum_prototyping_grant,Emidat,https://emidat.com/,2024-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Hoop Solar,https://www.linkedin.com/company/99088241/,2024-03-01,deep_tech,yes,Technology-driven innovation in energy
+unternehmertum_prototyping_grant,Ignition Aerospace,https://ignition-aerospace.com,2024-03-01,deep_tech,yes,Technology-driven innovation in space
+unternehmertum_prototyping_grant,Yngvik,https://www.linkedin.com/company/yngvik,2024-03-01,deep_tech,yes,Technology-driven innovation in bio-tech
+unternehmertum_prototyping_grant,CRATER (WARR Space Robotics),https://warr.de/projects/spacerobotics/,2024-03-01,deep_tech,yes,Technology-driven innovation in robot
+unternehmertum_prototyping_grant,NTRDE,https://ntrde.io,2024-03-01,deep_tech,yes,Technology-driven innovation in chemical
+unternehmertum_prototyping_grant,VORTEX,https://www.vortex-aerotec.com/,2024-03-01,deep_tech,yes,Technology-driven innovation in hydrogen
+unternehmertum_prototyping_grant,Perian,https://perian.io,2024-03-01,deep_tech,yes,Technology-driven innovation in artificial intelligence
+unternehmertum_prototyping_grant,ImuVeo,https://www.linkedin.com/company/imuveo,2024-03-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,Empacto,https://www.empacto.eco,2024-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Hula Earth,https://hula.earth,2024-09-01,deep_tech,yes,Technology-driven innovation in sensor
+unternehmertum_prototyping_grant,TUM Boring Innovation in Tunneling e.V.,https://tum-boring.com/,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Admyral,https://admyral.dev/,2024-09-01,digital_tech,yes,Scalable digital product or software platform
+unternehmertum_prototyping_grant,AICU,https://www.ai-cu.com/,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Alganize,https://www.alganize.de,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Beautechful,https://www.linkedin.com/company/beautechful?trk=blended-typeahead,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Bevel,,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Bluebear,https://www.linkedin.com/company/igem-tum-campus-straubing/,2024-09-01,deep_tech,yes,Technology-driven innovation in industrial
+unternehmertum_prototyping_grant,Bonescreen,https://www.bonescreen.de/,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Countful,,2024-09-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,ExoSphere,https://www.linkedin.com/company/exospherediagnostics/,2024-09-01,deep_tech,yes,Technology-driven innovation in cancer
+unternehmertum_prototyping_grant,Fungtional Bio,https://www.fungtional.bio,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Healthiator,,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,KATALYST,https://katalyst-labs.com/,2024-09-01,digital_tech,yes,Scalable digital product or software platform
+unternehmertum_prototyping_grant,Micro Factory,https://micro-factory.de/,2024-09-01,deep_tech,yes,Technology-driven innovation in sensor
+unternehmertum_prototyping_grant,Patalyze,https://www.patalyze.com/,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Prio Optics,https://prio-optic.com,2024-09-01,deep_tech,yes,Technology-driven innovation in energy
+unternehmertum_prototyping_grant,QTAS,,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,SAM Robotics,https://sam-robotics.com,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,skyLARC,,2024-09-01,deep_tech,yes,Technology-driven innovation in hardware
+unternehmertum_prototyping_grant,syn2core,,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,TUfast Moto Electric,https://tufast-motoelectric.de/team025/,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,alago.ai,https://www.alago.ai/,2024-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Seal Robotics,https://seal-robotics.com,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Qoro Quantum,https://www.qoroquantum.de,2025-03-01,deep_tech,yes,Technology-driven innovation in quantum
+unternehmertum_prototyping_grant,Aiina Robotics,https://aiina-robotics.com/,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Accelion,,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,APS,,2025-03-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,2NA Fish,https://2nafish.bio/,2025-03-01,deep_tech,yes,Technology-driven innovation in cancer
+unternehmertum_prototyping_grant,Everybot,,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Furward,https://www.furward.eu/,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Lexet AI,https://lexet.ai,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Neeno,https://myneeno.com,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,OnMCU,,2025-03-01,deep_tech,yes,Technology-driven innovation in hardware
+unternehmertum_prototyping_grant,ROBOTUM,https://www.robotum.info/,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Rooted,https://rooted.farm,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Spacio,https://spacio.ai/,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,TRITON,,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Valuemize,https://www.valuemize.io/,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,DeepMask,https://deepmask.io/,2025-03-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Fibclick,https://fibclick.de/en/homepage-2/,2025-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Clinivox,https://stanford-clinivox.firebaseapp.com/,2025-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,ProviGen.ai,https://provigen.ai/,2025-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Cellvi,,2025-09-01,unclear,maybe,Description does not establish a clear technology business model
+unternehmertum_prototyping_grant,IARET Catalysis,,2025-09-01,deep_tech,yes,Technology-driven innovation in chemical
+unternehmertum_prototyping_grant,nuno.ai,https://nuno-labs.de/,2025-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Linq Photonics,https://www.linq-photonics.com/,2025-09-01,deep_tech,yes,Technology-driven innovation in quantum
+unternehmertum_prototyping_grant,Blue Aegis Technologies,,2025-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Cancelight,https://cancelight.com/,2025-09-01,deep_tech,yes,Technology-driven innovation in device
+unternehmertum_prototyping_grant,Twogee Biotech,https://www.twogee-biotech.com/,2025-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Tissue Mind,,2025-09-01,deep_tech,yes,Technology-driven innovation in ai
+unternehmertum_prototyping_grant,Metalonn,https://metalonn.com/,2025-09-01,deep_tech,yes,Technology-driven innovation in space

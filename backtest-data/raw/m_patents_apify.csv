@@ -1,0 +1,6 @@
+name,first_priority_date,evidence,patents_found,note
+Munich Quantum Instruments,2024-12-23,DE102024139715A1,1,verified German assignee; compare priority date with asof_date
+Emil Motors,2023-08-21,DE102023122247B3,5,verified German assignee; compare priority date with asof_date
+Qualiwise,2024-05-14,DE102024113419A1,1,verified German assignee; compare priority date with asof_date
+Bonescreen,2024-09-30,EP4717181A1,2,verified German assignee; compare priority date with asof_date
+Roundpeg Technologies,,WO2022179698A1 (from first patent run),1,verified German assignee; compare priority date with asof_date

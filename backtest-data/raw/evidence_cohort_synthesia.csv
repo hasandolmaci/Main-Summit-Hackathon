@@ -1,0 +1,18 @@
+name,asof_date,field,value,url,snapshot_ts,retrieved_at
+Synthesia,2018-09-01,f_domain,synthesia.io,https://www.synthesia.io/,,2026-11-20T23:20:37Z
+Synthesia,2018-09-01,wb_first_capture_any,2017-08-15,http://web.archive.org/cdx/search/cdx?url=synthesia.io&output=json&limit=1&fl=timestamp&from=1996,20170815194515,2026-11-20T23:20:38Z
+Synthesia,2018-09-01,f_first_capture,2017-08-15,http://web.archive.org/cdx/search/cdx?url=synthesia.io&output=json&limit=1&fl=timestamp&from=1996,20170815194515,2026-11-20T23:20:38Z
+Synthesia,2018-09-01,f_age_months,12,http://web.archive.org/cdx/search/cdx?url=synthesia.io&output=json&limit=1&fl=timestamp&from=1996,20170815194515,2026-11-20T23:20:38Z
+Synthesia,2018-09-01,f_snapshot_date,2018-04-16,http://web.archive.org/web/20180416111436id_/http://synthesia.io:80/,20180416111436,2026-11-20T23:20:40Z
+Synthesia,2018-09-01,f_impressum,0,http://web.archive.org/web/20180416111436id_/http://synthesia.io:80/,20180416111436,2026-11-20T23:20:40Z
+Synthesia,2018-09-01,f_pricing_page,0,http://web.archive.org/web/20180416111436id_/http://synthesia.io:80/,20180416111436,2026-11-20T23:20:40Z
+Synthesia,2018-09-01,f_waitlist,0,http://web.archive.org/web/20180416111436id_/http://synthesia.io:80/,20180416111436,2026-11-20T23:20:40Z
+Synthesia,2018-09-01,f_customer_logos,0,http://web.archive.org/web/20180416111436id_/http://synthesia.io:80/,20180416111436,2026-11-20T23:20:40Z
+Synthesia,2018-09-01,f_jobs_page,0,http://web.archive.org/web/20180416111436id_/http://synthesia.io:80/,20180416111436,2026-11-20T23:20:40Z
+Synthesia,2018-09-01,f_legal_entity,,http://web.archive.org/web/20180416111436id_/http://synthesia.io:80/,20180416111436,2026-11-20T23:20:40Z
+Synthesia,2018-09-01,f_gmbh_ig,0,http://web.archive.org/web/20180416111436id_/http://synthesia.io:80/,20180416111436,2026-11-20T23:20:40Z
+Synthesia,2018-09-01,f_description_text,7 chars,http://web.archive.org/web/20180416111436id_/http://synthesia.io:80/,20180416111436,2026-11-20T23:20:40Z
+Synthesia,2018-09-01,f_hn_posts_before,0,https://hn.algolia.com/api/v1/search?query=synthesia.io&restrictSearchableAttributes=url&numericFilters=created_at_i%3C1535760000&hitsPerPage=100,,2026-11-20T23:20:41Z
+Synthesia,2018-09-01,f_certs_before,2,https://crt.sh/?q=%25.synthesia.io&output=json,,2026-11-20T23:20:52Z
+Synthesia,2018-09-01,f_first_cert_date,2018-08-17,https://crt.sh/?id=682578218,,2026-11-20T23:21:07Z
+Synthesia,2018-09-01,f_product_live,0,https://crt.sh/?q=%25.synthesia.io&output=json,,2026-11-20T23:20:52Z

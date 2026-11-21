@@ -1,0 +1,9 @@
+{
+ "query": "artificial intelligence, Germany, 1-10 employees",
+ "returned": 90,
+ "kept_as_startups": 13,
+ "dropped_duplicate_of_cohort": [
+  "GEMESYS"
+ ],
+ "dropped_reasons": "institutes, meetups, conferences, media, recruiters, consultancies, associations, older than 2021"
+}

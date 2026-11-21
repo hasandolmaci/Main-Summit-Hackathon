@@ -1,0 +1,200 @@
+company,round_type,is_equity,investors,check
+Biotx.ai,convertible_note,true,,ok
+Biotx.ai,seed,true,,ok
+Biotx.ai,seed,true,,ok
+Biotx.ai,non_equity_assistance,false,,ok
+Carbon One,seed,true,,ok
+PROSION,seed,true,,ok
+PROSION,grant,false,,ok
+Q.ANT,series_a,true,,ok
+Tubulis,series_c,true,,ok
+Tubulis,series_b,true,,ok
+Tubulis,series_a,true,,ok
+Tubulis,series_b,true,,ok
+Tubulis,grant,false,,ok
+Aignostics,series_b,true,,ok
+Aignostics,pre_seed,true,,ok
+Aignostics,seed,true,,ok
+Aignostics,pre_seed,true,,ok
+Aignostics,series_a,true,,ok
+GEMESYS,pre_seed,true,,ok
+GEMESYS,non_equity_assistance,false,,ok
+Proxima Fusion,series_b,true,,ok
+Proxima Fusion,series_a,true,,ok
+Proxima Fusion,series_a,true,,ok
+Proxima Fusion,grant,false,,ok
+Proxima Fusion,pre_seed,true,,ok
+Reverion,series_b,true,,ok
+Reverion,series_a,true,,ok
+Reverion,convertible_note,true,,ok
+Reverion,grant,false,,ok
+Reverion,non_equity_assistance,false,,ok
+smartbax,seed,true,,ok
+smartbax,seed,true,,ok
+smartbax,pre_seed,true,,ok
+smartbax,seed,true,,ok
+ActiTrexx,series_a,true,,ok
+Cyclize,seed,true,,ok
+ecoLocked,non_equity_assistance,false,,ok
+ecoLocked,non_equity_assistance,false,,ok
+ecoLocked,convertible_note,true,,ok
+ecoLocked,pre_seed,true,,ok
+ecoLocked,seed,true,,ok
+Qkera,pre_seed,true,,ok
+Manyfolds,seed,true,,ok
+Manyfolds,non_equity_assistance,false,,ok
+Divizend,non_equity_assistance,false,,ok
+Divizend,non_equity_assistance,false,,ok
+Divizend,grant,false,,ok
+sewts,series_a,true,,ok
+sewts,seed,true,,ok
+sewts,pre_seed,true,,ok
+Dymium,seed,true,,ok
+NIMMSTA,equity_crowdfunding,true,,ok
+NIMMSTA,seed,true,,ok
+NIMMSTA,angel,true,,ok
+Sedivention,seed,true,,ok
+Sedivention,pre_seed,true,,ok
+AUDAVIS,seed,true,,ok
+InContAlert,pre_seed,true,,ok
+InContAlert,grant,false,,ok
+InContAlert,pre_seed,true,,ok
+InContAlert,pre_seed,true,,ok
+InContAlert,grant,false,,ok
+LIDROTEC,series_a,true,,ok
+LIDROTEC,series_a,true,,ok
+LIDROTEC,non_equity_assistance,false,,ok
+LIDROTEC,grant,false,,ok
+NanoStruct,seed,true,,ok
+NanoStruct,grant,false,,ok
+suena,series_a,true,,ok
+suena,seed,true,,ok
+suena,non_equity_assistance,false,,ok
+suena,pre_seed,true,,ok
+suena,non_equity_assistance,false,,ok
+DNTOX,seed,true,,ok
+AGRANIMO,convertible_note,true,,ok
+AGRANIMO,seed,true,,ok
+AGRANIMO,non_equity_assistance,false,,ok
+AICURA,seed,true,,ok
+AICURA,pre_seed,true,,ok
+AICURA,seed,true,,ok
+AIDHERE,non_equity_assistance,false,,ok
+AIDHERE,seed,true,,ok
+AUMIO,non_equity_assistance,false,,ok
+AUMIO,seed,true,,ok
+BREEZE TECHNOLOGIES,non_equity_assistance,false,,ok
+BREEZE TECHNOLOGIES,non_equity_assistance,false,,ok
+BREEZE TECHNOLOGIES,non_equity_assistance,false,,ok
+BREEZE TECHNOLOGIES,seed,true,,ok
+BREEZE TECHNOLOGIES,grant,false,,ok
+CROWD HEROES,non_equity_assistance,false,,ok
+CYFACE,non_equity_assistance,false,,ok
+DEEPTUNE,non_equity_assistance,false,,ok
+DENKWEIT,non_equity_assistance,false,,ok
+DIGITAIL,series_b,true,,ok
+DIGITAIL,seed,true,,ok
+DIGITAIL,grant,false,,ok
+DIGITAIL,pre_seed,true,,ok
+DIGITAIL,non_equity_assistance,false,,ok
+DIPAT,non_equity_assistance,false,,ok
+DIPAT,series_a,true,,ok
+DIPAT,series_unknown,true,,ok
+DOCYET,grant,false,,ok
+DOCYET,seed,true,,ok
+DOCYET,non_equity_assistance,false,,ok
+ECOVERY,seed,true,,ok
+ECOVERY,non_equity_assistance,false,,ok
+ECOVERY,seed,true,,ok
+ENERGIE KOPPLER,series_a,true,,ok
+ENERGIE KOPPLER,non_equity_assistance,false,,ok
+FLYNEX,series_unknown,true,,ok
+FLYNEX,series_unknown,true,,ok
+FLYNEX,seed,true,,ok
+FLYNEX,non_equity_assistance,false,,ok
+FLYNEX,series_unknown,true,,ok
+INFRASOLID,non_equity_assistance,false,,ok
+INFRASOLID,seed,true,,ok
+IOCARE,non_equity_assistance,false,,ok
+IOCARE,series_unknown,true,,ok
+JOB UFO,non_equity_assistance,false,,ok
+JOB UFO,non_equity_assistance,false,,ok
+JOB UFO,seed,true,,ok
+JOB UFO,pre_seed,true,,ok
+MEDICSEN,pre_seed,true,,ok
+MEDICSEN,grant,false,,ok
+MEDICSEN,seed,true,,ok
+MEDICSEN,grant,false,,ok
+MEDICSEN,grant,false,,ok
+MEMORESA,pre_seed,true,,ok
+MEMORESA,non_equity_assistance,false,,ok
+MEROLT,seed,true,,ok
+MEROLT,series_unknown,true,,ok
+MEROLT,seed,true,,ok
+MEROLT,series_unknown,true,,ok
+MEROLT,non_equity_assistance,false,,ok
+MINDANCE,seed,true,,ok
+MINDANCE,pre_seed,true,,ok
+MINDANCE,non_equity_assistance,false,,ok
+MOTIONSCLOUD,seed,true,,ok
+MOTIONSCLOUD,seed,true,,ok
+MOTIONSCLOUD,non_equity_assistance,false,,ok
+MOTIONSCLOUD,seed,true,,ok
+MOTIONSCLOUD,non_equity_assistance,false,,ok
+MYO,seed,true,,"NAME = generic, verify"
+MYO,series_a,true,,"NAME = generic, verify"
+MYO,non_equity_assistance,false,,"NAME = generic, verify"
+MYO,seed,true,,"NAME = generic, verify"
+OKIKO,angel,true,,ok
+QLIPAY,non_equity_assistance,false,,ok
+QLX,non_equity_assistance,false,,"NAME = generic, verify"
+REHAGO,seed,true,,ok
+REHAGO,non_equity_assistance,false,,ok
+REHAGO,non_equity_assistance,false,,ok
+RESMENT,non_equity_assistance,false,,ok
+RHEBO,series_b,true,,ok
+RHEBO,series_a,true,,ok
+RHEBO,non_equity_assistance,false,,ok
+SOLAGA,non_equity_assistance,false,,ok
+STROMDAO,non_equity_assistance,false,,ok
+VAROMO,non_equity_assistance,false,,ok
+VESPUTI,pre_seed,true,,ok
+VESPUTI,non_equity_assistance,false,,ok
+VESPUTI,pre_seed,true,,ok
+VESPUTI,pre_seed,true,,ok
+WALTER'S CUBE,non_equity_assistance,false,,ok
+WALTER'S CUBE,non_equity_assistance,false,,ok
+WE-DO-AI,non_equity_assistance,false,,ok
+WUNDERCURVES,seed,true,,ok
+CARBONAUTEN,non_equity_assistance,false,,ok
+PIPE PREDICT,grant,false,,ok
+PIPE PREDICT,non_equity_assistance,false,,ok
+PIPE PREDICT,non_equity_assistance,false,,ok
+PIPE PREDICT,convertible_note,true,,ok
+ADVANCED INFRASTRUCTURE,grant,false,,ok
+ADVANCED INFRASTRUCTURE,non_equity_assistance,false,,ok
+INSONE,non_equity_assistance,false,,ok
+DEFTPOWER,grant,false,,ok
+DEFTPOWER,series_unknown,true,,ok
+DEFTPOWER,non_equity_assistance,false,,ok
+DEFTPOWER,grant,false,,ok
+DEFTPOWER,seed,true,,ok
+ENADYNE,seed,true,,ok
+ENADYNE,non_equity_assistance,false,,ok
+ENADYNE,non_equity_assistance,false,,ok
+ENERGIEDOCK,non_equity_assistance,false,,ok
+MEINDOC,non_equity_assistance,false,,ok
+NEX,seed,true,,"NAME = generic, verify"
+THINK RE,non_equity_assistance,false,,ok
+THINK RE,seed,true,,ok
+THINK RE,non_equity_assistance,false,,ok
+ENDO HEALTH,seed,true,,ok
+ENDO HEALTH,pre_seed,true,,ok
+ENDO HEALTH,pre_seed,true,,ok
+HUSTRO,seed,true,,ok
+HUSTRO,non_equity_assistance,false,,ok
+IO-DYNAMICS,angel,true,,ok
+IO-DYNAMICS,non_equity_assistance,false,,ok
+IO-DYNAMICS,seed,true,,ok
+Q-BILITY,non_equity_assistance,false,,ok
+NOXTUA,series_c,true,,"NAME = generic, verify"

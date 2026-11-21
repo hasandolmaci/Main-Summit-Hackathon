@@ -1,0 +1,301 @@
+label,value
+Software,0.45
+Information Technology,0.35
+Health Care,0.40
+Consulting,0.05
+Artificial Intelligence (AI),0.75
+Internet,0.30
+SaaS,0.40
+Mobile Apps,0.30
+Apps,0.30
+Financial Services,0.15
+E-Commerce,0.15
+FinTech,0.40
+Medical,0.60
+Manufacturing,0.50
+Analytics,0.50
+Web Development,0.20
+Machine Learning,0.80
+Blockchain,0.55
+Training,0.05
+Biotechnology,0.95
+Education,0.10
+Cyber Security,0.65
+Marketplace,0.20
+Marketing,0.05
+Medical Device,0.85
+Transportation,0.30
+Wellness,0.10
+Cryptocurrency,0.40
+Sustainability,0.35
+Information Services,0.25
+Logistics,0.25
+Finance,0.10
+Energy,0.65
+Gaming,0.40
+Advertising,0.10
+E-Learning,0.25
+Payments,0.40
+Web Design,0.10
+Internet of Things,0.70
+Renewable Energy,0.70
+Digital Marketing,0.10
+Cloud Computing,0.60
+Software Engineering,0.55
+Human Resources,0.10
+Retail,0.05
+Big Data,0.60
+Pharmaceutical,0.90
+Real Estate,0.05
+B2B,0.25
+Business Development,0.05
+EdTech,0.35
+Automotive,0.60
+Supply Chain Management,0.30
+Agriculture,0.35
+Food and Beverage,0.15
+Health Diagnostics,0.85
+Security,0.45
+Business Intelligence,0.45
+Online Portals,0.20
+Hardware,0.80
+Recruiting,0.05
+Electric Vehicle,0.80
+Project Management,0.25
+Web Apps,0.35
+E-Commerce Platforms,0.30
+Video Games,0.40
+Therapeutics,0.95
+UX Design,0.15
+Virtual Reality,0.70
+Professional Services,0.05
+Cloud Data Services,0.55
+Robotics,0.90
+Fitness,0.10
+Telecommunications,0.65
+Enterprise Software,0.45
+Sports,0.10
+Electronics,0.80
+Product Design,0.35
+Database,0.65
+SEO,0.10
+Advice,0.05
+CRM,0.35
+Personal Health,0.30
+Social Media,0.25
+Construction,0.25
+3D Technology,0.70
+Fashion,0.05
+Life Science,0.90
+Media and Entertainment,0.15
+Technical Support,0.20
+Travel,0.10
+Recycling,0.40
+Venture Capital,0.05
+Service Industry,0.05
+Trading Platform,0.35
+Web3,0.50
+Banking,0.20
+Industrial,0.55
+Wholesale,0.05
+Computer,0.65
+Insurance,0.10
+Mobile,0.40
+Management Consulting,0.05
+Customer Service,0.10
+Network Security,0.70
+IT Infrastructure,0.55
+Farming,0.20
+Data Integration,0.55
+Graphic Design,0.10
+IT Management,0.35
+Environmental Consulting,0.10
+Online Games,0.40
+AgTech,0.65
+Data Management,0.50
+Aerospace,0.95
+Augmented Reality,0.70
+Digital Media,0.20
+Enterprise Resource Planning (ERP),0.40
+Sales,0.05
+GreenTech,0.65
+Risk Management,0.30
+Events,0.05
+Hospital,0.30
+Solar,0.75
+Data Visualization,0.45
+Mental Health,0.25
+Communities,0.10
+InsurTech,0.40
+Cloud Management,0.55
+Web Hosting,0.40
+DevOps,0.60
+Waste Management,0.35
+Developer APIs,0.65
+CleanTech,0.75
+Biopharma,0.95
+Social Network,0.30
+Rental,0.05
+Market Research,0.10
+Mobile Payments,0.45
+Productivity Tools,0.35
+Food Delivery,0.15
+Developer Platform,0.65
+Developer Tools,0.65
+Environmental Engineering,0.70
+3D Printing,0.80
+Cloud Infrastructure,0.70
+Energy Management,0.55
+Product Research,0.30
+Video,0.25
+Accounting,0.10
+Legal Tech,0.40
+Asset Management,0.10
+Funding Platform,0.25
+Energy Efficiency,0.55
+Hospitality,0.05
+Industrial Automation,0.80
+Staffing Agency,0.05
+Advertising Platforms,0.35
+Freight Service,0.10
+Social Media Marketing,0.10
+Home Health Care,0.15
+Compliance,0.25
+Outsourcing,0.05
+Retail Technology,0.40
+Marketing Automation,0.40
+Property Management,0.10
+Computer Vision,0.85
+Sensor,0.85
+eSports,0.20
+Cloud Security,0.70
+Restaurants,0.00
+Delivery,0.10
+Machinery Manufacturing,0.70
+Natural Language Processing,0.85
+Brand Marketing,0.05
+Warehousing,0.15
+Music,0.10
+Metaverse,0.50
+Predictive Analytics,0.65
+Tourism,0.05
+Chemical,0.85
+Consumer Goods,0.15
+Nutrition,0.25
+Document Management,0.35
+Cosmetics,0.20
+Shipping,0.15
+Beauty,0.10
+Test and Measurement,0.80
+Dental,0.55
+Impact Investing,0.05
+Fleet Management,0.40
+Smart Cities,0.55
+PC Games,0.40
+Small and Medium Businesses,0.15
+Legal,0.05
+Delivery Service,0.10
+iOS,0.35
+Commercial,0.05
+Semiconductor,1.00
+Bitcoin,0.40
+Drones,0.85
+Oil and Gas,0.55
+Financial Exchanges,0.35
+Psychology,0.15
+Digital Entertainment,0.25
+Infrastructure,0.40
+Publishing,0.05
+Information and Communications Technology (ICT),0.50
+Shopping,0.10
+Architecture,0.20
+Clinical Trials,0.75
+Battery,0.95
+Electrical Distribution,0.60
+Video Streaming,0.45
+Data Center,0.65
+Collaboration,0.30
+Android,0.35
+Autonomous Vehicles,0.95
+Art,0.05
+mHealth,0.40
+Clean Energy,0.75
+Marine Transportation,0.35
+Packaging Services,0.20
+Innovation Management,0.20
+Air Transportation,0.45
+PaaS,0.55
+Content Marketing,0.05
+Content,0.05
+Content Creators,0.05
+Angel Investment,0.05
+Real Time,0.55
+Industrial Engineering,0.70
+Social,0.15
+Employment,0.10
+Audio,0.45
+Digital Signage,0.40
+Sales Automation,0.35
+Data Mining,0.60
+Transaction Processing,0.45
+Pet,0.05
+Real Estate Investment,0.05
+News,0.10
+Event Management,0.10
+Lead Generation,0.10
+Search Engine,0.60
+Quality Assurance,0.35
+Wireless,0.75
+Social Impact,0.10
+Lifestyle,0.05
+Professional Networking,0.20
+Employee Benefits,0.10
+B2C,0.20
+Crowdfunding,0.15
+Consumer Electronics,0.75
+Women's,0.10
+Nursing and Residential Care,0.05
+Freelance,0.05
+Mechanical Engineering,0.80
+Privacy,0.50
+Rehabilitation,0.40
+Energy Storage,0.90
+Elder Care,0.15
+Personal Development,0.05
+Location Based Services,0.45
+Email Marketing,0.15
+Open Source,0.60
+Broadcasting,0.30
+Messaging,0.40
+Meeting Software,0.35
+Nanotechnology,1.00
+Gamification,0.25
+PropTech,0.35
+Subscription Service,0.15
+Charging Infrastructure,0.70
+Creative Agency,0.05
+Corporate Training,0.05
+Animation,0.20
+Smart Home,0.60
+Consumer,0.10
+Sharing Economy,0.20
+Video Conferencing,0.50
+Identity Management,0.60
+Product Management,0.25
+Consumer Software,0.35
+Water,0.50
+Wearables,0.80
+Smart Building,0.60
+Wind Energy,0.80
+Language Learning,0.25
+Photography,0.10
+Landscaping,0.00
+Wealth Management,0.10
+Printing,0.15
+Marine Technology,0.80
+Podcast,0.10
+Casual Games,0.30
+Image Recognition,0.85
+Mapping Services,0.55
+Social Media Management,0.15
+Public Relations,0.00
